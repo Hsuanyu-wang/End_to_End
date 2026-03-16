@@ -764,7 +764,7 @@ if __name__ == "__main__":
                 custom_entity_types = get_schema_by_method(
                     method=args.schema_method, 
                     text_corpus=data_processing(mode=args.data_mode, data_type=args.data_type), # 若為 llm_dynamic 則傳入樣本
-                    llm=Settings.llm
+                    llm=Settings.builder_llm
                 )
                 print(f"🌟 LightRAG 將使用以下實體類別建圖: {custom_entity_types}")
                 

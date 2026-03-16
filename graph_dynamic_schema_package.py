@@ -91,7 +91,7 @@ def get_dynamic_schema_graph_query_engine(
             # 實例化 DynamicLLMPathExtractor 代替 SchemaLLMPathExtractor
             print(">> 初始化 DynamicLLMPathExtractor...")
             dynamic_extractor = DynamicLLMPathExtractor(
-                llm=Settings.llm,
+                llm=Settings.builder_llm,
                 max_triplets_per_chunk=20,  # 可視需求調整每個區塊最多抽取的關係數
                 num_workers=4,              # 允許並發抽取以加速流程
                 # allowed_entity_types=["Person", "Organization"], # 若想提供部分提示也可在此加入
@@ -100,7 +100,7 @@ def get_dynamic_schema_graph_query_engine(
 
             graph_index = PropertyGraphIndex.from_documents(
                 documents,
-                llm=Settings.llm,
+                llm=Settings.builder_llm,
                 embed_model=Settings.embed_model,
                 show_progress=True,
                 embed_batch_size=2,

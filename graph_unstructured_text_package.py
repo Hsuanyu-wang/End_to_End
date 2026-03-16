@@ -94,7 +94,7 @@ def get_graph_query_engine(
             # )
             graph_index = PropertyGraphIndex.from_documents(
             documents,
-            llm=Settings.llm,
+            llm=Settings.builder_llm,
             embed_model=Settings.embed_model,
             show_progress=True,
             embed_batch_size=2,

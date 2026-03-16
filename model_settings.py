@@ -25,7 +25,12 @@ def get_settings(model_type: str="small"):
         base_url=config["eval_model"]["ollama_url"],
         request_timeout=300.0
     )
-
+    
+    Settings.builder_llm = Ollama(
+        model=config["builder_model"]["llm_model"], 
+        base_url=config["builder_model"]["ollama_url"],
+        request_timeout=300.0
+    )
     Settings.embed_model = OllamaEmbedding(
         model_name=config["model"]["embed_model"],
         base_url=config["model"]["ollama_url"],

@@ -54,7 +54,7 @@ def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = ""):
     async def custom_llm_func(prompt, system_prompt=None, history_messages=[], **kwargs):
         full_prompt = f"{system_prompt}\n\n{prompt}" if system_prompt else prompt
         # 呼叫 LlamaIndex 的非同步生成方法
-        response = await Settings.llm.acomplete(full_prompt)
+        response = await Settings.builder_llm.acomplete(full_prompt)
         return response.text
 
     # async def perform_ontology_learning(Settings):

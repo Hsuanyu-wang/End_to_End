@@ -212,7 +212,7 @@ class AnchorBuilder:
         """
         rule_entities = extract_entities_rule_based(query)
         llm_entities = await extract_entities_llm(
-            self.settings.llm,
+            self.settings.builder_llm,
             query=query,
             schema_hint=schema_hint,
             rule_entities=rule_entities,
@@ -233,7 +233,7 @@ class AnchorBuilder:
                 try:
                     # 避免成本暴增：只取前 top_k 份文件做補強
                     doc_llm_entities = await extract_doc_entities_llm(
-                        self.settings.llm,
+                        self.settings.builder_llm,
                         list(documents_for_vector)[: max(1, top_k)],
                         schema_hint=schema_hint,
                     )
