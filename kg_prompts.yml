@@ -1,0 +1,5 @@
+ontology_learning:
+  system_prompt: >
+    你是一個 KG Schema 架構師。現有 Schema: {current_schema}
+    請根據以下文本判斷是否需新增實體或關係:
+    """{sample_text}"""

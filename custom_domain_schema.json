@@ -1,0 +1,388 @@
+{
+    "entities": [
+        "Record",
+        "Engineer",
+        "Customer",
+        "Action",
+        "Issue",
+        "Department",
+        "Server",
+        "Version",
+        "MaintainerAccount",
+        "Service",
+        "Report",
+        "API",
+        "Database",
+        "System",
+        "Log",
+        "File",
+        "GeoDB",
+        "GitLab",
+        "Cybereyes",
+        "SSH Server",
+        "Splunk",
+        "Asset",
+        "Identity",
+        "Category",
+        "Priority",
+        "Container",
+        "CSR",
+        "FCB",
+        "FWD03",
+        "MG02",
+        "Arcsight",
+        "DNS_TUNNELING",
+        "eStreamer",
+        "KPMG",
+        "IP_WhiteList",
+        "VirusTotal",
+        "AbuseIPDB",
+        "TCode",
+        "NTP",
+        "Indexer",
+        "Cluster",
+        "KVstore",
+        "PA",
+        "FIsac",
+        "DEP02",
+        "MaintenanceRecord",
+        "AuthorizationQuantity",
+        "ServerPerformance",
+        "SystemOptimizationSuggestion",
+        "VersionUpdate",
+        "EventType",
+        "TrafficEvent",
+        "ThreatEvent",
+        "SystemEvent",
+        "CPUUsageRate",
+        "MemoryUsageRate",
+        "DiskUsageRate",
+        "HealthCheck",
+        "UserRole",
+        "OperatingSystem",
+        "Vulnerability",
+        "Certification",
+        "ARP_table",
+        "DC_ARP_table",
+        "Crowdstrike",
+        "Tenable_API_App",
+        "Splunk_Add_on_for_Google_Cloud_Platform",
+        "IP",
+        "HostsFile",
+        "LicenseMaster",
+        "UF",
+        "IIS_LOG",
+        "DashboardStudio",
+        "SaseUF",
+        "SOAR",
+        "MitreAttack",
+        "ForcepointEndpointDLP",
+        "CheckPointLogCLM",
+        "DataModelDNSAMD",
+        "ESAlert",
+        "DC_ARP_report",
+        "ARP_table_report",
+        "Role",
+        "BucketReplication",
+        "Workaround",
+        "Sourcetype",
+        "AuthorizationQuantity",
+        "LinuxHost",
+        "CentOS",
+        "KVstoreEngine",
+        "SH",
+        "FISAC",
+        "API_IP_Application",
+        "Trendmicro",
+        "GCP",
+        "Websense",
+        "DLP",
+        "BTDC2"
+    ],
+    "relations": [
+        "BELONGS_TO",
+        "HANDLED",
+        "TAKEN_ACTION",
+        "HAS_ISSUE",
+        "AUTHORIZED_BY",
+        "CONTAINS",
+        "INCLUDES",
+        "RELATED_TO",
+        "UPDATES",
+        "TRACKS",
+        "DEPLOYED_ON",
+        "PROCESSED_BY",
+        "CONNECTED_TO",
+        "MONITORS",
+        "CONFIRMED_BY",
+        "ASSOCIATED_WITH",
+        "WHITE_LISTED",
+        "EXECUTED_BY",
+        "CHECKED",
+        "REMOVED",
+        "INSTALLED_ON",
+        "SENT",
+        "OBSERVED",
+        "SYNCHRONIZED",
+        "MAINTAINS",
+        "CONFIRMS",
+        "EVALUATES",
+        "ADJUSTED",
+        "REQUESTED_BY",
+        "NEWLY_ADDED",
+        "REMOVED_FROM",
+        "PRODUCED",
+        "COMPARED_WITH",
+        "INHERITS",
+        "DEPLOYED_ON",
+        "TRIGGERED_BY",
+        "APPLIED_TO"
+    ],
+    "validation_schema": {
+        "Record": [
+            "BELONGS_TO",
+            "TAKEN_ACTION",
+            "HAS_ISSUE",
+            "AUTHORIZED_BY",
+            "CONTAINS",
+            "INCLUDES",
+            "RELATED_TO",
+            "UPDATES",
+            "TRACKS",
+            "DEPLOYED_ON"
+        ],
+        "Engineer": [
+            "HANDLED",
+            "PROCESSED_BY",
+            "EXECUTED_BY",
+            "CHECKED",
+            "REMOVED",
+            "INSTALLED_ON",
+            "SENT",
+            "OBSERVED",
+            "SYNCHRONIZED",
+            "ADJUSTED"
+        ],
+        "Customer": [
+            "BELONGS_TO"
+        ],
+        "Department": [
+            "HANDLED"
+        ],
+        "Server": [
+            "CONTAINS",
+            "AUTHORIZED_BY",
+            "MONITORS",
+            "CONNECTED_TO"
+        ],
+        "Version": [
+            "UPDATES"
+        ],
+        "MaintainerAccount": [],
+        "Service": [
+            "PROCESSED_BY"
+        ],
+        "Report": [
+            "SENT",
+            "PRODUCED"
+        ],
+        "API": [
+            "CONNECTED_TO"
+        ],
+        "Database": [
+            "CONTAINS"
+        ],
+        "System": [
+            "AUTHORIZED_BY",
+            "MONITORS"
+        ],
+        "Log": [
+            "CONTAINS"
+        ],
+        "File": [
+            "CONTAINS"
+        ],
+        "GeoDB": [
+            "UPDATES"
+        ],
+        "GitLab": [
+            "CONFIRMED_BY",
+            "EXECUTED_BY",
+            "CHECKED",
+            "REMOVED",
+            "INSTALLED_ON"
+        ],
+        "Cybereyes": [
+            "CONNECTED_TO",
+            "MONITORS"
+        ],
+        "SSH Server": [],
+        "Splunk": [
+            "PROCESSED_BY",
+            "AUTHORIZED_BY",
+            "CONTAINS",
+            "UPDATES",
+            "EXECUTED_BY",
+            "CHECKED",
+            "REMOVED",
+            "INSTALLED_ON",
+            "OBSERVED"
+        ],
+        "Asset": [
+            "ASSOCIATED_WITH"
+        ],
+        "Identity": [
+            "ASSOCIATED_WITH"
+        ],
+        "Category": [
+            "ASSOCIATED_WITH"
+        ],
+        "Priority": [],
+        "Container": [
+            "PROCESSED_BY"
+        ],
+        "CSR": [],
+        "FCB": [],
+        "FWD03": [],
+        "MG02": [],
+        "Arcsight": [],
+        "DNS_TUNNELING": [
+            "CONTAINS",
+            "RELATED_TO"
+        ],
+        "eStreamer": [
+            "CONTAINS",
+            "MONITORS"
+        ],
+        "KPMG": [
+            "WHITE_LISTED"
+        ],
+        "IP_WhiteList": [
+            "ASSOCIATED_WITH"
+        ],
+        "VirusTotal": [],
+        "AbuseIPDB": [],
+        "TCode": [
+            "EXECUTED_BY"
+        ],
+        "NTP": [
+            "CHECKED",
+            "REMOVED"
+        ],
+        "Indexer": [
+            "INSTALLED_ON",
+            "SYNCHRONIZED",
+            "CONNECTED_TO"
+        ],
+        "Cluster": [
+            "CONTAINS"
+        ],
+        "KVstore": [
+            "CHECKED",
+            "REMOVED"
+        ],
+        "PA": [],
+        "FIsac": [],
+        "DEP02": [],
+        "MaintenanceRecord": [
+            "MAINTAINS",
+            "CONFIRMS",
+            "EVALUATES"
+        ],
+        "AuthorizationQuantity": [
+            "AUTHORIZED_BY"
+        ],
+        "ServerPerformance": [
+            "MONITORS"
+        ],
+        "SystemOptimizationSuggestion": [
+            "RELATED_TO"
+        ],
+        "VersionUpdate": [
+            "UPDATES"
+        ],
+        "EventType": [
+            "INCLUDES"
+        ],
+        "TrafficEvent": [],
+        "ThreatEvent": [],
+        "SystemEvent": [],
+        "CPUUsageRate": [
+            "MONITORS"
+        ],
+        "MemoryUsageRate": [
+            "MONITORS"
+        ],
+        "DiskUsageRate": [
+            "MONITORS",
+            "HealthCheck",
+            "UserRole",
+            "OperatingSystem",
+            "Vulnerability"
+        ],
+        "IP": [
+            "CONTAINS",
+            "RELATED_TO"
+        ],
+        "HostsFile": [
+            "NEWLY_ADDED",
+            "REMOVED_FROM"
+        ],
+        "LicenseMaster": [
+            "CONNECTED_TO"
+        ],
+        "UF": [],
+        "IIS_LOG": [],
+        "DashboardStudio": [],
+        "SaseUF": [],
+        "SOAR": [
+            "SENT"
+        ],
+        "MitreAttack": [
+            "INCLUDES"
+        ],
+        "ForcepointEndpointDLP": [
+            "CONTAINS",
+            "RELATED_TO"
+        ],
+        "CheckPointLogCLM": [
+            "CHECKED",
+            "ADJUSTED"
+        ],
+        "DataModelDNSAMD": [
+            "CONTAINS",
+            "RELATED_TO"
+        ],
+        "ESAlert": [
+            "NEWLY_ADDED"
+        ],
+        "DC_ARP_report": [
+            "PRODUCED",
+            "COMPARED_WITH"
+        ],
+        "ARP_table_report": [
+            "PRODUCED"
+        ],
+        "Role": [
+            "INHERITS"
+        ],
+        "BucketReplication": [
+            "TRIGGERED_BY"
+        ],
+        "Workaround": [
+            "APPLIED_TO"
+        ],
+        "Sourcetype": [
+            "ADJUSTED"
+        ],
+        "LinuxHost": [],
+        "CentOS": [],
+        "KVstoreEngine": [
+            "CHECKED",
+            "REMOVED"
+        ],
+        "SH": [],
+        "FISAC": [],
+        "API_IP_Application": []
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "entities": [
+        "Server",
+        "Software",
+        "Vulnerability",
+        "MaintenanceCategory",
+        "Action"
+    ],
+    "relations": [
+        "INVOLVES_SERVER",
+        "INVOLVES_SOFTWARE",
+        "RESOLVES"
+    ],
+    "validation_schema": {
+        "Engineer": [
+            "HANDLED"
+        ],
+        "Customer": [
+            "BELONGS_TO"
+        ],
+        "Record": [
+            "BELONGS_TO",
+            "HAS_MAINTENANCE_CATEGORY",
+            "TAKEN_ACTION",
+            "HAS_ISSUE"
+        ],
+        "MaintenanceCategory": [
+            "HAS_MAINTENANCE_CATEGORY"
+        ],
+        "Action": [
+            "TAKEN_ACTION",
+            "RESOLVES",
+            "TRIGGERED_BY",
+            "INVOLVES_SERVER",
+            "INVOLVES_SOFTWARE"
+        ]
+    }
+}
