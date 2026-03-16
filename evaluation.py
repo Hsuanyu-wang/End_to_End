@@ -653,6 +653,8 @@ if __name__ == "__main__":
     parser.add_argument("--postfix", type=str, default="", help="for postfix")
     parser.add_argument("-sup", "--sup", type=str, default="", help="for cache method")
     
+    parser.add_argument("--schema_method", type=str, default="static_baseline", help="Schema 方法", choices=["lightrag_default", "iterative_evolution", "llm_dynamic"])
+    
     args = parser.parse_args()
 
     Settings = get_settings(model_type=args.model_type)
@@ -663,6 +665,18 @@ if __name__ == "__main__":
         print("⚡ 已啟用 --qa_dataset_fast_test，自動連動開啟 vector_build_fast_test 與 graph_build_fast_test！")
 
     pipelines_to_test = []
+
+    PIPELINE_FACTORY = {
+        "vector_vector": lambda: RAGPipelineWrapper("Vector", get_vector_query_engine(..., vector_method="vector")),
+        "vector_hybrid": lambda: RAGPipelineWrapper("Hybrid", get_vector_query_engine(..., vector_method="hybrid")),
+        "vector_bm25": lambda: RAGPipelineWrapper("BM25", get_vector_query_engine(..., vector_method="bm25")),
+        "vector_vector": lambda: RAGPipelineWrapper("Vector", get_vector_query_engine(..., vector_method="vector")),
+        "graph_propertyindex": lambda: RAGPipelineWrapper("Graph_PropertyIndex", get_graph_query_engine(..., graph_method="propertyindex")),
+        "graph_dynamic_schema": lambda: RAGPipelineWrapper("Graph_DynamicSchema", get_dynamic_schema_graph_query_engine(..., graph_method="dynamic_schema")),
+        "graph_csr_khop": lambda: RAGPipelineWrapper("CSR_KHop_Graph", get_graph_query_engine(..., graph_method="csr_khop")),
+        "graph_csr_bridge": lambda: RAGPipelineWrapper("CSR_Bridge_Graph", get_graph_query_engine(..., graph_method="csr_bridge")),
+        "graph_lightrag": lambda: RAGPipelineWrapper("LightRAG", get_lightrag_engine(..., mode="local")),
+    }
 
     # -------------------------
     # VECTOR RAG Pipeline Setup
@@ -742,8 +756,31 @@ if __name__ == "__main__":
                 if not os.path.exists(Settings.lightrag_storage_path_DIR):
                     os.mkdir(Settings.lightrag_storage_path_DIR)
                 os.mkdir(os.path.join(Settings.lightrag_storage_path_DIR, args.data_type) + sup)
-                build_lightrag_index(Settings, mode=args.data_mode, data_type=args.data_type, sup=args.sup, fast_build=args.graph_build_fast_test)
-            lightrag_instance = get_lightrag_engine(Settings, data_type=args.data_type, sup=args.sup)
+                # build_lightrag_index(Settings, mode=args.data_mode, data_type=args.data_type, sup=args.sup, fast_build=args.graph_build_fast_test)
+                
+                # 1. 取得動態 Schema
+                from data_processing import data_processing
+                from schema_factory import get_schema_by_method
+                custom_entity_types = get_schema_by_method(
+                    method=args.schema_method, 
+                    text_corpus=data_processing(mode=args.data_mode, data_type=args.data_type), # 若為 llm_dynamic 則傳入樣本
+                    llm=Settings.llm
+                )
+                print(f"🌟 LightRAG 將使用以下實體類別建圖: {custom_entity_types}")
+                
+                # 2. 將其寫入 Settings (確保 lightrag_package.py 讀得到)
+                Settings.lightrag_entity_types = custom_entity_types
+                
+                # 3. 建立帶有動態 Schema 的 LightRAG 索引
+                build_lightrag_index(
+                    Settings, 
+                    mode=args.data_mode, 
+                    data_type=args.data_type, 
+                    sup=args.sup, # 💡 關鍵：將 schema 名稱加入資料夾命名以隔離 Cache
+                    fast_build=args.graph_build_fast_test
+                )
+            
+            lightrag_instance = get_lightrag_engine(Settings, data_type=args.data_type, sup=args.sup + f"_{args.schema_method}")
             if args.lightrag_mode != "none":
                 if args.lightrag_mode == "all":
                     # 若為 all，測試所有模式

@@ -98,17 +98,17 @@ def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = ""):
             # "language": Settings.lightrag_language,
             "entity_types": Settings.lightrag_entity_types
             # DEFAULT_ENTITY_TYPES = [
-            #     "Person",
-            #     "Creature",
-            #     "Organization",
-            #     "Location",
-            #     "Event",
-            #     "Concept",
-            #     "Method",
-            #     "Content",
-            #     "Data",
-            #     "Artifact",
-            #     "NaturalObject",
+                # "Person",
+                # "Creature",
+                # "Organization",
+                # "Location",
+                # "Event",
+                # "Concept",
+                # "Method",
+                # "Content",
+                # "Data",
+                # "Artifact",
+                # "NaturalObject",
             # ]
         }
     )
