@@ -31,8 +31,6 @@ def get_vector_query_engine(Settings, vector_method: str = "vector", top_k: int 
     if fast_build:
         print("⚡ [Vector] 啟用微型建圖模式：僅抽取前 2 筆文本進行快速建圖...")
         documents = documents[:2]
-    else:
-        print("啟用完整建圖模式，進行完整文本建圖...")
         
     index = VectorStoreIndex.from_documents(documents)
 

@@ -134,8 +134,6 @@ def build_lightrag_index(Settings, mode: str = "natural_text", data_type: str = 
         if fast_build:
             print("⚡ [LightRAG] 啟用微型建圖模式：僅抽取前 2 筆文本進行快速建圖...")
             docs = docs[:2]
-        else:
-            print("啟用完整建圖模式，進行完整文本建圖...")
         texts = [doc.text for doc in docs] if hasattr(docs[0], "text") else docs
         rag.insert(texts)
     else:

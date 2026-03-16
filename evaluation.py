@@ -10,6 +10,7 @@ from llama_index.core import Settings
 import nest_asyncio
 import evaluate
 from advanced_vector_package import get_self_query_engine, get_parent_child_query_engine
+from temporal_lightrag_package import TemporalLightRAGPackage
 # from ms_graphrag_package import MSGraphRAGWrapper
 
 nest_asyncio.apply()
@@ -653,7 +654,9 @@ if __name__ == "__main__":
     parser.add_argument("--postfix", type=str, default="", help="for postfix")
     parser.add_argument("-sup", "--sup", type=str, default="", help="for cache method")
     
-    parser.add_argument("--schema_method", type=str, default="static_baseline", help="Schema 方法", choices=["lightrag_default", "iterative_evolution", "llm_dynamic"])
+    parser.add_argument("--lightrag_schema_method", type=str, default="lightrag_default", help="Schema 方法", choices=["lightrag_default", "iterative_evolution", "llm_dynamic"])
+    parser.add_argument("--lightrag_temporal_graph", action="store_true", help="啟用時序 LightRAG 進行檢索")
+    
     
     args = parser.parse_args()
 
@@ -665,18 +668,6 @@ if __name__ == "__main__":
         print("⚡ 已啟用 --qa_dataset_fast_test，自動連動開啟 vector_build_fast_test 與 graph_build_fast_test！")
 
     pipelines_to_test = []
-
-    PIPELINE_FACTORY = {
-        "vector_vector": lambda: RAGPipelineWrapper("Vector", get_vector_query_engine(..., vector_method="vector")),
-        "vector_hybrid": lambda: RAGPipelineWrapper("Hybrid", get_vector_query_engine(..., vector_method="hybrid")),
-        "vector_bm25": lambda: RAGPipelineWrapper("BM25", get_vector_query_engine(..., vector_method="bm25")),
-        "vector_vector": lambda: RAGPipelineWrapper("Vector", get_vector_query_engine(..., vector_method="vector")),
-        "graph_propertyindex": lambda: RAGPipelineWrapper("Graph_PropertyIndex", get_graph_query_engine(..., graph_method="propertyindex")),
-        "graph_dynamic_schema": lambda: RAGPipelineWrapper("Graph_DynamicSchema", get_dynamic_schema_graph_query_engine(..., graph_method="dynamic_schema")),
-        "graph_csr_khop": lambda: RAGPipelineWrapper("CSR_KHop_Graph", get_graph_query_engine(..., graph_method="csr_khop")),
-        "graph_csr_bridge": lambda: RAGPipelineWrapper("CSR_Bridge_Graph", get_graph_query_engine(..., graph_method="csr_bridge")),
-        "graph_lightrag": lambda: RAGPipelineWrapper("LightRAG", get_lightrag_engine(..., mode="local")),
-    }
 
     # -------------------------
     # VECTOR RAG Pipeline Setup
@@ -717,12 +708,12 @@ if __name__ == "__main__":
     # -------------------------
     if args.graph_rag_method != "none":
         if args.graph_rag_method in ["propertyindex", "all"]:
-            engine = get_graph_query_engine(Settings, data_mode=args.data_mode, data_type=args.data_type, fast_build=args.graph_build_fast_test, graph_method="propertyindex")
+            engine = get_graph_query_engine(Settings, data_mode=args.data_mode, data_type=args.data_type, fast_build=args.graph_build_fast_test, graph_method="propertyindex", top_k=args.top_k)
             if engine is not None:
                 pipelines_to_test.append(RAGPipelineWrapper(name="Graph_PropertyIndex_RAG", query_engine=engine))
 
         if args.graph_rag_method in ["dynamic_schema", "all"]:
-            engine = get_dynamic_schema_graph_query_engine(Settings, data_mode=args.data_mode, data_type=args.data_type, fast_build=args.graph_build_fast_test, graph_method="dynamic_schema")
+            engine = get_dynamic_schema_graph_query_engine(Settings, data_mode=args.data_mode, data_type=args.data_type, fast_build=args.graph_build_fast_test, graph_method="dynamic_schema", top_k=args.top_k)
             if engine is not None:
                 pipelines_to_test.append(RAGPipelineWrapper(name="Graph_DynamicSchema_RAG", query_engine=engine))
 
@@ -762,9 +753,9 @@ if __name__ == "__main__":
                 from data_processing import data_processing
                 from schema_factory import get_schema_by_method
                 custom_entity_types = get_schema_by_method(
-                    method=args.schema_method, 
+                    method=args.lightrag_schema_method, 
                     text_corpus=data_processing(mode=args.data_mode, data_type=args.data_type), # 若為 llm_dynamic 則傳入樣本
-                    llm=Settings.builder_llm
+                    settings=Settings
                 )
                 print(f"🌟 LightRAG 將使用以下實體類別建圖: {custom_entity_types}")
                 
@@ -780,7 +771,7 @@ if __name__ == "__main__":
                     fast_build=args.graph_build_fast_test
                 )
             
-            lightrag_instance = get_lightrag_engine(Settings, data_type=args.data_type, sup=args.sup + f"_{args.schema_method}")
+            lightrag_instance = get_lightrag_engine(Settings, data_type=args.data_type, sup=args.sup + f"_{args.lightrag_schema_method}")
             if args.lightrag_mode != "none":
                 if args.lightrag_mode == "all":
                     # 若為 all，測試所有模式
@@ -794,6 +785,29 @@ if __name__ == "__main__":
                     pipelines_to_test.append(wrapper)
             else:
                 print("Skip LightRAG")
+                
+            if args.lightrag_temporal_graph:
+                # 初始化 TemporalLightRAG
+                temporal_rag = TemporalLightRAGPackage(
+                    working_dir=os.path.join(Settings.lightrag_storage_path_DIR, args.data_type + "_temporal")
+                )
+                # 將其包裝進 RAGPipelineWrapper
+                # 注意：這裡的 Wrapper 可能需要稍微調整以相容 TemporalLightRAGPackage 的 query 格式
+                class TemporalWrapper:
+                    def __init__(self, name, rag):
+                        self.name = name
+                        self.rag = rag
+                    async def aquery_and_log(self, user_query):
+                        start_time = time.time()
+                        response = self.rag.query(user_query, mode=args.lightrag_mode, time_weighting=True)
+                        return {
+                            "generated_answer": str(response),
+                            "retrieved_contexts": [],
+                            "retrieved_ids": [],
+                            "source_nodes": [],
+                            "execution_time_sec": round(time.time() - start_time, 4)
+                        }
+                pipelines_to_test.append(TemporalWrapper("Temporal_LightRAG", temporal_rag))
     else:
         print("Skip Graph RAG")
 

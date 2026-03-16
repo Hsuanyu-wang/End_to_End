@@ -46,8 +46,6 @@ def get_dynamic_schema_graph_query_engine(
     if graph_method in ("csr_khop", "csr_bridge"):
         if fast_build:
             print(f"⚡ [{graph_method}] 啟用微型模式：僅抽取前 2 筆文本建圖（cache 仍會依方法名隔離）...")
-        else:
-            print(f"啟用完整模式，建構 CSR {graph_method} 圖譜（cache 依方法名隔離）...")
         return CSRGraphQueryEngine(
             Settings,
             method_name=graph_method,

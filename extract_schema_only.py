@@ -20,7 +20,7 @@ class DynamicKGSchema(BaseModel):
 # 2. 核心：結合 LLM 進行 Schema 的動態演化
 def evolve_schema_with_pydantic(current_schema: dict, batch_docs: list, llm) -> dict:
     # 取適當長度的文本，避免超出 Token 限制 (可依據您的 LLM Context Window 調整)
-    sample_text = "\n\n".join([doc.text[:1000] for doc in batch_docs]) 
+    sample_text = "\n\n".join([doc.text[:] if hasattr(doc, 'text') else str(doc)[:] for doc in batch_docs[:]]) 
     
     # 強化 Prompt：明確告知 LLM 需要「融合」新舊 Schema，而不是每次都重新發明
     prompt_str = """
