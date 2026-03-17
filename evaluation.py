@@ -794,10 +794,12 @@ if __name__ == "__main__":
                 sup = "_" + args.sup
             else:
                 sup = ""
-            if not os.path.exists(os.path.join(Settings.lightrag_storage_path_DIR, args.data_type) + sup):
+                
+            full_sup = args.sup + f"_{args.lightrag_schema_method}"
+            if not os.path.exists(os.path.join(Settings.lightrag_storage_path_DIR, args.data_type) + "_" + full_sup):
                 if not os.path.exists(Settings.lightrag_storage_path_DIR):
                     os.mkdir(Settings.lightrag_storage_path_DIR)
-                os.mkdir(os.path.join(Settings.lightrag_storage_path_DIR, args.data_type) + sup)
+                os.mkdir(os.path.join(Settings.lightrag_storage_path_DIR, args.data_type) + "_" + full_sup)
                 # build_lightrag_index(Settings, mode=args.data_mode, data_type=args.data_type, sup=args.sup, fast_build=args.graph_build_fast_test)
                 
                 # 1. 取得動態 Schema
@@ -818,11 +820,11 @@ if __name__ == "__main__":
                     Settings, 
                     mode=args.data_mode, 
                     data_type=args.data_type, 
-                    sup=args.sup, # 💡 關鍵：將 schema 名稱加入資料夾命名以隔離 Cache
+                    sup=full_sup, # 💡 關鍵：將 schema 名稱加入資料夾命名以隔離 Cache
                     fast_build=args.graph_build_fast_test
                 )
             
-            lightrag_instance = get_lightrag_engine(Settings, data_type=args.data_type, sup=args.sup + f"_{args.lightrag_schema_method}")
+            lightrag_instance = get_lightrag_engine(Settings, data_type=args.data_type, sup=full_sup)
             if args.lightrag_mode != "none":
                 if args.lightrag_mode == "all":
                     # 若為 all，測試所有模式
