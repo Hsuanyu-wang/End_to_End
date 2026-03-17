@@ -173,7 +173,11 @@ class LightRAGWrapper_Original:
                 # 備用方案：若版本較舊僅支援同步 (此情況套用 nest_asyncio)
                 response = self.rag.query(user_query, param=QueryParam(mode=self.mode))
 
-            response = response.text
+            # 相容處理：如果回傳的是 LlamaIndex 物件才取 .text，若已經是字串則維持原樣
+            if hasattr(response, "text"):
+                response = response.text
+            elif not isinstance(response, str):
+                response = str(response)
         except Exception as e:
             print(f"❌ LightRAG 查詢發生錯誤: {e}")
             response = f"發生錯誤: {e}"
