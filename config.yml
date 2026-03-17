@@ -6,11 +6,11 @@ model:
 
 eval_model:
   ollama_url: "http://192.168.63.174:11434"
-  llm_model: "qwen2.5:32b" # llama3.3:70b, llama3:70b-instruct, gpt-oss:120b
+  llm_model: "qwen2.5:14b" # llama3.3:70b, llama3:70b-instruct, gpt-oss:120b
 
 builder_model:
   ollama_url: "http://192.168.63.174:11434"
-  llm_model: "qwen2.5:32b"
+  llm_model: "qwen2.5:14b"
 
 data:
   raw_file_path_DI: "/home/End_to_End_RAG/Data/CSR_20260122_v4_92_clean.jsonl"

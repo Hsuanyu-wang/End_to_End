@@ -1,6 +1,7 @@
 import os
 import json
 import time
+from tqdm import tqdm
 from llama_index.core.evaluation.retrieval.metrics import Recall
 import pandas as pd
 from datetime import datetime
@@ -141,6 +142,55 @@ class RAGPipelineWrapper:
             "execution_time_sec": execution_time_sec # 新增：檢索與生成耗時
         }
 
+class LightRAGWrapper_Original:
+    def __init__(self, name: str, rag_instance, mode="hybrid"):
+        self.name = name
+        self.rag = rag_instance
+        self.mode = mode
+        self._initialized = False
+
+    def query(self, question: str) -> str:
+        # 呼叫 LightRAG 的 query 方法
+        from lightrag.lightrag import QueryParam
+        return self.rag.query(question, param=QueryParam(mode=self.mode))
+
+    async def aquery_and_log(self, user_query: str) -> Dict[str, Any]:
+        from lightrag.lightrag import QueryParam
+        import inspect
+        start_time = time.time()
+        Settings = get_settings(model_type=args.model_type)
+        try:
+            # [新增] 解決 LightRAG 新版在 aquery 時發生 AttributeError: __aenter__ 的鎖定問題
+            if not self._initialized and hasattr(self.rag, "initialize_storages"):
+                await self.rag.initialize_storages()
+                self._initialized = True
+
+            if hasattr(self.rag, "aquery"):
+                response = await self.rag.aquery(user_query, param=QueryParam(mode=self.mode))
+            elif inspect.iscoroutinefunction(self.rag.query):
+                response = await self.rag.query(user_query, param=QueryParam(mode=self.mode))
+            else:
+                # 備用方案：若版本較舊僅支援同步 (此情況套用 nest_asyncio)
+                response = self.rag.query(user_query, param=QueryParam(mode=self.mode))
+
+            response = response.text
+        except Exception as e:
+            print(f"❌ LightRAG 查詢發生錯誤: {e}")
+            response = f"發生錯誤: {e}"
+        
+        # 紀錄結束時間並計算耗時
+        end_time = time.time()
+        execution_time_sec = round(end_time - start_time, 4)
+        
+        # 封裝為標準輸出格式，確保後續評估系統不會出現 IndexError/TypeError
+        return {
+            "generated_answer": str(response) if response else "找不到答案",
+            "retrieved_contexts": [],
+            "retrieved_ids": [],            
+            "source_nodes": [],              
+            "execution_time_sec": execution_time_sec
+        }
+
 class LightRAGWrapper:
     def __init__(self, name: str, rag_instance, mode="hybrid"):
         self.name = name
@@ -227,8 +277,8 @@ class LightRAGWrapper:
             )
             # prompt = (
             #     PROMPTS["rag_response"].format(
-            #         query=user_query,
-            #         retrieved_contexts=retrieved_contexts
+            ##         query=user_query,
+            #         retrieved_contexts=context_str
             #     )
             # )
             
@@ -519,8 +569,8 @@ async def run_evaluation(qa_datasets: List[Dict], pipelines: List[RAGPipelineWra
         
         pipeline_detailed_results = []
 
-        for idx, qa in enumerate(qa_datasets):
-            print(f"  正在評估第 {idx+1}/{len(qa_datasets)} 題...")
+        for idx, qa in tqdm(enumerate(qa_datasets), total=len(qa_datasets), desc=f"評估 {pipeline.name} 進度"):
+            # print(f"  正在評估第 {idx+1}/{len(qa_datasets)} 題...")
             query = qa["query"]
             gt_answer = qa["ground_truth_answer"]
             gt_ids = qa["ground_truth_doc_ids"]
@@ -547,7 +597,8 @@ async def run_evaluation(qa_datasets: List[Dict], pipelines: List[RAGPipelineWra
                 pipeline_detailed_results.append(metrics_row)
 
             except Exception as e:
-                print(f"⚠️ 第 {idx+1} 題評測崩潰，跳過。錯誤: {e}")
+                # print(f"⚠️ 第 {idx+1} 題評測崩潰，跳過。錯誤: {e}")
+                tqdm.write(f"⚠️ 第 {idx+1} 題評測崩潰，跳過。錯誤: {e}")
                 continue
 
         # --- 儲存單一 Pipeline 詳細報表 ---
@@ -612,7 +663,7 @@ if __name__ == "__main__":
     # method
     parser.add_argument("--vector_method", type=str, default="none", choices=["none", "hybrid", "vector", "bm25", "all"])
     parser.add_argument("--graph_rag_method", type=str, default="none", choices=["none", "propertyindex", "lightrag",  "dynamic_schema", "all"]) #"graphrag", "csr_khop", "csr_bridge", 
-    parser.add_argument("--lightrag_mode", type=str, default="none", choices=["none", "local", "global", "hybrid", "mix", "naive", "bypass", "all"])
+    parser.add_argument("--lightrag_mode", type=str, default="none", choices=["none", "local", "global", "hybrid", "mix", "naive", "bypass", "original", "all"])
     """
     "Query Mode Differences:
         - local: Focuses on entities and their related chunks based on low-level keywords
@@ -779,6 +830,9 @@ if __name__ == "__main__":
                     for mode in modes_to_test:
                         wrapper = LightRAGWrapper(name=f"LightRAG_{mode.capitalize()}", rag_instance=lightrag_instance, mode=mode)
                         pipelines_to_test.append(wrapper)
+                elif args.lightrag_mode == "original":
+                    wrapper = LightRAGWrapper_Original(name="LightRAG_Original", rag_instance=lightrag_instance, mode="hybrid")
+                    pipelines_to_test.append(wrapper)
                 else:
                     # 若非 all，只測試指定的 lightrag_mode
                     wrapper = LightRAGWrapper(name=f"LightRAG_{args.lightrag_mode.capitalize()}", rag_instance=lightrag_instance, mode=args.lightrag_mode)
