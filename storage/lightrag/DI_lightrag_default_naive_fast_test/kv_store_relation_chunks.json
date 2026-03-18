@@ -1,0 +1,191 @@
+{
+  "A人員<SEP>B客戶": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "A人員<SEP>B客戶"
+  },
+  "A部門<SEP>Maintainer帳號權限確認": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "A部門<SEP>Maintainer帳號權限確認"
+  },
+  "B同事<SEP>FISAC資料收容-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "B同事<SEP>FISAC資料收容-進行中"
+  },
+  "SH KVstore引擎異常測試-進行中<SEP>個人測試環境": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "SH KVstore引擎異常測試-進行中<SEP>個人測試環境"
+  },
+  "LDAP設定<SEP>Splunk LDAP驗證設定": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "LDAP設定<SEP>Splunk LDAP驗證設定"
+  },
+  "Management搜尋異常<SEP>代辦事項": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "Management搜尋異常<SEP>代辦事項"
+  },
+  "B客戶<SEP>Splunk每週onsite": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "B客戶<SEP>Splunk每週onsite"
+  },
+  "A部門<SEP>DEP02移轉後服務確認": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "A部門<SEP>DEP02移轉後服務確認"
+  },
+  "BTDC2問題處理<SEP>代辦事項": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "BTDC2問題處理<SEP>代辦事項"
+  },
+  "Carbon-Fiber Spikes<SEP>World Athletics Federation": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "Carbon-Fiber Spikes<SEP>World Athletics Federation"
+  },
+  "DEP02 root帳號使用確認<SEP>代辦事項": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771933,
+    "update_time": 1773771933,
+    "_id": "DEP02 root帳號使用確認<SEP>代辦事項"
+  },
+  "Splunk Add-on for Google Cloud Platform的sourcetype<SEP>代辦事項": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "Splunk Add-on for Google Cloud Platform的sourcetype<SEP>代辦事項"
+  },
+  "Tenable API App串接<SEP>代辦事項": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "Tenable API App串接<SEP>代辦事項"
+  },
+  "Centos作業系統升級(評估中)<SEP>代辦事項": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "Centos作業系統升級(評估中)<SEP>代辦事項"
+  },
+  "A人員<SEP>F客戶": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "A人員<SEP>F客戶"
+  },
+  "375 GB<SEP>splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "375 GB<SEP>splunk_銀行處12月月維護"
+  },
+  "Noah Carter<SEP>World Athletics Federation": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "Noah Carter<SEP>World Athletics Federation"
+  },
+  "1276GB<SEP>splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "1276GB<SEP>splunk_銀行處12月月維護"
+  },
+  "F客戶<SEP>splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771934,
+    "update_time": 1773771934,
+    "_id": "F客戶<SEP>splunk_銀行處12月月維護"
+  },
+  "9.3.3/2025.02.26<SEP>F客戶": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771935,
+    "update_time": 1773771935,
+    "_id": "9.3.3/2025.02.26<SEP>F客戶"
+  },
+  "10.0.2/2025.11.14<SEP>F客戶": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771935,
+    "update_time": 1773771935,
+    "_id": "10.0.2/2025.11.14<SEP>F客戶"
+  }
+}

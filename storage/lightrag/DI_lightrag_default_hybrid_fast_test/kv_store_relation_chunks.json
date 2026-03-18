@@ -1,0 +1,110 @@
+{
+  "A人員<SEP>B客戶": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "A人員<SEP>B客戶"
+  },
+  "A部門<SEP>Splunk": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "A部門<SEP>Splunk"
+  },
+  "B部門<SEP>FISAC": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "B部門<SEP>FISAC"
+  },
+  "3.4% Decline<SEP>Nexon Technologies": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "3.4% Decline<SEP>Nexon Technologies"
+  },
+  "Alex<SEP>Cruz": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "Alex<SEP>Cruz"
+  },
+  "B客戶<SEP>C人員": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "B客戶<SEP>C人員"
+  },
+  "A人員<SEP>SH KVstore引擎異常測試-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "A人員<SEP>SH KVstore引擎異常測試-進行中"
+  },
+  "A人員<SEP>F客戶": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773742595,
+    "update_time": 1773742595,
+    "_id": "A人員<SEP>F客戶"
+  },
+  "2025/12/26 15:00至2025/12/26 16:00<SEP>splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773742595,
+    "update_time": 1773742595,
+    "_id": "2025/12/26 15:00至2025/12/26 16:00<SEP>splunk_銀行處12月月維護"
+  },
+  "Tokyo<SEP>World Athletics Championship": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773742595,
+    "update_time": 1773742595,
+    "_id": "Tokyo<SEP>World Athletics Championship"
+  },
+  "F客戶<SEP>splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773742595,
+    "update_time": 1773742595,
+    "_id": "F客戶<SEP>splunk_銀行處12月月維護"
+  },
+  "A人員<SEP>splunk_银行业务部十二月维护": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773742595,
+    "update_time": 1773742595,
+    "_id": "A人員<SEP>splunk_银行业务部十二月维护"
+  }
+}

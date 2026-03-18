@@ -1,0 +1,555 @@
+{
+  "doc-39206ec5906f23d68e051b1df74d3ca7": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/10  09:30 至 2025/11/10  12:00。\n狀態描述 (Description): 資料平衡確認與未連接license master解決\n處置動作 (Action): 工作事項：\n1. 新增/etc/hosts，並重起服務後，正常連線至LM\n2. 確認資料持續進行平衡，且無空間滿載",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-39206ec5906f23d68e051b1df74d3ca7"
+  },
+  "doc-cdd29ae3537f38a27c3848632ad51359": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/13  13:30 至 2026/01/13  17:30。\n狀態描述 (Description): Splunk駐點服務202601第二周(2026/1/13)\n處置動作 (Action): 本周工作項目如下:\n1.     更新GeoDB\n2.     Cybereyes API 串接\n     已完成 cybereyes api 串接，並確認新資料進到 splunk\n     目前已建立以下兩個新資料測試版本告警，若後續經觀察及比對確認資料無誤再全面改成由新資料觸發 cybereyes 告警\n     大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中)\n     Cybereyes高(high)風險告警_new (測試中)\n3.     FWD03 底層資料收容\n     由於FCB設定資料永久保存占用磁碟空間，目前已將資料收進splunk，下周確認資料內容後再討論後續處理方式\n待辦事項:\n1. SSH Server 漏洞修補\n2. Gitlab漏洞修補",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-cdd29ae3537f38a27c3848632ad51359"
+  },
+  "doc-0640212d45b4b92d91d0255cf90edf96": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/24  09:00 至 2025/11/24  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251114\n處置動作 (Action): 前一封CSR時間誤植，\n工作內容如下：\nSplunk升版完成",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-0640212d45b4b92d91d0255cf90edf96"
+  },
+  "doc-333af5cc1ff286e512f36be66d1aa78b": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/24  13:30 至 2025/12/24  20:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk角色能力異常\n因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以\n區分權限高低。\n2.PA 每月報表觸發動作變更\n因目前未發現任何相關報表寄送錯誤，也確認並無排程略過問題，為了後續如再次發生排程報表未寄送之問題，已將PA每月報表觸發的預設寄件套\n件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查。\n3.Linux主機使用者與使用者權限-進行中\n已在172.18.44.33(DEP02)主機上新增使用者 sailag，並套用先前信件附件中的權限設定\n請A同事再次申請檢測sailag使用者權限是否合規，將在檢測通過後於其他主機上新增使用者\nB部門\n1.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n代辦事項：\n1.Centos作業系統升級(評估中)\n2.DEP02 ([IP])移轉(下周進行)\n3.新增Splunk Add-on for Google Cloud Platform的sourcetype\n4.Tenable API App串接",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-333af5cc1ff286e512f36be66d1aa78b"
+  },
+  "doc-b8ec2739edb4ee1ccc4cf68534e90be5": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/02  17:33 至 2026/01/02  17:35。\n狀態描述 (Description): Splunk SIEM(12)月維護.DM20240200+DN20240393\n處置動作 (Action): 1.授權用量 :正常\n- 授權量 : 150 GB\n- 平均授權使用量 : 139.07 GB\n2.伺服器效能 : 異常\n- 自12/9左右開始CPU及磁碟用量明顯上升且已持續兩周，推測為FCB設定導致，目前已將設定還原，並持續觀察\n3.系統優化建議 :無\n4.版本更新 : 暫不更新\n- 當前版本: 9.3.8 / 2025.11.14\n- 最新版本: 10.0.2 / 2025.11.14\n- 因目前版本並未有重大弱點，也未受相關BUG，故建議暫不升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-b8ec2739edb4ee1ccc4cf68534e90be5"
+  },
+  "doc-1e6e1908b68b82814f06780675f7938b": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/07  15:00 至 2025/11/07  17:00。\n狀態描述 (Description): IDX硬碟空間滿載與資料同步問題\n處置動作 (Action): 工作事項：\nIDX01重新加入後，因同步資料導致IDX02與IDX03滿載\n將ocp_cdibh資料刪除後，重新進行資料同步，\n離開前資料備份的同步已經完成，\n資料大小平衡持續進行中。",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-1e6e1908b68b82814f06780675f7938b"
+  },
+  "doc-738a58105cbf665748b3257e0cfee9ac": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/09  13:30 至 2025/12/09  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251209\n處置動作 (Action): 本日工作項目：\n1.新增forcepoint endpoint dlp資料收容\nTcpdump尚未看到封包，待實際拋送後確認\n2.確認checkpoint logclm uf log limit\n今日發現checkpoint資料收容有約40min延遲\n確認原因為該UF已達到預設輸出上限 (256kb/s)\n已將全數logclm UF調整上限為 20480 KB/S\n同時發現該維護報告該檢查並未開啟，已重新開啟\n3.調整datamodel dnsAMD 與新增告警\n先前已設定基本的Risk分數計算機制，但目前告警覆蓋率較狹窄，並未能明顯看出不同種類的攻擊，並套用於MitreAttack框架\n開始針對ES預設的告警進行新增，目前優先針對DNS 、 Traffic、Auentication Datamodel進行告警新增\n今日發現DNS Datamodel src欄位異常，已完成修復，並新增ES告警”是否有內部IP嘗試連線於dynamic domain(IP浮動)”\n新增ES告警監測”是否有設備連線至很少見的port”",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-738a58105cbf665748b3257e0cfee9ac"
+  },
+  "doc-76068a2f95fd89e7ceb4741d4eb478ce": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/17  09:00 至 2025/11/17  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251117\n處置動作 (Action): 今日工作內容如下，\n1.Splunk升版，從9.3.3升版至9.3.8，再麻煩您申請弱點復掃\n2.修改sase UF資料收容路徑至/var/log/mammoth\n待完成工作項目：\n1.FISAC API Input無資料時會跳Error\n2.Finding會因為threat object重複顯示，需進行ES版本升級\n3.資產新增報廢/營運中欄位\n4. 關閉imsdb02UF中舊的殘留input設定\n5.關閉dashboard studio未使用的系統排程",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-76068a2f95fd89e7ceb4741d4eb478ce"
+  },
+  "doc-5479196dee25b34d077c01190c6c728b": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/07  13:30 至 2025/10/07  17:30。\n狀態描述 (Description): Splunk駐點服務202510第二周(2025/10/07)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.自動化封鎖清單異動儀表板建置 (進行中)\n3.情資白名單新增 Cyble ASM IP\n待辦事項:\n1. 告警盤點",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-5479196dee25b34d077c01190c6c728b"
+  },
+  "doc-203eba714089c79438cfc39755f054ce": {
+    "content": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/24  11:30 至 2025/11/24  12:00。\n狀態描述 (Description): splunk_銀行處11月月維護\n處置動作 (Action): 1.授權用量 : 建議擴充\n-授權量 : 375 GB\n-平均授權使用量 : 1398GB\n2.伺服器效能 : 無\n3.系統優化建議 : 無\n4.版本更新 : 建議更新\n當前版本：9.3.3/2025.02.26\n最新版本：10.0.2/2025.11.14\n現行版本近期被掃出弱點，建議進行升版\n5.問題追蹤：無",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-203eba714089c79438cfc39755f054ce"
+  },
+  "doc-25d7c29d65aa0e4d54fb4af54207fa0d": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/14  09:00 至 2025/11/14  15:33。\n狀態描述 (Description): E客戶駐點工作事項 - 20251114\n處置動作 (Action): 今日工作內容如下，預計下周二(11/18)到場作業，請您協助申請底層\n1.Disable splunk自動version check\n2.CEF outputs套件調整送出格式\n甲、將換行字元取代成空格\n乙、最尾端新增一個空格\n3.調整IIS LOG拋送目的\n待完成工作項目：\n4.Finding會因為threat object重複顯示，需進行ES版本升級\n5.Splunk版本升級\n6.資產新增報廢/營運中欄位\n7. 關閉imsdb02UF中舊的殘留input設定\n8.SH FISAC API input (未使用)關閉",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-25d7c29d65aa0e4d54fb4af54207fa0d"
+  },
+  "doc-3781d1671ca7126e99e7656264965fb6": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/10  13:30 至 2025/12/10  20:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): A部門\n1.Splunk 使用者權限調整\n新增maintainer角色，並設定能力值。\n調整ess_analyst 角色能力值，供HANK進行分析使用\nB部門\n1.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n代辦事項：\n1.Centos作業系統升級(評估中)\n2.DEP02 ([IP])移轉(下周進行)\n3.Linux主機使用者與使用者權限",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-3781d1671ca7126e99e7656264965fb6"
+  },
+  "doc-56b76e765b58a558604d5d6f2575d2ca": {
+    "content": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/07  13:50 至 2025/11/07  17:30。\n狀態描述 (Description): Splunk_11月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：20GB\n-平均授權用量：133.26GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：建議先擴充授權使用量，再進行版本升級\n-當前版本：8.0.6 / 2024.10.22\n-最新版本：10.0.1 / 2025.09.25\n建議先擴充授權使用量，再進行版本升級\n5.問題追蹤：無\n6.補充：\n作業系統版本：Red Hat 9.4\nEOS date:2027/5/31\n作業系統弱點：CVE-2023-3567、CVE-2023-4133、CVE-2023-6932、CVE-2023-39198、CVE-2023-51043、CVE-2023-51779、CVE-2023-\n5178",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-56b76e765b58a558604d5d6f2575d2ca"
+  },
+  "doc-fcc4bf66788ce00c23c3e736753ea50a": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/07/29  12:00 至 2025/07/29  13:00。\n狀態描述 (Description): Splunk 2025 MA 07月定保.DM20250088_(3/12)\n處置動作 (Action): 前一份CSR內容誤植，重新撰寫\n1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：630 GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：現行版本近期被掃出弱點，建議進行升版\n-當前版本：9.3.3 / 2025.02.26\n-最新版本：10.0.0 / 2025.07.28",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-fcc4bf66788ce00c23c3e736753ea50a"
+  },
+  "doc-f6caccf00501b5f4caf06dcfc047ae9e": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/17  13:30 至 2025/11/17  17:30。\n狀態描述 (Description): Splunk駐點服務202511第三周(2025/11/17)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.AI網站服務紀錄調閱 (202508-202510)\n3.2025弱點掃描報告資訊整理\n4.eStreamer 資料異常處理\n發現eStreamer資料從11/14 23:20後僅收到狀態log，且KVstore狀態異常，重啟服務後資料已陸續進到splunk\n5.KPMG滲透測試IP白名單\n已將IP及網段加入白名單，並修改告警語法，使其同時比對IP及網段\n待辦事項:\n1. 告警盤點",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-f6caccf00501b5f4caf06dcfc047ae9e"
+  },
+  "doc-d96ca3133c54d9d76add7de434ee05b5": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/05  13:30 至 2025/11/05  19:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk整體架構IP調整-完成\n已設定完成所有主機的新IP\n2.Splunk套件升級-完成\n已部屬新套件至各SH上。\n3.NTP服務檢查-完成\n已檢查各台主機的 NTP服務已啟用。\n4.KVstore 憑證效期檢查\n已將過期憑證移除並重新產生新憑證(有效期至2028/11)，確認kvstore 狀態為正常。\n5.SPLUNK月報寄送\n已將SPLUNK2024/09~2025/08的維護報告寄給C同事\nB部門\n1.FIsac情資撈取\n已設定完成，正在等待防火牆開通。\n2.新增indexer\n新增indexer至IDX cluster節點，目前將觀察index同步狀態。\n代辦事項：\nCentos作業系統升級(評估中)\nSplunk 10月維護報告\n檢查B部門indexer索引同步狀態\n檢查各台主機KV store 憑證效期(B部門)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-d96ca3133c54d9d76add7de434ee05b5"
+  },
+  "doc-8a83bcdf6e7b7269cfd17b4f21457de8": {
+    "content": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/12  13:30 至 2025/12/12  17:30。\n狀態描述 (Description): splunk憑證跟換\n處置動作 (Action): 今日到場作業事項為：\n更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑\n已確認SPLUNK可正常登入使用、KVSTORE 狀態正常，網頁憑證期限更新至2027/12月",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-8a83bcdf6e7b7269cfd17b4f21457de8"
+  },
+  "doc-9648988cb67db9843bc13754ac3d6ab6": {
+    "content": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/05  13:30 至 2025/12/05  15:30。\n狀態描述 (Description): Splunk_12月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：20GB\n-平均授權用量：55.15GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：建議先擴充授權使用量，再進行版本升級\n-當前版本：8.0.6 / 2024.10.22\n-最新版本：10.0.2 / 2025.11.14\n建議先擴充授權使用量，再進行版本升級\n5.問題追蹤：無\n6.補充：\n作業系統版本：Red Hat 9.4\nEOS date:2027/5/31\n作業系統弱點：CVE-2023-3567、CVE-2023-4133、CVE-2023-6932、CVE-2023-39198、CVE-2023-51043、CVE-2023-51779、CVE-2023-\n5178",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-9648988cb67db9843bc13754ac3d6ab6"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "content": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/26  15:00 至 2025/12/26  16:00。\n狀態描述 (Description): splunk_銀行處12月月維護\n處置動作 (Action): 1.授權用量 : 建議擴充\n-授權量 : 375 GB\n-平均授權使用量 : 1276GB\n2.伺服器效能 : 無\n3.系統優化建議 : 無\n4.版本更新 : 建議更新\n當前版本：9.3.3/2025.02.26\n最新版本：10.0.2/2025.11.14\n現行版本近期被掃出弱點，建議進行升版\n5.問題追蹤：無",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-d02e98febcd8f8650bbe77d789a41d69": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/04  13:30 至 2025/12/04  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251204\n處置動作 (Action): 本日工作項目：\n1. 修改SASE VPN登入成功報表條件，與確認送至SOAR欄位\n2. 針對不同mitreattack新增告警",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-d02e98febcd8f8650bbe77d789a41d69"
+  },
+  "doc-8ebe784b7ece61edcdd2e054763c0ce3": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/31  13:30 至 2025/12/31  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.帳號盤點清單確認\n已完成帳號盤點並寄送報表給Hank\nB部門\n2.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n3.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n代辦事項：\n1.Centos作業系統升級(評估中)\n2.DEP02 ([IP])移轉(下周進行)\n3.新增Splunk Add-on for Google Cloud Platform的sourcetype\n4.Tenable API App串接\n5.Management.搜尋異常\n6.BTDC2 問題處理\n7.DEP02 root服務確認",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-8ebe784b7ece61edcdd2e054763c0ce3"
+  },
+  "doc-f62a98ad02d11a4c9618cbda43281859": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/05  13:30 至 2025/11/05  19:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk整體架構IP調整-完成\n已設定完成所有主機的新IP\n2.Splunk套件升級-完成\n已部屬新套件至各SH上。\n3.NTP服務檢查-完成\n已檢查各台主機的 NTP服務已啟用。\n4.KVstore 憑證效期檢查\n已將過期憑證移除並重新產生新憑證(有效期至2028/11)，確認kvstore 狀態為正常。\n5.SPLUNK月報寄送\n已將SPLUNK2024/09~2025/08的維護報告寄給Hank\nB部門\n1.FIsac情資撈取\n已設定完成，正在等待防火牆開通。\n2.新增indexer\n新增indexer至IDX cluster節點，目前將觀察index同步狀態。\n代辦事項：\nCentos作業系統升級(評估中)\nSplunk 10月維護報告\n檢查B部門indexer索引同步狀態\n檢查各台主機KV store 憑證效期(B部門)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-f62a98ad02d11a4c9618cbda43281859"
+  },
+  "doc-942b136689124792272bc32a2898842c": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/31  13:30 至 2025/12/31  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.帳號盤點清單確認\n已完成帳號盤點並寄送報表給C同事\nB部門\n2.FISAC資料收容-進行中\n目前已請B同事 向FISAC提交需使用API的IP申請單。\n3.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n代辦事項：\n1.Centos作業系統升級(評估中)\n2.DEP02 ([IP])移轉(下周進行)\n3.新增Splunk Add-on for Google Cloud Platform的sourcetype\n4.Tenable API App串接\n5.Management.搜尋異常\n6.BTDC2 問題處理\n7.DEP02 root服務確認",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-942b136689124792272bc32a2898842c"
+  },
+  "doc-c7743e93210e95e8e40e0d2a627684b7": {
+    "content": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/19  13:30 至 2025/11/19  14:30。\n狀態描述 (Description): 設備接收狀態檢查\n處置動作 (Action): 今日工作項目如下：\n1.asa事件接收異常\n問題：新增UDP接收來自172.20.137.45的asa事件，於搜尋頁面上卻查詢不到該IP事件\n解決辦法：於indexer cluster上新增索引後部署至底下indexer，再次於SH上執行搜尋即可查詢事件\n2.checkpoint相關告警查看\n確認所有checkpoint告警使用情況。",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-c7743e93210e95e8e40e0d2a627684b7"
+  },
+  "doc-2fe3f974e54dd1f1ad98289cc79980d6": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/15  13:30 至 2025/12/15  17:30。\n狀態描述 (Description): Splunk駐點服務202512第三周(2025/12/15)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.主機異常處理\nMG02磁碟用量超過90% -> 刪除過去備份及安裝檔，已降至85%\nFWD03備份異常 -> 原因為FCB設定導致備份目的路徑權限限縮，導致無法備份，已復原權限並手動執行備份\n3.Cyble ASM IP白名單更新\n4.Splunk帳號更動\n由於人員變更，經確認後已刪除Ryan之Splunk帳號\n5.Arcsight和Splunk 歷史案件調閱\n待辦事項:\n1. GitLab 漏洞修補",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-2fe3f974e54dd1f1ad98289cc79980d6"
+  },
+  "doc-1e6839b81653aa7c9b7ec794f3447380": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/23  09:00 至 2025/12/23  18:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251223\n處置動作 (Action): 本日工作事項如下：\n1.Websebse log 異常截斷\nRaw data內就有換行字元，導致異常截斷\n嘗試修改props.conf，調整截斷規則，離開前未解決，下次到場時處理\n2.建立SASE VPN kick session報表建立\n3.Nix logon success語法確認",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-1e6839b81653aa7c9b7ec794f3447380"
+  },
+  "doc-2940790b50eb2cba2a5e944b95a94dd5": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/18  13:30 至 2025/11/18  17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.PA報表寄信異常-完成\n已設定PA 每月Block Category報表新的寄送套件，將於下個月1號確認該報表寄送郵件情況。\nB部門\n1.檢查各台主機KV store 憑證效期\n已更新全部主機之KV store 憑證(效期至：2028/11)。\n2.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n3.Splunk bundle儲存量過大\n加入設定以停止預先儲存/apps/search路徑下的csv檔案作為知識包。\n4.Indexer 索引同步狀態\n確認index同步狀態為正常。\n代辦事項：\nCentos作業系統升級(評估中)\n(A部門)DEP02連動主機檢查",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-2940790b50eb2cba2a5e944b95a94dd5"
+  },
+  "doc-5618eb566fb322ada0eb69bef88a7581": {
+    "content": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/21  09:30 至 2025/11/21  17:00。\n狀態描述 (Description): 防火牆事件匯入時間異常\n處置動作 (Action): 今日到場作業如下：\n1.PA TRAFFIC事件sourcetype更換\n將sourcetype更改為pan:log，並套用設定使splunk判斷事件類型，事件規則如下：\n如果PA事件類型為traffic，則套用立嘉的欄位擷取設定\n如果PA事件類型為threat或system，則使用預設設定。\n2.PA事件時間誤差：\n目前做法為刪除判定事件時間為當下時間的設定，並加上事件時間只抓取事件前32個位元的範圍。",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-5618eb566fb322ada0eb69bef88a7581"
+  },
+  "doc-5f0773b8daffa7a65254a73867e36afb": {
+    "content": "這是一筆關於 D客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/26  13:30 至 2025/11/26  14:30。\n狀態描述 (Description): pice_logs 缺漏處理\n處置動作 (Action): 先前提到pice_logs有缺少檔案的狀況\n經查原因為檔案中的log太過相似，splunk會自動判定為相同的log而不重複收容\n今日已添加設定，讓splunk監控所有檔案即使內容相似\n新增設定後已完整收容所有檔案之資料",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-5f0773b8daffa7a65254a73867e36afb"
+  },
+  "doc-dddcb833d814b293bd936732652206d0": {
+    "content": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/26  14:00 至 2025/12/26  15:00。\n狀態描述 (Description): splunk_信用卡處12月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：100GB\n-平均授權用量：124GB\n2.伺服器效能：正常\n3.系統優化建議：根據說明定期檢查\n問題：有137台UF已超過15分鐘未與indexer連線\n建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。\n4.版本更新：建議更新\n-當前版本：9.3.3/2025.02.26\n-最新版本：10.0.2/2025.11.14\n現行版本近期被掃出弱點，建議進行升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-dddcb833d814b293bd936732652206d0"
+  },
+  "doc-8bddb98b4a84e394c0a4558b42ae12d0": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/18  09:00 至 2025/12/18  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251218\n處置動作 (Action): 本日工作項目：\n1.ES升版\n甲、自8.0.3升版至8.2.3\n2.資產上傳APP程式調整\n甲、將”硬體狀態”欄位加入category中\n乙、若硬體狀態為”移出” or “報廢” ，severity將設為medium\n3.確認內對內告警 urgency = critical原因\n甲、該告警severity 原先就為 high\n乙、而該告警對應資產priorty為critical，故urgency提升至critical\n4.Indexer設定防串改\n甲、設定路徑為 indexes.conf 中 [defaut] enableDataIntegrityControl=true",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-8bddb98b4a84e394c0a4558b42ae12d0"
+  },
+  "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/30  13:30 至 2025/12/30  17:30。\n狀態描述 (Description): Splunk駐點服務202512第五周(2025/12/30)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.<HTTPS大量傳輸告警>調整\n排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄\n3.FWD02 CPU及磁碟用量異常\n今日發現自12/9左右開始FWD02的CPU用量明顯上升且已持續兩周，同時磁碟用量也達到90%，其中estreamer資料占用約109G\n推測原因為12/9執行FCB腳本時加入了大量稽核規則，且會將稽核日誌轉發到 /var/log/secure，導致estreamer資料量增加\n目前已關閉日誌轉發設定，並將estreamer 資料清理排程調整為僅留存6小時資料 (原為12小時)，減少占用磁碟空間\n待辦事項:\n1. SSH Server 漏洞修補",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+  },
+  "doc-996c8aba3ce4de0e9bb90c0d569231f3": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/10/30  13:30 至 2025/10/30  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251030\n處置動作 (Action): 工作內容如下\n1. 協助新增寄信套件\n2. 完成寄信測試",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-996c8aba3ce4de0e9bb90c0d569231f3"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2026/01/07  13:30 至 2026/01/07  17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): A部門\n1.Maintainer帳號權限確認\n已確認角色能力可符合日常工作使用。\n2.DEP02移轉後服務確認\n已確認服務正確，並再次執行健康檢查確認系統功能正常。\n3.PA報表寄送異常檢查\n已確認splunk有寄出報告並記錄於cim_modactions索引中，目前以請A同事向IT部門確認exchange是否有收到splunk報告。\nB部門\n1.FISAC資料收容-進行中\n目前已請B同事 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n3.LDAP設定\n已完成splunk LDAP驗證設定\n代辦事項：\n1.Management搜尋異常\n2.BTDC2 問題處理\n3.DEP02 root帳號使用確認\n4.新增Splunk Add-on for Google Cloud Platform的sourcetype\n5.Tenable API App串接\n6.Centos作業系統升級(評估中)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-d0d3b88d3601a1081c8354e0ef27952f": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/15  09:00 至 2025/12/15  18:00。\n狀態描述 (Description): Splunk Indexer queue full -20251215\n處置動作 (Action): 工作項目：\n暫時認定原因為bucket replication造成，\n採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-d0d3b88d3601a1081c8354e0ef27952f"
+  },
+  "doc-0944d4a59fb7a84bd79d2fca8361e518": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/17  13:30 至 2025/12/17  18:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk角色能力異常\n已於底層重新調整es_admin_user與admin角色的能力，並於網頁上驗證功能可使用\n2.PA 每月報表補寄\n已補寄報表，後續將繼續查看排程無法正常寄送報表問題。\nB部門\n1.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n3.新增DNS設定\n已新增DNS 設定於forwarder上\n4.部屬新crowdstrike套件\n已部屬套件於SH上\n代辦事項：\n1.Centos作業系統升級(評估中)\n2.DEP02 ([IP])移轉(下周進行)\n3.Linux主機使用者與使用者權限\n4.新增Splunk Add-on for Google Cloud Platform的sourcetype\n5.Tenable API App串接",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-0944d4a59fb7a84bd79d2fca8361e518"
+  },
+  "doc-7c1fca5402ff2eb1c53222e1d4db282a": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/05  13:30 至 2026/01/05  17:30。\n狀態描述 (Description): Splunk駐點服務202601第一周(2026/1/5)\n處置動作 (Action): 本周工作項目如下:\n1.FWD02磁碟用量異常處理\n今日FWD02磁碟用量達到超過90%，目前分析為以下三個原因導致\n        estreamer 資料暴增\n        audit.log 持續累積（FCB147 的 keep_logs 設定導致永不刪除）\n        /var/log/messages-20251214 單一檔案達 148GB\n目前處理方式\n        estreamer 處理\n                移除 rsyslog 轉送設定（減少資料流入）\n                調整 clean.sh 資料留存區間（定期清理舊資料，原為留存12小時，現改為6小時）\n        audit.log 處理\n                手動刪除 audit 資料（釋放空間）\n                目前還沒有設定排程刪除，持續觀察中\n        messages 暴增處理\n                刪除 148GB 的 messages-20251214 檔案（立即釋放空間）\n                設定 logrotate 排程監控：\n                        每 2 小時檢查一次（/etc/cron.d/logrotate-syslog）\n                        超過 1G自動 rotate\n                        保留 30 個檔案\n                        自動壓縮\n待辦事項:\nCybereyes API 介接 (進行中)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-7c1fca5402ff2eb1c53222e1d4db282a"
+  },
+  "doc-3f8775862e3b8ea072578967e7520445": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/01  13:30 至 2025/10/01  17:30。\n狀態描述 (Description): Splunk駐點服務202510第一周(2025/10/01)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.建立告警<PWLAN觸發IPS高風險告警>\n將 src=\"172.*\" 的事件從原先<IPS高風險告警>中獨立出來\n3.自動化封鎖清單異動儀表板建置 (進行中)\n4.GitLab升版 17.10.8 → 18.1.6\n原先版本受到漏洞CVE-2025-6454、CVE-2025-2256影響，故進行升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-3f8775862e3b8ea072578967e7520445"
+  },
+  "doc-726c374f489423e007bce76f7810b46e": {
+    "content": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/24  10:30 至 2025/11/24  12:00。\n狀態描述 (Description): splunk_信用卡處11月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：100GB\n-平均授權用量：132GB\n2.伺服器效能：正常\n3.系統優化建議：根據說明定期檢查\n問題：有101台UF已超過15分鐘未與indexer連線\n建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。\n4.版本更新：建議更新\n-當前版本：9.3.3/2025.02.26\n-最新版本：10.0.2/2025.11.14\n現行版本近期被掃出弱點，建議進行升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-726c374f489423e007bce76f7810b46e"
+  },
+  "doc-cafeb58d25cc4cbc85eaf07cf415496a": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/11  13:30 至 2025/11/11  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251111\n處置動作 (Action): 工作內容如下，預計本周五(11/14)與下周二(11/18)到場作業，請您協助申請底層\n1,  關閉Apim1與imsdb01兩台UF中舊的殘留input設定\n2.  確認Checkpoint 資料收容\n3.  確認asset中異常：有多個hostname有相同IP，確認原因為將是否報廢/營運中欄位匯入資產\n待完成工作項目：\n1.CEF outputs套件調整送出格式\n2.Finding會因為threat object重複顯示，需進行ES版本升級\n3.Splunk版本升級\n4.Disable splunk自動version check\n5.資產新增報廢/營運中欄位\n6.SH FISAC API input (未使用)關閉",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-cafeb58d25cc4cbc85eaf07cf415496a"
+  },
+  "doc-84c3e0271089b72556be831ea38a055f": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/11  09:00 至 2025/12/11  18:00。\n狀態描述 (Description): Splunk Indexer queue full  - 20251211\n處置動作 (Action): 工作項目：\n到場確認異常原因，當日未確認原因。",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-84c3e0271089b72556be831ea38a055f"
+  },
+  "doc-8a40e782f3c3804da0a1d45dfa05eefe": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/02  09:00 至 2025/12/02  12:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251202\n處置動作 (Action): 工作項目：\n1. 修改SASE VPN登入成功報表條件\n2. 新增告警 將SASE登入成功紀錄送至SOAR\n3. 新增index 與 HEC token for XSOAR",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-8a40e782f3c3804da0a1d45dfa05eefe"
+  },
+  "doc-068ca517cbebf973fd4089bd45ef615c": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/23  13:30 至 2025/12/23  17:30。\n狀態描述 (Description): Splunk駐點服務202512第四周(2025/12/23)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.GitLab漏洞修補\n原先版本18.5.2受到漏洞CVE-2024-9183及CVE-2025-12571影響，故升版到18.5.4\n3.2026年國定假日列表更新\n4.Cybereyes介接套件建置 (進行中)\n待辦事項:\n1. SSH Server 漏洞修補",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-068ca517cbebf973fd4089bd45ef615c"
+  },
+  "doc-e2a0171ee9d19cc664d4d041d3e73ba2": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/06  11:00 至 2025/11/06  12:00。\n狀態描述 (Description): splunk_B客戶B部門10月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：239.38GB\n2.伺服器效能：IDX01、IDX02、IDX03空間使用量已達90%\n建議：若空間使用量持續增長，將搬移frozen\n3.系統優化建議：無\n4.版本更新：建議更新\n-當前版本：9.3.3/2025.02.26\n-最新版本：10.0.1/2025.09.25\n現行版本近期被掃出弱點，建議進行升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-e2a0171ee9d19cc664d4d041d3e73ba2"
+  },
+  "doc-0d3d3acb3c191c9e65fac21b5ed9284f": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/25  13:30 至 2025/11/25  17:30。\n狀態描述 (Description): Splunk駐點服務202511第四周(2025/11/25)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.Gitlab版本升及18.1.6 -> 18.5.2\n為修補漏洞CVE-2025-11224已將Gitlab升級至建議版本\n3.AI網站服務紀錄調閱儀表板建置\n為方便後續定期調閱AI網站連線紀錄，已建置調閱儀表板\n4.<DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標>告警調整\n查詢不同網域數量閥值由200改為300\n統計區間由三分鐘改為五分鐘內\n待辦事項:\n1. 告警盤點\n2. FCB設定",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-0d3d3acb3c191c9e65fac21b5ed9284f"
+  },
+  "doc-ab226f704fc1b4d45dd06222f40cb39f": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/02  13:30 至 2025/12/02  17:30。\n狀態描述 (Description): Splunk駐點服務202512第一周(2025/12/2)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.2025下半年度告警盤點\n3.AI網站服務紀錄調閱報表建置\n<Gen AI 連線紀錄(每日): monthly report>\n<Gen AI 連線紀錄(整月): monthly report>\n設定於每月1日凌晨2:00執行\n待辦事項:\n1. FCB設定調整",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-ab226f704fc1b4d45dd06222f40cb39f"
+  },
+  "doc-886b4b629f3088ef8656c792cf7b3e8b": {
+    "content": "這是一筆關於 G客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/01  10:00 至 2025/12/01  12:00。\n狀態描述 (Description): Splunk_11月維護\n處置動作 (Action): 本月維護重點如下：\n1.授權使用量\n- 購買量:2GB\n- 平均使用量:0.31GB\n- 使用率為15.5%，達100%次數為0\n2. 伺服器效能\n- CPU使用率:1.24%，低於90%，屬正常\n- 記憶體使用率:18.21%，低於90%，屬正常\n- 硬碟使用率:43.73%，屬正常\n3. 系統優化建議\n- 皆正常，無需調整\n4. 版本評估\n- 現行版本:9.4.3 (2025.06.05)\n- 最新版本:10.0.2 (2025.11.14)\n- 因現行版本未有弱點釋出，故不升級。\n5. 問題追蹤\n- 無",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-886b4b629f3088ef8656c792cf7b3e8b"
+  },
+  "doc-79f23819b8640c43571e6e9b3e4098e0": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 C人員,B人員\n進行時間為 2025/03/14  09:00 至 2025/03/14  14:00。\n狀態描述 (Description): Splunk SH 異常hanging\n處置動作 (Action): 今日早上接到您緊急報修，隨即到場進行調查，以下說明：\n異常狀況：從這周開始凌晨1:00時CPU和記憶體都有突然爆增現象，今日甚至導致服務異常，今日調查並未發現root cause。\n暫時解決方法：\n1. 重啟splunk後目前服務後已恢復正常\n2. 根據原廠建議，新增Splunk參數避免搜尋不會因為記憶體不足時就hanging\n3. 刪除上周末駐點時於SH新增的splunk microsoft套件\n4. 提供原廠diag並開立CASE請求協助\n預計下周一會再次到場確認目前狀況並持續追蹤原廠協助。",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-79f23819b8640c43571e6e9b3e4098e0"
+  },
+  "doc-3c4967b23b72f04d5c4ef37149d21ede": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/04  09:00 至 2025/11/04  09:30。\n狀態描述 (Description): E客戶 Splunk 2025 MA 10月定保.DM20250088_(6/12)\n處置動作 (Action): 本次維護報告內容如下，再麻煩您確認後回簽CSR：\n1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：649.33 GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：現行版本近期被掃出弱點，建議進行升版\n-當前版本：9.3.3 / 2025.02.26\n-最新版本：10.0.1 / 2025.09.25",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-3c4967b23b72f04d5c4ef37149d21ede"
+  },
+  "doc-0b9e37e8f7e8a98183b1724c16ce814a": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/13  13:30 至 2025/10/13  17:30。\n狀態描述 (Description): Splunk駐點服務202510第三周(2025/10/13)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.<SAP重要TCode執行紀錄>告警語法調整\n原語法中的user經比對僅得到系統管理員，並非實際user，因此調整語法，透過比對cyberark log取得實際user後再寄出信件\n3.<F5VPN特定使用者連線的紀錄(ssp)>調整\n根據需求將”數位科技中心”之紀錄獨立出來，拆分為以下兩個報告\n<F5VPN特定使用者連線的紀錄(ssp) 不含數位科技中心>\n<F5VPN特定使用者連線的紀錄(ssp) 僅數位科技中心>\n待辦事項:\n1. 告警盤點\n2. 一年以上情資比對VirusTotal",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-0b9e37e8f7e8a98183b1724c16ce814a"
+  },
+  "doc-17b29d261b8bce3ef9105d1c8a78415d": {
+    "content": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/16  14:00 至 2025/12/16  18:40。\n狀態描述 (Description): DC_ARP報表語法檢查\n處置動作 (Action): 今日到場作業項目如下：\n目前已產出一份DC_ARP_table報表，並與現有設備清單做比對，附件為比對結果，後續將進底層查看缺少設備的原因。\n附件中列出所有需列出的設備名稱，未出現於DC_ARP_table中的設備已用橘底標示，在請您確認。\n代辦事項：\n補產出ARP_table報表給您(排程設定每月執行）\n補跑設備IP往段清單給全科人員 （每月)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-17b29d261b8bce3ef9105d1c8a78415d"
+  },
+  "doc-082efb5c18d778427dcd94905e5f4370": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/04  13:30 至 2025/11/04  17:30。\n狀態描述 (Description): Splunk駐點服務202511第一周(2025/11/4)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.Heavy Forwarder磁碟用量調查\n發現昨日(11/3)該台主機磁碟用量暴增，同時發現該台主機KV store憑證過期，今日已更新憑證，目前KV store狀態及磁碟用量皆為正常\n3.報告及告警寄件人更新\n已將原寄給Ryan之報告及告警改為Calvin，並新增Splunk登入帳號，未來包含ES結案等通知皆改由Calvin做審核與結案\n待辦事項:\n1. 告警盤點\n2. VMware Tools 漏洞修補",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-082efb5c18d778427dcd94905e5f4370"
+  },
+  "doc-07959bdb8bab221c9c80a1c3e85776b3": {
+    "content": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/27  13:30 至 2025/11/27  16:00。\n狀態描述 (Description): Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)\n處置動作 (Action): 1.設備狀態檢查：\n觀察月報CPU、Memory使用率皆無超過90%，整體正常\n2.系統日誌分析：\n觀察資料品質儀表板、健康狀況檢查，整體無異常\n3.系統參數檢查\n設備參數無異常(DNS server、NTP server、LDAP setting)\n4.健康狀態檢查\n執行健康情況檢查，整體無異常",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-07959bdb8bab221c9c80a1c3e85776b3"
+  },
+  "doc-75fa98905e1d68515f390e75c46adddb": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/06  10:00 至 2025/11/06  11:00。\n狀態描述 (Description): Splunk_10月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：635.27GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：暫不更新\n-當前版本：9.3.6/2025.07.31\n-最新版本：10.0.1/2025.09.25\n因目前版本並未有重大弱點，也未受相關BUG，故建議暫不升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-75fa98905e1d68515f390e75c46adddb"
+  },
+  "doc-1e7cec156f57837e8d25cbe83a6db45f": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/20  11:00 至 2025/10/20  16:00。\n狀態描述 (Description): Splunk駐點服務202510第四周(2025/10/20)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.<刪除資料庫中IOC> 頁面復原\n3.<HTTP對外大量傳輸資料報表>調整\n於報表新增需監控之url\n4.一年以上情資比對VirusTotal (進行中)\n已取得需比對之情資清單\n後續會確認是否有其他類似VT之檢測工具以多方檢測\n待辦事項:\n1. 告警盤點",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-1e7cec156f57837e8d25cbe83a6db45f"
+  },
+  "doc-5930b403906ecb929487592cef5210f2": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/11  13:30 至 2025/11/11  17:30。\n狀態描述 (Description): Splunk駐點服務202511第二周(2025/11/11)\n處置動作 (Action): 本周工作項目如下:\n1.VMware Tools 漏洞修補\n為修補漏洞CVE-2025-41244、CVE-2025-41246，以按照提供之SOP更新至12.3.5版本\n2.報告及告警寄件人更新\n3.KPMG滲透測試IP白名單\n已將IP加入白名單，但提供的清單中有很多為網段，需要修改規則才能比對，目前正在修改中\n待辦事項:\n1. 告警盤點 (預計下周開始)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-5930b403906ecb929487592cef5210f2"
+  },
+  "doc-345e520afd2a192e25824abb33740d46": {
+    "content": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/03/28  09:00 至 2025/03/28  21:00。\n狀態描述 (Description): Splunk 版本升級 9.3.1 -> 9.3.3\n處置動作 (Action): 針對UAT / Production / PIMS 共8台進行調整，調整內容如下:\n1. 重新安裝Splunk，設定FIPS mode=0。\n2. 覆蓋原先設定檔\n3. 升版\n除了PIMS search head遇到dbconenct異常問題，其他皆成功升版。\n後續將進行確認。",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-345e520afd2a192e25824abb33740d46"
+  },
+  "doc-8a81645d1d338ac013fa594b14c35640": {
+    "content": "這是一筆關於 D客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/19  13:30 至 2025/12/19  16:00。\n狀態描述 (Description): Splunk 202510-12季維護\n處置動作 (Action): 本季維護報表重點如下：\n1. 授權用量：正常\n- 授權量：131 GB\n- 平均授權用量：117.92 GB\n2. 伺服器效能：正常\n3. 系統優化建議：無\n4. 版本更新：暫不更新\n- 當前Splunk版本：9.3.8 / 2025.11.14\n- 最新Splunk版本：10.0.2/ 2025.11.14\n- 目前版本無重大弱點，也未受相關BUG，故建議暫不升版\n5.問題追蹤：無",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-8a81645d1d338ac013fa594b14c35640"
+  },
+  "doc-d0cef05272158ef916c2b84f625b2ddb": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/04  13:30 至 2025/11/04  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251104\n處置動作 (Action): 今日工作內容如下，預計下次週四到場作業，再麻煩您幫我申請週四使用底層：\n1, 完成維護報告\n2. 確認RES3SQL19資料收容狀況\n待完成工作項目：\n1.CEF outputs套件新增debug log資料蒐集\n2.Finding會因為threat object重複顯示，需進行ES版本升級\n3.Splunk版本升級\n4.Apim1與imsdb01兩台UF關閉inputs至不存在的index\n5.SH FISAC API input (未使用)關閉",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-d0cef05272158ef916c2b84f625b2ddb"
+  },
+  "doc-fe7268a7cb94439d483759e501068db6": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/04  10:00 至 2025/12/04  10:30。\n狀態描述 (Description): splunk_B客戶B部門11月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：203.65GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：建議更新\n-當前版本：9.3.3/2025.02.26\n-最新版本：10.0.1/2025.11.14\n現行版本近期被掃出弱點，建議進行升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-fe7268a7cb94439d483759e501068db6"
+  },
+  "doc-4861ed7c0c566a81f361adb6811a1523": {
+    "content": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/24  10:30 至 2025/11/24  11:00。\n狀態描述 (Description): splunk_信用卡處11月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：100GB\n-平均授權用量：132GB\n2.伺服器效能：正常\n3.系統優化建議：根據說明定期檢查\n問題：有101台UF已超過15分鐘未與indexer連線\n建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。\n4.版本更新：建議更新\n-當前版本：9.3.3/2025.02.26\n-最新版本：10.0.2/2025.11.14\n現行版本近期被掃出弱點，建議進行升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-4861ed7c0c566a81f361adb6811a1523"
+  },
+  "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51": {
+    "content": "這是一筆關於 G客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/03  10:00 至 2025/11/03  12:00。\n狀態描述 (Description): Splunk_10月維護\n處置動作 (Action): 本月維護重點如下：\n1.授權使用量\n- 購買量:2GB\n- 平均使用量:0.35GB\n- 使用率為17.5%，達100%次數為1，屬正常範圍\n2. 伺服器效能\n- CPU使用率:1.24%，低於90%，屬正常\n- 記憶體使用率:18.21%，低於90%，屬正常\n- 硬碟使用率:42.91%，屬正常\n3. 系統優化建議\n- 皆正常，無需調整\n4. 版本評估\n- 現行版本:9.4.3 (2025.06.05)\n- 最新版本:10.0.1 (2025.09.25)\n- 因現行版本未有弱點釋出，故不升級。\n5. 問題追蹤\n- 無",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+  },
+  "doc-1364984bd10139c2ef2cd5907a3a7591": {
+    "content": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/19  13:30 至 2025/12/19  18:00。\n狀態描述 (Description): ARP_table報表補跑\n處置動作 (Action): 今日到場作業項目如下：\n以新增設備於Switch_6FDC.csv中，並再次執行排程腳本，確認已收入新設備事件\n補跑ARP_table 報表，設定排程為每月1號寄送報表至全科同仁\n代辦事項：\nIP網段設備報表確認",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-1364984bd10139c2ef2cd5907a3a7591"
+  },
+  "doc-95280ea367581dac710f0dc56c7a72f3": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/03  13:30 至 2025/12/03  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk 使用者權限調整\n調整es_admin_user 使用者權限。\n調整ess_analyst 腳色權限，以供廠商進行例行維護或問題解決登入使用\n2.\nB部門\n1.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n3.n8n無法連線至splunk問題\n正在協助排查n8n無法連線至splunk問題\n代辦事項：\n1.Centos作業系統升級(評估中)\n2.DEP02 ([IP])移轉(下周進行)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-95280ea367581dac710f0dc56c7a72f3"
+  },
+  "doc-daa296a353c26f41dfc613743d24e936": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/12  13:30 至 2025/11/12  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.PA報表寄信異常-未完成\n已補跑報告並寄送郵件，另外報告存取時間為1天，所以以排程報告執行時間(11/1)，保存期限為11/2。\nPA 每月Block Category報表在重新執行排程時會出現error，將於下周到場繼續處理。\nB部門\n1.新增indexer –完成\n新增indexer至IDX cluster節點，目前將觀察index同步狀態。\n代辦事項：\nCentos作業系統升級(評估中)\n檢查B部門indexer索引同步狀態\nFIsac資料收容\n檢查各台主機KV store 憑證效期(B部門)\n(A部門)DEP02連動主機檢查\n本日駐點工作內容如下：\nA部門\n1.PA報表寄信異常-未完成\n已補跑報告並寄送郵件，另外報告存取時間為1天，所以以排程報告執行時間(11/1)，保存期限為11/2。\nPA 每月Block Category報表在重新執行排程時會出現error，將於下周到場繼續處理。\nB部門\n1.新增indexer –完成\n新增indexer至IDX cluster節點，目前將觀察index同步狀態。\n代辦事項：\nCentos作業系統升級(評估中)\n檢查B部門indexer索引同步狀態\nFIsac資料收容\n檢查各台主機KV store 憑證效期(B部門)\n(A部門)DEP02連動主機檢查",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-daa296a353c26f41dfc613743d24e936"
+  },
+  "doc-7504d68fad10caa1cd0ea41314ed2ede": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/24  13:30 至 2025/12/24  20:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk角色能力異常\n因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以\n區分權限高低。\n2.PA 每月報表觸發動作變更\n因目前未發現任何相關報表寄送錯誤，也確認並無排程略過問題，為了後續如再次發生排程報表未寄送之問題，已將PA每月報表觸發的預設寄件套\n件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查。\n3.Linux主機使用者與使用者權限-進行中\n已在172.18.44.33(DEP02)主機上新增使用者 sailag，並套用先前信件附件中的權限設定\n請珮雯再次申請檢測sailag使用者權限是否合規，將在檢測通過後於其他主機上新增使用者\nB部門\n1.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n代辦事項：\n1.Centos作業系統升級(評估中)\n2.DEP02 ([IP])移轉(下周進行)\n3.新增Splunk Add-on for Google Cloud Platform的sourcetype\n4.Tenable API App串接",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-7504d68fad10caa1cd0ea41314ed2ede"
+  },
+  "doc-04465635a6b88183cbabbfe7e25635dd": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/04  09:30 至 2025/12/04  10:00。\n狀態描述 (Description): Splunk_11月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：620.21GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：暫不更新\n-當前版本：9.3.6/2025.07.31\n-最新版本：10.0.2/2025.11.14\n因目前版本並未有重大弱點，也未受相關BUG，故建議暫不升版",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-04465635a6b88183cbabbfe7e25635dd"
+  },
+  "doc-b6f1e5469f6278ea8a34bff96b293b69": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/30  13:30 至 2025/12/30  17:00。\n狀態描述 (Description): E客戶Splunk駐點 - 20251230\n處置動作 (Action): 今日工作項目如下：\n1.進行本月月維護，再麻煩您協助CSR回簽\n1. 授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB\n2. 伺服器效能：正常\n3. 系統優化建議：有10台UF超出預設傳輸上限，已派送套件完成調整\n4. 版本更新：現行版本近期被掃出弱點，建議進行升版\n  -當前版本：9.3.8 / 2025.11.14\n  -最新版本：10.0.2 / 2025.11.14\n2.調整GCP報表User欄位\n3.新增Trendmicro host資料收容\n4.調整websense Log，將DLP與其他LOG sourcetype進行分開",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-b6f1e5469f6278ea8a34bff96b293b69"
+  },
+  "doc-5096c0cdf6972a3670732e4f9be1d36a": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/04  08:30 至 2025/12/04  09:00。\n狀態描述 (Description): E客戶 Splunk 2025 MA 11月定保.DM20250088_(7/12)\n處置動作 (Action): 本次維護報告內容如下：\n1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：661.01 GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：現行版本近期被掃出弱點，建議進行升版\n-當前版本：9.3.8 / 2025.11.14\n-最新版本：10.0.2 / 2025.11.14",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-5096c0cdf6972a3670732e4f9be1d36a"
+  },
+  "doc-1df6d8d113790f99d50593095e1e5e58": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/26  09:00 至 2025/12/26  10:30。\n狀態描述 (Description): Splunk駐點服務20251226 - websense 斷行確認\n處置動作 (Action): 工作內容：\n該sourcetype斷行異常，故先將其調整回原始sourcetype，待下周駐點確認後進行調整",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-1df6d8d113790f99d50593095e1e5e58"
+  },
+  "doc-412e17859c430b9ce8b929bc152053ef": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/12  09:00 至 2025/12/12  18:00。\n狀態描述 (Description): Splunk Indexer queue full  - 20251212\n處置動作 (Action): 工作項目：\n協助韌體更新，問題未解決，持續尋找workaround",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-412e17859c430b9ce8b929bc152053ef"
+  },
+  "doc-c41e50d3a458388dc7fe53ece68ee69f": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/27  13:30 至 2025/10/27  17:30。\n狀態描述 (Description): Splunk駐點服務202510第五周(2025/10/27)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.完成本月維護作業\n3.一年以上情資比對VirusTotal (進行中)\n目前有看到AbuseIPDB可檢測情資並直接串接splunk\n於Search Head測試可使用後即可建立排程\n待辦事項:\n1. 告警盤點\n2. VMware Tools 漏洞修補",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-c41e50d3a458388dc7fe53ece68ee69f"
+  },
+  "doc-15d6c505e6a20b598aa21d52b466adcd": {
+    "content": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/19  13:30 至 2026/01/19  17:30。\n狀態描述 (Description): Splunk駐點服務202601第三周(2026/1/19)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.Gitlab漏洞修補 18.5.4 -> 18.5.5\n為修補漏洞已將Gitlab升級至建議版本\n3.<F5VPN特定使用者連線的紀錄(sas)> 停用報表\n4.FWD03 底層資料收容 filter 設定\n已排除大量SERVICE_START 及 SERVICE_STOP 資料\n目前觀察每日約產生200個檔案，故暫設定保留一天內的log\n5.<HTTP對外大量傳輸資料報表>調整\n於<HTTPS大量資料傳輸告警> 排除特定URL改由報表寄送\n待辦事項:\n1. SSH Server 漏洞修補",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-15d6c505e6a20b598aa21d52b466adcd"
+  },
+  "doc-72f381579d364fa91cc3e73153e0af97": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/26  13:30 至 2025/11/26  17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.DEP02連動主機檢查-完成\n問題：DEP02主機排程為晚上11點執行KGIBIDX04與CDIBHMGT02的遠端設定檔備份腳本\n解決辦法：刪除KGIBIDX04(主機已下線)備份排程與修改CDIBHMGT02的IP為172.18.44.31\n2.設定檔備份腳本異常-完成\n已修改各台主機中CDIBHMGT02的IP為172.18.44.31，並再次執行備份腳本確認排程腳本正常。\nB部門\n1.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n代辦事項：\nCentos作業系統升級(評估中)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-72f381579d364fa91cc3e73153e0af97"
+  },
+  "doc-b0add79f46581b83deba682a2c89cdb7": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/24  09:00 至 2025/12/24  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251124\n處置動作 (Action): 工作事項：\nSplunk升版完成",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-b0add79f46581b83deba682a2c89cdb7"
+  },
+  "doc-41be59e9bae9e87a716afd8b5a9e9ee1": {
+    "content": "這是一筆關於 H客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/25  09:30 至 2025/11/25  14:00。\n狀態描述 (Description): Splunk平台維護案(06-11月)半年系統檢視_DM20250258_(1/2)\n處置動作 (Action): 今日已完成Splunk版本升級，\n自9.2.3升版至9.3.8，\n並以驗證服務皆正常，\n弱點應已修復，再麻煩複掃確認。\n另外本次維護報告內容如下，再麻煩您確認後回簽CSR：\n1.授權用量：建議擴充\n-授權量：5 GB\n-平均授權用量：6.59 GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：現行版本無重大CVE漏洞、嚴重BUG，故暫不升級\nSplunk與UF當前版本： 9.3.8 / 2025.11.14 (EOS:2026.06.24)\nSplunk與UF最新版本： 10.0.2 / 2025.11.14 (EOS:2027.07.28)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-41be59e9bae9e87a716afd8b5a9e9ee1"
+  },
+  "doc-c0cd3e323fc2a43e461d7af757b08706": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/07/29  13:30 至 2025/07/29  17:00。\n狀態描述 (Description): Splunk工作事項 - 0729\n處置動作 (Action): 作業項目如下：\nAsset and Identity priority確認\n1.Identity新增title(職稱)\n2.Identity將帳號狀態加入category欄位\n3.未明確定義priotiry 的identity將設為low\n4.Assets僅針對H1、H2、H3的設備將priority設為critical，其餘皆設為low\n刪除舊版本殘留的ES threat intelligence download設定\nDLDK container NOT running\n1.已暫先手動重啟\n例行月維護\n1.將自動化程式放於公用電腦上，成功執行",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-c0cd3e323fc2a43e461d7af757b08706"
+  },
+  "doc-c0c6684aa00106f16e7869f519061642": {
+    "content": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/30  09:00 至 2025/12/30  12:00。\n狀態描述 (Description): (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12)\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：661.01 GB\n2.伺服器效能：正常\n3.系統優化建議：有10台UF超出預設傳輸上限，已派送套件完成調整\n4.版本更新：現行版本近期被掃出弱點，建議進行升版\n-當前版本：9.3.8 / 2025.11.14\n-最新版本：10.0.2 / 2025.11.14",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-c0c6684aa00106f16e7869f519061642"
+  },
+  "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b": {
+    "content": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/16  14:00 至 2025/12/16  18:40。\n狀態描述 (Description): DC_ARP報表語法檢查\n處置動作 (Action): 今日到場作業項目如下：\n目前已產出一份DC_ARP_table報表，並與現有設備清單做比對，附件為比對結果，後續將進底層查看缺少設備的原因。\n附件中列出所有需列出的設備名稱，未出現於DC_ARP_table中的設備已用橘底標示，在請您確認。\n代辦事項：\n補產出ARP_table報表給您(排程設定每月執行）\n補跑設備IP往段清單給凱壽全科人員 （每月)",
+    "file_path": "unknown_source",
+    "create_time": 1773178597,
+    "update_time": 1773178597,
+    "_id": "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+  }
+}

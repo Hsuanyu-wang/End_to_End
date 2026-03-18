@@ -2,6 +2,7 @@ import os
 import pickle
 from dataclasses import dataclass
 from typing import Any, Optional
+from src.storage import get_csr_graph_path
 
 
 @dataclass(frozen=True)
@@ -18,14 +19,15 @@ def _safe_slug(s: str) -> str:
 
 def csr_graph_cache_path(storage_dir_base: str, spec: GraphCacheSpec) -> str:
     """
-    CSR NetworkX 圖 cache：用方法名做隔離，避免不同方法互相覆蓋。
+    CSR NetworkX 圖 cache：使用 StorageManager 統一管理路徑
     """
-    base = _safe_slug(storage_dir_base)
-    method = _safe_slug(spec.method_name)
-    data_type = _safe_slug(spec.data_type)
-    data_mode = _safe_slug(spec.data_mode)
-    suffix = "_fast_test" if spec.fast_build else ""
-    return f"{base}_{data_type}_{data_mode}_{method}{suffix}.pkl"
+    # 使用 StorageManager 取得路徑
+    return get_csr_graph_path(
+        data_type=spec.data_type,
+        data_mode=spec.data_mode,
+        method=spec.method_name,
+        fast_test=spec.fast_build
+    )
 
 
 def load_pickle(path: str) -> Optional[Any]:

@@ -8,6 +8,7 @@ import inspect
 from typing import Dict, Any
 from .base_wrapper import BaseRAGWrapper
 from src.config.settings import get_settings
+from src.utils.token_counter import get_token_counter
 
 
 class LightRAGWrapper(BaseRAGWrapper):
@@ -36,7 +37,8 @@ class LightRAGWrapper(BaseRAGWrapper):
         rag_instance,
         mode: str = "hybrid",
         use_context: bool = True,
-        model_type: str = "small"
+        model_type: str = "small",
+        schema_info: Dict[str, Any] = None
     ):
         """
         初始化 LightRAG Wrapper
@@ -47,13 +49,20 @@ class LightRAGWrapper(BaseRAGWrapper):
             mode: 檢索模式
             use_context: 是否使用 context 進行自訂生成（False 則使用 LightRAG 原生）
             model_type: 模型類型（用於取得 Settings）
+            schema_info: Schema 資訊字典
         """
-        super().__init__(name)
+        super().__init__(name, schema_info=schema_info)
         self.rag = rag_instance
         self.mode = mode
         self.use_context = use_context
         self.model_type = model_type
         self._initialized = False
+        self.token_budget: Dict[str, int] = {}
+
+    def apply_token_budget(self, budget: Dict[str, int]) -> None:
+        """套用 token budget 參數（由評估流程動態注入）。"""
+        self.token_budget = budget or {}
+        print(f"🎯 [{self.name}] 已套用 token budget: {self.token_budget}")
     
     def query(self, question: str) -> str:
         """
@@ -137,32 +146,137 @@ class LightRAGWrapper(BaseRAGWrapper):
             Settings: 模型設定物件
         
         Returns:
-            查詢結果字典
+            查詢結果字典（包含詳細token統計）
         """
         from lightrag.lightrag import QueryParam
         from lightrag.prompt import PROMPTS
+        from src.rag.graph.lightrag_id_mapper import ChunkIDMapper
         
-        # 取得 LightRAG context
+        # 取得 LightRAG context（若可用，優先帶入 chunk_top_k）
+        chunk_top_k = int(self.token_budget.get("chunk_top_k", 0)) if self.token_budget else 0
+        param_kwargs = {"mode": self.mode, "only_need_context": True}
+        if chunk_top_k > 0:
+            param_kwargs["top_k"] = chunk_top_k
+
         if hasattr(self.rag, "aquery"):
-            raw_context = await self.rag.aquery_data(
+            raw_data = await self.rag.aquery_data(
                 query,
-                param=QueryParam(mode=self.mode, only_need_context=True)
+                param=QueryParam(**param_kwargs)
             )
         elif inspect.iscoroutinefunction(self.rag.query):
-            raw_context = self.rag.query_data(
+            raw_data = self.rag.query_data(
                 query,
-                param=QueryParam(mode=self.mode, only_need_context=True)
+                param=QueryParam(**param_kwargs)
             )
         else:
-            raw_context = self.rag.query_data(
+            raw_data = self.rag.query_data(
                 query,
-                param=QueryParam(mode=self.mode, only_need_context=True)
+                param=QueryParam(**param_kwargs)
             )
         
-        print(f"RAW_CONTEXT:\n\n{raw_context}\n\n")
+        # 提取 context 和 chunk IDs
+        retrieved_contexts = []
+        retrieved_ids = []
         
-        retrieved_contexts = [str(raw_context)] if raw_context else []
+        # 用於詳細token統計
+        entity_contexts = []
+        relation_contexts = []
+        chunk_contexts = []
+        
+        # 初始化 ChunkIDMapper
+        storage_dir = self.rag.working_dir
+        mapper = ChunkIDMapper(storage_dir)
+        
+        # 解析 raw_data 取得各組件
+        if raw_data and isinstance(raw_data, dict):
+            data_content = raw_data.get("data", {})
+            
+            # 提取 entities
+            if "entities" in data_content and isinstance(data_content["entities"], list):
+                for entity in data_content["entities"]:
+                    if isinstance(entity, dict):
+                        entity_text = entity.get("entity_name", "") or entity.get("content", "")
+                        if entity_text:
+                            entity_contexts.append(str(entity_text))
+                    elif isinstance(entity, str):
+                        entity_contexts.append(entity)
+            
+            # 提取 relationships
+            if "relationships" in data_content and isinstance(data_content["relationships"], list):
+                for rel in data_content["relationships"]:
+                    if isinstance(rel, dict):
+                        rel_text = rel.get("description", "") or rel.get("content", "")
+                        if rel_text:
+                            relation_contexts.append(str(rel_text))
+                    elif isinstance(rel, str):
+                        relation_contexts.append(rel)
+            
+            # 提取 chunks
+            if "chunks" in data_content and isinstance(data_content["chunks"], list):
+                for chunk in data_content["chunks"]:
+                    if isinstance(chunk, dict):
+                        # 提取 content
+                        content = chunk.get("content", "")
+                        if content:
+                            chunk_contexts.append(content)
+                            retrieved_contexts.append(content)
+                        
+                        # 提取 chunk_id 或 reference_id
+                        chunk_id = chunk.get("chunk_id") or chunk.get("reference_id") or chunk.get("file_path")
+                        if chunk_id:
+                            # 使用 mapper 轉換為原始 NO
+                            original_no = mapper.get_original_no(chunk_id)
+                            retrieved_ids.append(original_no if original_no else chunk_id)
+            
+            # 如果沒有找到 chunks，使用整個 context
+            if not retrieved_contexts:
+                raw_context = str(raw_data)
+                retrieved_contexts = [raw_context] if raw_context else []
+                chunk_contexts = retrieved_contexts
+        else:
+            raw_context = str(raw_data)
+            retrieved_contexts = [raw_context] if raw_context else []
+            chunk_contexts = retrieved_contexts
+        
+        # 先依 chunk_top_k 截斷（確保方法間可比較）
+        if chunk_top_k > 0:
+            retrieved_contexts = retrieved_contexts[:chunk_top_k]
+            chunk_contexts = chunk_contexts[:chunk_top_k]
+            if retrieved_ids:
+                retrieved_ids = retrieved_ids[:chunk_top_k]
+
+        # 應用 retrieval_max_tokens 限制（透過基底類別的方法）
+        if self.retrieval_max_tokens > 0:
+            retrieved_contexts = self._truncate_contexts_by_tokens(retrieved_contexts)
+            chunk_contexts = retrieved_contexts
+            if retrieved_ids:
+                retrieved_ids = retrieved_ids[:len(retrieved_contexts)]
+        # 或使用 token budget 機制（若有設定）
+        elif self.token_budget:
+            # 再依 max_total_tokens 做 context budget 截斷
+            max_total_tokens = int(self.token_budget.get("max_total_tokens", 0))
+            if max_total_tokens > 0 and retrieved_contexts:
+                kept_contexts = []
+                running_tokens = 0
+                for ctx in retrieved_contexts:
+                    ctx_tokens = get_token_counter().count_tokens(ctx)
+                    if kept_contexts and (running_tokens + ctx_tokens) > max_total_tokens:
+                        break
+                    kept_contexts.append(ctx)
+                    running_tokens += ctx_tokens
+                retrieved_contexts = kept_contexts
+                chunk_contexts = kept_contexts
+                if retrieved_ids:
+                    retrieved_ids = retrieved_ids[:len(kept_contexts)]
+
         context_str = "\n".join(retrieved_contexts) if retrieved_contexts else ""
+        
+        # 計算詳細token統計
+        token_counter = get_token_counter()
+        entity_tokens = token_counter.count_tokens_batch(entity_contexts) if entity_contexts else 0
+        relation_tokens = token_counter.count_tokens_batch(relation_contexts) if relation_contexts else 0
+        chunk_tokens = token_counter.count_tokens_batch(chunk_contexts) if chunk_contexts else 0
+        total_tokens = token_counter.count_tokens(context_str)
         
         # 組裝 Prompt
         prompt = PROMPTS["rag_response"].format(
@@ -173,15 +287,28 @@ class LightRAGWrapper(BaseRAGWrapper):
             retrieved_contexts=context_str
         )
         
-        # 使用 LLM 生成答案
+        # 使用 LLM 生成答案（不限制生成 token）
         llm_response = await Settings.llm.acomplete(prompt)
         response = llm_response.text
+        
+        print(f"📊 Retrieved {len(retrieved_ids)} chunk IDs | Tokens: {total_tokens} (E:{entity_tokens}, R:{relation_tokens}, C:{chunk_tokens})")
         
         return {
             "generated_answer": str(response) if response else "找不到答案",
             "retrieved_contexts": retrieved_contexts,
-            "retrieved_ids": [],
+            "retrieved_ids": retrieved_ids,
             "source_nodes": [],
+            # Token統計
+            "context_tokens": total_tokens,
+            "context_token_details": {
+                "total_tokens": total_tokens,
+                "entity_tokens": entity_tokens,
+                "relation_tokens": relation_tokens,
+                "chunk_tokens": chunk_tokens,
+                "num_entities": len(entity_contexts),
+                "num_relations": len(relation_contexts),
+                "num_chunks": len(chunk_contexts)
+            }
         }
 
 
@@ -189,10 +316,11 @@ class LightRAGWrapper(BaseRAGWrapper):
 class LightRAGWrapper_Original(LightRAGWrapper):
     """向後兼容：原生模式的 LightRAG Wrapper"""
     
-    def __init__(self, name: str, rag_instance, mode: str = "hybrid"):
+    def __init__(self, name: str, rag_instance, mode: str = "hybrid", schema_info: Dict[str, Any] = None):
         super().__init__(
             name=name,
             rag_instance=rag_instance,
             mode=mode,
-            use_context=False  # 使用原生模式
+            use_context=False,  # 使用原生模式
+            schema_info=schema_info
         )

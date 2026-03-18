@@ -15,6 +15,9 @@ import argparse
 import nest_asyncio
 
 # 新的 import 路徑
+import sys
+sys.path.insert(0, '/home/End_to_End_RAG')
+
 from src.config.settings import get_settings
 from src.data.loaders import load_and_normalize_qa_CSR_DI, load_and_normalize_qa_CSR_full
 from src.data.processors import data_processing
@@ -34,8 +37,29 @@ from src.rag.wrappers import (
     TemporalLightRAGWrapper,
 )
 from src.evaluation import run_evaluation
+from src.evaluation.reporters import run_evaluation_with_token_budget
 
 nest_asyncio.apply()
+
+# 註解：generation_max_tokens 功能已隱藏，改用 retrieval_max_tokens
+# def apply_generation_cap_to_settings(Settings, max_tokens: int):
+#     """嘗試將生成 token 上限套用到全域 Settings.llm。"""
+#     if not max_tokens or max_tokens <= 0:
+#         return
+#     llm = getattr(Settings, "llm", None)
+#     if llm is None:
+#         return
+#     try:
+#         if hasattr(llm, "max_tokens"):
+#             llm.max_tokens = max_tokens
+#         if hasattr(llm, "num_predict"):
+#             llm.num_predict = max_tokens
+#         if hasattr(llm, "additional_kwargs") and isinstance(llm.additional_kwargs, dict):
+#             llm.additional_kwargs["max_tokens"] = max_tokens
+#             llm.additional_kwargs["num_predict"] = max_tokens
+#         print(f"🎯 已套用全域 generation_max_tokens={max_tokens}")
+#     except Exception as e:
+#         print(f"⚠️ 套用 generation token 上限失敗，改用各 wrapper fallback。錯誤: {e}")
 
 
 def parse_arguments():
@@ -61,14 +85,15 @@ def parse_arguments():
         "--graph_rag_method",
         type=str,
         default="none",
-        choices=["none", "propertyindex", "lightrag", "dynamic_schema", "all"],
+        choices=["none", "propertyindex", "lightrag", "dynamic_schema", 
+                 "autoschema", "graphiti", "neo4j", "cq_driven", "all"],
         help="Graph RAG 方法"
     )
     parser.add_argument(
         "--lightrag_mode",
         type=str,
-        default="none",
-        choices=["none", "local", "global", "hybrid", "mix", "naive", "bypass", "original", "all"],
+        default="hybrid",
+        choices=["hybrid", "local", "global", "hybrid", "mix", "naive", "bypass", "original", "all"],
         help="""LightRAG 檢索模式:
         - local: 關注特定實體與細節
         - global: 關注整體趨勢與總結
@@ -79,9 +104,30 @@ def parse_arguments():
         - original: 使用 LightRAG 原生模式
         """
     )
+    parser.add_argument(
+        "--lightrag_plugins",
+        type=str,
+        default="",
+        help="LightRAG 插件列表，用逗號分隔 (例如: autoschema,dynamic_path)"
+    )
     
     # 方法參數
     parser.add_argument("--top_k", type=int, default=2, help="檢索數量")
+    parser.add_argument("--retrieval_max_tokens", type=int, default=2048, help="檢索內容最大 token 數（限制傳給 LLM 的 context 長度）")
+    # parser.add_argument("--generation_max_tokens", type=int, default=512, help="生成回答最大 token 數（已隱藏）")
+    
+    # Token Budget相關
+    parser.add_argument(
+        "--enable_token_budget",
+        action="store_true",
+        help="啟用token budget控制（動態調整LightRAG參數以匹配Vector RAG的token使用量）"
+    )
+    parser.add_argument(
+        "--token_budget_baseline",
+        type=str,
+        default="vector_hybrid",
+        help="用作baseline的方法名稱（預設為vector_hybrid）"
+    )
     
     # Schema 相關
     parser.add_argument(
@@ -95,6 +141,29 @@ def parse_arguments():
         "--lightrag_temporal_graph",
         action="store_true",
         help="啟用時序 LightRAG"
+    )
+    
+    # 模組化 Pipeline 參數(新增)
+    parser.add_argument(
+        "--graph_builder",
+        type=str,
+        default="",
+        choices=["", "autoschema", "lightrag", "property", "dynamic"],
+        help="Graph Builder 選擇(用於模組化組合)"
+    )
+    parser.add_argument(
+        "--graph_retriever",
+        type=str,
+        default="",
+        choices=["", "lightrag", "csr", "neo4j"],
+        help="Graph Retriever 選擇(用於模組化組合)"
+    )
+    parser.add_argument(
+        "--graph_preset",
+        type=str,
+        default="",
+        choices=["", "autoschema_lightrag", "lightrag_csr", "dynamic_csr", "dynamic_lightrag"],
+        help="預設模組化組合"
     )
     
     # 資料參數
@@ -165,12 +234,13 @@ def setup_vector_pipelines(args, Settings, pipelines_to_test):
             top_k=args.top_k,
             data_mode=args.data_mode,
             data_type=args.data_type,
-            fast_build=args.vector_build_fast_test
+            fast_build=args.vector_build_fast_test,
+            retrieval_max_tokens=args.retrieval_max_tokens
         )
         if engine is not None:
-            pipelines_to_test.append(
-                VectorRAGWrapper(name=method_mapping[method], query_engine=engine)
-            )
+            wrapper = VectorRAGWrapper(name=method_mapping[method], query_engine=engine)
+            wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
+            pipelines_to_test.append(wrapper)
 
 
 def setup_advanced_vector_pipelines(args, Settings, pipelines_to_test):
@@ -185,9 +255,12 @@ def setup_advanced_vector_pipelines(args, Settings, pipelines_to_test):
             data_mode=args.data_mode,
             data_type=args.data_type,
             top_k=args.top_k,
-            fast_build=args.vector_build_fast_test
+            fast_build=args.vector_build_fast_test,
+            retrieval_max_tokens=args.retrieval_max_tokens
         )
-        pipelines_to_test.append(VectorRAGWrapper(name="Self_Query_RAG", query_engine=engine))
+        wrapper = VectorRAGWrapper(name="Self_Query_RAG", query_engine=engine)
+        wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
+        pipelines_to_test.append(wrapper)
     
     if args.adv_vector_method in ["parent_child", "all"]:
         engine = get_parent_child_query_engine(
@@ -195,9 +268,12 @@ def setup_advanced_vector_pipelines(args, Settings, pipelines_to_test):
             data_mode=args.data_mode,
             data_type=args.data_type,
             top_k=args.top_k,
-            fast_build=args.vector_build_fast_test
+            fast_build=args.vector_build_fast_test,
+            retrieval_max_tokens=args.retrieval_max_tokens
         )
-        pipelines_to_test.append(VectorRAGWrapper(name="Parent_Child_RAG", query_engine=engine))
+        wrapper = VectorRAGWrapper(name="Parent_Child_RAG", query_engine=engine)
+        wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
+        pipelines_to_test.append(wrapper)
 
 
 def setup_graph_pipelines(args, Settings, pipelines_to_test):
@@ -219,46 +295,76 @@ def setup_graph_pipelines(args, Settings, pipelines_to_test):
         if engine is not None:
             pipelines_to_test.append(VectorRAGWrapper(name="Graph_PropertyIndex_RAG", query_engine=engine))
     
-    # Dynamic Schema
+    # Dynamic Schema (使用新的 Wrapper)
     if args.graph_rag_method in ["dynamic_schema", "all"]:
-        engine = get_dynamic_schema_graph_query_engine(
-            Settings,
-            data_mode=args.data_mode,
-            data_type=args.data_type,
-            fast_build=args.graph_build_fast_test,
-            graph_method="dynamic_schema",
-            top_k=args.top_k
-        )
-        if engine is not None:
-            pipelines_to_test.append(VectorRAGWrapper(name="Graph_DynamicSchema_RAG", query_engine=engine))
+        setup_dynamic_schema_pipeline(args, Settings, pipelines_to_test)
+    
+    # AutoSchemaKG (新增)
+    if args.graph_rag_method in ["autoschema", "all"]:
+        setup_autoschema_pipeline(args, Settings, pipelines_to_test)
     
     # LightRAG
     if args.graph_rag_method in ["lightrag", "all"]:
         setup_lightrag_pipeline(args, Settings, pipelines_to_test)
+    
+    # 架構預留方法
+    if args.graph_rag_method in ["graphiti", "neo4j", "cq_driven"]:
+        print(f"⚠️  {args.graph_rag_method} 端到端方法架構已預留,核心邏輯待實作")
 
 
 def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
     """設置 LightRAG Pipeline"""
+    # 處理插件
+    plugins = []
+    if args.lightrag_plugins:
+        plugins = [p.strip() for p in args.lightrag_plugins.split(",") if p.strip()]
+        if plugins:
+            print(f"🔌 啟用 LightRAG 插件: {', '.join(plugins)}")
+            # 載入插件
+            from src.plugins import get_plugin
+            for plugin_name in plugins:
+                plugin = get_plugin(plugin_name)
+                if plugin:
+                    print(f"  ✅ 已載入插件: {plugin.get_name()}")
+                else:
+                    print(f"  ⚠️  插件不存在: {plugin_name}")
+    
     # 處理 sup 與 schema 方法
     full_sup = args.sup + f"_{args.lightrag_schema_method}" if args.sup else args.lightrag_schema_method
-    storage_path = os.path.join(Settings.lightrag_storage_path_DIR, args.data_type) + "_" + full_sup
+    
+    # 使用 StorageManager（已在 lightrag.py 中整合，此處只需檢查是否需要建圖）
+    from src.storage import get_storage_path
+    
+    # 決定使用的 mode（用於 storage path）
+    # 如果指定了單一 mode，使用該 mode；如果是 "all"，則不加 mode 後綴
+    storage_mode = "" if args.lightrag_mode == "all" else args.lightrag_mode
+    if storage_mode == "none":
+        storage_mode = ""
+    
+    storage_path = get_storage_path(
+        storage_type="lightrag",
+        data_type=args.data_type,
+        method=full_sup,
+        mode=storage_mode,
+        fast_test=args.graph_build_fast_test or args.qa_dataset_fast_test
+    )
     
     # 建立 LightRAG 索引（如果不存在）
-    if not os.path.exists(storage_path):
-        if not os.path.exists(Settings.lightrag_storage_path_DIR):
-            os.mkdir(Settings.lightrag_storage_path_DIR)
-        os.mkdir(storage_path)
+    schema_info = None
+    if not os.path.exists(storage_path) or not os.listdir(storage_path):
+        print(f"📂 建立 LightRAG 索引: {storage_path}")
         
-        # 取得動態 Schema
-        custom_entity_types = get_schema_by_method(
+        # 取得完整 Schema 資訊
+        schema_info = get_schema_by_method(
             method=args.lightrag_schema_method,
             text_corpus=data_processing(mode=args.data_mode, data_type=args.data_type),
-            settings=Settings
+            settings=Settings,
+            return_full_schema=True
         )
-        print(f"🌟 LightRAG 將使用以下實體類別建圖: {custom_entity_types}")
+        print(f"🌟 LightRAG 將使用以下實體類別建圖: {schema_info['entities']}")
         
-        # 更新 Settings
-        Settings.lightrag_entity_types = custom_entity_types
+        # 更新 Settings（只傳遞 entity types）
+        Settings.lightrag_entity_types = schema_info['entities']
         
         # 建立索引
         build_lightrag_index(
@@ -266,11 +372,28 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
             mode=args.data_mode,
             data_type=args.data_type,
             sup=full_sup,
-            fast_build=args.graph_build_fast_test
+            fast_build=args.graph_build_fast_test or args.qa_dataset_fast_test,
+            lightrag_mode=storage_mode
         )
+    else:
+        # 如果索引已存在，從已建立的索引讀取 schema 資訊
+        print(f"✅ LightRAG 索引已存在: {storage_path}")
+        schema_info = get_schema_by_method(
+            method=args.lightrag_schema_method,
+            text_corpus=data_processing(mode=args.data_mode, data_type=args.data_type),
+            settings=Settings,
+            return_full_schema=True
+        )
+        print(f"🌟 使用現有 Schema: {schema_info['entities']}")
     
     # 取得 LightRAG 實例
-    lightrag_instance = get_lightrag_engine(Settings, data_type=args.data_type, sup=full_sup)
+    lightrag_instance = get_lightrag_engine(
+        Settings, 
+        data_type=args.data_type, 
+        sup=full_sup,
+        mode=storage_mode,
+        fast_test=args.graph_build_fast_test or args.qa_dataset_fast_test
+    )
     
     # 根據模式建立 Wrapper
     if args.lightrag_mode != "none":
@@ -280,22 +403,28 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
                 wrapper = LightRAGWrapper(
                     name=f"LightRAG_{mode.capitalize()}",
                     rag_instance=lightrag_instance,
-                    mode=mode
+                    mode=mode,
+                    schema_info=schema_info
                 )
+                wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
                 pipelines_to_test.append(wrapper)
         elif args.lightrag_mode == "original":
             wrapper = LightRAGWrapper_Original(
                 name="LightRAG_Original",
                 rag_instance=lightrag_instance,
-                mode="hybrid"
+                mode="hybrid",
+                schema_info=schema_info
             )
+            wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
             pipelines_to_test.append(wrapper)
         else:
             wrapper = LightRAGWrapper(
                 name=f"LightRAG_{args.lightrag_mode.capitalize()}",
                 rag_instance=lightrag_instance,
-                mode=args.lightrag_mode
+                mode=args.lightrag_mode,
+                schema_info=schema_info
             )
+            wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
             pipelines_to_test.append(wrapper)
     
     # Temporal LightRAG
@@ -306,39 +435,174 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
         wrapper = TemporalLightRAGWrapper(
             name="Temporal_LightRAG",
             rag_instance=temporal_rag,
-            mode=args.lightrag_mode if args.lightrag_mode != "none" else "hybrid"
+            mode=args.lightrag_mode if args.lightrag_mode != "none" else "hybrid",
+            schema_info=schema_info
         )
         pipelines_to_test.append(wrapper)
 
 
+def setup_autoschema_pipeline(args, Settings, pipelines_to_test):
+    """設置 AutoSchemaKG 端到端 Pipeline"""
+    from src.rag.wrappers import AutoSchemaWrapper
+    from src.data.processors import data_processing
+    from src.storage import get_storage_path
+    
+    print("🔬 設置 AutoSchemaKG Pipeline...")
+    
+    # 載入文檔
+    documents = data_processing(mode=args.data_mode, data_type=args.data_type)
+    if args.graph_build_fast_test:
+        documents = documents[:2]
+    
+    autoschema_output_dir = get_storage_path(
+        storage_type="graph_index",
+        data_type=args.data_type,
+        method=f"autoschema_{args.model_type}",
+        fast_test=args.graph_build_fast_test or args.qa_dataset_fast_test,
+        top_k=args.top_k
+    )
+    print(f"📂 AutoSchemaKG 儲存路徑: {autoschema_output_dir}")
+
+    # 建立 Wrapper
+    wrapper = AutoSchemaWrapper(
+        name="AutoSchemaKG",
+        output_dir=autoschema_output_dir,
+        documents=documents,
+        model_type=args.model_type,
+        top_k=args.top_k,
+        settings=Settings
+    )
+    wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
+    
+    pipelines_to_test.append(wrapper)
+    print("✅ AutoSchemaKG Pipeline 設置完成")
+
+
+def setup_dynamic_schema_pipeline(args, Settings, pipelines_to_test):
+    """設置 DynamicSchema 端到端 Pipeline"""
+    from src.rag.wrappers import DynamicSchemaWrapper
+    from src.data.processors import data_processing
+    
+    print("🔍 設置 DynamicSchema Pipeline...")
+    
+    # 載入文檔
+    documents = data_processing(mode=args.data_mode, data_type=args.data_type)
+    if args.graph_build_fast_test:
+        documents = documents[:2]
+    
+    # 建立 Wrapper
+    wrapper = DynamicSchemaWrapper(
+        name="DynamicSchema",
+        documents=documents,
+        model_type=args.model_type,
+        data_type=args.data_type,
+        fast_test=args.graph_build_fast_test,
+        top_k=args.top_k,
+        settings=Settings
+    )
+    
+    pipelines_to_test.append(wrapper)
+    print("✅ DynamicSchema Pipeline 設置完成")
+
+
+def setup_modular_graph_pipeline(args, Settings, pipelines_to_test):
+    """設置模組化 Graph Pipeline"""
+    from src.rag.pipeline_factory import PipelineFactory
+    from src.data.processors import data_processing
+    
+    # 檢查是否指定了模組化參數
+    if not args.graph_preset and not (args.graph_builder and args.graph_retriever):
+        return
+    
+    print("🔧 設置模組化 Graph Pipeline...")
+    
+    # 載入文檔
+    documents = data_processing(mode=args.data_mode, data_type=args.data_type)
+    if args.graph_build_fast_test:
+        documents = documents[:2]
+    
+    # Builder 配置
+    builder_config = {
+        'data_type': args.data_type,
+        'fast_test': args.graph_build_fast_test,
+        'schema_method': args.lightrag_schema_method,
+        'sup': args.sup
+    }
+    
+    # Retriever 配置
+    retriever_config = {
+        'data_type': args.data_type,
+        'fast_test': args.graph_build_fast_test,
+        'mode': args.lightrag_mode if args.lightrag_mode != "none" else "hybrid"
+    }
+    
+    # 建立 Pipeline
+    try:
+        pipeline = PipelineFactory.create_pipeline(
+            preset_name=args.graph_preset if args.graph_preset else None,
+            builder_name=args.graph_builder if not args.graph_preset else None,
+            retriever_name=args.graph_retriever if not args.graph_preset else None,
+            settings=Settings,
+            documents=documents,
+            builder_config=builder_config,
+            retriever_config=retriever_config,
+            top_k=args.top_k,
+            model_type=args.model_type
+        )
+        
+        pipelines_to_test.append(pipeline)
+        if hasattr(pipeline, "set_retrieval_max_tokens"):
+            pipeline.set_retrieval_max_tokens(args.retrieval_max_tokens)
+        print(f"✅ 模組化 Pipeline 設置完成: {pipeline.name}")
+        
+    except Exception as e:
+        print(f"⚠️  模組化 Pipeline 設置失敗: {e}")
+
+
 def build_postfix(args):
-    """建立結果資料夾名稱後綴"""
-    postfix = ""
+    """
+    建立結果資料夾名稱後綴
     
-    if args.data_type == "DI":
-        postfix += "_DI"
-    elif args.data_type == "GEN":
-        postfix += "_GEN"
+    命名規則與 StorageManager 保持一致：
+    {data_type}_{method}_{mode}_{top_k}_{custom_tag}_{sup}_{fast_test}
+    """
+    parts = []
     
+    # 1. Data type
+    if args.data_type:
+        parts.append(args.data_type)
+    
+    # 2. Method (vector_method 或 graph_rag_method)
     if args.vector_method != "none":
-        postfix += f"_{args.vector_method}"
+        parts.append(args.vector_method)
+    
+    if args.adv_vector_method != "none":
+        parts.append(args.adv_vector_method)
     
     if args.graph_rag_method != "none":
-        postfix += f"_{args.graph_rag_method}"
+        parts.append(args.graph_rag_method)
     
-    if args.lightrag_mode != "none":
-        postfix += f"_{args.lightrag_mode}"
+    # 3. Mode (LightRAG mode)
+    if args.lightrag_mode != "none" and args.lightrag_mode != "all":
+        parts.append(args.lightrag_mode)
     
+    # 4. Schema method (如果是 LightRAG)
+    if args.graph_rag_method == "lightrag" and args.lightrag_schema_method:
+        parts.append(args.lightrag_schema_method)
+    
+    # 5. Custom postfix
     if args.postfix:
-        postfix += f"_{args.postfix}"
+        parts.append(args.postfix)
     
+    # 6. Sup
     if args.sup:
-        postfix += f"_{args.sup}"
+        parts.append(args.sup)
     
+    # 7. Fast test
     if args.qa_dataset_fast_test:
-        postfix += "_fast_test"
+        parts.append("fast_test")
     
-    return postfix
+    return "_".join(parts) if parts else ""
 
 
 def main():
@@ -348,6 +612,7 @@ def main():
     
     # 取得設定
     Settings = get_settings(model_type=args.model_type)
+    # apply_generation_cap_to_settings(Settings, args.generation_max_tokens)  # 已隱藏 generation token 限制
     
     # 快速測試模式連動
     if args.qa_dataset_fast_test:
@@ -362,6 +627,12 @@ def main():
     setup_vector_pipelines(args, Settings, pipelines_to_test)
     setup_advanced_vector_pipelines(args, Settings, pipelines_to_test)
     setup_graph_pipelines(args, Settings, pipelines_to_test)
+    setup_modular_graph_pipeline(args, Settings, pipelines_to_test)
+
+    # 統一套用 retrieval token 上限到所有 wrapper
+    for pipeline in pipelines_to_test:
+        if hasattr(pipeline, "set_retrieval_max_tokens"):
+            pipeline.set_retrieval_max_tokens(args.retrieval_max_tokens)
     
     # 檢查是否有 Pipeline
     if not pipelines_to_test:
@@ -383,9 +654,32 @@ def main():
     
     # 建立 postfix
     postfix = build_postfix(args)
+    result_bucket = "test" if args.qa_dataset_fast_test else "exp"
+    results_root_dir = f"/home/End_to_End_RAG/results/{result_bucket}"
+    print(f"📂 結果分流目錄: {results_root_dir}")
     
-    # 執行評估
-    asyncio.run(run_evaluation(datasets, pipelines_to_test, postfix=postfix))
+    # 如果啟用token budget，使用兩階段評估
+    if args.enable_token_budget:
+        print("\n🎯 啟用Token Budget控制模式")
+        asyncio.run(run_evaluation_with_token_budget(
+            datasets, 
+            pipelines_to_test, 
+            postfix=postfix,
+            baseline_method=args.token_budget_baseline,
+            results_root_dir=results_root_dir,
+            is_fast_test=args.qa_dataset_fast_test,
+        ))
+    else:
+        # 執行標準評估
+        asyncio.run(
+            run_evaluation(
+                datasets,
+                pipelines_to_test,
+                postfix=postfix,
+                results_root_dir=results_root_dir,
+                is_fast_test=args.qa_dataset_fast_test,
+            )
+        )
 
 
 if __name__ == "__main__":

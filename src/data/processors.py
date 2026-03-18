@@ -151,11 +151,15 @@ class DataProcessor:
         """
         metadata = self._extract_metadata(data)
         
+        # 使用 NO 作為 document ID，確保可追溯
+        doc_id = data.get("NO", None)
+        
         if self.mode == "natural_text":
             text = self._format_natural_text(data, metadata)
             return Document(
                 text=text,
                 metadata=metadata,
+                doc_id=doc_id,
                 excluded_embed_metadata_keys=list(metadata.keys()),
                 excluded_llm_metadata_keys=list(metadata.keys())
             )
@@ -165,6 +169,7 @@ class DataProcessor:
             return Document(
                 text=text,
                 metadata=metadata,
+                doc_id=doc_id,
                 excluded_llm_metadata_keys=list(metadata.keys()),
                 excluded_embed_metadata_keys=list(metadata.keys())
             )
@@ -173,7 +178,8 @@ class DataProcessor:
             text = self._format_key_value_text(data)
             return Document(
                 text=text,
-                metadata=metadata
+                metadata=metadata,
+                doc_id=doc_id
             )
         
         elif self.mode == "unstructured_text":
@@ -181,6 +187,7 @@ class DataProcessor:
             return Document(
                 text=text,
                 metadata=metadata,
+                doc_id=doc_id,
                 excluded_llm_metadata_keys=list(metadata.keys())
             )
         

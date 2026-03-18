@@ -6,8 +6,8 @@ from typing import List, Dict
 
 # 載入自定義設定與資料 (沿用您原本的架構)
 from llama_index.core import PromptTemplate
-from model_settings import get_settings
-from data_processing import data_processing
+from src.config.settings import get_settings
+from src.data.processors import data_processing
 
 Settings = get_settings()
 

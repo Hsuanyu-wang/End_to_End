@@ -1,0 +1,119 @@
+{
+  "F客戶<SEP>維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773734340,
+    "update_time": 1773734340,
+    "_id": "F客戶<SEP>維護紀錄"
+  },
+  "A人員<SEP>維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773734340,
+    "update_time": 1773734340,
+    "_id": "A人員<SEP>維護紀錄"
+  },
+  "splunk_銀行處<SEP>維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773734340,
+    "update_time": 1773734340,
+    "_id": "splunk_銀行處<SEP>維護紀錄"
+  },
+  "授權量<SEP>維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773734340,
+    "update_time": 1773734340,
+    "_id": "授權量<SEP>維護紀錄"
+  },
+  "伺服器效能<SEP>維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773734340,
+    "update_time": 1773734340,
+    "_id": "伺服器效能<SEP>維護紀錄"
+  },
+  "當前版本<SEP>維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773734340,
+    "update_time": 1773734340,
+    "_id": "當前版本<SEP>維護紀錄"
+  },
+  "最新版本<SEP>維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773734340,
+    "update_time": 1773734340,
+    "_id": "最新版本<SEP>維護紀錄"
+  },
+  "B客戶<SEP>Maintainer帳號權限確認": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773734341,
+    "update_time": 1773734341,
+    "_id": "B客戶<SEP>Maintainer帳號權限確認"
+  },
+  "A人員<SEP>DEP02移轉後服務確認": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773734341,
+    "update_time": 1773734341,
+    "_id": "A人員<SEP>DEP02移轉後服務確認"
+  },
+  "C人員<SEP>PA報表寄送異常檢查": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773734341,
+    "update_time": 1773734341,
+    "_id": "C人員<SEP>PA報表寄送異常檢查"
+  },
+  "B客戶<SEP>FISAC資料收容-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773734341,
+    "update_time": 1773734341,
+    "_id": "B客戶<SEP>FISAC資料收容-進行中"
+  },
+  "A人員<SEP>SH KVstore引擎異常測試-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773734341,
+    "update_time": 1773734341,
+    "_id": "A人員<SEP>SH KVstore引擎異常測試-進行中"
+  },
+  "B客戶<SEP>LDAP設定": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773734341,
+    "update_time": 1773734341,
+    "_id": "B客戶<SEP>LDAP設定"
+  }
+}

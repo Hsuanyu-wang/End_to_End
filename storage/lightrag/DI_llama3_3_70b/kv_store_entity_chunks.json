@@ -1,0 +1,3559 @@
+{
+  "C客戶": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f",
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6",
+      "chunk-79f23819b8640c43571e6e9b3e4098e0",
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e",
+      "chunk-5479196dee25b34d077c01190c6c728b",
+      "chunk-15d6c505e6a20b598aa21d52b466adcd",
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f",
+      "chunk-3f8775862e3b8ea072578967e7520445",
+      "chunk-082efb5c18d778427dcd94905e5f4370",
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f",
+      "chunk-b8ec2739edb4ee1ccc4cf68534e90be5",
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a",
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b",
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a",
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "count": 16,
+    "update_time": 1773399305,
+    "_id": "C客戶"
+  },
+  "B人員": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f",
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6",
+      "chunk-79f23819b8640c43571e6e9b3e4098e0",
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e",
+      "chunk-5479196dee25b34d077c01190c6c728b",
+      "chunk-8a81645d1d338ac013fa594b14c35640",
+      "chunk-15d6c505e6a20b598aa21d52b466adcd",
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f",
+      "chunk-3f8775862e3b8ea072578967e7520445",
+      "chunk-082efb5c18d778427dcd94905e5f4370",
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f",
+      "chunk-b8ec2739edb4ee1ccc4cf68534e90be5",
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a",
+      "chunk-5f0773b8daffa7a65254a73867e36afb",
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b",
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a",
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "count": 18,
+    "update_time": 1773399305,
+    "_id": "B人員"
+  },
+  "Splunk駐點服務202511第四周": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f"
+    ],
+    "count": 1,
+    "create_time": 1773397504,
+    "update_time": 1773397504,
+    "_id": "Splunk駐點服務202511第四周"
+  },
+  "GeoDB": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6",
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e",
+      "chunk-15d6c505e6a20b598aa21d52b466adcd",
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f",
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b",
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "count": 7,
+    "update_time": 1773399305,
+    "_id": "GeoDB"
+  },
+  "Gitlab": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "count": 2,
+    "update_time": 1773397850,
+    "_id": "Gitlab"
+  },
+  "CVE-2025-11224": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f"
+    ],
+    "count": 1,
+    "create_time": 1773397504,
+    "update_time": 1773397504,
+    "_id": "CVE-2025-11224"
+  },
+  "AI網站服務紀錄調閱儀表板": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f"
+    ],
+    "count": 1,
+    "create_time": 1773397504,
+    "update_time": 1773397504,
+    "_id": "AI網站服務紀錄調閱儀表板"
+  },
+  "DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標告警": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f"
+    ],
+    "count": 1,
+    "create_time": 1773397504,
+    "update_time": 1773397504,
+    "_id": "DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標告警"
+  },
+  "2025/11/25 13:30至2025/11/25 17:30": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f"
+    ],
+    "count": 1,
+    "create_time": 1773397504,
+    "update_time": 1773397504,
+    "_id": "2025/11/25 13:30至2025/11/25 17:30"
+  },
+  "告警盤點": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 2,
+    "update_time": 1773398743,
+    "_id": "告警盤點"
+  },
+  "FCB設定": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f"
+    ],
+    "count": 1,
+    "create_time": 1773397504,
+    "update_time": 1773397504,
+    "_id": "FCB設定"
+  },
+  "World Athletics Federation": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "chunk-c0cd3e323fc2a43e461d7af757b08706",
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f",
+      "chunk-1e6e1908b68b82814f06780675f7938b",
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6",
+      "chunk-79f23819b8640c43571e6e9b3e4098e0",
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e",
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a",
+      "chunk-d02e98febcd8f8650bbe77d789a41d69",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-d0cef05272158ef916c2b84f625b2ddb",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-5479196dee25b34d077c01190c6c728b",
+      "chunk-8a81645d1d338ac013fa594b14c35640",
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1",
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-15d6c505e6a20b598aa21d52b466adcd",
+      "chunk-75fa98905e1d68515f390e75c46adddb",
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f",
+      "chunk-3f8775862e3b8ea072578967e7520445",
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-1e6839b81653aa7c9b7ec794f3447380",
+      "chunk-fe7268a7cb94439d483759e501068db6",
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-84c3e0271089b72556be831ea38a055f",
+      "chunk-082efb5c18d778427dcd94905e5f4370",
+      "chunk-d0d3b88d3601a1081c8354e0ef27952f",
+      "chunk-1364984bd10139c2ef2cd5907a3a7591",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-b0add79f46581b83deba682a2c89cdb7",
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f",
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce",
+      "chunk-56b76e765b58a558604d5d6f2575d2ca",
+      "chunk-c7743e93210e95e8e40e0d2a627684b7",
+      "chunk-b8ec2739edb4ee1ccc4cf68534e90be5",
+      "chunk-5618eb566fb322ada0eb69bef88a7581",
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3",
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0",
+      "chunk-412e17859c430b9ce8b929bc152053ef",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a",
+      "chunk-4861ed7c0c566a81f361adb6811a1523",
+      "chunk-04465635a6b88183cbabbfe7e25635dd",
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede",
+      "chunk-39206ec5906f23d68e051b1df74d3ca7",
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d",
+      "chunk-738a58105cbf665748b3257e0cfee9ac",
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69",
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b",
+      "chunk-8a83bcdf6e7b7269cfd17b4f21457de8",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-0640212d45b4b92d91d0255cf90edf96",
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a",
+      "chunk-5f0773b8daffa7a65254a73867e36afb",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2",
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a",
+      "chunk-345e520afd2a192e25824abb33740d46",
+      "chunk-1df6d8d113790f99d50593095e1e5e58",
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5",
+      "chunk-cdd29ae3537f38a27c3848632ad51359",
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3",
+      "chunk-dddcb833d814b293bd936732652206d0",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 75,
+    "update_time": 1773399351,
+    "_id": "World Athletics Federation"
+  },
+  "Noah Carter": {
+    "chunk_ids": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "chunk-c0cd3e323fc2a43e461d7af757b08706",
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f",
+      "chunk-1e6e1908b68b82814f06780675f7938b",
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6",
+      "chunk-79f23819b8640c43571e6e9b3e4098e0",
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e",
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a",
+      "chunk-d02e98febcd8f8650bbe77d789a41d69",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-d0cef05272158ef916c2b84f625b2ddb",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-5479196dee25b34d077c01190c6c728b",
+      "chunk-8a81645d1d338ac013fa594b14c35640",
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1",
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-15d6c505e6a20b598aa21d52b466adcd",
+      "chunk-75fa98905e1d68515f390e75c46adddb",
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f",
+      "chunk-3f8775862e3b8ea072578967e7520445",
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-1e6839b81653aa7c9b7ec794f3447380",
+      "chunk-fe7268a7cb94439d483759e501068db6",
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-84c3e0271089b72556be831ea38a055f",
+      "chunk-082efb5c18d778427dcd94905e5f4370",
+      "chunk-d0d3b88d3601a1081c8354e0ef27952f",
+      "chunk-1364984bd10139c2ef2cd5907a3a7591",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f",
+      "chunk-b0add79f46581b83deba682a2c89cdb7",
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce",
+      "chunk-56b76e765b58a558604d5d6f2575d2ca",
+      "chunk-b8ec2739edb4ee1ccc4cf68534e90be5",
+      "chunk-c7743e93210e95e8e40e0d2a627684b7",
+      "chunk-5618eb566fb322ada0eb69bef88a7581",
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3",
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0",
+      "chunk-412e17859c430b9ce8b929bc152053ef",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a",
+      "chunk-4861ed7c0c566a81f361adb6811a1523",
+      "chunk-04465635a6b88183cbabbfe7e25635dd",
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede",
+      "chunk-39206ec5906f23d68e051b1df74d3ca7",
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d",
+      "chunk-738a58105cbf665748b3257e0cfee9ac",
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69",
+      "chunk-8a83bcdf6e7b7269cfd17b4f21457de8",
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-0640212d45b4b92d91d0255cf90edf96",
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a",
+      "chunk-5f0773b8daffa7a65254a73867e36afb",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2",
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a",
+      "chunk-345e520afd2a192e25824abb33740d46",
+      "chunk-1df6d8d113790f99d50593095e1e5e58",
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5",
+      "chunk-cdd29ae3537f38a27c3848632ad51359",
+      "chunk-dddcb833d814b293bd936732652206d0",
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 75,
+    "update_time": 1773399360,
+    "_id": "Noah Carter"
+  },
+  "E客戶": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706",
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a",
+      "chunk-d02e98febcd8f8650bbe77d789a41d69",
+      "chunk-d0cef05272158ef916c2b84f625b2ddb",
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-1e6839b81653aa7c9b7ec794f3447380",
+      "chunk-b0add79f46581b83deba682a2c89cdb7",
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce",
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0",
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a",
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede",
+      "chunk-738a58105cbf665748b3257e0cfee9ac",
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69",
+      "chunk-0640212d45b4b92d91d0255cf90edf96",
+      "chunk-1df6d8d113790f99d50593095e1e5e58",
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe",
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3"
+    ],
+    "count": 18,
+    "update_time": 1773399321,
+    "_id": "E客戶"
+  },
+  "C人員": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706",
+      "chunk-1e6e1908b68b82814f06780675f7938b",
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-79f23819b8640c43571e6e9b3e4098e0",
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a",
+      "chunk-d02e98febcd8f8650bbe77d789a41d69",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-d0cef05272158ef916c2b84f625b2ddb",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1",
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-1e6839b81653aa7c9b7ec794f3447380",
+      "chunk-84c3e0271089b72556be831ea38a055f",
+      "chunk-d0d3b88d3601a1081c8354e0ef27952f",
+      "chunk-1364984bd10139c2ef2cd5907a3a7591",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-b0add79f46581b83deba682a2c89cdb7",
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce",
+      "chunk-5618eb566fb322ada0eb69bef88a7581",
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3",
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0",
+      "chunk-412e17859c430b9ce8b929bc152053ef",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a",
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede",
+      "chunk-39206ec5906f23d68e051b1df74d3ca7",
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d",
+      "chunk-738a58105cbf665748b3257e0cfee9ac",
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69",
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-0640212d45b4b92d91d0255cf90edf96",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-345e520afd2a192e25824abb33740d46",
+      "chunk-1df6d8d113790f99d50593095e1e5e58",
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5",
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 44,
+    "update_time": 1773399351,
+    "_id": "C人員"
+  },
+  "Splunk工作事項- 0729": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Splunk工作事項- 0729"
+  },
+  "Asset and Identity Priority Confirmation": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Asset and Identity Priority Confirmation"
+  },
+  "Identity Title Addition": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Identity Title Addition"
+  },
+  "Account Status Update": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Account Status Update"
+  },
+  "Priority Setting for Unclear Identities": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Priority Setting for Unclear Identities"
+  },
+  "Critical Priority Assets": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Critical Priority Assets"
+  },
+  "Low Priority Assets": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Low Priority Assets"
+  },
+  "ES Threat Intelligence Download Settings": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "ES Threat Intelligence Download Settings"
+  },
+  "DLDK Container": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "DLDK Container"
+  },
+  "Monthly Maintenance": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Monthly Maintenance"
+  },
+  "Automated Program": {
+    "chunk_ids": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "count": 1,
+    "create_time": 1773397506,
+    "update_time": 1773397506,
+    "_id": "Automated Program"
+  },
+  "Splunk駐點服務202510第五周": {
+    "chunk_ids": [
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f"
+    ],
+    "count": 1,
+    "create_time": 1773397528,
+    "update_time": 1773397528,
+    "_id": "Splunk駐點服務202510第五周"
+  },
+  "Geodb": {
+    "chunk_ids": [
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f",
+      "chunk-5479196dee25b34d077c01190c6c728b",
+      "chunk-3f8775862e3b8ea072578967e7520445",
+      "chunk-082efb5c18d778427dcd94905e5f4370",
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 5,
+    "update_time": 1773398743,
+    "_id": "Geodb"
+  },
+  "VirusTotal": {
+    "chunk_ids": [
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f",
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 2,
+    "update_time": 1773398743,
+    "_id": "VirusTotal"
+  },
+  "AbuseIPDB": {
+    "chunk_ids": [
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f"
+    ],
+    "count": 1,
+    "create_time": 1773397528,
+    "update_time": 1773397528,
+    "_id": "AbuseIPDB"
+  },
+  "Search Head": {
+    "chunk_ids": [
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f"
+    ],
+    "count": 1,
+    "create_time": 1773397528,
+    "update_time": 1773397528,
+    "_id": "Search Head"
+  },
+  "B客戶": {
+    "chunk_ids": [
+      "chunk-1e6e1908b68b82814f06780675f7938b",
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-75fa98905e1d68515f390e75c46adddb",
+      "chunk-fe7268a7cb94439d483759e501068db6",
+      "chunk-84c3e0271089b72556be831ea38a055f",
+      "chunk-d0d3b88d3601a1081c8354e0ef27952f",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-412e17859c430b9ce8b929bc152053ef",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-04465635a6b88183cbabbfe7e25635dd",
+      "chunk-39206ec5906f23d68e051b1df74d3ca7",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 22,
+    "update_time": 1773399351,
+    "_id": "B客戶"
+  },
+  "IDX硬碟空間滿載與資料同步問題": {
+    "chunk_ids": [
+      "chunk-1e6e1908b68b82814f06780675f7938b"
+    ],
+    "count": 1,
+    "create_time": 1773397530,
+    "update_time": 1773397530,
+    "_id": "IDX硬碟空間滿載與資料同步問題"
+  },
+  "IDX01": {
+    "chunk_ids": [
+      "chunk-1e6e1908b68b82814f06780675f7938b",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 2,
+    "update_time": 1773399224,
+    "_id": "IDX01"
+  },
+  "IDX02": {
+    "chunk_ids": [
+      "chunk-1e6e1908b68b82814f06780675f7938b",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 2,
+    "update_time": 1773399224,
+    "_id": "IDX02"
+  },
+  "IDX03": {
+    "chunk_ids": [
+      "chunk-1e6e1908b68b82814f06780675f7938b",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 2,
+    "update_time": 1773399224,
+    "_id": "IDX03"
+  },
+  "ocp_cdibh資料": {
+    "chunk_ids": [
+      "chunk-1e6e1908b68b82814f06780675f7938b"
+    ],
+    "count": 1,
+    "create_time": 1773397530,
+    "update_time": 1773397530,
+    "_id": "ocp_cdibh資料"
+  },
+  "G客戶": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 2,
+    "update_time": 1773399130,
+    "_id": "G客戶"
+  },
+  "A人員": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-75fa98905e1d68515f390e75c46adddb",
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-fe7268a7cb94439d483759e501068db6",
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-1364984bd10139c2ef2cd5907a3a7591",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-56b76e765b58a558604d5d6f2575d2ca",
+      "chunk-c7743e93210e95e8e40e0d2a627684b7",
+      "chunk-5618eb566fb322ada0eb69bef88a7581",
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-4861ed7c0c566a81f361adb6811a1523",
+      "chunk-04465635a6b88183cbabbfe7e25635dd",
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d",
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b",
+      "chunk-8a83bcdf6e7b7269cfd17b4f21457de8",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5",
+      "chunk-dddcb833d814b293bd936732652206d0",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 32,
+    "update_time": 1773399351,
+    "_id": "A人員"
+  },
+  "Splunk_10月維護": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-75fa98905e1d68515f390e75c46adddb"
+    ],
+    "count": 2,
+    "update_time": 1773397862,
+    "_id": "Splunk_10月維護"
+  },
+  "2GB": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 2,
+    "update_time": 1773399130,
+    "_id": "2GB"
+  },
+  "0.35GB": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+    ],
+    "count": 1,
+    "create_time": 1773397564,
+    "update_time": 1773397564,
+    "_id": "0.35GB"
+  },
+  "17.5%": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+    ],
+    "count": 1,
+    "create_time": 1773397564,
+    "update_time": 1773397564,
+    "_id": "17.5%"
+  },
+  "1.24%": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 2,
+    "update_time": 1773399130,
+    "_id": "1.24%"
+  },
+  "18.21%": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 2,
+    "update_time": 1773399130,
+    "_id": "18.21%"
+  },
+  "42.91%": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+    ],
+    "count": 1,
+    "create_time": 1773397564,
+    "update_time": 1773397564,
+    "_id": "42.91%"
+  },
+  "9.4.3 (2025.06.05)": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 2,
+    "update_time": 1773399130,
+    "_id": "9.4.3 (2025.06.05)"
+  },
+  "10.0.1 (2025.09.25)": {
+    "chunk_ids": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+    ],
+    "count": 1,
+    "create_time": 1773397564,
+    "update_time": 1773397564,
+    "_id": "10.0.1 (2025.09.25)"
+  },
+  "Splunk": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-8a81645d1d338ac013fa594b14c35640",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce",
+      "chunk-5618eb566fb322ada0eb69bef88a7581",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69",
+      "chunk-8a83bcdf6e7b7269cfd17b4f21457de8",
+      "chunk-5f0773b8daffa7a65254a73867e36afb",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-345e520afd2a192e25824abb33740d46",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 19,
+    "update_time": 1773399351,
+    "_id": "Splunk"
+  },
+  "FISAC": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-72f381579d364fa91cc3e73153e0af97"
+    ],
+    "count": 4,
+    "update_time": 1773399169,
+    "_id": "FISAC"
+  },
+  "James": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 8,
+    "update_time": 1773399351,
+    "_id": "James"
+  },
+  "SH KVstore Engine": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-942b136689124792272bc32a2898842c"
+    ],
+    "count": 2,
+    "update_time": 1773397696,
+    "_id": "SH KVstore Engine"
+  },
+  "Centos Operating System": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 4,
+    "update_time": 1773399351,
+    "_id": "Centos Operating System"
+  },
+  "DEP02": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 4,
+    "update_time": 1773399170,
+    "_id": "DEP02"
+  },
+  "A部門": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 10,
+    "update_time": 1773399351,
+    "_id": "A部門"
+  },
+  "B部門": {
+    "chunk_ids": [
+      "chunk-3781d1671ca7126e99e7656264965fb6",
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 8,
+    "update_time": 1773399285,
+    "_id": "B部門"
+  },
+  "Splunk駐點服務202512第三周": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "count": 1,
+    "create_time": 1773397593,
+    "update_time": 1773397593,
+    "_id": "Splunk駐點服務202512第三周"
+  },
+  "MG02磁碟用量超過90%": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "count": 1,
+    "create_time": 1773397593,
+    "update_time": 1773397593,
+    "_id": "MG02磁碟用量超過90%"
+  },
+  "FWD03備份異常": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "count": 1,
+    "create_time": 1773397593,
+    "update_time": 1773397593,
+    "_id": "FWD03備份異常"
+  },
+  "Cyble ASM IP白名單更新": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "count": 1,
+    "create_time": 1773397593,
+    "update_time": 1773397593,
+    "_id": "Cyble ASM IP白名單更新"
+  },
+  "Splunk帳號更動": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "count": 1,
+    "create_time": 1773397593,
+    "update_time": 1773397593,
+    "_id": "Splunk帳號更動"
+  },
+  "Arcsight和Splunk歷史案件調閱": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "count": 1,
+    "create_time": 1773397593,
+    "update_time": 1773397593,
+    "_id": "Arcsight和Splunk歷史案件調閱"
+  },
+  "GitLab漏洞修補": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "count": 1,
+    "create_time": 1773397593,
+    "update_time": 1773397593,
+    "_id": "GitLab漏洞修補"
+  },
+  "Ryan": {
+    "chunk_ids": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6",
+      "chunk-082efb5c18d778427dcd94905e5f4370"
+    ],
+    "count": 2,
+    "update_time": 1773398015,
+    "_id": "Ryan"
+  },
+  "Splunk SH": {
+    "chunk_ids": [
+      "chunk-79f23819b8640c43571e6e9b3e4098e0"
+    ],
+    "count": 1,
+    "create_time": 1773397595,
+    "update_time": 1773397595,
+    "_id": "Splunk SH"
+  },
+  "Splunk駐點服務202511第三周": {
+    "chunk_ids": [
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e"
+    ],
+    "count": 1,
+    "create_time": 1773397616,
+    "update_time": 1773397616,
+    "_id": "Splunk駐點服務202511第三周"
+  },
+  "AI網站服務紀錄調閱": {
+    "chunk_ids": [
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e"
+    ],
+    "count": 1,
+    "create_time": 1773397616,
+    "update_time": 1773397616,
+    "_id": "AI網站服務紀錄調閱"
+  },
+  "2025弱點掃描報告資訊整理": {
+    "chunk_ids": [
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e"
+    ],
+    "count": 1,
+    "create_time": 1773397616,
+    "update_time": 1773397616,
+    "_id": "2025弱點掃描報告資訊整理"
+  },
+  "eStreamer資料異常處理": {
+    "chunk_ids": [
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e"
+    ],
+    "count": 1,
+    "create_time": 1773397616,
+    "update_time": 1773397616,
+    "_id": "eStreamer資料異常處理"
+  },
+  "KPMG滲透測試IP白名單": {
+    "chunk_ids": [
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e"
+    ],
+    "count": 1,
+    "create_time": 1773397616,
+    "update_time": 1773397616,
+    "_id": "KPMG滲透測試IP白名單"
+  },
+  "Splunk 2025 MA 07月定保.DM20250088_(3/12)": {
+    "chunk_ids": [
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a"
+    ],
+    "count": 1,
+    "create_time": 1773397636,
+    "update_time": 1773397636,
+    "_id": "Splunk 2025 MA 07月定保.DM20250088_(3/12)"
+  },
+  "CSR內容誤植": {
+    "chunk_ids": [
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a"
+    ],
+    "count": 1,
+    "create_time": 1773397636,
+    "update_time": 1773397636,
+    "_id": "CSR內容誤植"
+  },
+  "授權用量": {
+    "chunk_ids": [
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a",
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-04465635a6b88183cbabbfe7e25635dd"
+    ],
+    "count": 4,
+    "update_time": 1773398287,
+    "_id": "授權用量"
+  },
+  "伺服器效能": {
+    "chunk_ids": [
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a",
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-04465635a6b88183cbabbfe7e25635dd"
+    ],
+    "count": 4,
+    "update_time": 1773398287,
+    "_id": "伺服器效能"
+  },
+  "SASE VPN": {
+    "chunk_ids": [
+      "chunk-d02e98febcd8f8650bbe77d789a41d69",
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe"
+    ],
+    "count": 2,
+    "update_time": 1773399284,
+    "_id": "SASE VPN"
+  },
+  "SOAR": {
+    "chunk_ids": [
+      "chunk-d02e98febcd8f8650bbe77d789a41d69",
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe"
+    ],
+    "count": 2,
+    "update_time": 1773399284,
+    "_id": "SOAR"
+  },
+  "Mitreattack": {
+    "chunk_ids": [
+      "chunk-d02e98febcd8f8650bbe77d789a41d69"
+    ],
+    "count": 1,
+    "create_time": 1773397637,
+    "update_time": 1773397637,
+    "_id": "Mitreattack"
+  },
+  "Hank": {
+    "chunk_ids": [
+      "chunk-f62a98ad02d11a4c9618cbda43281859",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 2,
+    "update_time": 1773399351,
+    "_id": "Hank"
+  },
+  "FIsac Data Extraction": {
+    "chunk_ids": [
+      "chunk-f62a98ad02d11a4c9618cbda43281859"
+    ],
+    "count": 1,
+    "create_time": 1773397668,
+    "update_time": 1773397668,
+    "_id": "FIsac Data Extraction"
+  },
+  "2025/11/04 13:30 to 2025/11/04 17:30": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb"
+    ],
+    "count": 1,
+    "create_time": 1773397669,
+    "update_time": 1773397669,
+    "_id": "2025/11/04 13:30 to 2025/11/04 17:30"
+  },
+  "E客戶駐點工作事項- 20251104": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb"
+    ],
+    "count": 1,
+    "create_time": 1773397669,
+    "update_time": 1773397669,
+    "_id": "E客戶駐點工作事項- 20251104"
+  },
+  "RES3SQL19": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb"
+    ],
+    "count": 1,
+    "create_time": 1773397669,
+    "update_time": 1773397669,
+    "_id": "RES3SQL19"
+  },
+  "CEF Outputs套件": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb"
+    ],
+    "count": 1,
+    "create_time": 1773397669,
+    "update_time": 1773397669,
+    "_id": "CEF Outputs套件"
+  },
+  "Threat Object": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb",
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce",
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 4,
+    "update_time": 1773398258,
+    "_id": "Threat Object"
+  },
+  "ES Version Upgrade": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb"
+    ],
+    "count": 1,
+    "create_time": 1773397669,
+    "update_time": 1773397669,
+    "_id": "ES Version Upgrade"
+  },
+  "Splunk Version Upgrade": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb",
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1",
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 3,
+    "update_time": 1773398258,
+    "_id": "Splunk Version Upgrade"
+  },
+  "Apim1 and Imsdb01": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb"
+    ],
+    "count": 1,
+    "create_time": 1773397669,
+    "update_time": 1773397669,
+    "_id": "Apim1 and Imsdb01"
+  },
+  "SH FISAC API Input": {
+    "chunk_ids": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb",
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 2,
+    "update_time": 1773398258,
+    "_id": "SH FISAC API Input"
+  },
+  "2025/12/31 13:30 to 2025/12/31 17:40": {
+    "chunk_ids": [
+      "chunk-942b136689124792272bc32a2898842c"
+    ],
+    "count": 1,
+    "create_time": 1773397696,
+    "update_time": 1773397696,
+    "_id": "2025/12/31 13:30 to 2025/12/31 17:40"
+  },
+  "C同事": {
+    "chunk_ids": [
+      "chunk-942b136689124792272bc32a2898842c"
+    ],
+    "count": 1,
+    "create_time": 1773397696,
+    "update_time": 1773397696,
+    "_id": "C同事"
+  },
+  "Splunk Add-on For Google Cloud Platform": {
+    "chunk_ids": [
+      "chunk-942b136689124792272bc32a2898842c"
+    ],
+    "count": 1,
+    "create_time": 1773397696,
+    "update_time": 1773397696,
+    "_id": "Splunk Add-on For Google Cloud Platform"
+  },
+  "Tenable API App": {
+    "chunk_ids": [
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede"
+    ],
+    "count": 3,
+    "update_time": 1773398063,
+    "_id": "Tenable API App"
+  },
+  "Management Search Anomaly": {
+    "chunk_ids": [
+      "chunk-942b136689124792272bc32a2898842c",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 2,
+    "update_time": 1773399351,
+    "_id": "Management Search Anomaly"
+  },
+  "BTDC2 Issue": {
+    "chunk_ids": [
+      "chunk-942b136689124792272bc32a2898842c"
+    ],
+    "count": 1,
+    "create_time": 1773397696,
+    "update_time": 1773397696,
+    "_id": "BTDC2 Issue"
+  },
+  "Splunk駐點服務202510第二周": {
+    "chunk_ids": [
+      "chunk-5479196dee25b34d077c01190c6c728b"
+    ],
+    "count": 1,
+    "create_time": 1773397716,
+    "update_time": 1773397716,
+    "_id": "Splunk駐點服務202510第二周"
+  },
+  "Automated Blocklist Change Dashboard": {
+    "chunk_ids": [
+      "chunk-5479196dee25b34d077c01190c6c728b"
+    ],
+    "count": 1,
+    "create_time": 1773397716,
+    "update_time": 1773397716,
+    "_id": "Automated Blocklist Change Dashboard"
+  },
+  "Cyble ASM IP": {
+    "chunk_ids": [
+      "chunk-5479196dee25b34d077c01190c6c728b"
+    ],
+    "count": 1,
+    "create_time": 1773397716,
+    "update_time": 1773397716,
+    "_id": "Cyble ASM IP"
+  },
+  "D客戶": {
+    "chunk_ids": [
+      "chunk-8a81645d1d338ac013fa594b14c35640",
+      "chunk-5f0773b8daffa7a65254a73867e36afb"
+    ],
+    "count": 2,
+    "update_time": 1773399067,
+    "_id": "D客戶"
+  },
+  "Splunk 202510-12季維護": {
+    "chunk_ids": [
+      "chunk-8a81645d1d338ac013fa594b14c35640"
+    ],
+    "count": 1,
+    "create_time": 1773397718,
+    "update_time": 1773397718,
+    "_id": "Splunk 202510-12季維護"
+  },
+  "2025/11/14 09:00 to 2025/11/14 15:33": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "2025/11/14 09:00 to 2025/11/14 15:33"
+  },
+  "E客戶駐點工作事項- 20251114": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "chunk-0640212d45b4b92d91d0255cf90edf96"
+    ],
+    "count": 2,
+    "update_time": 1773398713,
+    "_id": "E客戶駐點工作事項- 20251114"
+  },
+  "Splunk自動version check": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "Splunk自動version check"
+  },
+  "CEF outputs套件調整送出格式": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "CEF outputs套件調整送出格式"
+  },
+  "IIS LOG拋送目的": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "IIS LOG拋送目的"
+  },
+  "ES版本升級": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "ES版本升級"
+  },
+  "Splunk版本升級": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "Splunk版本升級"
+  },
+  "資產新增報廢/營運中欄位": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "資產新增報廢/營運中欄位"
+  },
+  "Imsdb02UF": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce"
+    ],
+    "count": 2,
+    "update_time": 1773398136,
+    "_id": "Imsdb02UF"
+  },
+  "SH FISAC API input (未使用)": {
+    "chunk_ids": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "count": 1,
+    "create_time": 1773397760,
+    "update_time": 1773397760,
+    "_id": "SH FISAC API input (未使用)"
+  },
+  "H客戶": {
+    "chunk_ids": [
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1"
+    ],
+    "count": 1,
+    "create_time": 1773397761,
+    "update_time": 1773397761,
+    "_id": "H客戶"
+  },
+  "Splunk Platform Maintenance Case": {
+    "chunk_ids": [
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1"
+    ],
+    "count": 1,
+    "create_time": 1773397761,
+    "update_time": 1773397761,
+    "_id": "Splunk Platform Maintenance Case"
+  },
+  "Splunk Platform": {
+    "chunk_ids": [
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1"
+    ],
+    "count": 1,
+    "create_time": 1773397761,
+    "update_time": 1773397761,
+    "_id": "Splunk Platform"
+  },
+  "Splunk 2025 MA 12月定保.DM20250088_(8/12)": {
+    "chunk_ids": [
+      "chunk-c0c6684aa00106f16e7869f519061642"
+    ],
+    "count": 1,
+    "create_time": 1773397797,
+    "update_time": 1773397797,
+    "_id": "Splunk 2025 MA 12月定保.DM20250088_(8/12)"
+  },
+  "系統優化建議": {
+    "chunk_ids": [
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-04465635a6b88183cbabbfe7e25635dd"
+    ],
+    "count": 3,
+    "update_time": 1773398287,
+    "_id": "系統優化建議"
+  },
+  "版本更新": {
+    "chunk_ids": [
+      "chunk-c0c6684aa00106f16e7869f519061642",
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-04465635a6b88183cbabbfe7e25635dd"
+    ],
+    "count": 3,
+    "update_time": 1773398287,
+    "_id": "版本更新"
+  },
+  "Es_admin_user": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-95280ea367581dac710f0dc56c7a72f3"
+    ],
+    "count": 2,
+    "update_time": 1773398256,
+    "_id": "Es_admin_user"
+  },
+  "Admin Role": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397798,
+    "update_time": 1773397798,
+    "_id": "Admin Role"
+  },
+  "PA Monthly Report": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397798,
+    "update_time": 1773397798,
+    "_id": "PA Monthly Report"
+  },
+  "Fisac Data Ingestion": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397798,
+    "update_time": 1773397798,
+    "_id": "Fisac Data Ingestion"
+  },
+  "Sh Kvstore Engine": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 3,
+    "update_time": 1773399351,
+    "_id": "Sh Kvstore Engine"
+  },
+  "DNS Setting": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "DNS Setting"
+  },
+  "Crowdstrike Package": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Crowdstrike Package"
+  },
+  "Dep02": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 3,
+    "update_time": 1773399351,
+    "_id": "Dep02"
+  },
+  "Linux Host Users": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Linux Host Users"
+  },
+  "Splunk Add-on for Google Cloud Platform": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518",
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 3,
+    "update_time": 1773399170,
+    "_id": "Splunk Add-on for Google Cloud Platform"
+  },
+  "Testing Environment": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Testing Environment"
+  },
+  "Deployment": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Deployment"
+  },
+  "Upgrade Evaluation": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Upgrade Evaluation"
+  },
+  "Transfer": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Transfer"
+  },
+  "Permission Review": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Permission Review"
+  },
+  "Source Type Addition": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Source Type Addition"
+  },
+  "Integration": {
+    "chunk_ids": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "count": 1,
+    "create_time": 1773397799,
+    "update_time": 1773397799,
+    "_id": "Integration"
+  },
+  "2026/01/07 13:30至17:30": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "2026/01/07 13:30至17:30"
+  },
+  "Maintainer帳號權限確認": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "Maintainer帳號權限確認"
+  },
+  "DEP02移轉後服務確認": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "DEP02移轉後服務確認"
+  },
+  "PA報表寄送異常檢查": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "PA報表寄送異常檢查"
+  },
+  "FISAC資料收容-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "FISAC資料收容-進行中"
+  },
+  "SH KVstore引擎異常測試-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "SH KVstore引擎異常測試-進行中"
+  },
+  "LDAP設定": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "LDAP設定"
+  },
+  "Management搜尋異常": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "Management搜尋異常"
+  },
+  "BTDC2問題處理": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "BTDC2問題處理"
+  },
+  "DEP02 root帳號使用確認": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "DEP02 root帳號使用確認"
+  },
+  "新增Splunk Add-on for Google Cloud Platform的sourcetype": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "新增Splunk Add-on for Google Cloud Platform的sourcetype"
+  },
+  "Tenable API App串接": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 2,
+    "update_time": 1773399170,
+    "_id": "Tenable API App串接"
+  },
+  "Centos作業系統升級(評估中)": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773397848,
+    "update_time": 1773397848,
+    "_id": "Centos作業系統升級(評估中)"
+  },
+  "Splunk駐點服務202601第三周": {
+    "chunk_ids": [
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "count": 1,
+    "create_time": 1773397850,
+    "update_time": 1773397850,
+    "_id": "Splunk駐點服務202601第三周"
+  },
+  "F5VPN特定使用者連線的紀錄": {
+    "chunk_ids": [
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "count": 1,
+    "create_time": 1773397850,
+    "update_time": 1773397850,
+    "_id": "F5VPN特定使用者連線的紀錄"
+  },
+  "FWD03底層資料收容filter設定": {
+    "chunk_ids": [
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "count": 1,
+    "create_time": 1773397850,
+    "update_time": 1773397850,
+    "_id": "FWD03底層資料收容filter設定"
+  },
+  "HTTP對外大量傳輸資料報表": {
+    "chunk_ids": [
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "count": 1,
+    "create_time": 1773397850,
+    "update_time": 1773397850,
+    "_id": "HTTP對外大量傳輸資料報表"
+  },
+  "HTTPS大量資料傳輸告警": {
+    "chunk_ids": [
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "count": 1,
+    "create_time": 1773397850,
+    "update_time": 1773397850,
+    "_id": "HTTPS大量資料傳輸告警"
+  },
+  "SSH Server": {
+    "chunk_ids": [
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "count": 1,
+    "create_time": 1773397860,
+    "update_time": 1773397860,
+    "_id": "SSH Server"
+  },
+  "Splunk駐點服務202510第四周": {
+    "chunk_ids": [
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f"
+    ],
+    "count": 1,
+    "create_time": 1773397903,
+    "update_time": 1773397903,
+    "_id": "Splunk駐點服務202510第四周"
+  },
+  "Geodb Update": {
+    "chunk_ids": [
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f"
+    ],
+    "count": 1,
+    "create_time": 1773397903,
+    "update_time": 1773397903,
+    "_id": "Geodb Update"
+  },
+  "IOC Page Restoration": {
+    "chunk_ids": [
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f"
+    ],
+    "count": 1,
+    "create_time": 1773397903,
+    "update_time": 1773397903,
+    "_id": "IOC Page Restoration"
+  },
+  "HTTP Data Transmission Report Adjustment": {
+    "chunk_ids": [
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f"
+    ],
+    "count": 1,
+    "create_time": 1773397903,
+    "update_time": 1773397903,
+    "_id": "HTTP Data Transmission Report Adjustment"
+  },
+  "VirusTotal Comparison": {
+    "chunk_ids": [
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f"
+    ],
+    "count": 1,
+    "create_time": 1773397903,
+    "update_time": 1773397903,
+    "_id": "VirusTotal Comparison"
+  },
+  "Splunk駐點服務202510第一周": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "Splunk駐點服務202510第一周"
+  },
+  "PWLAN觸發IPS高風險告警": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "PWLAN觸發IPS高風險告警"
+  },
+  "172.*": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "172.*"
+  },
+  "IPS高風險告警": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "IPS高風險告警"
+  },
+  "自動化封鎖清單異動儀表板建置": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "自動化封鎖清單異動儀表板建置"
+  },
+  "GitLab": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "GitLab"
+  },
+  "CVE-2025-6454": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "CVE-2025-6454"
+  },
+  "CVE-2025-2256": {
+    "chunk_ids": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "count": 1,
+    "create_time": 1773397905,
+    "update_time": 1773397905,
+    "_id": "CVE-2025-2256"
+  },
+  "I客戶": {
+    "chunk_ids": [
+      "chunk-9648988cb67db9843bc13754ac3d6ab6",
+      "chunk-56b76e765b58a558604d5d6f2575d2ca",
+      "chunk-c7743e93210e95e8e40e0d2a627684b7",
+      "chunk-5618eb566fb322ada0eb69bef88a7581"
+    ],
+    "count": 4,
+    "update_time": 1773398191,
+    "_id": "I客戶"
+  },
+  "Splunk_12月維護": {
+    "chunk_ids": [
+      "chunk-9648988cb67db9843bc13754ac3d6ab6"
+    ],
+    "count": 1,
+    "create_time": 1773397933,
+    "update_time": 1773397933,
+    "_id": "Splunk_12月維護"
+  },
+  "問題追蹤": {
+    "chunk_ids": [
+      "chunk-9648988cb67db9843bc13754ac3d6ab6"
+    ],
+    "count": 1,
+    "create_time": 1773397933,
+    "update_time": 1773397933,
+    "_id": "問題追蹤"
+  },
+  "作業系統版本": {
+    "chunk_ids": [
+      "chunk-9648988cb67db9843bc13754ac3d6ab6"
+    ],
+    "count": 1,
+    "create_time": 1773397933,
+    "update_time": 1773397933,
+    "_id": "作業系統版本"
+  },
+  "2025/12/23 09:00 To 2025/12/23 18:00": {
+    "chunk_ids": [
+      "chunk-1e6839b81653aa7c9b7ec794f3447380"
+    ],
+    "count": 1,
+    "create_time": 1773397947,
+    "update_time": 1773397947,
+    "_id": "2025/12/23 09:00 To 2025/12/23 18:00"
+  },
+  "Websebse Log": {
+    "chunk_ids": [
+      "chunk-1e6839b81653aa7c9b7ec794f3447380"
+    ],
+    "count": 1,
+    "create_time": 1773397947,
+    "update_time": 1773397947,
+    "_id": "Websebse Log"
+  },
+  "Props.conf": {
+    "chunk_ids": [
+      "chunk-1e6839b81653aa7c9b7ec794f3447380"
+    ],
+    "count": 1,
+    "create_time": 1773397947,
+    "update_time": 1773397947,
+    "_id": "Props.conf"
+  },
+  "SASE VPN Kick Session Report": {
+    "chunk_ids": [
+      "chunk-1e6839b81653aa7c9b7ec794f3447380"
+    ],
+    "count": 1,
+    "create_time": 1773397947,
+    "update_time": 1773397947,
+    "_id": "SASE VPN Kick Session Report"
+  },
+  "Nix Logon Success Syntax": {
+    "chunk_ids": [
+      "chunk-1e6839b81653aa7c9b7ec794f3447380"
+    ],
+    "count": 1,
+    "create_time": 1773397947,
+    "update_time": 1773397947,
+    "_id": "Nix Logon Success Syntax"
+  },
+  "Splunk_B客戶B部門11月月維護": {
+    "chunk_ids": [
+      "chunk-fe7268a7cb94439d483759e501068db6"
+    ],
+    "count": 1,
+    "create_time": 1773397965,
+    "update_time": 1773397965,
+    "_id": "Splunk_B客戶B部門11月月維護"
+  },
+  "285GB": {
+    "chunk_ids": [
+      "chunk-fe7268a7cb94439d483759e501068db6",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 2,
+    "update_time": 1773399224,
+    "_id": "285GB"
+  },
+  "203.65GB": {
+    "chunk_ids": [
+      "chunk-fe7268a7cb94439d483759e501068db6"
+    ],
+    "count": 1,
+    "create_time": 1773397980,
+    "update_time": 1773397980,
+    "_id": "203.65GB"
+  },
+  "9.3.3/2025.02.26": {
+    "chunk_ids": [
+      "chunk-fe7268a7cb94439d483759e501068db6",
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 3,
+    "update_time": 1773399224,
+    "_id": "9.3.3/2025.02.26"
+  },
+  "10.0.1/2025.11.14": {
+    "chunk_ids": [
+      "chunk-fe7268a7cb94439d483759e501068db6"
+    ],
+    "count": 1,
+    "create_time": 1773397980,
+    "update_time": 1773397980,
+    "_id": "10.0.1/2025.11.14"
+  },
+  "F客戶": {
+    "chunk_ids": [
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-4861ed7c0c566a81f361adb6811a1523",
+      "chunk-dddcb833d814b293bd936732652206d0"
+    ],
+    "count": 4,
+    "update_time": 1773399323,
+    "_id": "F客戶"
+  },
+  "Splunk Credit Card Processing Maintenance": {
+    "chunk_ids": [
+      "chunk-726c374f489423e007bce76f7810b46e"
+    ],
+    "count": 1,
+    "create_time": 1773397982,
+    "update_time": 1773397982,
+    "_id": "Splunk Credit Card Processing Maintenance"
+  },
+  "Authorization Quota": {
+    "chunk_ids": [
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-4861ed7c0c566a81f361adb6811a1523"
+    ],
+    "count": 2,
+    "update_time": 1773398286,
+    "_id": "Authorization Quota"
+  },
+  "Server Performance": {
+    "chunk_ids": [
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-4861ed7c0c566a81f361adb6811a1523",
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede"
+    ],
+    "count": 3,
+    "update_time": 1773398606,
+    "_id": "Server Performance"
+  },
+  "System Optimization Recommendations": {
+    "chunk_ids": [
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-4861ed7c0c566a81f361adb6811a1523"
+    ],
+    "count": 2,
+    "update_time": 1773398286,
+    "_id": "System Optimization Recommendations"
+  },
+  "UF Devices": {
+    "chunk_ids": [
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-4861ed7c0c566a81f361adb6811a1523"
+    ],
+    "count": 2,
+    "update_time": 1773398286,
+    "_id": "UF Devices"
+  },
+  "Version Update": {
+    "chunk_ids": [
+      "chunk-726c374f489423e007bce76f7810b46e",
+      "chunk-4861ed7c0c566a81f361adb6811a1523"
+    ],
+    "count": 2,
+    "update_time": 1773398286,
+    "_id": "Version Update"
+  },
+  "Splunk Indexer Queue Full": {
+    "chunk_ids": [
+      "chunk-84c3e0271089b72556be831ea38a055f",
+      "chunk-412e17859c430b9ce8b929bc152053ef"
+    ],
+    "count": 2,
+    "update_time": 1773398224,
+    "_id": "Splunk Indexer Queue Full"
+  },
+  "Splunk駐點服務202511第一周": {
+    "chunk_ids": [
+      "chunk-082efb5c18d778427dcd94905e5f4370"
+    ],
+    "count": 1,
+    "create_time": 1773398015,
+    "update_time": 1773398015,
+    "_id": "Splunk駐點服務202511第一周"
+  },
+  "Heavy Forwarder": {
+    "chunk_ids": [
+      "chunk-082efb5c18d778427dcd94905e5f4370"
+    ],
+    "count": 1,
+    "create_time": 1773398015,
+    "update_time": 1773398015,
+    "_id": "Heavy Forwarder"
+  },
+  "KV Store": {
+    "chunk_ids": [
+      "chunk-082efb5c18d778427dcd94905e5f4370"
+    ],
+    "count": 1,
+    "create_time": 1773398015,
+    "update_time": 1773398015,
+    "_id": "KV Store"
+  },
+  "Calvin": {
+    "chunk_ids": [
+      "chunk-082efb5c18d778427dcd94905e5f4370"
+    ],
+    "count": 1,
+    "create_time": 1773398015,
+    "update_time": 1773398015,
+    "_id": "Calvin"
+  },
+  "Splunk Indexer Queue Full -20251215": {
+    "chunk_ids": [
+      "chunk-d0d3b88d3601a1081c8354e0ef27952f"
+    ],
+    "count": 1,
+    "create_time": 1773398017,
+    "update_time": 1773398017,
+    "_id": "Splunk Indexer Queue Full -20251215"
+  },
+  "A客戶": {
+    "chunk_ids": [
+      "chunk-1364984bd10139c2ef2cd5907a3a7591",
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3",
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d",
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b",
+      "chunk-8a83bcdf6e7b7269cfd17b4f21457de8",
+      "chunk-345e520afd2a192e25824abb33740d46"
+    ],
+    "count": 6,
+    "update_time": 1773399253,
+    "_id": "A客戶"
+  },
+  "Switch_6FDC.csv": {
+    "chunk_ids": [
+      "chunk-1364984bd10139c2ef2cd5907a3a7591"
+    ],
+    "count": 1,
+    "create_time": 1773398028,
+    "update_time": 1773398028,
+    "_id": "Switch_6FDC.csv"
+  },
+  "ARP_table Report": {
+    "chunk_ids": [
+      "chunk-1364984bd10139c2ef2cd5907a3a7591"
+    ],
+    "count": 1,
+    "create_time": 1773398028,
+    "update_time": 1773398028,
+    "_id": "ARP_table Report"
+  },
+  "PA每月報表": {
+    "chunk_ids": [
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 2,
+    "update_time": 1773399170,
+    "_id": "PA每月報表"
+  },
+  "Linux主機": {
+    "chunk_ids": [
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 2,
+    "update_time": 1773399170,
+    "_id": "Linux主機"
+  },
+  "sailag": {
+    "chunk_ids": [
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 2,
+    "update_time": 1773399174,
+    "_id": "sailag"
+  },
+  "SH KVstore引擎": {
+    "chunk_ids": [
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-72f381579d364fa91cc3e73153e0af97"
+    ],
+    "count": 2,
+    "update_time": 1773399169,
+    "_id": "SH KVstore引擎"
+  },
+  "Centos作業系統升級": {
+    "chunk_ids": [
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede",
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-72f381579d364fa91cc3e73153e0af97",
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 5,
+    "update_time": 1773399285,
+    "_id": "Centos作業系統升級"
+  },
+  "12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773398065,
+    "update_time": 1773398065,
+    "_id": "12月月維護"
+  },
+  "375 Gb": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773398065,
+    "update_time": 1773398065,
+    "_id": "375 Gb"
+  },
+  "1276 Gb": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773398065,
+    "update_time": 1773398065,
+    "_id": "1276 Gb"
+  },
+  "10.0.2/2025.11.14": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773398065,
+    "update_time": 1773398065,
+    "_id": "10.0.2/2025.11.14"
+  },
+  "2025/12/24 09:00 to 2025/12/24 17:00": {
+    "chunk_ids": [
+      "chunk-b0add79f46581b83deba682a2c89cdb7"
+    ],
+    "count": 1,
+    "create_time": 1773398099,
+    "update_time": 1773398099,
+    "_id": "2025/12/24 09:00 to 2025/12/24 17:00"
+  },
+  "E客戶駐點工作事項- 20251124": {
+    "chunk_ids": [
+      "chunk-b0add79f46581b83deba682a2c89cdb7"
+    ],
+    "count": 1,
+    "create_time": 1773398099,
+    "update_time": 1773398099,
+    "_id": "E客戶駐點工作事項- 20251124"
+  },
+  "Splunk升版完成": {
+    "chunk_ids": [
+      "chunk-b0add79f46581b83deba682a2c89cdb7",
+      "chunk-0640212d45b4b92d91d0255cf90edf96"
+    ],
+    "count": 2,
+    "update_time": 1773398713,
+    "_id": "Splunk升版完成"
+  },
+  "Splunk駐點服務202512第一周": {
+    "chunk_ids": [
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f"
+    ],
+    "count": 1,
+    "create_time": 1773398101,
+    "update_time": 1773398101,
+    "_id": "Splunk駐點服務202512第一周"
+  },
+  "2025下半年度告警盤點": {
+    "chunk_ids": [
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f"
+    ],
+    "count": 1,
+    "create_time": 1773398101,
+    "update_time": 1773398101,
+    "_id": "2025下半年度告警盤點"
+  },
+  "AI網站服務紀錄調閱報表建置": {
+    "chunk_ids": [
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f"
+    ],
+    "count": 1,
+    "create_time": 1773398101,
+    "update_time": 1773398101,
+    "_id": "AI網站服務紀錄調閱報表建置"
+  },
+  "Gen AI連線紀錄(每日)": {
+    "chunk_ids": [
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f"
+    ],
+    "count": 1,
+    "create_time": 1773398101,
+    "update_time": 1773398101,
+    "_id": "Gen AI連線紀錄(每日)"
+  },
+  "Gen AI連線紀錄(整月)": {
+    "chunk_ids": [
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f"
+    ],
+    "count": 1,
+    "create_time": 1773398101,
+    "update_time": 1773398101,
+    "_id": "Gen AI連線紀錄(整月)"
+  },
+  "FCB設定調整": {
+    "chunk_ids": [
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f"
+    ],
+    "count": 1,
+    "create_time": 1773398101,
+    "update_time": 1773398101,
+    "_id": "FCB設定調整"
+  },
+  "FISAC API Input": {
+    "chunk_ids": [
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce"
+    ],
+    "count": 1,
+    "create_time": 1773398136,
+    "update_time": 1773398136,
+    "_id": "FISAC API Input"
+  },
+  "Dashboard Studio": {
+    "chunk_ids": [
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce"
+    ],
+    "count": 1,
+    "create_time": 1773398136,
+    "update_time": 1773398136,
+    "_id": "Dashboard Studio"
+  },
+  "Splunk_11月維護": {
+    "chunk_ids": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca",
+      "chunk-04465635a6b88183cbabbfe7e25635dd",
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 3,
+    "update_time": 1773399130,
+    "_id": "Splunk_11月維護"
+  },
+  "20GB": {
+    "chunk_ids": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca"
+    ],
+    "count": 1,
+    "create_time": 1773398138,
+    "update_time": 1773398138,
+    "_id": "20GB"
+  },
+  "133.26GB": {
+    "chunk_ids": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca"
+    ],
+    "count": 1,
+    "create_time": 1773398138,
+    "update_time": 1773398138,
+    "_id": "133.26GB"
+  },
+  "8.0.6 / 2024.10.22": {
+    "chunk_ids": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca"
+    ],
+    "count": 1,
+    "create_time": 1773398138,
+    "update_time": 1773398138,
+    "_id": "8.0.6 / 2024.10.22"
+  },
+  "10.0.1 / 2025.09.25": {
+    "chunk_ids": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca"
+    ],
+    "count": 1,
+    "create_time": 1773398138,
+    "update_time": 1773398138,
+    "_id": "10.0.1 / 2025.09.25"
+  },
+  "Red Hat 9.4": {
+    "chunk_ids": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca"
+    ],
+    "count": 1,
+    "create_time": 1773398138,
+    "update_time": 1773398138,
+    "_id": "Red Hat 9.4"
+  },
+  "2027/5/31": {
+    "chunk_ids": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca"
+    ],
+    "count": 1,
+    "create_time": 1773398138,
+    "update_time": 1773398138,
+    "_id": "2027/5/31"
+  },
+  "2025/11/19 13:30 to 2025/11/19 14:30": {
+    "chunk_ids": [
+      "chunk-c7743e93210e95e8e40e0d2a627684b7"
+    ],
+    "count": 1,
+    "create_time": 1773398158,
+    "update_time": 1773398158,
+    "_id": "2025/11/19 13:30 to 2025/11/19 14:30"
+  },
+  "設備接收狀態檢查": {
+    "chunk_ids": [
+      "chunk-c7743e93210e95e8e40e0d2a627684b7"
+    ],
+    "count": 1,
+    "create_time": 1773398158,
+    "update_time": 1773398158,
+    "_id": "設備接收狀態檢查"
+  },
+  "UDP接收來自172.20.137.45的asa事件": {
+    "chunk_ids": [
+      "chunk-c7743e93210e95e8e40e0d2a627684b7"
+    ],
+    "count": 1,
+    "create_time": 1773398158,
+    "update_time": 1773398158,
+    "_id": "UDP接收來自172.20.137.45的asa事件"
+  },
+  "Indexer Cluster": {
+    "chunk_ids": [
+      "chunk-c7743e93210e95e8e40e0d2a627684b7"
+    ],
+    "count": 1,
+    "create_time": 1773398158,
+    "update_time": 1773398158,
+    "_id": "Indexer Cluster"
+  },
+  "Splunk SIEM": {
+    "chunk_ids": [
+      "chunk-b8ec2739edb4ee1ccc4cf68534e90be5"
+    ],
+    "count": 1,
+    "create_time": 1773398160,
+    "update_time": 1773398160,
+    "_id": "Splunk SIEM"
+  },
+  "FCB Setting": {
+    "chunk_ids": [
+      "chunk-b8ec2739edb4ee1ccc4cf68534e90be5"
+    ],
+    "count": 1,
+    "create_time": 1773398160,
+    "update_time": 1773398160,
+    "_id": "FCB Setting"
+  },
+  "Checkpoint告警": {
+    "chunk_ids": [
+      "chunk-c7743e93210e95e8e40e0d2a627684b7"
+    ],
+    "count": 1,
+    "create_time": 1773398163,
+    "update_time": 1773398163,
+    "_id": "Checkpoint告警"
+  },
+  "Firewall Event Import Time Anomaly": {
+    "chunk_ids": [
+      "chunk-5618eb566fb322ada0eb69bef88a7581"
+    ],
+    "count": 1,
+    "create_time": 1773398191,
+    "update_time": 1773398191,
+    "_id": "Firewall Event Import Time Anomaly"
+  },
+  "PA Traffic Events": {
+    "chunk_ids": [
+      "chunk-5618eb566fb322ada0eb69bef88a7581"
+    ],
+    "count": 1,
+    "create_time": 1773398191,
+    "update_time": 1773398191,
+    "_id": "PA Traffic Events"
+  },
+  "PA Events": {
+    "chunk_ids": [
+      "chunk-5618eb566fb322ada0eb69bef88a7581"
+    ],
+    "count": 1,
+    "create_time": 1773398191,
+    "update_time": 1773398191,
+    "_id": "PA Events"
+  },
+  "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)": {
+    "chunk_ids": [
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3"
+    ],
+    "count": 1,
+    "create_time": 1773398193,
+    "update_time": 1773398193,
+    "_id": "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)"
+  },
+  "CPU": {
+    "chunk_ids": [
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3"
+    ],
+    "count": 1,
+    "create_time": 1773398193,
+    "update_time": 1773398193,
+    "_id": "CPU"
+  },
+  "Memory": {
+    "chunk_ids": [
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3"
+    ],
+    "count": 1,
+    "create_time": 1773398193,
+    "update_time": 1773398193,
+    "_id": "Memory"
+  },
+  "資料品質儀表板": {
+    "chunk_ids": [
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3"
+    ],
+    "count": 1,
+    "create_time": 1773398193,
+    "update_time": 1773398193,
+    "_id": "資料品質儀表板"
+  },
+  "2025/12/18 09:00至17:30": {
+    "chunk_ids": [
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0"
+    ],
+    "count": 1,
+    "create_time": 1773398223,
+    "update_time": 1773398223,
+    "_id": "2025/12/18 09:00至17:30"
+  },
+  "E客戶駐點工作事項- 20251218": {
+    "chunk_ids": [
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0"
+    ],
+    "count": 1,
+    "create_time": 1773398223,
+    "update_time": 1773398223,
+    "_id": "E客戶駐點工作事項- 20251218"
+  },
+  "ES升版": {
+    "chunk_ids": [
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0"
+    ],
+    "count": 1,
+    "create_time": 1773398223,
+    "update_time": 1773398223,
+    "_id": "ES升版"
+  },
+  "資產上傳APP程式調整": {
+    "chunk_ids": [
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0"
+    ],
+    "count": 1,
+    "create_time": 1773398223,
+    "update_time": 1773398223,
+    "_id": "資產上傳APP程式調整"
+  },
+  "Indexer設定防串改": {
+    "chunk_ids": [
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0"
+    ],
+    "count": 1,
+    "create_time": 1773398223,
+    "update_time": 1773398223,
+    "_id": "Indexer設定防串改"
+  },
+  "Ess_analyst": {
+    "chunk_ids": [
+      "chunk-95280ea367581dac710f0dc56c7a72f3"
+    ],
+    "count": 1,
+    "create_time": 1773398256,
+    "update_time": 1773398256,
+    "_id": "Ess_analyst"
+  },
+  "Fisac": {
+    "chunk_ids": [
+      "chunk-95280ea367581dac710f0dc56c7a72f3",
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 2,
+    "update_time": 1773399351,
+    "_id": "Fisac"
+  },
+  "N8n": {
+    "chunk_ids": [
+      "chunk-95280ea367581dac710f0dc56c7a72f3"
+    ],
+    "count": 1,
+    "create_time": 1773398256,
+    "update_time": 1773398256,
+    "_id": "N8n"
+  },
+  "Centos": {
+    "chunk_ids": [
+      "chunk-95280ea367581dac710f0dc56c7a72f3"
+    ],
+    "count": 1,
+    "create_time": 1773398256,
+    "update_time": 1773398256,
+    "_id": "Centos"
+  },
+  "Apim1": {
+    "chunk_ids": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 1,
+    "create_time": 1773398258,
+    "update_time": 1773398258,
+    "_id": "Apim1"
+  },
+  "Imsdb01": {
+    "chunk_ids": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 1,
+    "create_time": 1773398258,
+    "update_time": 1773398258,
+    "_id": "Imsdb01"
+  },
+  "Checkpoint Data": {
+    "chunk_ids": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 1,
+    "create_time": 1773398258,
+    "update_time": 1773398258,
+    "_id": "Checkpoint Data"
+  },
+  "Asset": {
+    "chunk_ids": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 1,
+    "create_time": 1773398258,
+    "update_time": 1773398258,
+    "_id": "Asset"
+  },
+  "CEF Outputs Package": {
+    "chunk_ids": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 1,
+    "create_time": 1773398258,
+    "update_time": 1773398258,
+    "_id": "CEF Outputs Package"
+  },
+  "Splunk Automatic Version Check": {
+    "chunk_ids": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 1,
+    "create_time": 1773398258,
+    "update_time": 1773398258,
+    "_id": "Splunk Automatic Version Check"
+  },
+  "Asset Decommissioned/Operational Field": {
+    "chunk_ids": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "count": 1,
+    "create_time": 1773398258,
+    "update_time": 1773398258,
+    "_id": "Asset Decommissioned/Operational Field"
+  },
+  "Splunk Credit Card Processing": {
+    "chunk_ids": [
+      "chunk-4861ed7c0c566a81f361adb6811a1523",
+      "chunk-dddcb833d814b293bd936732652206d0"
+    ],
+    "count": 2,
+    "update_time": 1773399323,
+    "_id": "Splunk Credit Card Processing"
+  },
+  "Maintenance Record": {
+    "chunk_ids": [
+      "chunk-4861ed7c0c566a81f361adb6811a1523"
+    ],
+    "count": 1,
+    "create_time": 1773398286,
+    "update_time": 1773398286,
+    "_id": "Maintenance Record"
+  },
+  "2025/12/04 09:30至2025/12/04 10:00": {
+    "chunk_ids": [
+      "chunk-04465635a6b88183cbabbfe7e25635dd"
+    ],
+    "count": 1,
+    "create_time": 1773398287,
+    "update_time": 1773398287,
+    "_id": "2025/12/04 09:30至2025/12/04 10:00"
+  },
+  "Splunk 2025 MA 10月定保.DM20250088_(6/12)": {
+    "chunk_ids": [
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede"
+    ],
+    "count": 1,
+    "create_time": 1773398606,
+    "update_time": 1773398606,
+    "_id": "Splunk 2025 MA 10月定保.DM20250088_(6/12)"
+  },
+  "Authorization Usage": {
+    "chunk_ids": [
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede"
+    ],
+    "count": 1,
+    "create_time": 1773398606,
+    "update_time": 1773398606,
+    "_id": "Authorization Usage"
+  },
+  "2025/11/10 09:30 to 2025/11/10 12:00": {
+    "chunk_ids": [
+      "chunk-39206ec5906f23d68e051b1df74d3ca7"
+    ],
+    "count": 1,
+    "create_time": 1773398608,
+    "update_time": 1773398608,
+    "_id": "2025/11/10 09:30 to 2025/11/10 12:00"
+  },
+  "資料平衡確認與未連接license master解決": {
+    "chunk_ids": [
+      "chunk-39206ec5906f23d68e051b1df74d3ca7"
+    ],
+    "count": 1,
+    "create_time": 1773398608,
+    "update_time": 1773398608,
+    "_id": "資料平衡確認與未連接license master解決"
+  },
+  "/etc/hosts": {
+    "chunk_ids": [
+      "chunk-39206ec5906f23d68e051b1df74d3ca7"
+    ],
+    "count": 1,
+    "create_time": 1773398608,
+    "update_time": 1773398608,
+    "_id": "/etc/hosts"
+  },
+  "DC_ARP報表": {
+    "chunk_ids": [
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d"
+    ],
+    "count": 1,
+    "create_time": 1773398628,
+    "update_time": 1773398628,
+    "_id": "DC_ARP報表"
+  },
+  "DC_ARP_table": {
+    "chunk_ids": [
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d"
+    ],
+    "count": 1,
+    "create_time": 1773398628,
+    "update_time": 1773398628,
+    "_id": "DC_ARP_table"
+  },
+  "Forcepoint Endpoint Dlp": {
+    "chunk_ids": [
+      "chunk-738a58105cbf665748b3257e0cfee9ac"
+    ],
+    "count": 1,
+    "create_time": 1773398650,
+    "update_time": 1773398650,
+    "_id": "Forcepoint Endpoint Dlp"
+  },
+  "Tcpdump": {
+    "chunk_ids": [
+      "chunk-738a58105cbf665748b3257e0cfee9ac"
+    ],
+    "count": 1,
+    "create_time": 1773398650,
+    "update_time": 1773398650,
+    "_id": "Tcpdump"
+  },
+  "Checkpoint Logclm Uf": {
+    "chunk_ids": [
+      "chunk-738a58105cbf665748b3257e0cfee9ac"
+    ],
+    "count": 1,
+    "create_time": 1773398650,
+    "update_time": 1773398650,
+    "_id": "Checkpoint Logclm Uf"
+  },
+  "Datamodel Dnsamd": {
+    "chunk_ids": [
+      "chunk-738a58105cbf665748b3257e0cfee9ac"
+    ],
+    "count": 1,
+    "create_time": 1773398650,
+    "update_time": 1773398650,
+    "_id": "Datamodel Dnsamd"
+  },
+  "CSR": {
+    "chunk_ids": [
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69"
+    ],
+    "count": 1,
+    "create_time": 1773398651,
+    "update_time": 1773398651,
+    "_id": "CSR"
+  },
+  "GCP": {
+    "chunk_ids": [
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69"
+    ],
+    "count": 1,
+    "create_time": 1773398651,
+    "update_time": 1773398651,
+    "_id": "GCP"
+  },
+  "Trendmicro Host Data": {
+    "chunk_ids": [
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69"
+    ],
+    "count": 1,
+    "create_time": 1773398651,
+    "update_time": 1773398651,
+    "_id": "Trendmicro Host Data"
+  },
+  "Websense Log": {
+    "chunk_ids": [
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69"
+    ],
+    "count": 1,
+    "create_time": 1773398651,
+    "update_time": 1773398651,
+    "_id": "Websense Log"
+  },
+  "DC_ARP報表語法檢查": {
+    "chunk_ids": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "count": 1,
+    "create_time": 1773398674,
+    "update_time": 1773398674,
+    "_id": "DC_ARP報表語法檢查"
+  },
+  "DC_ARP_table報表": {
+    "chunk_ids": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "count": 1,
+    "create_time": 1773398674,
+    "update_time": 1773398674,
+    "_id": "DC_ARP_table報表"
+  },
+  "設備清單": {
+    "chunk_ids": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "count": 1,
+    "create_time": 1773398674,
+    "update_time": 1773398674,
+    "_id": "設備清單"
+  },
+  "比對結果": {
+    "chunk_ids": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "count": 1,
+    "create_time": 1773398674,
+    "update_time": 1773398674,
+    "_id": "比對結果"
+  },
+  "ARP_table報表": {
+    "chunk_ids": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "count": 1,
+    "create_time": 1773398674,
+    "update_time": 1773398674,
+    "_id": "ARP_table報表"
+  },
+  "設備IP往段清單": {
+    "chunk_ids": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "count": 1,
+    "create_time": 1773398674,
+    "update_time": 1773398674,
+    "_id": "設備IP往段清單"
+  },
+  "Kvstore": {
+    "chunk_ids": [
+      "chunk-8a83bcdf6e7b7269cfd17b4f21457de8"
+    ],
+    "count": 1,
+    "create_time": 1773398675,
+    "update_time": 1773398675,
+    "_id": "Kvstore"
+  },
+  "凱壽全科人員": {
+    "chunk_ids": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "count": 1,
+    "create_time": 1773398679,
+    "update_time": 1773398679,
+    "_id": "凱壽全科人員"
+  },
+  "2025/11/12 13:30": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "count": 1,
+    "create_time": 1773398711,
+    "update_time": 1773398711,
+    "_id": "2025/11/12 13:30"
+  },
+  "2025/11/12 17:40": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "count": 1,
+    "create_time": 1773398711,
+    "update_time": 1773398711,
+    "_id": "2025/11/12 17:40"
+  },
+  "Splunk每週onsite": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 2,
+    "update_time": 1773399285,
+    "_id": "Splunk每週onsite"
+  },
+  "PA報表寄信異常": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 2,
+    "update_time": 1773399285,
+    "_id": "PA報表寄信異常"
+  },
+  "11/2": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "count": 1,
+    "create_time": 1773398711,
+    "update_time": 1773398711,
+    "_id": "11/2"
+  },
+  "Block Category報表": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "count": 1,
+    "create_time": 1773398711,
+    "update_time": 1773398711,
+    "_id": "Block Category報表"
+  },
+  "Indexer": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-d96ca3133c54d9d76add7de434ee05b5"
+    ],
+    "count": 2,
+    "update_time": 1773399069,
+    "_id": "Indexer"
+  },
+  "IDX Cluster節點": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "count": 1,
+    "create_time": 1773398711,
+    "update_time": 1773398711,
+    "_id": "IDX Cluster節點"
+  },
+  "FIsac資料收容": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "count": 1,
+    "create_time": 1773398711,
+    "update_time": 1773398711,
+    "_id": "FIsac資料收容"
+  },
+  "KV Store憑證效期": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "count": 1,
+    "create_time": 1773398711,
+    "update_time": 1773398711,
+    "_id": "KV Store憑證效期"
+  },
+  "DEP02連動主機檢查": {
+    "chunk_ids": [
+      "chunk-daa296a353c26f41dfc613743d24e936",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 2,
+    "update_time": 1773399285,
+    "_id": "DEP02連動主機檢查"
+  },
+  "2025/11/24 09:00 to 2025/11/24 17:30": {
+    "chunk_ids": [
+      "chunk-0640212d45b4b92d91d0255cf90edf96"
+    ],
+    "count": 1,
+    "create_time": 1773398713,
+    "update_time": 1773398713,
+    "_id": "2025/11/24 09:00 to 2025/11/24 17:30"
+  },
+  "Splunk駐點服務202510第三周": {
+    "chunk_ids": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 1,
+    "create_time": 1773398743,
+    "update_time": 1773398743,
+    "_id": "Splunk駐點服務202510第三周"
+  },
+  "SAP重要TCode執行紀錄告警語法": {
+    "chunk_ids": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 1,
+    "create_time": 1773398743,
+    "update_time": 1773398743,
+    "_id": "SAP重要TCode執行紀錄告警語法"
+  },
+  "Cyberark Log": {
+    "chunk_ids": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 1,
+    "create_time": 1773398743,
+    "update_time": 1773398743,
+    "_id": "Cyberark Log"
+  },
+  "F5VPN特定使用者連線的紀錄(ssp)": {
+    "chunk_ids": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 1,
+    "create_time": 1773398743,
+    "update_time": 1773398743,
+    "_id": "F5VPN特定使用者連線的紀錄(ssp)"
+  },
+  "數位科技中心": {
+    "chunk_ids": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 1,
+    "create_time": 1773398743,
+    "update_time": 1773398743,
+    "_id": "數位科技中心"
+  },
+  "F5VPN特定使用者連線的紀錄(ssp)不含數位科技中心": {
+    "chunk_ids": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 1,
+    "create_time": 1773398743,
+    "update_time": 1773398743,
+    "_id": "F5VPN特定使用者連線的紀錄(ssp)不含數位科技中心"
+  },
+  "F5VPN特定使用者連線的紀錄(ssp)僅數位科技中心": {
+    "chunk_ids": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "count": 1,
+    "create_time": 1773398743,
+    "update_time": 1773398743,
+    "_id": "F5VPN特定使用者連線的紀錄(ssp)僅數位科技中心"
+  },
+  "Pice Logs": {
+    "chunk_ids": [
+      "chunk-5f0773b8daffa7a65254a73867e36afb"
+    ],
+    "count": 1,
+    "create_time": 1773399067,
+    "update_time": 1773399067,
+    "_id": "Pice Logs"
+  },
+  "NTP服務": {
+    "chunk_ids": [
+      "chunk-d96ca3133c54d9d76add7de434ee05b5"
+    ],
+    "count": 1,
+    "create_time": 1773399069,
+    "update_time": 1773399069,
+    "_id": "NTP服務"
+  },
+  "KVstore憑證": {
+    "chunk_ids": [
+      "chunk-d96ca3133c54d9d76add7de434ee05b5"
+    ],
+    "count": 1,
+    "create_time": 1773399069,
+    "update_time": 1773399069,
+    "_id": "KVstore憑證"
+  },
+  "SPLUNK月報": {
+    "chunk_ids": [
+      "chunk-d96ca3133c54d9d76add7de434ee05b5"
+    ],
+    "count": 1,
+    "create_time": 1773399069,
+    "update_time": 1773399069,
+    "_id": "SPLUNK月報"
+  },
+  "FIsac情資撈取": {
+    "chunk_ids": [
+      "chunk-d96ca3133c54d9d76add7de434ee05b5"
+    ],
+    "count": 1,
+    "create_time": 1773399069,
+    "update_time": 1773399069,
+    "_id": "FIsac情資撈取"
+  },
+  "Splunk駐點服務202512第五周": {
+    "chunk_ids": [
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+    ],
+    "count": 1,
+    "create_time": 1773399128,
+    "update_time": 1773399128,
+    "_id": "Splunk駐點服務202512第五周"
+  },
+  "HTTPS大量傳輸告警": {
+    "chunk_ids": [
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+    ],
+    "count": 1,
+    "create_time": 1773399128,
+    "update_time": 1773399128,
+    "_id": "HTTPS大量傳輸告警"
+  },
+  "M365網址": {
+    "chunk_ids": [
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+    ],
+    "count": 1,
+    "create_time": 1773399128,
+    "update_time": 1773399128,
+    "_id": "M365網址"
+  },
+  "每日HTTP資料傳輸統計報表(m365)": {
+    "chunk_ids": [
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+    ],
+    "count": 1,
+    "create_time": 1773399128,
+    "update_time": 1773399128,
+    "_id": "每日HTTP資料傳輸統計報表(m365)"
+  },
+  "FWD02": {
+    "chunk_ids": [
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+    ],
+    "count": 1,
+    "create_time": 1773399128,
+    "update_time": 1773399128,
+    "_id": "FWD02"
+  },
+  "FCB腳本": {
+    "chunk_ids": [
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+    ],
+    "count": 1,
+    "create_time": 1773399128,
+    "update_time": 1773399128,
+    "_id": "FCB腳本"
+  },
+  "0.31GB": {
+    "chunk_ids": [
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 1,
+    "create_time": 1773399130,
+    "update_time": 1773399130,
+    "_id": "0.31GB"
+  },
+  "15.5%": {
+    "chunk_ids": [
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 1,
+    "create_time": 1773399130,
+    "update_time": 1773399130,
+    "_id": "15.5%"
+  },
+  "43.73%": {
+    "chunk_ids": [
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 1,
+    "create_time": 1773399130,
+    "update_time": 1773399130,
+    "_id": "43.73%"
+  },
+  "2025/12/01 10:00": {
+    "chunk_ids": [
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 1,
+    "create_time": 1773399130,
+    "update_time": 1773399130,
+    "_id": "2025/12/01 10:00"
+  },
+  "2025/12/01 12:00": {
+    "chunk_ids": [
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 1,
+    "create_time": 1773399130,
+    "update_time": 1773399130,
+    "_id": "2025/12/01 12:00"
+  },
+  "10.0.2 (2025.11.14)": {
+    "chunk_ids": [
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "count": 1,
+    "create_time": 1773399130,
+    "update_time": 1773399130,
+    "_id": "10.0.2 (2025.11.14)"
+  },
+  "DEP02主機": {
+    "chunk_ids": [
+      "chunk-72f381579d364fa91cc3e73153e0af97"
+    ],
+    "count": 1,
+    "create_time": 1773399169,
+    "update_time": 1773399169,
+    "_id": "DEP02主機"
+  },
+  "KGIBIDX04": {
+    "chunk_ids": [
+      "chunk-72f381579d364fa91cc3e73153e0af97"
+    ],
+    "count": 1,
+    "create_time": 1773399169,
+    "update_time": 1773399169,
+    "_id": "KGIBIDX04"
+  },
+  "CDIBHMGT02": {
+    "chunk_ids": [
+      "chunk-72f381579d364fa91cc3e73153e0af97"
+    ],
+    "count": 1,
+    "create_time": 1773399169,
+    "update_time": 1773399169,
+    "_id": "CDIBHMGT02"
+  },
+  "FISAC資料收容": {
+    "chunk_ids": [
+      "chunk-333af5cc1ff286e512f36be66d1aa78b",
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 2,
+    "update_time": 1773399285,
+    "_id": "FISAC資料收容"
+  },
+  "SH KVstore引擎異常測試": {
+    "chunk_ids": [
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 1,
+    "create_time": 1773399170,
+    "update_time": 1773399170,
+    "_id": "SH KVstore引擎異常測試"
+  },
+  "DEP02移轉": {
+    "chunk_ids": [
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "count": 1,
+    "create_time": 1773399170,
+    "update_time": 1773399170,
+    "_id": "DEP02移轉"
+  },
+  "Splunk_B客戶B部門10月月維護": {
+    "chunk_ids": [
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 1,
+    "create_time": 1773399224,
+    "update_time": 1773399224,
+    "_id": "Splunk_B客戶B部門10月月維護"
+  },
+  "239.38GB": {
+    "chunk_ids": [
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 1,
+    "create_time": 1773399224,
+    "update_time": 1773399224,
+    "_id": "239.38GB"
+  },
+  "Frozen Data": {
+    "chunk_ids": [
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 1,
+    "create_time": 1773399224,
+    "update_time": 1773399224,
+    "_id": "Frozen Data"
+  },
+  "10.0.1/2025.09.25": {
+    "chunk_ids": [
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "count": 1,
+    "create_time": 1773399224,
+    "update_time": 1773399224,
+    "_id": "10.0.1/2025.09.25"
+  },
+  "Splunk駐點服務202601第一周": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Splunk駐點服務202601第一周"
+  },
+  "FWD02磁碟用量異常處理": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "FWD02磁碟用量異常處理"
+  },
+  "Estreamer資料暴增": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Estreamer資料暴增"
+  },
+  "Audit.log持續累積": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Audit.log持續累積"
+  },
+  "/var/log/messages-20251214": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "/var/log/messages-20251214"
+  },
+  "Rsyslog轉送設定": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Rsyslog轉送設定"
+  },
+  "Clean.sh資料留存區間": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Clean.sh資料留存區間"
+  },
+  "Audit資料": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Audit資料"
+  },
+  "Messages-20251214檔案": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Messages-20251214檔案"
+  },
+  "Logrotate排程監控": {
+    "chunk_ids": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "count": 1,
+    "create_time": 1773399226,
+    "update_time": 1773399226,
+    "_id": "Logrotate排程監控"
+  },
+  "UAT": {
+    "chunk_ids": [
+      "chunk-345e520afd2a192e25824abb33740d46"
+    ],
+    "count": 1,
+    "create_time": 1773399253,
+    "update_time": 1773399253,
+    "_id": "UAT"
+  },
+  "Production": {
+    "chunk_ids": [
+      "chunk-345e520afd2a192e25824abb33740d46"
+    ],
+    "count": 1,
+    "create_time": 1773399253,
+    "update_time": 1773399253,
+    "_id": "Production"
+  },
+  "PIMS Search Head": {
+    "chunk_ids": [
+      "chunk-345e520afd2a192e25824abb33740d46"
+    ],
+    "count": 1,
+    "create_time": 1773399253,
+    "update_time": 1773399253,
+    "_id": "PIMS Search Head"
+  },
+  "Splunk駐點服務20251226": {
+    "chunk_ids": [
+      "chunk-1df6d8d113790f99d50593095e1e5e58"
+    ],
+    "count": 1,
+    "create_time": 1773399254,
+    "update_time": 1773399254,
+    "_id": "Splunk駐點服務20251226"
+  },
+  "Websense": {
+    "chunk_ids": [
+      "chunk-1df6d8d113790f99d50593095e1e5e58"
+    ],
+    "count": 1,
+    "create_time": 1773399254,
+    "update_time": 1773399254,
+    "_id": "Websense"
+  },
+  "XSOAR": {
+    "chunk_ids": [
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe"
+    ],
+    "count": 1,
+    "create_time": 1773399284,
+    "update_time": 1773399284,
+    "_id": "XSOAR"
+  },
+  "2025/11/18 13:30": {
+    "chunk_ids": [
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 1,
+    "create_time": 1773399285,
+    "update_time": 1773399285,
+    "_id": "2025/11/18 13:30"
+  },
+  "2025/11/18 17:30": {
+    "chunk_ids": [
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 1,
+    "create_time": 1773399285,
+    "update_time": 1773399285,
+    "_id": "2025/11/18 17:30"
+  },
+  "KV store憑證效期": {
+    "chunk_ids": [
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 1,
+    "create_time": 1773399285,
+    "update_time": 1773399285,
+    "_id": "KV store憑證效期"
+  },
+  "Splunk bundle儲存量過大": {
+    "chunk_ids": [
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 1,
+    "create_time": 1773399285,
+    "update_time": 1773399285,
+    "_id": "Splunk bundle儲存量過大"
+  },
+  "Indexer索引同步狀態": {
+    "chunk_ids": [
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "count": 1,
+    "create_time": 1773399285,
+    "update_time": 1773399285,
+    "_id": "Indexer索引同步狀態"
+  },
+  "Splunk駐點服務202601第二周": {
+    "chunk_ids": [
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "count": 1,
+    "create_time": 1773399305,
+    "update_time": 1773399305,
+    "_id": "Splunk駐點服務202601第二周"
+  },
+  "Cybereyes Api": {
+    "chunk_ids": [
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "count": 1,
+    "create_time": 1773399305,
+    "update_time": 1773399305,
+    "_id": "Cybereyes Api"
+  },
+  "FWD03": {
+    "chunk_ids": [
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "count": 1,
+    "create_time": 1773399305,
+    "update_time": 1773399305,
+    "_id": "FWD03"
+  },
+  "FCB": {
+    "chunk_ids": [
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "count": 1,
+    "create_time": 1773399305,
+    "update_time": 1773399305,
+    "_id": "FCB"
+  },
+  "2025/10/30 13:30 to 2025/10/30 17:00": {
+    "chunk_ids": [
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3"
+    ],
+    "count": 1,
+    "create_time": 1773399321,
+    "update_time": 1773399321,
+    "_id": "2025/10/30 13:30 to 2025/10/30 17:00"
+  },
+  "E客戶駐點工作事項- 20251030": {
+    "chunk_ids": [
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3"
+    ],
+    "count": 1,
+    "create_time": 1773399321,
+    "update_time": 1773399321,
+    "_id": "E客戶駐點工作事項- 20251030"
+  },
+  "寄信套件": {
+    "chunk_ids": [
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3"
+    ],
+    "count": 1,
+    "create_time": 1773399321,
+    "update_time": 1773399321,
+    "_id": "寄信套件"
+  },
+  "137 Uf Devices": {
+    "chunk_ids": [
+      "chunk-dddcb833d814b293bd936732652206d0"
+    ],
+    "count": 1,
+    "create_time": 1773399323,
+    "update_time": 1773399323,
+    "_id": "137 Uf Devices"
+  },
+  "Splunk Add-On For Google Cloud Platform": {
+    "chunk_ids": [
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 1,
+    "create_time": 1773399351,
+    "update_time": 1773399351,
+    "_id": "Splunk Add-On For Google Cloud Platform"
+  },
+  "Tenable Api App": {
+    "chunk_ids": [
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 1,
+    "create_time": 1773399351,
+    "update_time": 1773399351,
+    "_id": "Tenable Api App"
+  },
+  "Btdc2 Issue": {
+    "chunk_ids": [
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "count": 1,
+    "create_time": 1773399351,
+    "update_time": 1773399351,
+    "_id": "Btdc2 Issue"
+  }
+}

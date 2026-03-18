@@ -5,6 +5,8 @@ RAG 評估引擎
 """
 
 import os
+import re
+import json
 from datetime import datetime
 from typing import List, Dict, Any
 from tqdm import tqdm
@@ -74,6 +76,41 @@ class RAGEvaluator:
         # LLM Judge 指標
         self.correctness_metric = CorrectnessMetric(llm=self.eval_llm)
         self.faithfulness_metric = FaithfulnessMetric(llm=self.eval_llm)
+
+    @staticmethod
+    def _normalize_doc_ids(doc_ids: Any) -> List[str]:
+        """將 ground truth/retrieved 的 ID 統一正規化為字串列表。"""
+        if doc_ids is None:
+            return []
+
+        if isinstance(doc_ids, str):
+            candidates = re.split(r"[\n,]+", doc_ids)
+            return [c.strip() for c in candidates if c and c.strip()]
+
+        normalized = []
+        if isinstance(doc_ids, list):
+            for item in doc_ids:
+                if item is None:
+                    continue
+                if isinstance(item, str):
+                    parts = re.split(r"[\n,]+", item)
+                    normalized.extend([p.strip() for p in parts if p and p.strip()])
+                else:
+                    normalized.append(str(item))
+        return normalized
+
+    @staticmethod
+    def _clamp_retrieval_metric(value: float, metric_name: str, query: str, idx: int, pipeline_name: str) -> float:
+        """將 retrieval 指標限制在 [0, 1]，超界時輸出 warning。"""
+        if value is None:
+            return 0.0
+        clamped = max(0.0, min(1.0, float(value)))
+        if clamped != value:
+            print(
+                f"⚠️ [RetrievalClamp] pipeline={pipeline_name}, idx={idx}, metric={metric_name}, "
+                f"original={value}, clamped={clamped}, query={query[:80]}"
+            )
+        return clamped
     
     async def compute_metrics_for_sample(
         self,
@@ -85,7 +122,11 @@ class RAGEvaluator:
         gt_ids: List[str],
         retrieved_ids: List[str],
         retrieved_contexts: List[str],
-        execution_time_sec: float
+        execution_time_sec: float,
+        schema_info: Dict[str, Any] = None,
+        context_tokens: int = 0,
+        context_token_details: Dict[str, Any] = None,
+        pipeline_name: str = ""
     ) -> Dict[str, Any]:
         """
         計算單一樣本的所有指標
@@ -100,14 +141,26 @@ class RAGEvaluator:
             retrieved_ids: 檢索到的文件 ID
             retrieved_contexts: 檢索到的上下文
             execution_time_sec: 執行時間
+            schema_info: Schema 資訊（只在第一筆記錄）
+            context_tokens: 總context token數
+            context_token_details: 詳細token統計
         
         Returns:
             包含所有指標的字典
         """
-        # 檢索指標
+        # 正規化 doc ids，避免 DI/GEN 格式差異影響評估
+        gt_ids = self._normalize_doc_ids(gt_ids)
+        retrieved_ids = self._normalize_doc_ids(retrieved_ids)
+
+        # 檢索指標（加上防呆 clamp）
         hit_rate = self.hit_rate_metric.compute(retrieved_ids, gt_ids)
         mrr = self.mrr_metric.compute(retrieved_ids, gt_ids)
         recall, precision, f1_score = self.retrieval_f1_metric.compute(retrieved_ids, gt_ids)
+        hit_rate = self._clamp_retrieval_metric(hit_rate, "hit_rate", query, idx, pipeline_name)
+        mrr = self._clamp_retrieval_metric(mrr, "mrr", query, idx, pipeline_name)
+        recall = self._clamp_retrieval_metric(recall, "retrieval_recall", query, idx, pipeline_name)
+        precision = self._clamp_retrieval_metric(precision, "retrieval_precision", query, idx, pipeline_name)
+        f1_score = self._clamp_retrieval_metric(f1_score, "retrieval_f1_score", query, idx, pipeline_name)
         
         # 生成指標
         jieba_r, jieba_p, jieba_f1 = self.jieba_f1_metric.compute(gen_answer, gt_answer)
@@ -134,8 +187,18 @@ class RAGEvaluator:
             print(f"  ⚠️ 評測 LLM API 呼叫失敗: {e}")
             correctness_score, faithfulness_score = None, None
         
+        # 提取詳細token資訊
+        entity_tokens = 0
+        relation_tokens = 0
+        chunk_tokens = 0
+        
+        if context_token_details:
+            entity_tokens = context_token_details.get("entity_tokens", 0)
+            relation_tokens = context_token_details.get("relation_tokens", 0)
+            chunk_tokens = context_token_details.get("chunk_tokens", 0)
+        
         # 統整回傳
-        return {
+        result = {
             "idx": idx,
             "dataset_source": source,
             "query": query,
@@ -144,11 +207,18 @@ class RAGEvaluator:
             "ground_truth_ids": ", ".join(gt_ids),
             "retrieved_ids": ", ".join(retrieved_ids),
             "execution_time_sec": execution_time_sec,
+            # Token統計
+            "context_tokens": context_tokens,
+            "entity_tokens": entity_tokens,
+            "relation_tokens": relation_tokens,
+            "chunk_tokens": chunk_tokens,
+            # 檢索指標
             "hit_rate": hit_rate,
             "mrr": mrr,
             "retrieval_recall": recall,
             "retrieval_precision": precision,
             "retrieval_f1_score": f1_score,
+            # 生成指標
             "rouge1": rouge1,
             "rouge2": rouge2,
             "rougeL": rougeL,
@@ -161,6 +231,20 @@ class RAGEvaluator:
             "correctness_score": correctness_score,
             "faithfulness_score": faithfulness_score,
         }
+        
+        # 只在第一筆資料（idx=1）時記錄 schema 資訊
+        if idx == 1 and schema_info:
+            result["schema_method"] = schema_info.get("method", "")
+            result["schema_entities"] = json.dumps(schema_info.get("entities", []), ensure_ascii=False)
+            result["schema_relations"] = json.dumps(schema_info.get("relations", []), ensure_ascii=False)
+            result["schema_validation"] = json.dumps(schema_info.get("validation_schema", {}), ensure_ascii=False)
+        else:
+            result["schema_method"] = ""
+            result["schema_entities"] = ""
+            result["schema_relations"] = ""
+            result["schema_validation"] = ""
+        
+        return result
     
     async def evaluate_pipeline(
         self,
@@ -184,20 +268,26 @@ class RAGEvaluator:
         
         print(f"\n🚀 開始評測 Pipeline: {pipeline_name}")
         
+        # 取得 pipeline 的 schema 資訊（如果有）
+        schema_info = getattr(pipeline, "schema_info", None)
+        if schema_info:
+            print(f"  📋 Schema 方法: {schema_info.get('method', 'N/A')}")
+            print(f"  📋 實體類型數量: {len(schema_info.get('entities', []))}")
+        
         results = []
         
         for idx, qa in tqdm(enumerate(qa_datasets), total=len(qa_datasets), desc=f"評估 {pipeline_name} 進度"):
             query = qa["query"]
             gt_answer = qa["ground_truth_answer"]
-            gt_ids = qa["ground_truth_doc_ids"]
-            
-            # 處理 DI 資料集的特殊格式（gt_ids 是包含多行的單一字串）
-            if len(gt_ids) > 0 and isinstance(gt_ids[0], str) and "\n" in gt_ids[0]:
-                gt_ids = gt_ids[0].splitlines()
+            gt_ids = self._normalize_doc_ids(qa["ground_truth_doc_ids"])
             
             try:
                 # 執行檢索與生成
                 result = await pipeline.aquery_and_log(query)
+                
+                # 提取token資訊
+                context_tokens = result.get("context_tokens", 0)
+                context_token_details = result.get("context_token_details", {})
                 
                 # 計算所有指標
                 metrics_row = await self.compute_metrics_for_sample(
@@ -209,7 +299,11 @@ class RAGEvaluator:
                     gt_ids=gt_ids,
                     retrieved_ids=result["retrieved_ids"],
                     retrieved_contexts=result["retrieved_contexts"],
-                    execution_time_sec=result["execution_time_sec"]
+                    execution_time_sec=result["execution_time_sec"],
+                    schema_info=schema_info,
+                    context_tokens=context_tokens,
+                    context_token_details=context_token_details,
+                    pipeline_name=pipeline_name
                 )
                 
                 results.append(metrics_row)

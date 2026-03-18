@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="B客戶">
+  <data key="d0">B客戶</data>
+  <data key="d1">organization</data>
+  <data key="d2">B客戶is a client whose maintenance record is being described.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="A人員">
+  <data key="d0">A人員</data>
+  <data key="d1">person</data>
+  <data key="d2">A人員is one of the handling engineers for B客户的维护记录.&lt;SEP&gt;A人員is the engineer responsible for handling the maintenance record.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771883</data>
+  <data key="d6"></data>
+</node>
+<node id="C人員">
+  <data key="d0">C人員</data>
+  <data key="d1">person</data>
+  <data key="d2">C人員is another handling engineer involved in B客户的维护工作.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk每週onsite">
+  <data key="d0">Splunk每週onsite</data>
+  <data key="d1">concept</data>
+  <data key="d2">Splunk每週onsite refers to weekly on-site maintenance activities for Splunk.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="A部門">
+  <data key="d0">A部門</data>
+  <data key="d1">organization</data>
+  <data key="d2">A部门is the department handling certain actions related to B客户的维护工作.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="Maintainer帳號權限確認">
+  <data key="d0">Maintainer帳號權限確認</data>
+  <data key="d1">method</data>
+  <data key="d2">Maintainer帐号权限确认involves verifying that maintainers have appropriate permissions for daily work.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="DEP02移轉後服務確認">
+  <data key="d0">DEP02移轉後服務確認</data>
+  <data key="d1">method</data>
+  <data key="d2">DEP02迁移后服务确认involves checking if services are functioning correctly after a migration.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="PA報表寄送異常檢查">
+  <data key="d0">PA報表寄送異常檢查</data>
+  <data key="d1">method</data>
+  <data key="d2">PA报表发送异常检查aims to verify if Splunk reports have been successfully sent out.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="FISAC資料收容-進行中">
+  <data key="d0">FISAC資料收容-進行中</data>
+  <data key="d1">event</data>
+  <data key="d2">FISAC数据收集正在进行，涉及API IP申请。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="SH KVstore引擎異常測試-進行中">
+  <data key="d0">SH KVstore引擎異常測試-進行中</data>
+  <data key="d1">event</data>
+  <data key="d2">正在进行SH的KV存储异常测试以验证其状态。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="LDAP設定">
+  <data key="d0">LDAP設定</data>
+  <data key="d1">method</data>
+  <data key="d2">完成Splunk LDAP认证设置，确保系统正常运行。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="Carbon-Fiber Spikes">
+  <data key="d0">Carbon-Fiber Spikes</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Advanced sprinting shoes that provide enhanced speed and traction for athletes.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="B部門">
+  <data key="d0">B部門</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d2">B部门请求同事提交使用API的IP申请单给FISAC以支持数据收集过程。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="Noah Carter">
+  <data key="d0">Noah Carter</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d2">The World Athletics Federation oversees the rules and regulations governing Noah Carter's participation in the championship.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771882</data>
+  <data key="d6"></data>
+</node>
+<node id="World Athletics Federation">
+  <data key="d0">World Athletics Federation</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d2">The World Athletics Federation oversees the rules and regulations governing Noah Carter's participation in the championship.&lt;SEP&gt;The World Athletics Federation oversees the World Athletics Championship and manages record validations.</data>
+  <data key="d1">organization</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771883</data>
+  <data key="d6"></data>
+</node>
+<node id="F客戶">
+  <data key="d0">F客戶</data>
+  <data key="d1">organization</data>
+  <data key="d2">F客戶is a client for whom maintenance records are kept.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771883</data>
+  <data key="d6"></data>
+</node>
+<node id="splunk_銀行處12月月維護">
+  <data key="d0">splunk_銀行處12月月維護</data>
+  <data key="d1">event</data>
+  <data key="d2">splunk_銀行處12月月維護refers to a monthly maintenance event conducted in December for splunk bank services.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771883</data>
+  <data key="d6"></data>
+</node>
+<node id="Tokyo">
+  <data key="d0">Tokyo</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d2">Tokyo is hosting the World Athletics Championship.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771883</data>
+  <data key="d6"></data>
+</node>
+<node id="World Athletics Championship">
+  <data key="d0">World Athletics Championship</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d2">Tokyo is hosting the World Athletics Championship.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771883</data>
+  <data key="d6"></data>
+</node>
+<edge source="B客戶" target="A人員">
+  <data key="d7">1.0</data>
+  <data key="d8">A人员是处理B客户维护记录的工程师之一。</data>
+  <data key="d9">engineering support,maintenance</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="C人員">
+  <data key="d7">1.0</data>
+  <data key="d8">C人员也是负责处理B客户的维护任务之一。</data>
+  <data key="d9">engineering support,maintenance</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="F客戶">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員performed maintenance on behalf of F客戶.</data>
+  <data key="d9">maintenance,service provision</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771883</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="splunk_銀行處12月月維護">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員carried out the splunk_銀行處12月月維護maintenance activity for F客戶.</data>
+  <data key="d9">engineer involvement,maintenance event</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771883</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A部門" target="Maintainer帳號權限確認">
+  <data key="d7">1.0</data>
+  <data key="d8">A部门完成了关于维持者账号权限的确认工作，确保其符合日常工作使用的要求。</data>
+  <data key="d9">task completion,verification</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A部門" target="DEP02移轉後服務確認">
+  <data key="d7">1.0</data>
+  <data key="d8">A部门执行了DEP02迁移后服务和系统功能检查任务，并报告结果正常。</data>
+  <data key="d9">service confirmation,system health check</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A部門" target="PA報表寄送異常檢查">
+  <data key="d7">1.0</data>
+  <data key="d8">A部门确认Splunk已经发送出报告并记录在cim_modactions索引中，目前请求同事向IT部门确认邮件是否被收到。</data>
+  <data key="d9">communication,report verification</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="FISAC資料收容-進行中" target="B部門">
+  <data key="d7">1.0</data>
+  <data key="d8">B部门请求同事提交使用API的IP申请单给FISAC以支持数据收集过程。</data>
+  <data key="d9">API request,data collection</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SH KVstore引擎異常測試-進行中" target="B部門">
+  <data key="d7">1.0</data>
+  <data key="d8">B部门正在进行个人测试环境中的SH KV存储异常测试，以确认其状态正常。</data>
+  <data key="d9">system test,troubleshooting</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="LDAP設定" target="B部門">
+  <data key="d7">1.0</data>
+  <data key="d8">B部门已经完成了Splunk LDAP认证设置工作。</data>
+  <data key="d9">authentication setup,system configuration</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Noah Carter" target="World Athletics Federation">
+  <data key="d7">1.0</data>
+  <data key="d8">The World Athletics Federation oversees the rules and regulations governing Noah Carter's participation in the championship.</data>
+  <data key="d9">athlete regulation,governing body</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771882</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Tokyo" target="World Athletics Championship">
+  <data key="d7">1.0</data>
+  <data key="d8">Tokyo is hosting the World Athletics Championship.</data>
+  <data key="d9">host city,international event</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771883</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

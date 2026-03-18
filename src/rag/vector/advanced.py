@@ -5,15 +5,18 @@ from llama_index.core.retrievers import VectorIndexAutoRetriever, AutoMergingRet
 from llama_index.core.vector_stores import MetadataInfo, VectorStoreInfo
 from llama_index.core.node_parser import HierarchicalNodeParser, get_leaf_nodes
 from llama_index.core.storage.docstore import SimpleDocumentStore
-from data_processing import data_processing # 假設這是你現有的資料處理模組
+from src.data.processors import data_processing # 假設這是你現有的資料處理模組
 
 from llama_index.core import Settings
 Settings.chunk_size = 2048
 Settings.chunk_overlap = 50
     
-def get_self_query_engine(mySettings, data_mode="natural_text", data_type="DI", top_k=2, fast_build=False):
+def get_self_query_engine(mySettings, data_mode="natural_text", data_type="DI", top_k=2, fast_build=False, retrieval_max_tokens=2048):
     """
     實作 1: Self-Querying RAG (Metadata Filtering)
+    
+    Args:
+        retrieval_max_tokens: 檢索內容最大 token 數（實際限制在 wrapper 層處理）
     """
     documents = data_processing(mode=data_mode, data_type=data_type)
     if fast_build:
@@ -46,9 +49,12 @@ def get_self_query_engine(mySettings, data_mode="natural_text", data_type="DI", 
     
     return RetrieverQueryEngine.from_args(retriever=retriever, llm=mySettings.llm)
 
-def get_parent_child_query_engine(mySettings, data_mode="natural_text", data_type="DI", top_k=2, fast_build=False):
+def get_parent_child_query_engine(mySettings, data_mode="natural_text", data_type="DI", top_k=2, fast_build=False, retrieval_max_tokens=2048):
     """
     實作 2: Multi-Vector / Parent-Child RAG (Auto Merging)
+    
+    Args:
+        retrieval_max_tokens: 檢索內容最大 token 數（實際限制在 wrapper 層處理）
     """
     documents = data_processing(mode=data_mode, data_type=data_type)
     if fast_build:

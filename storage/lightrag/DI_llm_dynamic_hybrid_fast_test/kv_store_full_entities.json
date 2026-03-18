@@ -1,0 +1,46 @@
+{
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "entity_names": [
+      "GCP報表中的User欄位值調整",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "B部門",
+      "Splunk每週onsite",
+      "E客戶",
+      "A人員",
+      "Google Cloud Platform Sourcetype至Splunk的添加",
+      "管理員搜尋異常調試",
+      "BTDC2問題處理",
+      "A部門",
+      "C同事",
+      "Websense Log斷行確認與修正",
+      "DEP02 root服務狀態確認",
+      "DEP02主機移轉執行",
+      "CentOS作業系統升級評估",
+      "Tenable API插件連接",
+      "2026/01/07 13:30至2026/01/07 17:30維護時間",
+      "Trendmicro主機的日誌收集功能新增",
+      "FISAC API IP申請單",
+      "SH KVstore引擎異常測試",
+      "B客戶"
+    ],
+    "count": 21,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "entity_names": [
+      "F客戶",
+      "splunk_銀行處12月月維護",
+      "1276GB",
+      "375 GB",
+      "A人員",
+      "10.0.2/2025.11.14",
+      "9.3.3/2025.02.26"
+    ],
+    "count": 7,
+    "create_time": 1773771715,
+    "update_time": 1773771715,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  }
+}

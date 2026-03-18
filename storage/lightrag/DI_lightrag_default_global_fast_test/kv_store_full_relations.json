@@ -1,0 +1,70 @@
+{
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "relation_pairs": [
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ],
+      [
+        "A人員",
+        "splunk_銀行處12月月維護"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1773771807,
+    "update_time": 1773771807,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "FISAC資料收容-進行中",
+        "LDAP設定"
+      ],
+      [
+        "DEP02移轉後服務確認",
+        "Maintenance帳號權限確認"
+      ],
+      [
+        "A部門",
+        "Maintainer帳號權限確認"
+      ],
+      [
+        "2026/01/07 13:30至2026/01/07 17:30",
+        "B客戶"
+      ],
+      [
+        "2026/01/07 13:30至2026/01/07 17:30",
+        "Splunk每週onsite"
+      ],
+      [
+        "FISAC資料收容-進行中",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "Maintainer帳號權限確認",
+        "PA報表寄送異常檢查"
+      ],
+      [
+        "Carbon-Fiber Spikes",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773771808,
+    "update_time": 1773771808,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  }
+}

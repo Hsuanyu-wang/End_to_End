@@ -1,0 +1,3392 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="G客戶">
+  <data key="d0">G客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">G客戶是一筆維護紀錄的對象，該維護紀錄由A人員處理。&lt;SEP&gt;G客戶是接受維護服務的客戶。</data>
+  <data key="d3">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775749</data>
+  <data key="d6"></data>
+</node>
+<node id="A人員">
+  <data key="d0">A人員</data>
+  <data key="d1">處理工程師</data>
+  <data key="d2">**A人員**
+
+A人員是指负责客户维护工作的处理工程师，主要职责包括执行维护任务、记录相关信息，并评估授权用量和服务器效能，同时提供系统优化建议等。具体而言，在2025年12月期间，A人員分别于1日上午10点至下午12点负责G客户的维护工作，并在同月的5日下午1:30至下午3:30执行B客户的维护任务。此外，A人員还承担了帐号权限确认和DEP02移转后服务确认的任务。
+
+作为处理工程师之一，A人員的角色是确保维护工作的顺利进行，并为客户提供专业的技术支持和建议，同时记录维护工作相关信息并提供系统优化建议。在具体的客户支持方面，例如针对B客户的系统维护任务中，A人員主要负责报告异常的解决、设备清单比对及问题追踪等工作。
+
+这些描述表明了A人員在其职责范围内扮演着重要角色，不仅确保技术工作的执行，还通过精确的记录和评估来提高服务质量和效率，并为客户提供优化建议。此外，在2025年11月7日从下午1点50分至下午5点30分期间，A人員也参与了另一项维护工作。
+
+总体而言，A人員作为处理工程师，在其职责范围内通过执行具体的客户维护任务、记录相关信息以及提供专业技术支持和优化建议来确保服务质量和效率的提升。&lt;SEP&gt;A人員為維護工作的執行者之一。&lt;SEP&gt;A人員負責A客戶的維護作業，包括SPLUNK憑證更換及路徑修改。&lt;SEP&gt;A人員是進行維護工作的處理工程師之一。&lt;SEP&gt;A人員為本次維護工作的處理工程師，負責執行相關維護操作和建議措施。</data>
+  <data key="d3">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51&lt;SEP&gt;chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-04465635a6b88183cbabbfe7e25635dd&lt;SEP&gt;chunk-fe7268a7cb94439d483759e501068db6&lt;SEP&gt;chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-9648988cb67db9843bc13754ac3d6ab6&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-daa296a353c26f41dfc613743d24e936&lt;SEP&gt;chunk-1364984bd10139c2ef2cd5907a3a7591&lt;SEP&gt;chunk-17b29d261b8bce3ef9105d1c8a78415d&lt;SEP&gt;chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-c7743e93210e95e8e40e0d2a627684b7&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-07959bdb8bab221c9c80a1c3e85776b3&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-f62a98ad02d11a4c9618cbda43281859&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-72f381579d364fa91cc3e73153e0af97&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776420</data>
+  <data key="d6"></data>
+</node>
+<node id="維護紀錄">
+  <data key="d0">維護紀錄</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">Maintenance records (維護紀錄) are comprehensive documents detailing various maintenance activities and support tasks executed for specific clients on designated dates and times. These records cover a wide range of aspects, including server performance evaluations, system optimization recommendations, license usage checks, permission modifications, anomaly testing, and server performance verifications. They provide a thorough insight into customer service and support activities to ensure that client systems operate efficiently and effectively.
+
+In 2025, detailed maintenance records were generated for multiple clients. For example, on November 3, 2025, maintenance was recorded from 10:00 AM to 12:00 PM for customer G, involving server performance checks and system optimization recommendations. Other maintenance activities were also documented throughout the year for customers B, E, A, D, and other unnamed clients.
+
+Specifically, on November 4, 2025, detailed maintenance records were created covering the day's tasks and to-do items. Another record in the same month described maintenance work on the Splunk MA system. On November 24, a detailed account was provided for Engineer A’s tasks executing license usage evaluations and server performance checks for customer F.
+
+As December approached, additional detailed maintenance activities continued to be recorded. This included a thorough documentation of temporary solutions for a Splunk indexer queue overflow issue and detailed reports on the migration and virtualization services for Splunk monitoring hosts. These records are crucial in ensuring smooth operation of client systems.
+
+Earlier periods like October and November also saw detailed maintenance records covering various aspects such as GeoDB updates, AI website service log reviews, vulnerability scan report organization, eStreamer data anomaly handling, KPMG penetration test IP whitelist updates, and resolving issues such as abnormal FWD02 disk usage. These records encompass a variety of maintenance activities ranging from equipment checks to problem solutions and system optimization recommendations.
+
+Detailed descriptions were also provided for specific tasks executed by different personnel on various dates. For instance, on December 19, B personnel performed authorization limitation adjustments, server performance evaluations, and version upgrades for customer D; while on November 6, from 10:00 AM to 11:00 PM, another record detailed an authorization usage check, server performance checks, and version updates. Other entries on the same day recorded tasks carried out by engineers A and C.
+
+Several specific maintenance records described multiple maintenance actions and pending items for October 13, 2025; detailed descriptions of maintenance activities for customer C along with status descriptions and handling measures; work items and handling measures documented on July 29, December 16, and December 24. One such record detailed A personnel and C personnel executing multiple maintenance operations and their outcomes.
+
+Another detailed maintenance record described the process of upgrading Splunk from version 9.3.1 to 9.3.3 across eight servers, including reinstallation, setting FIPS mode to 0, and overriding old configuration files. Another covered various projects such as GeoDB updates and GitLab vulnerability patches.
+
+On November 6, 2025, a detailed maintenance record was created for customer B providing authorization usage recommendations, server performance evaluations, and version upgrade suggestions. A similar document on December 23 detailed tasks related to customer E. Additionally, another record documented specific actions and status descriptions by A personnel for clients in early December.
+
+Other maintenance work records included system checks and maintenance reports for customer H detailing authorization usage and server performance details; and a specific maintenance record created on October 7, 2025, for B personnel’s tasks for customer C. On November 11 of the same year, there was also a document describing on-site task items, related handling measures, and pending tasks for E customers.
+
+These detailed maintenance records provide critical information to understand the complexity of customer service and support activities, ensuring that client systems operate efficiently and effectively.&lt;SEP&gt;日期為2026/01/02 17:33至2026/01/02 17:35的維護記錄，包括授權用量、伺服器效能和版本更新等信息。&lt;SEP&gt;維護紀錄詳述了A人員和C人員在2025年12月10日的維護工作情況。&lt;SEP&gt;這是一筆關於F客戶的維護紀錄，記錄了在2025年11月24日進行的一系列維護工作及建議措施。&lt;SEP&gt;這是一筆關於E客戶的維護紀錄，由C人員在特定時間進行。</data>
+  <data key="d3">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51&lt;SEP&gt;chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-d0cef05272158ef916c2b84f625b2ddb&lt;SEP&gt;chunk-76068a2f95fd89e7ceb4741d4eb478ce&lt;SEP&gt;chunk-fe7268a7cb94439d483759e501068db6&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-39206ec5906f23d68e051b1df74d3ca7&lt;SEP&gt;chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-ab226f704fc1b4d45dd06222f40cb39f&lt;SEP&gt;chunk-2fe3f974e54dd1f1ad98289cc79980d6&lt;SEP&gt;chunk-0d3d3acb3c191c9e65fac21b5ed9284f&lt;SEP&gt;chunk-3f8775862e3b8ea072578967e7520445&lt;SEP&gt;chunk-5930b403906ecb929487592cef5210f2&lt;SEP&gt;chunk-5f0773b8daffa7a65254a73867e36afb&lt;SEP&gt;chunk-c41e50d3a458388dc7fe53ece68ee69f&lt;SEP&gt;chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-082efb5c18d778427dcd94905e5f4370&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a&lt;SEP&gt;chunk-f6caccf00501b5f4caf06dcfc047ae9e&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-1364984bd10139c2ef2cd5907a3a7591&lt;SEP&gt;chunk-17b29d261b8bce3ef9105d1c8a78415d&lt;SEP&gt;chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-c7743e93210e95e8e40e0d2a627684b7&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-738a58105cbf665748b3257e0cfee9ac&lt;SEP&gt;chunk-1e6e1908b68b82814f06780675f7938b&lt;SEP&gt;chunk-d02e98febcd8f8650bbe77d789a41d69&lt;SEP&gt;chunk-d0d3b88d3601a1081c8354e0ef27952f&lt;SEP&gt;chunk-07959bdb8bab221c9c80a1c3e85776b3&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-0b9e37e8f7e8a98183b1724c16ce814a&lt;SEP&gt;chunk-1e7cec156f57837e8d25cbe83a6db45f&lt;SEP&gt;chunk-c0cd3e323fc2a43e461d7af757b08706&lt;SEP&gt;chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-345e520afd2a192e25824abb33740d46&lt;SEP&gt;chunk-15d6c505e6a20b598aa21d52b466adcd&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-1e6839b81653aa7c9b7ec794f3447380&lt;SEP&gt;chunk-8a40e782f3c3804da0a1d45dfa05eefe&lt;SEP&gt;chunk-41be59e9bae9e87a716afd8b5a9e9ee1&lt;SEP&gt;chunk-5479196dee25b34d077c01190c6c728b&lt;SEP&gt;chunk-cafeb58d25cc4cbc85eaf07cf415496a&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b&lt;SEP&gt;chunk-79f23819b8640c43571e6e9b3e4098e0&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581&lt;SEP&gt;chunk-3c4967b23b72f04d5c4ef37149d21ede&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642&lt;SEP&gt;chunk-84c3e0271089b72556be831ea38a055f&lt;SEP&gt;chunk-068ca517cbebf973fd4089bd45ef615c&lt;SEP&gt;chunk-b0add79f46581b83deba682a2c89cdb7&lt;SEP&gt;chunk-996c8aba3ce4de0e9bb90c0d569231f3&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8&lt;SEP&gt;chunk-b8ec2739edb4ee1ccc4cf68534e90be5&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776427</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服器">
+  <data key="d0">伺服器</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">伺服器在本月的維護過程中經歷了全面評估和多項升級，以確保其穩定運行並滿足性能要求。檢查包括CPU、記憶體和硬碟使用率的監控，這些指標均處於正常範圍內。系統報告顯示伺服器整體效能狀態良好，符合既定標準。
+
+維護工作涉及了多個方面的操作，其中包括IP地址調整、NTP服務檢查以及KVstore憑證效期檢查等。此外，還進行了從Splunk版本9.3.1到9.3.3的升級工作，該過程影響到了8台伺服器中的其中一台PIMS search head，該機器在dbconnect異常問題上遇到了挑戰。
+
+所有性能檢查均確認伺服器處於正常運行狀態。維護紀錄強調了對伺服器進行多項升級和安全措施調整的重要性，以確保其持續的安全性和效率。這些操作包括授權使用量的核查以及效能評估，進一步確認了伺服器在所有關鍵方面的性能優異並滿足要求。
+
+值得注意的是，伺服器FWD02出現了CPU和磁碟用量異常問題，需要進行後續處理。維護過程中還特別提到涉及到了Splunk Indexer伺服器上的問題和處理，反映出維護工作的全面性和細緻性。
+
+此外，伺服器的當前版本為8.0.6 / 2024.10.22，而最新版本已更新至10.0.1 / 2025.09.25。這些數據反映了伺服器在不斷進化的技術環境中保持了其重要性和適應能力。
+
+總體而言，伺服器的維護工作涵蓋了多個方面，確保其在各種運行指標上的表現均正常，從而支持系統的安全、穩定和高效運行。&lt;SEP&gt;維護報告中提到伺服器效能正常。&lt;SEP&gt;在維護過程中，評估了伺服器的效能並提出優化建議。&lt;SEP&gt;維護紀錄中提及了伺服器的效能情況，確認其正常運行。</data>
+  <data key="d3">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51&lt;SEP&gt;chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-3f8775862e3b8ea072578967e7520445&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-d0d3b88d3601a1081c8354e0ef27952f&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-345e520afd2a192e25824abb33740d46&lt;SEP&gt;chunk-f62a98ad02d11a4c9618cbda43281859&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-41be59e9bae9e87a716afd8b5a9e9ee1&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca&lt;SEP&gt;chunk-3c4967b23b72f04d5c4ef37149d21ede&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776420</data>
+  <data key="d6"></data>
+</node>
+<node id="10.0.2">
+  <data key="d0">10.0.2</data>
+  <data key="d1">版次</data>
+  <data key="d2">最新版本為10.0.2，於2025年11月14日發布。&lt;SEP&gt;10.0.2是最新的Splunk平台版本，建議根據情況進行升級。</data>
+  <data key="d3">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-41be59e9bae9e87a716afd8b5a9e9ee1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776189</data>
+  <data key="d6"></data>
+</node>
+<node id="B客戶">
+  <data key="d0">B客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">B客户是指需要维护和支持的一名特定客户，其维系记录包含了详尽的服务活动内容。具体而言，这些维护记录涵盖了权限调整、数据收集与异常测试等事项，并且还包括状态描述、处置动作以及服务器性能检查等内容。这些记录不仅涉及账号权限的确认和服务验证，还包含了一系列正在进行中的任务和特定日期内的多项维护操作。
+
+2025年11月5日，由A人员和C人员对B客户系统进行的一系列详细维护工作被记载在案，具体包括了针对客户的各项服务和支持活动。简言之，B客户是需要特别关注和服务对象之一，其详细的维护记录展示了多个部门的工作内容，涉及报表寄送、凭证更新、资料收容和索引同步等事项。
+
+这些维护活动由A人员和C人员执行，并详细记录了处理工程师的活动以及与客户的各项服务和支持活动。总体而言，B客户是一笔详尽维护纪录的对象，需要维系的服务对象之一，其记录涵盖了多个方面的内容和服务支持工作。</data>
+  <data key="d3">chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-04465635a6b88183cbabbfe7e25635dd&lt;SEP&gt;chunk-fe7268a7cb94439d483759e501068db6&lt;SEP&gt;chunk-39206ec5906f23d68e051b1df74d3ca7&lt;SEP&gt;chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-daa296a353c26f41dfc613743d24e936&lt;SEP&gt;chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-1e6e1908b68b82814f06780675f7938b&lt;SEP&gt;chunk-d0d3b88d3601a1081c8354e0ef27952f&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-f62a98ad02d11a4c9618cbda43281859&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-72f381579d364fa91cc3e73153e0af97&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5&lt;SEP&gt;chunk-84c3e0271089b72556be831ea38a055f&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776423</data>
+  <data key="d6"></data>
+</node>
+<node id="C人員">
+  <data key="d0">C人員</data>
+  <data key="d1">處理工程師</data>
+  <data key="d2">C人員是指负责维护工作的处理工程师，主要职责包括进行Splunk系统的升级和其他配置修改，并确认数据收容状况等操作。作为维护工作负责人，他们具体执行了对B客户和E客户的Splunk MA系统维护任务，并且负责生成与这些维护活动相关的报告。此外，C人員还承担着记录维护工作的责任，确保所有相关的信息都被准确地保存和更新。
+
+在具体的职责分工中，C人員需要处理由不同客户提出的各种维护请求，进行必要的配置调整和技术支持，以保障系统的正常运行。他们不仅具备专业的技术能力，还在与客户的沟通协调方面表现出色，能够及时响应客户需求并提供有效的解决方案。除此之外，C人員也负责记录所有的维护活动，并确保这些信息的准确性和完整性。
+
+简而言之，C人員是技术支持人员，在维系客户和系统稳定性方面扮演着关键角色，他们的工作涵盖了从技术实施到文档记录等多个方面，以保障系统的高效运行和服务质量。例如，C人員参与了将8台服务器上的Splunk版本从9.3.1升级至9.3.3的维护任务，并与A人员一起共同完成维护纪录中的各项作业。
+
+在具体执行中，C人員与其他技术人员协作进行B客户的维护工作，包括处理客户请求、调整系统配置并记录所有操作。他们还负责对E客户提供维护和支援服务，确保系统的稳定性和高效运行。特别是在2025年11月4日9:00至9:30期间，C人員进行了特定的维护纪录工作。
+
+综上所述，C人員是具有全面技术能力和支持职责的技术工程师，主要负责Splunk系统的维护任务，包括系统升级、配置修改以及生成和记录相关报告。他们在保障客户满意和服务质量方面发挥着不可或缺的作用，并且在执行具体技术操作的同时，还积极与客户沟通以解决各种问题并维持系统稳定运行。&lt;SEP&gt;C人員是進行維護工作的處理工程師之一。&lt;SEP&gt;C人員是負責維護紀錄的處理工程師。</data>
+  <data key="d3">chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-d0cef05272158ef916c2b84f625b2ddb&lt;SEP&gt;chunk-76068a2f95fd89e7ceb4741d4eb478ce&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-39206ec5906f23d68e051b1df74d3ca7&lt;SEP&gt;chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-daa296a353c26f41dfc613743d24e936&lt;SEP&gt;chunk-8bddb98b4a84e394c0a4558b42ae12d0&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-1364984bd10139c2ef2cd5907a3a7591&lt;SEP&gt;chunk-17b29d261b8bce3ef9105d1c8a78415d&lt;SEP&gt;chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-738a58105cbf665748b3257e0cfee9ac&lt;SEP&gt;chunk-1e6e1908b68b82814f06780675f7938b&lt;SEP&gt;chunk-d02e98febcd8f8650bbe77d789a41d69&lt;SEP&gt;chunk-d0d3b88d3601a1081c8354e0ef27952f&lt;SEP&gt;chunk-07959bdb8bab221c9c80a1c3e85776b3&lt;SEP&gt;chunk-c0cd3e323fc2a43e461d7af757b08706&lt;SEP&gt;chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-345e520afd2a192e25824abb33740d46&lt;SEP&gt;chunk-f62a98ad02d11a4c9618cbda43281859&lt;SEP&gt;chunk-1e6839b81653aa7c9b7ec794f3447380&lt;SEP&gt;chunk-8a40e782f3c3804da0a1d45dfa05eefe&lt;SEP&gt;chunk-41be59e9bae9e87a716afd8b5a9e9ee1&lt;SEP&gt;chunk-72f381579d364fa91cc3e73153e0af97&lt;SEP&gt;chunk-cafeb58d25cc4cbc85eaf07cf415496a&lt;SEP&gt;chunk-79f23819b8640c43571e6e9b3e4098e0&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581&lt;SEP&gt;chunk-3c4967b23b72f04d5c4ef37149d21ede&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642&lt;SEP&gt;chunk-84c3e0271089b72556be831ea38a055f&lt;SEP&gt;chunk-b0add79f46581b83deba682a2c89cdb7&lt;SEP&gt;chunk-996c8aba3ce4de0e9bb90c0d569231f3&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776427</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk使用者權限調整">
+  <data key="d0">Splunk使用者權限調整</data>
+  <data key="d1">資料</data>
+  <data key="d2">Splunk使用者權限調整涉及調整es_admin_user的使用者權限及ess_analyst的角色權限以供廠商維護或解決問題時使用。</data>
+  <data key="d3">chunk-95280ea367581dac710f0dc56c7a72f3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775736</data>
+  <data key="d6"></data>
+</node>
+<node id="FISAC資料收容">
+  <data key="d0">FISAC資料收容</data>
+  <data key="d1">資料</data>
+  <data key="d2">進行中的FISAC資料收容事項，目前需要提交IP申請單給FISAC。</data>
+  <data key="d3">chunk-95280ea367581dac710f0dc56c7a72f3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775736</data>
+  <data key="d6"></data>
+</node>
+<node id="SH KVstore引擎異常測試">
+  <data key="d0">SH KVstore引擎異常測試</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">正在個人測試環境中檢查SH的KVstore狀態以解決異常問題。&lt;SEP&gt;SH KVstore引擎異常測試是在個人測試環境中進行的一個維護活動，用於檢查KVstore狀態。</data>
+  <data key="d3">chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776201</data>
+  <data key="d6"></data>
+</node>
+<node id="n8n無法連線至splunk問題">
+  <data key="d0">n8n無法連線至splunk問題</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">正在協助排查n8n無法連線至Splunk的問題。</data>
+  <data key="d3">chunk-95280ea367581dac710f0dc56c7a72f3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775736</data>
+  <data key="d6"></data>
+</node>
+<node id="10.0.1">
+  <data key="d0">10.0.1</data>
+  <data key="d1">版次</data>
+  <data key="d2">最新版本為Splunk 10.0.1(2025年9月25日)，但由於無已知弱點，未建議升級。&lt;SEP&gt;10.0.1是最新的伺服器版本，發布日期為2025年9月25日。</data>
+  <data key="d3">chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776239</data>
+  <data key="d6"></data>
+</node>
+<node id="F客戶">
+  <data key="d0">F客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">F客戶是本次維護紀錄的對象。&lt;SEP&gt;F客戶是一筆維護紀錄的相關對象。&lt;SEP&gt;F客戶的維護紀錄涉及授權用量、系統優化和版本更新等事宜。&lt;SEP&gt;F客戶是一筆維護紀錄的對象。&lt;SEP&gt;F客戶是本次維護紀錄的對象。</data>
+  <data key="d3">chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776420</data>
+  <data key="d6"></data>
+</node>
+<node id="splunk_銀行處11月月維護">
+  <data key="d0">splunk_銀行處11月月維護</data>
+  <data key="d1">資料</data>
+  <data key="d2">描述了此次維護的主要內容和建議，包括授權用量的擴充、版本更新等事項。</data>
+  <data key="d3">chunk-203eba714089c79438cfc39755f054ce</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775750</data>
+  <data key="d6"></data>
+</node>
+<node id="9.3.3/2025.02.26">
+  <data key="d0">9.3.3/2025.02.26</data>
+  <data key="d1">版次</data>
+  <data key="d2">這是當前使用的系統版本，被掃出存在弱點，需進行升級。&lt;SEP&gt;此版本是當前使用的軟件版本，建議進行更新以改善安全性和效能。&lt;SEP&gt;這是當前系統版本，建議更新至較新版本以減少安全風險。&lt;SEP&gt;當前版本是splunk系統的現行版本，截止維護日期尚未升級到最新版本。&lt;SEP&gt;當前使用的版本為9.3.3，發佈日期為2025年02月26日。</data>
+  <data key="d3">chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776420</data>
+  <data key="d6"></data>
+</node>
+<node id="10.0.2/2025.11.14">
+  <data key="d0">10.0.2/2025.11.14</data>
+  <data key="d1">版次</data>
+  <data key="d2">建議更新為此最新版本以提高安全性。&lt;SEP&gt;這是最新的可用Splunk版本，於2025年11月14日發佈，但由於沒有重大弱點或相關BUG，建議暫不升級。&lt;SEP&gt;最新版本，建議升級到該版本以解決弱點問題。&lt;SEP&gt;這是最新可用的Splunk版本號碼，但由於目前版本穩定且無需更新，故未進行升級。&lt;SEP&gt;最新版本具有更高的安全性及效能改進，建議進行升級。&lt;SEP&gt;這是最新版本，維護工作中建議進行升級以解決弱點問題。&lt;SEP&gt;最新版本為10.0.2，發佈日期為2025年11月14日，建議進行升級。</data>
+  <data key="d3">chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-04465635a6b88183cbabbfe7e25635dd&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776420</data>
+  <data key="d6"></data>
+</node>
+<node id="Nexon Technologies' Quarterly Earnings Report">
+  <data key="d0">Nexon Technologies' Quarterly Earnings Report</data>
+  <data key="d1">content</data>
+  <data key="d2">The earnings report of Nexon Technologies indicated lower-than-expected performance, leading to a significant stock decline.</data>
+  <data key="d3">chunk-203eba714089c79438cfc39755f054ce</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775750</data>
+  <data key="d6"></data>
+</node>
+<node id="Federal Reserve Policy Announcement">
+  <data key="d0">Federal Reserve Policy Announcement</data>
+  <data key="d3">chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">Investor concerns over potential Federal Reserve policy changes contributed to the market selloff.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775750</data>
+  <data key="d6"></data>
+</node>
+<node id="Market Selloff">
+  <data key="d0">Market Selloff</data>
+  <data key="d3">chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef</data>
+  <data key="d2">Investor concerns over potential Federal Reserve policy changes contributed to the market selloff.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775750</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk_11月維護">
+  <data key="d0">Splunk_11月維護</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">Splunk_11月維護是一筆關於B客戶在2025年11月進行的維護工作記錄。</data>
+  <data key="d3">chunk-04465635a6b88183cbabbfe7e25635dd</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775760</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服器效能正常">
+  <data key="d0">伺服器效能正常</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">維護報告顯示伺服器的效能狀態為正常。</data>
+  <data key="d3">chunk-04465635a6b88183cbabbfe7e25635dd</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775760</data>
+  <data key="d6"></data>
+</node>
+<node id="9.3.6/2025.07.31">
+  <data key="d0">9.3.6/2025.07.31</data>
+  <data key="d1">版次</data>
+  <data key="d2">這是B客戶目前使用中的Splunk版本，截至2025年7月31日。&lt;SEP&gt;當前使用版本為9.3.6，發佈日期為2025年07月31日。</data>
+  <data key="d3">chunk-04465635a6b88183cbabbfe7e25635dd&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776008</data>
+  <data key="d6"></data>
+</node>
+<node id="E客戶">
+  <data key="d0">E客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">E客戶是指需要维护和支持的一方，通常涉及驻点工作的事项和Splunk MA系统的拥有者身份。相关维护工作由处理工程师执行，他们负责确保E客户的系统和服务得到适当的维护服务。从提供的描述中可以看出，E客户不仅是一笔维护纪录的对象，而且是整个维护过程中主要的受益对象。E客戶在多个上下文中被提及，包括需要维护的系统、接收驻点支持的服务接受方以及记录中的实体。这些定义共同表明了E客户在整个维护和支持流程中的核心角色和重要性。
+
+具体而言，E客户是指在接受维护服务的客户，在维护纪录中作为主要的对象和服务受益者出现。例如，2025年10月对某个E客户的Splunk系统进行了定期保养。这进一步强调了E客户在维护活动中的关键位置和其系统的实际维护需求。总之，E客戶是需要维护和支持的重要一方，并在整个维护过程中扮演着不可或缺的角色。&lt;SEP&gt;E客戶是接受維護服務的客戶。&lt;SEP&gt;E客戶是需要維護和支持的客戶。&lt;SEP&gt;E客戶是需要維護服務的客戶。&lt;SEP&gt;E客戶是一筆維護紀錄的客戶。</data>
+  <data key="d3">chunk-d0cef05272158ef916c2b84f625b2ddb&lt;SEP&gt;chunk-76068a2f95fd89e7ceb4741d4eb478ce&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-8bddb98b4a84e394c0a4558b42ae12d0&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-738a58105cbf665748b3257e0cfee9ac&lt;SEP&gt;chunk-d02e98febcd8f8650bbe77d789a41d69&lt;SEP&gt;chunk-c0cd3e323fc2a43e461d7af757b08706&lt;SEP&gt;chunk-1e6839b81653aa7c9b7ec794f3447380&lt;SEP&gt;chunk-8a40e782f3c3804da0a1d45dfa05eefe&lt;SEP&gt;chunk-cafeb58d25cc4cbc85eaf07cf415496a&lt;SEP&gt;chunk-3c4967b23b72f04d5c4ef37149d21ede&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642&lt;SEP&gt;chunk-b0add79f46581b83deba682a2c89cdb7&lt;SEP&gt;chunk-996c8aba3ce4de0e9bb90c0d569231f3&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776427</data>
+  <data key="d6"></data>
+</node>
+<node id="RES3SQL19資料收容狀況">
+  <data key="d0">RES3SQL19資料收容狀況</data>
+  <data key="d1">資料</data>
+  <data key="d2">RES3SQL19的數據收容狀況需被確認。</data>
+  <data key="d3">chunk-d0cef05272158ef916c2b84f625b2ddb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775760</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服器效能檢查">
+  <data key="d0">伺服器效能檢查</data>
+  <data key="d1">資料</data>
+  <data key="d2">伺服器效能檢查是維護工作中的一部分，確認伺服器性能正常。</data>
+  <data key="d3">chunk-fe7268a7cb94439d483759e501068db6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775768</data>
+  <data key="d6"></data>
+</node>
+<node id="版本更新建議">
+  <data key="d0">版本更新建議</data>
+  <data key="d1">版次</data>
+  <data key="d2">版本更新建議包括當前版本和最新版本的詳細信息，以及升版建議。&lt;SEP&gt;維護紀錄建議E客戶將當前使用的Splunk MA系統版本從9.3.8升級到10.0.2，以解決已知的安全漏洞問題。</data>
+  <data key="d3">chunk-fe7268a7cb94439d483759e501068db6&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775776</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服器效能">
+  <data key="d0">伺服器效能</data>
+  <data key="d1">資料</data>
+  <data key="d2">伺服器效能在本次維護中被評估為正常狀態。&lt;SEP&gt;伺服器效能報告顯示正常運行。</data>
+  <data key="d3">chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776008</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk角色能力異常">
+  <data key="d0">Splunk角色能力異常</data>
+  <data key="d1">資料</data>
+  <data key="d2">Splunk角色能力異常是本次維護中發現的一個安全或功能問題。&lt;SEP&gt;該異常描述admin角色的能力需高於es_admin_user角色，因此已採取措施調整權限設定以區分權限高低。&lt;SEP&gt;Splunk角色能力異常是指admin角色的能力需高於es_admin_user角色的問題。</data>
+  <data key="d3">chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="PA每月報表補寄">
+  <data key="d0">PA每月報表補寄</data>
+  <data key="d1">資料</data>
+  <data key="d2">PA每月報表補寄是指對未能正常寄送的報告進行補發的操作。</data>
+  <data key="d3">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775794</data>
+  <data key="d6"></data>
+</node>
+<node id="FISAC資料收容-進行中">
+  <data key="d0">FISAC資料收容-進行中</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">FISAC資料收容是正在處理中的數據收集過程。&lt;SEP&gt;描述了一項進行中的維護任務，涉及向FISAC提交申請單以使用API。&lt;SEP&gt;FISAC資料收容是指將需要使用的API提交給相關部門進行申請的一項任務，目前仍處於進行中的狀態。&lt;SEP&gt;目前正申請API的IP使用權以進行相關工作。&lt;SEP&gt;目前請james向FISAC提交需使用API的IP申請單。</data>
+  <data key="d3">chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="SH KVstore引擎異常測試-進行中">
+  <data key="d0">SH KVstore引擎異常測試-進行中</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">SH KVstore引擎異常測試是一項仍在進行的技術驗證任務。&lt;SEP&gt;說明了在個人測試環境中進行的KVstore狀態異常檢查工作。&lt;SEP&gt;SH KVstore引擎異常測試是指正在進行的一項為了確認KVstore狀態而做的個人測試環境的工作，目前處於進行中的狀態。&lt;SEP&gt;正在個人測試環境中驗證KVstore狀態，確保系統穩定性。&lt;SEP&gt;正在個人的測試環境測試SH的KVstore狀態。</data>
+  <data key="d3">chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="新增DNS設定">
+  <data key="d0">新增DNS設定</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">新增DNS設定是指在forwarder上增加新的域名解析設置的工作。</data>
+  <data key="d3">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775794</data>
+  <data key="d6"></data>
+</node>
+<node id="部屬新crowdstrike套件">
+  <data key="d0">部屬新crowdstrike套件</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">部屬新crowdstrike套件是安裝安全工具來保護系統的措施。</data>
+  <data key="d3">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775794</data>
+  <data key="d6"></data>
+</node>
+<node id="james">
+  <data key="d0">james</data>
+  <data key="d3">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d2">James負責將IP使用需求提交給FISAC系統進行處理。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775795</data>
+  <data key="d6"></data>
+</node>
+<node id="Carbon-Fiber Spikes">
+  <data key="d0">Carbon-Fiber Spikes</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Advanced sprinting shoes used by Noah Carter to enhance performance during the 100m sprint.&lt;SEP&gt;Advanced sprinting shoes made from carbon fiber that provide enhanced speed and traction.</data>
+  <data key="d3">chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776427</data>
+  <data key="d6"></data>
+</node>
+<node id="Noah Carter">
+  <data key="d0">Noah Carter</data>
+  <data key="d3">chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d2">The World Athletics Federation oversees record validations and governs the championship where Noah Carter set a new record.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775796</data>
+  <data key="d6"></data>
+</node>
+<node id="World Athletics Federation">
+  <data key="d0">World Athletics Federation</data>
+  <data key="d3">chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d2">The World Athletics Federation oversees record validations and governs the championship where Noah Carter set a new record.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775796</data>
+  <data key="d6"></data>
+</node>
+<node id="I客戶">
+  <data key="d0">I客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">I客戶的維護紀錄於2025年12月5日由A人員進行。&lt;SEP&gt;這是一筆關於I客戶的維護紀錄。&lt;SEP&gt;I客戶的維護紀錄包括授權用量建議擴充、伺服器效能正常和版本更新建議。&lt;SEP&gt;I客戶是需要維護服務的對象。</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6&lt;SEP&gt;chunk-c7743e93210e95e8e40e0d2a627684b7&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776262</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk_12月維護">
+  <data key="d0">Splunk_12月維護</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">Splunk_12月維護是於2025年12月5日由A人員進行的維護工作，包括授權用量建議擴充、伺服器效能檢查和版本更新建議。</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775813</data>
+  <data key="d6"></data>
+</node>
+<node id="8.0.6 / 2024.10.22">
+  <data key="d0">8.0.6 / 2024.10.22</data>
+  <data key="d1">版次</data>
+  <data key="d2">當前Splunk系統版本為8.0.6，最後一次更新日期為2024年10月22日。</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775813</data>
+  <data key="d6"></data>
+</node>
+<node id="10.0.2 / 2025.11.14">
+  <data key="d0">10.0.2 / 2025.11.14</data>
+  <data key="d1">版次</data>
+  <data key="d2">最新可用的Splunk系統版本為10.0.2，最後一次更新日期為2025年11月14日。&lt;SEP&gt;建議升級到的最新系統版本為10.0.2，與當前版本相同日期更新。</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776307</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服器效能：正常">
+  <data key="d0">伺服器效能：正常</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">檢查結果顯示伺服器目前運行狀況良好，無需進一步調整或升級。</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775813</data>
+  <data key="d6"></data>
+</node>
+<node id="Red Hat 9.4">
+  <data key="d0">Red Hat 9.4</data>
+  <data key="d1">資料</data>
+  <data key="d2">作業系統版本為Red Hat Enterprise Linux 9.4，計劃於2027年5月31日結束支援期(EOS)。</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775813</data>
+  <data key="d6"></data>
+</node>
+<node id="CVE-2023-3567, CVE-2023-4133, CVE-2023-6932, CVE-2023-39198, CVE-2023-51043, CVE-2023-51779, CVE-2023-5178">
+  <data key="d0">CVE-2023-3567, CVE-2023-4133, CVE-2023-6932, CVE-2023-39198, CVE-2023-51043, CVE-2023-51779, CVE-2023-5178</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">系統中存在的弱點包括多個CVE代碼，需要進一步的安全補救措施。</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775813</data>
+  <data key="d6"></data>
+</node>
+<node id="Lower-Than-Expected Quarterly Earnings">
+  <data key="d0">Lower-Than-Expected Quarterly Earnings</data>
+  <data key="d1">category</data>
+  <data key="d2">Nexon Technologies reported earnings that were lower than what was anticipated by investors.</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775813</data>
+  <data key="d6"></data>
+</node>
+<node id="版次">
+  <data key="d0">版次</data>
+  <data key="d1">版次</data>
+  <data key="d2">系統的當前版本是9.3.8，最新版本建議更新到10.0.2以解決弱點問題。&lt;SEP&gt;維護紀錄描述了Splunk駐點服務202512第五周的工作。</data>
+  <data key="d3">chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776214</data>
+  <data key="d6"></data>
+</node>
+<node id="3.4% Decline">
+  <data key="d0">3.4% Decline</data>
+  <data key="d3">chunk-9648988cb67db9843bc13754ac3d6ab6&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">The decline in the Global Tech Index is influenced by Nexon's underperformance.&lt;SEP&gt;The Global Tech Index experienced a 3.4% decline in midday trading.</data>
+  <data key="d1">category</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775943</data>
+  <data key="d6"></data>
+</node>
+<node id="C客戶">
+  <data key="d0">C客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">C客户是指接受维护服务的对象，其维护工作由B人员进行，并包含一系列具体的维护活动和记录更新。具体来说，C客户的维护纪录包括漏洞修补、报告及告警寄件人更新以及KPMG渗透测试IP白名单处理等事项。此外，C客户的维护记录还包括更新geodb、恢复数据库中IOC页面、调整HTTP对外大量传输数据报表并新增需监控的URL等操作。
+
+在2025年10月27日进行了详细的维护活动记录，并且所有这些维护工作都是为了确保客户系统的安全和稳定运行而进行的。C客户是与维护记录相关联的一个具体客户对象，所有的维护活动都旨在解决Splunk服务异常问题并提供暂时解决方案。
+
+简而言之，C客户是一个需要持续接受系统维护服务的实体，其详细的维护纪录涵盖了多个方面的技术和管理操作，以确保系统的高效和安全运行。&lt;SEP&gt;C客戶是需要維護服務的對象。&lt;SEP&gt;C客戶是一筆維護紀錄的對象。&lt;SEP&gt;維護紀錄中的客戶名稱。</data>
+  <data key="d3">chunk-ab226f704fc1b4d45dd06222f40cb39f&lt;SEP&gt;chunk-2fe3f974e54dd1f1ad98289cc79980d6&lt;SEP&gt;chunk-0d3d3acb3c191c9e65fac21b5ed9284f&lt;SEP&gt;chunk-3f8775862e3b8ea072578967e7520445&lt;SEP&gt;chunk-5930b403906ecb929487592cef5210f2&lt;SEP&gt;chunk-c41e50d3a458388dc7fe53ece68ee69f&lt;SEP&gt;chunk-082efb5c18d778427dcd94905e5f4370&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a&lt;SEP&gt;chunk-f6caccf00501b5f4caf06dcfc047ae9e&lt;SEP&gt;chunk-0b9e37e8f7e8a98183b1724c16ce814a&lt;SEP&gt;chunk-1e7cec156f57837e8d25cbe83a6db45f&lt;SEP&gt;chunk-15d6c505e6a20b598aa21d52b466adcd&lt;SEP&gt;chunk-5479196dee25b34d077c01190c6c728b&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b&lt;SEP&gt;chunk-79f23819b8640c43571e6e9b3e4098e0&lt;SEP&gt;chunk-068ca517cbebf973fd4089bd45ef615c&lt;SEP&gt;chunk-cdd29ae3537f38a27c3848632ad51359&lt;SEP&gt;chunk-b8ec2739edb4ee1ccc4cf68534e90be5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776409</data>
+  <data key="d6"></data>
+</node>
+<node id="B人員">
+  <data key="d0">B人員</data>
+  <data key="d1">處理工程師</data>
+  <data key="d2">B人員 is a processing engineer responsible for conducting maintenance work and ensuring the stability of systems provided to C客户. The role includes various tasks related to system maintenance, such as addressing anomalies, performing updates, and implementing necessary security patches. Specifically, B人员 conducts multiple maintenance activities like GeoDB updates, GitLab upgrades, construction of record review dashboards for AI websites, patching VMware Tools vulnerabilities, modifying IP whitelist settings, updating Splunk驻点服务, adjusting alarm syntax, and managing F5VPN specific user connection logs.
+
+B人員 is dedicated to maintaining system integrity and ensuring smooth operations through a variety of technical tasks and updates. For example, on January 5, 2026, B人员 performed maintenance work including the Splunk驻点 service. On October 20, 2025, from 11:00 to 16:00, B人員 conducted a specific set of maintenance activities for C客户. These responsibilities highlight the comprehensive nature of the tasks undertaken by B人员, which are crucial for keeping systems up-to-date and secure.&lt;SEP&gt;B人員是進行維護工作的處理工程師。&lt;SEP&gt;B人員與C人員共同參與了維護工作，一起解決Splunk異常狀況。&lt;SEP&gt;B人員為C客戶提供維護服務，主要進行GeoDB更新、漏洞修補等工作。&lt;SEP&gt;B人員是進行維護工作的處理工程師。&lt;SEP&gt;進行維護工作的處理工程師。</data>
+  <data key="d3">chunk-ab226f704fc1b4d45dd06222f40cb39f&lt;SEP&gt;chunk-2fe3f974e54dd1f1ad98289cc79980d6&lt;SEP&gt;chunk-0d3d3acb3c191c9e65fac21b5ed9284f&lt;SEP&gt;chunk-3f8775862e3b8ea072578967e7520445&lt;SEP&gt;chunk-5930b403906ecb929487592cef5210f2&lt;SEP&gt;chunk-5f0773b8daffa7a65254a73867e36afb&lt;SEP&gt;chunk-c41e50d3a458388dc7fe53ece68ee69f&lt;SEP&gt;chunk-082efb5c18d778427dcd94905e5f4370&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a&lt;SEP&gt;chunk-f6caccf00501b5f4caf06dcfc047ae9e&lt;SEP&gt;chunk-0b9e37e8f7e8a98183b1724c16ce814a&lt;SEP&gt;chunk-1e7cec156f57837e8d25cbe83a6db45f&lt;SEP&gt;chunk-15d6c505e6a20b598aa21d52b466adcd&lt;SEP&gt;chunk-5479196dee25b34d077c01190c6c728b&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b&lt;SEP&gt;chunk-79f23819b8640c43571e6e9b3e4098e0&lt;SEP&gt;chunk-068ca517cbebf973fd4089bd45ef615c&lt;SEP&gt;chunk-cdd29ae3537f38a27c3848632ad51359&lt;SEP&gt;chunk-b8ec2739edb4ee1ccc4cf68534e90be5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776409</data>
+  <data key="d6"></data>
+</node>
+<node id="GeoDB">
+  <data key="d0">GeoDB</data>
+  <data key="d1">資料</data>
+  <data key="d2">進行了GeoDB的更新操作。&lt;SEP&gt;數據庫，用於存儲地理位置相關信息，在本周更新以改善服務性能。&lt;SEP&gt;GeoDB更新是維護工作的一部分。</data>
+  <data key="d3">chunk-2fe3f974e54dd1f1ad98289cc79980d6&lt;SEP&gt;chunk-0d3d3acb3c191c9e65fac21b5ed9284f&lt;SEP&gt;chunk-068ca517cbebf973fd4089bd45ef615c</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776338</data>
+  <data key="d6"></data>
+</node>
+<node id="MG02">
+  <data key="d0">MG02</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">MG02磁碟用量超過90%，經處理後降至85%。</data>
+  <data key="d3">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775841</data>
+  <data key="d6"></data>
+</node>
+<node id="FWD03">
+  <data key="d0">FWD03</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">FWD03備份異常，原因是FCB設定導致權限問題，已復原並手動執行備份。</data>
+  <data key="d3">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775841</data>
+  <data key="d6"></data>
+</node>
+<node id="Cyble ASM IP白名單">
+  <data key="d0">Cyble ASM IP白名單</data>
+  <data key="d1">資料</data>
+  <data key="d2">更新了Cyble ASM IP白名單。</data>
+  <data key="d3">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775841</data>
+  <data key="d6"></data>
+</node>
+<node id="Ryan之Splunk帳號">
+  <data key="d0">Ryan之Splunk帳號</data>
+  <data key="d1">版次</data>
+  <data key="d2">由於人員變更，經確認後已刪除Ryan的Splunk舊帳號。</data>
+  <data key="d3">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775841</data>
+  <data key="d6"></data>
+</node>
+<node id="Arcsight和Splunk歷史案件調閱">
+  <data key="d0">Arcsight和Splunk歷史案件調閱</data>
+  <data key="d1">資料</data>
+  <data key="d2">調閱了Arcsight和Splunk歷史案件。</data>
+  <data key="d3">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775841</data>
+  <data key="d6"></data>
+</node>
+<node id="GitLab漏洞修補">
+  <data key="d0">GitLab漏洞修補</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">待辦事項包括進行GitLab的漏洞修復。</data>
+  <data key="d3">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775841</data>
+  <data key="d6"></data>
+</node>
+<node id="Gitlab">
+  <data key="d0">Gitlab</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">軟件開發平台，版本從18.1.6升級到18.5.2以修補漏洞CVE-2025-11224。</data>
+  <data key="d3">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775842</data>
+  <data key="d6"></data>
+</node>
+<node id="CVE-2025-11224">
+  <data key="d0">CVE-2025-11224</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">需要被修復的軟件安全漏洞，通過升級Gitlab版本來處理。</data>
+  <data key="d3">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775842</data>
+  <data key="d6"></data>
+</node>
+<node id="AI網站服務紀錄調閱儀表板">
+  <data key="d0">AI網站服務紀錄調閱儀表板</data>
+  <data key="d1">資料</data>
+  <data key="d2">用於方便定期查看AI網站連線紀錄的儀表盤，已建立以改善可見性和管理效率。</data>
+  <data key="d3">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775842</data>
+  <data key="d6"></data>
+</node>
+<node id="DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標">
+  <data key="d0">DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標</data>
+  <data key="d1">事件</data>
+  <data key="d2">安全告警事件，涉及異常的大規模跨域名查詢和DNS請求頻率，由B人員調整了閥值以改善系統穩定性。</data>
+  <data key="d3">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775842</data>
+  <data key="d6"></data>
+</node>
+<node id="版次17.10.8">
+  <data key="d0">版次17.10.8</data>
+  <data key="d1">版次</data>
+  <data key="d2">這是GitLab的早期版本，受到了漏洞CVE-2025-6454、CVE-2025-2256影響，需要升級以解決安全問題。</data>
+  <data key="d3">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775858</data>
+  <data key="d6"></data>
+</node>
+<node id="版次18.1.6">
+  <data key="d0">版次18.1.6</data>
+  <data key="d1">版次</data>
+  <data key="d2">這是GitLab升級後的版本，目的是解決早期版本中的安全漏洞。</data>
+  <data key="d3">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775858</data>
+  <data key="d6"></data>
+</node>
+<node id="API">
+  <data key="d0">API</data>
+  <data key="d1">api</data>
+  <data key="d2">相關操作中提及了建立告警和自動化封鎖清單異動儀表板建置，涉及API的使用或開發。&lt;SEP&gt;維護工作包括調整HTTPS大量傳輸告警，新建立每日HTTP資料傳輸統計報表(m365) API。</data>
+  <data key="d3">chunk-3f8775862e3b8ea072578967e7520445&lt;SEP&gt;chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776214</data>
+  <data key="d6"></data>
+</node>
+<node id="資料更新geodb">
+  <data key="d0">資料更新geodb</data>
+  <data key="d1">資料</data>
+  <data key="d2">處理工程師執行了一個步驟來更新geodb中的數據。</data>
+  <data key="d3">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775858</data>
+  <data key="d6"></data>
+</node>
+<node id="漏洞CVE-2025-6454">
+  <data key="d0">漏洞CVE-2025-6454</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">這是影響早期GitLab版本的安全漏洞，需要升級到新版以消除風險。</data>
+  <data key="d3">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775858</data>
+  <data key="d6"></data>
+</node>
+<node id="漏洞CVE-2025-2256">
+  <data key="d0">漏洞CVE-2025-2256</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">這也是影響早期GitLab版本的安全漏洞，同樣需要通過升級解決安全問題。</data>
+  <data key="d3">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775858</data>
+  <data key="d6"></data>
+</node>
+<node id="漏洞CVE-2025-6454,CVE-2025-2256">
+  <data key="d0">漏洞CVE-2025-6454,CVE-2025-2256</data>
+  <data key="d3">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d2">升級到新版是為了消除這些漏洞帶來的安全風險。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775858</data>
+  <data key="d6"></data>
+</node>
+<node id="CVE-2025-41244, CVE-2025-41246">
+  <data key="d0">CVE-2025-41244, CVE-2025-41246</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">CVE-2025-41244和CVE-2025-41246是VMware Tools需要修補的兩個安全漏洞。</data>
+  <data key="d3">chunk-5930b403906ecb929487592cef5210f2</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775868</data>
+  <data key="d6"></data>
+</node>
+<node id="VMware Tools">
+  <data key="d0">VMware Tools</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">VMware Tools是一種管理工具，其版本更新至12.3.5以解決特定的安全問題。</data>
+  <data key="d3">chunk-5930b403906ecb929487592cef5210f2</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775868</data>
+  <data key="d6"></data>
+</node>
+<node id="CVE-2025-41244">
+  <data key="d0">CVE-2025-41244</data>
+  <data key="d3">chunk-5930b403906ecb929487592cef5210f2</data>
+  <data key="d2">針對VMware Tools的漏洞，進行了版本更新以解決CVE-2025-41244等問題。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775868</data>
+  <data key="d6"></data>
+</node>
+<node id="CVE-2025-41246">
+  <data key="d0">CVE-2025-41246</data>
+  <data key="d3">chunk-5930b403906ecb929487592cef5210f2</data>
+  <data key="d2">針對VMware Tools的漏洞，進行了版本更新以解決CVE-2025-41246等問題。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775868</data>
+  <data key="d6"></data>
+</node>
+<node id="D客戶">
+  <data key="d0">D客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">D客戶是一筆維護紀錄的對象。&lt;SEP&gt;D客戶是需要維護的對象。</data>
+  <data key="d3">chunk-5f0773b8daffa7a65254a73867e36afb&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775912</data>
+  <data key="d6"></data>
+</node>
+<node id="pice_logs">
+  <data key="d0">pice_logs</data>
+  <data key="d1">資料</data>
+  <data key="d2">Pice_logs是存在缺少檔案問題的資料集，已通過新設定確保所有日誌被正確收集和存儲。</data>
+  <data key="d3">chunk-5f0773b8daffa7a65254a73867e36afb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775868</data>
+  <data key="d6"></data>
+</node>
+<node id="VMware Tools漏洞">
+  <data key="d0">VMware Tools漏洞</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">VMware Tools存在需要修補的漏洞。</data>
+  <data key="d3">chunk-c41e50d3a458388dc7fe53ece68ee69f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="splunk自動version check">
+  <data key="d0">splunk自動version check</data>
+  <data key="d1">api</data>
+  <data key="d2">Splunk的自動版本檢查功能需要被禁用以進行維護。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="CEF outputs套件調整送出格式">
+  <data key="d0">CEF outputs套件調整送出格式</data>
+  <data key="d1">資料</data>
+  <data key="d2">CEF輸出套件的發送格式需要調整，包括將換行字元替換成空格並在最尾端新增一個空格。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="IIS LOG拋送目的調整">
+  <data key="d0">IIS LOG拋送目的調整</data>
+  <data key="d1">資料</data>
+  <data key="d2">需要調整IIS日誌報告的目的地設置。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="ES版本升級">
+  <data key="d0">ES版本升級</data>
+  <data key="d1">版次</data>
+  <data key="d2">由於threat object的重複顯示，需進行ES版本升級來解決問題。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk版本升級">
+  <data key="d0">Splunk版本升級</data>
+  <data key="d1">版次</data>
+  <data key="d2">計劃對Splunk系統進行版本升級以改進功能和安全性。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="資產新增報廢/營運中欄位">
+  <data key="d0">資產新增報廢/營運中欄位</data>
+  <data key="d1">資料</data>
+  <data key="d2">需在資產管理中新增報廢或營運中的欄位標記。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="imsdb02UF中舊的殘留input設定">
+  <data key="d0">imsdb02UF中舊的殘留input設定</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">需要關閉IMSDB02UF系統中舊的殘留輸入設置以消除安全風險。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="SH FISAC API input (未使用)">
+  <data key="d0">SH FISAC API input (未使用)</data>
+  <data key="d1">api</data>
+  <data key="d2">已經不再使用的SH FISAC API輸入需要被關閉。</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775885</data>
+  <data key="d6"></data>
+</node>
+<node id="資料">
+  <data key="d0">資料</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d2">需根據要求調整CEF輸出套件的發送格式，包括字元替換和空格添加等步驟。&lt;SEP&gt;處理過程中涉及GeoDB更新和estreamer資料清理。</data>
+  <data key="d1">資料</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776214</data>
+  <data key="d6"></data>
+</node>
+<node id="漏洞">
+  <data key="d0">漏洞</data>
+  <data key="d3">chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d2">關閉IMSDB02UF系統中的舊輸入設置可以消除潛在的安全隱患並保持系統清潔。&lt;SEP&gt;待辦事項中提到需要修補SSH Server的漏洞。</data>
+  <data key="d1">漏洞</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776214</data>
+  <data key="d6"></data>
+</node>
+<node id="A部門">
+  <data key="d0">A部門</data>
+  <data key="d1">other</data>
+  <data key="d2">一個涉及維護工作的部門，其中A同事代表該部門進行了某些動作。&lt;SEP&gt;A部門是參與維護工作的部門之一，完成了多個與Splunk系統管理相關的工作項目。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="B部門">
+  <data key="d0">B部門</data>
+  <data key="d1">other</data>
+  <data key="d2">另一個參與維護工作的部門，負責多項進行中的任務和異常檢查。&lt;SEP&gt;B部門是參與維護工作的部門之一，處理了新增indexer和FIsac情資撈取等工作任務。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="LDAP設定">
+  <data key="d0">LDAP設定</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">完成了splunk LDAP驗證設定，確保系統正常運作。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775900</data>
+  <data key="d6"></data>
+</node>
+<node id="Management搜尋異常">
+  <data key="d0">Management搜尋異常</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">列為待處理事項之一，表示在維護過程中發現了一個管理層面的查詢問題。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775900</data>
+  <data key="d6"></data>
+</node>
+<node id="BTDC2問題處理">
+  <data key="d0">BTDC2問題處理</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">另一個待解決的問題，需要進行進一步的操作和檢查。&lt;SEP&gt;BTDC2問題處理是指對BTDC2中存在的問題進行調查和解決的一項工作，旨在消除潛在的風險點。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776032</data>
+  <data key="d6"></data>
+</node>
+<node id="A人員,B人員">
+  <data key="d0">A人員,B人員</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d2">ldap驗證設定工作由相關技術人員完成，確保splunk系統的安全性及正常運作。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775900</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk駐點服務202511第一周">
+  <data key="d0">Splunk駐點服務202511第一周</data>
+  <data key="d1">event</data>
+  <data key="d2">Splunk駐點服務202511第一周is an event describing the first week of Splunk on-site service in November 2025.</data>
+  <data key="d3">chunk-082efb5c18d778427dcd94905e5f4370</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775911</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk 202510-12季維護">
+  <data key="d0">Splunk 202510-12季維護</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">這是Splunk在2025年10月到12月季度的維護活動，涵蓋了授權用量、伺服器效能等多方面內容。</data>
+  <data key="d3">chunk-8a81645d1d338ac013fa594b14c35640</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775912</data>
+  <data key="d6"></data>
+</node>
+<node id="9.3.8/2025.11.14">
+  <data key="d0">9.3.8/2025.11.14</data>
+  <data key="d1">版次</data>
+  <data key="d2">這是目前Splunk使用的版本號碼，未發現重大弱點或相關BUG，因此建議暫不升級至最新版本。</data>
+  <data key="d3">chunk-8a81645d1d338ac013fa594b14c35640</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775912</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服器FWD02">
+  <data key="d0">伺服器FWD02</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">FWD02是遭遇磁碟用量異常的伺服器。</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775943</data>
+  <data key="d6"></data>
+</node>
+<node id="版次clean.sh">
+  <data key="d0">版次clean.sh</data>
+  <data key="d1">版次</data>
+  <data key="d2">clean.sh是一個用於清理舊資料的腳本，現已被調整以定期清除數據(原為12小時，現改為6小時)。</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775943</data>
+  <data key="d6"></data>
+</node>
+<node id="API Cybereyes API">
+  <data key="d0">API Cybereyes API</data>
+  <data key="d1">api</data>
+  <data key="d2">Cybereyes API是待處理的事項之一，目前仍在進行中。</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775943</data>
+  <data key="d6"></data>
+</node>
+<node id="GeoDB更新">
+  <data key="d0">GeoDB更新</data>
+  <data key="d1">版次</data>
+  <data key="d2">GeoDB更新是維護工作的一部分，涉及數據庫的升級或調整。</data>
+  <data key="d3">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775944</data>
+  <data key="d6"></data>
+</node>
+<node id="AI網站服務紀錄調閱">
+  <data key="d0">AI網站服務紀錄調閱</data>
+  <data key="d1">資料</data>
+  <data key="d2">AI網站服務紀錄調閱涵蓋了2025年8月至10月的記錄。</data>
+  <data key="d3">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775944</data>
+  <data key="d6"></data>
+</node>
+<node id="弱點掃描報告資訊整理">
+  <data key="d0">弱點掃描報告資訊整理</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">弱點掃描報告的信息整理是為了更好地理解和處理安全威脅。</data>
+  <data key="d3">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775944</data>
+  <data key="d6"></data>
+</node>
+<node id="eStreamer資料異常處理">
+  <data key="d0">eStreamer資料異常處理</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">eStreamer的數據異常問題從11月14日23:20開始，後續通過重啟服務解決了問題。</data>
+  <data key="d3">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775944</data>
+  <data key="d6"></data>
+</node>
+<node id="KPMG滲透測試IP白名單">
+  <data key="d0">KPMG滲透測試IP白名單</data>
+  <data key="d1">資料</data>
+  <data key="d2">將相關IP和網段加入白名單並修改告警語法以同時比對IP及網段。</data>
+  <data key="d3">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775944</data>
+  <data key="d6"></data>
+</node>
+<node id="Commodity Markets">
+  <data key="d0">Commodity Markets</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">Omega Energy's modest gain reflects its resilience in commodity markets amidst rising oil prices and mixed investor sentiment.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775945</data>
+  <data key="d6"></data>
+</node>
+<node id="Crude Oil Prices">
+  <data key="d0">Crude Oil Prices</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">Rising crude oil prices are influenced by supply constraints affecting the market balance.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775945</data>
+  <data key="d6"></data>
+</node>
+<node id="Omega Energy">
+  <data key="d0">Omega Energy</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">Omega Energy's modest gain reflects its resilience in commodity markets amidst rising oil prices and mixed investor sentiment.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775945</data>
+  <data key="d6"></data>
+</node>
+<node id="Nexon Technologies">
+  <data key="d0">Nexon Technologies</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">Nexon Technologies' stock decline is part of the broader market selloff affecting tech companies.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775945</data>
+  <data key="d6"></data>
+</node>
+<node id="Supply Constraints">
+  <data key="d0">Supply Constraints</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">Rising crude oil prices are influenced by supply constraints affecting the market balance.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775945</data>
+  <data key="d6"></data>
+</node>
+<node id="Interest Rate Speculation">
+  <data key="d0">Interest Rate Speculation</data>
+  <data key="d3">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d2">Speculation over potential rate hikes from the Federal Reserve impacts investor confidence and market stability expectations.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775945</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk每週onsite">
+  <data key="d0">Splunk每週onsite</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">描述了Splunk的定期現場維護活動。</data>
+  <data key="d3">chunk-daa296a353c26f41dfc613743d24e936</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775956</data>
+  <data key="d6"></data>
+</node>
+<node id="PA報表寄信異常">
+  <data key="d0">PA報表寄信異常</data>
+  <data key="d1">資料</data>
+  <data key="d2">A部門和B部門都遇到的一種報告寄送問題，需要進一步處理。&lt;SEP&gt;PA報表寄信異常指的是每月Block Category報表自動寄送過程中的問題，已經通過設置新的套件解決並預計在下月確認效果。</data>
+  <data key="d3">chunk-daa296a353c26f41dfc613743d24e936&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776307</data>
+  <data key="d6"></data>
+</node>
+<node id="新增indexer">
+  <data key="d0">新增indexer</data>
+  <data key="d1">版次</data>
+  <data key="d2">描述了在IDX cluster節點上新添加的索引器。&lt;SEP&gt;新增indexer至IDX集群節點已執行，目前正監控索引同步狀態。</data>
+  <data key="d3">chunk-daa296a353c26f41dfc613743d24e936&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="A人員,C人員">
+  <data key="d0">A人員,C人員</data>
+  <data key="d3">chunk-daa296a353c26f41dfc613743d24e936</data>
+  <data key="d2">處理工程師正在解決A部門和B部門的報告寄送異常問題。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775956</data>
+  <data key="d6"></data>
+</node>
+<node id="IDX cluster節點">
+  <data key="d0">IDX cluster節點</data>
+  <data key="d3">chunk-daa296a353c26f41dfc613743d24e936</data>
+  <data key="d2">在IDX集群節點中添加了新的索引器以支持數據管理功能。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775956</data>
+  <data key="d6"></data>
+</node>
+<node id="ES升版">
+  <data key="d0">ES升版</data>
+  <data key="d1">版次</data>
+  <data key="d2">ES升版涉及將系統版本從8.0.3更新至8.2.3。</data>
+  <data key="d3">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775956</data>
+  <data key="d6"></data>
+</node>
+<node id="資產上傳APP程式調整">
+  <data key="d0">資產上傳APP程式調整</data>
+  <data key="d1">api</data>
+  <data key="d2">資產上傳APP程式調整包括在category中加入”硬體狀態”欄位及設置severity。</data>
+  <data key="d3">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775956</data>
+  <data key="d6"></data>
+</node>
+<node id="內對內告警urgency = critical原因">
+  <data key="d0">內對內告警urgency = critical原因</data>
+  <data key="d1">資料</data>
+  <data key="d2">此項目涉及確認導致告警urgency升高的具體原因。</data>
+  <data key="d3">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775956</data>
+  <data key="d6"></data>
+</node>
+<node id="Indexer設定防串改">
+  <data key="d0">Indexer設定防串改</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">Indexer設定防串改包括在indexes.conf中設置enableDataIntegrityControl=true以防止數據篡改。</data>
+  <data key="d3">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775956</data>
+  <data key="d6"></data>
+</node>
+<node id="10.0.0">
+  <data key="d0">10.0.0</data>
+  <data key="d1">版次</data>
+  <data key="d2">建議更新到的最新Splunk系統版本是10.0.0。</data>
+  <data key="d3">chunk-fcc4bf66788ce00c23c3e736753ea50a</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775967</data>
+  <data key="d6"></data>
+</node>
+<node id="Interest Rates">
+  <data key="d0">Interest Rates</data>
+  <data key="d1">concept</data>
+  <data key="d2">Rising interest rates are a factor contributing to investor concerns and market selloffs.&lt;SEP&gt;Rising interest rates are a significant concern for investors and have contributed to the market selloff.</data>
+  <data key="d3">chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776283</data>
+  <data key="d6"></data>
+</node>
+<node id="A客戶">
+  <data key="d0">A客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">A客戶是一筆維護紀錄的對象。&lt;SEP&gt;A客戶是需要維護服務的客戶。&lt;SEP&gt;A客戶有一筆維護紀錄關於Splunk監控主機系統移轉與VM化服務。&lt;SEP&gt;A客戶是一個需要維護服務的客戶，此紀錄涉及對其系統進行檢查和修正。&lt;SEP&gt;A客戶有一筆維護紀錄記錄了Splunk版本從9.3.1升級到9.3.3的過程。&lt;SEP&gt;A客戶的維護紀錄包括憑證更換和系統檢查。</data>
+  <data key="d3">chunk-1364984bd10139c2ef2cd5907a3a7591&lt;SEP&gt;chunk-17b29d261b8bce3ef9105d1c8a78415d&lt;SEP&gt;chunk-07959bdb8bab221c9c80a1c3e85776b3&lt;SEP&gt;chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b&lt;SEP&gt;chunk-345e520afd2a192e25824abb33740d46&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776395</data>
+  <data key="d6"></data>
+</node>
+<node id="維護纪录">
+  <data key="d0">維護纪录</data>
+  <data key="d3">chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6</data>
+  <data key="d2">C人员参与了此次维护记录的任务执行。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773775992</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk_10月維護">
+  <data key="d0">Splunk_10月維護</data>
+  <data key="d1">資料</data>
+  <data key="d2">Splunk_10月維護描述了此次維護的主要內容。</data>
+  <data key="d3">chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776008</data>
+  <data key="d6"></data>
+</node>
+<node id="285GB">
+  <data key="d0">285GB</data>
+  <data key="d1">資料</data>
+  <data key="d2">建議的授權用量為285GB。</data>
+  <data key="d3">chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776008</data>
+  <data key="d6"></data>
+</node>
+<node id="635.27GB">
+  <data key="d0">635.27GB</data>
+  <data key="d1">資料</data>
+  <data key="d2">平均授權用量為635.27GB。</data>
+  <data key="d3">chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776008</data>
+  <data key="d6"></data>
+</node>
+<node id="10.0.1/2025.09.25">
+  <data key="d0">10.0.1/2025.09.25</data>
+  <data key="d1">版次</data>
+  <data key="d2">最新可用版本為10.0.1，發佈日期為2025年09月25日。</data>
+  <data key="d3">chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776008</data>
+  <data key="d6"></data>
+</node>
+<node id="Centos作業系統升級(評估中)">
+  <data key="d0">Centos作業系統升級(評估中)</data>
+  <data key="d1">代辦事項</data>
+  <data key="d2">Centos作業系統升級是指正在評估的從一個版本到另一個版本的更新工作，目前處於評估中的狀態。&lt;SEP&gt;計劃對Centos作業系統進行升級，目前處於評估階段。</data>
+  <data key="d3">chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="DEP02 ([IP])移轉(下周進行)">
+  <data key="d0">DEP02 ([IP])移轉(下周進行)</data>
+  <data key="d1">代辦事項</data>
+  <data key="d2">DEP02 ([IP])移轉是指計劃於下一周執行的將服務從一臺設備移到另一臺設備的工作，目前處於計劃中的狀態。&lt;SEP&gt;安排在下一周將DEP02主機移轉至其他位置或環境。</data>
+  <data key="d3">chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="新增Splunk Add-on for Google Cloud Platform的sourcetype">
+  <data key="d0">新增Splunk Add-on for Google Cloud Platform的sourcetype</data>
+  <data key="d1">代辦事項</data>
+  <data key="d2">新增Splunk Add-on for Google Cloud Platform的sourcetype是指將一個新的資料來源類型添加到系統中，以供日後使用的任務。&lt;SEP&gt;計劃為Splunk增加Google Cloud Platform的數據類型支持。</data>
+  <data key="d3">chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="Tenable API App串接">
+  <data key="d0">Tenable API App串接</data>
+  <data key="d1">代辦事項</data>
+  <data key="d2">Tenable API App串接是指將兩個不同的應用程式通過API連接到一起，以實現數據共享或協作的一項任務。&lt;SEP&gt;計劃將Tenable API應用程序與系統進行集成。</data>
+  <data key="d3">chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="Management.搜尋異常">
+  <data key="d0">Management.搜尋異常</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">Management.搜尋異常是指對管理系統中存在的問題進行調查和處理的一項工作，旨在消除潛在的風險點。</data>
+  <data key="d3">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776032</data>
+  <data key="d6"></data>
+</node>
+<node id="DEP02 root服務確認">
+  <data key="d0">DEP02 root服務確認</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">DEP02 root服務確認是指對一臺設備的根服務進行檢查和確認的一項工作，以確保其正常運行。</data>
+  <data key="d3">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776032</data>
+  <data key="d6"></data>
+</node>
+<node id="IDX01, IDX02, IDX03">
+  <data key="d0">IDX01, IDX02, IDX03</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">IDX01、IDX02和IDX03是涉及維護操作的IDX伺服器，其中IDX01的重新加入導致了其他兩台硬碟空間滿載。</data>
+  <data key="d3">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776042</data>
+  <data key="d6"></data>
+</node>
+<node id="ocp_cdibh資料">
+  <data key="d0">ocp_cdibh資料</data>
+  <data key="d1">資料</data>
+  <data key="d2">Ocp_cdibh資料是在維護過程中被刪除並重新同步的數據集。</data>
+  <data key="d3">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776042</data>
+  <data key="d6"></data>
+</node>
+<node id="IDX01">
+  <data key="d0">IDX01</data>
+  <data key="d3">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d2">維護紀錄中描述了IDX01重新加入後導致的硬碟空間滿載問題。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776051</data>
+  <data key="d6"></data>
+</node>
+<node id="IDX02">
+  <data key="d0">IDX02</data>
+  <data key="d3">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d2">IDX01的重新加入導致了IDX02和IDX03硬碟空間滿載。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776051</data>
+  <data key="d6"></data>
+</node>
+<node id="IDX03">
+  <data key="d0">IDX03</data>
+  <data key="d3">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d2">IDX01的動作同樣影響到IDX03，使其空間滿載。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776051</data>
+  <data key="d6"></data>
+</node>
+<node id="PA每月報表觸發動作變更">
+  <data key="d0">PA每月報表觸發動作變更</data>
+  <data key="d1">資料</data>
+  <data key="d2">為應對未來可能出現的排程報表未寄送問題，將PA每月報表觸發預設寄件套件改為客製化寄件套件，以便於後續問題排查。&lt;SEP&gt;為了解決排程報表未寄送的潛在問題，已將PA每月報表觸發的預設寄件套件改為客製寄件套件。</data>
+  <data key="d3">chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="Linux主機使用者與使用者權限-進行中">
+  <data key="d0">Linux主機使用者與使用者權限-進行中</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">已在特定主機上新增使用者並套用權限設定，待進一步檢測其合規性後在其他主機上複製該設置。&lt;SEP&gt;此項目涉及新增使用者sailag及其權限設定，並安排在其他主機上新增相似的用戶。</data>
+  <data key="d3">chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776274</data>
+  <data key="d6"></data>
+</node>
+<node id="2026/01/19 13:30至5:30pm">
+  <data key="d0">2026/01/19 13:30至5:30pm</data>
+  <data key="d1">版次</data>
+  <data key="d2">此為維護工作的進行時間段。</data>
+  <data key="d3">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk駐點服務202601第三周(2026/1/19)">
+  <data key="d0">Splunk駐點服務202601第三周(2026/1/19)</data>
+  <data key="d1">資料</data>
+  <data key="d2">狀態描述，描述了維護工作的具體內容和日期。</data>
+  <data key="d3">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="Gitlab漏洞修補18.5.4 -&gt; 18.5.5">
+  <data key="d0">Gitlab漏洞修補18.5.4 -&gt; 18.5.5</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">涉及從18.5.4版本升級至18.5.5以修補漏洞的維護工作項目。</data>
+  <data key="d3">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="FWD03底層資料收容filter設定">
+  <data key="d0">FWD03底層資料收容filter設定</data>
+  <data key="d1">版次</data>
+  <data key="d2">設定了FWD03底層資料的篩選條件，排除了大量SERVICE_START和SERVICE_STOP資料。</data>
+  <data key="d3">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="HTTP對外大量傳輸資料報表調整">
+  <data key="d0">HTTP對外大量傳輸資料報表調整</data>
+  <data key="d1">版次</data>
+  <data key="d2">涉及報表的調整，以便於特定URL的數據傳輸告警能夠通過報告方式傳送。</data>
+  <data key="d3">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk套件">
+  <data key="d0">Splunk套件</data>
+  <data key="d1">版次</data>
+  <data key="d2">Splunk套件進行了升級，新版本已部署到所有SH上。</data>
+  <data key="d3">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="NTP服務">
+  <data key="d0">NTP服務</data>
+  <data key="d1">資料</data>
+  <data key="d2">NTP服務的檢查確保各主機上的時間同步正常運行。</data>
+  <data key="d3">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="KVstore憑證">
+  <data key="d0">KVstore憑證</data>
+  <data key="d1">資料</data>
+  <data key="d2">過期的KVstore憑證被移除並生成了新的憑證，有效期至2028年11月。</data>
+  <data key="d3">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk維護報告">
+  <data key="d0">Splunk維護報告</data>
+  <data key="d1">資料</data>
+  <data key="d2">Splunk維護報告已被寄送給Hank，報告涵蓋從2024年9月至2025年8月的維護情況。</data>
+  <data key="d3">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776147</data>
+  <data key="d6"></data>
+</node>
+<node id="處理工程師">
+  <data key="d0">處理工程師</data>
+  <data key="d3">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d2">B人員負責進行涉及多項維護工作的紀錄。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776162</data>
+  <data key="d6"></data>
+</node>
+<node id="Raw data">
+  <data key="d0">Raw data</data>
+  <data key="d1">資料</data>
+  <data key="d2">Raw data中包含影響Websebse log正常運行的異常數據。</data>
+  <data key="d3">chunk-1e6839b81653aa7c9b7ec794f3447380</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776170</data>
+  <data key="d6"></data>
+</node>
+<node id="Websebse log">
+  <data key="d0">Websebse log</data>
+  <data key="d3">chunk-1e6839b81653aa7c9b7ec794f3447380</data>
+  <data key="d2">Raw data中存在的換行字元導致了Websebse log的異常截斷。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776170</data>
+  <data key="d6"></data>
+</node>
+<node id="H客戶">
+  <data key="d0">H客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">H客戶是一筆維護紀錄的對象。</data>
+  <data key="d3">chunk-41be59e9bae9e87a716afd8b5a9e9ee1</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776189</data>
+  <data key="d6"></data>
+</node>
+<node id="DEP02主機">
+  <data key="d0">DEP02主機</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">DEP02主機是指需要檢查和設定的遠端伺服器，其排程備份腳本在特定時間執行。</data>
+  <data key="d3">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776201</data>
+  <data key="d6"></data>
+</node>
+<node id="KGIBIDX04">
+  <data key="d0">KGIBIDX04</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">KGIBIDX04是已下線的伺服器，其備份排程被刪除。</data>
+  <data key="d3">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776201</data>
+  <data key="d6"></data>
+</node>
+<node id="CDIBHMGT02">
+  <data key="d0">CDIBHMGT02</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">CDIBHMGT02是一台需要修改IP地址和重新執行備份腳本的伺服器。</data>
+  <data key="d3">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776201</data>
+  <data key="d6"></data>
+</node>
+<node id="FISAC API申請單">
+  <data key="d0">FISAC API申請單</data>
+  <data key="d1">資料</data>
+  <data key="d2">FISAC API申請單是提交給FISAC以獲取所需API IP地址的表格或單據。</data>
+  <data key="d3">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776201</data>
+  <data key="d6"></data>
+</node>
+<node id="3.4% Decline In Nexon Technologies Stock Value">
+  <data key="d0">3.4% Decline In Nexon Technologies Stock Value</data>
+  <data key="d1">category</data>
+  <data key="d2">Nexon Technologies experienced a 7.8% decline in stock value due to lower-than-expected quarterly earnings.</data>
+  <data key="d3">chunk-5618eb566fb322ada0eb69bef88a7581</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776262</data>
+  <data key="d6"></data>
+</node>
+<node id="防火牆事件">
+  <data key="d0">防火牆事件</data>
+  <data key="d3">chunk-5618eb566fb322ada0eb69bef88a7581</data>
+  <data key="d2">維護紀錄詳細描述了防火牆事件的匯入時間異常以及相應的處置行動。</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776262</data>
+  <data key="d6"></data>
+</node>
+<node id="版次9.3.3 / 2025.02.26">
+  <data key="d0">版次9.3.3 / 2025.02.26</data>
+  <data key="d1">版次</data>
+  <data key="d2">當前版本為9.3.3，發布日期為2025年2月26日，近期被掃出弱點。</data>
+  <data key="d3">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776262</data>
+  <data key="d6"></data>
+</node>
+<node id="版次10.0.1 / 2025.09.25">
+  <data key="d0">版次10.0.1 / 2025.09.25</data>
+  <data key="d1">版次</data>
+  <data key="d2">最新版本為10.0.1，發布日期為2025年9月25日，建議進行升級以解決弱點。</data>
+  <data key="d3">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776262</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk 2025 MA 10月定保.DM20250088_(6/12)">
+  <data key="d0">Splunk 2025 MA 10月定保.DM20250088_(6/12)</data>
+  <data key="d1">資料</data>
+  <data key="d2">這是維護報告的狀態描述，包含了授權用量、伺服器效能和系統優化建議等內容。</data>
+  <data key="d3">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776262</data>
+  <data key="d6"></data>
+</node>
+<node id="弱點">
+  <data key="d0">弱點</data>
+  <data key="d1">漏洞</data>
+  <data key="d2">當前版本9.3.3存在弱點，建議升級到最新版次10.0.1以解決問題。</data>
+  <data key="d3">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776262</data>
+  <data key="d6"></data>
+</node>
+<node id="KV store憑證效期檢查">
+  <data key="d0">KV store憑證效期檢查</data>
+  <data key="d1">維護事項</data>
+  <data key="d2">KV store憑證效期檢查涉及更新所有主機的憑證至2028年11月，以確保系統安全性和穩定性。</data>
+  <data key="d3">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776307</data>
+  <data key="d6"></data>
+</node>
+<node id="FISAC資料收容申請">
+  <data key="d0">FISAC資料收容申請</data>
+  <data key="d1">維護事項</data>
+  <data key="d2">FISAC資料收容申請需要提交IP申請單，已請james向FISAC進行提交。</data>
+  <data key="d3">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776307</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk bundle儲存量過大">
+  <data key="d0">Splunk bundle儲存量過大</data>
+  <data key="d1">維護事項</data>
+  <data key="d2">對於Splunk bundle儲存量過大的問題，設置了停止預先儲存csv檔案作為知識包的方法來解決。</data>
+  <data key="d3">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776307</data>
+  <data key="d6"></data>
+</node>
+<node id="Indexer索引同步狀態確認">
+  <data key="d0">Indexer索引同步狀態確認</data>
+  <data key="d1">維護事項</data>
+  <data key="d2">確認index同步狀態是正常的維護工作之一，確保數據庫的整體一致性。</data>
+  <data key="d3">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776307</data>
+  <data key="d6"></data>
+</node>
+<node id="9.3.8 / 2025.11.14">
+  <data key="d0">9.3.8 / 2025.11.14</data>
+  <data key="d1">版次</data>
+  <data key="d2">當前系統版本為9.3.8，最近一次更新日期為2025年11月14日。</data>
+  <data key="d3">chunk-c0c6684aa00106f16e7869f519061642</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776307</data>
+  <data key="d6"></data>
+</node>
+<node id="GitLab">
+  <data key="d0">GitLab</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">GitLab是受到漏洞影響的服務器，已升級至18.5.4版以修補CVE-2024-9183及CVE-2025-12571。</data>
+  <data key="d3">chunk-068ca517cbebf973fd4089bd45ef615c</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776338</data>
+  <data key="d6"></data>
+</node>
+<node id="SSH Server">
+  <data key="d0">SSH Server</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">SSH Server存在待修補的漏洞。</data>
+  <data key="d3">chunk-068ca517cbebf973fd4089bd45ef615c</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776338</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk升版完成">
+  <data key="d0">Splunk升版完成</data>
+  <data key="d1">版次</data>
+  <data key="d2">Splunk升版完成表示對系統進行了版本更新。</data>
+  <data key="d3">chunk-b0add79f46581b83deba682a2c89cdb7</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776344</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk整體架構IP調整">
+  <data key="d0">Splunk整體架構IP調整</data>
+  <data key="d1">版次</data>
+  <data key="d2">Splunk整體架構IP調整為已完成的維護工作項目，涉及主機IP地址的更改。</data>
+  <data key="d3">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk套件升級">
+  <data key="d0">Splunk套件升級</data>
+  <data key="d1">版次</data>
+  <data key="d2">Splunk套件升級項目已成功部署新版本套件至各伺服器上。</data>
+  <data key="d3">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="NTP服務檢查">
+  <data key="d0">NTP服務檢查</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">NTP服務檢查確保所有主機的時間同步功能正常運行。</data>
+  <data key="d3">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="KVstore憑證效期檢查">
+  <data key="d0">KVstore憑證效期檢查</data>
+  <data key="d1">版次</data>
+  <data key="d2">KVstore憑證效期檢查涉及移除過期憑證並重新生成新憑證，有效期至2028年11月。</data>
+  <data key="d3">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="SPLUNK維護報告">
+  <data key="d0">SPLUNK維護報告</data>
+  <data key="d1">資料</data>
+  <data key="d2">SPLUNK維護報告為Splunk系統的定期維護報告，已寄送給C同事。</data>
+  <data key="d3">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="FIsac情資撈取">
+  <data key="d0">FIsac情資撈取</data>
+  <data key="d1">版次</data>
+  <data key="d2">FIsac情資撈取項目已完成設定，等待防火牆開通。</data>
+  <data key="d3">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776364</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk駐點服務202601第二周">
+  <data key="d0">Splunk駐點服務202601第二周</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">Splunk駐點服務202601第二周是在2026年1月13日進行的維護工作描述和事項。</data>
+  <data key="d3">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776381</data>
+  <data key="d6"></data>
+</node>
+<node id="Cybereyes API">
+  <data key="d0">Cybereyes API</data>
+  <data key="d1">api</data>
+  <data key="d2">Cybereyes API是用於串接的一個應用程式介面，已完成並測試新資料進到Splunk。</data>
+  <data key="d3">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776381</data>
+  <data key="d6"></data>
+</node>
+<node id="大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中)">
+  <data key="d0">大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中)</data>
+  <data key="d1">資料</data>
+  <data key="d2">此為一個新的告警測試版本，用於監控大量的網站攻擊嘗試。</data>
+  <data key="d3">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776381</data>
+  <data key="d6"></data>
+</node>
+<node id="Cybereyes高(high)風險告警_new (測試中)">
+  <data key="d0">Cybereyes高(high)風險告警_new (測試中)</data>
+  <data key="d1">資料</data>
+  <data key="d2">此為一個新的告警測試版本，用於監控高風險的網絡安全事件。</data>
+  <data key="d3">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776381</data>
+  <data key="d6"></data>
+</node>
+<node id="FWD03底層資料收容">
+  <data key="d0">FWD03底層資料收容</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">處理工程師正在進行FWD03底層資料的收容和整理工作。</data>
+  <data key="d3">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776381</data>
+  <data key="d6"></data>
+</node>
+<node id="SSH Server漏洞修補">
+  <data key="d0">SSH Server漏洞修補</data>
+  <data key="d1">待辦事項</data>
+  <data key="d2">這是一個將來需要完成的工作項目，涉及到對SSH Server的安全漏洞進行修復。</data>
+  <data key="d3">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776381</data>
+  <data key="d6"></data>
+</node>
+<node id="Gitlab漏洞修補">
+  <data key="d0">Gitlab漏洞修補</data>
+  <data key="d1">待辦事項</data>
+  <data key="d2">這是另一個未來需要完成的維護工作，涉及對Gitlab平台上的安全漏洞進行修復。</data>
+  <data key="d3">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776381</data>
+  <data key="d6"></data>
+</node>
+<node id="Cutting-Edge Technology">
+  <data key="d0">Cutting-Edge Technology</data>
+  <data key="d1">concept</data>
+  <data key="d2">Cutting-edge technology refers to advanced innovations like carbon-fiber spikes that enhance athletic performance.</data>
+  <data key="d3">chunk-8a83bcdf6e7b7269cfd17b4f21457de8</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776395</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk SIEM">
+  <data key="d0">Splunk SIEM</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">進行每月維護的系統名稱。</data>
+  <data key="d3">chunk-b8ec2739edb4ee1ccc4cf68534e90be5</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773776409</data>
+  <data key="d6"></data>
+</node>
+<edge source="G客戶" target="維護紀錄">
+  <data key="d7">2.0</data>
+  <data key="d8">G客戶的維護需求由A人員在指定時間內進行了處理。&lt;SEP&gt;G客戶接受了一次由處理工程師A人員進行的維護工作，該維護在2025年11月3日完成。</data>
+  <data key="d9">客戶維護,服務對象,維護過程,維護需求</data>
+  <data key="d10">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775749</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="維護紀錄">
+  <data key="d7">26.0</data>
+  <data key="d8">(A人员, 维护记录) refers to the role and responsibilities of A人员 in managing maintenance records for customers such as G客户, B客户, and I客户. This relationship involves executing and documenting various maintenance tasks, conducting comprehensive checks on customer servers, offering optimization recommendations, addressing technical issues recorded in the maintenance logs, and ensuring that all relevant information is accurately documented to facilitate effective service delivery.
+
+A人员's responsibilities encompass a wide range of activities including updating equipment configurations, adding new devices to Switch_6FDC.csv, running ARP_table reports, conducting routine inspections and evaluations, and performing other related maintenance operations. For instance, on November 6, 2025, A人员 performed detailed maintenance operations for I客户 and documented the process thoroughly.
+
+In addition to operational execution, A人员 plays a crucial role in maintaining high standards of service quality by providing detailed records of each interaction and technical intervention during maintenance activities. This comprehensive approach helps in systematically capturing every aspect of the maintenance process from initial assessment through final resolution. Furthermore, A人员 collaborates with other personnel such as C人员 on certain tasks, demonstrating teamwork in executing and documenting maintenance work.
+
+A人员 also acts as a handling engineer responsible for implementing measures detailed in the maintenance records, which may include suggesting expanded authorization volumes and conducting version updates. This role underscores the importance of thorough documentation and meticulous execution to ensure optimal service delivery and client satisfaction. A人员 is involved in multiple maintenance tasks within the records, such as completing various maintenance duties assigned to B客户 on November 6, 2025, and supervising and executing the maintenance work reflected in the maintenance records.
+
+Overall, A人员 is a key figure in managing and overseeing maintenance activities, ensuring that all relevant details are meticulously documented and executed to uphold high standards of service quality.&lt;SEP&gt;A人員負責執行維護紀錄中列出的多項維護任務。&lt;SEP&gt;A人員根據維護紀錄中的描述進行了相關的技術支援活動，完成了SPLUNK憑證更換工作。&lt;SEP&gt;A人員執行了維護工作並記錄於維護紀錄中。&lt;SEP&gt;A人員在維護紀錄中詳細記錄了其工作的過程和進展。</data>
+  <data key="d9">任務執行者,作業執行,執行者,工作,工作任務,工作內容,工作參與,工作執行者,工作日誌,工作職責,工作進行者,工程師操作,工程師職責,工程師責任,技術支持,技術支援,操作記錄,活動追蹤,監督,維護,維護任務,維護工作,維護工程師,維護操作,處理,處理工作,處理工程師,處理工程師工作,處理工程師角色,處理者,記錄,負責人,責任,責任範圍</data>
+  <data key="d10">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51&lt;SEP&gt;chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-fe7268a7cb94439d483759e501068db6&lt;SEP&gt;chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-1364984bd10139c2ef2cd5907a3a7591&lt;SEP&gt;chunk-17b29d261b8bce3ef9105d1c8a78415d&lt;SEP&gt;chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-c7743e93210e95e8e40e0d2a627684b7&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-07959bdb8bab221c9c80a1c3e85776b3&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776423</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="B客戶">
+  <data key="d7">4.0</data>
+  <data key="d8">B客戶的維護工作由A人員進行。&lt;SEP&gt;B客戶的維護任務由A人員負責執行。&lt;SEP&gt;B客戶的維護工作由A人員執行。&lt;SEP&gt;B客戶的維護工作由A人員負責處理。</data>
+  <data key="d9">工程師角色,技術支援,維護,維護對象,維護工作,維護工作分配,處理工程師</data>
+  <data key="d10">chunk-04465635a6b88183cbabbfe7e25635dd&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-f62a98ad02d11a4c9618cbda43281859&lt;SEP&gt;chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776201</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="Splunk角色能力異常">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員處理了Splunk角色能力異常並進行了相應調整。</data>
+  <data key="d9">問題解決,技術支援</data>
+  <data key="d10">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775795</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="PA每月報表補寄">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員完成了對未正常發送的報告的補寄工作。</data>
+  <data key="d9">客戶服務,資料管理</data>
+  <data key="d10">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775795</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="SH KVstore引擎異常測試-進行中">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員正在個人環境中對KVstore異常問題進行測試分析。</data>
+  <data key="d9">技術支援,故障排查</data>
+  <data key="d10">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775795</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="新增DNS設定">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員在forwarder上添加了新的DNS設置以改善解析效率。</data>
+  <data key="d9">網路安全,配置更新</data>
+  <data key="d10">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775795</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="部屬新crowdstrike套件">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員部署了crowdstrike來提高SH系統的安全性。</data>
+  <data key="d9">安全性增強,軟體安裝</data>
+  <data key="d10">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775795</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="I客戶">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師A人員為I客戶進行了Splunk系統的維護工作。</data>
+  <data key="d9">維護服務,維護紀錄</data>
+  <data key="d10">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775815</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="A客戶">
+  <data key="d7">2.0</data>
+  <data key="d8">A人員為A客戶提供技術支援，包括設備檢查及問題解決措施。&lt;SEP&gt;A客戶是此維護事件的需求方，而A人員則是提供技術支持的一方。</data>
+  <data key="d9">技術支持提供者,技術支援,服務交付,服務對象</data>
+  <data key="d10">chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776408</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="伺服器">
+  <data key="d7">2.0</data>
+  <data key="d8">A人員進行了Splunk整體架構IP調整、NTP服務檢查等伺服器相關工作。&lt;SEP&gt;A人員對伺服器的效能和安全進行了全面維護和評估。</data>
+  <data key="d9">主機調試,系統管理,維護,評估</data>
+  <data key="d10">chunk-f62a98ad02d11a4c9618cbda43281859&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776246</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="伺服器">
+  <data key="d7">16.0</data>
+  <data key="d8">(伺服器, 維護紀錄) refers to the maintenance records of a server that document various aspects related to its performance and operational status. These records include detailed information about efficiency checks conducted as part of routine maintenance activities, ensuring all parameters fall within normal ranges and confirming correct operation of the server. Maintenance logs also provide assessments of the server’s current condition, consistently noting its normal performance status.
+
+The descriptions detail specific instances where issues on a Splunk Indexer server were diagnosed and temporarily resolved during the maintenance process. Optimization recommendations are provided based on an analysis of the server's performance metrics and authorized usage limits, particularly for F customers. The records include evaluations of space usage on servers such as IDX01, IDX02, and IDX03, along with related recommendation measures.
+
+Furthermore, the (伺服器, 維護紀錄) includes detailed assessments of server performance reports and system optimization suggestions. Specific maintenance actions are documented, such as addressing problems on the FWD02 server and proposing updates based on performance evaluations. During these maintenance processes, the server's efficiency is assessed, and recommendations for improvements are made to enhance functionality.
+
+Overall, (伺服器, 維護紀錄) serves as a comprehensive documentation tool that supports ongoing monitoring and enhancement of server functionality by providing detailed records of assessments, optimizations, and resolutions related to various servers.&lt;SEP&gt;伺服器的效能情況被包含在維護紀錄中，確認其正常運行。</data>
+  <data key="d9">優化建議,問題報告,問題診斷,報告,建議,性能評估,授權用量,措施建議,故障修復,效能報告,效能檢查,效能評估,檢查對象,檢查結果,檢查項目,狀態報告,系統效能,系統檢視,維護活動,處理方案,設備檢查,設備狀態,設備監控,評估,評估對象</data>
+  <data key="d10">chunk-886b4b629f3088ef8656c792cf7b3e8b&lt;SEP&gt;chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51&lt;SEP&gt;chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-d0d3b88d3601a1081c8354e0ef27952f&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-41be59e9bae9e87a716afd8b5a9e9ee1&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca&lt;SEP&gt;chunk-3c4967b23b72f04d5c4ef37149d21ede&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776421</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="B客戶">
+  <data key="d7">16.0</data>
+  <data key="d8">(B客戶, 維護紀錄) is a relationship characterized by the meticulous recording and documentation of maintenance work performed for B客户. These records are specifically designed to meet the needs and requirements set forth by B客户, detailing every aspect of system maintenance conducted on their behalf by A personnel. The primary focus of these documents includes comprehensive descriptions of all maintenance tasks, issues encountered during service delivery, and the corresponding measures taken to address these problems.
+
+The (B客戶, 維護紀錄) relationship covers a wide range of activities aimed at improving B客户的 system performance and security. These records document multiple maintenance operations and their outcomes in detail. Each record is generated based on the specific needs identified by B客户, leading to the initiation and execution of corresponding maintenance work.
+
+For instance, one notable entry in these records details all maintenance work matters carried out on November 18, 2025. This comprehensive documentation not only covers the specifics of each maintenance task but also provides broader context about customer service interactions and the performance of handling engineers responsible for executing the maintenance work.
+
+Overall, (B客戶, 維護紀錄) ensures a thorough and detailed record-keeping process that is integral to maintaining B客户的 system integrity and addressing their specific needs effectively.&lt;SEP&gt;B客戶有一筆由處理工程師A人員和C人員進行的維護紀錄。</data>
+  <data key="d9">客戶服務,描述,服務,服務對象,服務需求,管理,系統優化,維護,維護事件,維護對象,維護工作,維護活動,維護記錄,維護請求,維護需求,處置動作,記錄</data>
+  <data key="d10">chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-fe7268a7cb94439d483759e501068db6&lt;SEP&gt;chunk-39206ec5906f23d68e051b1df74d3ca7&lt;SEP&gt;chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-1e6e1908b68b82814f06780675f7938b&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-e2a0171ee9d19cc664d4d041d3e73ba2&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5&lt;SEP&gt;chunk-84c3e0271089b72556be831ea38a055f&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776423</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="C人員">
+  <data key="d7">37.0</data>
+  <data key="d8">(C人員, 維護紀錄) refers to the relationship where C personnel are responsible for maintaining and updating records of maintenance activities related to E客户. In this role, C人员 serve as both the creator and executor of these maintenance records, documenting their activities and resolving problems encountered during the process. They ensure transparency and accountability in service delivery by meticulously recording all actions taken, including the completion of assigned tasks and addressing customer needs.
+
+C人員 perform various specific operations such as completing maintenance reports and confirming data accuracy. For instance, they document efforts in resolving issues like websense断行问题 within the maintenance record. Their responsibilities include performing the actual work described in the maintenance records and ensuring that all relevant details are accurately recorded for future reference. Additionally, C人员 often collaborate with A人员 to carry out these tasks jointly.
+
+C人員's duties also involve proposing system optimization suggestions while reworking previous CSR content as part of their responsibilities. The maintenance record provides detailed documentation of all actions taken by C人员 during the work, covering both execution and reporting phases. Their responsibilities encompass executing necessary tasks and meticulously recording activities in the maintenance record to ensure comprehensive coverage of the entire maintenance process.
+
+Specifically, C人員 are involved in completing maintenance reports, confirming data accuracy, resolving issues, and proposing system improvements. They participate in E客户's maintenance work and document their actions throughout a specified time range. For example, they completed A客户的 maintenance needs, including upgrading Splunk versions on multiple servers. Moreover, C人员 collaborate with A人员 to complete parts of the maintenance tasks recorded in the records.
+
+C人員 are also responsible for executing the specific work matters described in the maintenance record and performing related handling actions. They provide detailed documentation of handling actions and temporary solutions for service anomalies involving C客户. Additionally, they participate in maintenance work alongside A人员, assisting them in solving problems and completing relevant tasks.
+
+In summary, C人員 play a pivotal role by both carrying out necessary tasks and meticulously recording these activities in the maintenance record to ensure that all aspects of the service delivery are transparent and accountable to E客戶. Their responsibilities include upgrading software versions like Splunk on multiple servers, ensuring data accuracy, resolving issues promptly, and collaborating with A人员 to address customer needs comprehensively.&lt;SEP&gt;C人員負責進行了一筆關於E客戶的維護紀錄。</data>
+  <data key="d9">任務執行,共同處理,合作工作,合作工程師,問題描述,問題解決,執行情況,執行者,執行記錄,工作人員,工作任務,工作內容,工作分配,工作參與,工作執行,工作執行者,工作報告,工作成果,工作描述,工作日誌,工作職責,工作記錄,工作進行者,工程師任務,工程師工作,工程師維護,工程師責任,技術支持,技術支援,操作者,維護,維護事件,維護任務,維護動作,維護報告,維護工作,維護工程師,維護操作,維護日誌,維護活動,處理人,處理工作,處理工程師,處理工程師職責,處理工程師角色,處置操作,記錄,記錄保存,記錄生成者,記錄維護過程,負責人,責任承擔,責任範圍</data>
+  <data key="d10">chunk-95280ea367581dac710f0dc56c7a72f3&lt;SEP&gt;chunk-d0cef05272158ef916c2b84f625b2ddb&lt;SEP&gt;chunk-76068a2f95fd89e7ceb4741d4eb478ce&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-39206ec5906f23d68e051b1df74d3ca7&lt;SEP&gt;chunk-0944d4a59fb7a84bd79d2fca8361e518&lt;SEP&gt;chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-1364984bd10139c2ef2cd5907a3a7591&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-17b29d261b8bce3ef9105d1c8a78415d&lt;SEP&gt;chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-738a58105cbf665748b3257e0cfee9ac&lt;SEP&gt;chunk-1e6e1908b68b82814f06780675f7938b&lt;SEP&gt;chunk-d02e98febcd8f8650bbe77d789a41d69&lt;SEP&gt;chunk-d0d3b88d3601a1081c8354e0ef27952f&lt;SEP&gt;chunk-07959bdb8bab221c9c80a1c3e85776b3&lt;SEP&gt;chunk-c0cd3e323fc2a43e461d7af757b08706&lt;SEP&gt;chunk-345e520afd2a192e25824abb33740d46&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b&lt;SEP&gt;chunk-1e6839b81653aa7c9b7ec794f3447380&lt;SEP&gt;chunk-8a40e782f3c3804da0a1d45dfa05eefe&lt;SEP&gt;chunk-41be59e9bae9e87a716afd8b5a9e9ee1&lt;SEP&gt;chunk-cafeb58d25cc4cbc85eaf07cf415496a&lt;SEP&gt;chunk-79f23819b8640c43571e6e9b3e4098e0&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581&lt;SEP&gt;chunk-3c4967b23b72f04d5c4ef37149d21ede&lt;SEP&gt;chunk-7504d68fad10caa1cd0ea41314ed2ede&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef&lt;SEP&gt;chunk-2940790b50eb2cba2a5e944b95a94dd5&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642&lt;SEP&gt;chunk-84c3e0271089b72556be831ea38a055f&lt;SEP&gt;chunk-b0add79f46581b83deba682a2c89cdb7&lt;SEP&gt;chunk-996c8aba3ce4de0e9bb90c0d569231f3&lt;SEP&gt;chunk-d96ca3133c54d9d76add7de434ee05b5&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776430</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk使用者權限調整">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄詳細記錄了Splunk使用者權限的調整過程和原因。</data>
+  <data key="d9">權限設定,資料管理</data>
+  <data key="d10">chunk-95280ea367581dac710f0dc56c7a72f3</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775736</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="FISAC資料收容">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄詳細記錄了進行中的FISAC資料收容事項及相關IP申請單提交狀態。</data>
+  <data key="d9">申請單提交,資料處理</data>
+  <data key="d10">chunk-95280ea367581dac710f0dc56c7a72f3</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775736</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="SH KVstore引擎異常測試">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄詳細記錄了SH的KVstore引擎異常測試，涉及個人測試環境中的檢查。</data>
+  <data key="d9">問題排查,測試環境使用</data>
+  <data key="d10">chunk-95280ea367581dac710f0dc56c7a72f3</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775736</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="n8n無法連線至splunk問題">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄詳述了正在排查n8n無法連線至Splunk的問題及初步解決步驟。</data>
+  <data key="d9">漏洞探查,解決方案評估</data>
+  <data key="d10">chunk-95280ea367581dac710f0dc56c7a72f3</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775736</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="F客戶">
+  <data key="d7">5.0</data>
+  <data key="d8">維護紀錄針對F客戶進行，記錄了其系統的維護情況和建議。&lt;SEP&gt;F客戶的維護需求通過維護紀錄得以記錄和跟蹤。&lt;SEP&gt;維護紀錄是為F客戶制定的，涵蓋了授權用量、伺服器效能和版本更新等維護事項。&lt;SEP&gt;F客戶是這次維護工作的目標客戶。&lt;SEP&gt;F客戶是本次維護工作的對象，相關工作及建議措施被記錄在維護紀錄中。</data>
+  <data key="d9">客戶關係,服務對象,服務提供,維護事項,維護對象,維護工作,維護需求,記錄</data>
+  <data key="d10">chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776420</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="splunk_銀行處11月月維護">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄詳細記錄了此次維護的內容和相關建議，包括授權量擴充、版本更新等事項。</data>
+  <data key="d9">內容描述,維護措施</data>
+  <data key="d10">chunk-203eba714089c79438cfc39755f054ce</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775750</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="E客戶">
+  <data key="d7">15.0</data>
+  <data key="d8">(E客戶, 維護紀錄) is a detailed record that documents various aspects related to E客戶's systems and operations. These records capture the work items and activities conducted on behalf of E客戶, including system checks, pending tasks, progress updates, and maintenance issues addressed during specific periods such as November 14, 2025, and December 23, 2025.
+
+The descriptions within the maintenance record encompass a range of topics from detailed system reports to authorization usage and server performance concerns. Additionally, they document activities performed at on-site locations for E客戶, covering all relevant work matters and tasks completed during specific periods. Each entry in these records ensures that every aspect of service delivery to E客戶 is meticulously recorded and reviewed.
+
+E客戶's maintenance report includes detailed status descriptions and actions taken to address system issues. The records also contain recommendations for the maintenance and optimization of E客户的系统. These recommendations aim to improve the overall performance and reliability of E客户的服务. Each entry in these records provides a comprehensive overview of E客戶’s maintenance needs, relevant work matters, and completed tasks.
+
+In summary, (E客戶, 維護紀錄) serves as an essential tool for documenting all aspects related to E客户的系统维护和优化工作，确保服务交付的各个方面都被详尽记录和审查。</data>
+  <data key="d9">事件記錄,客戶,客戶維護,服務對象,服務接收,服務記錄,狀態描述,維護,維護事件,維護報告,維護對象,維護工作,維護記錄,維護請求,維護需求,記錄,記錄事項,記錄描述</data>
+  <data key="d10">chunk-d0cef05272158ef916c2b84f625b2ddb&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-25d7c29d65aa0e4d54fb4af54207fa0d&lt;SEP&gt;chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-738a58105cbf665748b3257e0cfee9ac&lt;SEP&gt;chunk-d02e98febcd8f8650bbe77d789a41d69&lt;SEP&gt;chunk-c0cd3e323fc2a43e461d7af757b08706&lt;SEP&gt;chunk-1e6839b81653aa7c9b7ec794f3447380&lt;SEP&gt;chunk-cafeb58d25cc4cbc85eaf07cf415496a&lt;SEP&gt;chunk-3c4967b23b72f04d5c4ef37149d21ede&lt;SEP&gt;chunk-c0c6684aa00106f16e7869f519061642&lt;SEP&gt;chunk-b0add79f46581b83deba682a2c89cdb7&lt;SEP&gt;chunk-996c8aba3ce4de0e9bb90c0d569231f3&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776430</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="RES3SQL19資料收容狀況">
+  <data key="d7">1.0</data>
+  <data key="d8">維護過程中需確認RES3SQL19的數據收容狀況。</data>
+  <data key="d9">檢查項目,監控需求</data>
+  <data key="d10">chunk-d0cef05272158ef916c2b84f625b2ddb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775760</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="伺服器效能檢查">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含伺服器效能檢查，確認服務器運行正常。</data>
+  <data key="d9">檢查結果,維護內容</data>
+  <data key="d10">chunk-fe7268a7cb94439d483759e501068db6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775768</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="版本更新建議">
+  <data key="d7">2.0</data>
+  <data key="d8">維護紀錄包含了關於系統升級的詳細建議和信息。&lt;SEP&gt;維護紀錄中包含了一個重要的系統版本更新建議，以解決潛在的安全風險。</data>
+  <data key="d9">安全升級,更新建議,維護內容,維護建議</data>
+  <data key="d10">chunk-fe7268a7cb94439d483759e501068db6&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775781</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="伺服器效能">
+  <data key="d7">2.0</data>
+  <data key="d8">本次維護過程中對伺服器效能進行了評估，並在維護報告中記錄了結果。&lt;SEP&gt;維護過程中，處理工程師檢查了伺服器的運行效能並報告其為正常。</data>
+  <data key="d9">檢查,結果,維護過程,評估結果</data>
+  <data key="d10">chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776010</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="版次">
+  <data key="d7">2.0</data>
+  <data key="d8">維護記錄中指出當前版本存在弱點，建議升級到最新版本以提高系統安全性。&lt;SEP&gt;維護紀錄詳細說明了特定版本Splunk服務的工作內容和進展。</data>
+  <data key="d9">安全性增強,工作描述,版本更新建議,進度跟蹤</data>
+  <data key="d10">chunk-b6f1e5469f6278ea8a34bff96b293b69&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776226</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="B人員">
+  <data key="d7">16.0</data>
+  <data key="d8">(B人员, 维护纪录) 是一个关系，详细记录了由B人员为C客户执行的工作和待办事项。这些维护记录包括多项由B人员负责的维护活动以及异常处置工作，并且B人员会创建并更新这些维护记录以供追踪使用。
+
+在2025年10月1日，处理工程师B人员负责了针对C客户的维护记录，其中包括记录并解决关于Pice_logs的日志缺失问题。此外，在2026年1月5日期间，B人员还详细描述了一系列的维护活动和处置动作，并且这些活动包括与C人员共同对C客户服务异常进行处理的动作及暂时解决方案。
+
+总的来说，维护纪录用于追踪和管理由B人员完成的各项工作的详细日志，涵盖了所有文档化的维护活动以及具体的维护和支持任务。维护记录不仅详述了具体日期的维护工作内容，还包含了解决特定问题的过程与结果。此外，每个维护动作及其相关描述均被完整地记录下来，以便于后续追踪和管理。&lt;SEP&gt;處理工程師B人員執行了一筆維護紀錄，其中包括了對系統狀況的評估和建議。</data>
+  <data key="d9">maintenance,responsibility,問題描述,執行任務,工作執行,工作日誌,工作記載,工作記錄,工程師工作,技術支持,更新,生成,維護任務,維護動作,維護工作,維護操作,維護日誌,維護活動,維護過程,職責履行,處理工程師,處理工程師工作,處置描述,記錄生成,記錄維護過程,負責人</data>
+  <data key="d10">chunk-ab226f704fc1b4d45dd06222f40cb39f&lt;SEP&gt;chunk-2fe3f974e54dd1f1ad98289cc79980d6&lt;SEP&gt;chunk-0d3d3acb3c191c9e65fac21b5ed9284f&lt;SEP&gt;chunk-3f8775862e3b8ea072578967e7520445&lt;SEP&gt;chunk-5930b403906ecb929487592cef5210f2&lt;SEP&gt;chunk-5f0773b8daffa7a65254a73867e36afb&lt;SEP&gt;chunk-c41e50d3a458388dc7fe53ece68ee69f&lt;SEP&gt;chunk-082efb5c18d778427dcd94905e5f4370&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a&lt;SEP&gt;chunk-0b9e37e8f7e8a98183b1724c16ce814a&lt;SEP&gt;chunk-5479196dee25b34d077c01190c6c728b&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b&lt;SEP&gt;chunk-79f23819b8640c43571e6e9b3e4098e0&lt;SEP&gt;chunk-068ca517cbebf973fd4089bd45ef615c&lt;SEP&gt;chunk-b8ec2739edb4ee1ccc4cf68534e90be5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776409</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="C客戶">
+  <data key="d7">10.0</data>
+  <data key="d8">(C客戶, 維護紀錄) is a record detailing the maintenance services provided to C客戶. This documentation comprehensively outlines the status and actions taken during various maintenance activities performed for C客戶. The maintenance work involves detailed descriptions of the content and progress of related maintenance tasks carried out by designated personnel such as B人员. Specifically, it includes information about the maintenance activities conducted on January 19, 2026, by B人员. This record serves to maintain a clear account of all maintenance procedures and their outcomes for C客戶's systems.&lt;SEP&gt;維護紀錄是針對C客戶的維護需求而產生的。&lt;SEP&gt;維護紀錄是為C客戶進行的一次維護工作。</data>
+  <data key="d9">customer maintenance,record association,問題解決,客戶維護,工作跟進,描述,服務對象,服務提供,服務歷史,服務記錄,相關性,維護,維護工作,維護活動,維護需求,記錄</data>
+  <data key="d10">chunk-2fe3f974e54dd1f1ad98289cc79980d6&lt;SEP&gt;chunk-0d3d3acb3c191c9e65fac21b5ed9284f&lt;SEP&gt;chunk-3f8775862e3b8ea072578967e7520445&lt;SEP&gt;chunk-5930b403906ecb929487592cef5210f2&lt;SEP&gt;chunk-c41e50d3a458388dc7fe53ece68ee69f&lt;SEP&gt;chunk-082efb5c18d778427dcd94905e5f4370&lt;SEP&gt;chunk-1e7cec156f57837e8d25cbe83a6db45f&lt;SEP&gt;chunk-15d6c505e6a20b598aa21d52b466adcd&lt;SEP&gt;chunk-5479196dee25b34d077c01190c6c728b&lt;SEP&gt;chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776226</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="MG02">
+  <data key="d7">1.0</data>
+  <data key="d8">在維護紀錄中，處理了MG02磁碟用量過高的問題並解決之。</data>
+  <data key="d9">伺服器異常,操作</data>
+  <data key="d10">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775841</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="FWD03">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中有記載對FWD03備份異常進行權限設定修改和手動執行備份的操作。</data>
+  <data key="d9">伺服器異常,操作</data>
+  <data key="d10">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775841</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Cyble ASM IP白名單">
+  <data key="d7">1.0</data>
+  <data key="d8">維護過程中完成了Cyble ASM IP白名單的更新工作。</data>
+  <data key="d9">維護操作,資料更新</data>
+  <data key="d10">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775841</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Ryan之Splunk帳號">
+  <data key="d7">1.0</data>
+  <data key="d8">由於人員變更，處理了Ryan之Splunk舊帳號的刪除事項。</data>
+  <data key="d9">帳號刪除,用戶管理</data>
+  <data key="d10">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775841</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Arcsight和Splunk歷史案件調閱">
+  <data key="d7">1.0</data>
+  <data key="d8">進行了Arcsight和Splunk歷史案件的調閱工作，作為維護的一部分。</data>
+  <data key="d9">維護操作,資料查詢</data>
+  <data key="d10">chunk-2fe3f974e54dd1f1ad98289cc79980d6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775841</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="GeoDB">
+  <data key="d7">1.0</data>
+  <data key="d8">GeoDB的更新是維護紀錄中的關鍵動作之一，用於提高性能和服務品質。</data>
+  <data key="d9">數據庫更新,維護任務</data>
+  <data key="d10">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775857</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="AI網站服務紀錄調閱儀表板">
+  <data key="d7">1.0</data>
+  <data key="d8">建置AI網站服務紀錄調閱儀表盤是維護紀錄中的一個重要動作，旨在改善數據的可查看性和管理效率。</data>
+  <data key="d9">數據可見性,管理工具</data>
+  <data key="d10">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775857</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標">
+  <data key="d7">1.0</data>
+  <data key="d8">對安全告警事件進行了調整，提高了系統穩定性和安全性。</data>
+  <data key="d9">事件響應,預防措施</data>
+  <data key="d10">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775857</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="D客戶">
+  <data key="d7">2.0</data>
+  <data key="d8">D客戶的維護紀錄中描述了pice_logs缺少檔案問題及其解決過程。&lt;SEP&gt;D客戶是此次維護活動的對象。</data>
+  <data key="d9">問題描述,客戶維護,服務對象,維護活動</data>
+  <data key="d10">chunk-5f0773b8daffa7a65254a73867e36afb&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775922</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="pice_logs">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中包含對Pice_logs的缺失日誌問題描述及解決措施。</data>
+  <data key="d9">問題報告,資料檢查</data>
+  <data key="d10">chunk-5f0773b8daffa7a65254a73867e36afb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775868</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="VMware Tools漏洞">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中提到需要修補的VMware Tools漏洞是待處理的事項之一。</data>
+  <data key="d9">問題發現,待修補事項</data>
+  <data key="d10">chunk-c41e50d3a458388dc7fe53ece68ee69f</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="9.3.3/2025.02.26">
+  <data key="d7">3.0</data>
+  <data key="d8">維護紀錄中提到當前使用的版本存在弱點，建議進行升級到最新版。&lt;SEP&gt;維護工作發現現行版次存在弱點，需要升級到最新版本以提高安全性。&lt;SEP&gt;當前使用的版本在維護紀錄中有詳細描述，並提出升級建議。</data>
+  <data key="d9">升級建議,建議更新,版本信息,當前版本</data>
+  <data key="d10">chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776421</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="10.0.2/2025.11.14">
+  <data key="d7">4.0</data>
+  <data key="d8">維護紀錄中建議將當前使用的軟件版本更新為此最新版本，以解決弱點問題。&lt;SEP&gt;最新版Splunk版次被記錄於維護報告中，但未建議進行升級。&lt;SEP&gt;維護工作建議客戶升級至最新的版次，以便解決已知的安全問題。&lt;SEP&gt;最新版本的詳細信息包含於維護紀錄中，並建議進行升級。</data>
+  <data key="d9">安全升級,安全更新,建議更新,最新版本,版本信息,維護活動</data>
+  <data key="d10">chunk-dddcb833d814b293bd936732652206d0&lt;SEP&gt;chunk-8a81645d1d338ac013fa594b14c35640&lt;SEP&gt;chunk-726c374f489423e007bce76f7810b46e&lt;SEP&gt;chunk-4861ed7c0c566a81f361adb6811a1523</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776421</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk駐點服務202511第一周">
+  <data key="d7">1.0</data>
+  <data key="d8">The维护记录documents the first week of Splunk on-site services for C客戶.</data>
+  <data key="d9">event documentation,service provision</data>
+  <data key="d10">chunk-082efb5c18d778427dcd94905e5f4370</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775920</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="9.3.8/2025.11.14">
+  <data key="d7">1.0</data>
+  <data key="d8">維護報告中提到目前使用Splunk版次無需更新，保持當前版本運作良好。</data>
+  <data key="d9">版本檢查,維護活動</data>
+  <data key="d10">chunk-8a81645d1d338ac013fa594b14c35640</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775922</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="伺服器FWD02">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中記錄了FWD02伺服器磁碟用量異常及相應的清理措施。</data>
+  <data key="d9">數據清理,異常處理</data>
+  <data key="d10">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="版次clean.sh">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中描述了clean.sh版本更新及其對數據管理和定期清除舊資料的作用。</data>
+  <data key="d9">腳本調整,資料管理</data>
+  <data key="d10">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="API Cybereyes API">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄提到了Cybereyes API介接作為未來的工作待辦事項。</data>
+  <data key="d9">待處理,未來工作事項</data>
+  <data key="d10">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="GeoDB更新">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中包括了對GeoDB的更新作為工作項目之一。</data>
+  <data key="d9">工作項目,更新</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="AI網站服務紀錄調閱">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄涵蓋了AI網站服務紀錄的調閱，涉及多個月份的工作日志。</data>
+  <data key="d9">工作項目,資料分析</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="弱點掃描報告資訊整理">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中的工作包括對弱點掃描報告信息進行整理和分析。</data>
+  <data key="d9">報告整理,工作項目</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="eStreamer資料異常處理">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄涵蓋了eStreamer數據異常的發現和解決方案。</data>
+  <data key="d9">問題解決,工作項目</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="KPMG滲透測試IP白名單">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作中包括了為KPMG滲透測試添加IP白名單並修改告警語法，以提升安全性。</data>
+  <data key="d9">安全配置,工作項目</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="A客戶">
+  <data key="d7">6.0</data>
+  <data key="d8">A客戶是這筆維護紀錄的主要對象，記錄了其維護過程中的相關活動。&lt;SEP&gt;維護紀錄是針對A客戶的維護需要而產生的。&lt;SEP&gt;A客戶有一筆關於Splunk監控主機系統移轉與VM化服務的維護紀錄。&lt;SEP&gt;維護紀錄詳細記錄了對A客戶系統的檢查過程和結果，以及後續跟進事項。&lt;SEP&gt;A客戶需要對其伺服器進行維護和Splunk版本的升級操作。&lt;SEP&gt;A客戶的需求引發了一筆維護紀錄，內容包括SPLUNK憑證更新和系統檢查。</data>
+  <data key="d9">問題解決,客戶對象,客戶服務,服務記錄,服務需求,版本升級,維護活動,維護需求,記錄追蹤</data>
+  <data key="d10">chunk-1364984bd10139c2ef2cd5907a3a7591&lt;SEP&gt;chunk-17b29d261b8bce3ef9105d1c8a78415d&lt;SEP&gt;chunk-07959bdb8bab221c9c80a1c3e85776b3&lt;SEP&gt;chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b&lt;SEP&gt;chunk-345e520afd2a192e25824abb33740d46&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776408</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="10.0.0">
+  <data key="d7">1.0</data>
+  <data key="d8">維護記錄中建議將系統升級至最新版次10.0.0，以解決弱點問題並保持系統的安全性。</data>
+  <data key="d9">安全建議,更新版本</data>
+  <data key="d10">chunk-fcc4bf66788ce00c23c3e736753ea50a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775971</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk_10月維護">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包括對Splunk_10月維護狀態的描述和分析。</data>
+  <data key="d9">內容描述,分析報告</data>
+  <data key="d10">chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776010</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="9.3.6/2025.07.31">
+  <data key="d7">1.0</data>
+  <data key="d8">維護過程中，確認了客戶當前使用的是9.3.6版Splunk軟件。</data>
+  <data key="d9">當前狀態,確認版本</data>
+  <data key="d10">chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776010</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="10.0.1/2025.09.25">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師在維護報告中評估了升級至最新版10.0.1的可能性，但未建議立即進行版本更新。</data>
+  <data key="d9">更新建議,結論評估</data>
+  <data key="d10">chunk-75fa98905e1d68515f390e75c46adddb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776010</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="I客戶">
+  <data key="d7">3.0</data>
+  <data key="d8">I客戶需要進行一次維護工作，該維護工作被記錄在維護紀錄中。&lt;SEP&gt;I客戶的維護工作由處理工程師進行並詳細記錄在維護紀錄中。&lt;SEP&gt;I客戶的需求引發了一筆維護紀錄的生成和跟進。</data>
+  <data key="d9">服務對象,服務接受,維護,維護需求,記錄</data>
+  <data key="d10">chunk-c7743e93210e95e8e40e0d2a627684b7&lt;SEP&gt;chunk-56b76e765b58a558604d5d6f2575d2ca&lt;SEP&gt;chunk-5618eb566fb322ada0eb69bef88a7581</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776262</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="FISAC資料收容-進行中">
+  <data key="d7">2.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行中的FISAC資料收容任務。&lt;SEP&gt;維護紀錄涉及向FISAC提交IP申請單，以便於後續數據收容工作。</data>
+  <data key="d9">API申請,工作內容,數據接入,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776130</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="SH KVstore引擎異常測試-進行中">
+  <data key="d7">2.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行中的SH KVstore引擎異常測試任務。&lt;SEP&gt;維護紀錄中的維護活動包括在個人測試環境下驗證KVstore狀態，以確保其正常運行。</data>
+  <data key="d9">問題排查,工作內容,系統測試,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c&lt;SEP&gt;chunk-333af5cc1ff286e512f36be66d1aa78b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776130</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Centos作業系統升級(評估中)">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行評估的Centos作業系統升級任務。</data>
+  <data key="d9">代辦事項,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="DEP02 ([IP])移轉(下周進行)">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含了一個尚在規劃的DEP02 ([IP])移轉任務。</data>
+  <data key="d9">代辦事項,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="新增Splunk Add-on for Google Cloud Platform的sourcetype">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行中的新增Splunk Add-on for Google Cloud Platform的sourcetype任務。</data>
+  <data key="d9">代辦事項,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Tenable API App串接">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行中的Tenable API App串接任務。</data>
+  <data key="d9">代辦事項,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Management.搜尋異常">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行中的Management.搜尋異常任務。</data>
+  <data key="d9">代辦事項,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="BTDC2問題處理">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行中的BTDC2問題處理任務。</data>
+  <data key="d9">代辦事項,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="DEP02 root服務確認">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄包含了一個尚在進行中的DEP002 root服務確認任務。</data>
+  <data key="d9">代辦事項,進度跟蹤</data>
+  <data key="d10">chunk-942b136689124792272bc32a2898842c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="IDX01">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中描述了IDX01重新加入後導致的硬碟空間滿載問題。</data>
+  <data key="d9">伺服器問題,硬碟空間滿載</data>
+  <data key="d10">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="ocp_cdibh資料">
+  <data key="d7">1.0</data>
+  <data key="d8">維護過程涉及刪除並重新同步Ocp_cdibh資料以解決問題。</data>
+  <data key="d9">同步刪除,數據操作</data>
+  <data key="d10">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk角色能力異常">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中詳細描述了針對Splunk角色能力異常採取的權限調整措施。</data>
+  <data key="d9">安全措施,系統管理</data>
+  <data key="d10">chunk-333af5cc1ff286e512f36be66d1aa78b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776130</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="PA每月報表觸發動作變更">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄記錄了對PA每月報表觸發機制進行了改進，以防止未來發生排程錯誤。</data>
+  <data key="d9">報告生成,預防措施</data>
+  <data key="d10">chunk-333af5cc1ff286e512f36be66d1aa78b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776130</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Linux主機使用者與使用者權限-進行中">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中的維護工作包括在特定Linux主機上新增和配置使用戶權限，確保系統安全。</data>
+  <data key="d9">用戶管理,系統安全</data>
+  <data key="d10">chunk-333af5cc1ff286e512f36be66d1aa78b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776130</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="處理工程師">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員負責進行涉及多項維護工作的紀錄。</data>
+  <data key="d9">工作執行者,詳細動作</data>
+  <data key="d10">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776162</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Gitlab漏洞修補18.5.4 -&gt; 18.5.5">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作中包括了將Gitlab從18.5.4版本升級至18.5.5以進行漏洞修補。</data>
+  <data key="d9">修復措施,安全更新</data>
+  <data key="d10">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776163</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="FWD03底層資料收容filter設定">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作還包括了設置FWD03底層資料的篩選條件，以提高處理效率。</data>
+  <data key="d9">效率提升,數據過濾</data>
+  <data key="d10">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776163</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="HTTP對外大量傳輸資料報表調整">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作中有一項工作是對HTTP對外大量傳輸資料報表進行了調整。</data>
+  <data key="d9">報告優化,數據過濾</data>
+  <data key="d10">chunk-15d6c505e6a20b598aa21d52b466adcd</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776163</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="H客戶">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中包含了對H客戶系統的詳細檢視和維護工作。</data>
+  <data key="d9">客戶維護,維護報告</data>
+  <data key="d10">chunk-41be59e9bae9e87a716afd8b5a9e9ee1</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776189</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="資料">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中包括更新GeoDB和清理工單程式資料的措施以優化伺服器性能。</data>
+  <data key="d9">性能優化,數據清理</data>
+  <data key="d10">chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776226</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="漏洞">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄明確列出需要修補SSH Server漏洞的安全措施。</data>
+  <data key="d9">安全修復,風險管理</data>
+  <data key="d10">chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776226</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="防火牆事件">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄詳細描述了防火牆事件的匯入時間異常以及相應的處置行動。</data>
+  <data key="d9">修正動作,異常報告</data>
+  <data key="d10">chunk-5618eb566fb322ada0eb69bef88a7581</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776262</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="版次9.3.3 / 2025.02.26">
+  <data key="d7">1.0</data>
+  <data key="d8">維護報告指出當前使用的Splunk版次存在安全問題，建議升級。</data>
+  <data key="d9">安全更新,軟件版本</data>
+  <data key="d10">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776273</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="版次10.0.1 / 2025.09.25">
+  <data key="d7">1.0</data>
+  <data key="d8">維護報告推薦使用最新版次以解決存在的安全問題。</data>
+  <data key="d9">安全更新,軟件版本</data>
+  <data key="d10">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776273</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk 2025 MA 10月定保.DM20250088_(6/12)">
+  <data key="d7">1.0</data>
+  <data key="d8">維護報告中包含狀態描述和詳細的處置動作。</data>
+  <data key="d9">維護描述,記錄內容</data>
+  <data key="d10">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776273</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="9.3.8 / 2025.11.14">
+  <data key="d7">1.0</data>
+  <data key="d8">維護記錄指出當前系統版本存在弱點，建議升級至最新版次。</data>
+  <data key="d9">安全檢查,當前版本</data>
+  <data key="d10">chunk-c0c6684aa00106f16e7869f519061642</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776328</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="10.0.2 / 2025.11.14">
+  <data key="d7">1.0</data>
+  <data key="d8">維護報告建議將系統升級到版本10.0.2，以提高安全性。</data>
+  <data key="d9">安全性增強,更新建議</data>
+  <data key="d10">chunk-c0c6684aa00106f16e7869f519061642</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776328</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk升版完成">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄詳細記載了Splunk版本升級的完成情況。</data>
+  <data key="d9">事件描述,行動項</data>
+  <data key="d10">chunk-b0add79f46581b83deba682a2c89cdb7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776346</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="A部門">
+  <data key="d7">1.0</data>
+  <data key="d8">A部門在維護工作中執行多個Splunk系統管理的任務。</data>
+  <data key="d9">工作部門,維護項目</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="B部門">
+  <data key="d7">1.0</data>
+  <data key="d8">B部門負責新增indexer和FIsac情資撈取等工作任務。</data>
+  <data key="d9">工作部門,維護項目</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk整體架構IP調整">
+  <data key="d7">1.0</data>
+  <data key="d8">Splunk整體架構IP調整是在維護工作中已完成的項目。</data>
+  <data key="d9">完成狀態,維護動作</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk套件升級">
+  <data key="d7">1.0</data>
+  <data key="d8">Splunk套件升級是維護工作中部署新版本套件至各伺服器上的任務。</data>
+  <data key="d9">完成狀態,維護動作</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="NTP服務檢查">
+  <data key="d7">1.0</data>
+  <data key="d8">NTP服務檢查確保所有主機的時間同步功能正常運行，為維護工作的一部分。</data>
+  <data key="d9">確認結果,維護動作</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="KVstore憑證效期檢查">
+  <data key="d7">1.0</data>
+  <data key="d8">KVstore憑證效期檢查是在維護工作中移除過期憑證並重新生成新憑證的任務，確保系統正常運行。</data>
+  <data key="d9">完成狀態,維護動作</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="SPLUNK維護報告">
+  <data key="d7">1.0</data>
+  <data key="d8">SPLUNK維護報告為Splunk系統定期維護報告的一部分，已寄送給相關人員。</data>
+  <data key="d9">報告生成,資料傳遞</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="FIsac情資撈取">
+  <data key="d7">1.0</data>
+  <data key="d8">FIsac情資撈取項目已完成設定，等待防火牆開通，為維護工作的一部分。</data>
+  <data key="d9">完成狀態,維護動作</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="新增indexer">
+  <data key="d7">1.0</data>
+  <data key="d8">新增indexer至IDX集群節點已執行，目前正監控索引同步狀態，屬於維護工作中的一個任務。</data>
+  <data key="d9">待確認狀態,維護動作</data>
+  <data key="d10">chunk-d96ca3133c54d9d76add7de434ee05b5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776393</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="Splunk SIEM">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄描述了Splunk SIEM的授權用量、伺服器效能和版本更新等情況。</data>
+  <data key="d9">系統狀態,維護</data>
+  <data key="d10">chunk-b8ec2739edb4ee1ccc4cf68534e90be5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776409</data>
+  <data key="d13"></data>
+</edge>
+<edge source="伺服器" target="B人員">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師B人員對伺服器執行了多項操作，包括版本升級和安全措施調整。</data>
+  <data key="d9">升級維護,系統管理</data>
+  <data key="d10">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775858</data>
+  <data key="d13"></data>
+</edge>
+<edge source="伺服器" target="C人員">
+  <data key="d7">2.0</data>
+  <data key="d8">C人員負責對8台伺服器進行Splunk版本升級操作，其中一台遇到了問題需要後續確認。&lt;SEP&gt;C人員參與了KVstore憑證效期檢查和新增indexer的工作。</data>
+  <data key="d9">主機調試,伺服器管理,系統管理,維護工作</data>
+  <data key="d10">chunk-345e520afd2a192e25824abb33740d46&lt;SEP&gt;chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776147</data>
+  <data key="d13"></data>
+</edge>
+<edge source="伺服器" target="Splunk套件">
+  <data key="d7">1.0</data>
+  <data key="d8">新的Splunk套件被部署到各SH上，並完成了整體架構IP的調整。</data>
+  <data key="d9">升級部署,架構調整</data>
+  <data key="d10">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776147</data>
+  <data key="d13"></data>
+</edge>
+<edge source="伺服器" target="NTP服務">
+  <data key="d7">1.0</data>
+  <data key="d8">NTP服務的啟用和檢查確保了主機間的時間同步。</data>
+  <data key="d9">時間同步,系統檢查</data>
+  <data key="d10">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776147</data>
+  <data key="d13"></data>
+</edge>
+<edge source="伺服器" target="KVstore憑證">
+  <data key="d7">1.0</data>
+  <data key="d8">過期的KVstore憑證被移除並生成了新的憑證，有效期至2028年11月。</data>
+  <data key="d9">安全更新,憑證管理</data>
+  <data key="d10">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776148</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="C人員">
+  <data key="d7">5.0</data>
+  <data key="d8">B客戶與處理工程師C人員之間存在維護和支持的關係。&lt;SEP&gt;B客戶的維護任務也包括了C人員的工作參與。&lt;SEP&gt;B客戶的需求由C人員進行維護處理。&lt;SEP&gt;B客戶的維護工作由C人員執行。&lt;SEP&gt;B客戶的維護工作也包括C人員的工作內容。</data>
+  <data key="d9">客戶-技術支持關係,工程師角色,技術支援,服務交付,服務需求,維護,維護對象,維護工作,處理工程師</data>
+  <data key="d10">chunk-39206ec5906f23d68e051b1df74d3ca7&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe&lt;SEP&gt;chunk-d0d3b88d3601a1081c8354e0ef27952f&lt;SEP&gt;chunk-f62a98ad02d11a4c9618cbda43281859&lt;SEP&gt;chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776201</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="Splunk每週onsite">
+  <data key="d7">1.0</data>
+  <data key="d8">B客戶需要進行Splunk的每周現場維護工作。</data>
+  <data key="d9">定期檢查,維護需求</data>
+  <data key="d10">chunk-daa296a353c26f41dfc613743d24e936</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775956</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="Splunk維護報告">
+  <data key="d7">1.0</data>
+  <data key="d8">Splunk維護報告已被寄送給相關人員，涵蓋了一段時期的維護情況。</data>
+  <data key="d9">報告寄送,定期維護</data>
+  <data key="d10">chunk-f62a98ad02d11a4c9618cbda43281859</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776147</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="PA報表寄信異常">
+  <data key="d7">1.0</data>
+  <data key="d8">B客戶的維護工作中包括了對PA報表寄送異常的解決方案。</data>
+  <data key="d9">問題,解決</data>
+  <data key="d10">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776320</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="KV store憑證效期檢查">
+  <data key="d7">1.0</data>
+  <data key="d8">B客戶的維護工作包含檢查並更新所有主機的KV store憑證，以保障系統的安全性。</data>
+  <data key="d9">安全,更新</data>
+  <data key="d10">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776320</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="FISAC資料收容申請">
+  <data key="d7">1.0</data>
+  <data key="d8">B客戶需要提交IP申請單以獲取使用API進行資料收容的權限。</data>
+  <data key="d9">數據管理,申請</data>
+  <data key="d10">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776320</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="Splunk bundle儲存量過大">
+  <data key="d7">1.0</data>
+  <data key="d8">為了解決Splunk bundle儲存量問題，採取了停止預先儲存csv檔案作為知識包的方法來進行優化。</data>
+  <data key="d9">存儲優化,解決方案</data>
+  <data key="d10">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776320</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="Indexer索引同步狀態確認">
+  <data key="d7">1.0</data>
+  <data key="d8">確保index同步狀態正常是保障數據一致性的重要措施之一。</data>
+  <data key="d9">數據庫維護,檢查</data>
+  <data key="d10">chunk-2940790b50eb2cba2a5e944b95a94dd5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776320</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="E客戶">
+  <data key="d7">7.0</data>
+  <data key="d8">C人員負責為E客戶提供維護和支持服務，處理相關的工作事項。&lt;SEP&gt;C人員為E客戶提供維護服務。&lt;SEP&gt;C人員為E客戶提供了維護服務，處理websense斷行異常。&lt;SEP&gt;C人員為E客戶提供駐點工作的維護服務。&lt;SEP&gt;E客戶的工作事項由C人員進行處理和支持。&lt;SEP&gt;C人員為E客戶提供維護和支持服務。&lt;SEP&gt;E客戶的維護工作由C人員完成。</data>
+  <data key="d9">客戶,客戶服務,客戶關係,工作項,技術支持,服務供應,服務提供,維護工作,維護支持,維護服務,維護活動,維護需求,處理工程師</data>
+  <data key="d10">chunk-76068a2f95fd89e7ceb4741d4eb478ce&lt;SEP&gt;chunk-5096c0cdf6972a3670732e4f9be1d36a&lt;SEP&gt;chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-8bddb98b4a84e394c0a4558b42ae12d0&lt;SEP&gt;chunk-738a58105cbf665748b3257e0cfee9ac&lt;SEP&gt;chunk-8a40e782f3c3804da0a1d45dfa05eefe&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776430</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="ES升版">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員執行了將ES版本從8.0.3升至8.2.3的操作。</data>
+  <data key="d9">操作,系統更新</data>
+  <data key="d10">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775956</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="資產上傳APP程式調整">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員進行了資產上傳APP程式的調整，包括添加欄位和設置severity。</data>
+  <data key="d9">API更改,設定規則</data>
+  <data key="d10">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775956</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="內對內告警urgency = critical原因">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員確認並解決了導致告警urgency升級的原因。</data>
+  <data key="d9">問題排查,報告生成</data>
+  <data key="d10">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775956</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="Indexer設定防串改">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員在indexes.conf中設置以防止數據篡改。</data>
+  <data key="d9">安全設置,數據保護</data>
+  <data key="d10">chunk-8bddb98b4a84e394c0a4558b42ae12d0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775956</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="維護纪录">
+  <data key="d7">2.0</data>
+  <data key="d8">C人员参与了此次维护记录的任务执行。&lt;SEP&gt;C人員在維護紀錄中詳細記錄了其工作的過程和進展。</data>
+  <data key="d9">任务执行者,处理工程师,工作日誌,活動追蹤</data>
+  <data key="d10">chunk-8ebe784b7ece61edcdd2e054763c0ce3&lt;SEP&gt;chunk-3781d1671ca7126e99e7656264965fb6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776423</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="A客戶">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員與A人員共同為A客戶提供了必要的維護和技術支持工作。</data>
+  <data key="d9">技術支援,服務交付</data>
+  <data key="d10">chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776111</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="SH KVstore引擎異常測試">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員在個人環境中進行了SH KVstore引擎的異常測試，以檢查其運行狀態。</data>
+  <data key="d9">引擎狀態檢驗,維護動作</data>
+  <data key="d10">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776201</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="C客戶">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員負責為C客戶解決Splunk服務異常問題並提供暫時的解決方案。</data>
+  <data key="d9">客戶支持,維護工作</data>
+  <data key="d10">chunk-79f23819b8640c43571e6e9b3e4098e0</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776242</data>
+  <data key="d13"></data>
+</edge>
+<edge source="F客戶" target="9.3.3/2025.02.26">
+  <data key="d7">1.0</data>
+  <data key="d8">F客戶當前使用的系統版本存在弱點，需要更新來解決安全問題。</data>
+  <data key="d9">安全問題,現行版本</data>
+  <data key="d10">chunk-203eba714089c79438cfc39755f054ce</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775750</data>
+  <data key="d13"></data>
+</edge>
+<edge source="9.3.3/2025.02.26" target="10.0.2/2025.11.14">
+  <data key="d7">2.0</data>
+  <data key="d8">建議將系統從9.3.3版本更新到10.0.2版本以解決存在的弱點並提高安全性。&lt;SEP&gt;建議將當前的9.3.3版升級至最新版本10.0.2，以減少安全風險和改善系統效能。</data>
+  <data key="d9">安全性提升,版本升級,版本更新</data>
+  <data key="d10">chunk-203eba714089c79438cfc39755f054ce&lt;SEP&gt;chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776012</data>
+  <data key="d13"></data>
+</edge>
+<edge source="10.0.2/2025.11.14" target="9.3.6/2025.07.31">
+  <data key="d7">1.0</data>
+  <data key="d8">目前的Splunk版本與最新版本之間進行了比較，建議暫不升級。</data>
+  <data key="d9">更新建議,版本比較</data>
+  <data key="d10">chunk-04465635a6b88183cbabbfe7e25635dd</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775760</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Federal Reserve Policy Announcement" target="Market Selloff">
+  <data key="d7">1.0</data>
+  <data key="d8">Investor concerns over potential Federal Reserve policy changes contributed to the market selloff.</data>
+  <data key="d9">regulatory impact,speculation</data>
+  <data key="d10">chunk-203eba714089c79438cfc39755f054ce</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775750</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Federal Reserve Policy Announcement" target="Interest Rate Speculation">
+  <data key="d7">1.0</data>
+  <data key="d8">Speculation over potential rate hikes from the Federal Reserve impacts investor confidence and market stability expectations.</data>
+  <data key="d9">economic forecasting,monetary policy</data>
+  <data key="d10">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Market Selloff" target="Nexon Technologies">
+  <data key="d7">1.0</data>
+  <data key="d8">Nexon Technologies' stock decline is part of the broader market selloff affecting tech companies.</data>
+  <data key="d9">company impact,index movement</data>
+  <data key="d10">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Market Selloff" target="Interest Rates">
+  <data key="d7">2.0</data>
+  <data key="d8">Speculation about rising interest rates is driving the current market selloff.&lt;SEP&gt;Investor concerns over rising interest rates have influenced the broader market selloff.</data>
+  <data key="d9">economic factor,economic indicator,financial impact,investor sentiment</data>
+  <data key="d10">chunk-fcc4bf66788ce00c23c3e736753ea50a&lt;SEP&gt;chunk-412e17859c430b9ce8b929bc152053ef</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776288</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Market Selloff" target="3.4% Decline In Nexon Technologies Stock Value">
+  <data key="d7">1.0</data>
+  <data key="d8">The market selloff is partly attributed to the significant drop in Nexon Technologies' stock value.</data>
+  <data key="d9">company performance,market impact</data>
+  <data key="d10">chunk-5618eb566fb322ada0eb69bef88a7581</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776262</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk_11月維護" target="伺服器效能正常">
+  <data key="d7">1.0</data>
+  <data key="d8">Splunk_11月維護報告顯示伺服器效能狀態為正常。</data>
+  <data key="d9">檢查結果,維護報告</data>
+  <data key="d10">chunk-04465635a6b88183cbabbfe7e25635dd</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775760</data>
+  <data key="d13"></data>
+</edge>
+<edge source="FISAC資料收容-進行中" target="james">
+  <data key="d7">1.0</data>
+  <data key="d8">James負責將IP使用需求提交給FISAC系統進行處理。</data>
+  <data key="d9">數據收集,申請提交</data>
+  <data key="d10">chunk-0944d4a59fb7a84bd79d2fca8361e518</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775795</data>
+  <data key="d13"></data>
+</edge>
+<edge source="FISAC資料收容-進行中" target="B部門">
+  <data key="d7">1.0</data>
+  <data key="d8">FISAC資料收容是一個由B部門負責的維護任務，目前仍處於進行階段。</data>
+  <data key="d9">任務狀態,維護活動</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775900</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SH KVstore引擎異常測試-進行中" target="B部門">
+  <data key="d7">1.0</data>
+  <data key="d8">SH KVstore引擎異常測試是由B部門在個人環境下執行的維護活動。</data>
+  <data key="d9">任務狀態,技術調試</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775900</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Noah Carter" target="World Athletics Federation">
+  <data key="d7">3.0</data>
+  <data key="d8">The World Athletics Federation oversees record validations and governs the championship where Noah Carter set a new record.&lt;SEP&gt;The World Athletics Federation oversees record validations and regulations for athletes participating in the championship.&lt;SEP&gt;The World Athletics Federation validates Noah Carter's record-breaking performance at the championship.</data>
+  <data key="d9">athlete recognition,athlete regulation,competition governance,record validation</data>
+  <data key="d10">chunk-1df6d8d113790f99d50593095e1e5e58&lt;SEP&gt;chunk-8a83bcdf6e7b7269cfd17b4f21457de8&lt;SEP&gt;chunk-0640212d45b4b92d91d0255cf90edf96</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776427</data>
+  <data key="d13"></data>
+</edge>
+<edge source="I客戶" target="8.0.6 / 2024.10.22">
+  <data key="d7">1.0</data>
+  <data key="d8">I客戶目前使用的是版次8.0.6，最後更新日期為2024年10月22日。</data>
+  <data key="d9">更新建議,當前版本</data>
+  <data key="d10">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775815</data>
+  <data key="d13"></data>
+</edge>
+<edge source="I客戶" target="10.0.2 / 2025.11.14">
+  <data key="d7">1.0</data>
+  <data key="d8">最新的Splunk系統版本是10.0.2，最後更新日期為2025年11月14日。</data>
+  <data key="d9">更新建議,最新版本</data>
+  <data key="d10">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775815</data>
+  <data key="d13"></data>
+</edge>
+<edge source="I客戶" target="伺服器效能：正常">
+  <data key="d7">1.0</data>
+  <data key="d8">Splunk_12月維護確認了I客戶的伺服器運行狀態良好，無需進行額外操作。</data>
+  <data key="d9">效能監控,維護報告</data>
+  <data key="d10">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775815</data>
+  <data key="d13"></data>
+</edge>
+<edge source="I客戶" target="Red Hat 9.4">
+  <data key="d7">1.0</data>
+  <data key="d8">I客戶使用的是Red Hat Enterprise Linux 9.4，計劃於2027年5月31日結束支援期(EOS)。</data>
+  <data key="d9">作業系統版本,支援期限</data>
+  <data key="d10">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775815</data>
+  <data key="d13"></data>
+</edge>
+<edge source="I客戶" target="CVE-2023-3567, CVE-2023-4133, CVE-2023-6932, CVE-2023-39198, CVE-2023-51043, CVE-2023-51779, CVE-2023-5178">
+  <data key="d7">1.0</data>
+  <data key="d8">維護過程中發現多個CVE代碼，表明存在安全風險需要進一步評估和處理。</data>
+  <data key="d9">安全建議,系統弱點</data>
+  <data key="d10">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775815</data>
+  <data key="d13"></data>
+</edge>
+<edge source="10.0.2 / 2025.11.14" target="9.3.8 / 2025.11.14">
+  <data key="d7">1.0</data>
+  <data key="d8">建議將現行的9.3.8版本升級到最新版次10.0.2以改善安全性。</data>
+  <data key="d9">安全更新,版本演進</data>
+  <data key="d10">chunk-c0c6684aa00106f16e7869f519061642</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776328</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Lower-Than-Expected Quarterly Earnings" target="3.4% Decline">
+  <data key="d7">1.0</data>
+  <data key="d8">The decline in the Global Tech Index is influenced by Nexon's underperformance.</data>
+  <data key="d9">financial performance,market impact</data>
+  <data key="d10">chunk-9648988cb67db9843bc13754ac3d6ab6</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775815</data>
+  <data key="d13"></data>
+</edge>
+<edge source="版次" target="ES版本升級">
+  <data key="d7">1.0</data>
+  <data key="d8">計劃進行ES系統的版本升級，用於解決重複顯示問題和提高整體性能。</data>
+  <data key="d9">功能增強,安全更新</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="版次" target="Splunk版本升級">
+  <data key="d7">1.0</data>
+  <data key="d8">計劃在將來升級Splunk的版本以改善其功能並加強安全性。</data>
+  <data key="d9">安全提升,軟件更新</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="版次" target="維護纪录">
+  <data key="d7">1.0</data>
+  <data key="d8">維護记录推荐B客户将当前版本9.3.3/2025.02.26升级到最新版本10.0.1/2025.09.25。</data>
+  <data key="d9">版本更新建议</data>
+  <data key="d10">chunk-e2a0171ee9d19cc664d4d041d3e73ba2</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776169</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C客戶" target="B人員">
+  <data key="d7">10.0</data>
+  <data key="d8">(B人員, C客戶) refers to a relationship where B personnel provide maintenance services for C customers. This includes handling various issues and performing multiple tasks related to software updates, security patches, and specific maintenance steps such as updating geodb, restoring database IOC pages, adjusting HTTP external data transmission reports, adding URLs under surveillance, resolving Splunk anomalies, and other detailed work contents.
+
+B人員 are responsible for conducting comprehensive maintenance activities that cover a wide range of responsibilities including but not limited to software updates, security fixes, data recovery tasks, and addressing specific issues such as Splunk malfunctions. These services aim to ensure the smooth operation and optimal performance of systems used by C客戶.&lt;SEP&gt;B人員為C客戶提供了一筆維護紀錄。&lt;SEP&gt;處理工程師B人員為客戶C客戶提供維護服務。</data>
+  <data key="d9">客戶支持,客戶服務,客戶關係,支持,服務,服務提供,維護,維護工作,維護活動,維護責任,維護需求</data>
+  <data key="d10">chunk-ab226f704fc1b4d45dd06222f40cb39f&lt;SEP&gt;chunk-0d3d3acb3c191c9e65fac21b5ed9284f&lt;SEP&gt;chunk-7c1fca5402ff2eb1c53222e1d4db282a&lt;SEP&gt;chunk-f6caccf00501b5f4caf06dcfc047ae9e&lt;SEP&gt;chunk-0b9e37e8f7e8a98183b1724c16ce814a&lt;SEP&gt;chunk-1e7cec156f57837e8d25cbe83a6db45f&lt;SEP&gt;chunk-79f23819b8640c43571e6e9b3e4098e0&lt;SEP&gt;chunk-068ca517cbebf973fd4089bd45ef615c&lt;SEP&gt;chunk-cdd29ae3537f38a27c3848632ad51359&lt;SEP&gt;chunk-b8ec2739edb4ee1ccc4cf68534e90be5</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776409</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="API">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師進行了API的相關工作，包括建立告警和異動儀表板建置。</data>
+  <data key="d9">系統集成,自動化操作</data>
+  <data key="d10">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775858</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="資料更新geodb">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師執行了更新geodb中的數據操作，以改善系統性能或安全性。</data>
+  <data key="d9">數據處理,系統優化</data>
+  <data key="d10">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775858</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="GeoDB更新">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員負責進行GeoDB的更新作為維護工作的一部分。</data>
+  <data key="d9">版次管理,處理工程師</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="弱點掃描報告資訊整理">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員負責對弱點掃描報告的信息進行整理解析。</data>
+  <data key="d9">報告處理,處理工程師</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="AI網站服務紀錄調閱">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員對AI網站服務的歷史記錄進行了調閱，以支持維護需求。</data>
+  <data key="d9">處理工程師,資料分析</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="eStreamer資料異常處理">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員參與了解決eStreamer的數據異常問題，重啟服務後恢復正常運行。</data>
+  <data key="d9">問題診斷,處理工程師</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="KPMG滲透測試IP白名單">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員負責為KPMG滲透測試添加必要的IP地址和網段白名單，以及修改告警語法。</data>
+  <data key="d9">安全設置,處理工程師</data>
+  <data key="d10">chunk-f6caccf00501b5f4caf06dcfc047ae9e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="GitLab">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員對GitLab進行了漏洞修補，以保障其安全運行。</data>
+  <data key="d9">伺服器維護,漏洞修補</data>
+  <data key="d10">chunk-068ca517cbebf973fd4089bd45ef615c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776346</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="GeoDB">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員在本次維護中執行了GeoDB的更新操作。</data>
+  <data key="d9">維護任務,資料更新</data>
+  <data key="d10">chunk-068ca517cbebf973fd4089bd45ef615c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776346</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="SSH Server">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員記錄下未來對SSH Server進行漏洞修補的工作任務。</data>
+  <data key="d9">待辦事項,漏洞修補需求</data>
+  <data key="d10">chunk-068ca517cbebf973fd4089bd45ef615c</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776346</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B人員" target="Splunk駐點服務202601第二周">
+  <data key="d7">1.0</data>
+  <data key="d8">B人員在2026年1月13日進行了Splunk駐點服務的維護。</data>
+  <data key="d9">時間範圍,維護工作</data>
+  <data key="d10">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776381</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Gitlab" target="CVE-2025-11224">
+  <data key="d7">1.0</data>
+  <data key="d8">為了修補CVE-2025-11224漏洞，將Gitlab版本從18.1.6升級到18.5.2。</data>
+  <data key="d9">安全升級,漏洞修復</data>
+  <data key="d10">chunk-0d3d3acb3c191c9e65fac21b5ed9284f</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775857</data>
+  <data key="d13"></data>
+</edge>
+<edge source="版次17.10.8" target="版次18.1.6">
+  <data key="d7">1.0</data>
+  <data key="d8">從版本17.10.8升級到18.1.6以解決早期版本中存在的安全漏洞。</data>
+  <data key="d9">安全性提升,軟件更新</data>
+  <data key="d10">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775858</data>
+  <data key="d13"></data>
+</edge>
+<edge source="版次17.10.8" target="漏洞CVE-2025-6454,CVE-2025-2256">
+  <data key="d7">1.0</data>
+  <data key="d8">升級到新版是為了消除這些漏洞帶來的安全風險。</data>
+  <data key="d9">軟件安全,風險管理</data>
+  <data key="d10">chunk-3f8775862e3b8ea072578967e7520445</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775858</data>
+  <data key="d13"></data>
+</edge>
+<edge source="API" target="splunk自動version check">
+  <data key="d7">1.0</data>
+  <data key="d8">需要在維護過程中禁用Splunk的自動版本檢查功能，以進行其他必要的設置調整。</data>
+  <data key="d9">禁用功能,系統維護</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="API" target="SH FISAC API input (未使用)">
+  <data key="d7">1.0</data>
+  <data key="d8">不再使用的SH FISAC API輸入設置需要被關閉以進行更好的資源管理和系統優化。</data>
+  <data key="d9">維護優化,資源釋放</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMware Tools" target="CVE-2025-41244">
+  <data key="d7">1.0</data>
+  <data key="d8">針對VMware Tools的漏洞，進行了版本更新以解決CVE-2025-41244等問題。</data>
+  <data key="d9">安全升級,漏洞修補</data>
+  <data key="d10">chunk-5930b403906ecb929487592cef5210f2</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775868</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMware Tools" target="CVE-2025-41246">
+  <data key="d7">1.0</data>
+  <data key="d8">針對VMware Tools的漏洞，進行了版本更新以解決CVE-2025-41246等問題。</data>
+  <data key="d9">安全升級,漏洞修補</data>
+  <data key="d10">chunk-5930b403906ecb929487592cef5210f2</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775868</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CEF outputs套件調整送出格式" target="資料">
+  <data key="d7">1.0</data>
+  <data key="d8">需根據要求調整CEF輸出套件的發送格式，包括字元替換和空格添加等步驟。</data>
+  <data key="d9">數據格式,調試</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="IIS LOG拋送目的調整" target="資料">
+  <data key="d7">1.0</data>
+  <data key="d8">需調整IIS	LOG拋送目的設置以確保數據正確傳輸。</data>
+  <data key="d9">日誌報告,配置更改</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="資產新增報廢/營運中欄位" target="資料">
+  <data key="d7">1.0</data>
+  <data key="d8">需要在資產列表中增加報廢和營運中的標記，以便更好地跟蹤設備的生命周期。</data>
+  <data key="d9">狀態更新,資產管理</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="imsdb02UF中舊的殘留input設定" target="漏洞">
+  <data key="d7">1.0</data>
+  <data key="d8">關閉IMSDB02UF系統中的舊輸入設置可以消除潛在的安全隱患並保持系統清潔。</data>
+  <data key="d9">安全修復,系統清理</data>
+  <data key="d10">chunk-25d7c29d65aa0e4d54fb4af54207fa0d</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775885</data>
+  <data key="d13"></data>
+</edge>
+<edge source="LDAP設定" target="A人員,B人員">
+  <data key="d7">1.0</data>
+  <data key="d8">ldap驗證設定工作由相關技術人員完成，確保splunk系統的安全性及正常運作。</data>
+  <data key="d9">安全性保障,系統配置</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775900</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Commodity Markets" target="Omega Energy">
+  <data key="d7">1.0</data>
+  <data key="d8">Omega Energy's modest gain reflects its resilience in commodity markets amidst rising oil prices and mixed investor sentiment.</data>
+  <data key="d9">energy sector performance,oil prices</data>
+  <data key="d10">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Crude Oil Prices" target="Supply Constraints">
+  <data key="d7">1.0</data>
+  <data key="d8">Rising crude oil prices are influenced by supply constraints affecting the market balance.</data>
+  <data key="d9">market forces,supply dynamics</data>
+  <data key="d10">chunk-7c1fca5402ff2eb1c53222e1d4db282a</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775945</data>
+  <data key="d13"></data>
+</edge>
+<edge source="PA報表寄信異常" target="A人員,C人員">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師正在解決A部門和B部門的報告寄送異常問題。</data>
+  <data key="d9">問題修復,跟進處理</data>
+  <data key="d10">chunk-daa296a353c26f41dfc613743d24e936</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775956</data>
+  <data key="d13"></data>
+</edge>
+<edge source="新增indexer" target="IDX cluster節點">
+  <data key="d7">1.0</data>
+  <data key="d8">在IDX集群節點中添加了新的索引器以支持數據管理功能。</data>
+  <data key="d9">系統更新,資料添加</data>
+  <data key="d10">chunk-daa296a353c26f41dfc613743d24e936</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773775956</data>
+  <data key="d13"></data>
+</edge>
+<edge source="IDX01" target="IDX02">
+  <data key="d7">1.0</data>
+  <data key="d8">IDX01的重新加入導致了IDX02和IDX03硬碟空間滿載。</data>
+  <data key="d9">伺服器互動,硬碟影響</data>
+  <data key="d10">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="IDX01" target="IDX03">
+  <data key="d7">1.0</data>
+  <data key="d8">IDX01的動作同樣影響到IDX03，使其空間滿載。</data>
+  <data key="d9">伺服器互動,硬碟影響</data>
+  <data key="d10">chunk-1e6e1908b68b82814f06780675f7938b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776051</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Raw data" target="Websebse log">
+  <data key="d7">1.0</data>
+  <data key="d8">Raw data中存在的換行字元導致了Websebse log的異常截斷。</data>
+  <data key="d9">日誌異常,資料問題</data>
+  <data key="d10">chunk-1e6839b81653aa7c9b7ec794f3447380</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776170</data>
+  <data key="d13"></data>
+</edge>
+<edge source="DEP02主機" target="KGIBIDX04">
+  <data key="d7">1.0</data>
+  <data key="d8">在檢查DEP02主機時，發現需要刪除已下線的KGIBIDX04的備份排程。</data>
+  <data key="d9">伺服器下線,備份排程</data>
+  <data key="d10">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776201</data>
+  <data key="d13"></data>
+</edge>
+<edge source="DEP02主機" target="CDIBHMGT02">
+  <data key="d7">1.0</data>
+  <data key="d8">處理DEP02主機問題時，修改了CDIBHMGT02伺服器的IP地址並確認排程腳本正常工作。</data>
+  <data key="d9">排程腳本正常化,設定修改</data>
+  <data key="d10">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776201</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CDIBHMGT02" target="FISAC API申請單">
+  <data key="d7">1.0</data>
+  <data key="d8">在進行涉及CDIBHMGT02伺服器的工作時，需要通過FISAC API申請單獲取所需API的IP地址。</data>
+  <data key="d9">API使用,IP申請流程</data>
+  <data key="d10">chunk-72f381579d364fa91cc3e73153e0af97</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776201</data>
+  <data key="d13"></data>
+</edge>
+<edge source="版次9.3.3 / 2025.02.26" target="弱點">
+  <data key="d7">1.0</data>
+  <data key="d8">當前版本存在安全漏洞，建議升級到最新版次以修復這些問題。</data>
+  <data key="d9">安全性缺陷,軟件更新</data>
+  <data key="d10">chunk-3c4967b23b72f04d5c4ef37149d21ede</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776273</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk駐點服務202601第二周" target="Cybereyes API">
+  <data key="d7">1.0</data>
+  <data key="d8">在維護工作中，Cybereyes API串接完成並開始進行新資料的測試。</data>
+  <data key="d9">API整合,新功能測試</data>
+  <data key="d10">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776381</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk駐點服務202601第二周" target="大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中)">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作包括建立新的安全告警測試版，用於大量網站攻擊嘗試。</data>
+  <data key="d9">安全監控,測試版本</data>
+  <data key="d10">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776381</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk駐點服務202601第二周" target="Cybereyes高(high)風險告警_new (測試中)">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作包括建立新的高風險安全告警測試版。</data>
+  <data key="d9">安全監控,測試版本</data>
+  <data key="d10">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776381</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk駐點服務202601第二周" target="FWD03底層資料收容">
+  <data key="d7">1.0</data>
+  <data key="d8">在維護工作中進行了FWD03底層資料的收集和整理。</data>
+  <data key="d9">維護事項,資料管理</data>
+  <data key="d10">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776381</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk駐點服務202601第二周" target="SSH Server漏洞修補">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作列出了一個未來的工作項目，涉及對SSH伺服器的安全漏洞進行修復。</data>
+  <data key="d9">安全性,待辦事項</data>
+  <data key="d10">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776381</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk駐點服務202601第二周" target="Gitlab漏洞修補">
+  <data key="d7">1.0</data>
+  <data key="d8">維護工作列出了一個未來的工作項目，涉及對GitLab平台的安全漏洞進行修復。</data>
+  <data key="d9">安全性,待辦事項</data>
+  <data key="d10">chunk-cdd29ae3537f38a27c3848632ad51359</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773776381</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

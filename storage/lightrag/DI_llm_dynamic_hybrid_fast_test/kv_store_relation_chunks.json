@@ -1,0 +1,155 @@
+{
+  "A部門<SEP>B客戶": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "A部門<SEP>B客戶"
+  },
+  "A人員<SEP>C同事": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "A人員<SEP>C同事"
+  },
+  "E客戶<SEP>Trendmicro主機的日誌收集功能新增": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "E客戶<SEP>Trendmicro主機的日誌收集功能新增"
+  },
+  "GCP報表中的User欄位值調整<SEP>Websense Log斷行確認與修正": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "GCP報表中的User欄位值調整<SEP>Websense Log斷行確認與修正"
+  },
+  "B部門<SEP>FISAC API IP申請單": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "B部門<SEP>FISAC API IP申請單"
+  },
+  "A部門<SEP>DEP02主機移轉執行": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "A部門<SEP>DEP02主機移轉執行"
+  },
+  "B客戶<SEP>FISAC API IP申請單": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "B客戶<SEP>FISAC API IP申請單"
+  },
+  "B部門<SEP>SH KVstore引擎異常測試": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "B部門<SEP>SH KVstore引擎異常測試"
+  },
+  "A人員<SEP>DEP02主機移轉執行": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "A人員<SEP>DEP02主機移轉執行"
+  },
+  "B客戶<SEP>SH KVstore引擎異常測試": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "B客戶<SEP>SH KVstore引擎異常測試"
+  },
+  "B部門<SEP>管理員搜尋異常調試": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "B部門<SEP>管理員搜尋異常調試"
+  },
+  "B客戶<SEP>新增Splunk Add-on for Google Cloud Platform的sourcetype": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "B客戶<SEP>新增Splunk Add-on for Google Cloud Platform的sourcetype"
+  },
+  "BTDC2問題處理<SEP>B客戶": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "BTDC2問題處理<SEP>B客戶"
+  },
+  "A人員<SEP>F客戶": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771715,
+    "update_time": 1773771715,
+    "_id": "A人員<SEP>F客戶"
+  },
+  "375 GB<SEP>splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771715,
+    "update_time": 1773771715,
+    "_id": "375 GB<SEP>splunk_銀行處12月月維護"
+  },
+  "10.0.2/2025.11.14<SEP>9.3.3/2025.02.26": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771715,
+    "update_time": 1773771715,
+    "_id": "10.0.2/2025.11.14<SEP>9.3.3/2025.02.26"
+  },
+  "A人員<SEP>splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771715,
+    "update_time": 1773771715,
+    "_id": "A人員<SEP>splunk_銀行處12月月維護"
+  }
+}

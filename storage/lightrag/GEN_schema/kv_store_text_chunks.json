@@ -1,0 +1,1970 @@
+{
+  "chunk-235d00855c0d07d60013f3edbb18a449": {
+    "tokens": 133,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Eric.chen,Nast\n進行時間為 2025/06/09 09:00 至 2025/06/09 18:00。\n狀態描述 (Description): ODA X8-2HA Upgrade 19.18-19.22 dbhome\n處置動作 (Action): 1. 停止資料同步\n2. 19.18 dbhome_1升級到19.22\n3. 恢復DG服務\n4. 確認系統運行狀況",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-235d00855c0d07d60013f3edbb18a449",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:251253530d362be90f1f1c5afc679e18",
+      "default:extract:97f5afbfa9959c009d440e3891d330db"
+    ],
+    "create_time": 1773288445,
+    "update_time": 1773288501,
+    "_id": "chunk-235d00855c0d07d60013f3edbb18a449"
+  },
+  "chunk-23ee3da56ce07c9d486440fd8828fb66": {
+    "tokens": 128,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Edmond.lee,Kelly.su,Andrea.hong\n進行時間為 2025/03/12 13:30 至 2025/03/12 16:30。\n狀態描述 (Description): [vCenter 移除失效 AD 使用者]\n處置動作 (Action): AU、VN、MY、HK、HQ vCenter內vmuser66帳號移除\n3/14移除COPT / CC vCenter內帳號並刪除AU、VN快照",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-23ee3da56ce07c9d486440fd8828fb66",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4cbc17eb49fb8fb356c455b9e983199c",
+      "default:extract:10d3537c7f099e6cb7a3406915030f84"
+    ],
+    "create_time": 1773288445,
+    "update_time": 1773288503,
+    "_id": "chunk-23ee3da56ce07c9d486440fd8828fb66"
+  },
+  "chunk-128998e43f7f83519e1cb7ed54443724": {
+    "tokens": 126,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Josh.chen\n進行時間為 2025/11/12 16:00 至 2025/11/12 18:30。\n狀態描述 (Description): NetApp F8200 硬碟故障\n處置動作 (Action): 確認系統有無異常 >> OK\n確認網路有無異常 >> OK\n更換硬碟\n確認系統有無異常 >> OK\n確認設備有無其他異常 >> OK",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-128998e43f7f83519e1cb7ed54443724",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1ce345d2685b09ca2cb0cebb14c90eec",
+      "default:extract:a81358776b2d2830cf915d922b76a0c0"
+    ],
+    "create_time": 1773288501,
+    "update_time": 1773288562,
+    "_id": "chunk-128998e43f7f83519e1cb7ed54443724"
+  },
+  "chunk-6ff15bc652dbe97f550ff951e6159d1f": {
+    "tokens": 83,
+    "content": "這是一筆關於 玉山中国 的維護紀錄。\n處理工程師為 James.li\n進行時間為 2025/03/15 13:00 至 2025/03/15 14:00。\n狀態描述 (Description): 玉山智谱POC布线\n處置動作 (Action): 线路布置\n线路测试\n测试完成",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-6ff15bc652dbe97f550ff951e6159d1f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:891089d2123818b8585707e41b21e492",
+      "default:extract:55a991f211e860b9e3e662b657ae4401"
+    ],
+    "create_time": 1773288503,
+    "update_time": 1773288563,
+    "_id": "chunk-6ff15bc652dbe97f550ff951e6159d1f"
+  },
+  "chunk-5c39ba38d7eda045a5d838bbe2bf9a8d": {
+    "tokens": 90,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Leon.lee\n進行時間為 2025/05/14 10:00 至 2025/05/14 17:00。\n狀態描述 (Description): 協助確認內網DLP阻擋政策\n處置動作 (Action): 協助確認內網DLP阻擋政策",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-5c39ba38d7eda045a5d838bbe2bf9a8d",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:254219848c8379436213f8416fbdef03",
+      "default:extract:9cfc7e97888b69c52bd75f8784019ca3"
+    ],
+    "create_time": 1773288562,
+    "update_time": 1773288620,
+    "_id": "chunk-5c39ba38d7eda045a5d838bbe2bf9a8d"
+  },
+  "chunk-d4d26e0ab69611d17fc2a08e6a01ea5a": {
+    "tokens": 119,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Ben.jen\n進行時間為 2025/12/22 11:00 至 2025/12/22 11:30。\n狀態描述 (Description): 更新link2站台憑證\n處置動作 (Action): 經客戶提供link2站台憑證，已將其上傳至WAF系統\n確認無誤後信件提供截圖給客戶留存紀錄。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d4d26e0ab69611d17fc2a08e6a01ea5a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:037e434c7b36714c492f5ee0500e8c0d",
+      "default:extract:32df035d1f6793bf0f366f6540c80b4f"
+    ],
+    "create_time": 1773288563,
+    "update_time": 1773288621,
+    "_id": "chunk-d4d26e0ab69611d17fc2a08e6a01ea5a"
+  },
+  "chunk-6d25fe7c1d10ca5a4983adfe24a3c68d": {
+    "tokens": 211,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Brian.wang\n進行時間為 2025/05/06 15:00 至 2025/05/06 19:00。\n狀態描述 (Description): 玉山銀行_信用卡處Splunk 版本升級\n處置動作 (Action): 今日作業內容如下:\n已完成以下機器升版作業，共5台。\n自版本9.1.3升版至9.3.3\n\tPSPLP008\n\tPSPLP001\n\tPSPLP002\n\tPSPLP003 \n\tPSPLP004\n並驗證服務正常，搜尋正常，告警正常，資料收容正常，並確認匯出與CSV編碼正常。\n若是升板後有遇到任何問題再麻煩讓我知道，\n我會盡快協助排除。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-6d25fe7c1d10ca5a4983adfe24a3c68d",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:855e35fff8c89cd1467100f03c2d3375",
+      "default:extract:eb99d86ca7fa689e540f2ded04bdf5fe"
+    ],
+    "create_time": 1773288620,
+    "update_time": 1773288696,
+    "_id": "chunk-6d25fe7c1d10ca5a4983adfe24a3c68d"
+  },
+  "chunk-2c815037d8d951d91873f9da32951162": {
+    "tokens": 168,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Pifu\n進行時間為 2025/07/28 18:45 至 2025/07/28 20:45。\n狀態描述 (Description): DDoS演練-IS網路流量設定調整與確認\n處置動作 (Action): 1. Gigamon 分設備SPAN導給Netscout。\n\n2. TPE-DMZ、TPE-WAF、KHH-Branch-9300-1、KHH-Branch-9300-2重新調整Netflow設定。\n\n3. WUG觀察Netflow調整後的流量。\n\n4. 確認網路服務正常。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-2c815037d8d951d91873f9da32951162",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:202c521764faa41d4585fbe1467cbb37",
+      "default:extract:47fe33f19a2deabf2b95e92b3b8e4823"
+    ],
+    "create_time": 1773288622,
+    "update_time": 1773288698,
+    "_id": "chunk-2c815037d8d951d91873f9da32951162"
+  },
+  "chunk-a92a8ece0a836414bf60d39c9fb9df06": {
+    "tokens": 207,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Jack,Jie.chen\n進行時間為 2025/07/28 18:45 至 2025/07/28 21:45。\n狀態描述 (Description): SDWAN專案資料收集，桃竹 台中 台南 高雄L3設備netflow 抓取流量\n處置動作 (Action): 1. 進入桃竹 台南 高雄L3設備抓取ServerFarm 回總部腳位的netflow流量。\n\n2. 進入台中ServerFarm 4500抓取ServerFarm 出來防火牆腳位的netflow流量。\n\n3. 每天分截圖5小時的流量共兩次，抓取五天的流量證明。\n\n4. 製作ServerFarm 流量word文件，提供給客戶。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-a92a8ece0a836414bf60d39c9fb9df06",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c059e4562ea2fd6e3c4e5583f0fea879",
+      "default:extract:052b0dd958f285410070e0266fc1c2f5"
+    ],
+    "create_time": 1773288696,
+    "update_time": 1773288737,
+    "_id": "chunk-a92a8ece0a836414bf60d39c9fb9df06"
+  },
+  "chunk-317700f9fcc16af1fd2ce977c213584b": {
+    "tokens": 120,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack\n進行時間為 2025/05/05 23:30 至 2025/05/06 01:30。\n狀態描述 (Description): 6807 fan Failed\n處置動作 (Action): 1. show log及show env 確認風扇狀況\n2. 申請RMA及確認到貨時間\n3. 5/6 08:00RMA良品到貨",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-317700f9fcc16af1fd2ce977c213584b",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ab5f3ac7ed7a2b1481444b49ce873e0b",
+      "default:extract:c37c419a5f0779ed77114d8e2bc203e1"
+    ],
+    "create_time": 1773288739,
+    "update_time": 1773288798,
+    "_id": "chunk-317700f9fcc16af1fd2ce977c213584b"
+  },
+  "chunk-2d4b8d6a4083193dd527549b98f74032": {
+    "tokens": 120,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Shawn.hu,Sandy.jin\n進行時間為 2025/03/31 12:00 至 2025/03/31 18:00。\n狀態描述 (Description): Firemon設備納管問題\n處置動作 (Action): 經調查確實有設備，ACL未開及規則未開通，\n\n以協助客戶清點，因一日無法處理完畢，後續客戶自行處理",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-2d4b8d6a4083193dd527549b98f74032",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a2288cd14f268e8a360d8f09889245a7",
+      "default:extract:e3876e5329c44b29c7ee60fee4f05f64"
+    ],
+    "create_time": 1773288739,
+    "update_time": 1773288800,
+    "_id": "chunk-2d4b8d6a4083193dd527549b98f74032"
+  },
+  "chunk-3727e8bc5cc6e710f4f1be055410670b": {
+    "tokens": 94,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Link\n進行時間為 2025/02/05 09:00 至 2025/02/05 14:00。\n狀態描述 (Description): 駐點服務\n處置動作 (Action): 檢視事件並記錄於週報上\n產出月報資料以製作月報",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-3727e8bc5cc6e710f4f1be055410670b",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3bb1e58db8f4d08f0e721dbf35431212",
+      "default:extract:9456475a67cf8133db1ef261e8345600"
+    ],
+    "create_time": 1773288826,
+    "update_time": 1773288918,
+    "_id": "chunk-3727e8bc5cc6e710f4f1be055410670b"
+  },
+  "chunk-99cd2f2ea83d844b7b1477f7c72122f5": {
+    "tokens": 133,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Kevinkl.hsu,Ethan.chen\n進行時間為 2025/05/08 10:00 至 2025/05/08 11:30。\n狀態描述 (Description): 於其他User電腦進行測試\n處置動作 (Action): 1. 於其他User電腦進行測試，情況仍然相同\n2. 收集Qkview、連線紀錄har檔、User電腦Report並提供給原廠",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-99cd2f2ea83d844b7b1477f7c72122f5",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d4496e09d2ec266cc3240e798e168ae0",
+      "default:extract:735afa6d39dcd21966e08904dd7068eb"
+    ],
+    "create_time": 1773288826,
+    "update_time": 1773288920,
+    "_id": "chunk-99cd2f2ea83d844b7b1477f7c72122f5"
+  },
+  "chunk-f4106cdc828d48bff0a8b96effb2926d": {
+    "tokens": 111,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Patrick.hung\n進行時間為 2025/10/25 22:00 至 2025/10/26 07:00。\n狀態描述 (Description): 停機作業協助Standby\n處置動作 (Action): 1.協助驗證異動前服務\n2.檢查異動設定無誤\n3.協助驗證異動後服務",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-f4106cdc828d48bff0a8b96effb2926d",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4ebebbcf3c7f7601ed7fe71003fbf02c",
+      "default:extract:3ec20ec13d9afa93d9d6d9e48177722f"
+    ],
+    "create_time": 1773288919,
+    "update_time": 1773288988,
+    "_id": "chunk-f4106cdc828d48bff0a8b96effb2926d"
+  },
+  "chunk-398f45e980e3b7b92ecb83ce0020be26": {
+    "tokens": 115,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Annie.chang\n進行時間為 2025/06/19 09:30 至 2025/06/19 18:00。\n狀態描述 (Description): Checkpoint : LKK-DR_CP6600 與 CP6200 Hotfix 更新至 T99\n處置動作 (Action): 1.備份設定檔。\n2.依照SOP內容作業。\n3.Install policy 正常。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-398f45e980e3b7b92ecb83ce0020be26",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:72734890212d50fec765e9a1eeab4245",
+      "default:extract:a99133e7924f780f3479153f60def885"
+    ],
+    "create_time": 1773288920,
+    "update_time": 1773288991,
+    "_id": "chunk-398f45e980e3b7b92ecb83ce0020be26"
+  },
+  "chunk-9fbe85aade703ca568e712c80b54de80": {
+    "tokens": 147,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kevin.wu,Annie.chang,Ethan.lo,Lance.luo,Jack,Kimi.lee\n進行時間為 2025/07/25 17:00 至 2025/07/26 00:45。\n狀態描述 (Description): Checkpoint:NHQ IOT防火牆升版\n處置動作 (Action): 1.備份設定檔案\n2.關閉WUG監控\n3.依照SOP作業\n4.確認網路連通性正常\n5.開啟WUG監控",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-9fbe85aade703ca568e712c80b54de80",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:42ff66f603d657f894091506b100c333",
+      "default:extract:f95d770592fdc46092d5bb4a4f8a913f"
+    ],
+    "create_time": 1773288988,
+    "update_time": 1773289154,
+    "_id": "chunk-9fbe85aade703ca568e712c80b54de80"
+  },
+  "chunk-aaa60b80f0b6840dba3ebde0ec21b91c": {
+    "tokens": 192,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Jack,Jie.chen,Pifu\n進行時間為 2025/06/24 18:45 至 2025/06/24 19:45。\n狀態描述 (Description): 金融大樓-6F事務機套用DACL\n處置動作 (Action): 1. 檢查金融大樓6F的printer與防火牆紀錄，確認port號與網段已正常開通。\n\n2. DACL套用金融大樓6樓的printer，新增6樓最後五台。\n\n3. 檢查DACL policy有在Switch上針對printer啟用，printer測試服務正常。\n\n4. 驗證網路正常。\n\n5. 截圖提供給客戶。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-aaa60b80f0b6840dba3ebde0ec21b91c",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:f6fbed036409225b3edc438f406162c7",
+      "default:extract:ef0510aca475a6bac60158d944ff246f"
+    ],
+    "create_time": 1773289156,
+    "update_time": 1773289229,
+    "_id": "chunk-aaa60b80f0b6840dba3ebde0ec21b91c"
+  },
+  "chunk-a2be85474fe327e289c43f609d8cbd23": {
+    "tokens": 118,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Louis.chan,Bo.chen,Young.wu\n進行時間為 2025/10/27 13:58 至 2025/10/27 18:30。\n狀態描述 (Description): 使用者帳號無法登入\n處置動作 (Action): 1. 因為特例帳號無法正常登入。\n2. 確認無法登入原因。\n3. 修正資料庫後可正常登入。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-a2be85474fe327e289c43f609d8cbd23",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:481e4b487264769b74efa7af01e8fe16",
+      "default:extract:bf4ad678a3bf3e68ce4bcac89ba1d654"
+    ],
+    "create_time": 1773289157,
+    "update_time": 1773289230,
+    "_id": "chunk-a2be85474fe327e289c43f609d8cbd23"
+  },
+  "chunk-69b213408f34dca8567f4037713e97b1": {
+    "tokens": 169,
+    "content": "這是一筆關於 玉山證券 的維護紀錄。\n處理工程師為 Brian.wang\n進行時間為 2025/02/21 13:00 至 2025/02/21 17:10。\n狀態描述 (Description): 登峰機房搬移前Splunk服務與資料收容確認\n處置動作 (Action): 工作事項：\n1.機房搬動前的splunk環境健康檢查與確認splunk現有資料量\n2.將splunk架構中的IDXC角色之主機設定為維護模式，並將欲搬遷之主機splunk服務停止\n3.機房搬動後確認splunk整體環境與服務正常與確認資料依然正常接收",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-69b213408f34dca8567f4037713e97b1",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:21317a9f471bbc41ba19ab79e4d4429f",
+      "default:extract:6d0c054f1e226a04fa36228befde7dbd"
+    ],
+    "create_time": 1773289229,
+    "update_time": 1773289283,
+    "_id": "chunk-69b213408f34dca8567f4037713e97b1"
+  },
+  "chunk-763b07d815a57349c42274dea6f51fd3": {
+    "tokens": 128,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Brandon.lee,Patrick.hung\n進行時間為 2025/05/29 13:00 至 2025/05/29 18:00。\n狀態描述 (Description): 到場監控DMZ-UAT-LTM與收集原廠所需資料\n處置動作 (Action): 1. 確認設備現況\n2. 收集Qkview\n3. 當CPU High時，使用top收集進程占用資料",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-763b07d815a57349c42274dea6f51fd3",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:f713ccd5482b8eb785a8c134cb4a47a2",
+      "default:extract:f32d1179398b3bbd5bdf4549998427da"
+    ],
+    "create_time": 1773289231,
+    "update_time": 1773289285,
+    "_id": "chunk-763b07d815a57349c42274dea6f51fd3"
+  },
+  "chunk-a7f3376066468f9f8d23beb6b8442b31": {
+    "tokens": 161,
+    "content": "這是一筆關於 玉山證券 的維護紀錄。\n處理工程師為 Brian.wang\n進行時間為 2025/07/09 10:00 至 2025/07/09 12:00。\n狀態描述 (Description): splunk新增防火牆設備事件\n處置動作 (Action): 1.新增防火牆事件接收\n-於splunk上新增ckeckpoint防火牆設備事件，並確認資料可以在splunk上進行搜尋\n2.現有網路設備告警語法檢查\n-已檢查目前正在使用的設備告警語法，並確認告警使用的索引皆有成功查詢到事件",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-a7f3376066468f9f8d23beb6b8442b31",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:50648cdb105faeb76899caaad8244ab4",
+      "default:extract:95da9829b237245eed4b9713eb6d7034"
+    ],
+    "create_time": 1773289307,
+    "update_time": 1773289389,
+    "_id": "chunk-a7f3376066468f9f8d23beb6b8442b31"
+  },
+  "chunk-eed98d12697949bb387d864dfd4f5838": {
+    "tokens": 177,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Ava.lee,Eric.wong,Jarod,Wesly.chen,Alvin.ma\n進行時間為 2025/10/18 22:30 至 2025/10/19 06:00。\n狀態描述 (Description): 玉山信用卡處ASA升級弱點修復\n處置動作 (Action): 1.備份 Card-B2B-FW設定檔\n2.移除 Card-B2B-FW舊有版本設定\n3.指定新上傳的版本開機\n4.HA切換\n5.設備狀態確認\n6.移除 ASDM舊有版本設定\n7.指定新上傳的ASDM版本\n8.服務確認",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-eed98d12697949bb387d864dfd4f5838",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:bcbb506334e1f5291645d7ec412018fe",
+      "default:extract:a8ae2812f3f0384cecae4f70eeca6b3e"
+    ],
+    "create_time": 1773289307,
+    "update_time": 1773289390,
+    "_id": "chunk-eed98d12697949bb387d864dfd4f5838"
+  },
+  "chunk-643bed225dfdfa9097742dd0ea1293be": {
+    "tokens": 128,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 John.lee\n進行時間為 2025/03/21 13:00 至 2025/03/21 17:30。\n狀態描述 (Description): Splunk SH 異常hanging\n處置動作 (Action): 今日到場確認：\n目前凌晨仍有機會會突然增長CPU與記憶體。\n目前已於底層設立CPU與MEM使用監控。\n預計下周增長時確認是甚麼process導致。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-643bed225dfdfa9097742dd0ea1293be",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:163eeb98e8f00f820883cf535ca9c722",
+      "default:extract:dd46af173fbb311af11603bb7cb2add7"
+    ],
+    "create_time": 1773289389,
+    "update_time": 1773289449,
+    "_id": "chunk-643bed225dfdfa9097742dd0ea1293be"
+  },
+  "chunk-42255a01798b8c0a0e5083fafc5ba4f7": {
+    "tokens": 169,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jimmy.hsu\n進行時間為 2025/08/14 07:00 至 2025/08/14 18:00。\n狀態描述 (Description): Gigamon調整iEASY、Webcall導入Netscout\n處置動作 (Action): 1. 調整後Standby\n2. 確認Detiphy流量無異常\n3. 確認Netsocut 4個Port有無收到相關Zone導入流量\n4. 龍潭DR Port Mapping與Jack確認並修正\n5. MGMT 2960設定並攜入機房上架接線及測通",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-42255a01798b8c0a0e5083fafc5ba4f7",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b309d820385e2be8bf99fc0b6fca16cf",
+      "default:extract:6c323a0778cf51bac88c21d645180dfc"
+    ],
+    "create_time": 1773289451,
+    "update_time": 1773289506,
+    "_id": "chunk-42255a01798b8c0a0e5083fafc5ba4f7"
+  },
+  "chunk-180368c1a956b4b0e6be54709612dbbb": {
+    "tokens": 90,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Leon.lee\n進行時間為 2025/04/15 09:00 至 2025/04/15 12:30。\n狀態描述 (Description): 協助調整web政策\n處置動作 (Action): 因客戶稽核改善問題，協助調整web相關政策",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-180368c1a956b4b0e6be54709612dbbb",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4cd54c21fbcf30a6421bd9794539d134",
+      "default:extract:49c70ae08141e175d99960ec4f593d13"
+    ],
+    "create_time": 1773289451,
+    "update_time": 1773289507,
+    "_id": "chunk-180368c1a956b4b0e6be54709612dbbb"
+  },
+  "chunk-a83cba662baa1fc73affec88a2f569f7": {
+    "tokens": 182,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Leon.lee\n進行時間為 2025/01/10 10:00 至 2025/01/10 18:00。\n狀態描述 (Description): Forcepoint: 協助確認domain被轉換的問題\n處置動作 (Action): 1. forcepoint 系統確認服務皆正常\n2. 與客戶討論forcepoint 收信後並沒有修改domain的功能，也沒設定過，初步判斷為mail route 再經過微軟雲後被轉換\n3. 因影響範圍為一個子公司的同仁，先協助客戶將此子公司同仁排外\n4. 經測試後目前收信已正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-a83cba662baa1fc73affec88a2f569f7",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:35850071c1387617c2eb28244b21ebcc",
+      "default:extract:b29f758485ed58a5dcde3b96774af729"
+    ],
+    "create_time": 1773289506,
+    "update_time": 1773289573,
+    "_id": "chunk-a83cba662baa1fc73affec88a2f569f7"
+  },
+  "chunk-ff239ad976466edd031bb38e19430e6a": {
+    "tokens": 149,
+    "content": "這是一筆關於 玉山證券 的維護紀錄。\n處理工程師為 Carol.wu,Alan.chang\n進行時間為 2025/08/19 15:00 至 2025/08/19 18:00。\n狀態描述 (Description): Paloalto: TestServerFarm設定調整\n處置動作 (Action): 1. T_SF_FW 設備備份\n2. T_SF_FW確認設備狀態\n3. T_SF_FW介面移除及路由調整\n4. 網路連通性測試\n5. 服務驗證\n6. T_SF_FW 設備備份",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ff239ad976466edd031bb38e19430e6a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:efa18d46e60e94158fb915aa782e4e6b",
+      "default:extract:378bf4822fb5330a54fc58da61e6718a"
+    ],
+    "create_time": 1773289507,
+    "update_time": 1773289575,
+    "_id": "chunk-ff239ad976466edd031bb38e19430e6a"
+  },
+  "chunk-09e0633108f1ae7d0d4945f4ec064b07": {
+    "tokens": 203,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Linda.hsu\n進行時間為 2025/06/19 09:30 至 2025/06/19 17:30。\n狀態描述 (Description): Splunk每週Onsite作業\n處置動作 (Action): 今日作業項目如下：\n1. 調整現行ES規則以呈現matched_list欄位資訊\n- 現行約100條規則，目前已調整60%左右，剩餘部分下週到場將繼續調整，預計再1～2次onsite即可完成\n\n待辦事項\n1. 調整現行ES規則以呈現matched_list欄位資訊\n2. 彙整如何於資產清單新增matched_list後整合新資產\n3. 邏輯查核(暫定下週)",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-09e0633108f1ae7d0d4945f4ec064b07",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3312ac3aa32e345b6faf57fbbbb15446",
+      "default:extract:6c367109cf5cff28f25df5ac12125bfb"
+    ],
+    "create_time": 1773289574,
+    "update_time": 1773289638,
+    "_id": "chunk-09e0633108f1ae7d0d4945f4ec064b07"
+  },
+  "chunk-8d5b145e19b4a1cb13aa16a167aae29e": {
+    "tokens": 123,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Jarod\n進行時間為 2025/02/26 16:00 至 2025/02/26 21:20。\n狀態描述 (Description): CBP2 OOB交換器新增OCP網段設定\n處置動作 (Action): 1. 配合執行交換器設定新增作業\n2. 配合確認整體架構\n3. 配合完成設定新增整體作業，確認網路層已連通",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-8d5b145e19b4a1cb13aa16a167aae29e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c64bf600efc860e7c74894b7f7e5d7dd",
+      "default:extract:c6eafa32635d4383dc7d054dc6d37041"
+    ],
+    "create_time": 1773289575,
+    "update_time": 1773289640,
+    "_id": "chunk-8d5b145e19b4a1cb13aa16a167aae29e"
+  },
+  "chunk-47a31a12f8c62a017047f7ae6dfc369e": {
+    "tokens": 115,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Tim.chen,Jie.chen\n進行時間為 2025/11/04 18:45 至 2025/11/04 20:15。\n狀態描述 (Description): 設備上架\n處置動作 (Action): 1.將設備上架至新大樓3F\n2.設定ACL及802.1X\n3.將設備納入ISE\n4.確認服務正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-47a31a12f8c62a017047f7ae6dfc369e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2d24999c9faece29b03ccb87e234b1a7",
+      "default:extract:f412bc92c82c94b1defe9312096a1c85"
+    ],
+    "create_time": 1773289639,
+    "update_time": 1773289738,
+    "_id": "chunk-47a31a12f8c62a017047f7ae6dfc369e"
+  },
+  "chunk-d059064285bf2c1823cb1f6bd0a9dafa": {
+    "tokens": 237,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 John.lee\n進行時間為 2025/07/29 13:30 至 2025/07/29 17:00。\n狀態描述 (Description): Splunk工作事項 - 0729\n處置動作 (Action): 作業項目如下：\n\n\tAsset and Identity priority確認\n1.\tIdentity新增title(職稱)\n2.\tIdentity將帳號狀態加入category欄位\n3.\t未明確定義priotiry 的identity將設為low\n4.\tAssets僅針對H1、H2、H3的設備將priority設為critical，其餘皆設為low\n\t刪除舊版本殘留的ES threat intelligence download設定\n\tDLDK container NOT running\n1.\t已暫先手動重啟\n\t例行月維護\n1.\t將自動化程式放於公用電腦上，成功執行",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d059064285bf2c1823cb1f6bd0a9dafa",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:5f0d1a305c9ac7bfc6c9403caf4cdf52",
+      "default:extract:ca00f2355477d3cb1317740149fdca8f"
+    ],
+    "create_time": 1773289741,
+    "update_time": 1773289801,
+    "_id": "chunk-d059064285bf2c1823cb1f6bd0a9dafa"
+  },
+  "chunk-8c9b9f9f000a3d80cf66866f4e9691f9": {
+    "tokens": 136,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Crystal.shen\n進行時間為 2025/03/31 13:30 至 2025/03/31 17:30。\n狀態描述 (Description): Splunk駐點服務202504月第一周(2025/3/31)\n處置動作 (Action): 本周工作事項：\n1.\tSplunk版本升級\n\t已完成升版至9.3.3\n\t服務驗證正常\n2.\t3月月維護\n\n待辦事項：\n無",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-8c9b9f9f000a3d80cf66866f4e9691f9",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1601223edcf538f2a5ee5cee91ba4909",
+      "default:extract:9e99c7918934caa24d9dd6af1eb10877"
+    ],
+    "create_time": 1773289741,
+    "update_time": 1773289803,
+    "_id": "chunk-8c9b9f9f000a3d80cf66866f4e9691f9"
+  },
+  "chunk-65c4fa15c5c3785673c86e5d1c8ea089": {
+    "tokens": 180,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Edmond.lee,Kelly.su,Andrea.hong\n進行時間為 2025/03/24 13:00 至 2025/03/24 15:30。\n狀態描述 (Description): 客服環境測試區虛擬機資源回收\n處置動作 (Action): 1.客服環境測試區建立測試VM\n2.確認資源回收腳本可正常連線與執行\n3.刪除測試VM\n4.執行腳本進行虛擬機資源回收\n5.產出RVTools確認回收結果符合預期\n6.討論營運區資源回收後續準備事項",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-65c4fa15c5c3785673c86e5d1c8ea089",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a6aa624f95172730db9849becbb939cf",
+      "default:extract:4619eb1cb6371c546813dcfd879b9001"
+    ],
+    "create_time": 1773289801,
+    "update_time": 1773289897,
+    "_id": "chunk-65c4fa15c5c3785673c86e5d1c8ea089"
+  },
+  "chunk-55f093ea385b822ad72cc14784949252": {
+    "tokens": 186,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jarod,Jack\n進行時間為 2025/10/16 18:00 至 2025/10/16 21:00。\n狀態描述 (Description): 新增CDIBH NAT設定\n處置動作 (Action): 1. 分析連線需求，整理連線架構圖\n2. 使用TPE-Cloud-4331-1、TPE-Cloud-4331-2、TPE=EXT-3850-1 新增設定範本\n3. 遠端配合設定確認、驗證路由、確認IP SLA機制，確認遠傳與台固電路已可連通\n4. 服務主機尚未申請開通，本次先新增網路設備設定",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-55f093ea385b822ad72cc14784949252",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c26a98a1eaf9940435c33cb2d38c2d95",
+      "default:extract:596cd419568c02d64a0121f123986bdb"
+    ],
+    "create_time": 1773289803,
+    "update_time": 1773289898,
+    "_id": "chunk-55f093ea385b822ad72cc14784949252"
+  },
+  "chunk-0cdedd38454ddd691e21aa7b4c2fdfcc": {
+    "tokens": 120,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack\n進行時間為 2025/10/16 10:00 至 2025/10/16 12:30。\n狀態描述 (Description): DR CTI環境 Pre drill\n處置動作 (Action): 1. 依Sample Config進行設定\n2. DR CTI環境 Pre drill服務驗證\n3. 設定恢復\n4. 確認既有環境不受影響",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-0cdedd38454ddd691e21aa7b4c2fdfcc",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7f7459374f1376ea7d151454c0c12408",
+      "default:extract:3a379d05319b1c9fd0671f4311cd1336"
+    ],
+    "create_time": 1773289897,
+    "update_time": 1773289961,
+    "_id": "chunk-0cdedd38454ddd691e21aa7b4c2fdfcc"
+  },
+  "chunk-3aa0ab2663b0b34973e16ecd941a7ae0": {
+    "tokens": 86,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Jerry.zhang\n進行時間為 2025/06/13 09:00 至 2025/06/13 14:00。\n狀態描述 (Description): Standby\n處置動作 (Action): 到統一百貨附近standby\n12:00確認無問題，離場",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-3aa0ab2663b0b34973e16ecd941a7ae0",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3c5de5998f580a921d240a7c28ff818c",
+      "default:extract:1cd56c6084986c4d406aa35162d0a9c4"
+    ],
+    "create_time": 1773289898,
+    "update_time": 1773289963,
+    "_id": "chunk-3aa0ab2663b0b34973e16ecd941a7ae0"
+  },
+  "chunk-d1f363920ed5b8b4a18b39d63e828830": {
+    "tokens": 363,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Brian.wang,Linda.hsu\n進行時間為 2025/03/26 09:30 至 2025/03/26 17:10。\n狀態描述 (Description): Splunk每週onsite_0324_0328\n處置動作 (Action): 今日作業項目如下：\n1.\tCLM-PA防火牆欄位處理-已完成\n\t原本在CLM事件中的PA防火牆登入紀錄中，DEST欄位未顯示欄位值，經討論後決定將使用DVC_NAME別名為DEST，並在新增設定後檢查報表皆正常。\n2.\tSplunk3月月維護-進行中\n\t已進行月維護，將於明天完成全部報告並寄出。\n3.\tSyslog新增Vectra事件過濾條件式-進行中\n\t客戶提出需要在Vectra_http事件中新增過濾條件以收入id.orig_h欄位值符合172.16.*.250與172.19.*.250的事件，目前已在測試環境中新增條件式並測試收容事件成功，將於禮拜五申請底層權限後新增條件式。\n待辦事項：\n1.\tlinux資料斷行異常問題\n2.\taws文件查看\n3.\tdb新轉檔程式測試\n4.\tsyslog新增接收clm 事件中juniper設備的資料",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d1f363920ed5b8b4a18b39d63e828830",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0c6ae6b8dfd7031d2c740a647c0b06bf",
+      "default:extract:9f61c5d8f3f41119b76c1cda33a84c91"
+    ],
+    "create_time": 1773289961,
+    "update_time": 1773290052,
+    "_id": "chunk-d1f363920ed5b8b4a18b39d63e828830"
+  },
+  "chunk-ac7e8f91c98308bc5174c98f6a619f29": {
+    "tokens": 213,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Brian.wang\n進行時間為 2025/04/10 09:40 至 2025/04/10 15:00。\n狀態描述 (Description): Splunk每週onsite_0407_0411\n處置動作 (Action): 作業項目如下：\n1.\tWindow 版本uf 腳本新增規則-已完成\n\t目前在測試環境中新增設定檔案並判斷windows環境中是否有安裝UF，如果環境沒有則安裝UF9.2.5版本並設置帳號密碼與指向的deployment-server，如果有安裝則先進行版本備份後逐步升級。\n待辦事項：\n1.\tlinux資料斷行異常問題\n2.\tdb新轉檔程式測試 \n3.\tUbuntu uf版本升級異常問題",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ac7e8f91c98308bc5174c98f6a619f29",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9be1b8cdea63019ff1d7b3d66524ae6e",
+      "default:extract:f3b7e933334231ed81ac829b148c31ce"
+    ],
+    "create_time": 1773290055,
+    "update_time": 1773290120,
+    "_id": "chunk-ac7e8f91c98308bc5174c98f6a619f29"
+  },
+  "chunk-5892f6f1226589c3e6e47dbcd0719774": {
+    "tokens": 75,
+    "content": "這是一筆關於 玉山中国 的維護紀錄。\n處理工程師為 James.li\n進行時間為 2025/09/03 14:30 至 2025/09/03 16:30。\n狀態描述 (Description): Netapp季巡检\n處置動作 (Action): Netapp季巡检",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-5892f6f1226589c3e6e47dbcd0719774",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2918ebc71a1be70dbabfb5cea656091a",
+      "default:extract:28d0b91105c3b1b5c09a87b726a27a97"
+    ],
+    "create_time": 1773290055,
+    "update_time": 1773290122,
+    "_id": "chunk-5892f6f1226589c3e6e47dbcd0719774"
+  },
+  "chunk-47b34a427a7f16b4d2e9bb1e36a786c1": {
+    "tokens": 172,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee\n進行時間為 2025/05/28 18:45 至 2025/05/28 19:45。\n狀態描述 (Description): 敦北大樓-B1F事務機套用DACL\n處置動作 (Action): 1. 套用敦北B1F樓的最後一台printer。\n\n2. 檢查DACL policy有在Switch上針對printer啟用，printer測試服務正常。\n\n3. 驗證printer網路正常。\n\n4.splunk 搜尋比對NHQ 3F printer的連線port使用服務清單list，比對DACL的permit清單。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-47b34a427a7f16b4d2e9bb1e36a786c1",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c650fb63dc807ba1bf46255da5ce787a",
+      "default:extract:753c76e3edf8c347e459279b950f2bf6"
+    ],
+    "create_time": 1773290122,
+    "update_time": 1773290196,
+    "_id": "chunk-47b34a427a7f16b4d2e9bb1e36a786c1"
+  },
+  "chunk-b5eeedf8923d866d175f1c783f751dbe": {
+    "tokens": 138,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Louis.chan,Young.wu\n進行時間為 2025/10/28 14:01 至 2025/10/28 18:30。\n狀態描述 (Description): 特定一些AT開頭的使用者無法傳入資料\n處置動作 (Action): 1. 確認系統LOG確定AT使用者無法傳入資料原因。\n2. 因為原編大小寫不同導致無法撈取正確使用者。\n3. 修改後可成功傳入資料。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-b5eeedf8923d866d175f1c783f751dbe",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0af891cd995063694c35226fa7cb7727",
+      "default:extract:ae6aaf16ef453dd72f6bc09b6d913bb1"
+    ],
+    "create_time": 1773290132,
+    "update_time": 1773290207,
+    "_id": "chunk-b5eeedf8923d866d175f1c783f751dbe"
+  },
+  "chunk-9f7e790874cf9a3bf3593da7426be961": {
+    "tokens": 158,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Louis.chan\n進行時間為 2025/06/13 10:00 至 2025/06/13 17:00。\n狀態描述 (Description): ECP表單語音告警代碼批量修改頁面顯示錯誤\n處置動作 (Action): 1 . 經過確認後,在儲存取代文字字樣的LIST儲存方式錯誤，已調整為正確邏輯。\n2. 上午進行 測試區上版測試 功能正常\n3. 下午進行 正式區上版功能測試 功能正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-9f7e790874cf9a3bf3593da7426be961",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8b5b560b48531224a23ba29ba112ea52",
+      "default:extract:9feb18d45a08d1bd0c3e0ae2cf127240"
+    ],
+    "create_time": 1773290221,
+    "update_time": 1773290277,
+    "_id": "chunk-9f7e790874cf9a3bf3593da7426be961"
+  },
+  "chunk-e6b4a1745971b94802cc4825d9517f36": {
+    "tokens": 110,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Akira.chang\n進行時間為 2025/12/19 14:00 至 2025/12/19 18:30。\n狀態描述 (Description): ImpervaGW2 Crash Again\n處置動作 (Action): 到現場進行RAID韌體升級，結果韌體升級失敗，後續會在開原廠CASE進行問題分析。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-e6b4a1745971b94802cc4825d9517f36",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d6fb5d0f3e68954bb4d70f38747b0c23",
+      "default:extract:845516011e2d1df6d5d575ac37a92bb0"
+    ],
+    "create_time": 1773290221,
+    "update_time": 1773290279,
+    "_id": "chunk-e6b4a1745971b94802cc4825d9517f36"
+  },
+  "chunk-0c2cabb6a42acfe4e7d3cd960e82ba03": {
+    "tokens": 107,
+    "content": "這是一筆關於 玉山中国 的維護紀錄。\n處理工程師為 James.li\n進行時間為 2025/07/16 10:00 至 2025/07/16 12:00。\n狀態描述 (Description): 测试区卫士通加密机远端无法连接后台\n處置動作 (Action): 前往现场直连\n协助客户设定IP至白名单\n因无法重启所以无法测试远端连接方式",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-0c2cabb6a42acfe4e7d3cd960e82ba03",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:77eba86c69cf183f4ec1df2d6309fb5a",
+      "default:extract:9b2740a12e9c6a11f1b56d31e7390ee3"
+    ],
+    "create_time": 1773290277,
+    "update_time": 1773290332,
+    "_id": "chunk-0c2cabb6a42acfe4e7d3cd960e82ba03"
+  },
+  "chunk-bfa180562d852b8587b38ba6a2b47e59": {
+    "tokens": 152,
+    "content": "這是一筆關於 玉山證券 的維護紀錄。\n處理工程師為 Carol.wu,Jerry.zhang\n進行時間為 2025/07/08 15:00 至 2025/07/08 18:00。\n狀態描述 (Description): Paloalto: TestServerFarm升版至11.1.10\n處置動作 (Action): 1. 更新檔預先下載\n2. 狀態確認\n3. 設備備份\n4. App版本更新\n5. T_SF_FW升版至11.1.10\n6. 狀態確認\n7. 服務驗證\n8. 設備備份",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-bfa180562d852b8587b38ba6a2b47e59",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:31364192bbdf2e69916867648dd4d496",
+      "default:extract:bcdc03ca1eca96c5e727b9bfb1e4ae10"
+    ],
+    "create_time": 1773290315,
+    "update_time": 1773290371,
+    "_id": "chunk-bfa180562d852b8587b38ba6a2b47e59"
+  },
+  "chunk-59e11205ed186955571046f2f11e925f": {
+    "tokens": 144,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Crystal.shen\n進行時間為 2025/04/02 17:30 至 2025/04/02 18:20。\n狀態描述 (Description): Splunk工作事項說明(2025/4/2)\n處置動作 (Action): 今日作業內容如下：\n1. Prisma資料收容\n Incident Review有收到status為resolved的資料\n 先前語法已將status=resolved排除，目前不確定為何出現此狀況\n 已重新建立告警，後續繼續觀察",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-59e11205ed186955571046f2f11e925f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7cbbfce376615bc5de1bf1da0f04e819",
+      "default:extract:6c86e3cc2a1a80d9935a78902353896a"
+    ],
+    "create_time": 1773290332,
+    "update_time": 1773290385,
+    "_id": "chunk-59e11205ed186955571046f2f11e925f"
+  },
+  "chunk-e1647cc878c5f299747f553afb7f6977": {
+    "tokens": 112,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Annie.chang,Kevin.wu\n進行時間為 2025/03/17 17:00 至 2025/03/17 23:00。\n狀態描述 (Description): Checkpoint:嘉義、台南新增網段與路由\n處置動作 (Action): 1.備份設定檔\n2.依照SOP內容作業\n3.驗證服務正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-e1647cc878c5f299747f553afb7f6977",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:62d1db825dadd7f812feabbbf676f5d2",
+      "default:extract:152dc57c51aa74bc62bd861e854d9ffa"
+    ],
+    "create_time": 1773290372,
+    "update_time": 1773290427,
+    "_id": "chunk-e1647cc878c5f299747f553afb7f6977"
+  },
+  "chunk-317cd3b1caf5869b2eae3938639d1dfa": {
+    "tokens": 106,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Alan.chang\n進行時間為 2025/02/19 07:00 至 2025/02/19 15:00。\n狀態描述 (Description): 更換配件\n處置動作 (Action): 更換raid card電池，確認連線正常。下午確認管理介面問題，移除設定檔中無用的部分後正常使用網頁管理。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-317cd3b1caf5869b2eae3938639d1dfa",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:abcfb7589dc115d4f287ab4fc5440cf8",
+      "default:extract:d3e9923d1a3df3886cf441c4599c1c4b"
+    ],
+    "create_time": 1773290385,
+    "update_time": 1773290439,
+    "_id": "chunk-317cd3b1caf5869b2eae3938639d1dfa"
+  },
+  "chunk-b1fa608ff24ffe19e853ce1c4c6495f5": {
+    "tokens": 101,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack,Kimi.lee\n進行時間為 2025/02/24 08:00 至 2025/02/24 12:00。\n狀態描述 (Description): ISE 系統更新Patch後Standby\n處置動作 (Action): 1. 確認TACACS及Raduis驗證正常\n2. Standby",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-b1fa608ff24ffe19e853ce1c4c6495f5",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8852ea16854f0ac2d52ff05844e6e6d4",
+      "default:extract:c5edd01bdc777447378490aeddfeda3d"
+    ],
+    "create_time": 1773290428,
+    "update_time": 1773290499,
+    "_id": "chunk-b1fa608ff24ffe19e853ce1c4c6495f5"
+  },
+  "chunk-20bb4161f0377445984f317c8c8de2e2": {
+    "tokens": 137,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Gennie.lin,Kelly.su,Edmond.lee,Rk.kuan,Astor.wu,Jamie.teng,Samuel.liao\n進行時間為 2025/06/18 15:00 至 2025/06/18 18:00。\n狀態描述 (Description): 測試區NSX POC轉SIT討論\n處置動作 (Action): 1.NSX 測試項目整理及相關時程規劃討論\n2.待協助事項整理與討論",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-20bb4161f0377445984f317c8c8de2e2",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c2d23d62b0679180e98a808f8c7aa60a",
+      "default:extract:d5c77d4d48acfde66e6638ec3ac4b3e3"
+    ],
+    "create_time": 1773290497,
+    "update_time": 1773290605,
+    "_id": "chunk-20bb4161f0377445984f317c8c8de2e2"
+  },
+  "chunk-9915470f74c6ad8f8f23cc768e099068": {
+    "tokens": 253,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Crystal.shen,Chuen.lin,John.lee\n進行時間為 2025/06/23 13:30 至 2025/06/23 17:30。\n狀態描述 (Description): Splunk駐點服務202506第四周(2025/6/23)\n處置動作 (Action): 本周工作事項：\n1.\t已更新geodb\n2.\t已完成GitLab升版 (17.3.3 ->17.10.8)\n3.\t已提供Splunk監控項目清單\n4.\tNoname告警與報表建置\n\tNoname攻擊偵測告警，條件為有偵測出attacktype的低中高風險事件\n\tNoname攻擊偵測統計報表，條件為Noname紀錄中無attacktype欄位之低中高風險異常事件統計\n\n待辦事項：\n1.\t確認W9015943使用者未自動帶出網域使用者原因",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-9915470f74c6ad8f8f23cc768e099068",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3b9a76b48a34a8c00ad54a219a3dc4cb",
+      "default:extract:2d3497c4e5fa889ffa5e1a6a0af758ec"
+    ],
+    "create_time": 1773290499,
+    "update_time": 1773290607,
+    "_id": "chunk-9915470f74c6ad8f8f23cc768e099068"
+  },
+  "chunk-23065adb29e08eb86e0e90f86e07c3d8": {
+    "tokens": 123,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack,Tim.chen,Jie.chen\n進行時間為 2025/11/04 17:30 至 2025/11/04 20:15。\n狀態描述 (Description): 總部大樓308會議室，新增交換機\n處置動作 (Action): 1. 確認可用網點\n2. 交換機設定\n3. ISE設備納管\n4. 服務驗證正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-23065adb29e08eb86e0e90f86e07c3d8",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b022e38e7a65c8413c611be29fcea092",
+      "default:extract:80c53e9ea840603a5aab89a37af60760"
+    ],
+    "create_time": 1773290664,
+    "update_time": 1773290741,
+    "_id": "chunk-23065adb29e08eb86e0e90f86e07c3d8"
+  },
+  "chunk-675f8c7c35ccf6eca14c59f112de7e29": {
+    "tokens": 187,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Adam.luo,Edmond.lee,Gennie.lin,Kelly.su\n進行時間為 2025/07/31 17:30 至 2025/08/01 01:00。\n狀態描述 (Description): [(非維護)桌面雲-ESXi弱點修復]\n處置動作 (Action): OA桌面雲\n1. ESXVDIOA09-12、ESXVDIOA21 修復升級至 7.0U3w\n2. 確認 ESXi 元件 Driver 版本\n3. 升級後確認用戶端連線與 ESXi 服務皆正常\n\n已升級台數: 9/23，8/1 上午 8:40 待命",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-675f8c7c35ccf6eca14c59f112de7e29",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:aa5564389dbe69cad5de84783ac1bab2",
+      "default:extract:60358e41f51390a97748b2d2ad11fe64"
+    ],
+    "create_time": 1773290664,
+    "update_time": 1773290742,
+    "_id": "chunk-675f8c7c35ccf6eca14c59f112de7e29"
+  },
+  "chunk-4f2958f7d94a8c0faa052de9fff2e3d4": {
+    "tokens": 129,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Ben.jen\n進行時間為 2025/03/07 09:00 至 2025/03/07 18:00。\n狀態描述 (Description): 03/07資安監控維運駐點服務\n處置動作 (Action): 1. 資安監控分析 : WAF\n2. 設備系統狀態確認\n3. 站台憑證日期確認\n4. 站台防禦事件確認",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-4f2958f7d94a8c0faa052de9fff2e3d4",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:82e3e8061d4b054f421f57cb02faa9a9",
+      "default:extract:8c18d73a3bd4619d340ebc887cab162c"
+    ],
+    "create_time": 1773290743,
+    "update_time": 1773290790,
+    "_id": "chunk-4f2958f7d94a8c0faa052de9fff2e3d4"
+  },
+  "chunk-cf8a4927809ba7a028ae5846f08c9832": {
+    "tokens": 120,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Annie.chang\n進行時間為 2025/07/30 15:30 至 2025/07/30 17:00。\n狀態描述 (Description): Checkpoint : 防火牆設備更新正式License\n處置動作 (Action): 1.下載正式授權檔案至電腦\n2.將授權檔上傳至 SmartConsole\n3.完成防火牆設備的授權更新",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-cf8a4927809ba7a028ae5846f08c9832",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3053d32e7810053091f5566e583231cd",
+      "default:extract:ff5a96a17f6480c1581847019292e77a"
+    ],
+    "create_time": 1773290788,
+    "update_time": 1773290859,
+    "_id": "chunk-cf8a4927809ba7a028ae5846f08c9832"
+  },
+  "chunk-12454c1b85520a294873ca9610f73646": {
+    "tokens": 400,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Crystal.shen,John.lee\n進行時間為 2025/07/16 13:30 至 2025/07/16 17:30。\n狀態描述 (Description): Splunk駐點服務工作事項說明(2025/07/16)\n處置動作 (Action): 本日駐點工作內容如下：\n商銀：\n1.\t調整<同仁外寄郵件至外部主要免費信箱與滴漏式週報表>、<華開租賃同仁外寄郵件至外部主要免費信箱與滴漏式週報表>\n\t排除滴漏式種類中收件對象為 \"*@cdibcapital.com\", \"*@kgi.com\", \"*@cdibh.com\"\n\t已寄送測試郵件並請Hank確認\n2.\t調整<外部網頁檔案傳輸中低風險明細週報表>、<華開租賃外部網頁檔案傳輸中低風險明細週報表>\n\t排除傳送目的為\"*.OFFICEAPPS.LIVE.COM\"\n3.\tES告警建立notable方式\n\t若在\"搜尋、報告與警示\"中原本已建立的告警新增notable動作，無法設定notable的欄位，故無法呈現在ES的incident review中\n\t由ES > 設定 > 內容 > Content Management > Create New Content > Correlation Search設定告警，方可設定notable欄位並建立ticket\n\t提供目前觸發告警時會建立notable的告警名單(Splunk_ES_notable)\n\n金控：",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-12454c1b85520a294873ca9610f73646",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b3787b4ba95c80812c589d886693f2c3",
+      "default:extract:572de29f89545027a1e0724613ae1342"
+    ],
+    "create_time": 1773290791,
+    "update_time": 1773290861,
+    "_id": "chunk-12454c1b85520a294873ca9610f73646"
+  },
+  "chunk-f6ce35264400261957cfe03e45a8455a": {
+    "tokens": 128,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Chuen.lin,John.lee\n進行時間為 2025/05/27 10:00 至 2025/05/27 11:30。\n狀態描述 (Description): Splunk ECS 套件更新\n處置動作 (Action): 今日已到場更新ECS套件。由於新舊資料尚未同步，故無法驗證儀表板呈現結果是否正確。待資料同步後會再到場協助確認。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-f6ce35264400261957cfe03e45a8455a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0a3c163853690c93222f8b0005d82878",
+      "default:extract:ced12acfa7ab58fa1dd7e131a219c622"
+    ],
+    "create_time": 1773290859,
+    "update_time": 1773290935,
+    "_id": "chunk-f6ce35264400261957cfe03e45a8455a"
+  },
+  "chunk-c21d17800b397520d23e97cd2199677a": {
+    "tokens": 180,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Crystal.shen\n進行時間為 2025/09/09 09:30 至 2025/09/09 12:00。\n狀態描述 (Description): Splunk工作事項說明(2025/09/09)\n處置動作 (Action): 今日到場作業，作業內容如下：\n1.\t確認ISE報表內容\n\t8/20 Splunk並未收到17:05-17:06的log，故報表缺少設定ip route的資料\n\t已確認部分日期(7/3、9/8)的資料都正常，且Splunk之前也有收到ip route的資料，故目前無法確認8/20 log缺少的原因",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-c21d17800b397520d23e97cd2199677a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c0b87f293cc51d860eb35d4d5ee54e9d",
+      "default:extract:2c488a704b5c3fc60c2e2bf28c93251b"
+    ],
+    "create_time": 1773290861,
+    "update_time": 1773290937,
+    "_id": "chunk-c21d17800b397520d23e97cd2199677a"
+  },
+  "chunk-94cedfeba9f405f406745d16a167ed29": {
+    "tokens": 381,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Patrick.hung,Brandon.lee\n進行時間為 2025/06/23 14:00 至 2025/06/23 17:00。\n狀態描述 (Description): FCB項目修補\n處置動作 (Action): 1.TWGCB-01-008-0247 - 停用並遮蔽nftables服務\n2.TWGCB-01-008-0103 - 移除telnet套件\n3.TWGCB-01-008-0234 - 設定螢幕保護裝置\n4.TWGCB-01-008-0291 - 尋找任何「.shosts」檔案並刪除：未找到\n5.TWGCB-01-008-0290 - 尋找任何「shosts.equiv」檔案並刪除：未找到\n6.TWGCB-01-008-0183 - 尋找/var/log群組具有寫入(w)或執行(x)權限與其他使用者具有讀取(r)、寫入(w)或執行(x)權限並移除該權限\n7.TWGCB-01-008-0126 (Ensure DCCP is disabled)\n8.TWGCB-01-008-0002 (Ensure mounting of squashfs filesystems is disabled)\n9.FCB-01-002-0008 (RHEL 8 must disable IEEE 1394 (FireWire) Support.)\n10.TWGCB-01-008-0173 - 依照合規規範要求/etc/audit/rules.d/audit.rules改為 -e 2",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-94cedfeba9f405f406745d16a167ed29",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0dd48f8d5eecd9dcc73ab554f228c599",
+      "default:extract:35bc962933b0c40c0043f5e4b92aa156"
+    ],
+    "create_time": 1773290973,
+    "update_time": 1773291085,
+    "_id": "chunk-94cedfeba9f405f406745d16a167ed29"
+  },
+  "chunk-bc0e051347f14f69ae245498af2c5667": {
+    "tokens": 177,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Pifu\n進行時間為 2025/11/17 11:00 至 2025/11/18 09:00。\n狀態描述 (Description): WUG ISCM Servece Down\n處置動作 (Action): WUG ISCM Service 異常，進行 WUG 系統修復，ISCP 服務異常。\n解除安裝WUG，重新安裝WUG，ISCP 服務異常。\n原廠開TAC Support ，提供WUG 系統LOG\nWUG VM 系統還原至上周五，完成後WUG服務檢查異常。\n將敦北設備監控移至新大樓WUG並進行告警通知設定",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-bc0e051347f14f69ae245498af2c5667",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3266736566809132dda07cf91304507c",
+      "default:extract:87ea38273216d5fd9b6fad4aa826ad69"
+    ],
+    "create_time": 1773290973,
+    "update_time": 1773291087,
+    "_id": "chunk-bc0e051347f14f69ae245498af2c5667"
+  },
+  "chunk-5b06b3066c4dab333829aa488d182979": {
+    "tokens": 188,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Teddy\n進行時間為 2025/08/05 18:45 至 2025/08/05 20:15。\n狀態描述 (Description): DDoS演練_IS網路流量設定調整\n處置動作 (Action): 1.  DDoS演練前會議，討論出要新增ECAP-3850的SPAN 流量與監控。\n\n2.  ECAP-3850新增monitor session與跳接線到gigamon 上。\n\n3.  gigamon上設定mirror 給Netscout。\n\n4.  檢查gigamon流量正常接收傳送。\n\n5.  確認Netscout有接收流量與設定。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-5b06b3066c4dab333829aa488d182979",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7356490bb582ccdf5a1800060c9cce80",
+      "default:extract:92e43967215855a6f8fae5150714248a"
+    ],
+    "create_time": 1773291085,
+    "update_time": 1773291187,
+    "_id": "chunk-5b06b3066c4dab333829aa488d182979"
+  },
+  "chunk-33c836c57335d57c5dc66e8610bb0491": {
+    "tokens": 183,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Adam.luo,Edmond.lee\n進行時間為 2025/07/04 17:30 至 2025/07/04 22:00。\n狀態描述 (Description): [(非維護)委外區桌面雲-ESXi升級]\n處置動作 (Action): 委外區桌面雲\n1. NSX Manager 預先重啟，檢查升級整備狀態\n2. ESXVDICBP30-31 升級至 8.0U3e\n3. 確認 ESXi 元件 Driver 版本\n4. 升級後確認用戶端連線與 ESXi 服務皆正常\nESXi 全數升級完成",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-33c836c57335d57c5dc66e8610bb0491",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:59087c42183d972563ddb4b61c34a00a",
+      "default:extract:01e7fd3a8e7060106253466510b90f32"
+    ],
+    "create_time": 1773291087,
+    "update_time": 1773291189,
+    "_id": "chunk-33c836c57335d57c5dc66e8610bb0491"
+  },
+  "chunk-a6e9fb56f60beca93205e44c4a5ff829": {
+    "tokens": 199,
+    "content": "這是一筆關於 玉山中国 的維護紀錄。\n處理工程師為 James.li,Jason\n進行時間為 2025/03/20 09:00 至 2025/03/20 18:00。\n狀態描述 (Description): 202503月例会报告产出\n處置動作 (Action): 1. 系統服務器資源巡檢彙整 T24 , OA , Test , GZ［CPU、Memory、Disk］\n2. 存儲資源巡檢彙整 Netapp , Nutanix［Disk Free and Use］\n3. NBU 資源巡查彙整\n4. IPS VDB Version Chenk and Upgrade\n5. IPS High Alert Check and Report\n6. 專案進度討論\n7. 待辦事項討論\n8. 月例會文件彙整和產出",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-a6e9fb56f60beca93205e44c4a5ff829",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a02d1adc622152558095588fb7521a08",
+      "default:extract:bc7b0149a553fd579d505106b238308a"
+    ],
+    "create_time": 1773291188,
+    "update_time": 1773291282,
+    "_id": "chunk-a6e9fb56f60beca93205e44c4a5ff829"
+  },
+  "chunk-6b2f0612b2edf21abee3e17c265ba83a": {
+    "tokens": 170,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Patrick.hung,Brandon.lee\n進行時間為 2025/05/20 18:00 至 2025/05/20 22:30。\n狀態描述 (Description): IntrAP-UAT-LTM升版至v17.1.2.2\n處置動作 (Action): 1.F5 Renew License\n2.F5 升級至17.1.2.2HF013\n3.F5 調整Management Provisioning為Large\n4.F5 檢測Gateway正常\n5.F5 hostname改為IntraAP-UAT-LTM-1.kgilife. com.tw\n6.F5 ucs、qkview備份",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-6b2f0612b2edf21abee3e17c265ba83a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:bbe0e9956f36eddf80b20ed76c1f5aab",
+      "default:extract:6b44ef1f259cdca1f7afb2c6757fcea5"
+    ],
+    "create_time": 1773291190,
+    "update_time": 1773291284,
+    "_id": "chunk-6b2f0612b2edf21abee3e17c265ba83a"
+  },
+  "chunk-1bb87e18d874c0138035d30f04d395f6": {
+    "tokens": 194,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Alfred.yang\n進行時間為 2025/02/12 10:00 至 2025/02/12 11:00。\n狀態描述 (Description): PostgreSQL Agent稽核功能異常\n處置動作 (Action): 1. ANACTM01 Agent 移除原廠建議進階設定後重啟。\n2. JIRADB1 Agent移除設定。\n3. JIRADB02 Agent重新註冊。\n4. 於MX GUI確認除TSBPGSQL02 Agent仍無活動外，其餘Agent稽核功能均正常。\n5. 針對TSBPGSQL02 Agent，於MX GUI下載MX、GW、Agent GTI檔案並截圖Agent狀態，用以後續回覆原廠。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-1bb87e18d874c0138035d30f04d395f6",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:6dedf0e431345c767ff6f837e5d2c9e1",
+      "default:extract:21a7058dbba225ca7bf816c4e662fcc7"
+    ],
+    "create_time": 1773291282,
+    "update_time": 1773291362,
+    "_id": "chunk-1bb87e18d874c0138035d30f04d395f6"
+  },
+  "chunk-b99b78f63fdbd3eb00493aa9aeb52e80": {
+    "tokens": 142,
+    "content": "這是一筆關於 台新證券 的維護紀錄。\n處理工程師為 Leon.lee,Hank.chang\n進行時間為 2025/05/08 14:00 至 2025/05/08 18:00。\n狀態描述 (Description): 確認hybrid status\n處置動作 (Action): 1. 協助設定hybrid 相關功能\n2. sync 使用者時發現有重複的email, 初步判斷帳號已被銀行使用\n3. 先銀行確認將目前證券的帳號排除後，在協助證券同步帳號",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-b99b78f63fdbd3eb00493aa9aeb52e80",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1bbf04fceedbfadb5000a1274caf0a2a",
+      "default:extract:018b4829ad4e0780828541539af434d3"
+    ],
+    "create_time": 1773291322,
+    "update_time": 1773291410,
+    "_id": "chunk-b99b78f63fdbd3eb00493aa9aeb52e80"
+  },
+  "chunk-288c3deff7514a62ddee51251ab506ec": {
+    "tokens": 124,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Kero.lee\n進行時間為 2025/12/15 18:45 至 2025/12/15 20:45。\n狀態描述 (Description): 弱點修復測試\n處置動作 (Action): 1. 查詢弱點修復方式\n2. 於相同版本Foorcepoint 的Lab環境測試弱點修復\n3. 使用弱掃軟體掃描，確認是否完成修復",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-288c3deff7514a62ddee51251ab506ec",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:633b7cb64e2f089652dc4a67f0a2f538",
+      "default:extract:f42d7f23e8dbe451929ba8a36f13369e"
+    ],
+    "create_time": 1773291362,
+    "update_time": 1773291438,
+    "_id": "chunk-288c3deff7514a62ddee51251ab506ec"
+  },
+  "chunk-ea88faf3854a1d3ab1d599e24c59b80e": {
+    "tokens": 290,
+    "content": "這是一筆關於 台新證券 的維護紀錄。\n處理工程師為 Linda.hsu\n進行時間為 2025/02/11 09:30 至 2025/02/11 17:30。\n狀態描述 (Description): AP無法查找splunk授權資料\n處置動作 (Action): 狀況說明\n- 去年因收容資料日漸增加，導致目前每日授權皆會超量，為檢視現行收容資料之必要性，故需提供此資訊供AP使用\n無法查找原因\n- 此為權限問題，僅有高權限帳號能查看授權資料\n解決方法\n- 利用報表寄送方式提供資料給AP，原利用PDF進行寄送，惟user反應csv格式編輯比較方便，不過splunk預設在寄送csv這塊沒辦法直接處理多值，直接寄送，多值會擠在同一儲存格中難以辨識，因其他客戶遇過類似問題，當時有利用程式處理，預計測試後2/14早上來上線，這幾天如討論就先用PDF看，PDF每天早上06:05會寄送",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ea88faf3854a1d3ab1d599e24c59b80e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:6808bfe8512a1c117158e77c5c2e41a9",
+      "default:extract:adf42e7739132443ef1253b229718d2f"
+    ],
+    "create_time": 1773291411,
+    "update_time": 1773291498,
+    "_id": "chunk-ea88faf3854a1d3ab1d599e24c59b80e"
+  },
+  "chunk-51506bd24c37f748b4be581ada602d47": {
+    "tokens": 155,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Jerry.zhang\n進行時間為 2025/12/15 08:00 至 2025/12/15 12:00。\n狀態描述 (Description): 外點百貨設備巡檢\n處置動作 (Action): 抓取以下設備的config:\nHHPAFW01/ HHPAFW02\nXYPAFW01/ XYPAFW02\nLBPAFW01/LBPAFW02\nHSPAFW01/HSPAFW02\nDJPAFW01/ DJPAFW02\n\n頻寬不夠，只抓其中一台\nBJPAFW01\nJYPAFW01",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-51506bd24c37f748b4be581ada602d47",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ffe738dd8a264a59941a870788841277",
+      "default:extract:dc506a9c24b6dfaa9ad22db2b4a9cd50"
+    ],
+    "create_time": 1773291438,
+    "update_time": 1773291521,
+    "_id": "chunk-51506bd24c37f748b4be581ada602d47"
+  },
+  "chunk-c99aa6c1f262a0f1823672b8cec208f3": {
+    "tokens": 94,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Alex.ji,Lynn.yao\n進行時間為 2025/12/10 14:30 至 2025/12/10 15:30。\n狀態描述 (Description): 資料成功交接\n處置動作 (Action): 前往內湖台新大樓與負責工程師取得案件必要文件",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-c99aa6c1f262a0f1823672b8cec208f3",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:07564ffbcaa4c5edfb7a548a784ee3f5",
+      "default:extract:7d63b1d0d3d67bcd39f69951a46a474d"
+    ],
+    "create_time": 1773291574,
+    "update_time": 1773291653,
+    "_id": "chunk-c99aa6c1f262a0f1823672b8cec208f3"
+  },
+  "chunk-061b23539a233aa091e0df376b7434a0": {
+    "tokens": 69,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Ct\n進行時間為 2025/06/04 09:00 至 2025/06/04 13:00。\n狀態描述 (Description): Standby\n處置動作 (Action): 一切正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-061b23539a233aa091e0df376b7434a0",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3d8bf234c1d919a93b3718126b1b1cbc",
+      "default:extract:2435dde53153de2963340e66046421dd"
+    ],
+    "create_time": 1773291574,
+    "update_time": 1773291655,
+    "_id": "chunk-061b23539a233aa091e0df376b7434a0"
+  },
+  "chunk-cc17c9f10d9e69f29edc25310f6f18e0": {
+    "tokens": 125,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Jack\n進行時間為 2025/08/21 18:45 至 2025/08/21 19:45。\n狀態描述 (Description): DB ServerFarm跳線需求\n處置動作 (Action): 1. DB-9500-5 新增10G Fiber介面跳線到指定Pannel，接線完成與設定。\n\n2. 與客戶測試server連線，確認資料連通正常。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-cc17c9f10d9e69f29edc25310f6f18e0",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:858f3539efb7e034647fed85edd07e21",
+      "default:extract:61355a9d6e211929dd0ac455be5b8942"
+    ],
+    "create_time": 1773291653,
+    "update_time": 1773291717,
+    "_id": "chunk-cc17c9f10d9e69f29edc25310f6f18e0"
+  },
+  "chunk-55b5354c0d00a6bbcdc4ec9582f84ff5": {
+    "tokens": 152,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee\n進行時間為 2025/03/04 18:45 至 2025/03/04 22:15。\n狀態描述 (Description): 台中專線線路問題排查\n處置動作 (Action): 1.台中 evoice 與總流量確認與截圖。 \n2. 台固、遠傳線路與介面檢查，測試ping掉包與延遲狀態。\n3. evoice  client PBR IP清單 調整與監控。\n4. 明早設備待命。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-55b5354c0d00a6bbcdc4ec9582f84ff5",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7782588f451fc267d2546531a448b062",
+      "default:extract:f1b81b16b8c0f32205b6b9684a03ca1c"
+    ],
+    "create_time": 1773291720,
+    "update_time": 1773291789,
+    "_id": "chunk-55b5354c0d00a6bbcdc4ec9582f84ff5"
+  },
+  "chunk-fe61bb800d4efd31f4808fb4cb57e829": {
+    "tokens": 122,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Brandon.lee,Patrick.hung\n進行時間為 2025/05/21 08:30 至 2025/05/21 17:00。\n狀態描述 (Description): UAT環境 F5 升版後standby\n處置動作 (Action): 1. 備份UCS、Qkview\n2. 查看設備效能\n3. 檢查設備Log\n4. 確認服務正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-fe61bb800d4efd31f4808fb4cb57e829",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1ba0fe45be7ab99f41c7bc002c3b2f0a",
+      "default:extract:a7e4d002b7a2cc7e1f30f5f91c448cd5"
+    ],
+    "create_time": 1773291741,
+    "update_time": 1773291808,
+    "_id": "chunk-fe61bb800d4efd31f4808fb4cb57e829"
+  },
+  "chunk-34b4aa4a40e13df4259f0278f9dc808b": {
+    "tokens": 147,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Louis.chan\n進行時間為 2025/09/26 14:36 至 2025/09/26 15:30。\n狀態描述 (Description): oms Autopatch 腳本運行待命\n處置動作 (Action): 1. 執行剩餘的測試環境Server 的autoPatch腳本。\n2. 因腳本運行過久需要等待經辦確認是否該ansible 腳本運行正常。\n3. 後續再等待回覆後確認是否需要再來進行環境功能確認。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-34b4aa4a40e13df4259f0278f9dc808b",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ab2d57641dd51c2a9a0ea5be38c0c2fc",
+      "default:extract:fc5d4e75ca72a91dd35983d22971c4c3"
+    ],
+    "create_time": 1773291790,
+    "update_time": 1773291869,
+    "_id": "chunk-34b4aa4a40e13df4259f0278f9dc808b"
+  },
+  "chunk-56976c03365c4d72fe779da0b67343e1": {
+    "tokens": 235,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Crystal.shen\n進行時間為 2025/02/27 13:00 至 2025/02/27 14:30。\n狀態描述 (Description): Splunk SIEM(02)月維護.DM20240200+DN20240393+季驗收單\n處置動作 (Action): 南山人壽\n1.授權用量 :建議擴充\n- 授權量 : 150 GB\n- 平均授權使用量 : 179.49 GB\n2.伺服器效能 : 正常\n3.系統優化建議 : 無\n4.版本更新 : 暫不更新\n- 當前版本: 9.3.2 / 2024.11.07\n- 最新版本: 9.4.1 / 2025.02.26\n- 因目前版本未有重大弱點，也未受相關BUG影響，故建議暫不升版",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-56976c03365c4d72fe779da0b67343e1",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2040dcf45852b6b7840258c9edd30427",
+      "default:extract:b1abe77c6f671d7da833a63ed157927e"
+    ],
+    "create_time": 1773291809,
+    "update_time": 1773291892,
+    "_id": "chunk-56976c03365c4d72fe779da0b67343e1"
+  },
+  "chunk-9ea7c1467675e2cfba39da931edc603b": {
+    "tokens": 124,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Roger.huang,Adam.luo\n進行時間為 2025/04/18 11:00 至 2025/04/18 17:00。\n狀態描述 (Description): 人資宿舍桌面雲-zeroclient 問題確認\n處置動作 (Action): 1.Zero client流量測試\n2.與客戶討論問題，後續確認為人資安裝桌機，導致被掃出SMB弱點",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-9ea7c1467675e2cfba39da931edc603b",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:690f93d1b1cfa5b2dec3435af97d161b",
+      "default:extract:d4953011226d69fe3fc753f505e1455a"
+    ],
+    "create_time": 1773291964,
+    "update_time": 1773292040,
+    "_id": "chunk-9ea7c1467675e2cfba39da931edc603b"
+  },
+  "chunk-45fd39a650f1b6ffe26c6e019abbb086": {
+    "tokens": 250,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kevin.wu,Annie.chang\n進行時間為 2025/07/30 17:00 至 2025/07/30 21:00。\n狀態描述 (Description): 台南、花蓮CP1570切換輪流重啟\n處置動作 (Action): 1.備份設定檔。\n2.HUA_CP1570-01設備重啟，重啟完後確認設備狀態正常\n3.將流量切至HUA_CP1570-01，並確認服務正常\n4.HUA_CP1570-02設備重啟，重啟完後確認設備狀態正常\n5.TNN_CP1570-02設備重啟，重啟完後確認設備狀態正常\n6.將流量切至TNN_CP1570-02，並確認服務正常\n7.TNN_CP1570-01設備重啟，重啟完後確認設備狀態正常\n8.隔天8:30到場Standby",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-45fd39a650f1b6ffe26c6e019abbb086",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:eb868ed33ff92cbaf2dbcd57215e31d3",
+      "default:extract:7947df61e6991fb7b6aee513b7f729de"
+    ],
+    "create_time": 1773291964,
+    "update_time": 1773292041,
+    "_id": "chunk-45fd39a650f1b6ffe26c6e019abbb086"
+  },
+  "chunk-b46ccbebe8bb179ecdf4c75c9e16c06c": {
+    "tokens": 103,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack\n進行時間為 2025/10/19 13:00 至 2025/10/19 18:00。\n狀態描述 (Description): DR演練前置作業\n處置動作 (Action): 1. DR演練前置作業，確認DC、DR設備設定一致性\n2. 撰寫Sample Config",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-b46ccbebe8bb179ecdf4c75c9e16c06c",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:78c2a53989cdb6883508548b1a1a24b0",
+      "default:extract:06e4ecdcb291d2f053e82512afe3f755"
+    ],
+    "create_time": 1773292040,
+    "update_time": 1773292083,
+    "_id": "chunk-b46ccbebe8bb179ecdf4c75c9e16c06c"
+  },
+  "chunk-62fb7b422e9feb0e7c7f098618ff81dd": {
+    "tokens": 335,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Louis.chan\n進行時間為 2025/05/23 15:00 至 2025/05/23 18:30。\n狀態描述 (Description): 確認自動化排程異常原因\n處置動作 (Action): 1. 確認notify觸發告警log顯示是否正常，查看後正常觸發。\n2. 確認呼叫統一執行的ansibleAgent 觸發的log顯示內容，顯示正常執行沒有錯誤訊息。\n3. 重新執行兩次排程確認是否會有重現問題，第一次執行因為缺少上傳檔案正常顯示錯誤訊息，加上上傳檔案後進行第二次執行正常完成，查看遠端FTP上有正常檔案上傳。\n4. 推測可能是當時網路問題，後續添加上執行bat進行win_scp的動作是留存log。\n5. 因客戶端部分排程進行win_scp時有留存log記錄，將失敗的排程依照同樣方式進行log留存，方便後續問題重現時問題確認。\n6. 後續再提供給客戶在win_scp時可添加上判斷檔案是否成功上傳的範例。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-62fb7b422e9feb0e7c7f098618ff81dd",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:25688e0db6ce9b68deca03d3aa230cb9",
+      "default:extract:af9c2915b490515bb23bc824fd690b38"
+    ],
+    "create_time": 1773292066,
+    "update_time": 1773292123,
+    "_id": "chunk-62fb7b422e9feb0e7c7f098618ff81dd"
+  },
+  "chunk-eda419de69de6ceee5823c7bd2ad7653": {
+    "tokens": 122,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Tim.chen,Jie.chen\n進行時間為 2025/10/30 18:45 至 2025/10/30 19:45。\n狀態描述 (Description): 機房備品設備上架\n處置動作 (Action): 1.將IDF機房備品設備7台上架至主機房機櫃\n2.客戶已確認設備上架至機櫃指定位置",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-eda419de69de6ceee5823c7bd2ad7653",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:066cd2dc836a043ac80f79d7fbae2091",
+      "default:extract:ce54329f082b28295c86228eabac4f61"
+    ],
+    "create_time": 1773292084,
+    "update_time": 1773292148,
+    "_id": "chunk-eda419de69de6ceee5823c7bd2ad7653"
+  },
+  "chunk-c793d298b6295147ae0220369d4d6899": {
+    "tokens": 111,
+    "content": "這是一筆關於 台新證券 的維護紀錄。\n處理工程師為 Linda.hsu\n進行時間為 2025/06/13 13:00 至 2025/06/13 18:00。\n狀態描述 (Description): 定期定額(銀行端)_台/美股交易紀錄資料收容\n處置動作 (Action): 已於6/13下午完成設定派送並確認資料順利收容，格式、斷行等皆正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-c793d298b6295147ae0220369d4d6899",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:00b679934e86e0274f80d21efd68ccdc",
+      "default:extract:7340e35bfd3148a8e06c177ce605fcda"
+    ],
+    "create_time": 1773292124,
+    "update_time": 1773292177,
+    "_id": "chunk-c793d298b6295147ae0220369d4d6899"
+  },
+  "chunk-6414b86b6e6984d9b196041a96cc05dc": {
+    "tokens": 123,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 John.lee\n進行時間為 2025/02/03 13:30 至 2025/02/03 17:30。\n狀態描述 (Description): Splunk未正常備份\n處置動作 (Action): 經調查原因為gitlab token過期導致，\n備份皆有正常執行，僅Splunk未能及時拉回儀表板顯示。\n已renew並確認完成備份。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-6414b86b6e6984d9b196041a96cc05dc",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:f180550e5546b96d4b7d53ba2450211a",
+      "default:extract:2484b97811d118849962c6ad785bafbd"
+    ],
+    "create_time": 1773292148,
+    "update_time": 1773292208,
+    "_id": "chunk-6414b86b6e6984d9b196041a96cc05dc"
+  },
+  "chunk-caeba3ba958ef2867b1dd3605f48e792": {
+    "tokens": 181,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Annie.chang,Kevin.wu\n進行時間為 2025/04/10 18:00 至 2025/04/10 18:30。\n狀態描述 (Description): Checkpoint: 新增高雄路由與spoofing設定\n處置動作 (Action): 1.SMC備份migrate\n2.KHH-Branch-CP3600 備份config\n3.KHH-Branch-CP3600 底層新增路由設定\n4.KHH-Branch-CP3600 調整spoofing Network group\n5.檢查新增的路由與spoofing是否正確\n6.確認 KHH-Branch-CP3600 可正常進行規則設定",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-caeba3ba958ef2867b1dd3605f48e792",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:dd0dbc91da083ff5d2fd57a6de993eb7",
+      "default:extract:74dfd1b0fe91e1fba907b37ee1367690"
+    ],
+    "create_time": 1773292231,
+    "update_time": 1773292327,
+    "_id": "chunk-caeba3ba958ef2867b1dd3605f48e792"
+  },
+  "chunk-93f001792229e041cafbf9c55af59bf4": {
+    "tokens": 129,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Ben.jen\n進行時間為 2025/07/17 09:00 至 2025/07/17 15:30。\n狀態描述 (Description): 07/17資安監控維運駐點服務\n處置動作 (Action): 1. 資安監控分析 : WAF\n2. 設備系統狀態確認\n3. 站台憑證日期確認\n4. 站台防禦事件確認",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-93f001792229e041cafbf9c55af59bf4",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:44ec64ec57d94d929200c11376b12b7e",
+      "default:extract:abfc0e293bf9fb2c00ac2d9835c74ec4"
+    ],
+    "create_time": 1773292231,
+    "update_time": 1773292328,
+    "_id": "chunk-93f001792229e041cafbf9c55af59bf4"
+  },
+  "chunk-dedabd2a99aa8c5502f9b5efac0f752e": {
+    "tokens": 111,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Jerry.zhang\n進行時間為 2025/05/21 09:00 至 2025/05/21 12:00。\n狀態描述 (Description): 外點百貨設備巡檢\n處置動作 (Action): 到場\n外點百貨PA&CP 設備狀態確認\n剩餘: 中友跟南卡 已完成\n設備巡檢完畢",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-dedabd2a99aa8c5502f9b5efac0f752e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a202e06d6500e909acec029bbdc593af",
+      "default:extract:7a1d891956af7e7bf0a1504b1c3f11eb"
+    ],
+    "create_time": 1773292420,
+    "update_time": 1773292504,
+    "_id": "chunk-dedabd2a99aa8c5502f9b5efac0f752e"
+  },
+  "chunk-8d60f22b33985172f81117a05e13a52c": {
+    "tokens": 166,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Timmy.lin,Evan.su,Jimmy.peng\n進行時間為 2025/07/25 09:00 至 2025/07/25 18:00。\n狀態描述 (Description): F5 WAF月報分析 - 2025年07月份\n處置動作 (Action): 1. 透過splunk收集總量、top10 attack type、top10 uri、top10 ip、top10 policy等資料\n2. 針對top10 IP進行攻擊手法分析\n3. 收集與觀察F5當月cpu、memory等效能資訊\n4. 完成WAF月報製作",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-8d60f22b33985172f81117a05e13a52c",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a9041f039398f3c059fd423970793e47",
+      "default:extract:b8b1664c61fa02cfd20e52ad8db343cc"
+    ],
+    "create_time": 1773292451,
+    "update_time": 1773292524,
+    "_id": "chunk-8d60f22b33985172f81117a05e13a52c"
+  },
+  "chunk-2e02938a681775c13ddcd1b89c89020a": {
+    "tokens": 133,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Leon.lee\n進行時間為 2025/01/16 09:00 至 2025/01/16 12:00。\n狀態描述 (Description): Cymulate: 確認無法使用的原因\n處置動作 (Action): 1. 到場確認過cymulate 的程式有被防毒軟體刪除導致無法順利進行測試\n2. 重啟驗測後，檢測項目皆正常執行",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-2e02938a681775c13ddcd1b89c89020a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:e10d204134826c060546b61c49ea795b",
+      "default:extract:32272cce0998664eb9a3cc9fed107de6"
+    ],
+    "create_time": 1773292524,
+    "update_time": 1773292626,
+    "_id": "chunk-2e02938a681775c13ddcd1b89c89020a"
+  },
+  "chunk-dcb8d4f7dd7473c3fffc8513764a52b2": {
+    "tokens": 111,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Dean.huang,Kero.lee\n進行時間為 2025/11/28 09:00 至 2025/11/28 12:00。\n狀態描述 (Description): 調整DB Query\n處置動作 (Action): 1. 觀察目前設定狀態\n2. 輸入Query，以調整DB設定\n3. 後續客戶自行測試",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-dcb8d4f7dd7473c3fffc8513764a52b2",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b19162fdcbdc419a7210ab8844930a9e",
+      "default:extract:a0467fa406f4128aae3b7af6a3d1d34e"
+    ],
+    "create_time": 1773292548,
+    "update_time": 1773292628,
+    "_id": "chunk-dcb8d4f7dd7473c3fffc8513764a52b2"
+  },
+  "chunk-1eac2352d783678681f0f19d91ca396b": {
+    "tokens": 235,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Crystal.shen\n進行時間為 2025/06/05 09:00 至 2025/06/05 10:00。\n狀態描述 (Description): Splunk 05月月維護.DM20230365_(23/36)\n處置動作 (Action): 金控\n1.授權用量 :正常\n- 授權量 : 285 GB\n- 平均授權使用量 : 239.98 GB\n2.伺服器效能 : 正常，觀察中\n3.系統優化建議 : SH02有少數排程略過\n- 已進行排程調整，觀察中\n4.版本更新 : 建議更新\n- 當前版本: 9.3.2 / 2024.11.07\n- 最新版本: 9.4.2 / 2025.04.28\n- 現行版本近期被掃出弱點，建議進行升版",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-1eac2352d783678681f0f19d91ca396b",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9d5936fe37e1b5ea6229037af5431de7",
+      "default:extract:fbb2c8b058d48f96ad426cb44f4bdec8"
+    ],
+    "create_time": 1773292718,
+    "update_time": 1773292794,
+    "_id": "chunk-1eac2352d783678681f0f19d91ca396b"
+  },
+  "chunk-354d0e1c24f2cbe02c9a1690de286684": {
+    "tokens": 260,
+    "content": "這是一筆關於 玉山證券 的維護紀錄。\n處理工程師為 Carol.wu,Jerry.zhang\n進行時間為 2025/04/29 08:00 至 2025/04/29 16:00。\n狀態描述 (Description): 數據防火牆上架(竹北)\n處置動作 (Action): 1. 10:30 將F142_CP_FW01, F142_CP_FW02上架至對應位子\n2. 10:50 設備開機上線\n3. 11:06 納管F142_CP_FW01, F142_CP_FW02\n4. 11:10 確認設備狀態，發現兩台GW connection is lost\n5. 12:03 重啟SC並install policy\n6. 12:09 確認設備狀態正常\n7. 13:30 連線驗證\n8. 14:48 調整acl讓客戶可以ssh及https到F142_CP_FW01, F142_CP_FW02\n8. 15:04 備份設定檔\n15:40離場",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-354d0e1c24f2cbe02c9a1690de286684",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:e373d9eff0e9bdbf9805e231649ee67a",
+      "default:extract:01e8467cbef6ba15c197b808a8f12c3a"
+    ],
+    "create_time": 1773292718,
+    "update_time": 1773292795,
+    "_id": "chunk-354d0e1c24f2cbe02c9a1690de286684"
+  },
+  "chunk-ae44b7db72057e85f5b5a4d49b9b815f": {
+    "tokens": 489,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Linda.hsu\n進行時間為 2025/06/17 09:30 至 2025/06/17 17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 今日作業項目如下：\n1. 資產清單比對明細\n- 原預計針對端點相關告警進行語法微調以比對winmatrix清單，經早上討論後，除基本的資產比對外，也想知道資產共比對到幾份清單，因為可能同一資產剛好符合多份清單，也可能有些資產完全沒有比對到清單，想藉此了解比對的狀況，後續合併後資產變多，也可了解是否尚有未整合清單等等\n- 利用於資產清單新增matched_list欄位達到此目的，並於此欄位標示比對到的清單名稱，如：dssweb清單、iot清單等\n- 資料模型部分也已針對現行有使用到的模型新增欄位並確認撰寫規則時可順利從模型中取用新增的欄位\n- 目前欲針對現行規則調整語法以列出matched_list欄位資訊，此部分進行中\n2. Winmatrix清單近一週有兩天未順利收容\n- 經查是因為uf在監控檔案時判斷檔案中的內容相似，故忽略該兩個檔案不讀取，目前已調整設定並確認資料正常收容\n\n待辦事項\n1. 調整現行ES規則以呈現matched_list欄位資訊\n2. 針對matched_list整理後續如有新資產要整合，有哪些步驟要設定\n3. 邏輯查核驗證\n- sp自動執行腳本仍進行中，完成後需配合檢查splunk狀態",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ae44b7db72057e85f5b5a4d49b9b815f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:028e8450a6b168571a094371285b6dbc",
+      "default:extract:dfab25aeeeb0ba6b14a653c32f03f9be"
+    ],
+    "create_time": 1773292796,
+    "update_time": 1773292884,
+    "_id": "chunk-ae44b7db72057e85f5b5a4d49b9b815f"
+  },
+  "chunk-c8057337e2d36f34a781237ea9700e8f": {
+    "tokens": 101,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack\n進行時間為 2025/01/13 14:00 至 2025/01/13 15:00。\n狀態描述 (Description): 月維護\n處置動作 (Action): 1. 依維護標的物設備保養\n2. Check log、CPU、Memory正常\n3. Check Backup config，OK",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-c8057337e2d36f34a781237ea9700e8f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:34dfc1b7bbbcf115b5172af35d5d1f09",
+      "default:extract:d47c7e311623c9fea78b266fe108e47d"
+    ],
+    "create_time": 1773292852,
+    "update_time": 1773292909,
+    "_id": "chunk-c8057337e2d36f34a781237ea9700e8f"
+  },
+  "chunk-e57dddd7edff5b140438cb24c09dd26e": {
+    "tokens": 195,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Alfred.yang\n進行時間為 2025/02/07 14:00 至 2025/02/07 17:30。\n狀態描述 (Description): PostgreSQL Agent稽核功能異常\n處置動作 (Action): 1. EAIAP6、EAIAP7 Agent重新註冊並套用原廠設定。\n2. 於MX GUI介面確認EAIAP6、EAIAP7服務運作正常，同時\n3. 於MX GUI介面上傳最新imperva license及相容包。\n4. TSBPGSQL02 Agent依原廠建議安裝Agent Installation Manager。\n5. 確認TSBPGSQL02問題未解決，繼續向原廠詢問有無其他解決方式。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-e57dddd7edff5b140438cb24c09dd26e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:76d632341291d57aee38707fd843077e",
+      "default:extract:30c03ab6e1918f449fe361d466ebde60"
+    ],
+    "create_time": 1773293011,
+    "update_time": 1773293092,
+    "_id": "chunk-e57dddd7edff5b140438cb24c09dd26e"
+  },
+  "chunk-d5e860b687014fd2b11f9caa03275f6c": {
+    "tokens": 102,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack\n進行時間為 2025/02/07 09:00 至 2025/02/07 18:00。\n狀態描述 (Description): IOT mac address盤點 DACL策略撰寫\n處置動作 (Action): 1. IOT設備mac address 資料盤點\n2. DACL規則撰寫",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d5e860b687014fd2b11f9caa03275f6c",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2b2ab56a5ed203b3c0506cf7d717bccb",
+      "default:extract:f7efd901ee53342dc55d3982cd05e5d9"
+    ],
+    "create_time": 1773293011,
+    "update_time": 1773293094,
+    "_id": "chunk-d5e860b687014fd2b11f9caa03275f6c"
+  },
+  "chunk-a44aaa9977e8cc520de5e24a45c06296": {
+    "tokens": 125,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Kero.lee\n進行時間為 2025/12/03 15:00 至 2025/12/03 18:00。\n狀態描述 (Description): 確認問題是否已排除\n處置動作 (Action): 1. 確認Endpoint版本\n2. 查看問題\n3. 查看Policy及logs\n升級後問題仍未改善\n目前推測是中控DLP版本問題，待確認後再行回覆",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-a44aaa9977e8cc520de5e24a45c06296",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:11b402e81e2745f9449e0ea90fdf8d1f",
+      "default:extract:acf5b3758d17101d7c3310497ee6c349"
+    ],
+    "create_time": 1773293194,
+    "update_time": 1773293261,
+    "_id": "chunk-a44aaa9977e8cc520de5e24a45c06296"
+  },
+  "chunk-d85da58217fdbe0e490ab3137aaaa5ea": {
+    "tokens": 335,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Crystal.shen,Chuen.lin\n進行時間為 2025/03/18 13:30 至 2025/03/18 17:30。\n狀態描述 (Description): Splunk駐點服務202503月第四周(2025/3/18)\n處置動作 (Action): 本周工作事項：\n1.\tGitlab漏洞影響\n\t目前Gitlab版本為17.3，不在影響範圍內\n2.\t調整FWD03 ingestion_latency臨界值\n\t將預設的15秒調整為60秒\n3.\tSH黃燈調查\n\t於今日凌晨01:00多出現些許排程略過問題，但並未發生3/14 CPU和記憶體爆增現象\n\t目前無法確認此狀況與3/14是否相同\n4.\t資訊安全事件監控告警觸發紀錄: monthly report調查\n\t報告產出測試結果與ES incident review事件數量相同\n\t將於下次報告排程時間確認報告內容是否異常\n5.\t已移除Nelson Splunk帳號\n6.\tES儀表板調整完成\n\n待辦事項：\n1.\tSH資料儲存空間紅燈問題 - 已開case詢問原廠",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d85da58217fdbe0e490ab3137aaaa5ea",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c728b19a4c2426a003410e9064c5a5f3",
+      "default:extract:776698fac8c212d17f2ca300cd2baebe"
+    ],
+    "create_time": 1773293194,
+    "update_time": 1773293263,
+    "_id": "chunk-d85da58217fdbe0e490ab3137aaaa5ea"
+  },
+  "chunk-c5c1fd2994c8f45af6e8afb8aba3079e": {
+    "tokens": 200,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Brian.wang\n進行時間為 2025/11/24 12:00 至 2025/11/24 12:10。\n狀態描述 (Description): splunk_銀行處11月月維護\n處置動作 (Action): 1.授權用量 : 建議擴充\n-授權量 : 375 GB\n-平均授權使用量 : 1398GB\n2.伺服器效能 : 無\n3.系統優化建議 : 無\n4.版本更新 : 建議更新\n當前版本：9.3.3/2025.02.26\n最新版本：10.0.2/2025.11.14\n現行版本近期被掃出弱點，建議進行升版\n5.問題追蹤：無",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-c5c1fd2994c8f45af6e8afb8aba3079e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:bd7b58b18dfe8200f535ed528c4f929f",
+      "default:extract:94eedc57c87feff82d79e4daa263ed32"
+    ],
+    "create_time": 1773293368,
+    "update_time": 1773293430,
+    "_id": "chunk-c5c1fd2994c8f45af6e8afb8aba3079e"
+  },
+  "chunk-c73f4e0a3cdf13117a3a72c62a880ac8": {
+    "tokens": 271,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Star.peng\n進行時間為 2025/06/16 14:00 至 2025/06/16 17:00。\n狀態描述 (Description): 竹北IDC,協助查線\n處置動作 (Action): 1. 尋找A18櫃位附近是否還有多的光線線可以使用\n    A11-A18光纖線還有6條(編號: A11-A18-u01-06)\n    A12-A18光纖線還有6條(編號: A12-A18-u01-06)\n2. UTP線路依照A18櫃是用一個小hub連接，因此未來還是會用小hub連接，然後拉一條線路到A15櫃\n    目前有1條線路可以使用(編號:M-A18-A15-01)\n3. A12櫃的N9K沒有多的10G SFP\n4. 當天有跟窗口聯絡，依照最後討論結果後，當天並沒有將switch端的網路線接上。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-c73f4e0a3cdf13117a3a72c62a880ac8",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:718a281e7f8dab36674978fb498b9504",
+      "default:extract:6c478d2cde4d33189beedbb8fe945366"
+    ],
+    "create_time": 1773293368,
+    "update_time": 1773293431,
+    "_id": "chunk-c73f4e0a3cdf13117a3a72c62a880ac8"
+  },
+  "chunk-75fc9a0f7f04d2836444cfc3f58954af": {
+    "tokens": 124,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Edmond.lee,Gennie.lin,Kelly.su,Andrea.hong\n進行時間為 2025/04/16 09:30 至 2025/04/16 12:00。\n狀態描述 (Description): Operations弱點修復\n處置動作 (Action): Operations備份快照刪除\nOperations建立關機快照\nOperations升級至8.18.3 HF5\n確認系統服務正常\n刪除關機快照",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-75fc9a0f7f04d2836444cfc3f58954af",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:941e24380c3a446f5e7753f1e3994761",
+      "default:extract:b670043b8587b74490d0d33467216218"
+    ],
+    "create_time": 1773293507,
+    "update_time": 1773293560,
+    "_id": "chunk-75fc9a0f7f04d2836444cfc3f58954af"
+  },
+  "chunk-2c1df4d46176c98a1b513c16f11b1fc3": {
+    "tokens": 82,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Aleric\n進行時間為 2025/07/31 09:00 至 2025/07/31 12:00。\n狀態描述 (Description): DDOS 問題討論\n處置動作 (Action): 1. 到場討論說明",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-2c1df4d46176c98a1b513c16f11b1fc3",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3b75ddb7fba3d95d13bb7401f28c7dc2",
+      "default:extract:83dcfe8e25b3219bba5007dad8222ea9"
+    ],
+    "create_time": 1773293507,
+    "update_time": 1773293561,
+    "_id": "chunk-2c1df4d46176c98a1b513c16f11b1fc3"
+  },
+  "chunk-0da88a2237a7557dbdb1bdf09299bded": {
+    "tokens": 236,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jarod,Jack\n進行時間為 2025/10/15 18:00 至 2025/10/15 22:00。\n狀態描述 (Description): 新增敦北與總部ASR路由器設定\n處置動作 (Action): 1. 確認連線架構、IP配置\n2. 建立TPE-HQ-ASR920-1與TPE-NHQ-ASR920-1內的VP_Internet VRF與對應路由設定\n3. 新增敦北端與總部大樓端網路接線，連通整體網路架構\n4. TPE-HQ-FWFGT60E 新增路由、Policy、NAT設定 \n5.  設定Asus AP\n6. 確認路由update狀態正確、確認可連線到Fortigate防火牆 \n7. 驗證測試可正常存取Internet環境",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-0da88a2237a7557dbdb1bdf09299bded",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9dc163940785e38dce1312666a667071",
+      "default:extract:09c368065d6dcacd93b0b0ac3c6bf9f7"
+    ],
+    "create_time": 1773293668,
+    "update_time": 1773293736,
+    "_id": "chunk-0da88a2237a7557dbdb1bdf09299bded"
+  },
+  "chunk-ec32be55bccc6b028ec60aa6a719455a": {
+    "tokens": 268,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Brian.wang\n進行時間為 2025/02/24 14:00 至 2025/02/24 14:30。\n狀態描述 (Description): Splunk 2月月維護_信用卡處DM20240427\n處置動作 (Action): 1.授權用量:正常\n-授權量:100GB\n-平均授權用量:106GB\n2.伺服器效能:正常\n3.系統優化建議:根據說明定期檢查\n-有72台UF已超過15分鐘未與indexer連線 \n建議：已手動將部分停用主機下線，後續將於設定中更新uf清單，並於更新後讓uf重新報到。\n4.版本更新:建議更新\n-當前版本：9.1.3 / 2024.01.22\n- 最新版本：9.3.2/2024.11.07\n- 現行版本近期被掃出弱點，建議進行升版。\n5. 問題追蹤：無",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ec32be55bccc6b028ec60aa6a719455a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c616716af3cf434eef313d01160411f4",
+      "default:extract:8aa5ef6b51ad92eb0831d62cc9f28eac"
+    ],
+    "create_time": 1773293668,
+    "update_time": 1773293738,
+    "_id": "chunk-ec32be55bccc6b028ec60aa6a719455a"
+  },
+  "chunk-26ed993740a7d6a71037fc8711791a19": {
+    "tokens": 111,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack,Liz.chung\n進行時間為 2025/08/05 16:30 至 2025/08/06 00:45。\n狀態描述 (Description): DR演練DRP撰寫\n處置動作 (Action): DR演練情境撰寫, 確認路由是否正確，ISE是否提供驗證，撰寫腳本",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-26ed993740a7d6a71037fc8711791a19",
+    "file_path": "unknown_source",
+    "llm_cache_list": [],
+    "create_time": 1773293738,
+    "update_time": 1773293738,
+    "_id": "chunk-26ed993740a7d6a71037fc8711791a19"
+  },
+  "chunk-7098e0284f06782bac82197e5c967bbc": {
+    "tokens": 163,
+    "content": "這是一筆關於 玉山中国 的維護紀錄。\n處理工程師為 Lucas.fu,James.li,Ein.lin\n進行時間為 2025/03/07 16:00 至 2025/03/07 21:00。\n狀態描述 (Description): 漏洞修補\n處置動作 (Action): 1.升級備機\n2.確認備機重啟後正常\n3.將流量切換到備機\n4.升級主機\n5.確認主機重啟後正常\n6.確認ha狀態正常\n7.將流量切回主機\n8.確認ha狀態正常\n9.與客戶確認現場服務正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-7098e0284f06782bac82197e5c967bbc",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8a5d9b5d0b67dba36b464662383a5690",
+      "default:extract:ce31010bbd2f4a39070427a44b59d785"
+    ],
+    "create_time": 1773294036,
+    "update_time": 1773294126,
+    "_id": "chunk-7098e0284f06782bac82197e5c967bbc"
+  },
+  "chunk-04b25c65f216a404dc07ece17a2f7e82": {
+    "tokens": 120,
+    "content": "這是一筆關於 南山人壽 的維護紀錄。\n處理工程師為 Kevinkl.hsu\n進行時間為 2025/08/25 13:30 至 2025/08/25 14:30。\n狀態描述 (Description): DR-APM nsvpn憑證更新、管理介面ACL設定\n處置動作 (Action): 1.匯入nsvpn-2025憑證\n2.套用憑證至SSL Profile\n3.設定管理介面ACL",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-04b25c65f216a404dc07ece17a2f7e82",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:866b035d2b6db53d3ec2bd5baac085da",
+      "default:extract:d7fd09a33ed7b8540ed0c123cde36774"
+    ],
+    "create_time": 1773294039,
+    "update_time": 1773294127,
+    "_id": "chunk-04b25c65f216a404dc07ece17a2f7e82"
+  },
+  "chunk-76bc9d4b5f842feaca4895f9232ba419": {
+    "tokens": 138,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Ben.jen\n進行時間為 2025/08/07 09:00 至 2025/08/07 18:00。\n狀態描述 (Description): 08/07資安監控維運駐點服務\n處置動作 (Action): 1. 資安監控分析 : WAF\n2. 設備系統狀態確認\n3. 站台憑證日期確認\n4. 站台防禦事件確認\n5. WAF月報製作",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-76bc9d4b5f842feaca4895f9232ba419",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1efa52a8fdfd3ae91644ebed6d6134f9",
+      "default:extract:849a6da02731111ecd61cc9d1536b079"
+    ],
+    "create_time": 1773294128,
+    "update_time": 1773294229,
+    "_id": "chunk-76bc9d4b5f842feaca4895f9232ba419"
+  },
+  "chunk-d0960b99932640a79f9bcb9931b6eb8c": {
+    "tokens": 305,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Brian.wang,John.lee\n進行時間為 2025/12/03 13:30 至 2025/12/03 17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\n商銀\n1.\tSplunk 使用者權限調整\n\t調整es_admin_user 使用者權限。\n\t調整ess_analyst 腳色權限，以供廠商進行例行維護或問題解決登入使用\n2.\t\n金控\n1.\tFISAC資料收容-進行中\n\t目前已請james 向FISAC提交需使用API的IP申請單。\n2.\tSH KVstore引擎異常測試-進行中\n\t正在個人的測試環境測試SH 的KVstore狀態中。\n3.\tn8n無法連線至splunk問題\n\t正在協助排查n8n無法連線至splunk問題\n\t\n代辦事項：\n1.\tCentos作業系統升級(評估中)\n2.\tDEP02 (172.18.44.33)移轉(下周進行)",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d0960b99932640a79f9bcb9931b6eb8c",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a4913f17cb5721f1359389b62c8d6e69",
+      "default:extract:fd6dce7d2f193791747025bd28120d8d"
+    ],
+    "create_time": 1773294181,
+    "update_time": 1773294250,
+    "_id": "chunk-d0960b99932640a79f9bcb9931b6eb8c"
+  },
+  "chunk-0e96696bd1a8148d9fd50b1043944c7e": {
+    "tokens": 99,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Link\n進行時間為 2025/06/11 09:00 至 2025/06/11 18:00。\n狀態描述 (Description): 駐點服務\n處置動作 (Action): 檢視事件並記錄於週報上\n產出週報資料及FISAC分享資訊報告用資料",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-0e96696bd1a8148d9fd50b1043944c7e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4667cb28dbb35fb7c1c919b5ed8d666f",
+      "default:extract:1a29f8ebf902380ca9b89f4375b4e600"
+    ],
+    "create_time": 1773294230,
+    "update_time": 1773294304,
+    "_id": "chunk-0e96696bd1a8148d9fd50b1043944c7e"
+  },
+  "chunk-28867d6c4625c440944590b513e76618": {
+    "tokens": 127,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Shawn.hu,Sandy.jin\n進行時間為 2025/04/08 10:00 至 2025/04/08 17:00。\n狀態描述 (Description): Algosec升級至A33.0\n處置動作 (Action): 升級至A32.60 --> 成功\n\n升級至A33.00 --> 失敗，確認原因是升級時hostname被修改\n\n倒退版本至A32.50，明日重新升級",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-28867d6c4625c440944590b513e76618",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:e9a892664beda0c258fa04f646f836d0",
+      "default:extract:a1480fc7a3089961825c2f7760373e5f"
+    ],
+    "create_time": 1773294341,
+    "update_time": 1773294460,
+    "_id": "chunk-28867d6c4625c440944590b513e76618"
+  },
+  "chunk-e95f4360205b8942a6a33bce662e3eb6": {
+    "tokens": 381,
+    "content": "這是一筆關於 凱基銀行 的維護紀錄。\n處理工程師為 Brian.wang,John.lee\n進行時間為 2025/11/05 13:30 至 2025/11/05 19:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\n商銀\n1.\tSplunk整體架構IP調整-完成\n\t已設定完成所有主機的新IP\n2.\tSplunk套件升級-完成\n\t已部屬新套件至各SH上。\n3.\tNTP服務檢查-完成\n\t已檢查各台主機的 NTP服務已啟用。\n4.\tKVstore 憑證效期檢查\n\t已將過期憑證移除並重新產生新憑證(有效期至2028/11)，確認kvstore 狀態為正常。\n5.\tSPLUNK月報寄送\n\t已將SPLUNK2024/09~2025/08的維護報告寄給Hank\n金控\n1.\tFIsac情資撈取\n\t已設定完成，正在等待防火牆開通。\n2.\t新增indexer \n\t新增indexer至IDX cluster節點，目前將觀察index同步狀態。\n\n代辦事項：\nCentos作業系統升級(評估中)\nSplunk 10月維護報告\n檢查金控indexer索引同步狀態\n檢查各台主機KV store 憑證效期(金控)",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-e95f4360205b8942a6a33bce662e3eb6",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:6f3fd635ed1a2648f87f5b368d510b42",
+      "default:extract:6fad5064bea52a2a4e4dd322a5277db9"
+    ],
+    "create_time": 1773294366,
+    "update_time": 1773294461,
+    "_id": "chunk-e95f4360205b8942a6a33bce662e3eb6"
+  },
+  "chunk-980d641186281bd62584b39adf11a845": {
+    "tokens": 167,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Patrick.hung,Brandon.lee\n進行時間為 2025/05/20 18:00 至 2025/05/20 22:30。\n狀態描述 (Description): DMZ-UAT-LTM升版至v17.1.2.2\n處置動作 (Action): 1.F5 Renew License\n2.F5 升級至17.1.2.2HF013\n3.F5 調整Management Provisioning為Large\n4.F5 檢測Gateway正常\n5.F5 hostname改為DMZ-UAT-LTM.kgilife. com.tw\n6.F5 ucs、qkview備份",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-980d641186281bd62584b39adf11a845",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7001ed2f52673331e83cad86c9f31e16",
+      "default:extract:c221954957f0fceda3b563f1d90a7b21"
+    ],
+    "create_time": 1773294460,
+    "update_time": 1773294519,
+    "_id": "chunk-980d641186281bd62584b39adf11a845"
+  },
+  "chunk-2fd1383fcca67c9836aaadab403cfc49": {
+    "tokens": 82,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Alan.chang\n進行時間為 2025/04/14 07:00 至 2025/04/14 12:00。\n狀態描述 (Description): 玉銀月變更後待命\n處置動作 (Action): 玉銀月變更後待命",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-2fd1383fcca67c9836aaadab403cfc49",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b4f31cd2b852b130fbdfdd0102da4688",
+      "default:extract:1e392b8882a3c54afa94077dd6c9688b"
+    ],
+    "create_time": 1773294503,
+    "update_time": 1773294588,
+    "_id": "chunk-2fd1383fcca67c9836aaadab403cfc49"
+  },
+  "chunk-33d51a2e958fd186568a75928b53146f": {
+    "tokens": 113,
+    "content": "這是一筆關於 玉山中国 的維護紀錄。\n處理工程師為 James.li\n進行時間為 2025/08/13 16:30 至 2025/08/13 17:30。\n狀態描述 (Description): 玉山子行OA区 NBU一体机硬盘故障\n處置動作 (Action): 原厂发货新硬盘\n与客户约时间前往机房更换\n坏盘拆下\n更换新硬盘\n重建中",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-33d51a2e958fd186568a75928b53146f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:209863faba07eef6b4c7267a8601f967",
+      "default:extract:cb9a3ad213481ab11a00e688465f5064"
+    ],
+    "create_time": 1773294586,
+    "update_time": 1773294662,
+    "_id": "chunk-33d51a2e958fd186568a75928b53146f"
+  },
+  "chunk-0ef6fc82fbd98fd79fd905f71c33845a": {
+    "tokens": 114,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Shawn.hu,Sandy.jin\n進行時間為 2025/05/29 10:00 至 2025/05/29 12:00。\n狀態描述 (Description): 客製化平台: 協助調整事件紀錄\n處置動作 (Action): 協助刪除事件紀錄，進入DB後與客戶確認事件後刪除，再至web檢查，已完成",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-0ef6fc82fbd98fd79fd905f71c33845a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:82fd83c5e3ff41fb0e0199b0e47b3308",
+      "default:extract:8553f966d0135e1b998ef647e4d26244"
+    ],
+    "create_time": 1773294643,
+    "update_time": 1773294724,
+    "_id": "chunk-0ef6fc82fbd98fd79fd905f71c33845a"
+  },
+  "chunk-7c3989012427bfc662308143b23d25fc": {
+    "tokens": 83,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Link\n進行時間為 2025/02/26 09:00 至 2025/02/26 14:00。\n狀態描述 (Description): 駐點服務\n處置動作 (Action): 檢視事件並記錄於週報上",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-7c3989012427bfc662308143b23d25fc",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2bc31d7fd61d7c30883e65c13e3da84c",
+      "default:extract:9b129248010a762afd6ecb96dcadf6a7"
+    ],
+    "create_time": 1773294722,
+    "update_time": 1773294802,
+    "_id": "chunk-7c3989012427bfc662308143b23d25fc"
+  },
+  "chunk-722c5c3a89e4a11e2005fe2113628014": {
+    "tokens": 102,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Wesly.chen\n進行時間為 2025/02/19 09:00 至 2025/02/19 18:00。\n狀態描述 (Description): Gigamon 檢查目前狀態、確認介面\n處置動作 (Action): 1.查看目前HC1狀態\n2.確認介面並回覆客戶",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-722c5c3a89e4a11e2005fe2113628014",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:74df9655c4b887e13463db5f6b3a4a05",
+      "default:extract:7de314d7a55b97ee507df87bf4d27e39"
+    ],
+    "create_time": 1773294805,
+    "update_time": 1773294903,
+    "_id": "chunk-722c5c3a89e4a11e2005fe2113628014"
+  },
+  "chunk-2ae48babcb2bae172f4cb3d012a26aa6": {
+    "tokens": 142,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Jack\n進行時間為 2025/01/16 18:45 至 2025/01/16 20:45。\n狀態描述 (Description): 金融大樓新增L2 Switch\n處置動作 (Action): 1. 金融大樓備品Switch設定。\n\n2. 安裝Switch 接在現有L3Switch 串接。\n\n3. 測試遠端連線與AAA認證，測試網路服務。\n\n4. 備份設備，WUG掃描納管。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-2ae48babcb2bae172f4cb3d012a26aa6",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:5668467999c779717caaf5d63631b9dc",
+      "default:extract:3791b6b7dc9a4df6d590d7d7f51a9c9e"
+    ],
+    "create_time": 1773294841,
+    "update_time": 1773294917,
+    "_id": "chunk-2ae48babcb2bae172f4cb3d012a26aa6"
+  },
+  "chunk-977eb1266da4c3d3cfcfab83e0d33a2f": {
+    "tokens": 196,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Jarod\n進行時間為 2025/08/07 18:45 至 2025/08/07 21:45。\n狀態描述 (Description): 敦北大樓DMZ & DB Zone 新增VRF\n處置動作 (Action): 1.  TPE-DB-4500X-1、TPE-DMZ-9300-1、TPE-WAF-9300-1   新增VRF設定。\n\n2.  DMZ區域網路段連，TPE-DMZ-9300-1、TPE-WAF-9300-1退回設定。\n\n3.  檢查確認網路與設備log，檢討缺失。\n\n4.  協議下次新增設定。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-977eb1266da4c3d3cfcfab83e0d33a2f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:5c4dba29ba7b8d335882ed38b511dcbe",
+      "default:extract:92d280f2110ab6138934d747296d8ab3"
+    ],
+    "create_time": 1773295004,
+    "update_time": 1773295061,
+    "_id": "chunk-977eb1266da4c3d3cfcfab83e0d33a2f"
+  },
+  "chunk-15e9a08292af39fc0496ff95f463226e": {
+    "tokens": 92,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Akira.chang\n進行時間為 2025/02/17 14:30 至 2025/02/17 17:30。\n狀態描述 (Description): 月維護作業\n處置動作 (Action): 1. 遠端進行月維護作業，其作業詳看附件。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-15e9a08292af39fc0496ff95f463226e",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:19a9f18fe19f1fdaecc961d0c39558c5",
+      "default:extract:fdb3a32fd54c961dff0ea2c410a434d5"
+    ],
+    "create_time": 1773295016,
+    "update_time": 1773295086,
+    "_id": "chunk-15e9a08292af39fc0496ff95f463226e"
+  },
+  "chunk-169cf62cc414b79305993d310f0d2b5b": {
+    "tokens": 89,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Jerry.fang,Yuki.jiang\n進行時間為 2025/07/22 10:00 至 2025/07/22 17:00。\n狀態描述 (Description): FSM LDAP 人員清查\n處置動作 (Action): 紀錄Forcepoint 人員\n並清查所在DN",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-169cf62cc414b79305993d310f0d2b5b",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b77ea9d7c9832d433d96358cce59f0e4",
+      "default:extract:6f7fe561ae057580a80d38954ef85641"
+    ],
+    "create_time": 1773295191,
+    "update_time": 1773295252,
+    "_id": "chunk-169cf62cc414b79305993d310f0d2b5b"
+  },
+  "chunk-e8c1f585f0e783378c2ecd7f0fc9796f": {
+    "tokens": 156,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Kevinkl.hsu,Akira.chang\n進行時間為 2025/12/17 10:00 至 2025/12/17 12:00。\n狀態描述 (Description): Imperva 安裝6台&移除2台Agent\n處置動作 (Action): 1.移除兩台Agent：SUSE ES 15 SP3 Postgresql 13.2\n2.安裝兩台Agent：Redhat8.10   Postgresql 16.8 \n3.安裝四台Agent：Ubuntu 24.04 Postgresql 17.5\n4.確認稽核服務正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-e8c1f585f0e783378c2ecd7f0fc9796f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a3fe94a3f6ccd4098e13b9a32ed477a4",
+      "default:extract:0bb6b2360083c5a8d0fc7f553b74abb7"
+    ],
+    "create_time": 1773295192,
+    "update_time": 1773295254,
+    "_id": "chunk-e8c1f585f0e783378c2ecd7f0fc9796f"
+  },
+  "chunk-7579d64b4495e52877d6b9a69881626c": {
+    "tokens": 94,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Annie.chang\n進行時間為 2025/02/10 16:30 至 2025/02/10 18:00。\n狀態描述 (Description): Checkpoint : 防火牆 openssh 9.6 問題\n處置動作 (Action): 1.到場完成設備截圖",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-7579d64b4495e52877d6b9a69881626c",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:11297f47bda873b4a39b996c8a942be1",
+      "default:extract:f722aef541f02ae96cf05b944dcc9428"
+    ],
+    "create_time": 1773295393,
+    "update_time": 1773295485,
+    "_id": "chunk-7579d64b4495e52877d6b9a69881626c"
+  },
+  "chunk-b6c939e6b3ca42aa08f886f078846dbf": {
+    "tokens": 119,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Edmond.lee,Gennie.lin,Kelly.su\n進行時間為 2025/11/05 09:30 至 2025/11/05 17:30。\n狀態描述 (Description): vSphere 8 HostProfile建置\n處置動作 (Action): 協助建立資訊處/信用卡處 vSphere 8版不同需求HostProfile(一般/金檢/密碼修改)\nHostProfile建立相關問題討論",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-b6c939e6b3ca42aa08f886f078846dbf",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:6686220ece4cf6b620a00ce06b013473",
+      "default:extract:bb325682a0acf23daa641fee27e2a1a2"
+    ],
+    "create_time": 1773295412,
+    "update_time": 1773295497,
+    "_id": "chunk-b6c939e6b3ca42aa08f886f078846dbf"
+  },
+  "chunk-f46c4b351ec702695a186f0189e1b95a": {
+    "tokens": 154,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Jack\n進行時間為 2025/04/22 18:45 至 2025/04/22 20:15。\n狀態描述 (Description): 台中分公司18F的AP獨立無線group\n處置動作 (Action): 1.  WLC上確認台中18樓的AP共4台。\n2. 建立18樓tranning AP 的獨立group TXG-3。\n3.把特定AP加入此獨立group，重啟AP服務。\n4.測試確認無線服務連線正常。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-f46c4b351ec702695a186f0189e1b95a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0b30c7ff6408c6840bea75b1b9a76f6f",
+      "default:extract:bd3d6d372dc536c521893ee708d778ed"
+    ],
+    "create_time": 1773295574,
+    "update_time": 1773295658,
+    "_id": "chunk-f46c4b351ec702695a186f0189e1b95a"
+  },
+  "chunk-8e74343ae1e54bbd1692b8eaee0d1b54": {
+    "tokens": 148,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Ben.chang\n進行時間為 2025/01/10 10:00 至 2025/01/10 11:00。\n狀態描述 (Description): 審核流程預設帶入系統主管人員\n處置動作 (Action): 修改項目:\n資料庫[ESUN_VDI].[dbo].[VDI_CardType] 新增 [DefaultPerson]預設人員欄位\n再以程式抓取預設人員欄位加以判斷\n\n功能驗證: 於2025/01/10 驗證正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-8e74343ae1e54bbd1692b8eaee0d1b54",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4d482b39ced9d64bc4d577fe7599aeaf",
+      "default:extract:4c75e4303aa2cb06c8ecb8605f12f920"
+    ],
+    "create_time": 1773295574,
+    "update_time": 1773295659,
+    "_id": "chunk-8e74343ae1e54bbd1692b8eaee0d1b54"
+  },
+  "chunk-32a3c902d9f460321eeafc73be30071b": {
+    "tokens": 129,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Wesly.chen,Eric.wong,Jarod,Alvin.ma,Ava.lee\n進行時間為 2025/10/18 22:30 至 2025/10/19 06:00。\n狀態描述 (Description): Gigamon 弱點修補作業\n處置動作 (Action): 1.備份設定\n2.確認目前設備狀態\n3.升版作業\n4.查看升版後狀態\n5.服務確認正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-32a3c902d9f460321eeafc73be30071b",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:81864c9d9d0d46414d7d1b1e5b46150d",
+      "default:extract:32508d2c5ad9ff0ee688a5e08516a9fd"
+    ],
+    "create_time": 1773295767,
+    "update_time": 1773295842,
+    "_id": "chunk-32a3c902d9f460321eeafc73be30071b"
+  },
+  "chunk-bdaca4567bd082646b053c23757e6edb": {
+    "tokens": 201,
+    "content": "這是一筆關於 玉山中国 的維護紀錄。\n處理工程師為 James.li,Jason\n進行時間為 2025/05/23 09:00 至 2025/05/23 18:00。\n狀態描述 (Description): 玉山子行5月例会报告产出\n處置動作 (Action): 1. 系統服務器資源巡檢彙整 T24 , OA , Test , GZ［CPU、Memory、Disk］\n2. 存儲資源巡檢彙整 Netapp , Nutanix［Disk Free and Use］\n3. NBU 資源巡查彙整\n4. IPS VDB Version Chenk and Upgrade\n5. IPS High Alert Check and Report\n6. 專案進度討論\n7. 待辦事項討論\n8. 月例會文件彙整和產出",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-bdaca4567bd082646b053c23757e6edb",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3a8e8df08b05d5d434e84c3876c69f12",
+      "default:extract:b279b2536d8d6b29a44be738498f9074"
+    ],
+    "create_time": 1773295781,
+    "update_time": 1773295857,
+    "_id": "chunk-bdaca4567bd082646b053c23757e6edb"
+  },
+  "chunk-f6576000015a9578d4984ac589c5ca45": {
+    "tokens": 361,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Link\n進行時間為 2025/11/01 23:00 至 2025/11/02 03:00。\n狀態描述 (Description): 升級TPE-NHQ-IPS-1及TPE-NHQ-IPS-2\n處置動作 (Action): 作業步驟如下：\n1.TPE-NHQ-IPS-2執行deploy\n2.TPE-NHQ-IPS-1執行deploy\n3.TPE-NHQ-IPS-2 升級7.2.5\n4.TPE-NHQ-IPS-2 升級7.2.5完成\n5.TPE-NHQ-IPS-1 升級7.2.5\n6.TPE-NHQ-IPS-2 升級7.2.5.1\n7,TPE-NHQ-IPS-1 升級7.2.5完成\n8.TPE-NHQ-IPS-2 升級7.2.5.1 完成\n9.TPE-NHQ-IPS-1 升級7.2.5.1\n10.TPE-NHQ-IPS-1 升級7.2.5.1 完成\n11.確認TPE-NHQ-IPS-1及TPE-NHQ-IPS-2狀況，出現Cisco Cloud Configuration - Unable to reach Cisco Cloud from the device. Please check the network connection.訊息，查詢cisco support技術文件，是因為FTD無法與api-sse.cisco.com通訊，請user開通防火牆",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-f6576000015a9578d4984ac589c5ca45",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:730ee12ccc676528e9fbbe4385d75799",
+      "default:extract:61c62711479a1a3cd8487ee708670863"
+    ],
+    "create_time": 1773295859,
+    "update_time": 1773295961,
+    "_id": "chunk-f6576000015a9578d4984ac589c5ca45"
+  },
+  "chunk-1b838d0b1b3d5a987cfd4e4d0ab26859": {
+    "tokens": 80,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack\n進行時間為 2025/12/08 13:00 至 2025/12/08 13:30。\n狀態描述 (Description): 月維護\n處置動作 (Action): 依SOP更新維護報告內容",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-1b838d0b1b3d5a987cfd4e4d0ab26859",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a081cbde967d6ee60881bbaa3ae9ad2f",
+      "default:extract:41a1ca9388a7c74411ede9f687d775b6"
+    ],
+    "create_time": 1773295915,
+    "update_time": 1773295978,
+    "_id": "chunk-1b838d0b1b3d5a987cfd4e4d0ab26859"
+  },
+  "chunk-2fd1401074acf81c703b70148b1f78db": {
+    "tokens": 111,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Alfred.yang\n進行時間為 2025/01/13 10:00 至 2025/01/13 11:00。\n狀態描述 (Description): PostgreSQL Agent稽核功能異常\n處置動作 (Action): 1. 將TS900-MCRADB1資料庫主機之Agent重新註冊\n2. 於GUI介面設定Agent並確認服務運作正常",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-2fd1401074acf81c703b70148b1f78db",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3b095f4dd1a58896448e4d921292824c",
+      "default:extract:c60849d3fb2aed398747b3b648c7969c"
+    ],
+    "create_time": 1773296028,
+    "update_time": 1773296101,
+    "_id": "chunk-2fd1401074acf81c703b70148b1f78db"
+  },
+  "chunk-ad5bcf3e571f9f90c5c0c434c21a554a": {
+    "tokens": 173,
+    "content": "這是一筆關於 玉山證券 的維護紀錄。\n處理工程師為 Timmy.lin\n進行時間為 2025/06/15 08:00 至 2025/06/15 14:00。\n狀態描述 (Description): DDoS演練待命(cts)\n處置動作 (Action): 1. 調整log profile，將all request拋送至splunk進行觀測\n2. 確認攻擊期間F5 GTM、F5 DMZ相關效能，確認CPU、Memory健康且穩定\n3. 確認攻擊期間設備運作皆正常\n4. 確認攻擊期間站台連線正常\n5. 紀錄攻擊期間設備相關資訊",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ad5bcf3e571f9f90c5c0c434c21a554a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:515b9af8b6a99ba8ecd6001bda3c65d6",
+      "default:extract:0a5bd4e6316166c2bae02838b717ae0f"
+    ],
+    "create_time": 1773296069,
+    "update_time": 1773296141,
+    "_id": "chunk-ad5bcf3e571f9f90c5c0c434c21a554a"
+  },
+  "chunk-f2d30669be7449ca774ae6205c5089d6": {
+    "tokens": 123,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Jack\n進行時間為 2025/05/08 09:30 至 2025/05/08 16:30。\n狀態描述 (Description): 敦北大樓CL_WLAN無法取得IP\n處置動作 (Action): 1. 與原廠確認透過debug指令及Windows指令，初步判斷為電腦無線網卡問題，建議客戶進行網卡升級",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-f2d30669be7449ca774ae6205c5089d6",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:35797f3944ea0e712824e4c958e986ed",
+      "default:extract:15a9d949695e85dbb19562965c329519"
+    ],
+    "create_time": 1773296102,
+    "update_time": 1773296176,
+    "_id": "chunk-f2d30669be7449ca774ae6205c5089d6"
+  },
+  "chunk-d8e8f82bc8ebe19e9d7e8fca29a69c61": {
+    "tokens": 433,
+    "content": "這是一筆關於 台新證券 的維護紀錄。\n處理工程師為 Linda.hsu\n進行時間為 2025/02/08 09:30 至 2025/02/08 14:00。\n狀態描述 (Description): Splunk indexer095發生系統異常\n處置動作 (Action): 1.經設備廠商確認後是/splunk_indexes這個partition有問題，而昨天會出現開機進入emergency mode的原因是/etc/fstab中有設定要掛載/splunk_indexes此partition，將這個掛載設定先註解後重開機即可正常登入，後續強制進行xfs_repair修復檔案系統，修復後重新掛載回/splunk_indexes即恢復正常\n2. 後續檢查splunk服務皆正常，資料收容的功能也沒問題，整個架構的健康狀態也是OK的\n3.強制執行xfs_repair時有訊息提到過程中可能會發生資料毀損的狀況，在整個修復、檢查作業完成後，在/splunk_indexes底下確實有發現lost+found的資料夾，裡面存放著repair過程中遺失的檔案，進一步確認這些檔案的最後修改時間皆在2/7 00:51(系統發生異常的時間)，雖檔案可嘗試手動修復，但前提是需要知道檔案內的設定為何才能將其更名並移回原來的路徑，但我們lost+found底下的檔案打開後含有一些亂碼無法確切知道他原來的位置，經討論，因00:51該時間並非交易時段，資料重要性相對低，故就不進行處理",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d8e8f82bc8ebe19e9d7e8fca29a69c61",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:5da6193f1cb62dea4ffb12d06913035a",
+      "default:extract:df2d3910bd4b6d530f2d0af8174632fa"
+    ],
+    "create_time": 1773296141,
+    "update_time": 1773296199,
+    "_id": "chunk-d8e8f82bc8ebe19e9d7e8fca29a69c61"
+  },
+  "chunk-081b124921862e73f4d7da598f574549": {
+    "tokens": 106,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Eric.chen,Nast\n進行時間為 2025/06/10 09:00 至 2025/06/10 18:00。\n狀態描述 (Description): ODA X8-2HA Precheck+Upgrade 19.22-19.24\n處置動作 (Action): ODA X8-2HA Precheck+Upgrade 19.22-19.24",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-081b124921862e73f4d7da598f574549",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7a1223fa23c5722871e770b6f5276e14",
+      "default:extract:7b002afcd4284c3d4ff9d8e019640d0a"
+    ],
+    "create_time": 1773296286,
+    "update_time": 1773296360,
+    "_id": "chunk-081b124921862e73f4d7da598f574549"
+  },
+  "chunk-ff5c1c4bcb284ab1f40841814935d103": {
+    "tokens": 168,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Kimi.lee,Jack\n進行時間為 2025/06/03 18:45 至 2025/06/03 20:15。\n狀態描述 (Description): 金融大樓-3F事務機套用DACL\n處置動作 (Action): 1. 請客戶提供Printer 要使用的連線服務port號，新建金融大樓使用的DACL policy。\nD\n2. 套用金融大樓3樓的第一台printer。\n\n4. 檢查DACL policy有在Switch上針對printer啟用，printer測試服務正常。\n\n5. 驗證網路正常。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ff5c1c4bcb284ab1f40841814935d103",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:62e9e530c2f9bf3e205156817bbd8bd1",
+      "default:extract:b43c62b232d42bbbe2b55cb11927d180"
+    ],
+    "create_time": 1773296286,
+    "update_time": 1773296362,
+    "_id": "chunk-ff5c1c4bcb284ab1f40841814935d103"
+  },
+  "chunk-f7cc7c5a957ff8c75ee5351de090f532": {
+    "tokens": 170,
+    "content": "這是一筆關於 玉山銀行 的維護紀錄。\n處理工程師為 Adam.luo,Roger.huang\n進行時間為 2025/04/11 17:00 至 2025/04/11 20:30。\n狀態描述 (Description): [(非維護)OA桌面雲-ESXi 弱點修復]\n處置動作 (Action): OA桌面雲\n1. ESXVDIOA15-16. ESXVDIOA18-19 升級至 7.0U3s\n2. 確認 ESXi 元件 Driver 版本\n3. 升級後確認用戶端連線與 ESXi 服務皆正常\n已修復台數: 14/24 台",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-f7cc7c5a957ff8c75ee5351de090f532",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d246770d692c3b2455f52b49e3bf9e1e",
+      "default:extract:072a5bb675c8ad725879d85c432c9fb9"
+    ],
+    "create_time": 1773296474,
+    "update_time": 1773296557,
+    "_id": "chunk-f7cc7c5a957ff8c75ee5351de090f532"
+  },
+  "chunk-492d7df04f2bc1954d669ffd8c8e00ef": {
+    "tokens": 154,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 Eric.chen,Nast\n進行時間為 2025/06/04 09:00 至 2025/06/04 18:30。\n狀態描述 (Description): ODA X8-2HA Upgrade 19.18-19.22\n處置動作 (Action): 1.停止備庫對外服務與DG同步\n2.備分系統資訊\n3.Upgrading Oracle Database Appliance to Release 19.22 Using Data Preserving Reprovisioning\n4.ODA Reimage to 19.22\n5.Restore Node\n6.恢復備庫對外服務與DG同步",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-492d7df04f2bc1954d669ffd8c8e00ef",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:baba6c312125ac17bec0febfb9cce59e",
+      "default:extract:81e7ce35550555bda319e2986ad6eacd"
+    ],
+    "create_time": 1773296474,
+    "update_time": 1773296558,
+    "_id": "chunk-492d7df04f2bc1954d669ffd8c8e00ef"
+  },
+  "chunk-0637e29ab7351e2aca76d9ed90e5d76f": {
+    "tokens": 141,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Annie.chang,Kevin.wu,Jack\n進行時間為 2025/08/15 18:45 至 2025/08/15 20:45。\n狀態描述 (Description): Checkpoint : 桃園CP1570 升級至R81.10.17 build 4664\n處置動作 (Action): 1.備份設定檔。\n2.關閉WUG監控。\n3.依照SOP內容作業。\n4.Install policy 正常。\n5.開啟WUG監控。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-0637e29ab7351e2aca76d9ed90e5d76f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:63e0e21917eb8b53be4da3036fa39bfe",
+      "default:extract:b6f7b9d03aec6e3876d6d7d13f0d0192"
+    ],
+    "create_time": 1773296662,
+    "update_time": 1773296734,
+    "_id": "chunk-0637e29ab7351e2aca76d9ed90e5d76f"
+  },
+  "chunk-5c43908641f11769ada02bc17488dc80": {
+    "tokens": 228,
+    "content": "這是一筆關於 台新銀行 的維護紀錄。\n處理工程師為 John.lee\n進行時間為 2025/11/04 13:30 至 2025/11/04 17:30。\n狀態描述 (Description): 台新銀行駐點工作事項 - 20251104\n處置動作 (Action): 今日工作內容如下，預計下次週四到場作業，再麻煩您幫我申請週四使用底層：\n1, 完成維護報告\n2. 確認RES3SQL19資料收容狀況\n\n待完成工作項目：\n1.\tCEF outputs套件新增debug log資料蒐集\n2.\tFinding會因為threat object重複顯示，需進行ES版本升級\n3.\tSplunk版本升級\n4.\tApim1與imsdb01兩台UF關閉inputs至不存在的index\n5.\tSH FISAC API input (未使用)關閉",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-5c43908641f11769ada02bc17488dc80",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b2cd95a16cd2df57d2bb0993170808ed",
+      "default:extract:5c54c973897bbe0035c006070ca0ed57"
+    ],
+    "create_time": 1773296662,
+    "update_time": 1773296736,
+    "_id": "chunk-5c43908641f11769ada02bc17488dc80"
+  },
+  "chunk-0c6ba89d5a0d31a12526f5368405d969": {
+    "tokens": 149,
+    "content": "這是一筆關於 凱基人壽 的維護紀錄。\n處理工程師為 Sinyu.chen\n進行時間為 2025/09/05 14:00 至 2025/09/05 18:00。\n狀態描述 (Description): VM備份檔重新轉成mp4\n處置動作 (Action): 1. 因檔案太大，目前只先將4號的avi檔轉成mp4\n2. 發現還是有部分avi檔轉失敗\n3. 約下禮拜10:00先繼續處理轉檔，其餘問題後續再處理",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-0c6ba89d5a0d31a12526f5368405d969",
+    "file_path": "unknown_source",
+    "llm_cache_list": [],
+    "create_time": 1773296737,
+    "update_time": 1773296737,
+    "_id": "chunk-0c6ba89d5a0d31a12526f5368405d969"
+  }
+}

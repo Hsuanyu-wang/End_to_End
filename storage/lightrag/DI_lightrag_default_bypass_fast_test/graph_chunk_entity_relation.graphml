@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="F客戶">
+  <data key="d0">F客戶</data>
+  <data key="d1">organization</data>
+  <data key="d2">F客戶is the client for whom maintenance was performed.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771972</data>
+  <data key="d6"></data>
+</node>
+<node id="A人員">
+  <data key="d0">A人員</data>
+  <data key="d1">person</data>
+  <data key="d2">A人員is the engineer who conducted the maintenance work.&lt;SEP&gt;A人員is one of the engineers involved in the maintenance process.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="splunk_銀行處12月月維護">
+  <data key="d0">splunk_銀行處12月月維護</data>
+  <data key="d1">event</data>
+  <data key="d2">The splunk_銀行處12月月維護refers to the monthly maintenance event for December carried out by A人員.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771972</data>
+  <data key="d6"></data>
+</node>
+<node id="375 GB">
+  <data key="d0">375 GB</data>
+  <data key="d1">data</data>
+  <data key="d2">A suggested expansion of 375 GB in authorization usage was proposed during the maintenance process.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771972</data>
+  <data key="d6"></data>
+</node>
+<node id="1276GB">
+  <data key="d0">1276GB</data>
+  <data key="d1">data</data>
+  <data key="d2">The average authorized usage is reported to be 1276GB, indicating a potential need for additional resources.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771972</data>
+  <data key="d6"></data>
+</node>
+<node id="9.3.3/2025.02.26">
+  <data key="d0">9.3.3/2025.02.26</data>
+  <data key="d1">version</data>
+  <data key="d2">This is the current version of Splunk in use by F客戶as of February 26, 2025.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771972</data>
+  <data key="d6"></data>
+</node>
+<node id="10.0.2/2025.11.14">
+  <data key="d0">10.0.2/2025.11.14</data>
+  <data key="d1">version</data>
+  <data key="d2">The latest available version of Splunk recommended for upgrade is 10.0.2 released on November 14, 2025.</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771972</data>
+  <data key="d6"></data>
+</node>
+<node id="B客戶">
+  <data key="d0">B客戶</data>
+  <data key="d1">organization</data>
+  <data key="d2">B客戶is the client for whom maintenance records are being documented.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="C人員">
+  <data key="d0">C人員</data>
+  <data key="d1">person</data>
+  <data key="d2">C人員is another engineer involved in the maintenance process.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="Splunk">
+  <data key="d0">Splunk</data>
+  <data key="d1">content</data>
+  <data key="d2">Splunk refers to a software product used for data collection and analysis, central to several actions in the maintenance record.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="A部門">
+  <data key="d0">A部門</data>
+  <data key="d1">organization</data>
+  <data key="d2">A部門is an unspecified department involved in maintaining Splunk-related activities.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="FISAC">
+  <data key="d0">FISAC</data>
+  <data key="d1">concept</data>
+  <data key="d2">FISAC is a concept or system related to data management and security, mentioned in the maintenance record.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="SH KVstore引擎異常測試-進行中">
+  <data key="d0">SH KVstore引擎異常測試-進行中</data>
+  <data key="d1">event</data>
+  <data key="d2">This event refers to an ongoing test for SH KVstore engine anomalies as part of the maintenance process.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="LDAP設定">
+  <data key="d0">LDAP設定</data>
+  <data key="d1">method</data>
+  <data key="d2">LDAP setting is a specific configuration process related to Splunk authentication, completed during maintenance activities.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="3.4% Decline">
+  <data key="d0">3.4% Decline</data>
+  <data key="d1">data</data>
+  <data key="d2">The Global Tech Index experienced a 3.4% decline in midday trading.</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="Market Selloff">
+  <data key="d0">Market Selloff</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d2">Nexon Technologies' stock decline is part of the broader market selloff due to investor concerns.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<node id="Nexon Technologies">
+  <data key="d0">Nexon Technologies</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d2">Nexon Technologies' stock decline is part of the broader market selloff due to investor concerns.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773771973</data>
+  <data key="d6"></data>
+</node>
+<edge source="F客戶" target="A人員">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員conducted maintenance and reviewed authorization levels for F客戶.</data>
+  <data key="d9">authorization review,maintenance service</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771972</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="B客戶">
+  <data key="d7">1.0</data>
+  <data key="d8">The maintenance record documents work done by A人員for B客戶.</data>
+  <data key="d9">maintenance record,service provider</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771973</data>
+  <data key="d13"></data>
+</edge>
+<edge source="splunk_銀行處12月月維護" target="9.3.3/2025.02.26">
+  <data key="d7">1.0</data>
+  <data key="d8">The December maintenance event involved checking the current software version 9.3.3.</data>
+  <data key="d9">maintenance check,software version</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771972</data>
+  <data key="d13"></data>
+</edge>
+<edge source="splunk_銀行處12月月維護" target="10.0.2/2025.11.14">
+  <data key="d7">1.0</data>
+  <data key="d8">The latest version 10.0.2 was recommended during the maintenance event.</data>
+  <data key="d9">recommendation,software upgrade</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771972</data>
+  <data key="d13"></data>
+</edge>
+<edge source="375 GB" target="1276GB">
+  <data key="d7">1.0</data>
+  <data key="d8">A suggested authorization expansion of 375 GB is proposed to address the average usage level of 1276GB.</data>
+  <data key="d9">authorization review,capacity planning</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771972</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="C人員">
+  <data key="d7">1.0</data>
+  <data key="d8">The maintenance record also includes contributions from C人員serving B客戶.</data>
+  <data key="d9">maintenance record,service provider</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771973</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk" target="A部門">
+  <data key="d7">1.0</data>
+  <data key="d8">A部門provides support and management for Splunk-related activities.</data>
+  <data key="d9">management,support</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771973</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Splunk" target="LDAP設定">
+  <data key="d7">1.0</data>
+  <data key="d8">LDAP settings are configured to enhance Splunk's authentication and security features.</data>
+  <data key="d9">authentication,security</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771973</data>
+  <data key="d13"></data>
+</edge>
+<edge source="FISAC" target="SH KVstore引擎異常測試-進行中">
+  <data key="d7">1.0</data>
+  <data key="d8">The ongoing SH KVstore engine anomaly test involves FISAC as part of the maintenance tasks.</data>
+  <data key="d9">test,validation</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771973</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Market Selloff" target="Nexon Technologies">
+  <data key="d7">1.0</data>
+  <data key="d8">Nexon Technologies' stock decline is part of the broader market selloff due to investor concerns.</data>
+  <data key="d9">company performance,market reaction</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773771973</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

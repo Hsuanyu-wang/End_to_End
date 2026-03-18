@@ -58,6 +58,40 @@ class CustomMetadataExtractor(TransformComponent):
         return nodes
 
 class OntologyGraphBuilder(BaseGraphBuilder):
+    """
+    Ontology Graph Builder
+    
+    使用動態 Schema 演化的本體學習建圖
+    支援持久化與增量更新
+    """
+    
+    def __init__(
+        self,
+        graph_store = None,
+        settings = None,
+        data_type: str = "DI",
+        fast_test: bool = False,
+        output_dir: str = None
+    ):
+        """
+        初始化 Ontology Builder
+        
+        Args:
+            graph_store: 圖譜儲存後端(可選)
+            settings: 配置設定(可選)
+            data_type: 資料類型
+            fast_test: 是否為快速測試模式
+            output_dir: 輸出目錄(用於儲存 Schema)
+        """
+        super().__init__(graph_store, settings)
+        self.data_type = data_type
+        self.fast_test = fast_test
+        self.output_dir = output_dir or "./ontology_output"
+        self.storage_path = None
+        self.graph_index = None
+    
+    def get_name(self) -> str:
+        return "Ontology"
     
     def evolve_schema_with_pydantic(self, current_schema: dict, batch_docs: list, prompt_template_str: str) -> dict:
         sample_text = "\n\n".join([doc.text[:] for doc in batch_docs])
@@ -77,6 +111,73 @@ class OntologyGraphBuilder(BaseGraphBuilder):
             return current_schema
 
     def build(self, documents: List[Document]):
+        """
+        使用動態 Schema 演化建立知識圖譜
+        
+        Args:
+            documents: 文檔列表
+            
+        Returns:
+            標準化的圖譜資料字典
+        """
+        import os
+        from llama_index.core import StorageContext, load_index_from_storage
+        from src.storage import get_storage_path
+        
+        # 取得儲存路徑
+        self.storage_path = get_storage_path(
+            storage_type="graph_index",
+            data_type=self.data_type,
+            method="ontology",
+            fast_test=self.fast_test
+        )
+        
+        print(f"📂 Ontology 儲存路徑: {self.storage_path}")
+        
+        # 確保輸出目錄存在
+        os.makedirs(self.output_dir, exist_ok=True)
+        
+        # Schema 檔案路徑
+        schema_file = os.path.join(self.output_dir, "kg_schema_final.json")
+        
+        # 檢查是否已存在 cache
+        if os.path.exists(self.storage_path) and os.path.exists(schema_file):
+            print(f"✅ Ontology 索引已存在,載入現有索引和 Schema...")
+            
+            # 載入圖譜索引
+            storage_context = StorageContext.from_defaults(persist_dir=self.storage_path)
+            self.graph_index = load_index_from_storage(storage_context)
+            
+            # 載入 Schema
+            with open(schema_file, "r", encoding="utf-8") as f:
+                dynamic_schema = json.load(f)
+            
+            print(f"✅ 已載入 Schema: {len(dynamic_schema.get('entities', []))} 實體類型, {len(dynamic_schema.get('relations', []))} 關係類型")
+            
+            schema_info = {
+                "entities": dynamic_schema.get("entities", []),
+                "relations": dynamic_schema.get("relations", []),
+                "method": "ontology",
+                "validation_schema": dynamic_schema.get("validation_schema", {}),
+                "note": "動態演化 Schema"
+            }
+            
+            return {
+                "nodes": [],
+                "edges": [],
+                "metadata": {
+                    "num_documents": len(documents),
+                    "fast_test": self.fast_test,
+                    "cached": True
+                },
+                "schema_info": schema_info,
+                "storage_path": self.storage_path,
+                "graph_format": "property_graph"
+            }
+        
+        # 若無 cache，執行建圖
+        print(f"🔨 [Ontology] 開始建立知識圖譜...")
+        
         # 1. 讀取外部設定
         with open("kg_schema.json", "r", encoding="utf-8") as f:
             dynamic_schema = json.load(f)
@@ -87,6 +188,11 @@ class OntologyGraphBuilder(BaseGraphBuilder):
         
         # 2. 參數計算
         total_docs = len(documents)
+        if self.fast_test and total_docs > 2:
+            documents = documents[:2]
+            total_docs = 2
+            print(f"⚡ 快速測試模式:僅處理前 2 筆文檔")
+        
         BATCH_SIZE = max(1, int(total_docs * 0.1))
         total_rounds = math.ceil(total_docs / BATCH_SIZE)
         MAX_EVOLVE_ROUNDS = max(1, int(total_rounds * 0.5))
@@ -114,16 +220,48 @@ class OntologyGraphBuilder(BaseGraphBuilder):
             )
             
             # 寫入圖譜
-            PropertyGraphIndex.from_documents(
-                batch,
-                property_graph_store=self.graph_store,
-                kg_extractors=[CustomMetadataExtractor(), llm_extractor],
-                llm=self.settings.llm,
-                embed_model=self.settings.embed_model,
-                show_progress=False 
-            )
+            if self.graph_index is None:
+                self.graph_index = PropertyGraphIndex.from_documents(
+                    batch,
+                    property_graph_store=self.graph_store,
+                    kg_extractors=[CustomMetadataExtractor(), llm_extractor],
+                    llm=self.settings.llm,
+                    embed_model=self.settings.embed_model,
+                    show_progress=False 
+                )
+            else:
+                # 增量更新(如果支援)
+                for doc in batch:
+                    self.graph_index.insert(doc)
         
-        # 4. 儲存結果
-        with open("kg_schema_final.json", "w", encoding="utf-8") as f:
+        # 4. 持久化
+        if self.graph_index:
+            self.graph_index.storage_context.persist(persist_dir=self.storage_path)
+            print(f"💾 圖譜已持久化到: {self.storage_path}")
+        
+        # 5. 儲存最終 Schema
+        with open(schema_file, "w", encoding="utf-8") as f:
             json.dump(dynamic_schema, f, ensure_ascii=False, indent=4)
-        print("\n>> [Ontology Plugin] 建圖完成！最終 Schema 已儲存。")
+        print(f"💾 最終 Schema 已儲存到: {schema_file}")
+        print("\n✅ [Ontology Plugin] 建圖完成！")
+        
+        schema_info = {
+            "entities": dynamic_schema.get("entities", []),
+            "relations": dynamic_schema.get("relations", []),
+            "method": "ontology",
+            "validation_schema": dynamic_schema.get("validation_schema", {}),
+            "note": "動態演化 Schema"
+        }
+        
+        return {
+            "nodes": [],
+            "edges": [],
+            "metadata": {
+                "num_documents": len(documents),
+                "fast_test": self.fast_test,
+                "cached": False
+            },
+            "schema_info": schema_info,
+            "storage_path": self.storage_path,
+            "graph_format": "property_graph"
+        }

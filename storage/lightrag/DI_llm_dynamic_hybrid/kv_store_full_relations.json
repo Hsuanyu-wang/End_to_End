@@ -1,0 +1,3142 @@
+{
+  "doc-3f8775862e3b8ea072578967e7520445": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "Geodb更新",
+        "Splunk驻点服务202510第一周"
+      ],
+      [
+        "UF设备",
+        "传输上限"
+      ],
+      [
+        "B人员",
+        "C客户"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "授权量"
+      ],
+      [
+        "GitLab升版17.10.8 → 18.1.6",
+        "PWLAN触发IPS高风险告警"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773776887,
+    "update_time": 1773776887,
+    "_id": "doc-3f8775862e3b8ea072578967e7520445"
+  },
+  "doc-dddcb833d814b293bd936732652206d0": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "后续维护计划"
+      ],
+      [
+        "splunk_信用卡處12月月維護",
+        "系統優化建議"
+      ],
+      [
+        "A人員",
+        "splunk_信用卡處12月月維護"
+      ],
+      [
+        "DEP02主机服务转移任务",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "授权扩容建议与容量规划任务"
+      ],
+      [
+        "E客户",
+        "网络优化与维护任务执行情况"
+      ],
+      [
+        "E客户",
+        "Websense日志处理优化"
+      ],
+      [
+        "E客户",
+        "数据分离整合与日志处理改进任务"
+      ],
+      [
+        "E客户",
+        "系统优化与维护任务执行情况"
+      ],
+      [
+        "E客户",
+        "授权用量推荐扩容"
+      ],
+      [
+        "E客户",
+        "SH KVstore异常进一步测试确认与问题解决任务"
+      ],
+      [
+        "E客户",
+        "UF设备传输上限调整"
+      ],
+      [
+        "E客户",
+        "FISAC资料收容申请事项推进任务"
+      ],
+      [
+        "#|>E客户",
+        "SH KVstore异常进一步测试确认"
+      ],
+      [
+        "E客户",
+        "网络传输上限调整与问题解决"
+      ],
+      [
+        "splunk_信用卡處12月月維護",
+        "伺服器效能"
+      ],
+      [
+        "E客户",
+        "数据分离整合与日志处理优化任务"
+      ],
+      [
+        "F客戶",
+        "splunk_信用卡處12月月維護"
+      ],
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "E客户",
+        "数据分离整合任务执行"
+      ],
+      [
+        "E客户",
+        "网络相关功能增强与数据收集改进"
+      ],
+      [
+        "E客户",
+        "授权扩容建议"
+      ],
+      [
+        "E客户",
+        "网络相关功能增强"
+      ],
+      [
+        "DEP02主机服务转移",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "授权用量平均使用量对比"
+      ],
+      [
+        "UF",
+        "轉送器監視設定"
+      ],
+      [
+        "E客户",
+        "网络优化与维护计划任务"
+      ],
+      [
+        "E客户",
+        "系统优化与维护计划任务"
+      ],
+      [
+        "splunk_信用卡處12月月維護",
+        "版本更新"
+      ],
+      [
+        "CentOS操作系统升级中止任务",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Tenable API应用程序集成工作推进"
+      ],
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "E客户",
+        "数据分离整合"
+      ],
+      [
+        "E客户",
+        "系统优化与维护任务"
+      ],
+      [
+        "E客户",
+        "数据分离整合与日志处理改进"
+      ],
+      [
+        "E客户",
+        "网络传输上限调整"
+      ],
+      [
+        "E客户",
+        "GCP报表用户字段调整"
+      ],
+      [
+        "E客户",
+        "网络相关功能增强与数据收集优化任务"
+      ],
+      [
+        "E客户",
+        "授权扩容与容量规划任务"
+      ],
+      [
+        "E客户",
+        "Websense日志原始源类型恢复"
+      ],
+      [
+        "E客户",
+        "Websense日志处理优化与数据分离整合任务"
+      ],
+      [
+        "E客户",
+        "系统优化建议实施"
+      ]
+    ],
+    "count": 42,
+    "create_time": 1773777002,
+    "update_time": 1773777002,
+    "_id": "doc-dddcb833d814b293bd936732652206d0"
+  },
+  "doc-0944d4a59fb7a84bd79d2fca8361e518": {
+    "relation_pairs": [
+      [
+        "B客戶",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "A部門",
+        "新增DNS設定"
+      ],
+      [
+        "A部門",
+        "部屬新crowdstrike套件"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "UF设备",
+        "系统优化建议"
+      ],
+      [
+        "当前授权为150 GB",
+        "推荐扩容授权量"
+      ],
+      [
+        "推荐扩容授权量",
+        "系统平均使用量接近661.01 GB"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "#|C人員",
+        "A人員"
+      ],
+      [
+        "B客戶",
+        "FISAC資料收容-進行中"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777023,
+    "update_time": 1773777023,
+    "_id": "doc-0944d4a59fb7a84bd79d2fca8361e518"
+  },
+  "doc-f6caccf00501b5f4caf06dcfc047ae9e": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "B人員",
+        "eStreamer"
+      ],
+      [
+        "B人員",
+        "KVstore"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "AI網站服務紀錄",
+        "B人員"
+      ],
+      [
+        "B人員",
+        "GeoDB"
+      ],
+      [
+        "B人員",
+        "弱點掃描報告"
+      ],
+      [
+        "B人員",
+        "KPMG滲透測試IP白名單"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777024,
+    "update_time": 1773777024,
+    "_id": "doc-f6caccf00501b5f4caf06dcfc047ae9e"
+  },
+  "doc-345e520afd2a192e25824abb33740d46": {
+    "relation_pairs": [
+      [
+        "A客戶",
+        "C人員"
+      ],
+      [
+        "E客户",
+        "推荐扩容授权量"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "系统优化建议"
+      ],
+      [
+        "Splunk Enterprise 9.3.1",
+        "Splunk Enterprise 9.3.3"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777036,
+    "update_time": 1773777036,
+    "_id": "doc-345e520afd2a192e25824abb33740d46"
+  },
+  "doc-c41e50d3a458388dc7fe53ece68ee69f": {
+    "relation_pairs": [
+      [
+        "Splunk駐點服務202510第五周",
+        "本月維護作業"
+      ],
+      [
+        "B人員",
+        "geodb更新"
+      ],
+      [
+        "AbuseIPDB串接",
+        "VirusTotal比對"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773777037,
+    "update_time": 1773777037,
+    "_id": "doc-c41e50d3a458388dc7fe53ece68ee69f"
+  },
+  "doc-7c1fca5402ff2eb1c53222e1d4db282a": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "B人員",
+        "estreamer資料暴增"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "estreamer資料暴增"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B人員",
+        "audit.log持續累積"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "audit.log持續累積"
+      ],
+      [
+        "B人員",
+        "var/log/messages-20251214單一檔案達148GB"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "var/log/messages-20251214單一檔案達148GB"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773777051,
+    "update_time": 1773777051,
+    "_id": "doc-7c1fca5402ff2eb1c53222e1d4db282a"
+  },
+  "doc-d0d3b88d3601a1081c8354e0ef27952f": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "C人员",
+        "Splunk Indexer Queue Full-20251215"
+      ],
+      [
+        "B客户",
+        "C人员"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1773777052,
+    "update_time": 1773777052,
+    "_id": "doc-d0d3b88d3601a1081c8354e0ef27952f"
+  },
+  "doc-2fe3f974e54dd1f1ad98289cc79980d6": {
+    "relation_pairs": [
+      [
+        "Trendmicro主机资料收集模块新增功能",
+        "网络安全相关功能增强"
+      ],
+      [
+        "功能更新建议",
+        "推荐升级到最新版"
+      ],
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "FCB",
+        "MG02"
+      ],
+      [
+        "推荐扩容授权量",
+        "现行版本与系统优化建议"
+      ],
+      [
+        "FCB",
+        "FWD03"
+      ],
+      [
+        "Websense日志处理问题调整回原始source type",
+        "其它优化项目"
+      ],
+      [
+        "10台UF超出预设传输上限问题",
+        "系统优化"
+      ],
+      [
+        "GCP的报表user字段内容调整",
+        "报表改进"
+      ],
+      [
+        "DEP02主机服务转移计划",
+        "未来几周的工作计划"
+      ],
+      [
+        "GeoDB",
+        "Splunk驻点服务202512第三周"
+      ],
+      [
+        "GitLab漏洞修補",
+        "待办事项"
+      ],
+      [
+        "B人员",
+        "C客户"
+      ],
+      [
+        "Ryan之Splunk帐号",
+        "人员变更"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1773777076,
+    "update_time": 1773777076,
+    "_id": "doc-2fe3f974e54dd1f1ad98289cc79980d6"
+  },
+  "doc-07959bdb8bab221c9c80a1c3e85776b3": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)",
+        "健康狀態檢查"
+      ],
+      [
+        "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)",
+        "系統日誌分析"
+      ],
+      [
+        "A人員",
+        "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)"
+      ],
+      [
+        "C人員",
+        "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)"
+      ],
+      [
+        "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)",
+        "設備狀態檢查"
+      ],
+      [
+        "A客戶",
+        "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)"
+      ],
+      [
+        "E客户",
+        "Maintenance and Adjustments in December 2025"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)",
+        "系統參數檢查"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777089,
+    "update_time": 1773777089,
+    "_id": "doc-07959bdb8bab221c9c80a1c3e85776b3"
+  },
+  "doc-15d6c505e6a20b598aa21d52b466adcd": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "10台UF超出预设传输上限问题已通过套件调整解决",
+        "E客户"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "授权用量"
+      ],
+      [
+        "<F5VPN特定使用者連線的紀錄(sas)>停用報表",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "GeoDB",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "FWD03底層資料收容filter設定",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "10台UF超出预设传输上限问题已通过套件调整解决",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Gitlab漏洞修補",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "SH KVstore异常进一步测试确认"
+      ],
+      [
+        "B部门",
+        "FISAC资料收容申请事项"
+      ],
+      [
+        "<HTTP對外大量傳輸資料報表調整",
+        "Splunk駐點服務202601第三周"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773777095,
+    "update_time": 1773777095,
+    "_id": "doc-15d6c505e6a20b598aa21d52b466adcd"
+  },
+  "doc-5618eb566fb322ada0eb69bef88a7581": {
+    "relation_pairs": [
+      [
+        "C人员",
+        "I客户"
+      ],
+      [
+        "A人员",
+        "PA TRAFFIC事件"
+      ],
+      [
+        "授权用量",
+        "推荐扩容授权量"
+      ],
+      [
+        "A人员",
+        "I客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "10台UF",
+        "系统优化建议"
+      ],
+      [
+        "C人员",
+        "PA TRAFFIC事件"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777107,
+    "update_time": 1773777107,
+    "_id": "doc-5618eb566fb322ada0eb69bef88a7581"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "relation_pairs": [
+      [
+        "Splunk银行处",
+        "授权用量"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A人员",
+        "F客户"
+      ],
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "Trendmicro主机资料收集模块",
+        "网络安全功能增强"
+      ],
+      [
+        "E客户",
+        "UF传输上限问题"
+      ],
+      [
+        "GCP报表user字段调整",
+        "Websense日志处理"
+      ],
+      [
+        "推荐扩容授权量",
+        "系统平均使用量接近661.01 GB"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "当前版本",
+        "最新版本"
+      ],
+      [
+        "DEP02主机服务转移",
+        "系统优化项目"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773777113,
+    "update_time": 1773777113,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-8a81645d1d338ac013fa594b14c35640": {
+    "relation_pairs": [
+      [
+        "B人员",
+        "D客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "Splunk 202510-12季维护",
+        "授权量"
+      ],
+      [
+        "Splunk版本9.3.8",
+        "最新Splunk版本10.0.2"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk版本9.3.8",
+        "平均授权用量"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777134,
+    "update_time": 1773777134,
+    "_id": "doc-8a81645d1d338ac013fa594b14c35640"
+  },
+  "doc-cafeb58d25cc4cbc85eaf07cf415496a": {
+    "relation_pairs": [
+      [
+        "CEF outputs套件调整",
+        "威胁对象重叠问题"
+      ],
+      [
+        "Apim1与imsdb01",
+        "资产异常问题"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk版本升级",
+        "自动版本检查禁用"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777135,
+    "update_time": 1773777135,
+    "_id": "doc-cafeb58d25cc4cbc85eaf07cf415496a"
+  },
+  "doc-c7743e93210e95e8e40e0d2a627684b7": {
+    "relation_pairs": [
+      [
+        "172.20.137.45",
+        "Indexer Cluster"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Trendmicro"
+      ],
+      [
+        "A人员",
+        "Indexer Cluster"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Websense"
+      ],
+      [
+        "A人员",
+        "I客户"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "splunk enterprise 10.0.2"
+      ],
+      [
+        "2025/11/19 13:30至2025/11/19 14:30",
+        "ASA事件"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773777155,
+    "update_time": 1773777155,
+    "_id": "doc-c7743e93210e95e8e40e0d2a627684b7"
+  },
+  "doc-4861ed7c0c566a81f361adb6811a1523": {
+    "relation_pairs": [
+      [
+        "splunk_信用卡處11月維護",
+        "伺服器效能"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ],
+      [
+        "splunk_信用卡處11月維護",
+        "版本更新"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "splunk_信用卡處11月維護",
+        "系統優化建議"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "UF",
+        "轉送器監視設定"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777167,
+    "update_time": 1773777167,
+    "_id": "doc-4861ed7c0c566a81f361adb6811a1523"
+  },
+  "doc-ab226f704fc1b4d45dd06222f40cb39f": {
+    "relation_pairs": [
+      [
+        "FCB设定调整",
+        "待办事项"
+      ],
+      [
+        "AI网站服务纪录调阅报表建置",
+        "Gen AI连线纪录(每日)"
+      ],
+      [
+        "Splunk驻点服务202512第一周",
+        "告警盘点"
+      ],
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "10台UF",
+        "预设传输上限"
+      ],
+      [
+        "B人员",
+        "Splunk驻点服务202512第一周"
+      ],
+      [
+        "C客户",
+        "Splunk驻点服务202512第一周"
+      ],
+      [
+        "当前授权",
+        "推荐扩容授权量"
+      ],
+      [
+        "B人员",
+        "GeoDB"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773777170,
+    "update_time": 1773777170,
+    "_id": "doc-ab226f704fc1b4d45dd06222f40cb39f"
+  },
+  "doc-b6f1e5469f6278ea8a34bff96b293b69": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Trendmicro主机资料收集模块"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "推荐扩容授权量"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "GCP报表user字段调整"
+      ],
+      [
+        "E客户",
+        "Websense日志类型分离整合"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777184,
+    "update_time": 1773777184,
+    "_id": "doc-b6f1e5469f6278ea8a34bff96b293b69"
+  },
+  "doc-b0add79f46581b83deba682a2c89cdb7": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Maintenance and Adjustments"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1773777185,
+    "update_time": 1773777185,
+    "_id": "doc-b0add79f46581b83deba682a2c89cdb7"
+  },
+  "doc-04465635a6b88183cbabbfe7e25635dd": {
+    "relation_pairs": [
+      [
+        "Recommended Upgrade",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "285GB",
+        "B客戶"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "10.0.2/2025.11.14",
+        "9.3.6/2025.07.31"
+      ],
+      [
+        "Current Version",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A人員",
+        "Splunk_11月維護"
+      ],
+      [
+        "9.3.6/2025.07.31",
+        "Splunk_11月維護"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777206,
+    "update_time": 1773777206,
+    "_id": "doc-04465635a6b88183cbabbfe7e25635dd"
+  },
+  "doc-082efb5c18d778427dcd94905e5f4370": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1773777221,
+    "update_time": 1773777221,
+    "_id": "doc-082efb5c18d778427dcd94905e5f4370"
+  },
+  "doc-0d3d3acb3c191c9e65fac21b5ed9284f": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標告警調整"
+      ],
+      [
+        "Trendmicro主机资料收集模块",
+        "网络安全相关功能增强"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202511第四周"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202511第四周"
+      ],
+      [
+        "功能更新建议",
+        "系统优化建议"
+      ],
+      [
+        "B人員",
+        "GeoDB"
+      ],
+      [
+        "B人員",
+        "Gitlab版本升及18.1.6 -> 18.5.2"
+      ],
+      [
+        "授权用量",
+        "推荐扩容授权量"
+      ],
+      [
+        "websense日志类型分离整合",
+        "报表改进"
+      ],
+      [
+        "B人員",
+        "FCB設定"
+      ],
+      [
+        "AI網站服務紀錄調閱儀表板建置",
+        "B人員"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "UF设备",
+        "授权用量"
+      ],
+      [
+        "GCP报表user字段内容调整",
+        "报表改进"
+      ],
+      [
+        "B人員",
+        "告警盤點"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1773777228,
+    "update_time": 1773777228,
+    "_id": "doc-0d3d3acb3c191c9e65fac21b5ed9284f"
+  },
+  "doc-72f381579d364fa91cc3e73153e0af97": {
+    "relation_pairs": [
+      [
+        "DEP02",
+        "KGIBIDX04"
+      ],
+      [
+        "FISAC資料收容申請單",
+        "SH KVstore"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A部門",
+        "DEP02"
+      ],
+      [
+        "CDIBHMGT02",
+        "CentOS操作系统升级"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777250,
+    "update_time": 1773777250,
+    "_id": "doc-72f381579d364fa91cc3e73153e0af97"
+  },
+  "doc-8a40e782f3c3804da0a1d45dfa05eefe": {
+    "relation_pairs": [
+      [
+        "2025/12/02 09:00至2025/12/02 12:00",
+        "E客户"
+      ],
+      [
+        "2025/12/02 09:00至2025/12/02 12:00",
+        "XSOAR"
+      ],
+      [
+        "2025/12/02 09:00至2025/12/02 12:00",
+        "SASE VPN"
+      ],
+      [
+        "SASE VPN",
+        "SOAR"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777250,
+    "update_time": 1773777250,
+    "_id": "doc-8a40e782f3c3804da0a1d45dfa05eefe"
+  },
+  "doc-7504d68fad10caa1cd0ea41314ed2ede": {
+    "relation_pairs": [
+      [
+        "B部門",
+        "FISAC資料收容申請單"
+      ],
+      [
+        "DEP02",
+        "sailag"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "系统优化建议"
+      ],
+      [
+        "SH KVstore引擎異常測試",
+        "SH KVstore引擎異常測試環境"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "E客户",
+        "推荐扩容授权量"
+      ],
+      [
+        "推荐扩容授权量",
+        "系统平均使用量接近661.01 GB"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "系统平均使用量接近661.01 GB"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777275,
+    "update_time": 1773777275,
+    "_id": "doc-7504d68fad10caa1cd0ea41314ed2ede"
+  },
+  "doc-9648988cb67db9843bc13754ac3d6ab6": {
+    "relation_pairs": [
+      [
+        "I客户",
+        "Splunk_12月維護"
+      ],
+      [
+        "Red Hat 9.4",
+        "版本更新建议"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "CVE-2023-3567, CVE-2023-4133, CVE-2023-6932, CVE-2023-39198, CVE-2023-51043, CVE-2023-51779, CVE-2023-5178",
+        "Red Hat 9.4"
+      ],
+      [
+        "A人员",
+        "I客户"
+      ],
+      [
+        "平均授權用量：55.15GB",
+        "授权量：20GB"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777286,
+    "update_time": 1773777286,
+    "_id": "doc-9648988cb67db9843bc13754ac3d6ab6"
+  },
+  "doc-8bddb98b4a84e394c0a4558b42ae12d0": {
+    "relation_pairs": [
+      [
+        "ES升版",
+        "硬体状态栏位"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "Network Security Enhancements",
+        "Trendmicro Host Data Collection Module"
+      ],
+      [
+        "System Optimization",
+        "UF Transfers"
+      ],
+      [
+        "Log Breakline Issue",
+        "Websense Log Processing"
+      ],
+      [
+        "Indexer设定防窜改",
+        "内对内告警"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Report Integration",
+        "Websense Log Types Separation"
+      ],
+      [
+        "Ongoing Issues Resolution",
+        "SH KVstore Abnormality Testing Confirmation"
+      ],
+      [
+        "B Department FISAC Data Collection Application Process",
+        "Future Maintenance Tasks"
+      ],
+      [
+        "GCP Report User Field Adjustment",
+        "Report Improvements"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773777293,
+    "update_time": 1773777293,
+    "_id": "doc-8bddb98b4a84e394c0a4558b42ae12d0"
+  },
+  "doc-5096c0cdf6972a3670732e4f9be1d36a": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "Tenable API应用程序集成工作"
+      ],
+      [
+        "E客户",
+        "授权量"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "UF传输上限",
+        "系统优化建议"
+      ],
+      [
+        "推荐扩容授权量",
+        "系统平均使用量接近661.01 GB"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "当前授权为150 GB",
+        "推荐扩容授权量"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777319,
+    "update_time": 1773777319,
+    "_id": "doc-5096c0cdf6972a3670732e4f9be1d36a"
+  },
+  "doc-daa296a353c26f41dfc613743d24e936": {
+    "relation_pairs": [
+      [
+        "B部門",
+        "IDX cluster節點"
+      ],
+      [
+        "A人員",
+        "KV store憑證效期"
+      ],
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "A人員",
+        "PA報表"
+      ],
+      [
+        "A人員",
+        "Centos作業系統升級"
+      ],
+      [
+        "A人員",
+        "Block Category報表"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "推荐扩容授权量",
+        "系统平均使用量接近661.01 GB"
+      ],
+      [
+        "A部門",
+        "DEP02連動主機檢查"
+      ],
+      [
+        "A人員",
+        "B部門indexer索引同步狀態"
+      ],
+      [
+        "当前授权为150 GB",
+        "推荐扩容授权量"
+      ],
+      [
+        "B部門",
+        "FIsac資料收容"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773777321,
+    "update_time": 1773777321,
+    "_id": "doc-daa296a353c26f41dfc613743d24e936"
+  },
+  "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "G客戶"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk_10月維護",
+        "授权使用量"
+      ],
+      [
+        "伺服器效能",
+        "版本評估"
+      ],
+      [
+        "B部门",
+        "FISAC资料收容申请事项"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777340,
+    "update_time": 1773777340,
+    "_id": "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+  },
+  "doc-886b4b629f3088ef8656c792cf7b3e8b": {
+    "relation_pairs": [
+      [
+        "A人员",
+        "G客户"
+      ],
+      [
+        "G客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "G客户",
+        "Splunk Enterprise 9.4.3"
+      ],
+      [
+        "当前版本",
+        "最新版本"
+      ],
+      [
+        "E客户",
+        "系统优化建议"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777340,
+    "update_time": 1773777340,
+    "_id": "doc-886b4b629f3088ef8656c792cf7b3e8b"
+  },
+  "doc-d96ca3133c54d9d76add7de434ee05b5": {
+    "relation_pairs": [
+      [
+        "A部门",
+        "Splunk整体架构IP调整,Splunk套件升级,NTP服务检查,KVstore凭证效期检查,SPLUNK月报寄送"
+      ],
+      [
+        "C同事",
+        "SPLUNK月报寄送"
+      ],
+      [
+        "2025/11/05 13:30至2025/11/05 19:00",
+        "A部门,B部门"
+      ],
+      [
+        "B部门",
+        "FIsac情资捞取,新增indexer"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "授权用量",
+        "推荐扩容授权量"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "授权用量",
+        "系统平均使用量接近661.01 GB"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "最新版本"
+      ],
+      [
+        "A人员,C人员",
+        "B客户"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777363,
+    "update_time": 1773777363,
+    "_id": "doc-d96ca3133c54d9d76add7de434ee05b5"
+  },
+  "doc-3c4967b23b72f04d5c4ef37149d21ede": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.3"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.1"
+      ],
+      [
+        "2025/11/04 09:00至2025/11/04 09:30",
+        "E客户"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777364,
+    "update_time": 1773777364,
+    "_id": "doc-3c4967b23b72f04d5c4ef37149d21ede"
+  },
+  "doc-996c8aba3ce4de0e9bb90c0d569231f3": {
+    "relation_pairs": [
+      [
+        "工作内容描述",
+        "维护时间"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "维护时间"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Maintenance And Adjustment"
+      ],
+      [
+        "C人员",
+        "寄信套件"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777385,
+    "update_time": 1773777385,
+    "_id": "doc-996c8aba3ce4de0e9bb90c0d569231f3"
+  },
+  "doc-76068a2f95fd89e7ceb4741d4eb478ce": {
+    "relation_pairs": [
+      [
+        "C人员",
+        "FISAC API Input无数据时会跳Error"
+      ],
+      [
+        "ES版本",
+        "Finding因threat object重複显示"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "授权用量"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777385,
+    "update_time": 1773777385,
+    "_id": "doc-76068a2f95fd89e7ceb4741d4eb478ce"
+  },
+  "doc-c0c6684aa00106f16e7869f519061642": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "授权用量推荐扩容量"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "GCP报表user字段内容",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "UF",
+        "授权用量推荐扩容量"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777405,
+    "update_time": 1773777405,
+    "_id": "doc-c0c6684aa00106f16e7869f519061642"
+  },
+  "doc-0640212d45b4b92d91d0255cf90edf96": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1773777405,
+    "update_time": 1773777405,
+    "_id": "doc-0640212d45b4b92d91d0255cf90edf96"
+  },
+  "doc-333af5cc1ff286e512f36be66d1aa78b": {
+    "relation_pairs": [
+      [
+        "B部门",
+        "FISAC资料收容-进行中"
+      ],
+      [
+        "DEP02 (IP)",
+        "Linux主機使用者與使用者權限-進行中"
+      ],
+      [
+        "DEP02 (IP)",
+        "DEP02 ([IP])移转(下周进行)"
+      ],
+      [
+        "Tenable API App串接",
+        "未来规划,系统维护"
+      ],
+      [
+        "A部门",
+        "Splunk Add-on for Google Cloud Platform"
+      ],
+      [
+        "2025/12/24 13:30至2025/12/24 20:00",
+        "Splunk角色能力异常"
+      ],
+      [
+        "A部门",
+        "PA每月报表触发动作变更"
+      ],
+      [
+        "SH KVstore引擎异常测试-进行中",
+        "个人测试环境"
+      ],
+      [
+        "A部门",
+        "CentOS操作系统升级(评估中)"
+      ],
+      [
+        "A人员,C人员",
+        "B客户"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777428,
+    "update_time": 1773777428,
+    "_id": "doc-333af5cc1ff286e512f36be66d1aa78b"
+  },
+  "doc-41be59e9bae9e87a716afd8b5a9e9ee1": {
+    "relation_pairs": [
+      [
+        "DM20250258_(1/2)",
+        "Splunk平台維護案(06-11月)"
+      ],
+      [
+        "CVE漏洞",
+        "Splunk平台維護案(06-11月)"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "CVE漏洞",
+        "C人員"
+      ],
+      [
+        "C人員",
+        "H客戶"
+      ],
+      [
+        "CVE漏洞",
+        "Splunk版本升級"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777442,
+    "update_time": 1773777442,
+    "_id": "doc-41be59e9bae9e87a716afd8b5a9e9ee1"
+  },
+  "doc-fcc4bf66788ce00c23c3e736753ea50a": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "10.0.0 / 2025.07.28",
+        "版本更新"
+      ],
+      [
+        "10台UF",
+        "传输上限"
+      ],
+      [
+        "630 GB",
+        "平均授权用量"
+      ],
+      [
+        "服务器效能",
+        "正常"
+      ],
+      [
+        "9.3.3 / 2025.02.26",
+        "版本更新"
+      ],
+      [
+        "150 GB",
+        "授权用量"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777452,
+    "update_time": 1773777452,
+    "_id": "doc-fcc4bf66788ce00c23c3e736753ea50a"
+  },
+  "doc-1df6d8d113790f99d50593095e1e5e58": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Trendmicro主机资料收集模块"
+      ],
+      [
+        "C人员",
+        "websense"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "推荐扩容授权量",
+        "系统平均使用量接近661.01 GB"
+      ],
+      [
+        "C人员",
+        "GCP报表user字段内容"
+      ],
+      [
+        "当前授权为150 GB",
+        "推荐扩容授权量"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777456,
+    "update_time": 1773777456,
+    "_id": "doc-1df6d8d113790f99d50593095e1e5e58"
+  },
+  "doc-cdd29ae3537f38a27c3848632ad51359": {
+    "relation_pairs": [
+      [
+        "FCB設定資料永久保存占用磁碟空間",
+        "FWD03底層資料收容"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "C客戶",
+        "Gitlab漏洞修補"
+      ],
+      [
+        "E客户",
+        "推荐扩容授权量"
+      ],
+      [
+        "C客戶",
+        "SSH Server漏洞修補"
+      ],
+      [
+        "Cybereyes高(high)風險告警_new (測試中)",
+        "大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中)"
+      ],
+      [
+        "Cybereyes API",
+        "Splunk駐點服務202601第二周"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777484,
+    "update_time": 1773777484,
+    "_id": "doc-cdd29ae3537f38a27c3848632ad51359"
+  },
+  "doc-738a58105cbf665748b3257e0cfee9ac": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Trendmicro主机的资料收集模块"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "Tenable API应用程序集成工作"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "C人员",
+        "SH KVstore异常测试确认"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "Websense日志处理"
+      ],
+      [
+        "DEP02主机服务转移",
+        "E客户"
+      ],
+      [
+        "C人员",
+        "Splunk插件用于Google Cloud"
+      ],
+      [
+        "CentOS操作系统升级中止",
+        "E客户"
+      ],
+      [
+        "C人员",
+        "GCP报表user字段内容"
+      ],
+      [
+        "E客户",
+        "FISAC资料收容申请事项"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773777485,
+    "update_time": 1773777485,
+    "_id": "doc-738a58105cbf665748b3257e0cfee9ac"
+  },
+  "doc-d0cef05272158ef916c2b84f625b2ddb": {
+    "relation_pairs": [
+      [
+        "C人员",
+        "SH KVstore异常"
+      ],
+      [
+        "CEF Outputs套件",
+        "C人员"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E客户",
+        "RES3SQL19"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Apim1与imsdb01",
+        "E客户"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777513,
+    "update_time": 1773777513,
+    "_id": "doc-d0cef05272158ef916c2b84f625b2ddb"
+  },
+  "doc-c0cd3e323fc2a43e461d7af757b08706": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Splunk工作事项- 0729"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1773777513,
+    "update_time": 1773777513,
+    "_id": "doc-c0cd3e323fc2a43e461d7af757b08706"
+  },
+  "doc-fe7268a7cb94439d483759e501068db6": {
+    "relation_pairs": [
+      [
+        "B客戶",
+        "splunk_B客戶B部門11月維護"
+      ],
+      [
+        "E客户",
+        "推荐扩容授权量"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A人員",
+        "splunk_B客戶B部門11月維護"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773777524,
+    "update_time": 1773777524,
+    "_id": "doc-fe7268a7cb94439d483759e501068db6"
+  },
+  "doc-8a83bcdf6e7b7269cfd17b4f21457de8": {
+    "relation_pairs": [
+      [
+        "A客戶",
+        "SPLUNK"
+      ],
+      [
+        "DEP02主机服务转移计划",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "添加Splunk插件用于Google Cloud"
+      ],
+      [
+        "KVSTORE",
+        "SPLUNK"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Trendmicro主机资料收集模块"
+      ],
+      [
+        "10台UF超出传输上限问题",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "GCP报表user字段内容调整",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Tenable API应用程序集成工作推进"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "Websense日志处理"
+      ],
+      [
+        "A人員",
+        "A客戶"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773777532,
+    "update_time": 1773777532,
+    "_id": "doc-8a83bcdf6e7b7269cfd17b4f21457de8"
+  },
+  "doc-726c374f489423e007bce76f7810b46e": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "10.0.2/2025.11.14",
+        "9.3.3/2025.02.26"
+      ],
+      [
+        "A人员",
+        "F客户"
+      ],
+      [
+        "2025/11/24 10:30至2025/11/24 12:00",
+        "Splunk_信用卡處11月維護"
+      ],
+      [
+        "平均授权用量：132GB",
+        "授权量：100GB"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777549,
+    "update_time": 1773777549,
+    "_id": "doc-726c374f489423e007bce76f7810b46e"
+  },
+  "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b": {
+    "relation_pairs": [
+      [
+        "DC_ARP_table",
+        "設備清單"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A人員",
+        "C人員"
+      ],
+      [
+        "E客户",
+        "Recommendation for Expansion Authorization Quantity"
+      ],
+      [
+        "E客户",
+        "Maintenance and Adjustments in December 2025"
+      ],
+      [
+        "A客戶",
+        "DC_ARP_table"
+      ],
+      [
+        "A人員",
+        "凱壽全科人員"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777550,
+    "update_time": 1773777550,
+    "_id": "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+  },
+  "doc-412e17859c430b9ce8b929bc152053ef": {
+    "relation_pairs": [
+      [
+        "150 GB",
+        "E Customer"
+      ],
+      [
+        "E Customer",
+        "Trendmicro Host Data Collection Module"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "661.01 GB",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "2025/12/12 09:00至2025/12/12 18:00",
+        "Splunk Indexer queue full - 20251212"
+      ],
+      [
+        "E Customer",
+        "GCP Reports User Field Content Adjustment"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E Customer",
+        "Websense Log Type Separation Integration"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777569,
+    "update_time": 1773777569,
+    "_id": "doc-412e17859c430b9ce8b929bc152053ef"
+  },
+  "doc-1e6e1908b68b82814f06780675f7938b": {
+    "relation_pairs": [
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "Recommendation",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773777570,
+    "update_time": 1773777570,
+    "_id": "doc-1e6e1908b68b82814f06780675f7938b"
+  },
+  "doc-b8ec2739edb4ee1ccc4cf68534e90be5": {
+    "relation_pairs": [
+      [
+        "10.0.2 / 2025.11.14",
+        "版本更新建议"
+      ],
+      [
+        "DM20240200+DN20240393",
+        "Splunk SIEM"
+      ],
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "139.07 GB",
+        "FCB設定"
+      ],
+      [
+        "150 GB",
+        "B人員"
+      ],
+      [
+        "9.3.8 / 2025.11.14",
+        "版本更新建议"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777589,
+    "update_time": 1773777589,
+    "_id": "doc-b8ec2739edb4ee1ccc4cf68534e90be5"
+  },
+  "doc-d02e98febcd8f8650bbe77d789a41d69": {
+    "relation_pairs": [
+      [
+        "E customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E customer",
+        "Recommendation for upgrade"
+      ],
+      [
+        "2025/12/04 13:30至2025/12/04 17:00",
+        "C人员"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773777592,
+    "update_time": 1773777592,
+    "_id": "doc-d02e98febcd8f8650bbe77d789a41d69"
+  },
+  "doc-5930b403906ecb929487592cef5210f2": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "2025/11/11 13:30至2025/11/11 17:30",
+        "Splunk驻点服务202511第二周"
+      ],
+      [
+        "KPMG渗透测试IP白名单",
+        "网络安全问题解决"
+      ],
+      [
+        "B人员",
+        "报告及告警寄件人更新"
+      ],
+      [
+        "CVE-2025-41244和CVE-2025-41246",
+        "VMware Tools"
+      ],
+      [
+        "B人员",
+        "C客户"
+      ],
+      [
+        "B人员",
+        "SOP"
+      ],
+      [
+        "12.3.5版本",
+        "VMware Tools"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777614,
+    "update_time": 1773777614,
+    "_id": "doc-5930b403906ecb929487592cef5210f2"
+  },
+  "doc-95280ea367581dac710f0dc56c7a72f3": {
+    "relation_pairs": [
+      [
+        "B部門",
+        "Centos作業系統升級(評估中)"
+      ],
+      [
+        "GCP报表user字段内容",
+        "调整"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "UF设备",
+        "传输上限"
+      ],
+      [
+        "2025/12/03 13:30至2025/12/03 17:40",
+        "A人員"
+      ],
+      [
+        "B部門",
+        "DEP02 ([IP])移轉(下周進行)"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "Trendmicro主机",
+        "资料收集模块"
+      ],
+      [
+        "E客户",
+        "推荐扩容授权量"
+      ],
+      [
+        "DLP与其它日志数据来源",
+        "Websense日志处理"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "功能更新建议"
+      ],
+      [
+        "B部門",
+        "FISAC資料收容-進行中"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "系统优化建议"
+      ],
+      [
+        "A部門",
+        "B客戶"
+      ],
+      [
+        "A人員",
+        "n8n無法連線至splunk問題"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1773777620,
+    "update_time": 1773777620,
+    "_id": "doc-95280ea367581dac710f0dc56c7a72f3"
+  },
+  "doc-56b76e765b58a558604d5d6f2575d2ca": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "当期版本",
+        "最新版本"
+      ],
+      [
+        "CVE-2023-3567, CVE-2023-4133, CVE-2023-6932, CVE-2023-39198, CVE-2023-51043, CVE-2023-51779, CVE-2023-5178",
+        "操作系统版本"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "Weaknesses"
+      ],
+      [
+        "Splunk_11月維護",
+        "授权量"
+      ],
+      [
+        "A人员",
+        "I客户"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777643,
+    "update_time": 1773777643,
+    "_id": "doc-56b76e765b58a558604d5d6f2575d2ca"
+  },
+  "doc-17b29d261b8bce3ef9105d1c8a78415d": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "A人員",
+        "DC_ARP報表語法檢查"
+      ],
+      [
+        "C人員",
+        "DC_ARP報表語法檢查"
+      ],
+      [
+        "授权用量",
+        "推荐扩容授权量"
+      ],
+      [
+        "A客戶",
+        "C人員"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A人員",
+        "A客戶"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777655,
+    "update_time": 1773777655,
+    "_id": "doc-17b29d261b8bce3ef9105d1c8a78415d"
+  },
+  "doc-1364984bd10139c2ef2cd5907a3a7591": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "ARP_table報表",
+        "Switch_6FDC.csv"
+      ],
+      [
+        "A客戶",
+        "C人員"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "推荐扩容授权量：当前授权为150 GB"
+      ],
+      [
+        "A人員",
+        "A客戶"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777669,
+    "update_time": 1773777669,
+    "_id": "doc-1364984bd10139c2ef2cd5907a3a7591"
+  },
+  "doc-068ca517cbebf973fd4089bd45ef615c": {
+    "relation_pairs": [
+      [
+        "SSH Server",
+        "Splunk駐點服務202512第四周"
+      ],
+      [
+        "GeoDB",
+        "Splunk駐點服務202512第四周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "GitLab",
+        "Splunk駐點服務202512第四周"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "B人員",
+        "Cybereyes介接套件建置"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777672,
+    "update_time": 1773777672,
+    "_id": "doc-068ca517cbebf973fd4089bd45ef615c"
+  },
+  "doc-1e7cec156f57837e8d25cbe83a6db45f": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "系统优化建议"
+      ],
+      [
+        "Splunk驻点服务202510第四周",
+        "geodb更新"
+      ],
+      [
+        "10台UF",
+        "预设传输上限"
+      ],
+      [
+        "B人员",
+        "C客户"
+      ],
+      [
+        "B人员",
+        "Splunk驻点服务202510第四周"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777690,
+    "update_time": 1773777690,
+    "_id": "doc-1e7cec156f57837e8d25cbe83a6db45f"
+  },
+  "doc-1e6839b81653aa7c9b7ec794f3447380": {
+    "relation_pairs": [
+      [
+        "Current Authorization Level",
+        "Recommended Expansion Authorization Amount"
+      ],
+      [
+        "C人员",
+        "Websebse log異常截斷"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "System Average Usage"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "Network Security Functionality Enhancement",
+        "Trendmicro Host Data Collection Module"
+      ],
+      [
+        "2025/12/23 09:00至2025/12/23 18:00",
+        "Websebse log異常截斷"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777690,
+    "update_time": 1773777690,
+    "_id": "doc-1e6839b81653aa7c9b7ec794f3447380"
+  },
+  "doc-2940790b50eb2cba2a5e944b95a94dd5": {
+    "relation_pairs": [
+      [
+        "B部門",
+        "FISAC資料收容申請單"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A部門",
+        "Indexer索引同步狀態異常"
+      ],
+      [
+        "A部門",
+        "Splunk bundle儲存量過大問題"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "A部門",
+        "PA報表"
+      ],
+      [
+        "KV store憑證",
+        "主機"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777704,
+    "update_time": 1773777704,
+    "_id": "doc-2940790b50eb2cba2a5e944b95a94dd5"
+  },
+  "doc-5f0773b8daffa7a65254a73867e36afb": {
+    "relation_pairs": [
+      [
+        "2025/11/26 13:30至2025/11/26 14:30",
+        "pice_logs缺漏处理"
+      ],
+      [
+        "B人员",
+        "D客户"
+      ],
+      [
+        "B人员",
+        "splunk"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773777707,
+    "update_time": 1773777707,
+    "_id": "doc-5f0773b8daffa7a65254a73867e36afb"
+  },
+  "doc-39206ec5906f23d68e051b1df74d3ca7": {
+    "relation_pairs": [
+      [
+        "2025/11/10 09:30至2025/11/10 12:00",
+        "C人员"
+      ],
+      [
+        "推荐扩容授权量",
+        "现行版本与系统优化建议"
+      ],
+      [
+        "C人员",
+        "LM"
+      ],
+      [
+        "E客户",
+        "授权用量"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "授权用量"
+      ],
+      [
+        "功能更新建议",
+        "授权用量"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "最新版本"
+      ],
+      [
+        "授权用量",
+        "系统优化建议"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "功能更新建议"
+      ],
+      [
+        "B客户",
+        "C人员"
+      ],
+      [
+        "推荐扩容授权量",
+        "系统平均使用量接近661.01GB"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773777728,
+    "update_time": 1773777728,
+    "_id": "doc-39206ec5906f23d68e051b1df74d3ca7"
+  },
+  "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "GeoDB",
+        "Splunk駐點服務202512第五周"
+      ],
+      [
+        "B人員",
+        "FWD02"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202512第五周"
+      ],
+      [
+        "HTTPS大量傳輸告警",
+        "daily report"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777730,
+    "update_time": 1773777730,
+    "_id": "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+  },
+  "doc-e2a0171ee9d19cc664d4d041d3e73ba2": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "splunk_B客戶B部門最新版本",
+        "splunk_B客戶B部門當前版本"
+      ],
+      [
+        "A人員",
+        "splunk_B客戶B部門10月月維護"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773777765,
+    "update_time": 1773777765,
+    "_id": "doc-e2a0171ee9d19cc664d4d041d3e73ba2"
+  },
+  "doc-8ebe784b7ece61edcdd2e054763c0ce3": {
+    "relation_pairs": [
+      [
+        "B部門",
+        "FISAC資料收容申請單"
+      ],
+      [
+        "B部門",
+        "james"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A人員,C人員",
+        "Centos作業系統升級"
+      ],
+      [
+        "SH KVstore引擎異常測試",
+        "james"
+      ],
+      [
+        "A部門",
+        "Hank"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "A人員,C人員",
+        "DEP02移轉"
+      ],
+      [
+        "B部門",
+        "Splunk Add-on for Google Cloud Platform的sourcetype"
+      ],
+      [
+        "A人員,C人員",
+        "Tenable API App串接"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773777765,
+    "update_time": 1773777765,
+    "_id": "doc-8ebe784b7ece61edcdd2e054763c0ce3"
+  },
+  "doc-79f23819b8640c43571e6e9b3e4098e0": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "C客戶"
+      ],
+      [
+        "C人員",
+        "Splunk SH異常hanging"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "Splunk SH異常hanging",
+        "重啟splunk後目前服務後已恢復正常"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777785,
+    "update_time": 1773777785,
+    "_id": "doc-79f23819b8640c43571e6e9b3e4098e0"
+  },
+  "doc-3781d1671ca7126e99e7656264965fb6": {
+    "relation_pairs": [
+      [
+        "E客户",
+        "维护和调整"
+      ],
+      [
+        "B客戶",
+        "Centos作業系統升級"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試"
+      ],
+      [
+        "B客戶",
+        "DEP02 ([IP])移轉"
+      ],
+      [
+        "B部門",
+        "FISAC資料收容"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "功能更新建议"
+      ],
+      [
+        "B客戶",
+        "Linux主機使用者與使用者權限"
+      ],
+      [
+        "2025/12/10 13:30至2025/12/10 20:00",
+        "A部門"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777793,
+    "update_time": 1773777793,
+    "_id": "doc-3781d1671ca7126e99e7656264965fb6"
+  },
+  "doc-5479196dee25b34d077c01190c6c728b": {
+    "relation_pairs": [
+      [
+        "Geodb",
+        "维护项目"
+      ],
+      [
+        "B人员",
+        "Splunk驻点服务202510第二周"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B人员",
+        "C客户"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773777812,
+    "update_time": 1773777812,
+    "_id": "doc-5479196dee25b34d077c01190c6c728b"
+  },
+  "doc-203eba714089c79438cfc39755f054ce": {
+    "relation_pairs": [
+      [
+        "A人员",
+        "F客户"
+      ],
+      [
+        "Network Security Enhancement",
+        "Trendmicro Host Data Collection Module"
+      ],
+      [
+        "Recommendation Update",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "当前版本：9.3.3/2025.02.26",
+        "最新版本：10.0.2/2025.11.14"
+      ],
+      [
+        "375 GB",
+        "授权用量 : 建議擴充"
+      ],
+      [
+        "splunk_銀行處11月月維護",
+        "最新版本：10.0.2/2025.11.14"
+      ],
+      [
+        "1398GB",
+        "授权使用量"
+      ],
+      [
+        "2025/11/24 11:30至2025/11/24 12:00",
+        "splunk_銀行處11月月維護"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777812,
+    "update_time": 1773777812,
+    "_id": "doc-203eba714089c79438cfc39755f054ce"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "relation_pairs": [
+      [
+        "2026/01/07 13:30至2026/01/07 17:30",
+        "Splunk每週onsite"
+      ],
+      [
+        "B部门",
+        "FISAC資料收容-進行中"
+      ],
+      [
+        "A部门",
+        "PA報表寄送異常檢查"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "A部门",
+        "Maintainer帐号权限确认"
+      ],
+      [
+        "B部门",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "B部门",
+        "LDAP設定完成"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A人员,C人员",
+        "B客户"
+      ],
+      [
+        "A部门",
+        "DEP02移轉後服務確認"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777836,
+    "update_time": 1773777836,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-75fa98905e1d68515f390e75c46adddb": {
+    "relation_pairs": [
+      [
+        "A人员",
+        "B客户"
+      ],
+      [
+        "Splunk_10月维护",
+        "授权量"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "Splunk 9.3.6",
+        "版本更新建议"
+      ],
+      [
+        "A人员",
+        "Splunk_10月维护"
+      ],
+      [
+        "平均授权用量",
+        "授权量"
+      ],
+      [
+        "Splunk_10月维护",
+        "服务器效能"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773777838,
+    "update_time": 1773777838,
+    "_id": "doc-75fa98905e1d68515f390e75c46adddb"
+  },
+  "doc-84c3e0271089b72556be831ea38a055f": {
+    "relation_pairs": [
+      [
+        "2025/12/11 09:00至2025/12/11 18:00",
+        "C人員"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Splunk Enterprise 9.3.8",
+        "System Optimization"
+      ],
+      [
+        "2025/12/11 09:00至2025/12/11 18:00",
+        "Splunk Indexer queue full - 20251211"
+      ],
+      [
+        "C人員",
+        "Splunk Indexer queue full - 20251211"
+      ],
+      [
+        "Security Update",
+        "Splunk Enterprise 10.0.2"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777872,
+    "update_time": 1773777872,
+    "_id": "doc-84c3e0271089b72556be831ea38a055f"
+  },
+  "doc-942b136689124792272bc32a2898842c": {
+    "relation_pairs": [
+      [
+        "Centos作業系統升級評估中",
+        "DEP02 ([IP])移轉"
+      ],
+      [
+        "A部門",
+        "B部門"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "2025/12/31 13:30至2025/12/31 17:40",
+        "A部門"
+      ],
+      [
+        "Splunk Add-on for Google Cloud Platform的sourcetype",
+        "Tenable API App串接"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "DEP02 root服務確認",
+        "Management.搜尋異常"
+      ],
+      [
+        "FISAC資料收容申請單",
+        "SH KVstore引擎異常測試"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777881,
+    "update_time": 1773777881,
+    "_id": "doc-942b136689124792272bc32a2898842c"
+  },
+  "doc-25d7c29d65aa0e4d54fb4af54207fa0d": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E客户",
+        "Trendmicro主机资料收集模块"
+      ],
+      [
+        "E Customer",
+        "Recommendation Upgrade To Latest Version"
+      ],
+      [
+        "C人员",
+        "E客户"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "Recommendation Upgrade To Latest Version",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "E客户",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773777886,
+    "update_time": 1773777886,
+    "_id": "doc-25d7c29d65aa0e4d54fb4af54207fa0d"
+  },
+  "doc-f62a98ad02d11a4c9618cbda43281859": {
+    "relation_pairs": [
+      [
+        "A人员",
+        "B客户"
+      ],
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "2025/11/05 13:30至2025/11/05 19:00",
+        "A部门"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 10.0.2"
+      ],
+      [
+        "B部门",
+        "新增indexer"
+      ],
+      [
+        "B客户",
+        "Centos作业系统升级(评估中)"
+      ],
+      [
+        "E Customer",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "A部门",
+        "Splunk整体架构IP调整"
+      ],
+      [
+        "B部门",
+        "FIsac情资撈取"
+      ],
+      [
+        "B客户",
+        "C人员"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773777907,
+    "update_time": 1773777907,
+    "_id": "doc-f62a98ad02d11a4c9618cbda43281859"
+  },
+  "doc-0b9e37e8f7e8a98183b1724c16ce814a": {
+    "relation_pairs": [
+      [
+        "Splunk Enterprise 10.0.2",
+        "Splunk Enterprise 9.3.8"
+      ],
+      [
+        "B人员",
+        "SAP重要TCode执行纪录告警语句"
+      ],
+      [
+        "2025/10/13 13:30至2025/10/13 17:30",
+        "B人员"
+      ],
+      [
+        "B人员",
+        "C客户"
+      ],
+      [
+        "B人员",
+        "F5VPN特定使用者连线下纪录(ssp)"
+      ],
+      [
+        "C客户",
+        "Splunk驻点服务202510第三周"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773777908,
+    "update_time": 1773777908,
+    "_id": "doc-0b9e37e8f7e8a98183b1724c16ce814a"
+  }
+}

@@ -1,0 +1,3618 @@
+{
+  "doc-333af5cc1ff286e512f36be66d1aa78b": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "PA每月報表觸發動作變更"
+      ],
+      [
+        "A人員",
+        "Linux主機使用者與使用者權限-進行中"
+      ],
+      [
+        "B部門",
+        "FISAC資料收容-進行中"
+      ],
+      [
+        "A人員",
+        "DEP02 ([IP])移轉(下周進行)"
+      ],
+      [
+        "A人員",
+        "Centos作業系統升級(評估中)"
+      ],
+      [
+        "A人員",
+        "Tenable API App串接"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "A人員",
+        "新增Splunk Add-on for Google Cloud Platform的sourcetype"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "A人員",
+        "Splunk角色能力異常"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773161138,
+    "update_time": 1773161138,
+    "_id": "doc-333af5cc1ff286e512f36be66d1aa78b"
+  },
+  "doc-942b136689124792272bc32a2898842c": {
+    "relation_pairs": [
+      [
+        "BTDC2問題處理",
+        "Splunk每週onsite"
+      ],
+      [
+        "Splunk Add-on for Google Cloud Platform的sourcetype",
+        "Splunk每週onsite"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試"
+      ],
+      [
+        "C人員",
+        "Splunk每週onsite"
+      ],
+      [
+        "Splunk每週onsite",
+        "Tenable API App串接"
+      ],
+      [
+        "Management.搜尋異常",
+        "Splunk每週onsite"
+      ],
+      [
+        "A人員",
+        "Splunk每週onsite"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "DEP02 root服務確認",
+        "Splunk每週onsite"
+      ],
+      [
+        "B客戶",
+        "Splunk每週onsite"
+      ],
+      [
+        "A部門",
+        "Splunk每週onsite"
+      ],
+      [
+        "B部門",
+        "FISAC資料收容"
+      ],
+      [
+        "DEP02 ([IP])移轉",
+        "Splunk每週onsite"
+      ],
+      [
+        "Centos作業系統升級",
+        "Splunk每週onsite"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1773161140,
+    "update_time": 1773161140,
+    "_id": "doc-942b136689124792272bc32a2898842c"
+  },
+  "doc-95280ea367581dac710f0dc56c7a72f3": {
+    "relation_pairs": [
+      [
+        "B部門",
+        "Dep02"
+      ],
+      [
+        "B部門",
+        "Centos"
+      ],
+      [
+        "A部門",
+        "Es_admin_user"
+      ],
+      [
+        "B部門",
+        "Sh Kvstore Engine"
+      ],
+      [
+        "A部門",
+        "Ess_analyst"
+      ],
+      [
+        "B部門",
+        "N8n"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A部門",
+        "Splunk每週onsite"
+      ],
+      [
+        "B部門",
+        "Fisac"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773161222,
+    "update_time": 1773161222,
+    "_id": "doc-95280ea367581dac710f0dc56c7a72f3"
+  },
+  "doc-8ebe784b7ece61edcdd2e054763c0ce3": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Dep02"
+      ],
+      [
+        "A部門",
+        "Hank"
+      ],
+      [
+        "A部門",
+        "Splunk Add-On For Google Cloud Platform"
+      ],
+      [
+        "C人員",
+        "Tenable Api App"
+      ],
+      [
+        "C人員",
+        "Sh Kvstore Engine"
+      ],
+      [
+        "A部門",
+        "Splunk"
+      ],
+      [
+        "Fisac",
+        "James"
+      ],
+      [
+        "A部門",
+        "Management Search Anomaly"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Btdc2 Issue",
+        "C人員"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773161224,
+    "update_time": 1773161224,
+    "_id": "doc-8ebe784b7ece61edcdd2e054763c0ce3"
+  },
+  "doc-1df6d8d113790f99d50593095e1e5e58": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Websense"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "Splunk駐點服務20251226 - websense斷行確認"
+      ],
+      [
+        "Splunk駐點服務20251226 - websense斷行確認",
+        "Websense"
+      ],
+      [
+        "E客戶",
+        "Splunk駐點服務20251226 - websense斷行確認"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773161291,
+    "update_time": 1773161291,
+    "_id": "doc-1df6d8d113790f99d50593095e1e5e58"
+  },
+  "doc-726c374f489423e007bce76f7810b46e": {
+    "relation_pairs": [
+      [
+        "Uf Connection Issue",
+        "Version Update Recommendation"
+      ],
+      [
+        "Uf Connection Issue",
+        "Uf List Update"
+      ],
+      [
+        "Server Performance Check",
+        "Splunk Credit Card Processing Maintenance"
+      ],
+      [
+        "Authorization Quota Expansion",
+        "Uf Connection Issue"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "F客戶",
+        "Splunk Credit Card Processing Maintenance"
+      ],
+      [
+        "Splunk Credit Card Processing Maintenance",
+        "System Optimization Recommendation"
+      ],
+      [
+        "A人員",
+        "Splunk Credit Card Processing Maintenance"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773161293,
+    "update_time": 1773161293,
+    "_id": "doc-726c374f489423e007bce76f7810b46e"
+  },
+  "doc-daa296a353c26f41dfc613743d24e936": {
+    "relation_pairs": [
+      [
+        "A部門",
+        "KV store憑證效期"
+      ],
+      [
+        "B部門",
+        "Indexer"
+      ],
+      [
+        "C人員",
+        "FIsac資料收容"
+      ],
+      [
+        "C人員",
+        "Splunk每週onsite"
+      ],
+      [
+        "A部門",
+        "PA每月Block Category報表"
+      ],
+      [
+        "A人員",
+        "Splunk每週onsite"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "A人員",
+        "Centos作業系統升級"
+      ],
+      [
+        "A人員",
+        "DEP02連動主機檢查"
+      ],
+      [
+        "A部門",
+        "PA報表寄信異常"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773161412,
+    "update_time": 1773161412,
+    "_id": "doc-daa296a353c26f41dfc613743d24e936"
+  },
+  "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "Https大量傳輸告警調整"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "Estreamer資料",
+        "Fcb腳本"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C客戶",
+        "Ssh Server漏洞修補"
+      ],
+      [
+        "Estreamer資料",
+        "Fwd02 Cpu及磁碟用量異常"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202512第五周"
+      ],
+      [
+        "B人員",
+        "GeoDB Update"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773161457,
+    "update_time": 1773161457,
+    "_id": "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+  },
+  "doc-1e7cec156f57837e8d25cbe83a6db45f": {
+    "relation_pairs": [
+      [
+        "Http Data Transmission Report Adjustment",
+        "Splunk駐點服務202510第四周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "Splunk駐點服務202510第四周",
+        "VirusTotal Comparison"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Alert Inventory",
+        "Splunk駐點服務202510第四周"
+      ],
+      [
+        "Geodb Update",
+        "Splunk駐點服務202510第四周"
+      ],
+      [
+        "Ioc Page Restoration",
+        "Splunk駐點服務202510第四周"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773161457,
+    "update_time": 1773161457,
+    "_id": "doc-1e7cec156f57837e8d25cbe83a6db45f"
+  },
+  "doc-d02e98febcd8f8650bbe77d789a41d69": {
+    "relation_pairs": [
+      [
+        "20251204",
+        "Mitreattack告警"
+      ],
+      [
+        "SASE VPN登入成功報表條件",
+        "SOAR欄位"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "20251204",
+        "C人員"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773161500,
+    "update_time": 1773161500,
+    "_id": "doc-d02e98febcd8f8650bbe77d789a41d69"
+  },
+  "doc-d0d3b88d3601a1081c8354e0ef27952f": {
+    "relation_pairs": [
+      [
+        "Bucket Replication",
+        "Splunk Indexer Queue Full-20251215"
+      ],
+      [
+        "C人員",
+        "Splunk Indexer Queue Full-20251215"
+      ],
+      [
+        "B客戶",
+        "Splunk Indexer Queue Full-20251215"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Splunk Indexer Queue Full-20251215",
+        "Workaround"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773161539,
+    "update_time": 1773161539,
+    "_id": "doc-d0d3b88d3601a1081c8354e0ef27952f"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "Splunk"
+      ],
+      [
+        "A人員",
+        "Maintainer帳號權限確認"
+      ],
+      [
+        "A人員",
+        "DEP02 root帳號使用確認"
+      ],
+      [
+        "B部門",
+        "FISAC資料收容-進行中"
+      ],
+      [
+        "B部門",
+        "LDAP設定"
+      ],
+      [
+        "A人員",
+        "Centos作業系統升級(評估中)"
+      ],
+      [
+        "A人員",
+        "Tenable API App串接"
+      ],
+      [
+        "A人員",
+        "PA報表寄送異常檢查"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "A人員",
+        "新增Splunk Add-on for Google Cloud Platform的sourcetype"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "A人員",
+        "Management搜尋異常"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "A人員",
+        "BTDC2問題處理"
+      ],
+      [
+        "A人員",
+        "DEP02移轉後服務確認"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1773161552,
+    "update_time": 1773161552,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-b6f1e5469f6278ea8a34bff96b293b69": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Server Performance Check"
+      ],
+      [
+        "C人員",
+        "Websense Log Adjustment"
+      ],
+      [
+        "C人員",
+        "Trendmicro Host Data Inclusion"
+      ],
+      [
+        "C人員",
+        "GCP Report Adjustment"
+      ],
+      [
+        "C人員",
+        "Monthly Maintenance"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Authorization Adjustment",
+        "C人員"
+      ],
+      [
+        "C人員",
+        "System Optimization"
+      ],
+      [
+        "C人員",
+        "Version Update"
+      ],
+      [
+        "E客戶",
+        "Splunk"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773161596,
+    "update_time": 1773161596,
+    "_id": "doc-b6f1e5469f6278ea8a34bff96b293b69"
+  },
+  "doc-5479196dee25b34d077c01190c6c728b": {
+    "relation_pairs": [
+      [
+        "Cyble ASM IP",
+        "Splunk駐點服務202510第二周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "Automated Blocklist Change Dashboard",
+        "Splunk駐點服務202510第二周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Alert Inventory",
+        "Splunk駐點服務202510第二周"
+      ],
+      [
+        "Geodb Update",
+        "Splunk駐點服務202510第二周"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773161626,
+    "update_time": 1773161626,
+    "_id": "doc-5479196dee25b34d077c01190c6c728b"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "relation_pairs": [
+      [
+        "F客戶",
+        "Splunk銀行處12月月維護"
+      ],
+      [
+        "A人員",
+        "問題追蹤"
+      ],
+      [
+        "A人員",
+        "系統優化建議"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "A人員",
+        "授權用量"
+      ],
+      [
+        "A人員",
+        "版本更新"
+      ],
+      [
+        "A人員",
+        "伺服器效能"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773161719,
+    "update_time": 1773161719,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-5618eb566fb322ada0eb69bef88a7581": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "防火牆事件匯入時間異常"
+      ],
+      [
+        "C人員",
+        "PA TRAFFIC事件sourcetype更換"
+      ],
+      [
+        "C人員",
+        "I客戶"
+      ],
+      [
+        "A人員",
+        "防火牆事件匯入時間異常"
+      ],
+      [
+        "A人員",
+        "PA TRAFFIC事件sourcetype更換"
+      ],
+      [
+        "C人員",
+        "PA事件時間誤差"
+      ],
+      [
+        "A人員",
+        "I客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "A人員",
+        "PA事件時間誤差"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773161719,
+    "update_time": 1773161719,
+    "_id": "doc-5618eb566fb322ada0eb69bef88a7581"
+  },
+  "doc-0640212d45b4b92d91d0255cf90edf96": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Splunk升版完成"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "20251114",
+        "E客戶"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773161773,
+    "update_time": 1773161773,
+    "_id": "doc-0640212d45b4b92d91d0255cf90edf96"
+  },
+  "doc-0944d4a59fb7a84bd79d2fca8361e518": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "Splunk"
+      ],
+      [
+        "Fisac Data Ingestion",
+        "James"
+      ],
+      [
+        "B客戶",
+        "Dep02"
+      ],
+      [
+        "B客戶",
+        "Splunk Add-on For Google Cloud Platform"
+      ],
+      [
+        "A人員",
+        "PA Monthly Report"
+      ],
+      [
+        "B客戶",
+        "Tenable Api App"
+      ],
+      [
+        "A人員",
+        "Crowdstrike Package"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A人員",
+        "Sh Kvstore Engine"
+      ],
+      [
+        "A人員",
+        "Dns Setting"
+      ],
+      [
+        "B客戶",
+        "Centos Operating System"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "B客戶",
+        "Linux Host Users"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1773161800,
+    "update_time": 1773161800,
+    "_id": "doc-0944d4a59fb7a84bd79d2fca8361e518"
+  },
+  "doc-345e520afd2a192e25824abb33740d46": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "FIPS Mode"
+      ],
+      [
+        "C人員",
+        "Production"
+      ],
+      [
+        "A客戶",
+        "C人員"
+      ],
+      [
+        "Splunk 9.3.1",
+        "Splunk 9.3.3"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "PIMS"
+      ],
+      [
+        "Dbconnect Issue",
+        "PIMS"
+      ],
+      [
+        "C人員",
+        "UAT"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773161816,
+    "update_time": 1773161816,
+    "_id": "doc-345e520afd2a192e25824abb33740d46"
+  },
+  "doc-5f0773b8daffa7a65254a73867e36afb": {
+    "relation_pairs": [
+      [
+        "Pice Logs",
+        "Splunk"
+      ],
+      [
+        "B人員",
+        "Splunk"
+      ],
+      [
+        "B人員",
+        "D客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "2025/11/26 13:30 to 2025/11/26 14:30",
+        "B人員"
+      ],
+      [
+        "D客戶",
+        "Pice Logs"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773161853,
+    "update_time": 1773161853,
+    "_id": "doc-5f0773b8daffa7a65254a73867e36afb"
+  },
+  "doc-0b9e37e8f7e8a98183b1724c16ce814a": {
+    "relation_pairs": [
+      [
+        "F5VPN特定使用者連線的紀錄(ssp)調整",
+        "Splunk駐點服務202510第三周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "SAP重要TCode執行紀錄告警語法調整",
+        "Splunk駐點服務202510第三周"
+      ],
+      [
+        "Geodb Update",
+        "Splunk駐點服務202510第三周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk駐點服務202510第三周",
+        "一年以上情資比對VirusTotal"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202510第三周"
+      ],
+      [
+        "Splunk駐點服務202510第三周",
+        "告警盤點"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773161890,
+    "update_time": 1773161890,
+    "_id": "doc-0b9e37e8f7e8a98183b1724c16ce814a"
+  },
+  "doc-e2a0171ee9d19cc664d4d041d3e73ba2": {
+    "relation_pairs": [
+      [
+        "IDX02",
+        "伺服器效能"
+      ],
+      [
+        "A人員",
+        "Splunk_B客戶B部門10月月維護"
+      ],
+      [
+        "A人員",
+        "系統優化建議"
+      ],
+      [
+        "B客戶",
+        "Splunk_B客戶B部門10月月維護"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "A人員",
+        "授權用量擴充"
+      ],
+      [
+        "IDX03",
+        "伺服器效能"
+      ],
+      [
+        "A人員",
+        "版本更新"
+      ],
+      [
+        "A人員",
+        "伺服器效能"
+      ],
+      [
+        "IDX01",
+        "伺服器效能"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773161959,
+    "update_time": 1773161959,
+    "_id": "doc-e2a0171ee9d19cc664d4d041d3e73ba2"
+  },
+  "doc-8a40e782f3c3804da0a1d45dfa05eefe": {
+    "relation_pairs": [
+      [
+        "SASE VPN Login Success Report",
+        "XSOAR"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "20251202 Maintenance Record",
+        "C人員"
+      ],
+      [
+        "SASE VPN Login Success Report",
+        "SOAR"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773161959,
+    "update_time": 1773161959,
+    "_id": "doc-8a40e782f3c3804da0a1d45dfa05eefe"
+  },
+  "doc-4861ed7c0c566a81f361adb6811a1523": {
+    "relation_pairs": [
+      [
+        "Uf Connection Issue",
+        "Uf List Update"
+      ],
+      [
+        "Server Performance Check",
+        "Splunk Credit Card Processing Maintenance"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk Credit Card Processing Maintenance",
+        "Uf Connection Issue"
+      ],
+      [
+        "Splunk Credit Card Processing Maintenance",
+        "System Optimization Recommendation"
+      ],
+      [
+        "Authorization Quota Expansion",
+        "Splunk Credit Card Processing Maintenance"
+      ],
+      [
+        "Splunk Credit Card Processing Maintenance",
+        "Version Update Recommendation"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773162025,
+    "update_time": 1773162025,
+    "_id": "doc-4861ed7c0c566a81f361adb6811a1523"
+  },
+  "doc-7c1fca5402ff2eb1c53222e1d4db282a": {
+    "relation_pairs": [
+      [
+        "FWD02磁碟用量異常處理",
+        "clean.sh資料留存區間"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "messages-20251214檔案"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "rsyslog轉送設定"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "Splunk駐點服務202601第一周"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "estreamer資料暴增"
+      ],
+      [
+        "/var/log/messages-20251214",
+        "FWD02磁碟用量異常處理"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "audit資料"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "/etc/cron.d/logrotate-syslog",
+        "FWD02磁碟用量異常處理"
+      ],
+      [
+        "FWD02磁碟用量異常處理",
+        "audit.log持續累積"
+      ],
+      [
+        "B人員",
+        "Cybereyes API介接"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773162027,
+    "update_time": 1773162027,
+    "_id": "doc-7c1fca5402ff2eb1c53222e1d4db282a"
+  },
+  "doc-75fa98905e1d68515f390e75c46adddb": {
+    "relation_pairs": [
+      [
+        "最新版本",
+        "當前版本"
+      ],
+      [
+        "Splunk_10月維護",
+        "系統優化建議"
+      ],
+      [
+        "Splunk_10月維護",
+        "伺服器效能"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk_10月維護",
+        "版本更新"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "Splunk_10月維護",
+        "授權用量擴充建議"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773162089,
+    "update_time": 1773162089,
+    "_id": "doc-75fa98905e1d68515f390e75c46adddb"
+  },
+  "doc-d0cef05272158ef916c2b84f625b2ddb": {
+    "relation_pairs": [
+      [
+        "CEF outputs套件新增debug log資料蒐集",
+        "C人員"
+      ],
+      [
+        "C人員",
+        "SH FISAC API input (未使用)關閉"
+      ],
+      [
+        "C人員",
+        "完成維護報告"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "E客戶",
+        "E客戶駐點工作事項- 20251104"
+      ],
+      [
+        "C人員",
+        "今日工作內容如下，預計下次週四到場作業，再麻煩您幫我申請週四使用底層"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "Splunk版本升級"
+      ],
+      [
+        "Apim1與imsdb01兩台UF關閉inputs至不存在的index",
+        "C人員"
+      ],
+      [
+        "C人員",
+        "確認RES3SQL19資料收容狀況"
+      ],
+      [
+        "C人員",
+        "Finding會因為threat object重複顯示，需進行ES版本升級"
+      ],
+      [
+        "2025/11/04 13:30 to 2025/11/04 17:30",
+        "E客戶"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773162090,
+    "update_time": 1773162090,
+    "_id": "doc-d0cef05272158ef916c2b84f625b2ddb"
+  },
+  "doc-3f8775862e3b8ea072578967e7520445": {
+    "relation_pairs": [
+      [
+        "Geodb Update",
+        "告警<PWLAN觸發IPS高風險告警>"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202510第一周"
+      ],
+      [
+        "GitLab升版17.10.8 → 18.1.6",
+        "Splunk駐點服務202510第一周"
+      ],
+      [
+        "Automated Blocklist Change Dashboard",
+        "Splunk駐點服務202510第一周"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202510第一周"
+      ],
+      [
+        "Automated Blocklist Change Dashboard",
+        "告警<PWLAN觸發IPS高風險告警>"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "CVE-2025-6454",
+        "GitLab升版17.10.8 → 18.1.6"
+      ],
+      [
+        "CVE-2025-2256",
+        "GitLab升版17.10.8 → 18.1.6"
+      ],
+      [
+        "Splunk駐點服務202510第一周",
+        "告警<PWLAN觸發IPS高風險告警>"
+      ],
+      [
+        "Geodb Update",
+        "Splunk駐點服務202510第一周"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773162179,
+    "update_time": 1773162179,
+    "_id": "doc-3f8775862e3b8ea072578967e7520445"
+  },
+  "doc-082efb5c18d778427dcd94905e5f4370": {
+    "relation_pairs": [
+      [
+        "Splunk駐點服務202511第一周",
+        "Vmware Tools Vulnerability Patch"
+      ],
+      [
+        "Alert Inventory",
+        "Splunk駐點服務202511第一周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "Geodb Update",
+        "Splunk駐點服務202511第一周"
+      ],
+      [
+        "Heavy Forwarder Disk Usage Investigation",
+        "Splunk駐點服務202511第一周"
+      ],
+      [
+        "B人員",
+        "Heavy Forwarder Disk Usage Investigation"
+      ],
+      [
+        "B人員",
+        "Geodb Update"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B人員",
+        "Report And Alert Recipient Update"
+      ],
+      [
+        "Report And Alert Recipient Update",
+        "Splunk駐點服務202511第一周"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773162253,
+    "update_time": 1773162253,
+    "_id": "doc-082efb5c18d778427dcd94905e5f4370"
+  },
+  "doc-2fe3f974e54dd1f1ad98289cc79980d6": {
+    "relation_pairs": [
+      [
+        "Host Anomaly Handling",
+        "MG02 Disk Usage"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "C客戶",
+        "GitLab Vulnerability Patch"
+      ],
+      [
+        "2025/12/15 13:30 to 2025/12/15 17:30",
+        "C客戶"
+      ],
+      [
+        "Arcsight and Splunk Historical Case Review",
+        "Splunk駐點服務202512第三周(2025/12/15)"
+      ],
+      [
+        "FWD03 Backup Issue",
+        "Host Anomaly Handling"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Cyble ASM IP Whitelist Update",
+        "Splunk駐點服務202512第三周(2025/12/15)"
+      ],
+      [
+        "Host Anomaly Handling",
+        "Splunk駐點服務202512第三周(2025/12/15)"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202512第三周(2025/12/15)"
+      ],
+      [
+        "GeoDB Update",
+        "Splunk駐點服務202512第三周(2025/12/15)"
+      ],
+      [
+        "Splunk Account Change",
+        "Splunk駐點服務202512第三周(2025/12/15)"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773162291,
+    "update_time": 1773162291,
+    "_id": "doc-2fe3f974e54dd1f1ad98289cc79980d6"
+  },
+  "doc-41be59e9bae9e87a716afd8b5a9e9ee1": {
+    "relation_pairs": [
+      [
+        "Splunk Platform Maintenance Case",
+        "Universal Forwarder (UF) Version 2027.07.28"
+      ],
+      [
+        "Splunk Platform",
+        "Splunk Platform Maintenance Case"
+      ],
+      [
+        "Splunk Platform Maintenance Case",
+        "Universal Forwarder (UF)"
+      ],
+      [
+        "Splunk Platform",
+        "Universal Forwarder (UF) Version 2025.11.14"
+      ],
+      [
+        "Splunk Platform",
+        "Splunk Version 9.3.8"
+      ],
+      [
+        "C人員",
+        "Splunk Version Upgrade"
+      ],
+      [
+        "Splunk Platform Maintenance Case",
+        "Splunk Version Upgrade"
+      ],
+      [
+        "Universal Forwarder (UF) Version 2025.11.14",
+        "Universal Forwarder (UF) Version 2027.07.28"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "Splunk Version 9.2.3"
+      ],
+      [
+        "Splunk Platform Maintenance Case",
+        "Splunk Version 10.0.2"
+      ],
+      [
+        "Splunk Version 10.0.2",
+        "Splunk Version 9.3.8"
+      ],
+      [
+        "C人員",
+        "Splunk Platform"
+      ],
+      [
+        "C人員",
+        "H客戶"
+      ],
+      [
+        "Splunk Version 9.2.3",
+        "Splunk Version Upgrade"
+      ]
+    ],
+    "count": 15,
+    "create_time": 1773162358,
+    "update_time": 1773162358,
+    "_id": "doc-41be59e9bae9e87a716afd8b5a9e9ee1"
+  },
+  "doc-39206ec5906f23d68e051b1df74d3ca7": {
+    "relation_pairs": [
+      [
+        "新增/etc/hosts，並重起服務後，正常連線至LM",
+        "資料平衡確認與未連接license master解決"
+      ],
+      [
+        "B客戶",
+        "資料平衡確認與未連接license master解決"
+      ],
+      [
+        "確認資料持續進行平衡，且無空間滿載",
+        "資料平衡確認與未連接license master解決"
+      ],
+      [
+        "C人員",
+        "新增/etc/hosts，並重起服務後，正常連線至LM"
+      ],
+      [
+        "2025/11/10 09:30 to 2025/11/10 12:00",
+        "C人員"
+      ],
+      [
+        "B客戶",
+        "新增/etc/hosts，並重起服務後，正常連線至LM"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "C人員",
+        "確認資料持續進行平衡，且無空間滿載"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "資料平衡確認與未連接license master解決"
+      ],
+      [
+        "B客戶",
+        "確認資料持續進行平衡，且無空間滿載"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773162431,
+    "update_time": 1773162431,
+    "_id": "doc-39206ec5906f23d68e051b1df74d3ca7"
+  },
+  "doc-b8ec2739edb4ee1ccc4cf68534e90be5": {
+    "relation_pairs": [
+      [
+        "Maintenance Record",
+        "System Optimization Suggestions"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "C客戶",
+        "Maintenance Record"
+      ],
+      [
+        "DM20240200+DN20240393",
+        "Maintenance Record"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B人員",
+        "Splunk SIEM"
+      ],
+      [
+        "Authorization Quota",
+        "Maintenance Record"
+      ],
+      [
+        "Server Performance",
+        "Splunk SIEM"
+      ],
+      [
+        "Splunk SIEM",
+        "Version Update"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773162463,
+    "update_time": 1773162463,
+    "_id": "doc-b8ec2739edb4ee1ccc4cf68534e90be5"
+  },
+  "doc-5930b403906ecb929487592cef5210f2": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "告警盤點"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "KPMG滲透測試IP白名單",
+        "Splunk駐點服務202511第二周"
+      ],
+      [
+        "Splunk駐點服務202511第二周",
+        "報告及告警寄件人更新"
+      ],
+      [
+        "CVE-2025-41244",
+        "Splunk駐點服務202511第二周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B人員",
+        "報告及告警寄件人更新"
+      ],
+      [
+        "Splunk駐點服務202511第二周",
+        "VMware Tools漏洞修補"
+      ],
+      [
+        "CVE-2025-41246",
+        "Splunk駐點服務202511第二周"
+      ],
+      [
+        "Splunk駐點服務202511第二周",
+        "告警盤點"
+      ],
+      [
+        "B人員",
+        "KPMG滲透測試IP白名單"
+      ],
+      [
+        "B人員",
+        "VMware Tools漏洞修補"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773162483,
+    "update_time": 1773162483,
+    "_id": "doc-5930b403906ecb929487592cef5210f2"
+  },
+  "doc-07959bdb8bab221c9c80a1c3e85776b3": {
+    "relation_pairs": [
+      [
+        "Dn20230083",
+        "Maintenance Record"
+      ],
+      [
+        "Maintenance Record",
+        "Splunk"
+      ],
+      [
+        "C人員",
+        "Maintenance Record"
+      ],
+      [
+        "A客戶",
+        "Maintenance Record"
+      ],
+      [
+        "A人員",
+        "Maintenance Record"
+      ],
+      [
+        "A人員",
+        "C人員"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773162535,
+    "update_time": 1773162535,
+    "_id": "doc-07959bdb8bab221c9c80a1c3e85776b3"
+  },
+  "doc-d96ca3133c54d9d76add7de434ee05b5": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "Splunk"
+      ],
+      [
+        "A人員",
+        "KVstore憑證"
+      ],
+      [
+        "A人員",
+        "Indexer"
+      ],
+      [
+        "C人員",
+        "Splunk月報"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "Splunk月報"
+      ],
+      [
+        "A人員",
+        "NTP服務"
+      ],
+      [
+        "A人員",
+        "FIsac情資撈取"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773162631,
+    "update_time": 1773162631,
+    "_id": "doc-d96ca3133c54d9d76add7de434ee05b5"
+  },
+  "doc-fcc4bf66788ce00c23c3e736753ea50a": {
+    "relation_pairs": [
+      [
+        "Server Performance",
+        "Splunk 2025 MA 07月定保.DM20250088_(3/12)"
+      ],
+      [
+        "Authorization Quota",
+        "Splunk 2025 MA 07月定保.DM20250088_(3/12)"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "Authorization Quota",
+        "Version Update"
+      ],
+      [
+        "C人員",
+        "Splunk 2025 MA 07月定保.DM20250088_(3/12)"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "E客戶",
+        "Splunk 2025 MA 07月定保.DM20250088_(3/12)"
+      ],
+      [
+        "Splunk 2025 MA 07月定保.DM20250088_(3/12)",
+        "System Optimization Suggestions"
+      ],
+      [
+        "Splunk 2025 MA 07月定保.DM20250088_(3/12)",
+        "Version Update"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773162631,
+    "update_time": 1773162631,
+    "_id": "doc-fcc4bf66788ce00c23c3e736753ea50a"
+  },
+  "doc-5096c0cdf6972a3670732e4f9be1d36a": {
+    "relation_pairs": [
+      [
+        "10.0.2 / 2025.11.14",
+        "9.3.8 / 2025.11.14"
+      ],
+      [
+        "C人員",
+        "系統優化建議"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "授權用量"
+      ],
+      [
+        "Splunk 2025 MA 11月定保.DM20250088_(7/12)",
+        "系統優化建議"
+      ],
+      [
+        "C人員",
+        "版本更新"
+      ],
+      [
+        "C人員",
+        "伺服器效能"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk 2025 MA 11月定保.DM20250088_(7/12)",
+        "授權用量"
+      ],
+      [
+        "Splunk 2025 MA 11月定保.DM20250088_(7/12)",
+        "版本更新"
+      ],
+      [
+        "Splunk 2025 MA 11月定保.DM20250088_(7/12)",
+        "伺服器效能"
+      ],
+      [
+        "E客戶",
+        "Splunk 2025 MA 11月定保.DM20250088_(7/12)"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773162733,
+    "update_time": 1773162733,
+    "_id": "doc-5096c0cdf6972a3670732e4f9be1d36a"
+  },
+  "doc-25d7c29d65aa0e4d54fb4af54207fa0d": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "IIS Log"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "Sh Fisac Api Input"
+      ],
+      [
+        "C人員",
+        "Imsdb02uf"
+      ],
+      [
+        "C人員",
+        "Splunk"
+      ],
+      [
+        "20251114",
+        "E客戶"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773162733,
+    "update_time": 1773162733,
+    "_id": "doc-25d7c29d65aa0e4d54fb4af54207fa0d"
+  },
+  "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51": {
+    "relation_pairs": [
+      [
+        "Splunk_10月維護",
+        "硬碟使用率"
+      ],
+      [
+        "Splunk_10月維護",
+        "最新版本"
+      ],
+      [
+        "最新版本",
+        "現行版本"
+      ],
+      [
+        "Splunk_10月維護",
+        "現行版本"
+      ],
+      [
+        "Splunk_10月維護",
+        "系統優化建議"
+      ],
+      [
+        "A人員",
+        "G客戶"
+      ],
+      [
+        "Splunk_10月維護",
+        "記憶體使用率"
+      ],
+      [
+        "CPU使用率",
+        "Splunk_10月維護"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "G客戶",
+        "Splunk_10月維護"
+      ],
+      [
+        "2GB",
+        "Splunk_10月維護"
+      ],
+      [
+        "17.5%",
+        "Splunk_10月維護"
+      ],
+      [
+        "0.35GB",
+        "Splunk_10月維護"
+      ],
+      [
+        "A人員",
+        "Splunk_10月維護"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1773162824,
+    "update_time": 1773162824,
+    "_id": "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+  },
+  "doc-fe7268a7cb94439d483759e501068db6": {
+    "relation_pairs": [
+      [
+        "Splunk_B客戶B部門11月月維護",
+        "系統優化建議無"
+      ],
+      [
+        "10.0.1/2025.11.14",
+        "版本更新"
+      ],
+      [
+        "10.0.1/2025.11.14",
+        "9.3.3/2025.02.26"
+      ],
+      [
+        "Splunk_B客戶B部門11月月維護",
+        "伺服器效能正常"
+      ],
+      [
+        "9.3.3/2025.02.26",
+        "版本更新"
+      ],
+      [
+        "A人員",
+        "Splunk_B客戶B部門11月月維護"
+      ],
+      [
+        "B客戶",
+        "Splunk_B客戶B部門11月月維護"
+      ],
+      [
+        "203.65GB",
+        "285GB"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "285GB",
+        "授權用量擴充"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773162861,
+    "update_time": 1773162861,
+    "_id": "doc-fe7268a7cb94439d483759e501068db6"
+  },
+  "doc-8a83bcdf6e7b7269cfd17b4f21457de8": {
+    "relation_pairs": [
+      [
+        "A客戶",
+        "Maintenance Record"
+      ],
+      [
+        "A人員",
+        "Splunk Credential Renewal"
+      ],
+      [
+        "KVSTORE",
+        "Splunk"
+      ],
+      [
+        "A人員",
+        "Maintenance Record"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Maintenance Record",
+        "Splunk Credential Renewal"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773162874,
+    "update_time": 1773162874,
+    "_id": "doc-8a83bcdf6e7b7269cfd17b4f21457de8"
+  },
+  "doc-15d6c505e6a20b598aa21d52b466adcd": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "Gitlab"
+      ],
+      [
+        "F5VPN特定使用者連線的紀錄",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "B人員",
+        "GeoDB"
+      ],
+      [
+        "FWD03",
+        "SERVICE_START"
+      ],
+      [
+        "HTTP對外大量傳輸資料報表",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "Gitlab",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "HTTPS大量資料傳輸告警",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "GeoDB",
+        "Splunk駐點服務202601第三周"
+      ],
+      [
+        "B人員",
+        "HTTPS大量資料傳輸告警"
+      ],
+      [
+        "B人員",
+        "FWD03"
+      ],
+      [
+        "B人員",
+        "F5VPN特定使用者連線的紀錄"
+      ],
+      [
+        "FWD03",
+        "SERVICE_STOP"
+      ],
+      [
+        "B人員",
+        "HTTP對外大量傳輸資料報表"
+      ],
+      [
+        "FWD03",
+        "Splunk駐點服務202601第三周"
+      ]
+    ],
+    "count": 17,
+    "create_time": 1773162955,
+    "update_time": 1773162955,
+    "_id": "doc-15d6c505e6a20b598aa21d52b466adcd"
+  },
+  "doc-c41e50d3a458388dc7fe53ece68ee69f": {
+    "relation_pairs": [
+      [
+        "Monthly Maintenance Operations",
+        "Splunk駐點服務202510第五周"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202510第五周"
+      ],
+      [
+        "Splunk駐點服務202510第五周",
+        "VMware Tools Vulnerability Patch"
+      ],
+      [
+        "Search Head Testing",
+        "Splunk駐點服務202510第五周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "Splunk駐點服務202510第五周",
+        "VirusTotal Data Comparison"
+      ],
+      [
+        "AbuseIPDB Detection",
+        "Splunk駐點服務202510第五周"
+      ],
+      [
+        "Alert Inventory",
+        "Splunk駐點服務202510第五周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Geodb Update",
+        "Splunk駐點服務202510第五周"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202510第五周"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773162955,
+    "update_time": 1773162955,
+    "_id": "doc-c41e50d3a458388dc7fe53ece68ee69f"
+  },
+  "doc-412e17859c430b9ce8b929bc152053ef": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Maintenance Record"
+      ],
+      [
+        "Maintenance Record",
+        "Splunk Indexer Queue Full"
+      ],
+      [
+        "B客戶",
+        "Maintenance Record"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Firmware Update Assistance",
+        "Splunk Indexer Queue Full"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773163015,
+    "update_time": 1773163015,
+    "_id": "doc-412e17859c430b9ce8b929bc152053ef"
+  },
+  "doc-cdd29ae3537f38a27c3848632ad51359": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "SSH Server漏洞修補",
+        "Splunk駐點服務202601第二周"
+      ],
+      [
+        "GeoDB",
+        "Splunk駐點服務202601第二周"
+      ],
+      [
+        "Cybereyes API",
+        "Splunk駐點服務202601第二周"
+      ],
+      [
+        "Cybereyes API",
+        "Splunk"
+      ],
+      [
+        "FWD03",
+        "Splunk駐點服務202601第二周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Gitlab漏洞修補",
+        "Splunk駐點服務202601第二周"
+      ],
+      [
+        "FCB設定資料永久保存",
+        "Splunk駐點服務202601第二周"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773163017,
+    "update_time": 1773163017,
+    "_id": "doc-cdd29ae3537f38a27c3848632ad51359"
+  },
+  "doc-203eba714089c79438cfc39755f054ce": {
+    "relation_pairs": [
+      [
+        "F客戶",
+        "Splunk銀行處11月月維護"
+      ],
+      [
+        "授權用量",
+        "版本更新"
+      ],
+      [
+        "A人員",
+        "Splunk銀行處11月月維護"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk銀行處11月月維護",
+        "系統優化建議"
+      ],
+      [
+        "Splunk銀行處11月月維護",
+        "授權用量"
+      ],
+      [
+        "Splunk銀行處11月月維護",
+        "版本更新"
+      ],
+      [
+        "Splunk銀行處11月月維護",
+        "問題追蹤"
+      ],
+      [
+        "Splunk銀行處11月月維護",
+        "伺服器效能"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773163078,
+    "update_time": 1773163078,
+    "_id": "doc-203eba714089c79438cfc39755f054ce"
+  },
+  "doc-2940790b50eb2cba2a5e944b95a94dd5": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Splunk bundle儲存量過大"
+      ],
+      [
+        "FISAC資料收容",
+        "James"
+      ],
+      [
+        "B客戶",
+        "Splunk每週onsite"
+      ],
+      [
+        "A人員",
+        "PA報表寄信異常"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "KV store憑證效期"
+      ],
+      [
+        "A部門",
+        "Centos作業系統升級"
+      ],
+      [
+        "A部門",
+        "DEP02連動主機檢查"
+      ],
+      [
+        "C人員",
+        "Indexer索引同步狀態"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773163108,
+    "update_time": 1773163108,
+    "_id": "doc-2940790b50eb2cba2a5e944b95a94dd5"
+  },
+  "doc-dddcb833d814b293bd936732652206d0": {
+    "relation_pairs": [
+      [
+        "F客戶",
+        "Maintenance Record"
+      ],
+      [
+        "Authorization Quota Expansion",
+        "Server Performance Check"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ],
+      [
+        "Maintenance Record",
+        "Uf Connection Issue"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "System Optimization Recommendation",
+        "Uf Connection Issue"
+      ],
+      [
+        "Splunk Credit Card Processing Maintenance",
+        "Version Update Recommendation"
+      ],
+      [
+        "A人員",
+        "Splunk Credit Card Processing Maintenance"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773163120,
+    "update_time": 1773163120,
+    "_id": "doc-dddcb833d814b293bd936732652206d0"
+  },
+  "doc-cafeb58d25cc4cbc85eaf07cf415496a": {
+    "relation_pairs": [
+      [
+        "Es Version Upgrade",
+        "Threat Object"
+      ],
+      [
+        "Asset",
+        "E客戶"
+      ],
+      [
+        "CEF Outputs Package",
+        "C人員"
+      ],
+      [
+        "Asset Decommissioned/Operational Field",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "SH FISAC API Input"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "Splunk Version Upgrade"
+      ],
+      [
+        "Checkpoint Data",
+        "C人員"
+      ],
+      [
+        "Apim1",
+        "Imsdb01"
+      ],
+      [
+        "C人員",
+        "Splunk Automatic Version Check"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773163217,
+    "update_time": 1773163217,
+    "_id": "doc-cafeb58d25cc4cbc85eaf07cf415496a"
+  },
+  "doc-886b4b629f3088ef8656c792cf7b3e8b": {
+    "relation_pairs": [
+      [
+        "Splunk_11月維護",
+        "系統優化建議"
+      ],
+      [
+        "Splunk_11月維護",
+        "授權使用量"
+      ],
+      [
+        "G客戶",
+        "Splunk_11月維護"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk_11月維護",
+        "問題追蹤"
+      ],
+      [
+        "Splunk_11月維護",
+        "伺服器效能"
+      ],
+      [
+        "Splunk_11月維護",
+        "版本評估"
+      ],
+      [
+        "A人員",
+        "Splunk_11月維護"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773163217,
+    "update_time": 1773163217,
+    "_id": "doc-886b4b629f3088ef8656c792cf7b3e8b"
+  },
+  "doc-1e6e1908b68b82814f06780675f7938b": {
+    "relation_pairs": [
+      [
+        "IDX01",
+        "Ocp_cdibh資料"
+      ],
+      [
+        "IDX01",
+        "IDX硬碟空間滿載與資料同步問題"
+      ],
+      [
+        "IDX01",
+        "IDX03"
+      ],
+      [
+        "C人員",
+        "Ocp_cdibh資料"
+      ],
+      [
+        "IDX01",
+        "IDX02"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "IDX02",
+        "IDX硬碟空間滿載與資料同步問題"
+      ],
+      [
+        "C人員",
+        "IDX硬碟空間滿載與資料同步問題"
+      ],
+      [
+        "IDX03",
+        "IDX硬碟空間滿載與資料同步問題"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773163281,
+    "update_time": 1773163281,
+    "_id": "doc-1e6e1908b68b82814f06780675f7938b"
+  },
+  "doc-0d3d3acb3c191c9e65fac21b5ed9284f": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "Gitlab"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202511第四周"
+      ],
+      [
+        "B人員",
+        "GeoDB"
+      ],
+      [
+        "AI網站服務紀錄調閱儀表板",
+        "B人員"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202511第四周"
+      ],
+      [
+        "B人員",
+        "DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標告警"
+      ],
+      [
+        "FCB設定",
+        "告警盤點"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "CVE-2025-11224",
+        "Gitlab"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773163301,
+    "update_time": 1773163301,
+    "_id": "doc-0d3d3acb3c191c9e65fac21b5ed9284f"
+  },
+  "doc-c0c6684aa00106f16e7869f519061642": {
+    "relation_pairs": [
+      [
+        "Maintenance Record",
+        "System Optimization Suggestions"
+      ],
+      [
+        "Maintenance Record",
+        "Version Update"
+      ],
+      [
+        "C人員",
+        "Maintenance Record"
+      ],
+      [
+        "661.01 GB",
+        "Authorization Quota"
+      ],
+      [
+        "Authorization Quota",
+        "Authorization Volume Expansion"
+      ],
+      [
+        "150 GB",
+        "Authorization Quota"
+      ],
+      [
+        "E客戶",
+        "Maintenance Record"
+      ],
+      [
+        "10 UF Servers",
+        "System Optimization Suggestions"
+      ],
+      [
+        "Maintenance Record",
+        "Splunk 2025 MA 12月定保.DM20250088_(8/12)"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Maintenance Record",
+        "Server Performance"
+      ],
+      [
+        "Authorization Quota",
+        "Maintenance Record"
+      ],
+      [
+        "Latest Version 10.0.2 / 2025.11.14",
+        "Version Update"
+      ],
+      [
+        "Current Version 9.3.8 / 2025.11.14",
+        "Version Update"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1773163369,
+    "update_time": 1773163369,
+    "_id": "doc-c0c6684aa00106f16e7869f519061642"
+  },
+  "doc-04465635a6b88183cbabbfe7e25635dd": {
+    "relation_pairs": [
+      [
+        "9.3.6/2025.07.31",
+        "Splunk_11月維護"
+      ],
+      [
+        "620.21GB",
+        "A人員"
+      ],
+      [
+        "Splunk_11月維護",
+        "系統優化建議"
+      ],
+      [
+        "285GB",
+        "A人員"
+      ],
+      [
+        "10.0.2/2025.11.14",
+        "9.3.6/2025.07.31"
+      ],
+      [
+        "Splunk_11月維護",
+        "授權用量"
+      ],
+      [
+        "2025/12/04 09:30至2025/12/04 10:00",
+        "Splunk_11月維護"
+      ],
+      [
+        "Splunk_11月維護",
+        "版本更新"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk_11月維護",
+        "伺服器效能"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "10.0.2/2025.11.14",
+        "Splunk_11月維護"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773163394,
+    "update_time": 1773163394,
+    "_id": "doc-04465635a6b88183cbabbfe7e25635dd"
+  },
+  "doc-b0add79f46581b83deba682a2c89cdb7": {
+    "relation_pairs": [
+      [
+        "20251124",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "Splunk升版完成"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773163450,
+    "update_time": 1773163450,
+    "_id": "doc-b0add79f46581b83deba682a2c89cdb7"
+  },
+  "doc-79f23819b8640c43571e6e9b3e4098e0": {
+    "relation_pairs": [
+      [
+        "Abnormal Hanging Issue",
+        "C人員"
+      ],
+      [
+        "Abnormal Hanging Issue",
+        "Service Disruption"
+      ],
+      [
+        "C人員",
+        "Maintenance Record"
+      ],
+      [
+        "Abnormal Hanging Issue",
+        "Splunk SH"
+      ],
+      [
+        "Case Request",
+        "Diagnostic Report"
+      ],
+      [
+        "C客戶",
+        "Maintenance Record"
+      ],
+      [
+        "C人員",
+        "Splunk SH"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Abnormal Hanging Issue",
+        "B人員"
+      ],
+      [
+        "B人員",
+        "Maintenance Record"
+      ],
+      [
+        "B人員",
+        "C人員"
+      ],
+      [
+        "Abnormal Hanging Issue",
+        "Microsoft Package"
+      ],
+      [
+        "Abnormal Hanging Issue",
+        "Splunk Parameters"
+      ],
+      [
+        "B人員",
+        "Splunk SH"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1773163506,
+    "update_time": 1773163506,
+    "_id": "doc-79f23819b8640c43571e6e9b3e4098e0"
+  },
+  "doc-8a81645d1d338ac013fa594b14c35640": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "D客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B人員",
+        "Splunk 202510-12季維護"
+      ],
+      [
+        "Splunk",
+        "Splunk 202510-12季維護"
+      ],
+      [
+        "D客戶",
+        "Splunk 202510-12季維護"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773163506,
+    "update_time": 1773163506,
+    "_id": "doc-8a81645d1d338ac013fa594b14c35640"
+  },
+  "doc-56b76e765b58a558604d5d6f2575d2ca": {
+    "relation_pairs": [
+      [
+        "Red Hat 9.4",
+        "Splunk_11月維護"
+      ],
+      [
+        "CVE-2023-39198",
+        "Red Hat 9.4"
+      ],
+      [
+        "CVE-2023-4133",
+        "Red Hat 9.4"
+      ],
+      [
+        "I客戶",
+        "Splunk_11月維護"
+      ],
+      [
+        "CVE-2023-5178",
+        "Red Hat 9.4"
+      ],
+      [
+        "20GB",
+        "Splunk_11月維護"
+      ],
+      [
+        "CVE-2023-51043",
+        "Red Hat 9.4"
+      ],
+      [
+        "A人員",
+        "I客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "133.26GB",
+        "Splunk_11月維護"
+      ],
+      [
+        "CVE-2023-3567",
+        "Red Hat 9.4"
+      ],
+      [
+        "10.0.1 / 2025.09.25",
+        "Splunk_11月維護"
+      ],
+      [
+        "8.0.6 / 2024.10.22",
+        "Splunk_11月維護"
+      ],
+      [
+        "CVE-2023-51779",
+        "Red Hat 9.4"
+      ],
+      [
+        "CVE-2023-6932",
+        "Red Hat 9.4"
+      ],
+      [
+        "A人員",
+        "Splunk_11月維護"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1773163581,
+    "update_time": 1773163581,
+    "_id": "doc-56b76e765b58a558604d5d6f2575d2ca"
+  },
+  "doc-3c4967b23b72f04d5c4ef37149d21ede": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "系統優化建議"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "授權用量"
+      ],
+      [
+        "C人員",
+        "版本更新"
+      ],
+      [
+        "C人員",
+        "伺服器效能"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "E客戶",
+        "Splunk 2025 MA 10月定保.DM20250088_(6/12)"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773163622,
+    "update_time": 1773163622,
+    "_id": "doc-3c4967b23b72f04d5c4ef37149d21ede"
+  },
+  "doc-996c8aba3ce4de0e9bb90c0d569231f3": {
+    "relation_pairs": [
+      [
+        "E客戶駐點工作事項- 20251030",
+        "協助新增寄信套件"
+      ],
+      [
+        "C人員",
+        "完成寄信測試"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "協助新增寄信套件"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "E客戶駐點工作事項- 20251030",
+        "完成寄信測試"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773163629,
+    "update_time": 1773163629,
+    "_id": "doc-996c8aba3ce4de0e9bb90c0d569231f3"
+  },
+  "doc-72f381579d364fa91cc3e73153e0af97": {
+    "relation_pairs": [
+      [
+        "Engineer",
+        "SH KVstore引擎異常測試"
+      ],
+      [
+        "DEP02連動主機檢查",
+        "Splunk每週onsite"
+      ],
+      [
+        "DEP02主機排程",
+        "KGIBIDX04"
+      ],
+      [
+        "Splunk每週onsite",
+        "設定檔備份腳本異常"
+      ],
+      [
+        "FISAC資料收容",
+        "James"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "CDIBHMGT02",
+        "DEP02主機排程"
+      ],
+      [
+        "DEP02主機排程",
+        "DEP02連動主機檢查"
+      ],
+      [
+        "CDIBHMGT02",
+        "設定檔備份腳本異常"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773163699,
+    "update_time": 1773163699,
+    "_id": "doc-72f381579d364fa91cc3e73153e0af97"
+  },
+  "doc-7504d68fad10caa1cd0ea41314ed2ede": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "PA每月報表觸發動作變更"
+      ],
+      [
+        "A人員",
+        "Linux主機使用者與使用者權限-進行中"
+      ],
+      [
+        "B部門",
+        "FISAC資料收容-進行中"
+      ],
+      [
+        "A人員",
+        "DEP02 ([IP])移轉(下周進行)"
+      ],
+      [
+        "A人員",
+        "Centos作業系統升級(評估中)"
+      ],
+      [
+        "A人員",
+        "Tenable API App串接"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A人員",
+        "新增Splunk Add-on for Google Cloud Platform的sourcetype"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "A人員",
+        "Splunk角色能力異常"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1773163718,
+    "update_time": 1773163718,
+    "_id": "doc-7504d68fad10caa1cd0ea41314ed2ede"
+  },
+  "doc-3781d1671ca7126e99e7656264965fb6": {
+    "relation_pairs": [
+      [
+        "B部門",
+        "Dep02"
+      ],
+      [
+        "Fisac資料收容",
+        "James"
+      ],
+      [
+        "Ess_analyst角色",
+        "Hank"
+      ],
+      [
+        "A部門",
+        "Centos作業系統升級"
+      ],
+      [
+        "A部門",
+        "Maintainer角色"
+      ],
+      [
+        "B部門",
+        "Fisac資料收容"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A部門",
+        "Splunk每週onsite"
+      ],
+      [
+        "B部門",
+        "Sh Kvstore引擎異常測試"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773163811,
+    "update_time": 1773163811,
+    "_id": "doc-3781d1671ca7126e99e7656264965fb6"
+  },
+  "doc-8bddb98b4a84e394c0a4558b42ae12d0": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Es升版"
+      ],
+      [
+        "C人員",
+        "確認內對內告警urgency = critical原因"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "Indexer設定防串改"
+      ],
+      [
+        "2025/12/18 09:00 to 2025/12/18 17:30",
+        "E客戶駐點工作事項- 20251218"
+      ],
+      [
+        "C人員",
+        "資產上傳APP程式調整"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773163811,
+    "update_time": 1773163811,
+    "_id": "doc-8bddb98b4a84e394c0a4558b42ae12d0"
+  },
+  "doc-c7743e93210e95e8e40e0d2a627684b7": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "設備接收狀態檢查"
+      ],
+      [
+        "A人員",
+        "I客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "ASA事件接收異常",
+        "Indexer Cluster"
+      ],
+      [
+        "2025/11/19 13:30 to 2025/11/19 14:30",
+        "A人員"
+      ],
+      [
+        "172.20.137.45",
+        "ASA事件接收異常"
+      ],
+      [
+        "A人員",
+        "Checkpoint告警查看"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773163871,
+    "update_time": 1773163871,
+    "_id": "doc-c7743e93210e95e8e40e0d2a627684b7"
+  },
+  "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Maintenance Record"
+      ],
+      [
+        "A客戶",
+        "Maintenance Record"
+      ],
+      [
+        "A人員",
+        "Maintenance Record"
+      ],
+      [
+        "DC_ARP Report Syntax Check",
+        "Maintenance Record"
+      ],
+      [
+        "ARP Table Report",
+        "Maintenance Record"
+      ],
+      [
+        "DC_ARP Table Report",
+        "Equipment List"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "DC_ARP Table Report",
+        "Maintenance Record"
+      ],
+      [
+        "Device IP Segment List",
+        "Maintenance Record"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773163919,
+    "update_time": 1773163919,
+    "_id": "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+  },
+  "doc-f6caccf00501b5f4caf06dcfc047ae9e": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "告警盤點"
+      ],
+      [
+        "AI網站服務紀錄調閱",
+        "Splunk駐點服務202511第三周"
+      ],
+      [
+        "GeoDB",
+        "Splunk駐點服務202511第三周"
+      ],
+      [
+        "Splunk駐點服務202511第三周",
+        "告警盤點"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202511第三周"
+      ],
+      [
+        "KPMG滲透測試IP白名單",
+        "Splunk駐點服務202511第三周"
+      ],
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "2025弱點掃描報告資訊整理",
+        "Splunk駐點服務202511第三周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Splunk駐點服務202511第三周",
+        "eStreamer資料異常處理"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202511第三周"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773163933,
+    "update_time": 1773163933,
+    "_id": "doc-f6caccf00501b5f4caf06dcfc047ae9e"
+  },
+  "doc-f62a98ad02d11a4c9618cbda43281859": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "Splunk"
+      ],
+      [
+        "A人員",
+        "KVstore憑證"
+      ],
+      [
+        "B部門",
+        "Indexer"
+      ],
+      [
+        "A部門",
+        "FIsac情資撈取"
+      ],
+      [
+        "B部門",
+        "Splunk 10月維護報告"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "A人員",
+        "Centos作業系統升級"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "A人員",
+        "Splunk月報"
+      ],
+      [
+        "A人員",
+        "NTP服務"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1773163974,
+    "update_time": 1773163974,
+    "_id": "doc-f62a98ad02d11a4c9618cbda43281859"
+  },
+  "doc-84c3e0271089b72556be831ea38a055f": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Splunk Indexer Queue Full"
+      ],
+      [
+        "C人員",
+        "Maintenance Record"
+      ],
+      [
+        "B客戶",
+        "Splunk Indexer Queue Full"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773164034,
+    "update_time": 1773164034,
+    "_id": "doc-84c3e0271089b72556be831ea38a055f"
+  },
+  "doc-738a58105cbf665748b3257e0cfee9ac": {
+    "relation_pairs": [
+      [
+        "Forcepoint Endpoint Dlp",
+        "Tcpdump"
+      ],
+      [
+        "Checkpoint Logclm Uf",
+        "C人員"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "Es Alerts"
+      ],
+      [
+        "Datamodel Dnsamd",
+        "Mitreattack Framework"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773164062,
+    "update_time": 1773164062,
+    "_id": "doc-738a58105cbf665748b3257e0cfee9ac"
+  },
+  "doc-ab226f704fc1b4d45dd06222f40cb39f": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "C客戶"
+      ],
+      [
+        "AI網站服務紀錄調閱報表建置",
+        "Splunk駐點服務202512第一周"
+      ],
+      [
+        "2025下半年度告警盤點",
+        "Splunk駐點服務202512第一周"
+      ],
+      [
+        "FCB設定調整",
+        "Splunk駐點服務202512第一周"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202512第一周"
+      ],
+      [
+        "GeoDB",
+        "Splunk駐點服務202512第一周"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B人員",
+        "Splunk駐點服務202512第一周"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773164082,
+    "update_time": 1773164082,
+    "_id": "doc-ab226f704fc1b4d45dd06222f40cb39f"
+  },
+  "doc-c0cd3e323fc2a43e461d7af757b08706": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "DLDK Container Not Running"
+      ],
+      [
+        "Asset and Identity Priority Confirmation",
+        "Splunk工作事項- 0729"
+      ],
+      [
+        "Account Status Update",
+        "Splunk工作事項- 0729"
+      ],
+      [
+        "Automated Programs Execution",
+        "Monthly Maintenance"
+      ],
+      [
+        "Priority Setting for Unclear Identities",
+        "Splunk工作事項- 0729"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "Splunk工作事項- 0729",
+        "Threat Intelligence Download Settings Removal"
+      ],
+      [
+        "Identity Title Addition",
+        "Splunk工作事項- 0729"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "Critical Priority for Specific Assets",
+        "Splunk工作事項- 0729"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773164138,
+    "update_time": 1773164138,
+    "_id": "doc-c0cd3e323fc2a43e461d7af757b08706"
+  },
+  "doc-9648988cb67db9843bc13754ac3d6ab6": {
+    "relation_pairs": [
+      [
+        "CVE-2023-39198",
+        "Red Hat 9.4"
+      ],
+      [
+        "CVE-2023-4133",
+        "Red Hat 9.4"
+      ],
+      [
+        "Splunk_12月維護",
+        "系統優化建議"
+      ],
+      [
+        "Splunk_12月維護",
+        "伺服器效能檢查"
+      ],
+      [
+        "Splunk_12月維護",
+        "授權用量擴充"
+      ],
+      [
+        "CVE-2023-5178",
+        "Red Hat 9.4"
+      ],
+      [
+        "Splunk_12月維護",
+        "版本更新"
+      ],
+      [
+        "A人員",
+        "Splunk_12月維護"
+      ],
+      [
+        "CVE-2023-51043",
+        "Red Hat 9.4"
+      ],
+      [
+        "Red Hat 9.4",
+        "Splunk_12月維護"
+      ],
+      [
+        "Splunk_12月維護",
+        "問題追蹤"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "I客戶",
+        "Splunk_12月維護"
+      ],
+      [
+        "CVE-2023-3567",
+        "Red Hat 9.4"
+      ],
+      [
+        "CVE-2023-51779",
+        "Red Hat 9.4"
+      ],
+      [
+        "CVE-2023-6932",
+        "Red Hat 9.4"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1773164173,
+    "update_time": 1773164173,
+    "_id": "doc-9648988cb67db9843bc13754ac3d6ab6"
+  },
+  "doc-1364984bd10139c2ef2cd5907a3a7591": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "IP Segment Device Report"
+      ],
+      [
+        "C人員",
+        "Maintenance Record"
+      ],
+      [
+        "ARP Table Report",
+        "Scheduling Script"
+      ],
+      [
+        "A人員",
+        "Switch_6FDC.csv"
+      ],
+      [
+        "A人員",
+        "Maintenance Record"
+      ],
+      [
+        "ARP Table Report",
+        "Maintenance Record"
+      ],
+      [
+        "A人員",
+        "C人員"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773164208,
+    "update_time": 1773164208,
+    "_id": "doc-1364984bd10139c2ef2cd5907a3a7591"
+  },
+  "doc-76068a2f95fd89e7ceb4741d4eb478ce": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Fisac Api Input"
+      ],
+      [
+        "Es Version Upgrade",
+        "Threat Object"
+      ],
+      [
+        "C人員",
+        "Sase UF"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "C人員",
+        "Dashboard Studio"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "Imsdb02uf"
+      ],
+      [
+        "C人員",
+        "Splunk"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773164267,
+    "update_time": 1773164267,
+    "_id": "doc-76068a2f95fd89e7ceb4741d4eb478ce"
+  },
+  "doc-1e6839b81653aa7c9b7ec794f3447380": {
+    "relation_pairs": [
+      [
+        "C人員",
+        "Websebse Log異常截斷"
+      ],
+      [
+        "C人員",
+        "SASE VPN Kick Session Report"
+      ],
+      [
+        "2025/12/23 09:00至2025/12/23 18:00",
+        "C人員"
+      ],
+      [
+        "C人員",
+        "Nix Logon Success Syntax"
+      ],
+      [
+        "C人員",
+        "E客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "C人員",
+        "E客戶駐點工作事項- 20251223"
+      ],
+      [
+        "C人員",
+        "Props.conf"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1773164270,
+    "update_time": 1773164270,
+    "_id": "doc-1e6839b81653aa7c9b7ec794f3447380"
+  },
+  "doc-068ca517cbebf973fd4089bd45ef615c": {
+    "relation_pairs": [
+      [
+        "B人員",
+        "Splunk駐點服務202512第四周"
+      ],
+      [
+        "B人員",
+        "CVE-2024-9183"
+      ],
+      [
+        "B人員",
+        "GeoDB"
+      ],
+      [
+        "B人員",
+        "GitLab"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B人員",
+        "Cybereyes介接套件建置"
+      ],
+      [
+        "B人員",
+        "SSH Server"
+      ],
+      [
+        "C客戶",
+        "Splunk駐點服務202512第四周"
+      ],
+      [
+        "2026年國定假日列表",
+        "B人員"
+      ],
+      [
+        "B人員",
+        "CVE-2025-12571"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1773164319,
+    "update_time": 1773164319,
+    "_id": "doc-068ca517cbebf973fd4089bd45ef615c"
+  },
+  "doc-17b29d261b8bce3ef9105d1c8a78415d": {
+    "relation_pairs": [
+      [
+        "DC_ARP_table報表",
+        "設備清單"
+      ],
+      [
+        "DC_ARP_table報表",
+        "DC_ARP報表語法檢查"
+      ],
+      [
+        "A客戶",
+        "C人員"
+      ],
+      [
+        "A人員",
+        "A客戶"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773164321,
+    "update_time": 1773164321,
+    "_id": "doc-17b29d261b8bce3ef9105d1c8a78415d"
+  }
+}

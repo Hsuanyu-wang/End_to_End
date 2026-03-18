@@ -1,0 +1,1116 @@
+{
+  "doc-886b4b629f3088ef8656c792cf7b3e8b": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "A人員",
+      "G客戶",
+      "10.0.2"
+    ],
+    "count": 5,
+    "create_time": 1773775736,
+    "update_time": 1773775736,
+    "_id": "doc-886b4b629f3088ef8656c792cf7b3e8b"
+  },
+  "doc-95280ea367581dac710f0dc56c7a72f3": {
+    "entity_names": [
+      "維護紀錄",
+      "FISAC資料收容",
+      "A人員",
+      "Splunk使用者權限調整",
+      "B客戶",
+      "C人員",
+      "SH KVstore引擎異常測試",
+      "n8n無法連線至splunk問題"
+    ],
+    "count": 8,
+    "create_time": 1773775736,
+    "update_time": 1773775736,
+    "_id": "doc-95280ea367581dac710f0dc56c7a72f3"
+  },
+  "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "A人員",
+      "G客戶",
+      "10.0.1"
+    ],
+    "count": 5,
+    "create_time": 1773775749,
+    "update_time": 1773775749,
+    "_id": "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+  },
+  "doc-203eba714089c79438cfc39755f054ce": {
+    "entity_names": [
+      "F客戶",
+      "維護紀錄",
+      "splunk_銀行處11月月維護",
+      "A人員",
+      "Market Selloff",
+      "9.3.3/2025.02.26",
+      "Nexon Technologies' Quarterly Earnings Report",
+      "10.0.2/2025.11.14",
+      "Federal Reserve Policy Announcement"
+    ],
+    "count": 9,
+    "create_time": 1773775750,
+    "update_time": 1773775750,
+    "_id": "doc-203eba714089c79438cfc39755f054ce"
+  },
+  "doc-04465635a6b88183cbabbfe7e25635dd": {
+    "entity_names": [
+      "Splunk_11月維護",
+      "A人員",
+      "9.3.6/2025.07.31",
+      "B客戶",
+      "伺服器效能正常",
+      "10.0.2/2025.11.14"
+    ],
+    "count": 6,
+    "create_time": 1773775760,
+    "update_time": 1773775760,
+    "_id": "doc-04465635a6b88183cbabbfe7e25635dd"
+  },
+  "doc-d0cef05272158ef916c2b84f625b2ddb": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "RES3SQL19資料收容狀況",
+      "E客戶"
+    ],
+    "count": 4,
+    "create_time": 1773775760,
+    "update_time": 1773775760,
+    "_id": "doc-d0cef05272158ef916c2b84f625b2ddb"
+  },
+  "doc-76068a2f95fd89e7ceb4741d4eb478ce": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 3,
+    "create_time": 1773775768,
+    "update_time": 1773775768,
+    "_id": "doc-76068a2f95fd89e7ceb4741d4eb478ce"
+  },
+  "doc-fe7268a7cb94439d483759e501068db6": {
+    "entity_names": [
+      "版本更新建議",
+      "維護紀錄",
+      "A人員",
+      "B客戶",
+      "伺服器效能檢查"
+    ],
+    "count": 5,
+    "create_time": 1773775768,
+    "update_time": 1773775768,
+    "_id": "doc-fe7268a7cb94439d483759e501068db6"
+  },
+  "doc-5096c0cdf6972a3670732e4f9be1d36a": {
+    "entity_names": [
+      "版本更新建議",
+      "維護紀錄",
+      "伺服器效能",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 5,
+    "create_time": 1773775781,
+    "update_time": 1773775781,
+    "_id": "doc-5096c0cdf6972a3670732e4f9be1d36a"
+  },
+  "doc-39206ec5906f23d68e051b1df74d3ca7": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "B客戶"
+    ],
+    "count": 3,
+    "create_time": 1773775781,
+    "update_time": 1773775781,
+    "_id": "doc-39206ec5906f23d68e051b1df74d3ca7"
+  },
+  "doc-0944d4a59fb7a84bd79d2fca8361e518": {
+    "entity_names": [
+      "PA每月報表補寄",
+      "維護紀錄",
+      "A人員",
+      "B客戶",
+      "james",
+      "C人員",
+      "SH KVstore引擎異常測試-進行中",
+      "FISAC資料收容-進行中",
+      "新增DNS設定",
+      "Splunk角色能力異常",
+      "部屬新crowdstrike套件"
+    ],
+    "count": 11,
+    "create_time": 1773775795,
+    "update_time": 1773775795,
+    "_id": "doc-0944d4a59fb7a84bd79d2fca8361e518"
+  },
+  "doc-1df6d8d113790f99d50593095e1e5e58": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶",
+      "Noah Carter",
+      "World Athletics Federation",
+      "Carbon-Fiber Spikes"
+    ],
+    "count": 6,
+    "create_time": 1773775796,
+    "update_time": 1773775796,
+    "_id": "doc-1df6d8d113790f99d50593095e1e5e58"
+  },
+  "doc-9648988cb67db9843bc13754ac3d6ab6": {
+    "entity_names": [
+      "8.0.6 / 2024.10.22",
+      "A人員",
+      "10.0.2 / 2025.11.14",
+      "CVE-2023-3567, CVE-2023-4133, CVE-2023-6932, CVE-2023-39198, CVE-2023-51043, CVE-2023-51779, CVE-2023-5178",
+      "Red Hat 9.4",
+      "Lower-Than-Expected Quarterly Earnings",
+      "3.4% Decline",
+      "伺服器效能：正常",
+      "I客戶",
+      "Splunk_12月維護"
+    ],
+    "count": 10,
+    "create_time": 1773775815,
+    "update_time": 1773775815,
+    "_id": "doc-9648988cb67db9843bc13754ac3d6ab6"
+  },
+  "doc-b6f1e5469f6278ea8a34bff96b293b69": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "C人員",
+      "E客戶",
+      "版次"
+    ],
+    "count": 5,
+    "create_time": 1773775822,
+    "update_time": 1773775822,
+    "_id": "doc-b6f1e5469f6278ea8a34bff96b293b69"
+  },
+  "doc-ab226f704fc1b4d45dd06222f40cb39f": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "C客戶"
+    ],
+    "count": 3,
+    "create_time": 1773775823,
+    "update_time": 1773775823,
+    "_id": "doc-ab226f704fc1b4d45dd06222f40cb39f"
+  },
+  "doc-2fe3f974e54dd1f1ad98289cc79980d6": {
+    "entity_names": [
+      "GitLab漏洞修補",
+      "維護紀錄",
+      "Cyble ASM IP白名單",
+      "C客戶",
+      "B人員",
+      "MG02",
+      "FWD03",
+      "GeoDB",
+      "Arcsight和Splunk歷史案件調閱",
+      "Ryan之Splunk帳號"
+    ],
+    "count": 10,
+    "create_time": 1773775841,
+    "update_time": 1773775841,
+    "_id": "doc-2fe3f974e54dd1f1ad98289cc79980d6"
+  },
+  "doc-0d3d3acb3c191c9e65fac21b5ed9284f": {
+    "entity_names": [
+      "維護紀錄",
+      "C客戶",
+      "B人員",
+      "DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標",
+      "AI網站服務紀錄調閱儀表板",
+      "CVE-2025-11224",
+      "GeoDB",
+      "Gitlab"
+    ],
+    "count": 8,
+    "create_time": 1773775857,
+    "update_time": 1773775857,
+    "_id": "doc-0d3d3acb3c191c9e65fac21b5ed9284f"
+  },
+  "doc-3f8775862e3b8ea072578967e7520445": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "漏洞CVE-2025-6454,CVE-2025-2256",
+      "C客戶",
+      "B人員",
+      "漏洞CVE-2025-6454",
+      "API",
+      "版次18.1.6",
+      "資料更新geodb",
+      "漏洞CVE-2025-2256",
+      "版次17.10.8"
+    ],
+    "count": 11,
+    "create_time": 1773775858,
+    "update_time": 1773775858,
+    "_id": "doc-3f8775862e3b8ea072578967e7520445"
+  },
+  "doc-5930b403906ecb929487592cef5210f2": {
+    "entity_names": [
+      "維護紀錄",
+      "VMware Tools",
+      "C客戶",
+      "B人員",
+      "CVE-2025-41244",
+      "CVE-2025-41246",
+      "CVE-2025-41244, CVE-2025-41246"
+    ],
+    "count": 7,
+    "create_time": 1773775868,
+    "update_time": 1773775868,
+    "_id": "doc-5930b403906ecb929487592cef5210f2"
+  },
+  "doc-5f0773b8daffa7a65254a73867e36afb": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "D客戶",
+      "pice_logs"
+    ],
+    "count": 4,
+    "create_time": 1773775868,
+    "update_time": 1773775868,
+    "_id": "doc-5f0773b8daffa7a65254a73867e36afb"
+  },
+  "doc-c41e50d3a458388dc7fe53ece68ee69f": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "C客戶",
+      "VMware Tools漏洞"
+    ],
+    "count": 4,
+    "create_time": 1773775885,
+    "update_time": 1773775885,
+    "_id": "doc-c41e50d3a458388dc7fe53ece68ee69f"
+  },
+  "doc-25d7c29d65aa0e4d54fb4af54207fa0d": {
+    "entity_names": [
+      "維護紀錄",
+      "CEF outputs套件調整送出格式",
+      "資產新增報廢/營運中欄位",
+      "資料",
+      "Splunk版本升級",
+      "C人員",
+      "漏洞",
+      "E客戶",
+      "IIS LOG拋送目的調整",
+      "ES版本升級",
+      "imsdb02UF中舊的殘留input設定",
+      "splunk自動version check",
+      "SH FISAC API input (未使用)"
+    ],
+    "count": 13,
+    "create_time": 1773775885,
+    "update_time": 1773775885,
+    "_id": "doc-25d7c29d65aa0e4d54fb4af54207fa0d"
+  },
+  "doc-dddcb833d814b293bd936732652206d0": {
+    "entity_names": [
+      "F客戶",
+      "維護紀錄",
+      "伺服器",
+      "A人員",
+      "9.3.3/2025.02.26",
+      "10.0.2/2025.11.14"
+    ],
+    "count": 6,
+    "create_time": 1773775899,
+    "update_time": 1773775899,
+    "_id": "doc-dddcb833d814b293bd936732652206d0"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "entity_names": [
+      "A人員",
+      "LDAP設定",
+      "B客戶",
+      "A人員,B人員",
+      "C人員",
+      "SH KVstore引擎異常測試-進行中",
+      "BTDC2問題處理",
+      "B部門",
+      "FISAC資料收容-進行中",
+      "Management搜尋異常",
+      "A部門"
+    ],
+    "count": 11,
+    "create_time": 1773775900,
+    "update_time": 1773775900,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-082efb5c18d778427dcd94905e5f4370": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "Splunk駐點服務202511第一周",
+      "C客戶"
+    ],
+    "count": 4,
+    "create_time": 1773775922,
+    "update_time": 1773775922,
+    "_id": "doc-082efb5c18d778427dcd94905e5f4370"
+  },
+  "doc-8a81645d1d338ac013fa594b14c35640": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "B人員",
+      "9.3.8/2025.11.14",
+      "D客戶",
+      "Splunk 202510-12季維護",
+      "10.0.2/2025.11.14"
+    ],
+    "count": 7,
+    "create_time": 1773775922,
+    "update_time": 1773775922,
+    "_id": "doc-8a81645d1d338ac013fa594b14c35640"
+  },
+  "doc-7c1fca5402ff2eb1c53222e1d4db282a": {
+    "entity_names": [
+      "Supply Constraints",
+      "維護紀錄",
+      "版次clean.sh",
+      "C客戶",
+      "B人員",
+      "Commodity Markets",
+      "Crude Oil Prices",
+      "Interest Rate Speculation",
+      "Nexon Technologies",
+      "Omega Energy",
+      "3.4% Decline",
+      "伺服器FWD02",
+      "API Cybereyes API"
+    ],
+    "count": 13,
+    "create_time": 1773775945,
+    "update_time": 1773775945,
+    "_id": "doc-7c1fca5402ff2eb1c53222e1d4db282a"
+  },
+  "doc-f6caccf00501b5f4caf06dcfc047ae9e": {
+    "entity_names": [
+      "維護紀錄",
+      "eStreamer資料異常處理",
+      "GeoDB更新",
+      "AI網站服務紀錄調閱",
+      "C客戶",
+      "B人員",
+      "弱點掃描報告資訊整理",
+      "KPMG滲透測試IP白名單"
+    ],
+    "count": 8,
+    "create_time": 1773775945,
+    "update_time": 1773775945,
+    "_id": "doc-f6caccf00501b5f4caf06dcfc047ae9e"
+  },
+  "doc-daa296a353c26f41dfc613743d24e936": {
+    "entity_names": [
+      "A人員",
+      "B客戶",
+      "C人員",
+      "A人員,C人員",
+      "Splunk每週onsite",
+      "IDX cluster節點",
+      "PA報表寄信異常",
+      "新增indexer"
+    ],
+    "count": 8,
+    "create_time": 1773775956,
+    "update_time": 1773775956,
+    "_id": "doc-daa296a353c26f41dfc613743d24e936"
+  },
+  "doc-8bddb98b4a84e394c0a4558b42ae12d0": {
+    "entity_names": [
+      "內對內告警urgency = critical原因",
+      "ES升版",
+      "C人員",
+      "E客戶",
+      "Indexer設定防串改",
+      "資產上傳APP程式調整"
+    ],
+    "count": 6,
+    "create_time": 1773775956,
+    "update_time": 1773775956,
+    "_id": "doc-8bddb98b4a84e394c0a4558b42ae12d0"
+  },
+  "doc-1364984bd10139c2ef2cd5907a3a7591": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "A人員",
+      "A客戶"
+    ],
+    "count": 4,
+    "create_time": 1773775971,
+    "update_time": 1773775971,
+    "_id": "doc-1364984bd10139c2ef2cd5907a3a7591"
+  },
+  "doc-fcc4bf66788ce00c23c3e736753ea50a": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "10.0.0",
+      "C人員",
+      "E客戶",
+      "Interest Rates"
+    ],
+    "count": 6,
+    "create_time": 1773775971,
+    "update_time": 1773775971,
+    "_id": "doc-fcc4bf66788ce00c23c3e736753ea50a"
+  },
+  "doc-17b29d261b8bce3ef9105d1c8a78415d": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "A人員",
+      "A客戶"
+    ],
+    "count": 4,
+    "create_time": 1773775992,
+    "update_time": 1773775992,
+    "_id": "doc-17b29d261b8bce3ef9105d1c8a78415d"
+  },
+  "doc-8ebe784b7ece61edcdd2e054763c0ce3": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "B客戶",
+      "C人員",
+      "維護纪录"
+    ],
+    "count": 5,
+    "create_time": 1773775992,
+    "update_time": 1773775992,
+    "_id": "doc-8ebe784b7ece61edcdd2e054763c0ce3"
+  },
+  "doc-75fa98905e1d68515f390e75c46adddb": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "635.27GB",
+      "伺服器效能",
+      "9.3.6/2025.07.31",
+      "B客戶",
+      "Splunk_10月維護",
+      "285GB",
+      "10.0.1/2025.09.25"
+    ],
+    "count": 9,
+    "create_time": 1773776010,
+    "update_time": 1773776010,
+    "_id": "doc-75fa98905e1d68515f390e75c46adddb"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "entity_names": [
+      "F客戶",
+      "維護紀錄",
+      "伺服器",
+      "A人員",
+      "9.3.3/2025.02.26",
+      "10.0.2/2025.11.14"
+    ],
+    "count": 6,
+    "create_time": 1773776012,
+    "update_time": 1773776012,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-c7743e93210e95e8e40e0d2a627684b7": {
+    "entity_names": [
+      "維護紀錄",
+      "I客戶",
+      "A人員"
+    ],
+    "count": 3,
+    "create_time": 1773776031,
+    "update_time": 1773776031,
+    "_id": "doc-c7743e93210e95e8e40e0d2a627684b7"
+  },
+  "doc-942b136689124792272bc32a2898842c": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "DEP02 root服務確認",
+      "B客戶",
+      "Tenable API App串接",
+      "C人員",
+      "DEP02 ([IP])移轉(下周進行)",
+      "Centos作業系統升級(評估中)",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "Management.搜尋異常",
+      "BTDC2問題處理",
+      "SH KVstore引擎異常測試-進行中",
+      "FISAC資料收容-進行中"
+    ],
+    "count": 13,
+    "create_time": 1773776032,
+    "update_time": 1773776032,
+    "_id": "doc-942b136689124792272bc32a2898842c"
+  },
+  "doc-738a58105cbf665748b3257e0cfee9ac": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776041,
+    "update_time": 1773776041,
+    "_id": "doc-738a58105cbf665748b3257e0cfee9ac"
+  },
+  "doc-1e6e1908b68b82814f06780675f7938b": {
+    "entity_names": [
+      "維護紀錄",
+      "B客戶",
+      "C人員",
+      "ocp_cdibh資料",
+      "IDX01, IDX02, IDX03",
+      "IDX03",
+      "IDX01",
+      "IDX02"
+    ],
+    "count": 8,
+    "create_time": 1773776051,
+    "update_time": 1773776051,
+    "_id": "doc-1e6e1908b68b82814f06780675f7938b"
+  },
+  "doc-d02e98febcd8f8650bbe77d789a41d69": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776063,
+    "update_time": 1773776063,
+    "_id": "doc-d02e98febcd8f8650bbe77d789a41d69"
+  },
+  "doc-d0d3b88d3601a1081c8354e0ef27952f": {
+    "entity_names": [
+      "C人員",
+      "維護紀錄",
+      "伺服器",
+      "B客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776073,
+    "update_time": 1773776073,
+    "_id": "doc-d0d3b88d3601a1081c8354e0ef27952f"
+  },
+  "doc-07959bdb8bab221c9c80a1c3e85776b3": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "A人員",
+      "A客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776086,
+    "update_time": 1773776086,
+    "_id": "doc-07959bdb8bab221c9c80a1c3e85776b3"
+  },
+  "doc-726c374f489423e007bce76f7810b46e": {
+    "entity_names": [
+      "F客戶",
+      "維護紀錄",
+      "伺服器",
+      "A人員",
+      "9.3.3/2025.02.26",
+      "10.0.2/2025.11.14"
+    ],
+    "count": 6,
+    "create_time": 1773776096,
+    "update_time": 1773776096,
+    "_id": "doc-726c374f489423e007bce76f7810b46e"
+  },
+  "doc-0b9e37e8f7e8a98183b1724c16ce814a": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "C客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776097,
+    "update_time": 1773776097,
+    "_id": "doc-0b9e37e8f7e8a98183b1724c16ce814a"
+  },
+  "doc-1e7cec156f57837e8d25cbe83a6db45f": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "C客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776103,
+    "update_time": 1773776103,
+    "_id": "doc-1e7cec156f57837e8d25cbe83a6db45f"
+  },
+  "doc-c0cd3e323fc2a43e461d7af757b08706": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776110,
+    "update_time": 1773776110,
+    "_id": "doc-c0cd3e323fc2a43e461d7af757b08706"
+  },
+  "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "A人員",
+      "A客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776111,
+    "update_time": 1773776111,
+    "_id": "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+  },
+  "doc-345e520afd2a192e25824abb33740d46": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "伺服器",
+      "A客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776128,
+    "update_time": 1773776128,
+    "_id": "doc-345e520afd2a192e25824abb33740d46"
+  },
+  "doc-333af5cc1ff286e512f36be66d1aa78b": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "B客戶",
+      "C人員",
+      "SH KVstore引擎異常測試-進行中",
+      "FISAC資料收容-進行中",
+      "Splunk角色能力異常",
+      "Linux主機使用者與使用者權限-進行中",
+      "PA每月報表觸發動作變更"
+    ],
+    "count": 9,
+    "create_time": 1773776130,
+    "update_time": 1773776130,
+    "_id": "doc-333af5cc1ff286e512f36be66d1aa78b"
+  },
+  "doc-f62a98ad02d11a4c9618cbda43281859": {
+    "entity_names": [
+      "伺服器",
+      "A人員",
+      "Splunk套件",
+      "B客戶",
+      "C人員",
+      "Splunk維護報告",
+      "NTP服務",
+      "KVstore憑證"
+    ],
+    "count": 8,
+    "create_time": 1773776148,
+    "update_time": 1773776148,
+    "_id": "doc-f62a98ad02d11a4c9618cbda43281859"
+  },
+  "doc-15d6c505e6a20b598aa21d52b466adcd": {
+    "entity_names": [
+      "維護紀錄",
+      "C客戶",
+      "HTTP對外大量傳輸資料報表調整",
+      "B人員",
+      "處理工程師",
+      "Gitlab漏洞修補18.5.4 -> 18.5.5",
+      "2026/01/19 13:30至5:30pm",
+      "Splunk駐點服務202601第三周(2026/1/19)",
+      "FWD03底層資料收容filter設定"
+    ],
+    "count": 9,
+    "create_time": 1773776163,
+    "update_time": 1773776163,
+    "_id": "doc-15d6c505e6a20b598aa21d52b466adcd"
+  },
+  "doc-e2a0171ee9d19cc664d4d041d3e73ba2": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "B客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776169,
+    "update_time": 1773776169,
+    "_id": "doc-e2a0171ee9d19cc664d4d041d3e73ba2"
+  },
+  "doc-1e6839b81653aa7c9b7ec794f3447380": {
+    "entity_names": [
+      "維護紀錄",
+      "Raw data",
+      "C人員",
+      "E客戶",
+      "Websebse log"
+    ],
+    "count": 5,
+    "create_time": 1773776176,
+    "update_time": 1773776176,
+    "_id": "doc-1e6839b81653aa7c9b7ec794f3447380"
+  },
+  "doc-8a40e782f3c3804da0a1d45dfa05eefe": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776188,
+    "update_time": 1773776188,
+    "_id": "doc-8a40e782f3c3804da0a1d45dfa05eefe"
+  },
+  "doc-41be59e9bae9e87a716afd8b5a9e9ee1": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "C人員",
+      "10.0.2",
+      "H客戶"
+    ],
+    "count": 5,
+    "create_time": 1773776189,
+    "update_time": 1773776189,
+    "_id": "doc-41be59e9bae9e87a716afd8b5a9e9ee1"
+  },
+  "doc-72f381579d364fa91cc3e73153e0af97": {
+    "entity_names": [
+      "A人員",
+      "B客戶",
+      "CDIBHMGT02",
+      "C人員",
+      "SH KVstore引擎異常測試",
+      "KGIBIDX04",
+      "DEP02主機",
+      "FISAC API申請單"
+    ],
+    "count": 8,
+    "create_time": 1773776201,
+    "update_time": 1773776201,
+    "_id": "doc-72f381579d364fa91cc3e73153e0af97"
+  },
+  "doc-5479196dee25b34d077c01190c6c728b": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "C客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776204,
+    "update_time": 1773776204,
+    "_id": "doc-5479196dee25b34d077c01190c6c728b"
+  },
+  "doc-cafeb58d25cc4cbc85eaf07cf415496a": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776214,
+    "update_time": 1773776214,
+    "_id": "doc-cafeb58d25cc4cbc85eaf07cf415496a"
+  },
+  "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "資料",
+      "C客戶",
+      "B人員",
+      "漏洞",
+      "API",
+      "版次"
+    ],
+    "count": 8,
+    "create_time": 1773776226,
+    "update_time": 1773776226,
+    "_id": "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+  },
+  "doc-79f23819b8640c43571e6e9b3e4098e0": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "C人員",
+      "C客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776242,
+    "update_time": 1773776242,
+    "_id": "doc-79f23819b8640c43571e6e9b3e4098e0"
+  },
+  "doc-56b76e765b58a558604d5d6f2575d2ca": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "A人員",
+      "10.0.1",
+      "I客戶"
+    ],
+    "count": 5,
+    "create_time": 1773776246,
+    "update_time": 1773776246,
+    "_id": "doc-56b76e765b58a558604d5d6f2575d2ca"
+  },
+  "doc-5618eb566fb322ada0eb69bef88a7581": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "防火牆事件",
+      "C人員",
+      "3.4% Decline In Nexon Technologies Stock Value",
+      "I客戶"
+    ],
+    "count": 6,
+    "create_time": 1773776262,
+    "update_time": 1773776262,
+    "_id": "doc-5618eb566fb322ada0eb69bef88a7581"
+  },
+  "doc-3c4967b23b72f04d5c4ef37149d21ede": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "版次10.0.1 / 2025.09.25",
+      "版次9.3.3 / 2025.02.26",
+      "C人員",
+      "E客戶",
+      "弱點",
+      "Splunk 2025 MA 10月定保.DM20250088_(6/12)"
+    ],
+    "count": 8,
+    "create_time": 1773776273,
+    "update_time": 1773776273,
+    "_id": "doc-3c4967b23b72f04d5c4ef37149d21ede"
+  },
+  "doc-7504d68fad10caa1cd0ea41314ed2ede": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "B客戶",
+      "Tenable API App串接",
+      "C人員",
+      "DEP02 ([IP])移轉(下周進行)",
+      "Centos作業系統升級(評估中)",
+      "SH KVstore引擎異常測試-進行中",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "FISAC資料收容-進行中",
+      "Splunk角色能力異常",
+      "Linux主機使用者與使用者權限-進行中",
+      "PA每月報表觸發動作變更"
+    ],
+    "count": 13,
+    "create_time": 1773776288,
+    "update_time": 1773776288,
+    "_id": "doc-7504d68fad10caa1cd0ea41314ed2ede"
+  },
+  "doc-412e17859c430b9ce8b929bc152053ef": {
+    "entity_names": [
+      "維護紀錄",
+      "Interest Rates",
+      "C人員",
+      "B客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776288,
+    "update_time": 1773776288,
+    "_id": "doc-412e17859c430b9ce8b929bc152053ef"
+  },
+  "doc-2940790b50eb2cba2a5e944b95a94dd5": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "KV store憑證效期檢查",
+      "B客戶",
+      "C人員",
+      "Splunk bundle儲存量過大",
+      "PA報表寄信異常",
+      "FISAC資料收容申請",
+      "Indexer索引同步狀態確認"
+    ],
+    "count": 9,
+    "create_time": 1773776325,
+    "update_time": 1773776325,
+    "_id": "doc-2940790b50eb2cba2a5e944b95a94dd5"
+  },
+  "doc-c0c6684aa00106f16e7869f519061642": {
+    "entity_names": [
+      "維護紀錄",
+      "伺服器",
+      "10.0.2 / 2025.11.14",
+      "C人員",
+      "E客戶",
+      "9.3.8 / 2025.11.14"
+    ],
+    "count": 6,
+    "create_time": 1773776328,
+    "update_time": 1773776328,
+    "_id": "doc-c0c6684aa00106f16e7869f519061642"
+  },
+  "doc-84c3e0271089b72556be831ea38a055f": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "B客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776337,
+    "update_time": 1773776337,
+    "_id": "doc-84c3e0271089b72556be831ea38a055f"
+  },
+  "doc-068ca517cbebf973fd4089bd45ef615c": {
+    "entity_names": [
+      "維護紀錄",
+      "SSH Server",
+      "C客戶",
+      "GitLab",
+      "B人員",
+      "GeoDB"
+    ],
+    "count": 6,
+    "create_time": 1773776346,
+    "update_time": 1773776346,
+    "_id": "doc-068ca517cbebf973fd4089bd45ef615c"
+  },
+  "doc-b0add79f46581b83deba682a2c89cdb7": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "Splunk升版完成",
+      "E客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776346,
+    "update_time": 1773776346,
+    "_id": "doc-b0add79f46581b83deba682a2c89cdb7"
+  },
+  "doc-996c8aba3ce4de0e9bb90c0d569231f3": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 3,
+    "create_time": 1773776363,
+    "update_time": 1773776363,
+    "_id": "doc-996c8aba3ce4de0e9bb90c0d569231f3"
+  },
+  "doc-cdd29ae3537f38a27c3848632ad51359": {
+    "entity_names": [
+      "Cybereyes高(high)風險告警_new (測試中)",
+      "大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中)",
+      "SSH Server漏洞修補",
+      "C客戶",
+      "B人員",
+      "Splunk駐點服務202601第二周",
+      "Gitlab漏洞修補",
+      "FWD03底層資料收容",
+      "Cybereyes API"
+    ],
+    "count": 9,
+    "create_time": 1773776381,
+    "update_time": 1773776381,
+    "_id": "doc-cdd29ae3537f38a27c3848632ad51359"
+  },
+  "doc-d96ca3133c54d9d76add7de434ee05b5": {
+    "entity_names": [
+      "維護紀錄",
+      "A人員",
+      "SPLUNK維護報告",
+      "Splunk整體架構IP調整",
+      "KVstore憑證效期檢查",
+      "B客戶",
+      "C人員",
+      "NTP服務檢查",
+      "Splunk套件升級",
+      "B部門",
+      "A部門",
+      "新增indexer",
+      "FIsac情資撈取"
+    ],
+    "count": 13,
+    "create_time": 1773776394,
+    "update_time": 1773776394,
+    "_id": "doc-d96ca3133c54d9d76add7de434ee05b5"
+  },
+  "doc-8a83bcdf6e7b7269cfd17b4f21457de8": {
+    "entity_names": [
+      "Cutting-Edge Technology",
+      "維護紀錄",
+      "A人員",
+      "A客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776408,
+    "update_time": 1773776408,
+    "_id": "doc-8a83bcdf6e7b7269cfd17b4f21457de8"
+  },
+  "doc-b8ec2739edb4ee1ccc4cf68534e90be5": {
+    "entity_names": [
+      "B人員",
+      "維護紀錄",
+      "Splunk SIEM",
+      "C客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776409,
+    "update_time": 1773776409,
+    "_id": "doc-b8ec2739edb4ee1ccc4cf68534e90be5"
+  },
+  "doc-4861ed7c0c566a81f361adb6811a1523": {
+    "entity_names": [
+      "F客戶",
+      "維護紀錄",
+      "伺服器",
+      "A人員",
+      "9.3.3/2025.02.26",
+      "10.0.2/2025.11.14"
+    ],
+    "count": 6,
+    "create_time": 1773776421,
+    "update_time": 1773776421,
+    "_id": "doc-4861ed7c0c566a81f361adb6811a1523"
+  },
+  "doc-3781d1671ca7126e99e7656264965fb6": {
+    "entity_names": [
+      "維護紀錄",
+      "C人員",
+      "A人員",
+      "B客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776423,
+    "update_time": 1773776423,
+    "_id": "doc-3781d1671ca7126e99e7656264965fb6"
+  },
+  "doc-0640212d45b4b92d91d0255cf90edf96": {
+    "entity_names": [
+      "Carbon-Fiber Spikes",
+      "維護紀錄",
+      "C人員",
+      "E客戶"
+    ],
+    "count": 4,
+    "create_time": 1773776431,
+    "update_time": 1773776431,
+    "_id": "doc-0640212d45b4b92d91d0255cf90edf96"
+  }
+}

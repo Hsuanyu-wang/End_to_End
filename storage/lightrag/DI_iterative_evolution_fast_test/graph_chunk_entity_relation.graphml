@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="F客戶">
+  <data key="d0">F客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">F客戶的維護紀錄包括授權用量和系統優化建議。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734340</data>
+  <data key="d6"></data>
+</node>
+<node id="A人員">
+  <data key="d0">A人員</data>
+  <data key="d1">工程師</data>
+  <data key="d2">處理工程師A人員負責維護紀錄，進行時間為2025年12月26日15:00至16:00。&lt;SEP&gt;A人員是進行維護工作的處理工程師之一，負責多項維護任務。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e&lt;SEP&gt;chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="維護紀錄">
+  <data key="d0">維護紀錄</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">維護紀錄詳細記錄了授權用量、伺服器效能和版本更新等信息。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734340</data>
+  <data key="d6"></data>
+</node>
+<node id="splunk_銀行處">
+  <data key="d0">splunk_銀行處</data>
+  <data key="d1">測試環境</data>
+  <data key="d2">splunk_銀行處12月月維護，進行時間為2025年12月26日15:00至16:00。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734340</data>
+  <data key="d6"></data>
+</node>
+<node id="授權量">
+  <data key="d0">授權量</data>
+  <data key="d1">授權量</data>
+  <data key="d2">建議擴充授權量到375GB，平均授權使用量為1276GB。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734340</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服器效能">
+  <data key="d0">伺服器效能</data>
+  <data key="d1">伺服器</data>
+  <data key="d2">伺服器效能無需處理。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734340</data>
+  <data key="d6"></data>
+</node>
+<node id="當前版本">
+  <data key="d0">當前版本</data>
+  <data key="d1">版本</data>
+  <data key="d2">當前版本為9.3.3/2025.02.26，近期掃出弱點，建議更新至最新版本10.0.2/2025.11.14。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734340</data>
+  <data key="d6"></data>
+</node>
+<node id="最新版本">
+  <data key="d0">最新版本</data>
+  <data key="d1">版本</data>
+  <data key="d2">最新版本為10.0.2/2025.11.14，用於系統升版以解決弱點問題。</data>
+  <data key="d3">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734340</data>
+  <data key="d6"></data>
+</node>
+<node id="B客戶">
+  <data key="d0">B客戶</data>
+  <data key="d1">客戶</data>
+  <data key="d2">B客戶的維護紀錄描述了該客戶的一次定期現場維護活動。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="C人員">
+  <data key="d0">C人員</data>
+  <data key="d1">工程師</data>
+  <data key="d2">C人員也是參與維護工作的一名處理工程師。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="Maintainer帳號權限確認">
+  <data key="d0">Maintainer帳號權限確認</data>
+  <data key="d1">驗證設定</data>
+  <data key="d2">維護過程中進行了maintainer帳號的角色能力確認，確保其符合日常工作需求。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="DEP02移轉後服務確認">
+  <data key="d0">DEP02移轉後服務確認</data>
+  <data key="d1">服務確認</data>
+  <data key="d2">已完成對DEP02移轉後的服務確認，並執行健康檢查以確保系統功能正常。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="PA報表寄送異常檢查">
+  <data key="d0">PA報表寄送異常檢查</data>
+  <data key="d1">異常處理</data>
+  <data key="d2">已確認splunk報告已被成功發送至cim_modactions索引中，正向A同事及IT部門確認詳細情況。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="FISAC資料收容-進行中">
+  <data key="d0">FISAC資料收容-進行中</data>
+  <data key="d1">維護紀錄</data>
+  <data key="d2">正在由B同事為FISAC提交使用API的IP申請單以完成資料收容過程。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="SH KVstore引擎異常測試-進行中">
+  <data key="d0">SH KVstore引擎異常測試-進行中</data>
+  <data key="d1">驗證設定</data>
+  <data key="d2">工程師在個人測試環境中對SH的KVstore狀態進行了異常測試，目前仍在進行中。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<node id="LDAP設定">
+  <data key="d0">LDAP設定</data>
+  <data key="d1">驗證設定</data>
+  <data key="d2">已完成splunk LDAP驗證設定。</data>
+  <data key="d3">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1773734341</data>
+  <data key="d6"></data>
+</node>
+<edge source="F客戶" target="維護紀錄">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄是針對F客戶進行的，包括授權用量和版本更新等建議。</data>
+  <data key="d9">服務確認,維護對象</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734340</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="維護紀錄">
+  <data key="d7">1.0</data>
+  <data key="d8">A人員負責維護紀錄，涉及授權用量和版本更新的事項。</data>
+  <data key="d9">異常處理,處理工程師</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734340</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="DEP02移轉後服務確認">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師A人員完成了對DEP02移轉後服務的確認並進行了健康檢查。</data>
+  <data key="d9">工程師任務,服務確認</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734341</data>
+  <data key="d13"></data>
+</edge>
+<edge source="A人員" target="SH KVstore引擎異常測試-進行中">
+  <data key="d7">1.0</data>
+  <data key="d8">處理工程師A人員在個人測試環境中對SH KVstore狀態進行了異常測試，目前仍在進行中。</data>
+  <data key="d9">工程師任務,測試環境</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734341</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="splunk_銀行處">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中的動作是針對splunk_銀行處的12月月維護進行的。</data>
+  <data key="d9">服務確認,測試環境</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734340</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="授權量">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中包含對授權量的擴充建議。</data>
+  <data key="d9">建議事項,異常處理</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734340</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="伺服器效能">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄無需對伺服器效能進行處理，表示當前狀態良好。</data>
+  <data key="d9">效能監控,服務確認</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734340</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="當前版本">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中提到需要將系統從當前版本9.3.3/2025.02.26升級到最新版本10.0.2/2025.11.14。</data>
+  <data key="d9">升版建議,異常處理</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734340</data>
+  <data key="d13"></data>
+</edge>
+<edge source="維護紀錄" target="最新版本">
+  <data key="d7">1.0</data>
+  <data key="d8">維護紀錄中提到需要將系統升級到最新版本以解決弱點問題。</data>
+  <data key="d9">升版建議,異常處理</data>
+  <data key="d10">chunk-490df5a6810de4f040c4fe2681e6ed6e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734340</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="Maintainer帳號權限確認">
+  <data key="d7">1.0</data>
+  <data key="d8">B客戶的維護活動包括maintainer帳號角色能力的確認，確保其符合日常工作的需求。</data>
+  <data key="d9">權限管理,維護需求</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734341</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="FISAC資料收容-進行中">
+  <data key="d7">1.0</data>
+  <data key="d8">B客戶的維護任務之一是向FISAC提交使用API的IP申請單以完成資料收容過程。</data>
+  <data key="d9">維護需求,資料管理</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734341</data>
+  <data key="d13"></data>
+</edge>
+<edge source="B客戶" target="LDAP設定">
+  <data key="d7">1.0</data>
+  <data key="d8">B客戶的維護活動包括完成splunk LDAP驗證設定以確保身份驗證正常運行。</data>
+  <data key="d9">維護需求,身份驗證</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734341</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C人員" target="PA報表寄送異常檢查">
+  <data key="d7">1.0</data>
+  <data key="d8">C人員負責檢查splunk報告發送異常情況，並向相關部門求證詳情。</data>
+  <data key="d9">工程師任務,異常處理</data>
+  <data key="d10">chunk-cf168eec40aae386455af5027929f6fe</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1773734341</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

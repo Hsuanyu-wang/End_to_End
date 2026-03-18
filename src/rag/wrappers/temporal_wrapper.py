@@ -27,7 +27,8 @@ class TemporalLightRAGWrapper(BaseRAGWrapper):
         name: str,
         rag_instance,
         mode: str = "hybrid",
-        time_weighting: bool = True
+        time_weighting: bool = True,
+        schema_info: Dict[str, Any] = None
     ):
         """
         初始化 Temporal LightRAG Wrapper
@@ -37,8 +38,9 @@ class TemporalLightRAGWrapper(BaseRAGWrapper):
             rag_instance: TemporalLightRAG 實例
             mode: 檢索模式
             time_weighting: 是否啟用時間權重
+            schema_info: Schema 資訊字典
         """
-        super().__init__(name)
+        super().__init__(name, schema_info=schema_info)
         self.rag = rag_instance
         self.mode = mode
         self.time_weighting = time_weighting

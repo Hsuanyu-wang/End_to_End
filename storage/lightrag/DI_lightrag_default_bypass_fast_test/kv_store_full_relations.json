@@ -1,0 +1,58 @@
+{
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "relation_pairs": [
+      [
+        "10.0.2/2025.11.14",
+        "splunk_銀行處12月月維護"
+      ],
+      [
+        "9.3.3/2025.02.26",
+        "splunk_銀行處12月月維護"
+      ],
+      [
+        "1276GB",
+        "375 GB"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773771972,
+    "update_time": 1773771972,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "relation_pairs": [
+      [
+        "A部門",
+        "Splunk"
+      ],
+      [
+        "LDAP設定",
+        "Splunk"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "Market Selloff",
+        "Nexon Technologies"
+      ],
+      [
+        "FISAC",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1773771973,
+    "update_time": 1773771973,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  }
+}

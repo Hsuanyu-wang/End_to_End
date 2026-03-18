@@ -136,6 +136,93 @@ lightrag:
         "BTDC2"
     ]
 
+storage:
+  root_dir: "/home/End_to_End_RAG/storage"
+  vector_index_dir: "vector_index"
+  graph_index_dir: "graph_index"
+  lightrag_dir: "lightrag"
+  csr_graph_dir: "csr_graph"
+  cache_dir: "cache"
+  schema_cache_dir: "schema_cache"
+
+# Schema Cache 配置
+schema:
+  cache:
+    enabled: true
+    root_dir: "/home/End_to_End_RAG/storage/schema_cache"
+    force_rebuild: false
+    
+  method: "iterative_evolution"  # lightrag_default, iterative_evolution, llm_dynamic, autoschema, dynamic_schema
+  use_entity_disambiguation: true
+  disambiguation_threshold: 0.85
+  
+  evolution_config:
+    max_entity_types: 50
+    convergence_window: 3
+    min_improvement: 0.05
+    use_cache: true
+    
+  dynamic_schema_config:
+    seed_types: ["Person", "Organization", "Location", "Event", "System"]
+    max_triplets_per_chunk: 30
+    use_cache: true
+
+# 檢索 Pipeline 配置
+retrieval:
+  pipeline:
+    enabled: false  # 預設關閉，需要時啟用
+    components:
+      - name: "base_retriever"
+        type: "BaseRetriever"
+        enabled: true
+        params:
+          mode: "hybrid"
+          
+      - name: "entity_disambiguation"
+        type: "EntityDisambiguationComponent"
+        enabled: false
+        params:
+          threshold: 0.85
+          
+      - name: "reranker"
+        type: "RerankerComponent"
+        enabled: false
+        params:
+          model: "BAAI/bge-reranker-v2-m3"
+          top_k: 10
+          
+      - name: "tog_retriever"
+        type: "ToGIterativeRetriever"
+        enabled: false
+        params:
+          max_iterations: 3
+  
+  # Ablation Study 配置
+  ablation_study:
+    enabled: false
+    generate_all_combinations: true
+    exclude_baseline: false
+    parallel_execution: false
+    max_workers: 4
+    
+  # Adaptive Routing 配置
+  adaptive_routing:
+    enabled: false
+    fallback_mode: "hybrid"
+    use_llm_analysis: true
+    
+  # ToG 配置
+  tog_config:
+    max_iterations: 3
+    convergence_threshold: 0.9
+    use_llm_sufficiency_check: true
+    
+  # Re-ranking 配置
+  reranking:
+    enabled: false
+    model: "BAAI/bge-reranker-v2-m3"
+    top_k: 10
+
 graph:
   backend: "neo4j"
   # extraction_mode: "hybrid" # transformer, schema, hybrid

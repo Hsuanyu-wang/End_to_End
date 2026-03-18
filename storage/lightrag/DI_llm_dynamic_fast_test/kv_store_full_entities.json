@@ -1,0 +1,44 @@
+{
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "entity_names": [
+      "2026/01/07 13:30至2026/01/07 17:30",
+      "Maintainer帳號權限確認",
+      "B客戶",
+      "SH KVstore引擎異常測試-進行中",
+      "FISAC資料收容-進行中",
+      "A人員",
+      "PA報表寄送異常檢查",
+      "BTDC2問題處理",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "C人員",
+      "B部門",
+      "Tenable API App串接",
+      "LDAP設定",
+      "Centos作業系統升級(評估中)",
+      "DEP02移轉後服務確認",
+      "Management搜尋異常",
+      "Splunk每週onsite",
+      "A部門",
+      "DEP02 root帳號使用確認"
+    ],
+    "count": 19,
+    "create_time": 1773734757,
+    "update_time": 1773734757,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "entity_names": [
+      "1276GB",
+      "10.0.2/2025.11.14",
+      "F客戶",
+      "A人員",
+      "9.3.3/2025.02.26",
+      "splunk_銀行處12月月維護",
+      "375 GB"
+    ],
+    "count": 7,
+    "create_time": 1773734758,
+    "update_time": 1773734758,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  }
+}

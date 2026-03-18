@@ -1,0 +1,66 @@
+{
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "relation_pairs": [
+      [
+        "3.4% Decline",
+        "Nexon Technologies"
+      ],
+      [
+        "Alex",
+        "Cruz"
+      ],
+      [
+        "A人員",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "B部門",
+        "FISAC"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "A部門",
+        "Splunk"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "relation_pairs": [
+      [
+        "A人員",
+        "splunk_银行业务部十二月维护"
+      ],
+      [
+        "Tokyo",
+        "World Athletics Championship"
+      ],
+      [
+        "F客戶",
+        "splunk_銀行處12月月維護"
+      ],
+      [
+        "2025/12/26 15:00至2025/12/26 16:00",
+        "splunk_銀行處12月月維護"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1773742595,
+    "update_time": 1773742595,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  }
+}

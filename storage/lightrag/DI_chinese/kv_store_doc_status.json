@@ -1,0 +1,2607 @@
+{
+  "doc-2940790b50eb2cba2a5e944b95a94dd5": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-2940790b50eb2cba2a5e944b95a94dd5"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/18  13:30 至 2025/11/18  17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.PA報表寄信異常-完成\n已設定PA 每月Block Category報表新的寄送套件，將於下個月1號確認該報表寄送郵件情況。\nB部門\n1.檢查各台主機KV store 憑證效期\n已更新全部主機之KV stor...",
+    "content_length": 450,
+    "created_at": "2026-03-10T08:44:15.128443+00:00",
+    "updated_at": "2026-03-10T08:44:50.649659+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132255,
+      "processing_end_time": 1773132290
+    }
+  },
+  "doc-8a81645d1d338ac013fa594b14c35640": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8a81645d1d338ac013fa594b14c35640"
+    ],
+    "content_summary": "這是一筆關於 D客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/19  13:30 至 2025/12/19  16:00。\n狀態描述 (Description): Splunk 202510-12季維護\n處置動作 (Action): 本季維護報表重點如下：\n1. 授權用量：正常\n- 授權量：131 GB\n- 平均授權用量：117.92 GB\n2. 伺服器效能：正常\n3. 系統優化建議：無\n4. 版本更新：暫不更新\n- 當前Splunk版本：9.3.8 / 2025.11....",
+    "content_length": 322,
+    "created_at": "2026-03-10T08:44:15.128378+00:00",
+    "updated_at": "2026-03-10T08:44:52.262986+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132255,
+      "processing_end_time": 1773132292
+    }
+  },
+  "doc-5f0773b8daffa7a65254a73867e36afb": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-5f0773b8daffa7a65254a73867e36afb"
+    ],
+    "content_summary": "這是一筆關於 D客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/26  13:30 至 2025/11/26  14:30。\n狀態描述 (Description): pice_logs 缺漏處理\n處置動作 (Action): 先前提到pice_logs有缺少檔案的狀況\n經查原因為檔案中的log太過相似，splunk會自動判定為相同的log而不重複收容\n今日已添加設定，讓splunk監控所有檔案即使內容相似\n新增設定後已完整收容所有檔案之資料",
+    "content_length": 233,
+    "created_at": "2026-03-10T08:44:15.128382+00:00",
+    "updated_at": "2026-03-10T08:45:15.561113+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132290,
+      "processing_end_time": 1773132315
+    }
+  },
+  "doc-0640212d45b4b92d91d0255cf90edf96": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0640212d45b4b92d91d0255cf90edf96"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/24  09:00 至 2025/11/24  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251114\n處置動作 (Action): 前一封CSR時間誤植，\n工作內容如下：\nSplunk升版完成",
+    "content_length": 160,
+    "created_at": "2026-03-10T08:44:15.128522+00:00",
+    "updated_at": "2026-03-10T08:45:17.306351+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132292,
+      "processing_end_time": 1773132317
+    }
+  },
+  "doc-996c8aba3ce4de0e9bb90c0d569231f3": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-996c8aba3ce4de0e9bb90c0d569231f3"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/10/30  13:30 至 2025/10/30  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251030\n處置動作 (Action): 工作內容如下\n1. 協助新增寄信套件\n2. 完成寄信測試",
+    "content_length": 158,
+    "created_at": "2026-03-10T08:44:15.128508+00:00",
+    "updated_at": "2026-03-10T08:45:46.687655+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132315,
+      "processing_end_time": 1773132346
+    }
+  },
+  "doc-dddcb833d814b293bd936732652206d0": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-dddcb833d814b293bd936732652206d0"
+    ],
+    "content_summary": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/26  14:00 至 2025/12/26  15:00。\n狀態描述 (Description): splunk_信用卡處12月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：100GB\n-平均授權用量：124GB\n2.伺服器效能：正常\n3.系統優化建議：根據說明定期檢查\n問題：有137台UF已超過15分鐘未與indexer連線\n建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf...",
+    "content_length": 333,
+    "created_at": "2026-03-10T08:44:15.128491+00:00",
+    "updated_at": "2026-03-10T08:45:48.569402+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132317,
+      "processing_end_time": 1773132348
+    }
+  },
+  "doc-07959bdb8bab221c9c80a1c3e85776b3": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-07959bdb8bab221c9c80a1c3e85776b3"
+    ],
+    "content_summary": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/27  13:30 至 2025/11/27  16:00。\n狀態描述 (Description): Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)\n處置動作 (Action): 1.設備狀態檢查：\n觀察月報CPU、Memory使用率皆無超過90%，整體正常\n2.系統日誌分析：\n觀察資料品質儀表板、健康狀況檢查，整體無異常\n3.系統參數檢查\n設備參數無異...",
+    "content_length": 311,
+    "created_at": "2026-03-10T08:44:15.128463+00:00",
+    "updated_at": "2026-03-10T08:46:18.337840+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132346,
+      "processing_end_time": 1773132378
+    }
+  },
+  "doc-8a40e782f3c3804da0a1d45dfa05eefe": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8a40e782f3c3804da0a1d45dfa05eefe"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/02  09:00 至 2025/12/02  12:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251202\n處置動作 (Action): 工作項目：\n1. 修改SASE VPN登入成功報表條件\n2. 新增告警 將SASE登入成功紀錄送至SOAR\n3. 新增index 與 HEC token for XSOAR",
+    "content_length": 216,
+    "created_at": "2026-03-10T08:44:15.128526+00:00",
+    "updated_at": "2026-03-10T08:46:36.591604+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132348,
+      "processing_end_time": 1773132396
+    }
+  },
+  "doc-fcc4bf66788ce00c23c3e736753ea50a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-fcc4bf66788ce00c23c3e736753ea50a"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/07/29  12:00 至 2025/07/29  13:00。\n狀態描述 (Description): Splunk 2025 MA 07月定保.DM20250088_(3/12)\n處置動作 (Action): 前一份CSR內容誤植，重新撰寫\n1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：630 GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：現行版本近期被掃出弱點，建議進行升版...",
+    "content_length": 301,
+    "created_at": "2026-03-10T08:44:15.128397+00:00",
+    "updated_at": "2026-03-10T08:46:36.660435+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132378,
+      "processing_end_time": 1773132396
+    }
+  },
+  "doc-0b9e37e8f7e8a98183b1724c16ce814a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0b9e37e8f7e8a98183b1724c16ce814a"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/13  13:30 至 2025/10/13  17:30。\n狀態描述 (Description): Splunk駐點服務202510第三周(2025/10/13)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.<SAP重要TCode執行紀錄>告警語法調整\n原語法中的user經比對僅得到系統管理員，並非實際user，因此調整語法，透過比對cyberark log取得實際user後再寄...",
+    "content_length": 410,
+    "created_at": "2026-03-10T08:44:15.128423+00:00",
+    "updated_at": "2026-03-10T08:47:03.105230+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132396,
+      "processing_end_time": 1773132423
+    }
+  },
+  "doc-39206ec5906f23d68e051b1df74d3ca7": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-39206ec5906f23d68e051b1df74d3ca7"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/10  09:30 至 2025/11/10  12:00。\n狀態描述 (Description): 資料平衡確認與未連接license master解決\n處置動作 (Action): 工作事項：\n1. 新增/etc/hosts，並重起服務後，正常連線至LM\n2. 確認資料持續進行平衡，且無空間滿載",
+    "content_length": 193,
+    "created_at": "2026-03-10T08:44:15.128502+00:00",
+    "updated_at": "2026-03-10T08:47:04.891627+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132396,
+      "processing_end_time": 1773132424
+    }
+  },
+  "doc-b6f1e5469f6278ea8a34bff96b293b69": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b6f1e5469f6278ea8a34bff96b293b69"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/30  13:30 至 2025/12/30  17:00。\n狀態描述 (Description): E客戶Splunk駐點 - 20251230\n處置動作 (Action): 今日工作項目如下：\n1.進行本月月維護，再麻煩您協助CSR回簽\n1. 授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB\n2. 伺服器效能：正常\n3. 系統優化建議：有10台UF超出預設傳輸上限，已派送套件完...",
+    "content_length": 418,
+    "created_at": "2026-03-10T08:44:15.128554+00:00",
+    "updated_at": "2026-03-10T08:47:43.439898+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132423,
+      "processing_end_time": 1773132463
+    }
+  },
+  "doc-76068a2f95fd89e7ceb4741d4eb478ce": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-76068a2f95fd89e7ceb4741d4eb478ce"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/17  09:00 至 2025/11/17  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251117\n處置動作 (Action): 今日工作內容如下，\n1.Splunk升版，從9.3.3升版至9.3.8，再麻煩您申請弱點復掃\n2.修改sase UF資料收容路徑至/var/log/mammoth\n待完成工作項目：\n1.FISAC API Input無資料時會跳Error\n...",
+    "content_length": 360,
+    "created_at": "2026-03-10T08:44:15.128515+00:00",
+    "updated_at": "2026-03-10T08:47:43.411810+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132424,
+      "processing_end_time": 1773132463
+    }
+  },
+  "doc-1e6e1908b68b82814f06780675f7938b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1e6e1908b68b82814f06780675f7938b"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/07  15:00 至 2025/11/07  17:00。\n狀態描述 (Description): IDX硬碟空間滿載與資料同步問題\n處置動作 (Action): 工作事項：\nIDX01重新加入後，因同步資料導致IDX02與IDX03滿載\n將ocp_cdibh資料刪除後，重新進行資料同步，\n離開前資料備份的同步已經完成，\n資料大小平衡持續進行中。",
+    "content_length": 218,
+    "created_at": "2026-03-10T08:44:15.128500+00:00",
+    "updated_at": "2026-03-10T08:48:23.445324+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132463,
+      "processing_end_time": 1773132503
+    }
+  },
+  "doc-8ebe784b7ece61edcdd2e054763c0ce3": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8ebe784b7ece61edcdd2e054763c0ce3"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/31  13:30 至 2025/12/31  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.帳號盤點清單確認\n已完成帳號盤點並寄送報表給Hank\nB部門\n2.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的IP申請單。\n3.SH KVstore引擎異常測試-進行中\n正在...",
+    "content_length": 446,
+    "created_at": "2026-03-10T08:44:15.128494+00:00",
+    "updated_at": "2026-03-10T08:48:36.837044+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132463,
+      "processing_end_time": 1773132516
+    }
+  },
+  "doc-84c3e0271089b72556be831ea38a055f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-84c3e0271089b72556be831ea38a055f"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/11  09:00 至 2025/12/11  18:00。\n狀態描述 (Description): Splunk Indexer queue full  - 20251211\n處置動作 (Action): 工作項目：\n到場確認異常原因，當日未確認原因。",
+    "content_length": 170,
+    "created_at": "2026-03-10T08:44:15.128540+00:00",
+    "updated_at": "2026-03-10T08:48:36.908073+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132503,
+      "processing_end_time": 1773132516
+    }
+  },
+  "doc-d0cef05272158ef916c2b84f625b2ddb": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d0cef05272158ef916c2b84f625b2ddb"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/04  13:30 至 2025/11/04  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251104\n處置動作 (Action): 今日工作內容如下，預計下次週四到場作業，再麻煩您幫我申請週四使用底層：\n1, 完成維護報告\n2. 確認RES3SQL19資料收容狀況\n待完成工作項目：\n1.CEF outputs套件新增debug log資料蒐集\n2.Finding會因為t...",
+    "content_length": 356,
+    "created_at": "2026-03-10T08:44:15.128504+00:00",
+    "updated_at": "2026-03-10T08:49:12.243446+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132516,
+      "processing_end_time": 1773132552
+    }
+  },
+  "doc-8a83bcdf6e7b7269cfd17b4f21457de8": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8a83bcdf6e7b7269cfd17b4f21457de8"
+    ],
+    "content_summary": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/12  13:30 至 2025/12/12  17:30。\n狀態描述 (Description): splunk憑證跟換\n處置動作 (Action): 今日到場作業事項為：\n更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑\n已確認SPLUNK可正常登入使用、KVSTORE 狀態正常，網頁憑證期限更新至2027/12月",
+    "content_length": 210,
+    "created_at": "2026-03-10T08:44:15.128478+00:00",
+    "updated_at": "2026-03-10T08:49:13.717381+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132516,
+      "processing_end_time": 1773132553
+    }
+  },
+  "doc-cdd29ae3537f38a27c3848632ad51359": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-cdd29ae3537f38a27c3848632ad51359"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/13  13:30 至 2026/01/13  17:30。\n狀態描述 (Description): Splunk駐點服務202601第二周(2026/1/13)\n處置動作 (Action): 本周工作項目如下:\n1.     更新GeoDB\n2.     Cybereyes API 串接\n     已完成 cybereyes api 串接，並確認新資料進到 splunk\n     目前已建立以下兩個新資料測試...",
+    "content_length": 486,
+    "created_at": "2026-03-10T08:44:15.128399+00:00",
+    "updated_at": "2026-03-10T08:49:50.636982+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132552,
+      "processing_end_time": 1773132590
+    }
+  },
+  "doc-fe7268a7cb94439d483759e501068db6": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-fe7268a7cb94439d483759e501068db6"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/04  10:00 至 2025/12/04  10:30。\n狀態描述 (Description): splunk_B客戶B部門11月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：203.65GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：建議更新\n-當前版本：9.3.3/2025.02.26\n-最新版本：10.0.1/2025.11.14\n...",
+    "content_length": 268,
+    "created_at": "2026-03-10T08:44:15.128475+00:00",
+    "updated_at": "2026-03-10T08:49:52.495076+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132553,
+      "processing_end_time": 1773132592
+    }
+  },
+  "doc-b0add79f46581b83deba682a2c89cdb7": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b0add79f46581b83deba682a2c89cdb7"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/24  09:00 至 2025/12/24  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251124\n處置動作 (Action): 工作事項：\nSplunk升版完成",
+    "content_length": 146,
+    "created_at": "2026-03-10T08:44:15.128519+00:00",
+    "updated_at": "2026-03-10T08:50:33.450668+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132590,
+      "processing_end_time": 1773132633
+    }
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "content_summary": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/26  15:00 至 2025/12/26  16:00。\n狀態描述 (Description): splunk_銀行處12月月維護\n處置動作 (Action): 1.授權用量 : 建議擴充\n-授權量 : 375 GB\n-平均授權使用量 : 1276GB\n2.伺服器效能 : 無\n3.系統優化建議 : 無\n4.版本更新 : 建議更新\n當前版本：9.3.3/2025.02.26\n最新版本：10.0.2/2025....",
+    "content_length": 283,
+    "created_at": "2026-03-10T08:44:15.128356+00:00",
+    "updated_at": "2026-03-10T08:50:35.458752+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132592,
+      "processing_end_time": 1773132635
+    }
+  },
+  "doc-f62a98ad02d11a4c9618cbda43281859": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-f62a98ad02d11a4c9618cbda43281859"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/05  13:30 至 2025/11/05  19:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk整體架構IP調整-完成\n已設定完成所有主機的新IP\n2.Splunk套件升級-完成\n已部屬新套件至各SH上。\n3.NTP服務檢查-完成\n已檢查各台主機的 NTP服務已啟用。\n4.KVstore 憑...",
+    "content_length": 518,
+    "created_at": "2026-03-10T08:44:15.128432+00:00",
+    "updated_at": "2026-03-10T08:51:22.093796+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132633,
+      "processing_end_time": 1773132682
+    }
+  },
+  "doc-4861ed7c0c566a81f361adb6811a1523": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-4861ed7c0c566a81f361adb6811a1523"
+    ],
+    "content_summary": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/24  10:30 至 2025/11/24  11:00。\n狀態描述 (Description): splunk_信用卡處11月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：100GB\n-平均授權用量：132GB\n2.伺服器效能：正常\n3.系統優化建議：根據說明定期檢查\n問題：有101台UF已超過15分鐘未與indexer連線\n建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf...",
+    "content_length": 333,
+    "created_at": "2026-03-10T08:44:15.128459+00:00",
+    "updated_at": "2026-03-10T08:51:16.123105+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132635,
+      "processing_end_time": 1773132676
+    }
+  },
+  "doc-95280ea367581dac710f0dc56c7a72f3": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-95280ea367581dac710f0dc56c7a72f3"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/03  13:30 至 2025/12/03  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk 使用者權限調整\n調整es_admin_user 使用者權限。\n調整ess_analyst 腳色權限，以供廠商進行例行維護或問題解決登入使用\n2.\nB部門\n1.FISAC資料收容-進行中\n目前已請...",
+    "content_length": 418,
+    "created_at": "2026-03-10T08:44:15.128466+00:00",
+    "updated_at": "2026-03-10T08:52:13.246432+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132676,
+      "processing_end_time": 1773132733
+    }
+  },
+  "doc-c0c6684aa00106f16e7869f519061642": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c0c6684aa00106f16e7869f519061642"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/30  09:00 至 2025/12/30  12:00。\n狀態描述 (Description): (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12)\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：661.01 GB\n2.伺服器效能：正常\n3.系統優化建議：有10台UF超出預設傳輸上限，已派送套件完成調整\n4.版本更新：現行...",
+    "content_length": 317,
+    "created_at": "2026-03-10T08:44:15.128552+00:00",
+    "updated_at": "2026-03-10T08:52:11.585837+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132682,
+      "processing_end_time": 1773132731
+    }
+  },
+  "doc-72f381579d364fa91cc3e73153e0af97": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-72f381579d364fa91cc3e73153e0af97"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/26  13:30 至 2025/11/26  17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.DEP02連動主機檢查-完成\n問題：DEP02主機排程為晚上11點執行KGIBIDX04與CDIBHMGT02的遠端設定檔備份腳本\n解決辦法：刪除KGIBIDX04(主機已下線)備份排程與修改CDIBHMGT...",
+    "content_length": 463,
+    "created_at": "2026-03-10T08:44:15.128453+00:00",
+    "updated_at": "2026-03-10T08:53:01.253853+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132731,
+      "processing_end_time": 1773132781
+    }
+  },
+  "doc-3781d1671ca7126e99e7656264965fb6": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3781d1671ca7126e99e7656264965fb6"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/10  13:30 至 2025/12/10  20:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): A部門\n1.Splunk 使用者權限調整\n新增maintainer角色，並設定能力值。\n調整ess_analyst 角色能力值，供HANK進行分析使用\nB部門\n1.FISAC資料收容-進行中\n目前已請james 向FISAC提交需使用API的I...",
+    "content_length": 373,
+    "created_at": "2026-03-10T08:44:15.128470+00:00",
+    "updated_at": "2026-03-10T08:53:27.372554+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132733,
+      "processing_end_time": 1773132807
+    }
+  },
+  "doc-25d7c29d65aa0e4d54fb4af54207fa0d": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-25d7c29d65aa0e4d54fb4af54207fa0d"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/14  09:00 至 2025/11/14  15:33。\n狀態描述 (Description): E客戶駐點工作事項 - 20251114\n處置動作 (Action): 今日工作內容如下，預計下周二(11/18)到場作業，請您協助申請底層\n1.Disable splunk自動version check\n2.CEF outputs套件調整送出格式\n甲、將換行字元取代成空格\n乙、最尾端新增一個空格\n3.調整II...",
+    "content_length": 392,
+    "created_at": "2026-03-10T08:44:15.128513+00:00",
+    "updated_at": "2026-03-10T08:53:43.668810+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132781,
+      "processing_end_time": 1773132823
+    }
+  },
+  "doc-79f23819b8640c43571e6e9b3e4098e0": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-79f23819b8640c43571e6e9b3e4098e0"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 C人員,B人員\n進行時間為 2025/03/14  09:00 至 2025/03/14  14:00。\n狀態描述 (Description): Splunk SH 異常hanging\n處置動作 (Action): 今日早上接到您緊急報修，隨即到場進行調查，以下說明：\n異常狀況：從這周開始凌晨1:00時CPU和記憶體都有突然爆增現象，今日甚至導致服務異常，今日調查並未發現root cause。\n暫時解決方法：\n1. 重啟splunk後目前服務後已...",
+    "content_length": 383,
+    "created_at": "2026-03-10T08:44:15.128385+00:00",
+    "updated_at": "2026-03-10T08:53:43.738152+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132807,
+      "processing_end_time": 1773132823
+    }
+  },
+  "doc-9648988cb67db9843bc13754ac3d6ab6": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-9648988cb67db9843bc13754ac3d6ab6"
+    ],
+    "content_summary": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/05  13:30 至 2025/12/05  15:30。\n狀態描述 (Description): Splunk_12月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：20GB\n-平均授權用量：55.15GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：建議先擴充授權使用量，再進行版本升級\n-當前版本：8.0.6 / 2024.10.22\n-最新版本：10.0.2 / 20...",
+    "content_length": 439,
+    "created_at": "2026-03-10T08:44:15.128468+00:00",
+    "updated_at": "2026-03-10T08:54:32.056193+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132823,
+      "processing_end_time": 1773132872
+    }
+  },
+  "doc-1e6839b81653aa7c9b7ec794f3447380": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1e6839b81653aa7c9b7ec794f3447380"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/23  09:00 至 2025/12/23  18:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251223\n處置動作 (Action): 本日工作事項如下：\n1.Websebse log 異常截斷\nRaw data內就有換行字元，導致異常截斷\n嘗試修改props.conf，調整截斷規則，離開前未解決，下次到場時處理\n2.建立SASE VPN kick session報表建立\n...",
+    "content_length": 273,
+    "created_at": "2026-03-10T08:44:15.128537+00:00",
+    "updated_at": "2026-03-10T08:54:39.100794+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132823,
+      "processing_end_time": 1773132879
+    }
+  },
+  "doc-daa296a353c26f41dfc613743d24e936": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-daa296a353c26f41dfc613743d24e936"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/12  13:30 至 2025/11/12  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.PA報表寄信異常-未完成\n已補跑報告並寄送郵件，另外報告存取時間為1天，所以以排程報告執行時間(11/1)，保存期限為11/2。\nPA 每月Block Category報表在重新執行排程時會出現error，將...",
+    "content_length": 703,
+    "created_at": "2026-03-10T08:44:15.128436+00:00",
+    "updated_at": "2026-03-10T08:55:20.211707+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132872,
+      "processing_end_time": 1773132920
+    }
+  },
+  "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+    ],
+    "content_summary": "這是一筆關於 G客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/03  10:00 至 2025/11/03  12:00。\n狀態描述 (Description): Splunk_10月維護\n處置動作 (Action): 本月維護重點如下：\n1.授權使用量\n- 購買量:2GB\n- 平均使用量:0.35GB\n- 使用率為17.5%，達100%次數為1，屬正常範圍\n2. 伺服器效能\n- CPU使用率:1.24%，低於90%，屬正常\n- 記憶體使用率:18.21%，低於90%，屬...",
+    "content_length": 385,
+    "created_at": "2026-03-10T08:44:15.128451+00:00",
+    "updated_at": "2026-03-10T08:55:53.515532+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132879,
+      "processing_end_time": 1773132953
+    }
+  },
+  "doc-7c1fca5402ff2eb1c53222e1d4db282a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-7c1fca5402ff2eb1c53222e1d4db282a"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/05  13:30 至 2026/01/05  17:30。\n狀態描述 (Description): Splunk駐點服務202601第一周(2026/1/5)\n處置動作 (Action): 本周工作項目如下:\n1.FWD02磁碟用量異常處理\n今日FWD02磁碟用量達到超過90%，目前分析為以下三個原因導致\n        estreamer 資料暴增\n        audit.log 持續累積（FCB147...",
+    "content_length": 847,
+    "created_at": "2026-03-10T08:44:15.128367+00:00",
+    "updated_at": "2026-03-10T08:55:56.086903+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773132920,
+      "processing_end_time": 1773132956
+    }
+  },
+  "doc-5930b403906ecb929487592cef5210f2": {
+    "status": "processing",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-5930b403906ecb929487592cef5210f2"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/11  13:30 至 2025/11/11  17:30。\n狀態描述 (Description): Splunk駐點服務202511第二周(2025/11/11)\n處置動作 (Action): 本周工作項目如下:\n1.VMware Tools 漏洞修補\n為修補漏洞CVE-2025-41244、CVE-2025-41246，以按照提供之SOP更新至12.3.5版本\n2.報告及告警寄件人更新\n3.KPMG滲透測試...",
+    "content_length": 321,
+    "created_at": "2026-03-10T08:44:15.128413+00:00",
+    "updated_at": "2026-03-10T09:19:14.267981+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134354
+    }
+  },
+  "doc-d02e98febcd8f8650bbe77d789a41d69": {
+    "status": "processing",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d02e98febcd8f8650bbe77d789a41d69"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/04  13:30 至 2025/12/04  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251204\n處置動作 (Action): 本日工作項目：\n1. 修改SASE VPN登入成功報表條件，與確認送至SOAR欄位\n2. 針對不同mitreattack新增告警",
+    "content_length": 194,
+    "created_at": "2026-03-10T08:44:15.128528+00:00",
+    "updated_at": "2026-03-10T09:19:14.268069+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134354
+    }
+  },
+  "doc-203eba714089c79438cfc39755f054ce": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-203eba714089c79438cfc39755f054ce"
+    ],
+    "content_summary": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/24  11:30 至 2025/11/24  12:00。\n狀態描述 (Description): splunk_銀行處11月月維護\n處置動作 (Action): 1.授權用量 : 建議擴充\n-授權量 : 375 GB\n-平均授權使用量 : 1398GB\n2.伺服器效能 : 無\n3.系統優化建議 : 無\n4.版本更新 : 建議更新\n當前版本：9.3.3/2025.02.26\n最新版本：10.0.2/2025....",
+    "content_length": 283,
+    "created_at": "2026-03-10T08:44:15.128461+00:00",
+    "updated_at": "2026-03-10T09:01:41.629261+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133253,
+      "processing_end_time": 1773133301
+    }
+  },
+  "doc-942b136689124792272bc32a2898842c": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-942b136689124792272bc32a2898842c"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/31  13:30 至 2025/12/31  17:40。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.帳號盤點清單確認\n已完成帳號盤點並寄送報表給C同事\nB部門\n2.FISAC資料收容-進行中\n目前已請B同事 向FISAC提交需使用API的IP申請單。\n3.SH KVstore引擎異常測試-進行中\n正在個人的...",
+    "content_length": 443,
+    "created_at": "2026-03-10T08:44:15.128557+00:00",
+    "updated_at": "2026-03-10T09:01:41.562084+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133256,
+      "processing_end_time": 1773133301
+    }
+  },
+  "doc-082efb5c18d778427dcd94905e5f4370": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-082efb5c18d778427dcd94905e5f4370"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/04  13:30 至 2025/11/04  17:30。\n狀態描述 (Description): Splunk駐點服務202511第一周(2025/11/4)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.Heavy Forwarder磁碟用量調查\n發現昨日(11/3)該台主機磁碟用量暴增，同時發現該台主機KV store憑證過期，今日已更新憑證，目前KV store狀態及磁碟用...",
+    "content_length": 368,
+    "created_at": "2026-03-10T08:44:15.128416+00:00",
+    "updated_at": "2026-03-10T09:02:10.906574+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133301,
+      "processing_end_time": 1773133330
+    }
+  },
+  "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+    ],
+    "content_summary": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/16  14:00 至 2025/12/16  18:40。\n狀態描述 (Description): DC_ARP報表語法檢查\n處置動作 (Action): 今日到場作業項目如下：\n目前已產出一份DC_ARP_table報表，並與現有設備清單做比對，附件為比對結果，後續將進底層查看缺少設備的原因。\n附件中列出所有需列出的設備名稱，未出現於DC_ARP_table中的設備已用橘底標示，在請您確認。\n代辦事...",
+    "content_length": 302,
+    "created_at": "2026-03-10T08:44:15.128480+00:00",
+    "updated_at": "2026-03-10T09:02:12.721980+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133301,
+      "processing_end_time": 1773133332
+    }
+  },
+  "doc-8bddb98b4a84e394c0a4558b42ae12d0": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8bddb98b4a84e394c0a4558b42ae12d0"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/18  09:00 至 2025/12/18  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251218\n處置動作 (Action): 本日工作項目：\n1.ES升版\n甲、自8.0.3升版至8.2.3\n2.資產上傳APP程式調整\n甲、將”硬體狀態”欄位加入category中\n乙、若硬體狀態為”移出” or “報廢” ，severity將設為medium\n3.確認內對內告警 u...",
+    "content_length": 419,
+    "created_at": "2026-03-10T08:44:15.128535+00:00",
+    "updated_at": "2026-03-10T09:02:40.479843+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133330,
+      "processing_end_time": 1773133360
+    }
+  },
+  "doc-738a58105cbf665748b3257e0cfee9ac": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-738a58105cbf665748b3257e0cfee9ac"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/09  13:30 至 2025/12/09  17:30。\n狀態描述 (Description): E客戶駐點工作事項 - 20251209\n處置動作 (Action): 本日工作項目：\n1.新增forcepoint endpoint dlp資料收容\nTcpdump尚未看到封包，待實際拋送後確認\n2.確認checkpoint logclm uf log limit\n今日發現checkpoint資料收容有約40...",
+    "content_length": 593,
+    "created_at": "2026-03-10T08:44:15.128530+00:00",
+    "updated_at": "2026-03-10T09:02:42.121991+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133332,
+      "processing_end_time": 1773133362
+    }
+  },
+  "doc-c41e50d3a458388dc7fe53ece68ee69f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c41e50d3a458388dc7fe53ece68ee69f"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/27  13:30 至 2025/10/27  17:30。\n狀態描述 (Description): Splunk駐點服務202510第五周(2025/10/27)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.完成本月維護作業\n3.一年以上情資比對VirusTotal (進行中)\n目前有看到AbuseIPDB可檢測情資並直接串接splunk\n於Search Head測試可使用後即可...",
+    "content_length": 289,
+    "created_at": "2026-03-10T08:44:15.128418+00:00",
+    "updated_at": "2026-03-10T09:03:41.217185+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133360,
+      "processing_end_time": 1773133421
+    }
+  },
+  "doc-726c374f489423e007bce76f7810b46e": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-726c374f489423e007bce76f7810b46e"
+    ],
+    "content_summary": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/24  10:30 至 2025/11/24  12:00。\n狀態描述 (Description): splunk_信用卡處11月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：100GB\n-平均授權用量：132GB\n2.伺服器效能：正常\n3.系統優化建議：根據說明定期檢查\n問題：有101台UF已超過15分鐘未與indexer連線\n建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf...",
+    "content_length": 333,
+    "created_at": "2026-03-10T08:44:15.128457+00:00",
+    "updated_at": "2026-03-10T09:03:16.723416+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133362,
+      "processing_end_time": 1773133396
+    }
+  },
+  "doc-f6caccf00501b5f4caf06dcfc047ae9e": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-f6caccf00501b5f4caf06dcfc047ae9e"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/17  13:30 至 2025/11/17  17:30。\n狀態描述 (Description): Splunk駐點服務202511第三周(2025/11/17)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.AI網站服務紀錄調閱 (202508-202510)\n3.2025弱點掃描報告資訊整理\n4.eStreamer 資料異常處理\n發現eStreamer資料從11/14 23:2...",
+    "content_length": 355,
+    "created_at": "2026-03-10T08:44:15.128411+00:00",
+    "updated_at": "2026-03-10T09:03:43.847353+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133396,
+      "processing_end_time": 1773133423
+    }
+  },
+  "doc-c0cd3e323fc2a43e461d7af757b08706": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c0cd3e323fc2a43e461d7af757b08706"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/07/29  13:30 至 2025/07/29  17:00。\n狀態描述 (Description): Splunk工作事項 - 0729\n處置動作 (Action): 作業項目如下：\nAsset and Identity priority確認\n1.Identity新增title(職稱)\n2.Identity將帳號狀態加入category欄位\n3.未明確定義priotiry 的identity將設為low\n4.A...",
+    "content_length": 403,
+    "created_at": "2026-03-10T08:44:15.128395+00:00",
+    "updated_at": "2026-03-10T09:04:18.462485+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133421,
+      "processing_end_time": 1773133458
+    }
+  },
+  "doc-1e7cec156f57837e8d25cbe83a6db45f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1e7cec156f57837e8d25cbe83a6db45f"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/20  11:00 至 2025/10/20  16:00。\n狀態描述 (Description): Splunk駐點服務202510第四周(2025/10/20)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.<刪除資料庫中IOC> 頁面復原\n3.<HTTP對外大量傳輸資料報表>調整\n於報表新增需監控之url\n4.一年以上情資比對VirusTotal (進行中)\n已取得需比對之情資...",
+    "content_length": 291,
+    "created_at": "2026-03-10T08:44:15.128421+00:00",
+    "updated_at": "2026-03-10T09:04:29.781166+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133423,
+      "processing_end_time": 1773133469
+    }
+  },
+  "doc-1364984bd10139c2ef2cd5907a3a7591": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1364984bd10139c2ef2cd5907a3a7591"
+    ],
+    "content_summary": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/19  13:30 至 2025/12/19  18:00。\n狀態描述 (Description): ARP_table報表補跑\n處置動作 (Action): 今日到場作業項目如下：\n以新增設備於Switch_6FDC.csv中，並再次執行排程腳本，確認已收入新設備事件\n補跑ARP_table 報表，設定排程為每月1號寄送報表至全科同仁\n代辦事項：\nIP網段設備報表確認",
+    "content_length": 233,
+    "created_at": "2026-03-10T08:44:15.128485+00:00",
+    "updated_at": "2026-03-10T09:04:49.977061+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133458,
+      "processing_end_time": 1773133489
+    }
+  },
+  "doc-b8ec2739edb4ee1ccc4cf68534e90be5": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b8ec2739edb4ee1ccc4cf68534e90be5"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/02  17:33 至 2026/01/02  17:35。\n狀態描述 (Description): Splunk SIEM(12)月維護.DM20240200+DN20240393\n處置動作 (Action): 1.授權用量 :正常\n- 授權量 : 150 GB\n- 平均授權使用量 : 139.07 GB\n2.伺服器效能 : 異常\n- 自12/9左右開始CPU及磁碟用量明顯上升且已持續兩周，推測為FCB設定導...",
+    "content_length": 379,
+    "created_at": "2026-03-10T08:44:15.128375+00:00",
+    "updated_at": "2026-03-10T09:05:17.215772+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133469,
+      "processing_end_time": 1773133517
+    }
+  },
+  "doc-56b76e765b58a558604d5d6f2575d2ca": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-56b76e765b58a558604d5d6f2575d2ca"
+    ],
+    "content_summary": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/07  13:50 至 2025/11/07  17:30。\n狀態描述 (Description): Splunk_11月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：20GB\n-平均授權用量：133.26GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：建議先擴充授權使用量，再進行版本升級\n-當前版本：8.0.6 / 2024.10.22\n-最新版本：10.0.1 / 2...",
+    "content_length": 440,
+    "created_at": "2026-03-10T08:44:15.128434+00:00",
+    "updated_at": "2026-03-10T09:05:20.019584+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133490,
+      "processing_end_time": 1773133520
+    }
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2026/01/07  13:30 至 2026/01/07  17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): A部門\n1.Maintainer帳號權限確認\n已確認角色能力可符合日常工作使用。\n2.DEP02移轉後服務確認\n已確認服務正確，並再次執行健康檢查確認系統功能正常。\n3.PA報表寄送異常檢查\n已確認splunk有寄出報告並記錄於cim_moda...",
+    "content_length": 574,
+    "created_at": "2026-03-10T08:44:15.128365+00:00",
+    "updated_at": "2026-03-10T09:05:59.961951+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133517,
+      "processing_end_time": 1773133559
+    }
+  },
+  "doc-412e17859c430b9ce8b929bc152053ef": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-412e17859c430b9ce8b929bc152053ef"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/12  09:00 至 2025/12/12  18:00。\n狀態描述 (Description): Splunk Indexer queue full  - 20251212\n處置動作 (Action): 工作項目：\n協助韌體更新，問題未解決，持續尋找workaround",
+    "content_length": 180,
+    "created_at": "2026-03-10T08:44:15.128542+00:00",
+    "updated_at": "2026-03-10T09:05:59.876419+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133520,
+      "processing_end_time": 1773133559
+    }
+  },
+  "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/30  13:30 至 2025/12/30  17:30。\n狀態描述 (Description): Splunk駐點服務202512第五周(2025/12/30)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.<HTTPS大量傳輸告警>調整\n排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄\n3.FWD...",
+    "content_length": 488,
+    "created_at": "2026-03-10T08:44:15.128370+00:00",
+    "updated_at": "2026-03-10T09:06:45.087890+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133559,
+      "processing_end_time": 1773133605
+    }
+  },
+  "doc-7504d68fad10caa1cd0ea41314ed2ede": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-7504d68fad10caa1cd0ea41314ed2ede"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/24  13:30 至 2025/12/24  20:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk角色能力異常\n因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以\n區分權...",
+    "content_length": 742,
+    "created_at": "2026-03-10T08:44:15.128489+00:00",
+    "updated_at": "2026-03-10T09:07:07.622618+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133560,
+      "processing_end_time": 1773133627
+    }
+  },
+  "doc-0944d4a59fb7a84bd79d2fca8361e518": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0944d4a59fb7a84bd79d2fca8361e518"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/17  13:30 至 2025/12/17  18:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk角色能力異常\n已於底層重新調整es_admin_user與admin角色的能力，並於網頁上驗證功能可使用\n2.PA 每月報表補寄\n已補寄報表，後續將繼續查看排程無法正常寄送報表問題。\nB部門\n1....",
+    "content_length": 548,
+    "created_at": "2026-03-10T08:44:15.128483+00:00",
+    "updated_at": "2026-03-10T09:07:21.781671+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133605,
+      "processing_end_time": 1773133641
+    }
+  },
+  "doc-d0d3b88d3601a1081c8354e0ef27952f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d0d3b88d3601a1081c8354e0ef27952f"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/15  09:00 至 2025/12/15  18:00。\n狀態描述 (Description): Splunk Indexer queue full -20251215\n處置動作 (Action): 工作項目：\n暫時認定原因為bucket replication造成，\n採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送",
+    "content_length": 222,
+    "created_at": "2026-03-10T08:44:15.128545+00:00",
+    "updated_at": "2026-03-10T09:07:24.423562+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133627,
+      "processing_end_time": 1773133644
+    }
+  },
+  "doc-886b4b629f3088ef8656c792cf7b3e8b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-886b4b629f3088ef8656c792cf7b3e8b"
+    ],
+    "content_summary": "這是一筆關於 G客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/01  10:00 至 2025/12/01  12:00。\n狀態描述 (Description): Splunk_11月維護\n處置動作 (Action): 本月維護重點如下：\n1.授權使用量\n- 購買量:2GB\n- 平均使用量:0.31GB\n- 使用率為15.5%，達100%次數為0\n2. 伺服器效能\n- CPU使用率:1.24%，低於90%，屬正常\n- 記憶體使用率:18.21%，低於90%，屬正常\n- 硬...",
+    "content_length": 379,
+    "created_at": "2026-03-10T08:44:15.128487+00:00",
+    "updated_at": "2026-03-10T09:07:59.177105+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133641,
+      "processing_end_time": 1773133679
+    }
+  },
+  "doc-2fe3f974e54dd1f1ad98289cc79980d6": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-2fe3f974e54dd1f1ad98289cc79980d6"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/15  13:30 至 2025/12/15  17:30。\n狀態描述 (Description): Splunk駐點服務202512第三周(2025/12/15)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.主機異常處理\nMG02磁碟用量超過90% -> 刪除過去備份及安裝檔，已降至85%\nFWD03備份異常 -> 原因為FCB設定導致備份目的路徑權限限縮，導致無法備份，已復原權...",
+    "content_length": 365,
+    "created_at": "2026-03-10T08:44:15.128402+00:00",
+    "updated_at": "2026-03-10T09:08:13.963183+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133644,
+      "processing_end_time": 1773133693
+    }
+  },
+  "doc-345e520afd2a192e25824abb33740d46": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-345e520afd2a192e25824abb33740d46"
+    ],
+    "content_summary": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/03/28  09:00 至 2025/03/28  21:00。\n狀態描述 (Description): Splunk 版本升級 9.3.1 -> 9.3.3\n處置動作 (Action): 針對UAT / Production / PIMS 共8台進行調整，調整內容如下:\n1. 重新安裝Splunk，設定FIPS mode=0。\n2. 覆蓋原先設定檔\n3. 升版\n除了PIMS search head遇到dbcone...",
+    "content_length": 275,
+    "created_at": "2026-03-10T08:44:15.128392+00:00",
+    "updated_at": "2026-03-10T09:08:16.618198+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133679,
+      "processing_end_time": 1773133696
+    }
+  },
+  "doc-75fa98905e1d68515f390e75c46adddb": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-75fa98905e1d68515f390e75c46adddb"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/06  10:00 至 2025/11/06  11:00。\n狀態描述 (Description): Splunk_10月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：635.27GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：暫不更新\n-當前版本：9.3.6/2025.07.31\n-最新版本：10.0.1/2025.09.25\n因目前版本並未...",
+    "content_length": 272,
+    "created_at": "2026-03-10T08:44:15.128439+00:00",
+    "updated_at": "2026-03-10T09:08:51.639359+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133694,
+      "processing_end_time": 1773133731
+    }
+  },
+  "doc-0d3d3acb3c191c9e65fac21b5ed9284f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0d3d3acb3c191c9e65fac21b5ed9284f"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/11/25  13:30 至 2025/11/25  17:30。\n狀態描述 (Description): Splunk駐點服務202511第四周(2025/11/25)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.Gitlab版本升及18.1.6 -> 18.5.2\n為修補漏洞CVE-2025-11224已將Gitlab升級至建議版本\n3.AI網站服務紀錄調閱儀表板建置\n為方便後續定期...",
+    "content_length": 372,
+    "created_at": "2026-03-10T08:44:15.128409+00:00",
+    "updated_at": "2026-03-10T09:08:53.385905+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133696,
+      "processing_end_time": 1773133733
+    }
+  },
+  "doc-068ca517cbebf973fd4089bd45ef615c": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-068ca517cbebf973fd4089bd45ef615c"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/23  13:30 至 2025/12/23  17:30。\n狀態描述 (Description): Splunk駐點服務202512第四周(2025/12/23)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.GitLab漏洞修補\n原先版本18.5.2受到漏洞CVE-2024-9183及CVE-2025-12571影響，故升版到18.5.4\n3.2026年國定假日列表更新\n4.Cy...",
+    "content_length": 294,
+    "created_at": "2026-03-10T08:44:15.128373+00:00",
+    "updated_at": "2026-03-10T09:09:33.682992+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133731,
+      "processing_end_time": 1773133773
+    }
+  },
+  "doc-5618eb566fb322ada0eb69bef88a7581": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-5618eb566fb322ada0eb69bef88a7581"
+    ],
+    "content_summary": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/21  09:30 至 2025/11/21  17:00。\n狀態描述 (Description): 防火牆事件匯入時間異常\n處置動作 (Action): 今日到場作業如下：\n1.PA TRAFFIC事件sourcetype更換\n將sourcetype更改為pan:log，並套用設定使splunk判斷事件類型，事件規則如下：\n如果PA事件類型為traffic，則套用立嘉的欄位擷取設定\n如果PA事件類型為...",
+    "content_length": 329,
+    "created_at": "2026-03-10T08:44:15.128449+00:00",
+    "updated_at": "2026-03-10T09:10:04.769194+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133733,
+      "processing_end_time": 1773133804
+    }
+  },
+  "doc-3f8775862e3b8ea072578967e7520445": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3f8775862e3b8ea072578967e7520445"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/01  13:30 至 2025/10/01  17:30。\n狀態描述 (Description): Splunk駐點服務202510第一周(2025/10/01)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.建立告警<PWLAN觸發IPS高風險告警>\n將 src=\"172.*\" 的事件從原先<IPS高風險告警>中獨立出來\n3.自動化封鎖清單異動儀表板建置 (進行中)\n4.GitL...",
+    "content_length": 315,
+    "created_at": "2026-03-10T08:44:15.128427+00:00",
+    "updated_at": "2026-03-10T09:10:07.486769+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133773,
+      "processing_end_time": 1773133807
+    }
+  },
+  "doc-17b29d261b8bce3ef9105d1c8a78415d": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-17b29d261b8bce3ef9105d1c8a78415d"
+    ],
+    "content_summary": "這是一筆關於 A客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/16  14:00 至 2025/12/16  18:40。\n狀態描述 (Description): DC_ARP報表語法檢查\n處置動作 (Action): 今日到場作業項目如下：\n目前已產出一份DC_ARP_table報表，並與現有設備清單做比對，附件為比對結果，後續將進底層查看缺少設備的原因。\n附件中列出所有需列出的設備名稱，未出現於DC_ARP_table中的設備已用橘底標示，在請您確認。\n代辦事...",
+    "content_length": 300,
+    "created_at": "2026-03-10T08:44:15.128533+00:00",
+    "updated_at": "2026-03-10T09:10:38.933466+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133804,
+      "processing_end_time": 1773133838
+    }
+  },
+  "doc-5479196dee25b34d077c01190c6c728b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-5479196dee25b34d077c01190c6c728b"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/10/07  13:30 至 2025/10/07  17:30。\n狀態描述 (Description): Splunk駐點服務202510第二周(2025/10/07)\n處置動作 (Action): 本周工作項目如下:\n1.更新geodb\n2.自動化封鎖清單異動儀表板建置 (進行中)\n3.情資白名單新增 Cyble ASM IP\n待辦事項:\n1. 告警盤點",
+    "content_length": 220,
+    "created_at": "2026-03-10T08:44:15.128425+00:00",
+    "updated_at": "2026-03-10T09:10:42.618711+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133807,
+      "processing_end_time": 1773133842
+    }
+  },
+  "doc-15d6c505e6a20b598aa21d52b466adcd": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-15d6c505e6a20b598aa21d52b466adcd"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2026/01/19  13:30 至 2026/01/19  17:30。\n狀態描述 (Description): Splunk駐點服務202601第三周(2026/1/19)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.Gitlab漏洞修補 18.5.4 -> 18.5.5\n為修補漏洞已將Gitlab升級至建議版本\n3.<F5VPN特定使用者連線的紀錄(sas)> 停用報表\n4.FWD03 底...",
+    "content_length": 409,
+    "created_at": "2026-03-10T08:44:15.128430+00:00",
+    "updated_at": "2026-03-10T09:11:23.877839+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133839,
+      "processing_end_time": 1773133883
+    }
+  },
+  "doc-cafeb58d25cc4cbc85eaf07cf415496a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-cafeb58d25cc4cbc85eaf07cf415496a"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/11  13:30 至 2025/11/11  17:00。\n狀態描述 (Description): E客戶駐點工作事項 - 20251111\n處置動作 (Action): 工作內容如下，預計本周五(11/14)與下周二(11/18)到場作業，請您協助申請底層\n1,  關閉Apim1與imsdb01兩台UF中舊的殘留input設定\n2.  確認Checkpoint 資料收容\n3.  確認asset中異常：有多個...",
+    "content_length": 444,
+    "created_at": "2026-03-10T08:44:15.128511+00:00",
+    "updated_at": "2026-03-10T09:11:59.137480+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133842,
+      "processing_end_time": 1773133919
+    }
+  },
+  "doc-3c4967b23b72f04d5c4ef37149d21ede": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3c4967b23b72f04d5c4ef37149d21ede"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/04  09:00 至 2025/11/04  09:30。\n狀態描述 (Description): E客戶 Splunk 2025 MA 10月定保.DM20250088_(6/12)\n處置動作 (Action): 本次維護報告內容如下，再麻煩您確認後回簽CSR：\n1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：649.33 GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：現行...",
+    "content_length": 317,
+    "created_at": "2026-03-10T08:44:15.128496+00:00",
+    "updated_at": "2026-03-10T09:12:24.496942+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133883,
+      "processing_end_time": 1773133944
+    }
+  },
+  "doc-04465635a6b88183cbabbfe7e25635dd": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-04465635a6b88183cbabbfe7e25635dd"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/04  09:30 至 2025/12/04  10:00。\n狀態描述 (Description): Splunk_11月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：620.21GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：暫不更新\n-當前版本：9.3.6/2025.07.31\n-最新版本：10.0.2/2025.11.14\n因目前版本並未...",
+    "content_length": 272,
+    "created_at": "2026-03-10T08:44:15.128472+00:00",
+    "updated_at": "2026-03-10T09:12:58.916511+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133919,
+      "processing_end_time": 1773133978
+    }
+  },
+  "doc-333af5cc1ff286e512f36be66d1aa78b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-333af5cc1ff286e512f36be66d1aa78b"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/12/24  13:30 至 2025/12/24  20:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk角色能力異常\n因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以\n區分權...",
+    "content_length": 743,
+    "created_at": "2026-03-10T08:44:15.128547+00:00",
+    "updated_at": "2026-03-10T09:13:25.216173+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133944,
+      "processing_end_time": 1773134005
+    }
+  },
+  "doc-41be59e9bae9e87a716afd8b5a9e9ee1": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-41be59e9bae9e87a716afd8b5a9e9ee1"
+    ],
+    "content_summary": "這是一筆關於 H客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/11/25  09:30 至 2025/11/25  14:00。\n狀態描述 (Description): Splunk平台維護案(06-11月)半年系統檢視_DM20250258_(1/2)\n處置動作 (Action): 今日已完成Splunk版本升級，\n自9.2.3升版至9.3.8，\n並以驗證服務皆正常，\n弱點應已修復，再麻煩複掃確認。\n另外本次維護報告內容如下，再麻煩您確認後回簽CSR：\n1.授權用量：建議擴充...",
+    "content_length": 433,
+    "created_at": "2026-03-10T08:44:15.128517+00:00",
+    "updated_at": "2026-03-10T09:13:55.628550+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773133978,
+      "processing_end_time": 1773134035
+    }
+  },
+  "doc-d96ca3133c54d9d76add7de434ee05b5": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d96ca3133c54d9d76add7de434ee05b5"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2025/11/05  13:30 至 2025/11/05  19:00。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): 本日駐點工作內容如下：\nA部門\n1.Splunk整體架構IP調整-完成\n已設定完成所有主機的新IP\n2.Splunk套件升級-完成\n已部屬新套件至各SH上。\n3.NTP服務檢查-完成\n已檢查各台主機的 NTP服務已啟用。\n4.KVstore 憑...",
+    "content_length": 517,
+    "created_at": "2026-03-10T08:44:15.128498+00:00",
+    "updated_at": "2026-03-10T09:13:55.762825+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134005,
+      "processing_end_time": 1773134035
+    }
+  },
+  "doc-ab226f704fc1b4d45dd06222f40cb39f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-ab226f704fc1b4d45dd06222f40cb39f"
+    ],
+    "content_summary": "這是一筆關於 C客戶 的維護紀錄。\n處理工程師為 B人員\n進行時間為 2025/12/02  13:30 至 2025/12/02  17:30。\n狀態描述 (Description): Splunk駐點服務202512第一周(2025/12/2)\n處置動作 (Action): 本周工作項目如下:\n1.更新GeoDB\n2.2025下半年度告警盤點\n3.AI網站服務紀錄調閱報表建置\n<Gen AI 連線紀錄(每日): monthly report>\n<Gen AI 連線紀錄(整月): monthl...",
+    "content_length": 292,
+    "created_at": "2026-03-10T08:44:15.128406+00:00",
+    "updated_at": "2026-03-10T09:14:25.014019+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134035,
+      "processing_end_time": 1773134065
+    }
+  },
+  "doc-1df6d8d113790f99d50593095e1e5e58": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1df6d8d113790f99d50593095e1e5e58"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/26  09:00 至 2025/12/26  10:30。\n狀態描述 (Description): Splunk駐點服務20251226 - websense 斷行確認\n處置動作 (Action): 工作內容：\n該sourcetype斷行異常，故先將其調整回原始sourcetype，待下周駐點確認後進行調整",
+    "content_length": 198,
+    "created_at": "2026-03-10T08:44:15.128550+00:00",
+    "updated_at": "2026-03-10T09:14:33.292526+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134035,
+      "processing_end_time": 1773134073
+    }
+  },
+  "doc-5096c0cdf6972a3670732e4f9be1d36a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-5096c0cdf6972a3670732e4f9be1d36a"
+    ],
+    "content_summary": "這是一筆關於 E客戶 的維護紀錄。\n處理工程師為 C人員\n進行時間為 2025/12/04  08:30 至 2025/12/04  09:00。\n狀態描述 (Description): E客戶 Splunk 2025 MA 11月定保.DM20250088_(7/12)\n處置動作 (Action): 本次維護報告內容如下：\n1.授權用量：建議擴充\n-授權量：150 GB\n-平均授權用量：661.01 GB\n2.伺服器效能：正常\n3.系統優化建議：無\n4.版本更新：現行版本近期被掃出弱點，建議進...",
+    "content_length": 304,
+    "created_at": "2026-03-10T08:44:15.128524+00:00",
+    "updated_at": "2026-03-10T09:15:07.971084+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134065,
+      "processing_end_time": 1773134107
+    }
+  },
+  "doc-e2a0171ee9d19cc664d4d041d3e73ba2": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-e2a0171ee9d19cc664d4d041d3e73ba2"
+    ],
+    "content_summary": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/06  11:00 至 2025/11/06  12:00。\n狀態描述 (Description): splunk_B客戶B部門10月月維護\n處置動作 (Action): 1.授權用量：建議擴充\n-授權量：285GB\n-平均授權用量：239.38GB\n2.伺服器效能：IDX01、IDX02、IDX03空間使用量已達90%\n建議：若空間使用量持續增長，將搬移frozen\n3.系統優化建議：無\n4.版本更新：建議更...",
+    "content_length": 317,
+    "created_at": "2026-03-10T08:44:15.128441+00:00",
+    "updated_at": "2026-03-10T09:15:34.303152+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134073,
+      "processing_end_time": 1773134134
+    }
+  },
+  "doc-c7743e93210e95e8e40e0d2a627684b7": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c7743e93210e95e8e40e0d2a627684b7"
+    ],
+    "content_summary": "這是一筆關於 I客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/11/19  13:30 至 2025/11/19  14:30。\n狀態描述 (Description): 設備接收狀態檢查\n處置動作 (Action): 今日工作項目如下：\n1.asa事件接收異常\n問題：新增UDP接收來自172.20.137.45的asa事件，於搜尋頁面上卻查詢不到該IP事件\n解決辦法：於indexer cluster上新增索引後部署至底下indexer，再次於SH上執行搜尋即可查詢事件\n2.ch...",
+    "content_length": 286,
+    "created_at": "2026-03-10T08:44:15.128446+00:00",
+    "updated_at": "2026-03-10T09:15:36.807156+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_084415_0cf1bfe9",
+    "metadata": {
+      "processing_start_time": 1773134108,
+      "processing_end_time": 1773134136
+    }
+  },
+  "dup-dfb0bd9979af4fc465a09035cef67d77": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-b6f1e5469f6278ea8a34bff96b293b69",
+    "content_length": 418,
+    "created_at": "2026-03-10T09:19:14.255475+00:00",
+    "updated_at": "2026-03-10T09:19:14.255477+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-b6f1e5469f6278ea8a34bff96b293b69, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-b6f1e5469f6278ea8a34bff96b293b69",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-eafc1860da2d96fd982fcbe2caf6ac84": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-8a81645d1d338ac013fa594b14c35640",
+    "content_length": 322,
+    "created_at": "2026-03-10T09:19:14.255528+00:00",
+    "updated_at": "2026-03-10T09:19:14.255529+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-8a81645d1d338ac013fa594b14c35640, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-8a81645d1d338ac013fa594b14c35640",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-bf19ddb242dd3eeb456f39caccd2f6e0": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-41be59e9bae9e87a716afd8b5a9e9ee1",
+    "content_length": 433,
+    "created_at": "2026-03-10T09:19:14.255574+00:00",
+    "updated_at": "2026-03-10T09:19:14.255575+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-41be59e9bae9e87a716afd8b5a9e9ee1, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-41be59e9bae9e87a716afd8b5a9e9ee1",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-ba1cbac84354032e7b1eafa2fa97cceb": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-15d6c505e6a20b598aa21d52b466adcd",
+    "content_length": 409,
+    "created_at": "2026-03-10T09:19:14.255617+00:00",
+    "updated_at": "2026-03-10T09:19:14.255618+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-15d6c505e6a20b598aa21d52b466adcd, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-15d6c505e6a20b598aa21d52b466adcd",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-24b8f9e2b5ecf5ca07c40bf6259836a5": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-3f8775862e3b8ea072578967e7520445",
+    "content_length": 315,
+    "created_at": "2026-03-10T09:19:14.255660+00:00",
+    "updated_at": "2026-03-10T09:19:14.255661+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-3f8775862e3b8ea072578967e7520445, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-3f8775862e3b8ea072578967e7520445",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-6bd2212e14c61c9d8eaacb774523680a": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-cdd29ae3537f38a27c3848632ad51359",
+    "content_length": 486,
+    "created_at": "2026-03-10T09:19:14.255702+00:00",
+    "updated_at": "2026-03-10T09:19:14.255703+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-cdd29ae3537f38a27c3848632ad51359, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-cdd29ae3537f38a27c3848632ad51359",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-65accb6e56aeec68a65c7d38af3e40e0": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-4861ed7c0c566a81f361adb6811a1523",
+    "content_length": 333,
+    "created_at": "2026-03-10T09:19:14.255742+00:00",
+    "updated_at": "2026-03-10T09:19:14.255743+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-4861ed7c0c566a81f361adb6811a1523, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-4861ed7c0c566a81f361adb6811a1523",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-8a374d518e06778fb2803acfcaf14abf": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-0944d4a59fb7a84bd79d2fca8361e518",
+    "content_length": 548,
+    "created_at": "2026-03-10T09:19:14.255784+00:00",
+    "updated_at": "2026-03-10T09:19:14.255785+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-0944d4a59fb7a84bd79d2fca8361e518, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-0944d4a59fb7a84bd79d2fca8361e518",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-89af2f824c6193824ab88f75181534cb": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-1364984bd10139c2ef2cd5907a3a7591",
+    "content_length": 233,
+    "created_at": "2026-03-10T09:19:14.255824+00:00",
+    "updated_at": "2026-03-10T09:19:14.255826+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-1364984bd10139c2ef2cd5907a3a7591, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-1364984bd10139c2ef2cd5907a3a7591",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-f0d71dc3299a875f89ba2271edee9e7d": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-76068a2f95fd89e7ceb4741d4eb478ce",
+    "content_length": 360,
+    "created_at": "2026-03-10T09:19:14.255864+00:00",
+    "updated_at": "2026-03-10T09:19:14.255865+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-76068a2f95fd89e7ceb4741d4eb478ce, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-76068a2f95fd89e7ceb4741d4eb478ce",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-b749b53f5c97627e157849541c909fda": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-cafeb58d25cc4cbc85eaf07cf415496a",
+    "content_length": 444,
+    "created_at": "2026-03-10T09:19:14.255902+00:00",
+    "updated_at": "2026-03-10T09:19:14.255904+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-cafeb58d25cc4cbc85eaf07cf415496a, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-cafeb58d25cc4cbc85eaf07cf415496a",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-746082af2ab528089700bd06a0c1fbed": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-fe7268a7cb94439d483759e501068db6",
+    "content_length": 268,
+    "created_at": "2026-03-10T09:19:14.255943+00:00",
+    "updated_at": "2026-03-10T09:19:14.255945+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-fe7268a7cb94439d483759e501068db6, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-fe7268a7cb94439d483759e501068db6",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-94f886a3977184f84a9237c2beac66d3": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-b0add79f46581b83deba682a2c89cdb7",
+    "content_length": 146,
+    "created_at": "2026-03-10T09:19:14.255985+00:00",
+    "updated_at": "2026-03-10T09:19:14.255986+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-b0add79f46581b83deba682a2c89cdb7, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-b0add79f46581b83deba682a2c89cdb7",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-ab461fad1ade1c52de4e3555c76e69a5": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-082efb5c18d778427dcd94905e5f4370",
+    "content_length": 368,
+    "created_at": "2026-03-10T09:19:14.256026+00:00",
+    "updated_at": "2026-03-10T09:19:14.256027+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-082efb5c18d778427dcd94905e5f4370, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-082efb5c18d778427dcd94905e5f4370",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-199c13ef70551d7234c6ff061d83f7f1": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-2fe3f974e54dd1f1ad98289cc79980d6",
+    "content_length": 365,
+    "created_at": "2026-03-10T09:19:14.256067+00:00",
+    "updated_at": "2026-03-10T09:19:14.256068+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-2fe3f974e54dd1f1ad98289cc79980d6, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-2fe3f974e54dd1f1ad98289cc79980d6",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-8af5dc401973380795ebae316c4d970b": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-dddcb833d814b293bd936732652206d0",
+    "content_length": 333,
+    "created_at": "2026-03-10T09:19:14.256109+00:00",
+    "updated_at": "2026-03-10T09:19:14.256111+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-dddcb833d814b293bd936732652206d0, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-dddcb833d814b293bd936732652206d0",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-6208af47d9bf07aab08a56300ea9cfc7": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-f6caccf00501b5f4caf06dcfc047ae9e",
+    "content_length": 355,
+    "created_at": "2026-03-10T09:19:14.256151+00:00",
+    "updated_at": "2026-03-10T09:19:14.256153+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-f6caccf00501b5f4caf06dcfc047ae9e, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-f6caccf00501b5f4caf06dcfc047ae9e",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-5c264943b94a1dcdbcda6e711e8af4ac": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-8bddb98b4a84e394c0a4558b42ae12d0",
+    "content_length": 419,
+    "created_at": "2026-03-10T09:19:14.256192+00:00",
+    "updated_at": "2026-03-10T09:19:14.256194+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-8bddb98b4a84e394c0a4558b42ae12d0, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-8bddb98b4a84e394c0a4558b42ae12d0",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-389add89796526495a30f391b80079d8": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-203eba714089c79438cfc39755f054ce",
+    "content_length": 283,
+    "created_at": "2026-03-10T09:19:14.256234+00:00",
+    "updated_at": "2026-03-10T09:19:14.256235+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-203eba714089c79438cfc39755f054ce, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-203eba714089c79438cfc39755f054ce",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-7d3b7b28ad6cba31e54955e6b319fc17": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-1ff26e3a56f4aaf4bbd7c0dfae03685b",
+    "content_length": 488,
+    "created_at": "2026-03-10T09:19:14.256285+00:00",
+    "updated_at": "2026-03-10T09:19:14.256287+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-1ff26e3a56f4aaf4bbd7c0dfae03685b, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-7a107cde24c5649ad3247909cb46be16": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-f62a98ad02d11a4c9618cbda43281859",
+    "content_length": 518,
+    "created_at": "2026-03-10T09:19:14.256328+00:00",
+    "updated_at": "2026-03-10T09:19:14.256330+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-f62a98ad02d11a4c9618cbda43281859, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-f62a98ad02d11a4c9618cbda43281859",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-d2d978d4d7612be1d07006d0f079b82f": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-c0c6684aa00106f16e7869f519061642",
+    "content_length": 317,
+    "created_at": "2026-03-10T09:19:14.256373+00:00",
+    "updated_at": "2026-03-10T09:19:14.256377+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-c0c6684aa00106f16e7869f519061642, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-c0c6684aa00106f16e7869f519061642",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-fdee612fca8e22c020b59634f61d5e13": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-72f381579d364fa91cc3e73153e0af97",
+    "content_length": 463,
+    "created_at": "2026-03-10T09:19:14.256417+00:00",
+    "updated_at": "2026-03-10T09:19:14.256419+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-72f381579d364fa91cc3e73153e0af97, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-72f381579d364fa91cc3e73153e0af97",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-f504afe33549fb98240af0b7ce3d3078": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-75fa98905e1d68515f390e75c46adddb",
+    "content_length": 272,
+    "created_at": "2026-03-10T09:19:14.256458+00:00",
+    "updated_at": "2026-03-10T09:19:14.256460+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-75fa98905e1d68515f390e75c46adddb, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-75fa98905e1d68515f390e75c46adddb",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-faa28edd506472fdf1033f7a0d2a2baa": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-0b9e37e8f7e8a98183b1724c16ce814a",
+    "content_length": 410,
+    "created_at": "2026-03-10T09:19:14.256498+00:00",
+    "updated_at": "2026-03-10T09:19:14.256500+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-0b9e37e8f7e8a98183b1724c16ce814a, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-0b9e37e8f7e8a98183b1724c16ce814a",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-6615bba294a996eacdfe8ec9c6348205": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-412e17859c430b9ce8b929bc152053ef",
+    "content_length": 180,
+    "created_at": "2026-03-10T09:19:14.256538+00:00",
+    "updated_at": "2026-03-10T09:19:14.256539+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-412e17859c430b9ce8b929bc152053ef, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-412e17859c430b9ce8b929bc152053ef",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-c755747ea9825e0ae93ba664ee9cdceb": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-9648988cb67db9843bc13754ac3d6ab6",
+    "content_length": 439,
+    "created_at": "2026-03-10T09:19:14.256581+00:00",
+    "updated_at": "2026-03-10T09:19:14.256582+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-9648988cb67db9843bc13754ac3d6ab6, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-9648988cb67db9843bc13754ac3d6ab6",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-c197ae5f67c47382dce2ed581d98d00a": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-942b136689124792272bc32a2898842c",
+    "content_length": 443,
+    "created_at": "2026-03-10T09:19:14.256622+00:00",
+    "updated_at": "2026-03-10T09:19:14.256623+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-942b136689124792272bc32a2898842c, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-942b136689124792272bc32a2898842c",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-d31e71a5065250bcd50b193524ec2c8e": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-068ca517cbebf973fd4089bd45ef615c",
+    "content_length": 294,
+    "created_at": "2026-03-10T09:19:14.256664+00:00",
+    "updated_at": "2026-03-10T09:19:14.256665+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-068ca517cbebf973fd4089bd45ef615c, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-068ca517cbebf973fd4089bd45ef615c",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-0e21bda31e7bdae29f10dc65e3210c89": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-39206ec5906f23d68e051b1df74d3ca7",
+    "content_length": 193,
+    "created_at": "2026-03-10T09:19:14.256704+00:00",
+    "updated_at": "2026-03-10T09:19:14.256706+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-39206ec5906f23d68e051b1df74d3ca7, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-39206ec5906f23d68e051b1df74d3ca7",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-48d32d800ff3dc5440bd0d1f34f1ab83": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-25d7c29d65aa0e4d54fb4af54207fa0d",
+    "content_length": 392,
+    "created_at": "2026-03-10T09:19:14.256746+00:00",
+    "updated_at": "2026-03-10T09:19:14.256747+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-25d7c29d65aa0e4d54fb4af54207fa0d, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-25d7c29d65aa0e4d54fb4af54207fa0d",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-fb40c4bf6f8f00d349bb93f944e40bd3": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-04465635a6b88183cbabbfe7e25635dd",
+    "content_length": 272,
+    "created_at": "2026-03-10T09:19:14.256787+00:00",
+    "updated_at": "2026-03-10T09:19:14.256788+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-04465635a6b88183cbabbfe7e25635dd, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-04465635a6b88183cbabbfe7e25635dd",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-bd9cb409c3004376ba9a98d4171efe52": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-79f23819b8640c43571e6e9b3e4098e0",
+    "content_length": 383,
+    "created_at": "2026-03-10T09:19:14.256828+00:00",
+    "updated_at": "2026-03-10T09:19:14.256830+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-79f23819b8640c43571e6e9b3e4098e0, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-79f23819b8640c43571e6e9b3e4098e0",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-54e695583bc0966ff04bc5c09231af22": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-d0d3b88d3601a1081c8354e0ef27952f",
+    "content_length": 222,
+    "created_at": "2026-03-10T09:19:14.256869+00:00",
+    "updated_at": "2026-03-10T09:19:14.256870+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-d0d3b88d3601a1081c8354e0ef27952f, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-d0d3b88d3601a1081c8354e0ef27952f",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-a5ed63160d5990bff91310b8a4e37442": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-8ebe784b7ece61edcdd2e054763c0ce3",
+    "content_length": 446,
+    "created_at": "2026-03-10T09:19:14.256912+00:00",
+    "updated_at": "2026-03-10T09:19:14.256913+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-8ebe784b7ece61edcdd2e054763c0ce3, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-8ebe784b7ece61edcdd2e054763c0ce3",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-be102149257fb8c0ee8239498ac14268": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-8a40e782f3c3804da0a1d45dfa05eefe",
+    "content_length": 216,
+    "created_at": "2026-03-10T09:19:14.256953+00:00",
+    "updated_at": "2026-03-10T09:19:14.256955+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-8a40e782f3c3804da0a1d45dfa05eefe, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-8a40e782f3c3804da0a1d45dfa05eefe",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-642b53ccbed8a89deaed66283de89ba8": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-5930b403906ecb929487592cef5210f2",
+    "content_length": 321,
+    "created_at": "2026-03-10T09:19:14.256994+00:00",
+    "updated_at": "2026-03-10T09:19:14.256995+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-5930b403906ecb929487592cef5210f2, Status: failed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-5930b403906ecb929487592cef5210f2",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-175f6f2b48a5cb50335cb00125746737": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-17b29d261b8bce3ef9105d1c8a78415d",
+    "content_length": 300,
+    "created_at": "2026-03-10T09:19:14.257035+00:00",
+    "updated_at": "2026-03-10T09:19:14.257037+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-17b29d261b8bce3ef9105d1c8a78415d, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-17b29d261b8bce3ef9105d1c8a78415d",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-eff3599dfb329cd4c7da40a1480afa85": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-1df6d8d113790f99d50593095e1e5e58",
+    "content_length": 198,
+    "created_at": "2026-03-10T09:19:14.257076+00:00",
+    "updated_at": "2026-03-10T09:19:14.257077+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-1df6d8d113790f99d50593095e1e5e58, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-1df6d8d113790f99d50593095e1e5e58",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-2fb3cfece580dc8e34b5b4d64659690d": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-0d3d3acb3c191c9e65fac21b5ed9284f",
+    "content_length": 372,
+    "created_at": "2026-03-10T09:19:14.257115+00:00",
+    "updated_at": "2026-03-10T09:19:14.257116+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-0d3d3acb3c191c9e65fac21b5ed9284f, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-0d3d3acb3c191c9e65fac21b5ed9284f",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-756b8cc935770e4e2e557b4778eac6e5": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-d0cef05272158ef916c2b84f625b2ddb",
+    "content_length": 356,
+    "created_at": "2026-03-10T09:19:14.257156+00:00",
+    "updated_at": "2026-03-10T09:19:14.257158+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-d0cef05272158ef916c2b84f625b2ddb, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-d0cef05272158ef916c2b84f625b2ddb",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-ae5d3e4210671338b77e8380eef4747d": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-3c4967b23b72f04d5c4ef37149d21ede",
+    "content_length": 317,
+    "created_at": "2026-03-10T09:19:14.257198+00:00",
+    "updated_at": "2026-03-10T09:19:14.257199+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-3c4967b23b72f04d5c4ef37149d21ede, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-3c4967b23b72f04d5c4ef37149d21ede",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-01b7a771a92dc626b86dd397a6caec8b": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-cf168eec40aae386455af5027929f6fe",
+    "content_length": 574,
+    "created_at": "2026-03-10T09:19:14.257238+00:00",
+    "updated_at": "2026-03-10T09:19:14.257239+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-cf168eec40aae386455af5027929f6fe, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-cf168eec40aae386455af5027929f6fe",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-53c099e1c74d0c78d787bad4408db981": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-5618eb566fb322ada0eb69bef88a7581",
+    "content_length": 329,
+    "created_at": "2026-03-10T09:19:14.257280+00:00",
+    "updated_at": "2026-03-10T09:19:14.257281+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-5618eb566fb322ada0eb69bef88a7581, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-5618eb566fb322ada0eb69bef88a7581",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-902bf852d38b2a6add88e208d78fe9a6": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-d96ca3133c54d9d76add7de434ee05b5",
+    "content_length": 517,
+    "created_at": "2026-03-10T09:19:14.257321+00:00",
+    "updated_at": "2026-03-10T09:19:14.257322+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-d96ca3133c54d9d76add7de434ee05b5, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-d96ca3133c54d9d76add7de434ee05b5",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-984ed66018e3e1ae5417e55b5a8e2dd2": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-333af5cc1ff286e512f36be66d1aa78b",
+    "content_length": 743,
+    "created_at": "2026-03-10T09:19:14.257366+00:00",
+    "updated_at": "2026-03-10T09:19:14.257367+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-333af5cc1ff286e512f36be66d1aa78b, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-333af5cc1ff286e512f36be66d1aa78b",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-f1d7d0eb0e93db828c74bcc2a724b4bd": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-0640212d45b4b92d91d0255cf90edf96",
+    "content_length": 160,
+    "created_at": "2026-03-10T09:19:14.257407+00:00",
+    "updated_at": "2026-03-10T09:19:14.257409+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-0640212d45b4b92d91d0255cf90edf96, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-0640212d45b4b92d91d0255cf90edf96",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-b4eaa3d55a73ee3543f2d53ceba1ce29": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-daa296a353c26f41dfc613743d24e936",
+    "content_length": 703,
+    "created_at": "2026-03-10T09:19:14.257448+00:00",
+    "updated_at": "2026-03-10T09:19:14.257450+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-daa296a353c26f41dfc613743d24e936, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-daa296a353c26f41dfc613743d24e936",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-eb78cbd46aa44597182a9579317a3c60": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-d02e98febcd8f8650bbe77d789a41d69",
+    "content_length": 194,
+    "created_at": "2026-03-10T09:19:14.257492+00:00",
+    "updated_at": "2026-03-10T09:19:14.257494+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-d02e98febcd8f8650bbe77d789a41d69, Status: failed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-d02e98febcd8f8650bbe77d789a41d69",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-fe0b9a2e36d681b7719b86471d98006f": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-1e6e1908b68b82814f06780675f7938b",
+    "content_length": 218,
+    "created_at": "2026-03-10T09:19:14.257534+00:00",
+    "updated_at": "2026-03-10T09:19:14.257535+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-1e6e1908b68b82814f06780675f7938b, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-1e6e1908b68b82814f06780675f7938b",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-f7df7f5d373830e7203daed43c503280": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-738a58105cbf665748b3257e0cfee9ac",
+    "content_length": 593,
+    "created_at": "2026-03-10T09:19:14.257574+00:00",
+    "updated_at": "2026-03-10T09:19:14.257575+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-738a58105cbf665748b3257e0cfee9ac, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-738a58105cbf665748b3257e0cfee9ac",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-4d832a6e4553a00f6b7fb79498cd898e": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-c7743e93210e95e8e40e0d2a627684b7",
+    "content_length": 286,
+    "created_at": "2026-03-10T09:19:14.257616+00:00",
+    "updated_at": "2026-03-10T09:19:14.257617+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-c7743e93210e95e8e40e0d2a627684b7, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-c7743e93210e95e8e40e0d2a627684b7",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-384aacdd73cda6506523519356d11c62": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-fcc4bf66788ce00c23c3e736753ea50a",
+    "content_length": 301,
+    "created_at": "2026-03-10T09:19:14.257656+00:00",
+    "updated_at": "2026-03-10T09:19:14.257658+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-fcc4bf66788ce00c23c3e736753ea50a, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-fcc4bf66788ce00c23c3e736753ea50a",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-c63e42756e597ad8446b5d1da3e97434": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-56b76e765b58a558604d5d6f2575d2ca",
+    "content_length": 440,
+    "created_at": "2026-03-10T09:19:14.257696+00:00",
+    "updated_at": "2026-03-10T09:19:14.257698+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-56b76e765b58a558604d5d6f2575d2ca, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-56b76e765b58a558604d5d6f2575d2ca",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-4a3d7b61fe143eab011085f0dc8b2188": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-1e6839b81653aa7c9b7ec794f3447380",
+    "content_length": 273,
+    "created_at": "2026-03-10T09:19:14.257739+00:00",
+    "updated_at": "2026-03-10T09:19:14.257741+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-1e6839b81653aa7c9b7ec794f3447380, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-1e6839b81653aa7c9b7ec794f3447380",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-43964a4db3dea88db63a7b8dca024772": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-996c8aba3ce4de0e9bb90c0d569231f3",
+    "content_length": 158,
+    "created_at": "2026-03-10T09:19:14.257782+00:00",
+    "updated_at": "2026-03-10T09:19:14.257783+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-996c8aba3ce4de0e9bb90c0d569231f3, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-996c8aba3ce4de0e9bb90c0d569231f3",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-f2c9e15fc510daba951e540a4adcf45f": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+    "content_length": 385,
+    "created_at": "2026-03-10T09:19:14.257823+00:00",
+    "updated_at": "2026-03-10T09:19:14.257825+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-0562ff2623254f0382bb9374d5a8d528": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-886b4b629f3088ef8656c792cf7b3e8b",
+    "content_length": 379,
+    "created_at": "2026-03-10T09:19:14.257864+00:00",
+    "updated_at": "2026-03-10T09:19:14.257865+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-886b4b629f3088ef8656c792cf7b3e8b, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-886b4b629f3088ef8656c792cf7b3e8b",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-862cc21984a810976a1ada89bd9d1c6a": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-3781d1671ca7126e99e7656264965fb6",
+    "content_length": 373,
+    "created_at": "2026-03-10T09:19:14.257905+00:00",
+    "updated_at": "2026-03-10T09:19:14.257906+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-3781d1671ca7126e99e7656264965fb6, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-3781d1671ca7126e99e7656264965fb6",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-05669a5e0ab955a12ac0bf2a5bcc71e1": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-7c1fca5402ff2eb1c53222e1d4db282a",
+    "content_length": 847,
+    "created_at": "2026-03-10T09:19:14.257945+00:00",
+    "updated_at": "2026-03-10T09:19:14.257946+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-7c1fca5402ff2eb1c53222e1d4db282a, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-7c1fca5402ff2eb1c53222e1d4db282a",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-a23e3223b31606911a160925171f7648": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-1e7cec156f57837e8d25cbe83a6db45f",
+    "content_length": 291,
+    "created_at": "2026-03-10T09:19:14.257985+00:00",
+    "updated_at": "2026-03-10T09:19:14.257986+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-1e7cec156f57837e8d25cbe83a6db45f, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-1e7cec156f57837e8d25cbe83a6db45f",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-3908098d67d33abb7dc5d8624fe2bcb8": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-5096c0cdf6972a3670732e4f9be1d36a",
+    "content_length": 304,
+    "created_at": "2026-03-10T09:19:14.258025+00:00",
+    "updated_at": "2026-03-10T09:19:14.258026+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-5096c0cdf6972a3670732e4f9be1d36a, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-5096c0cdf6972a3670732e4f9be1d36a",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-5928b6ed6c0c78b9b0d9423701bc422b": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-490df5a6810de4f040c4fe2681e6ed6e",
+    "content_length": 283,
+    "created_at": "2026-03-10T09:19:14.258067+00:00",
+    "updated_at": "2026-03-10T09:19:14.258069+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-490df5a6810de4f040c4fe2681e6ed6e, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-490df5a6810de4f040c4fe2681e6ed6e",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-e338e63a14fb3352c1aa41c9a66ea800": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-84c3e0271089b72556be831ea38a055f",
+    "content_length": 170,
+    "created_at": "2026-03-10T09:19:14.258108+00:00",
+    "updated_at": "2026-03-10T09:19:14.258109+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-84c3e0271089b72556be831ea38a055f, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-84c3e0271089b72556be831ea38a055f",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-c8d5fd8b0c8ba8e4ae2862f369efe743": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-7504d68fad10caa1cd0ea41314ed2ede",
+    "content_length": 742,
+    "created_at": "2026-03-10T09:19:14.258149+00:00",
+    "updated_at": "2026-03-10T09:19:14.258151+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-7504d68fad10caa1cd0ea41314ed2ede, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-7504d68fad10caa1cd0ea41314ed2ede",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-99066144684f00f1c4476e6a00a2e9e0": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-5f0773b8daffa7a65254a73867e36afb",
+    "content_length": 233,
+    "created_at": "2026-03-10T09:19:14.258190+00:00",
+    "updated_at": "2026-03-10T09:19:14.258191+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-5f0773b8daffa7a65254a73867e36afb, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-5f0773b8daffa7a65254a73867e36afb",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-02e298f9224ff0efb61295f47ecddd8c": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-345e520afd2a192e25824abb33740d46",
+    "content_length": 275,
+    "created_at": "2026-03-10T09:19:14.258232+00:00",
+    "updated_at": "2026-03-10T09:19:14.258233+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-345e520afd2a192e25824abb33740d46, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-345e520afd2a192e25824abb33740d46",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-34c9c4ce2b35f9a6af2924c555a64e06": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-726c374f489423e007bce76f7810b46e",
+    "content_length": 333,
+    "created_at": "2026-03-10T09:19:14.258273+00:00",
+    "updated_at": "2026-03-10T09:19:14.258274+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-726c374f489423e007bce76f7810b46e, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-726c374f489423e007bce76f7810b46e",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-41c45d09edcdff6d8e0ebffa07ee99e8": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-c0cd3e323fc2a43e461d7af757b08706",
+    "content_length": 403,
+    "created_at": "2026-03-10T09:19:14.258316+00:00",
+    "updated_at": "2026-03-10T09:19:14.258317+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-c0cd3e323fc2a43e461d7af757b08706, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-c0cd3e323fc2a43e461d7af757b08706",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-e3f8b7e59f12e69f4ce406e54da6dfef": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-07959bdb8bab221c9c80a1c3e85776b3",
+    "content_length": 311,
+    "created_at": "2026-03-10T09:19:14.258359+00:00",
+    "updated_at": "2026-03-10T09:19:14.258360+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-07959bdb8bab221c9c80a1c3e85776b3, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-07959bdb8bab221c9c80a1c3e85776b3",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-27b7a31519296d6bd921ae821cac1119": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-ab226f704fc1b4d45dd06222f40cb39f",
+    "content_length": 292,
+    "created_at": "2026-03-10T09:19:14.258400+00:00",
+    "updated_at": "2026-03-10T09:19:14.258401+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-ab226f704fc1b4d45dd06222f40cb39f, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-ab226f704fc1b4d45dd06222f40cb39f",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-11da2b293b0738dd379e0cd5ed338037": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-5479196dee25b34d077c01190c6c728b",
+    "content_length": 220,
+    "created_at": "2026-03-10T09:19:14.258441+00:00",
+    "updated_at": "2026-03-10T09:19:14.258443+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-5479196dee25b34d077c01190c6c728b, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-5479196dee25b34d077c01190c6c728b",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-9a225e0c94de0c8b82da67f244a0b890": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-e2a0171ee9d19cc664d4d041d3e73ba2",
+    "content_length": 317,
+    "created_at": "2026-03-10T09:19:14.258482+00:00",
+    "updated_at": "2026-03-10T09:19:14.258484+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-e2a0171ee9d19cc664d4d041d3e73ba2, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-e2a0171ee9d19cc664d4d041d3e73ba2",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-1664547a1a53a6a5d50204b1040af01f": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b",
+    "content_length": 302,
+    "created_at": "2026-03-10T09:19:14.258522+00:00",
+    "updated_at": "2026-03-10T09:19:14.258523+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-a6d1fbe7f9f628b93eceedff3ac049ec": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-95280ea367581dac710f0dc56c7a72f3",
+    "content_length": 418,
+    "created_at": "2026-03-10T09:19:14.258562+00:00",
+    "updated_at": "2026-03-10T09:19:14.258564+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-95280ea367581dac710f0dc56c7a72f3, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-95280ea367581dac710f0dc56c7a72f3",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-617a2b859e8c14f3c0ba7417a061d11c": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-c41e50d3a458388dc7fe53ece68ee69f",
+    "content_length": 289,
+    "created_at": "2026-03-10T09:19:14.258602+00:00",
+    "updated_at": "2026-03-10T09:19:14.258603+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-c41e50d3a458388dc7fe53ece68ee69f, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-c41e50d3a458388dc7fe53ece68ee69f",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-0290d2f1a487fc22a99f1efa2596e25b": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-8a83bcdf6e7b7269cfd17b4f21457de8",
+    "content_length": 210,
+    "created_at": "2026-03-10T09:19:14.258641+00:00",
+    "updated_at": "2026-03-10T09:19:14.258642+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-8a83bcdf6e7b7269cfd17b4f21457de8, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-8a83bcdf6e7b7269cfd17b4f21457de8",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-cb0e2f4c9167b900d760692f9bd225b4": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-b8ec2739edb4ee1ccc4cf68534e90be5",
+    "content_length": 379,
+    "created_at": "2026-03-10T09:19:14.258682+00:00",
+    "updated_at": "2026-03-10T09:19:14.258684+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-b8ec2739edb4ee1ccc4cf68534e90be5, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-b8ec2739edb4ee1ccc4cf68534e90be5",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  },
+  "dup-7752843c1a657566f09ec4f086adda4e": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-2940790b50eb2cba2a5e944b95a94dd5",
+    "content_length": 450,
+    "created_at": "2026-03-10T09:19:14.258723+00:00",
+    "updated_at": "2026-03-10T09:19:14.258724+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260310_091914_d4c43255",
+    "error_msg": "Content already exists. Original doc_id: doc-2940790b50eb2cba2a5e944b95a94dd5, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-2940790b50eb2cba2a5e944b95a94dd5",
+      "original_track_id": "insert_20260310_084415_0cf1bfe9"
+    },
+    "chunks_list": []
+  }
+}

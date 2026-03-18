@@ -1,0 +1,66 @@
+{
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "relation_pairs": [
+      [
+        "Noah Carter",
+        "World Athletics Federation"
+      ],
+      [
+        "B客戶",
+        "C人員"
+      ],
+      [
+        "B部門",
+        "LDAP設定"
+      ],
+      [
+        "A部門",
+        "PA報表寄送異常檢查"
+      ],
+      [
+        "A人員",
+        "B客戶"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試-進行中"
+      ],
+      [
+        "B部門",
+        "FISAC資料收容-進行中"
+      ],
+      [
+        "A部門",
+        "DEP02移轉後服務確認"
+      ],
+      [
+        "A部門",
+        "Maintainer帳號權限確認"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1773771882,
+    "update_time": 1773771882,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "relation_pairs": [
+      [
+        "Tokyo",
+        "World Athletics Championship"
+      ],
+      [
+        "A人員",
+        "splunk_銀行處12月月維護"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1773771883,
+    "update_time": 1773771883,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  }
+}

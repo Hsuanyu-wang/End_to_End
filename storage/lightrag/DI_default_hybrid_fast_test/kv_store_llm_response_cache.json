@@ -1,0 +1,42 @@
+{
+  "hybrid:keywords:68eb2fe1b3ca68cdfaff873307b058d3": {
+    "return": "{\"high_level_keywords\": [\"Splunk version\", \"Current version\"], \"low_level_keywords\": [\"C\\u5ba2\\u6236\", \"Splunk\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "C客戶現在的splunk版本是什麼",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1773772033,
+    "update_time": 1773772033,
+    "_id": "hybrid:keywords:68eb2fe1b3ca68cdfaff873307b058d3"
+  },
+  "hybrid:keywords:606aec414c87ec8912137d8db6c068de": {
+    "return": "{\"high_level_keywords\": [\"GitLab version\", \"Current status\"], \"low_level_keywords\": [\"Customer information\", \"GitLab\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "C客戶現在的gitlab版本是什麼",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1773772040,
+    "update_time": 1773772040,
+    "_id": "hybrid:keywords:606aec414c87ec8912137d8db6c068de"
+  }
+}

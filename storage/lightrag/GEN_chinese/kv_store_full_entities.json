@@ -1,0 +1,2556 @@
+{
+  "doc-b0242da4f3e9a7a688bb4592cdc515a8": {
+    "entity_names": [
+      "Linda.hsu",
+      "World Athletics Federation",
+      "Splunk 2024年度資料備份",
+      "台新證券",
+      "Noah Carter"
+    ],
+    "count": 5,
+    "create_time": 1773288455,
+    "update_time": 1773288455,
+    "_id": "doc-b0242da4f3e9a7a688bb4592cdc515a8"
+  },
+  "doc-327983f58ba1a8a56b9cc3ee80e25dcb": {
+    "entity_names": [
+      "211.20.18.19",
+      "凱基人壽",
+      "Jack",
+      "ASUS AP",
+      "World Athletics Federation",
+      "總部大樓金控查核網路架構調整"
+    ],
+    "count": 6,
+    "create_time": 1773288486,
+    "update_time": 1773288486,
+    "_id": "doc-327983f58ba1a8a56b9cc3ee80e25dcb"
+  },
+  "doc-6c3e877a7ca5eb5e4219ff7fd7d6c831": {
+    "entity_names": [
+      "Leon.lee",
+      "Hybrid User",
+      "Ssl Bypass",
+      "World Athletics Federation",
+      "台新銀行",
+      "Webex"
+    ],
+    "count": 6,
+    "create_time": 1773288528,
+    "update_time": 1773288528,
+    "_id": "doc-6c3e877a7ca5eb5e4219ff7fd7d6c831"
+  },
+  "doc-9881eaa6b522324dfd0be4e4db2c526d": {
+    "entity_names": [
+      "Carol.wu",
+      "Checkpoint",
+      "CP6200",
+      "DR-SC01",
+      "2025/09/18 09:00至2025/09/18 20:00",
+      "Jerry.zhang",
+      "CP9100",
+      "World Athletics Federation",
+      "玉山證券"
+    ],
+    "count": 9,
+    "create_time": 1773288550,
+    "update_time": 1773288550,
+    "_id": "doc-9881eaa6b522324dfd0be4e4db2c526d"
+  },
+  "doc-8576732f1dcd8511798133758ba21640": {
+    "entity_names": [
+      "Pifu",
+      "凱基人壽",
+      "CPU Memory Disk",
+      "World Athletics Federation",
+      "WUG Servicei Issue Standby"
+    ],
+    "count": 5,
+    "create_time": 1773288582,
+    "update_time": 1773288582,
+    "_id": "doc-8576732f1dcd8511798133758ba21640"
+  },
+  "doc-0919a91628096c29dcec8eba5426ea2c": {
+    "entity_names": [
+      "Ssms V20",
+      "Yushan Bank",
+      "Sql 2019",
+      "Intra Wug",
+      "World Athletics Federation",
+      "Pifu"
+    ],
+    "count": 6,
+    "create_time": 1773288598,
+    "update_time": 1773288598,
+    "_id": "doc-0919a91628096c29dcec8eba5426ea2c"
+  },
+  "doc-e8c1f585f0e783378c2ecd7f0fc9796f": {
+    "entity_names": [
+      "Taiwan Bank",
+      "Kevinkl.hsu",
+      "World Athletics Federation",
+      "Suse Es 15 Sp3 Postgresql 13.2",
+      "Imperva",
+      "Redhat8.10 Postgresql 16.8",
+      "Akira.chang",
+      "Ubuntu 24.04 Postgresql 17.5"
+    ],
+    "count": 8,
+    "create_time": 1773288653,
+    "update_time": 1773288653,
+    "_id": "doc-e8c1f585f0e783378c2ecd7f0fc9796f"
+  },
+  "doc-b74da62ffa51292b96dff3d6bf6fe160": {
+    "entity_names": [
+      "Roger Huang",
+      "Connection Server",
+      "Adam Luo",
+      "委外區桌面雲",
+      "World Athletics Federation",
+      "玉山銀行"
+    ],
+    "count": 6,
+    "create_time": 1773288730,
+    "update_time": 1773288730,
+    "_id": "doc-b74da62ffa51292b96dff3d6bf6fe160"
+  },
+  "doc-4767f4b280e1ecf9a6d5b81b393c0e63": {
+    "entity_names": [
+      "檢視事件並記錄於週報上",
+      "駐點服務",
+      "2025/05/28 09:00至2025/05/28 18:00",
+      "Link",
+      "World Athletics Federation",
+      "產出週報資料及FISAC分享資訊報告用資料",
+      "凱基人壽"
+    ],
+    "count": 7,
+    "create_time": 1773288730,
+    "update_time": 1773288730,
+    "_id": "doc-4767f4b280e1ecf9a6d5b81b393c0e63"
+  },
+  "doc-2b31cbd1c9aeef00894cf7a6bd644eaf": {
+    "entity_names": [
+      "Server Performance",
+      "Yushan Bank",
+      "Brian Wang",
+      "Psplp001",
+      "UF Devices",
+      "Version Update",
+      "World Athletics Federation",
+      "Authorization Quota",
+      "System Optimization Suggestions",
+      "Splunk Credit Card Maintenance June 2025"
+    ],
+    "count": 10,
+    "create_time": 1773288789,
+    "update_time": 1773288789,
+    "_id": "doc-2b31cbd1c9aeef00894cf7a6bd644eaf"
+  },
+  "doc-1f76b4845f8403ff9905b47bfd5fc318": {
+    "entity_names": [
+      "SC",
+      "FW",
+      "Deployment Agent",
+      "Jerry.zhang",
+      "World Athletics Federation",
+      "R81.20 Hotfix Take 103",
+      "Test-SC Hotfix升級",
+      "玉山證券"
+    ],
+    "count": 8,
+    "create_time": 1773288791,
+    "update_time": 1773288791,
+    "_id": "doc-1f76b4845f8403ff9905b47bfd5fc318"
+  },
+  "doc-4c78fb4c724e7f0a5c178af0d2ad879c": {
+    "entity_names": [
+      "C105OP帳號",
+      "VPN平台營運區上版",
+      "World Athletics Federation",
+      "玉山銀行",
+      "BYOD",
+      "Ben.chang"
+    ],
+    "count": 6,
+    "create_time": 1773288828,
+    "update_time": 1773288828,
+    "_id": "doc-4c78fb4c724e7f0a5c178af0d2ad879c"
+  },
+  "doc-56cc9c15e41455a6a0773e12c38f0226": {
+    "entity_names": [
+      "台新銀行",
+      "Hybrid And Local Proxy政策",
+      "Leon.lee",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773288830,
+    "update_time": 1773288830,
+    "_id": "doc-56cc9c15e41455a6a0773e12c38f0226"
+  },
+  "doc-00cfcd55b07190312d8f2ccf117e42aa": {
+    "entity_names": [
+      "WAF原廠知識庫",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Oracle E-Business Suite Pre-Auth RCE Chain - CVE-2025-61882"
+    ],
+    "count": 5,
+    "create_time": 1773288923,
+    "update_time": 1773288923,
+    "_id": "doc-00cfcd55b07190312d8f2ccf117e42aa"
+  },
+  "doc-0dc3bdf75e4ffb0a7ed8b62b383d5882": {
+    "entity_names": [
+      "確認現場服務正常",
+      "備份pa(備)",
+      "Lucas Fu",
+      "設備重啟後，確認主機狀態正常",
+      "漏洞升級",
+      "流量切換到備機",
+      "備份pa(主)",
+      "World Athletics Federation",
+      "確認ha狀態正常",
+      "升級備機",
+      "確認服務正常",
+      "流量切換回主機",
+      "主機進行升級",
+      "玉山中国",
+      "設備重啟後，確認備機狀態正常"
+    ],
+    "count": 15,
+    "create_time": 1773288995,
+    "update_time": 1773288995,
+    "_id": "doc-0dc3bdf75e4ffb0a7ed8b62b383d5882"
+  },
+  "doc-e8235a3fcde7c8deb21e5719a74253c6": {
+    "entity_names": [
+      "OA桌面雲-ESXi弱點修復",
+      "2025/04/08 20:30",
+      "Roger.huang",
+      "ESXVDIOA01-03",
+      "Adam.luo",
+      "World Athletics Federation",
+      "玉山銀行",
+      "2025/04/08 17:00"
+    ],
+    "count": 8,
+    "create_time": 1773288995,
+    "update_time": 1773288995,
+    "_id": "doc-e8235a3fcde7c8deb21e5719a74253c6"
+  },
+  "doc-152906368b5167111faf0afd4aeb43b1": {
+    "entity_names": [
+      "雷影主機",
+      "資料減量",
+      "Linda.hsu",
+      "World Athletics Federation",
+      "台新證券"
+    ],
+    "count": 5,
+    "create_time": 1773289159,
+    "update_time": 1773289159,
+    "_id": "doc-152906368b5167111faf0afd4aeb43b1"
+  },
+  "doc-2259bf366a20bd88d8f5def8b11b8400": {
+    "entity_names": [
+      "Vmware虛擬機快照",
+      "Barry Yang",
+      "Cimtrak",
+      "Daniel Wu",
+      "Cimtrak Repository主機DB資料",
+      "Redhat 8.10",
+      "World Athletics Federation",
+      "台新證券",
+      "Redhat 8.6"
+    ],
+    "count": 9,
+    "create_time": 1773289161,
+    "update_time": 1773289161,
+    "_id": "doc-2259bf366a20bd88d8f5def8b11b8400"
+  },
+  "doc-3197a67297468a4aa2f241a5c224c3d4": {
+    "entity_names": [
+      "站台防禦事件確認",
+      "月報資料收集",
+      "WAF",
+      "設備系統狀態確認",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽",
+      "站台憑證日期確認",
+      "資安監控分析"
+    ],
+    "count": 9,
+    "create_time": 1773289233,
+    "update_time": 1773289233,
+    "_id": "doc-3197a67297468a4aa2f241a5c224c3d4"
+  },
+  "doc-805bc9946e8e6d34c73f52a60de7d38a": {
+    "entity_names": [
+      "Kelly Su",
+      "Edmond Lee",
+      "2025/07/30 17:30至2025/07/31 00:00",
+      "Gennie Lin",
+      "Adam Luo",
+      "桌面雲-ESXi弱點修復",
+      "ESXVDIOA01-04",
+      "World Athletics Federation",
+      "玉山銀行",
+      "OA桌面雲"
+    ],
+    "count": 10,
+    "create_time": 1773289235,
+    "update_time": 1773289235,
+    "_id": "doc-805bc9946e8e6d34c73f52a60de7d38a"
+  },
+  "doc-0bb29e877595e3e1460c2a561e99dcc1": {
+    "entity_names": [
+      "Maintenance Record",
+      "Haobin",
+      "Yushan China",
+      "World Athletics Federation",
+      "VRLI"
+    ],
+    "count": 5,
+    "create_time": 1773289288,
+    "update_time": 1773289288,
+    "_id": "doc-0bb29e877595e3e1460c2a561e99dcc1"
+  },
+  "doc-f6d3c1d19c589b60c5f5e655061fefc3": {
+    "entity_names": [
+      "Kelly Su",
+      "Yushan Bank",
+      "Gennie Lin",
+      "Nick Lee",
+      "Normal Host Profile Setting",
+      "World Athletics Federation"
+    ],
+    "count": 6,
+    "create_time": 1773289371,
+    "update_time": 1773289371,
+    "_id": "doc-f6d3c1d19c589b60c5f5e655061fefc3"
+  },
+  "doc-20840be802babf6b2b4f66d88fec0f42": {
+    "entity_names": [
+      "CAD",
+      "TVMS",
+      "Vincent.chu",
+      "World Athletics Federation",
+      "凱基人壽",
+      "KAD"
+    ],
+    "count": 6,
+    "create_time": 1773289371,
+    "update_time": 1773289371,
+    "_id": "doc-20840be802babf6b2b4f66d88fec0f42"
+  },
+  "doc-7da5c1f58f4f8476186f53c00c90494a": {
+    "entity_names": [
+      "Crystal.shen",
+      "/splunk_indexes空間使用率",
+      "Splunk工作事項說明",
+      "Heavy Forwarder",
+      "cdf_identifies",
+      "IDX02 Frozen資料",
+      "World Athletics Federation",
+      "凱基銀行"
+    ],
+    "count": 8,
+    "create_time": 1773289420,
+    "update_time": 1773289420,
+    "_id": "doc-7da5c1f58f4f8476186f53c00c90494a"
+  },
+  "doc-1833cd0e8737dd5e556717fdd3df0304": {
+    "entity_names": [
+      "凱基人壽",
+      "Jack",
+      "總部大樓",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773289422,
+    "update_time": 1773289422,
+    "_id": "doc-1833cd0e8737dd5e556717fdd3df0304"
+  },
+  "doc-51339cf89029682bcaff7c9f08ab22df": {
+    "entity_names": [
+      "NetApp FAS8200",
+      "Wayne Wang",
+      "World Athletics Federation",
+      "玉山銀行",
+      "Hard Disk Failure"
+    ],
+    "count": 5,
+    "create_time": 1773289496,
+    "update_time": 1773289496,
+    "_id": "doc-51339cf89029682bcaff7c9f08ab22df"
+  },
+  "doc-795eb5cfeac4e3781e9c74cda83b94e7": {
+    "entity_names": [
+      "WAF",
+      "World Athletics Federation",
+      "Ben.jen",
+      "11/13資安監控維運服務採購案_駐點服務",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773289508,
+    "update_time": 1773289508,
+    "_id": "doc-795eb5cfeac4e3781e9c74cda83b94e7"
+  },
+  "doc-e74b97348504abf967550d5c6a58809b": {
+    "entity_names": [
+      "James.li",
+      "玉山卓越大楼",
+      "30F-AP01",
+      "Aruba Ap",
+      "World Athletics Federation",
+      "玉山中国",
+      "2025/08/04 11:00至2025/08/04 12:00"
+    ],
+    "count": 7,
+    "create_time": 1773289562,
+    "update_time": 1773289562,
+    "_id": "doc-e74b97348504abf967550d5c6a58809b"
+  },
+  "doc-5153a52f5315c73f0fed7d2653f58ea8": {
+    "entity_names": [
+      "Brian Wang",
+      "World Athletics Federation",
+      "Dongfeng Machine Room",
+      "Splunk Service",
+      "Yushan Securities"
+    ],
+    "count": 5,
+    "create_time": 1773289629,
+    "update_time": 1773289629,
+    "_id": "doc-5153a52f5315c73f0fed7d2653f58ea8"
+  },
+  "doc-58b26c4dde7d17683d22546559891ef5": {
+    "entity_names": [
+      "Louis Chan",
+      "Webhook 1.22.1 Version",
+      "Harry Chang",
+      "LineMonitor 2.17.1 Version",
+      "Maintenance Record",
+      "Yushan Bank",
+      "ECP 2.12.6 Version",
+      "SystemMaintain 1.1.1 Version",
+      "World Athletics Federation",
+      "ECP Batch Field Modification",
+      "Bill Wang"
+    ],
+    "count": 11,
+    "create_time": 1773289632,
+    "update_time": 1773289632,
+    "_id": "doc-58b26c4dde7d17683d22546559891ef5"
+  },
+  "doc-977eb1266da4c3d3cfcfab83e0d33a2f": {
+    "entity_names": [
+      "凱基人壽",
+      "Dmz Zone",
+      "Kimi Lee",
+      "World Athletics Federation",
+      "Tpe-Dmz-9300-1",
+      "Tpe-Db-4500x-1",
+      "Jarod",
+      "Tpe-Waf-9300-1"
+    ],
+    "count": 8,
+    "create_time": 1773289730,
+    "update_time": 1773289730,
+    "_id": "doc-977eb1266da4c3d3cfcfab83e0d33a2f"
+  },
+  "doc-66b500c6155eb09f025f9432f3b7fb84": {
+    "entity_names": [
+      "Lance Luo",
+      "R81.10.17",
+      "Kevin Wu",
+      "Kimi Lee",
+      "Jack",
+      "World Athletics Federation",
+      "凱基人壽",
+      "嘉義澎湖CP1570",
+      "Annie Chang"
+    ],
+    "count": 9,
+    "create_time": 1773289732,
+    "update_time": 1773289732,
+    "_id": "doc-66b500c6155eb09f025f9432f3b7fb84"
+  },
+  "doc-8e7c9c0c9eebe5655b5c79e9efb84020": {
+    "entity_names": [
+      "File Analysis and Confirmation of Anomalies",
+      "Report File Packet Capture",
+      "Steven Chen",
+      "Maintenance Record",
+      "Yushan Bank",
+      "Lab Test Analysis Results",
+      "Cpinfo Packet Capture",
+      "Capture Related Screenshots and Information",
+      "World Athletics Federation",
+      "Checkpoint: TE File Analysis Anomaly"
+    ],
+    "count": 10,
+    "create_time": 1773289793,
+    "update_time": 1773289793,
+    "_id": "doc-8e7c9c0c9eebe5655b5c79e9efb84020"
+  },
+  "doc-2e66837ef6f1c0bf5619f902e8c45931": {
+    "entity_names": [
+      "John.lee",
+      "20251124",
+      "Taiwan Bank",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773289795,
+    "update_time": 1773289795,
+    "_id": "doc-2e66837ef6f1c0bf5619f902e8c45931"
+  },
+  "doc-62af46e984b78d79835627e0d4fa02d1": {
+    "entity_names": [
+      "DNS Server",
+      "John Lee",
+      "Brian Wang",
+      "CPU使用率",
+      "Memory使用率",
+      "LDAP Setting",
+      "World Athletics Federation",
+      "凱基人壽",
+      "健康狀況檢查",
+      "NTP Server",
+      "Splunk監控主機系統移轉與VM化服務",
+      "資料品質儀表板"
+    ],
+    "count": 12,
+    "create_time": 1773289888,
+    "update_time": 1773289888,
+    "_id": "doc-62af46e984b78d79835627e0d4fa02d1"
+  },
+  "doc-932779a991a68cf374e1d218e4c19184": {
+    "entity_names": [
+      "彈跳視窗異常",
+      "Sam Chiu",
+      "World Athletics Federation",
+      "Web.Config",
+      "凱基人壽",
+      "IIS"
+    ],
+    "count": 6,
+    "create_time": 1773289911,
+    "update_time": 1773289911,
+    "_id": "doc-932779a991a68cf374e1d218e4c19184"
+  },
+  "doc-27b36e730b05e5a7f1e6990b7096ef4d": {
+    "entity_names": [
+      "DHCP IP",
+      "World Athletics Federation",
+      "Jack",
+      "Switch",
+      "Kimi.lee",
+      "凱基人壽",
+      "金融大樓總務IOT-PDU設備"
+    ],
+    "count": 7,
+    "create_time": 1773289939,
+    "update_time": 1773289939,
+    "_id": "doc-27b36e730b05e5a7f1e6990b7096ef4d"
+  },
+  "doc-7fbf53fd2afc09fbff7c0c15fbf19053": {
+    "entity_names": [
+      "維護報告",
+      "月維護",
+      "Jack",
+      "Security Team",
+      "維護SOP",
+      "World Athletics Federation",
+      "相關設定截圖",
+      "凱基人壽",
+      "2025/08/29 10:00至2025/08/29 11:00"
+    ],
+    "count": 9,
+    "create_time": 1773289979,
+    "update_time": 1773289979,
+    "_id": "doc-7fbf53fd2afc09fbff7c0c15fbf19053"
+  },
+  "doc-c89a53ee7be1b01a3296e32a7df27d17": {
+    "entity_names": [
+      "Liz Chung",
+      "Lance Luo",
+      "Kevin Wu",
+      "台中防火牆升版",
+      "Jack",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 7,
+    "create_time": 1773290056,
+    "update_time": 1773290056,
+    "_id": "doc-c89a53ee7be1b01a3296e32a7df27d17"
+  },
+  "doc-fe74cd2e06f1510ff87bf44cc361199d": {
+    "entity_names": [
+      "台南",
+      "台中",
+      "Lance.luo",
+      "World Athletics Federation",
+      "Jack",
+      "Kimi.lee",
+      "凱基人壽",
+      "KL_Webex防火牆",
+      "高雄"
+    ],
+    "count": 9,
+    "create_time": 1773290059,
+    "update_time": 1773290059,
+    "_id": "doc-fe74cd2e06f1510ff87bf44cc361199d"
+  },
+  "doc-37b7f9c5ed3bc01dc3024cde8d3256cd": {
+    "entity_names": [
+      "站台防禦事件確認",
+      "設備系統狀態確認",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽",
+      "站台憑證日期確認",
+      "資安監控分析"
+    ],
+    "count": 7,
+    "create_time": 1773290124,
+    "update_time": 1773290124,
+    "_id": "doc-37b7f9c5ed3bc01dc3024cde8d3256cd"
+  },
+  "doc-a79fe2aaaf2a3606a102b48c1ea57421": {
+    "entity_names": [
+      "玉山銀行",
+      "Wayne Wang",
+      "NetApp FAS8200",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773290126,
+    "update_time": 1773290126,
+    "_id": "doc-a79fe2aaaf2a3606a102b48c1ea57421"
+  },
+  "doc-6e66e91d8721a04419631b9bd1978a7f": {
+    "entity_names": [
+      "User簽核主管不正確",
+      "處置動作",
+      "Sandy.jin",
+      "World Athletics Federation",
+      "Shawn.hu",
+      "凱基銀行",
+      "2025/04/10 10:00至2025/04/10 15:00"
+    ],
+    "count": 7,
+    "create_time": 1773290223,
+    "update_time": 1773290223,
+    "_id": "doc-6e66e91d8721a04419631b9bd1978a7f"
+  },
+  "doc-fe4eba38b5cdf10e0f51a0cf6c75a06a": {
+    "entity_names": [
+      "高雄CP3600",
+      "高雄停電作業設備關機",
+      "Jie.chen",
+      "Lance.luo",
+      "2025/09/06 09:00至2025/09/06 14:00",
+      "HA切換測試",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 8,
+    "create_time": 1773290223,
+    "update_time": 1773290223,
+    "_id": "doc-fe4eba38b5cdf10e0f51a0cf6c75a06a"
+  },
+  "doc-78fadb380e326572b5692fe5b8e64cba": {
+    "entity_names": [
+      "Daniel Wu",
+      "Web_20250213.cimtrak-tpl",
+      "World Athletics Federation",
+      "台新證券",
+      "監控目錄"
+    ],
+    "count": 5,
+    "create_time": 1773290281,
+    "update_time": 1773290281,
+    "_id": "doc-78fadb380e326572b5692fe5b8e64cba"
+  },
+  "doc-c8057337e2d36f34a781237ea9700e8f": {
+    "entity_names": [
+      "月維護",
+      "Jack",
+      "2025/01/13 14:00至2025/01/13 15:00",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773290325,
+    "update_time": 1773290325,
+    "_id": "doc-c8057337e2d36f34a781237ea9700e8f"
+  },
+  "doc-913a64236c254e8b3073de8cb9052974": {
+    "entity_names": [
+      "Taiwan Bank",
+      "Imperva DAM CVE-2024-52046",
+      "DataOwnerPortal",
+      "Alfred Yang",
+      "World Athletics Federation"
+    ],
+    "count": 5,
+    "create_time": 1773290345,
+    "update_time": 1773290345,
+    "_id": "doc-913a64236c254e8b3073de8cb9052974"
+  },
+  "doc-28709cd2f067fcc46c9cbbeb4aa24f40": {
+    "entity_names": [
+      "SSL Certificate Expiry",
+      "UCS",
+      "Qkview",
+      "Brandon Lee",
+      "World Athletics Federation",
+      "凱基人壽",
+      "F5設備"
+    ],
+    "count": 7,
+    "create_time": 1773290379,
+    "update_time": 1773290379,
+    "_id": "doc-28709cd2f067fcc46c9cbbeb4aa24f40"
+  },
+  "doc-a1273802fb3520f20cbe27a13ee394cb": {
+    "entity_names": [
+      "凱基人壽",
+      "季維護",
+      "World Athletics Federation",
+      "Jack"
+    ],
+    "count": 4,
+    "create_time": 1773290430,
+    "update_time": 1773290430,
+    "_id": "doc-a1273802fb3520f20cbe27a13ee394cb"
+  },
+  "doc-47e7d4101d383554655e4437edf240d0": {
+    "entity_names": [
+      "Dlp Endpoint",
+      "Forcepoint",
+      "Hank Chang",
+      "World Athletics Federation",
+      "台新銀行",
+      "日本電腦"
+    ],
+    "count": 6,
+    "create_time": 1773290464,
+    "update_time": 1773290464,
+    "_id": "doc-47e7d4101d383554655e4437edf240d0"
+  },
+  "doc-4bbc0c4dffaac21211bdecbb54431af1": {
+    "entity_names": [
+      "VRLI Deployment Installation",
+      "Haobin",
+      "vCenter Integration",
+      "License Importation",
+      "Jamie Teng",
+      "2025/09/26 13:00 to 2025/09/26 15:00",
+      "Yushan China",
+      "World Athletics Federation"
+    ],
+    "count": 8,
+    "create_time": 1773290502,
+    "update_time": 1773290502,
+    "_id": "doc-4bbc0c4dffaac21211bdecbb54431af1"
+  },
+  "doc-331d069c32b79b1c1b84e23479b79cc7": {
+    "entity_names": [
+      "Crystal.shen",
+      "Chuen.lin",
+      "大量對外郵件傳輸資料告警",
+      "告警語法",
+      "南山人壽",
+      "報告、告警規則",
+      "Geodb",
+      "Splunk駐點服務",
+      "World Athletics Federation",
+      "Ryan"
+    ],
+    "count": 10,
+    "create_time": 1773290579,
+    "update_time": 1773290579,
+    "_id": "doc-331d069c32b79b1c1b84e23479b79cc7"
+  },
+  "doc-dcba228d97e1b0e59b2c48fd05e1fdf1": {
+    "entity_names": [
+      "FMC VDB更新",
+      "Carol.wu",
+      "World Athletics Federation",
+      "玉山銀行",
+      "Alan.chang",
+      "2025/10/18 23:00至2025/10/19 06:00"
+    ],
+    "count": 6,
+    "create_time": 1773290609,
+    "update_time": 1773290609,
+    "_id": "doc-dcba228d97e1b0e59b2c48fd05e1fdf1"
+  },
+  "doc-36814f91580303c6febf7a3afefc4506": {
+    "entity_names": [
+      "Splunk",
+      "CLM防火牆資料欄位清單",
+      "Brian Wang",
+      "Linda Hsu",
+      "ES套件升版測試",
+      "防火牆直拋事件告警測試",
+      "World Athletics Federation",
+      "台新銀行",
+      "更改新轉檔主機設定程式",
+      "Illumio套件設定",
+      "ES套件相關報告排程觸發異常"
+    ],
+    "count": 11,
+    "create_time": 1773290667,
+    "update_time": 1773290667,
+    "_id": "doc-36814f91580303c6febf7a3afefc4506"
+  },
+  "doc-f5af3f74f17d5253025bd504ffeec656": {
+    "entity_names": [
+      "FISAC分享資訊報告",
+      "World Athletics Federation",
+      "Link",
+      "Cyble ASM掃描器",
+      "凱基人壽",
+      "週報資料"
+    ],
+    "count": 6,
+    "create_time": 1773290668,
+    "update_time": 1773290668,
+    "_id": "doc-f5af3f74f17d5253025bd504ffeec656"
+  },
+  "doc-c25ef66616ab62fd1ebf01abeccc8a7d": {
+    "entity_names": [
+      "Splunk",
+      "Linda.hsu",
+      "R4 Linux高權限報表紀錄缺漏",
+      "國定假日清單",
+      "World Athletics Federation",
+      "台新銀行"
+    ],
+    "count": 6,
+    "create_time": 1773290745,
+    "update_time": 1773290745,
+    "_id": "doc-c25ef66616ab62fd1ebf01abeccc8a7d"
+  },
+  "doc-ed6cc53f86bba65e25654c59d8551e9c": {
+    "entity_names": [
+      "季維護",
+      "Jack",
+      "2025/03/20 14:00至2025/03/20 15:00",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773290779,
+    "update_time": 1773290779,
+    "_id": "doc-ed6cc53f86bba65e25654c59d8551e9c"
+  },
+  "doc-288c3deff7514a62ddee51251ab506ec": {
+    "entity_names": [
+      "弱掃軟體",
+      "2025/12/15 18:45至2025/12/15 20:45",
+      "World Athletics Federation",
+      "Foorcepoint",
+      "Kero.lee",
+      "凱基銀行"
+    ],
+    "count": 6,
+    "create_time": 1773290793,
+    "update_time": 1773290793,
+    "_id": "doc-288c3deff7514a62ddee51251ab506ec"
+  },
+  "doc-76e2db5d82f6b4cae836f03a935b333c": {
+    "entity_names": [
+      "金融大樓總務IP-PDU設備",
+      "IOT設備",
+      "Kimi Lee",
+      "Jack",
+      "IOT-PDU VRF",
+      "Switch",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 8,
+    "create_time": 1773290845,
+    "update_time": 1773290845,
+    "_id": "doc-76e2db5d82f6b4cae836f03a935b333c"
+  },
+  "doc-78e4385e59976b30dd8eddf46434bdc4": {
+    "entity_names": [
+      "澎湖CP1570",
+      "Kevin Wu",
+      "Jack",
+      "World Athletics Federation",
+      "R81.10.17 Build 4664",
+      "凱基人壽",
+      "Annie Chang"
+    ],
+    "count": 7,
+    "create_time": 1773290863,
+    "update_time": 1773290863,
+    "_id": "doc-78e4385e59976b30dd8eddf46434bdc4"
+  },
+  "doc-cc919a951efb3e1a1d2440fe6f44df7e": {
+    "entity_names": [
+      "玉山銀行",
+      "Josh.chen",
+      "NetApp F8200",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773290940,
+    "update_time": 1773290940,
+    "_id": "doc-cc919a951efb3e1a1d2440fe6f44df7e"
+  },
+  "doc-77d907c5695d359660fd381236a28f57": {
+    "entity_names": [
+      "Kevinyc.shih",
+      "Albert.tu",
+      "William.huang",
+      "Ethan.kao",
+      "2025 BRS演練",
+      "World Athletics Federation",
+      "玉山銀行",
+      "Johnny.pu"
+    ],
+    "count": 8,
+    "create_time": 1773290940,
+    "update_time": 1773290940,
+    "_id": "doc-77d907c5695d359660fd381236a28f57"
+  },
+  "doc-aba1da6f001199874a4c796163dc1785": {
+    "entity_names": [
+      "WAF & APT十大類來源統計圖",
+      "IPS十大類趨勢圖",
+      "WAF & APT十大類統計圖",
+      "異常事件紀錄報告(WAF & APT)",
+      "IPS十大類統計圖",
+      "CIX工作事項進度報告",
+      "聯防阻擋成效統計",
+      "Link",
+      "WAF攻擊來源&攻擊站台標的與上月比較",
+      "資安8月例會",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽",
+      "2025/09/10 14:00至2025/09/10 15:00",
+      "IPS十大類來源統計圖"
+    ],
+    "count": 15,
+    "create_time": 1773291068,
+    "update_time": 1773291068,
+    "_id": "doc-aba1da6f001199874a4c796163dc1785"
+  },
+  "doc-ca38f6f4f478d136ab2d42be610d461b": {
+    "entity_names": [
+      "Kelly Su",
+      "Yushan Bank",
+      "Edmond Lee",
+      "Gennie Lin",
+      "CBPP0001",
+      "2025/06/05 09:30至2025/06/05 12:00",
+      "World Athletics Federation",
+      "8.0u3e"
+    ],
+    "count": 8,
+    "create_time": 1773291105,
+    "update_time": 1773291105,
+    "_id": "doc-ca38f6f4f478d136ab2d42be610d461b"
+  },
+  "doc-8999c5404541e6c58c8599c6a63ef5c1": {
+    "entity_names": [
+      "2025/07/29 10:00至2025/07/29 14:00",
+      "ICMP Timestamp Requests (13)",
+      "南山人壽",
+      "APM-2",
+      "Kevinkl.hsu",
+      "World Athletics Federation",
+      "APM-1",
+      "VPN主機",
+      "ICMP Timestamp Replies (14)"
+    ],
+    "count": 9,
+    "create_time": 1773291157,
+    "update_time": 1773291157,
+    "_id": "doc-8999c5404541e6c58c8599c6a63ef5c1"
+  },
+  "doc-5c809c243357fc7b3a2eea12401798a5": {
+    "entity_names": [
+      "CBP / CBPDR SRM設定匯出並建立關機快照",
+      "SRM升級至8.8",
+      "Yushan Bank",
+      "確認SRM服務、連線、設定正常",
+      "Edmond Lee",
+      "2025/04/09 09:30至16:30",
+      "Gennie Lin",
+      "CBP / CBPDR SRM升級",
+      "Andrea Hong",
+      "Jamie Teng",
+      "World Athletics Federation",
+      "SRM升級至9.0",
+      "更換SRM license"
+    ],
+    "count": 13,
+    "create_time": 1773291201,
+    "update_time": 1773291201,
+    "_id": "doc-5c809c243357fc7b3a2eea12401798a5"
+  },
+  "doc-5887a91292a024aa0d626ad39a228bf4": {
+    "entity_names": [
+      "Aries",
+      "Apm Client",
+      "Jimmy Peng",
+      "F5 Apm设备",
+      "World Athletics Federation",
+      "玉山中国"
+    ],
+    "count": 6,
+    "create_time": 1773291249,
+    "update_time": 1773291249,
+    "_id": "doc-5887a91292a024aa0d626ad39a228bf4"
+  },
+  "doc-3e550941484ff11329625db33d03d050": {
+    "entity_names": [
+      "站台防禦事件確認",
+      "設備系統狀態確認",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽",
+      "站台憑證日期確認",
+      "資安監控分析"
+    ],
+    "count": 7,
+    "create_time": 1773291324,
+    "update_time": 1773291324,
+    "_id": "doc-3e550941484ff11329625db33d03d050"
+  },
+  "doc-580b753afc2777d890b8d01cfb9eeed8": {
+    "entity_names": [
+      "Japan",
+      "Myanmar",
+      "Louis Chan",
+      "Vietnam",
+      "Test Area",
+      "Australia",
+      "Voice Alarm Code",
+      "Yushan Bank",
+      "Maintenance Record",
+      "World Athletics Federation",
+      "Official Area",
+      "Ecp Adjustment",
+      "Ucb",
+      "Bill Wang",
+      "United States",
+      "Hong Kong",
+      "Monthly Report Disconnection Record Function Adjustment"
+    ],
+    "count": 17,
+    "create_time": 1773291325,
+    "update_time": 1773291325,
+    "_id": "doc-580b753afc2777d890b8d01cfb9eeed8"
+  },
+  "doc-53005676e4eba34efa7ea1a76ad9d83e": {
+    "entity_names": [
+      "INV_AP_UAT",
+      "Jack",
+      "Kimi.lee",
+      "INV_DB_UAT",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773291413,
+    "update_time": 1773291413,
+    "_id": "doc-53005676e4eba34efa7ea1a76ad9d83e"
+  },
+  "doc-631c637d3869e5e862af3ac7dae7a36a": {
+    "entity_names": [
+      "站台防禦事件確認",
+      "設備系統狀態確認",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽",
+      "站台憑證日期確認",
+      "資安監控分析"
+    ],
+    "count": 7,
+    "create_time": 1773291505,
+    "update_time": 1773291505,
+    "_id": "doc-631c637d3869e5e862af3ac7dae7a36a"
+  },
+  "doc-62622020a6b860789b5a7403a6ac32eb": {
+    "entity_names": [
+      "GTI LOG檔案",
+      "RJ45 Console",
+      "ImpervaGW2 Crash Again",
+      "World Athletics Federation",
+      "凱基銀行",
+      "Akira.chang"
+    ],
+    "count": 6,
+    "create_time": 1773291505,
+    "update_time": 1773291505,
+    "_id": "doc-62622020a6b860789b5a7403a6ac32eb"
+  },
+  "doc-c9223bb3969fb65bac68e32bc8b1b500": {
+    "entity_names": [
+      "Console",
+      "Carol Wu",
+      "RMA流程",
+      "2025/05/02 08:00至2025/05/02 09:30",
+      "World Athletics Federation",
+      "玉山銀行"
+    ],
+    "count": 6,
+    "create_time": 1773291576,
+    "update_time": 1773291576,
+    "_id": "doc-c9223bb3969fb65bac68e32bc8b1b500"
+  },
+  "doc-de6d695ab2d73d94e4994265a482442c": {
+    "entity_names": [
+      "Firemon",
+      "CP MHO設備License",
+      "World Athletics Federation",
+      "玉山銀行",
+      "Sandy Jin",
+      "Vincent Chu"
+    ],
+    "count": 6,
+    "create_time": 1773291578,
+    "update_time": 1773291578,
+    "_id": "doc-de6d695ab2d73d94e4994265a482442c"
+  },
+  "doc-b1048f4e36c8d4f48558f473bfb4a603": {
+    "entity_names": [
+      "TNN_CP1570-02",
+      "台南CP1570",
+      "Kevin Wu",
+      "TNN_CP1570-01",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Annie Chang"
+    ],
+    "count": 7,
+    "create_time": 1773291657,
+    "update_time": 1773291657,
+    "_id": "doc-b1048f4e36c8d4f48558f473bfb4a603"
+  },
+  "doc-6e799cf90e6e56efb89417749cc46952": {
+    "entity_names": [
+      "檢視事件並記錄於週報上",
+      "Link",
+      "駐點服務",
+      "World Athletics Federation",
+      "凱基人壽",
+      "2025/01/22 09:00至2025/01/22 14:00"
+    ],
+    "count": 6,
+    "create_time": 1773291659,
+    "update_time": 1773291659,
+    "_id": "doc-6e799cf90e6e56efb89417749cc46952"
+  },
+  "doc-4bb44c7aa0f006868d420093bd3a72c3": {
+    "entity_names": [
+      "Fepatms",
+      "台新銀行",
+      "Kevinkl.hsu",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773291722,
+    "update_time": 1773291722,
+    "_id": "doc-4bb44c7aa0f006868d420093bd3a72c3"
+  },
+  "doc-8d0fbf83611ff3ca22ba2d552c075628": {
+    "entity_names": [
+      "Crystal.shen",
+      "Memory / CPU Utilization告警",
+      "Splunk工作事項說明",
+      "CPU Utilization over告警",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773291766,
+    "update_time": 1773291766,
+    "_id": "doc-8d0fbf83611ff3ca22ba2d552c075628"
+  },
+  "doc-8302d100d9b09537ce1ea020e8f27a0f": {
+    "entity_names": [
+      "客製化套件資訊",
+      "Splunk Onsite作業項目",
+      "Linda.hsu",
+      "World Athletics Federation",
+      "台新銀行"
+    ],
+    "count": 5,
+    "create_time": 1773291792,
+    "update_time": 1773291792,
+    "_id": "doc-8302d100d9b09537ce1ea020e8f27a0f"
+  },
+  "doc-ac8df8fc32a8ad1d33abfc8d1be44423": {
+    "entity_names": [
+      "周末",
+      "Adam.luo",
+      "World Athletics Federation",
+      "玉山銀行",
+      "2025/07/07 09:00至2025/07/07 18:00",
+      "桌面雲-NSX弱點修復"
+    ],
+    "count": 6,
+    "create_time": 1773291848,
+    "update_time": 1773291848,
+    "_id": "doc-ac8df8fc32a8ad1d33abfc8d1be44423"
+  },
+  "doc-c66dbe4a097d89b58e10af6f77e190f1": {
+    "entity_names": [
+      "NHQ",
+      "Crystal.shen",
+      "172.16.250.46",
+      "台中172.17.246.2",
+      "172.16.250.37",
+      "Splunk工作事項說明",
+      "Jack",
+      "172.16.250.57",
+      "172.16.250.45",
+      "172.16.250.36",
+      "World Athletics Federation",
+      "172.16.250.59",
+      "凱基人壽",
+      "172.16.250.38",
+      "172.16.250.58",
+      "172.16.250.39"
+    ],
+    "count": 16,
+    "create_time": 1773291872,
+    "update_time": 1773291872,
+    "_id": "doc-c66dbe4a097d89b58e10af6f77e190f1"
+  },
+  "doc-91dfc461acc6d770e742fd7898c76a08": {
+    "entity_names": [
+      "DMZ-LTM & IntraAP-LTM F5升版後Standby",
+      "UCS、Qkview",
+      "設備Log",
+      "Patrick Hung",
+      "World Athletics Federation",
+      "凱基人壽",
+      "設備效能"
+    ],
+    "count": 7,
+    "create_time": 1773291913,
+    "update_time": 1773291913,
+    "_id": "doc-91dfc461acc6d770e742fd7898c76a08"
+  },
+  "doc-9cd8966dc62831f8228f26024e3e7a46": {
+    "entity_names": [
+      "172.24.7.21、172.24.7.22、172.24.51.26",
+      "Cimtrak監控白名單路徑",
+      "指定主機監控目錄",
+      "Template",
+      "Daniel.wu",
+      "World Athletics Federation",
+      "台新證券",
+      "2025/11/17 15:00至2025/11/17 15:30",
+      "RAWEB系列主機"
+    ],
+    "count": 9,
+    "create_time": 1773291951,
+    "update_time": 1773291951,
+    "_id": "doc-9cd8966dc62831f8228f26024e3e7a46"
+  },
+  "doc-c6ca9b14d2ec21d332c55563f5977013": {
+    "entity_names": [
+      "Support",
+      "截圖",
+      "Logs",
+      "World Athletics Federation",
+      "Kero.lee",
+      "台新證券"
+    ],
+    "count": 6,
+    "create_time": 1773291977,
+    "update_time": 1773291977,
+    "_id": "doc-c6ca9b14d2ec21d332c55563f5977013"
+  },
+  "doc-bad3d7923cc13edf30dd7e30da8c96e5": {
+    "entity_names": [
+      "30GB授權",
+      "資料減量",
+      "Linda.hsu",
+      "2025/04/16 09:30至2025/04/16 17:30",
+      "World Athletics Federation",
+      "台新證券"
+    ],
+    "count": 6,
+    "create_time": 1773292046,
+    "update_time": 1773292046,
+    "_id": "doc-bad3d7923cc13edf30dd7e30da8c96e5"
+  },
+  "doc-8962fe1a3d73c85187852796f2a02118": {
+    "entity_names": [
+      "Yushan Bank",
+      "Carol Wu",
+      "Cisco FMC",
+      "Alan Chang",
+      "World Athletics Federation",
+      "VDB Update"
+    ],
+    "count": 6,
+    "create_time": 1773292049,
+    "update_time": 1773292049,
+    "_id": "doc-8962fe1a3d73c85187852796f2a02118"
+  },
+  "doc-2e0baee5e8dcff0af7197a76ad4eed09": {
+    "entity_names": [
+      "James.li",
+      "玉山中国",
+      "广州分行KVM设备",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773292099,
+    "update_time": 1773292099,
+    "_id": "doc-2e0baee5e8dcff0af7197a76ad4eed09"
+  },
+  "doc-4c8045beec3c0a51b11f4eba1bed911a": {
+    "entity_names": [
+      "凱基人壽",
+      "月例會簡報撰寫",
+      "World Athletics Federation",
+      "Jack"
+    ],
+    "count": 4,
+    "create_time": 1773292127,
+    "update_time": 1773292127,
+    "_id": "doc-4c8045beec3c0a51b11f4eba1bed911a"
+  },
+  "doc-96508acd68d57257f73bb8f034a74db7": {
+    "entity_names": [
+      "Wesly.chen",
+      "Gigamon IPS",
+      "Support",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773292184,
+    "update_time": 1773292184,
+    "_id": "doc-96508acd68d57257f73bb8f034a74db7"
+  },
+  "doc-2ae48babcb2bae172f4cb3d012a26aa6": {
+    "entity_names": [
+      "金融大樓",
+      "World Athletics Federation",
+      "Jack",
+      "Kimi.lee",
+      "凱基人壽",
+      "L3 Switch",
+      "L2 Switch"
+    ],
+    "count": 7,
+    "create_time": 1773292184,
+    "update_time": 1773292184,
+    "_id": "doc-2ae48babcb2bae172f4cb3d012a26aa6"
+  },
+  "doc-9a1f3f068761fb8d7cf5f075a6e1b8a2": {
+    "entity_names": [
+      "VES Server",
+      "總公司各部門交換區路徑及總公司各部門主管交換區路徑",
+      "審核人員及設定審核人員組識單位",
+      "分公司交換區路徑及分公司主管交換區路徑",
+      "VES 5.0最新版本(5.00.24011011)",
+      "舊VES Server設定檔",
+      "分公司交換區資料夾及分公司主管交換區資料夾",
+      "World Athletics Federation",
+      "總公司各部門交換區資料夾及總公司各部門主管交換區資料夾",
+      "Jimmy.lee",
+      "玉山證券"
+    ],
+    "count": 11,
+    "create_time": 1773292315,
+    "update_time": 1773292315,
+    "_id": "doc-9a1f3f068761fb8d7cf5f075a6e1b8a2"
+  },
+  "doc-f863eedf90512c367704a104d6feddcc": {
+    "entity_names": [
+      "備份設定檔",
+      "smartconsole get topology，並install policy",
+      "新增子介面及路由",
+      "2025/05/20 14:00至2025/05/20 16:30",
+      "Carol Wu",
+      "驗證網路連通性",
+      "Alan Chang",
+      "DR CORE-FW介面及路由調整",
+      "World Athletics Federation",
+      "玉山銀行"
+    ],
+    "count": 10,
+    "create_time": 1773292345,
+    "update_time": 1773292345,
+    "_id": "doc-f863eedf90512c367704a104d6feddcc"
+  },
+  "doc-71c892e4aadfd6a138c2de5a5101247a": {
+    "entity_names": [
+      "凱基人壽",
+      "Splunk",
+      "WUG Standby",
+      "World Athletics Federation",
+      "Pifu",
+      "NetFlow DB Log",
+      "Jarod"
+    ],
+    "count": 7,
+    "create_time": 1773292382,
+    "update_time": 1773292382,
+    "_id": "doc-71c892e4aadfd6a138c2de5a5101247a"
+  },
+  "doc-8d5b145e19b4a1cb13aa16a167aae29e": {
+    "entity_names": [
+      "Yushan Bank",
+      "CBP2 OOB交換器",
+      "OCP Network Segment",
+      "World Athletics Federation",
+      "Jarod"
+    ],
+    "count": 5,
+    "create_time": 1773292440,
+    "update_time": 1773292440,
+    "_id": "doc-8d5b145e19b4a1cb13aa16a167aae29e"
+  },
+  "doc-c127f847def27aebac070865deca7104": {
+    "entity_names": [
+      "2025下半年度告警盤點",
+      "Chuen.lin",
+      "AI網站服務紀錄調閱報表建置",
+      "南山人壽",
+      "FCB設定調整",
+      "GeoDB",
+      "World Athletics Federation",
+      "Splunk駐點服務202512第一周",
+      "Gen AI連線紀錄(每日)",
+      "Gen AI連線紀錄(整月)"
+    ],
+    "count": 10,
+    "create_time": 1773292461,
+    "update_time": 1773292461,
+    "_id": "doc-c127f847def27aebac070865deca7104"
+  },
+  "doc-bbcff72517a1742528f999e0697cf9b5": {
+    "entity_names": [
+      "Lance Luo",
+      "新竹CP1570-01",
+      "新竹CP1570-02",
+      "fw_sfwd Process",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Annie Chang"
+    ],
+    "count": 7,
+    "create_time": 1773292516,
+    "update_time": 1773292516,
+    "_id": "doc-bbcff72517a1742528f999e0697cf9b5"
+  },
+  "doc-480430d7718963886ad22438f6e78a36": {
+    "entity_names": [
+      "2025/12/08 13:00至2025/12/08 13:30",
+      "月維護",
+      "Jack",
+      "更新維護報告",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773292550,
+    "update_time": 1773292550,
+    "_id": "doc-480430d7718963886ad22438f6e78a36"
+  },
+  "doc-ac5ff21ff3fcccabb78c397d8ae15b06": {
+    "entity_names": [
+      "IS_bond5.2_OA",
+      "IA_bond33_vpn",
+      "Kevin Wu",
+      "TP-Internet-CP6200-S",
+      "DMZ-VPN",
+      "TP-Internet-CP6200-A",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Annie Chang"
+    ],
+    "count": 9,
+    "create_time": 1773292608,
+    "update_time": 1773292608,
+    "_id": "doc-ac5ff21ff3fcccabb78c397d8ae15b06"
+  },
+  "doc-2c6de7d2e1daed5452de516794f62761": {
+    "entity_names": [
+      "Clm事件",
+      "Brian Wang",
+      "Aix升級流程",
+      "Linda Hsu",
+      "Linux資料斷行異常問題",
+      "World Athletics Federation",
+      "Aws文件查看",
+      "防火牆直拋事件告警測試",
+      "Splunk",
+      "台新銀行"
+    ],
+    "count": 10,
+    "create_time": 1773292723,
+    "update_time": 1773292723,
+    "_id": "doc-2c6de7d2e1daed5452de516794f62761"
+  },
+  "doc-18d39b47c9fb24ee09e24d37798c3f9e": {
+    "entity_names": [
+      "VES Server",
+      "VES虛擬機",
+      "玉山證券",
+      "VES USB Key",
+      "舊實體機",
+      "新實體機",
+      "Jimmy.lee",
+      "World Athletics Federation",
+      "VES相關服務",
+      "VES設定檔"
+    ],
+    "count": 10,
+    "create_time": 1773292723,
+    "update_time": 1773292723,
+    "_id": "doc-18d39b47c9fb24ee09e24d37798c3f9e"
+  },
+  "doc-023360f1ccf4afcd206acd4bb29ac37a": {
+    "entity_names": [
+      "無用的叫號機網段",
+      "台中分公司",
+      "Jack",
+      "高雄分公司",
+      "Kimi.lee",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 7,
+    "create_time": 1773292872,
+    "update_time": 1773292872,
+    "_id": "doc-023360f1ccf4afcd206acd4bb29ac37a"
+  },
+  "doc-e47985362b485b4633a6df72f3d3976f": {
+    "entity_names": [
+      "Timgt Chen",
+      "UCS、Qkview",
+      "DMZ-UAT-LTM異常RMA設備更換",
+      "Patrick Hung",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Ethan Chen",
+      "2025/12/30 17:30至2025/12/30 20:00"
+    ],
+    "count": 8,
+    "create_time": 1773292890,
+    "update_time": 1773292890,
+    "_id": "doc-e47985362b485b4633a6df72f3d3976f"
+  },
+  "doc-16f03c6b55dcadde66cec72f2f72623f": {
+    "entity_names": [
+      "桃竹新增SP_OA網段與路由",
+      "Kevin Wu",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Annie Chang"
+    ],
+    "count": 5,
+    "create_time": 1773292948,
+    "update_time": 1773292948,
+    "_id": "doc-16f03c6b55dcadde66cec72f2f72623f"
+  },
+  "doc-eb7668bbf621ab2ef27a620513ce9d31": {
+    "entity_names": [
+      "SOC Event Report",
+      "Splunk",
+      "Brian Wang",
+      "Linda Hsu",
+      "ES套件",
+      "World Athletics Federation",
+      "台新銀行"
+    ],
+    "count": 7,
+    "create_time": 1773292984,
+    "update_time": 1773292984,
+    "_id": "doc-eb7668bbf621ab2ef27a620513ce9d31"
+  },
+  "doc-b8b47c8b690747a6d2cc806a566491b8": {
+    "entity_names": [
+      "Splunk Operator",
+      "John.lee",
+      "凱基銀行",
+      "License Management",
+      "World Athletics Federation",
+      "Ingress Setting"
+    ],
+    "count": 6,
+    "create_time": 1773293027,
+    "update_time": 1773293027,
+    "_id": "doc-b8b47c8b690747a6d2cc806a566491b8"
+  },
+  "doc-941922d620f9f27b12b08735dada5845": {
+    "entity_names": [
+      "Extranet 3850",
+      "Kimi Lee",
+      "Jack",
+      "IP SLA監控通訊處IP",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773293098,
+    "update_time": 1773293098,
+    "_id": "doc-941922d620f9f27b12b08735dada5845"
+  },
+  "doc-b09ebe9e6d0bda3dc4e26d83077c57ba": {
+    "entity_names": [
+      "Wesly.chen",
+      "設備測試",
+      "2025/10/03 09:00至2025/10/03 18:00",
+      "World Athletics Federation",
+      "玉山銀行",
+      "交換器"
+    ],
+    "count": 6,
+    "create_time": 1773293101,
+    "update_time": 1773293101,
+    "_id": "doc-b09ebe9e6d0bda3dc4e26d83077c57ba"
+  },
+  "doc-798890e57abdca78076f7b5295f5e85a": {
+    "entity_names": [
+      "SPLUNK0000P02",
+      "Brian Wang",
+      "Splunk Configuration File Backup Schedule",
+      "World Athletics Federation",
+      "SPLUNK0000P01",
+      "SPLUNK0000P04",
+      "Splunk",
+      "Yushan Securities"
+    ],
+    "count": 8,
+    "create_time": 1773293196,
+    "update_time": 1773293196,
+    "_id": "doc-798890e57abdca78076f7b5295f5e85a"
+  },
+  "doc-2854815698215a99ee205d6657661c63": {
+    "entity_names": [
+      "Device",
+      "Yushan Bank",
+      "Firemon",
+      "World Athletics Federation",
+      "Sandy Jin",
+      "Shawn Hu"
+    ],
+    "count": 6,
+    "create_time": 1773293198,
+    "update_time": 1773293198,
+    "_id": "doc-2854815698215a99ee205d6657661c63"
+  },
+  "doc-4cfcf238234ba1312b0cdbd1f028c578": {
+    "entity_names": [
+      "Splunk ES",
+      "Chuen.lin,John.lee",
+      "SOC",
+      "南山人壽",
+      "2025/02/03 13:30至2025/02/03 17:30",
+      "World Athletics Federation"
+    ],
+    "count": 6,
+    "create_time": 1773293266,
+    "update_time": 1773293266,
+    "_id": "doc-4cfcf238234ba1312b0cdbd1f028c578"
+  },
+  "doc-d5ef899d8b4c91070c79ec652e9a902e": {
+    "entity_names": [
+      "Yushan Bank",
+      "Maintenance Record",
+      "2025/11/21 09:30至2025/11/21 13:00",
+      "World Athletics Federation",
+      "Carlos Chen",
+      "Machine Cabinet Lock"
+    ],
+    "count": 6,
+    "create_time": 1773293268,
+    "update_time": 1773293268,
+    "_id": "doc-d5ef899d8b4c91070c79ec652e9a902e"
+  },
+  "doc-34690230862074ea75dfc44934071276": {
+    "entity_names": [
+      "RAR加密檔",
+      "DLP",
+      "World Athletics Federation",
+      "客戶policy",
+      "審放平台憑證",
+      "Dean.huang",
+      "凱基銀行",
+      "客戶環境"
+    ],
+    "count": 8,
+    "create_time": 1773293370,
+    "update_time": 1773293370,
+    "_id": "doc-34690230862074ea75dfc44934071276"
+  },
+  "doc-e129af2833ae574f03fffb47882df74c": {
+    "entity_names": [
+      "Python必要module",
+      "弱掃復掃",
+      "Python 3.12",
+      "Patrick Hung",
+      "Brandon Lee",
+      "平台服務",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 8,
+    "create_time": 1773293417,
+    "update_time": 1773293417,
+    "_id": "doc-e129af2833ae574f03fffb47882df74c"
+  },
+  "doc-5a402cacdcb992fbeaa675e06411ddf8": {
+    "entity_names": [
+      "WAF帳號",
+      "LDAP驗證",
+      "AD帳號",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773293508,
+    "update_time": 1773293508,
+    "_id": "doc-5a402cacdcb992fbeaa675e06411ddf8"
+  },
+  "doc-924fa57c4166ca2e3c98b193fd17b9f2": {
+    "entity_names": [
+      "凱基人壽",
+      "台北-台中CTI亞太線路切換",
+      "Tim Chen",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773293508,
+    "update_time": 1773293508,
+    "_id": "doc-924fa57c4166ca2e3c98b193fd17b9f2"
+  },
+  "doc-2d8a4cab35dea4e80fd9ede5c144f029": {
+    "entity_names": [
+      "Roger Huang",
+      "OA Desktop Cloud",
+      "Maintenance Record",
+      "Yushan Bank",
+      "World Athletics Federation",
+      "Adam Luo",
+      "Esxi"
+    ],
+    "count": 7,
+    "create_time": 1773293564,
+    "update_time": 1773293564,
+    "_id": "doc-2d8a4cab35dea4e80fd9ede5c144f029"
+  },
+  "doc-765909f5c98996acd72582fd8ac67446": {
+    "entity_names": [
+      "Policy狀態",
+      "Mac Endpoint問題",
+      "Endpoint",
+      "World Athletics Federation",
+      "Kero.lee",
+      "凱基銀行"
+    ],
+    "count": 6,
+    "create_time": 1773293566,
+    "update_time": 1773293566,
+    "_id": "doc-765909f5c98996acd72582fd8ac67446"
+  },
+  "doc-4c88eb434311f7e8c1731f499f09ff10": {
+    "entity_names": [
+      "Yushan Bank",
+      "Wesly Chen",
+      "Maintenance Record",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773293672,
+    "update_time": 1773293672,
+    "_id": "doc-4c88eb434311f7e8c1731f499f09ff10"
+  },
+  "doc-9d6b94514671e912bae4a435780774fc": {
+    "entity_names": [
+      "Carlos.chen",
+      "Server過久未重啟暫存空間不足",
+      "World Athletics Federation",
+      "玉山銀行",
+      "2025/12/22 09:30至2025/12/22 13:00",
+      "機櫃鎖無資料問題確認"
+    ],
+    "count": 6,
+    "create_time": 1773293713,
+    "update_time": 1773293713,
+    "_id": "doc-9d6b94514671e912bae4a435780774fc"
+  },
+  "doc-9c7b9ea85d9ed68bb8027388ada01cf1": {
+    "entity_names": [
+      "Yushan Securities",
+      "Maintenance Record",
+      "Alan Chang",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773294111,
+    "update_time": 1773294111,
+    "_id": "doc-9c7b9ea85d9ed68bb8027388ada01cf1"
+  },
+  "doc-a0e9bc82c121f23b4c2aee0ac88d8023": {
+    "entity_names": [
+      "桌面雲特定集區使用者登入登出紀錄查詢",
+      "Edmond.lee",
+      "Adam.luo",
+      "World Athletics Federation",
+      "玉山銀行",
+      "OA桌面雲"
+    ],
+    "count": 6,
+    "create_time": 1773294111,
+    "update_time": 1773294111,
+    "_id": "doc-a0e9bc82c121f23b4c2aee0ac88d8023"
+  },
+  "doc-979f26ed5ea3600b09b4e05e9c0852e0": {
+    "entity_names": [
+      "Lance.luo",
+      "Intranet新增網段與路由",
+      "Ethan.lo",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773294195,
+    "update_time": 1773294195,
+    "_id": "doc-979f26ed5ea3600b09b4e05e9c0852e0"
+  },
+  "doc-172069c884f0ca103e3df1121ed58720": {
+    "entity_names": [
+      "ESG異常問題",
+      "Dean.huang",
+      "DLP",
+      "DLP policy",
+      "Dcard網頁",
+      "World Athletics Federation",
+      "新系統port",
+      "Kero.lee",
+      "凱基銀行"
+    ],
+    "count": 9,
+    "create_time": 1773294241,
+    "update_time": 1773294241,
+    "_id": "doc-172069c884f0ca103e3df1121ed58720"
+  },
+  "doc-f532e5af2b272d23d31d11fdcd8ae20c": {
+    "entity_names": [
+      "桌面雲-vCenter Server弱點修復",
+      "Adam.luo",
+      "World Athletics Federation",
+      "玉山銀行",
+      "2025/06/28 09:00至2025/06/28 18:00",
+      "OA桌面雲"
+    ],
+    "count": 6,
+    "create_time": 1773294260,
+    "update_time": 1773294260,
+    "_id": "doc-f532e5af2b272d23d31d11fdcd8ae20c"
+  },
+  "doc-22c0acb1184c1abe26e3b02ecb2f9e52": {
+    "entity_names": [
+      "Liz Chung",
+      "Gigamon線路介接",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Jacky Wu"
+    ],
+    "count": 5,
+    "create_time": 1773294375,
+    "update_time": 1773294375,
+    "_id": "doc-22c0acb1184c1abe26e3b02ecb2f9e52"
+  },
+  "doc-f82c49a192d665e2ef8e4e34fd9434dc": {
+    "entity_names": [
+      "站台防禦事件確認",
+      "設備系統狀態確認",
+      "Ben.jen",
+      "World Athletics Federation",
+      "凱基人壽",
+      "站台憑證日期確認",
+      "資安監控分析"
+    ],
+    "count": 7,
+    "create_time": 1773294375,
+    "update_time": 1773294375,
+    "_id": "doc-f82c49a192d665e2ef8e4e34fd9434dc"
+  },
+  "doc-94c9355e0fea6edc1ffa636f9abe553c": {
+    "entity_names": [
+      "Splunk",
+      "Jimmy.peng",
+      "Timmy.lin",
+      "World Athletics Federation",
+      "玉山銀行",
+      "F5 WAF月報分析- 2025年09月份"
+    ],
+    "count": 6,
+    "create_time": 1773294508,
+    "update_time": 1773294508,
+    "_id": "doc-94c9355e0fea6edc1ffa636f9abe553c"
+  },
+  "doc-0702eb662510412afe9c882949e28249": {
+    "entity_names": [
+      "excel",
+      "弱點風險",
+      "World Athletics Federation",
+      "2025/06/30 10:00至2025/06/30 11:00",
+      "凱基人壽",
+      "Evan.su",
+      "例行檢查排掃目標清單"
+    ],
+    "count": 7,
+    "create_time": 1773294508,
+    "update_time": 1773294508,
+    "_id": "doc-0702eb662510412afe9c882949e28249"
+  },
+  "doc-930e0724ef39216c8efb1b427485d996": {
+    "entity_names": [
+      "Windows Remote Management (WinRM)",
+      "Splunk",
+      "John Lee",
+      "Windows Event Forwarding (WEF)",
+      "凱基銀行",
+      "World Athletics Federation",
+      "Crystal Shen",
+      "密碼變更政策",
+      "2025/08/13 13:30至17:30"
+    ],
+    "count": 9,
+    "create_time": 1773294648,
+    "update_time": 1773294648,
+    "_id": "doc-930e0724ef39216c8efb1b427485d996"
+  },
+  "doc-fe4d518e5411d15b6ce96f0baf779081": {
+    "entity_names": [
+      "Daniel Wu",
+      "Citmrak Agent",
+      "World Athletics Federation",
+      "172.24.7.40",
+      "台新證券",
+      "172.24.7.50"
+    ],
+    "count": 6,
+    "create_time": 1773294650,
+    "update_time": 1773294650,
+    "_id": "doc-fe4d518e5411d15b6ce96f0baf779081"
+  },
+  "doc-bf59257de765ab6b39fbef3cd7f0d792": {
+    "entity_names": [
+      "Crystal.shen",
+      "Memory",
+      "CPU",
+      "健康情況檢查",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Splunk監控主機系統移轉與VM化服務",
+      "資料品質儀表板"
+    ],
+    "count": 8,
+    "create_time": 1773294727,
+    "update_time": 1773294727,
+    "_id": "doc-bf59257de765ab6b39fbef3cd7f0d792"
+  },
+  "doc-590a84209cab3baba074b39ba2afcf90": {
+    "entity_names": [
+      "Leon.lee",
+      "Hybrid教育訓練",
+      "World Athletics Federation",
+      "台新銀行",
+      "Kero.lee"
+    ],
+    "count": 5,
+    "create_time": 1773294728,
+    "update_time": 1773294728,
+    "_id": "doc-590a84209cab3baba074b39ba2afcf90"
+  },
+  "doc-088e61c8203108fd143a593aae319626": {
+    "entity_names": [
+      "TP-Intranet-CP6600",
+      "TP-Internet-CP6200-S",
+      "Service Contract",
+      "TP-Internet-CP6200-A",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Gateway",
+      "Annie Chang"
+    ],
+    "count": 8,
+    "create_time": 1773294807,
+    "update_time": 1773294807,
+    "_id": "doc-088e61c8203108fd143a593aae319626"
+  },
+  "doc-cd4f50d76f1a3f9015ad782b747aaf84": {
+    "entity_names": [
+      "Yushan Bank",
+      "Network Access Profile",
+      "APM Policy",
+      "World Athletics Federation",
+      "Joe Jiang"
+    ],
+    "count": 5,
+    "create_time": 1773294911,
+    "update_time": 1773294911,
+    "_id": "doc-cd4f50d76f1a3f9015ad782b747aaf84"
+  },
+  "doc-d55d1ef43d82638287b728c4333ed5bc": {
+    "entity_names": [
+      "host=172.18.44.11, type=THREAT, log_subtype不為url",
+      "Splunk",
+      "Prisma Ticket規則",
+      "同仁外部網頁檔案傳輸中低風險明細週報表",
+      "prismacloud-agentless-scan",
+      "OUTLOOK.OFFICE365.COM",
+      "World Athletics Federation",
+      "Crystal Shen",
+      "凱基銀行",
+      "商銀資安設備阻擋查詢儀表板"
+    ],
+    "count": 10,
+    "create_time": 1773294911,
+    "update_time": 1773294911,
+    "_id": "doc-d55d1ef43d82638287b728c4333ed5bc"
+  },
+  "doc-1777b95f7911f8ddb4008c35d2b8d6cf": {
+    "entity_names": [
+      "Chuen.lin",
+      "南山人壽",
+      "Splunk主機底層設定確認",
+      "World Athletics Federation",
+      "AI網站連線資料"
+    ],
+    "count": 5,
+    "create_time": 1773295006,
+    "update_time": 1773295006,
+    "_id": "doc-1777b95f7911f8ddb4008c35d2b8d6cf"
+  },
+  "doc-042fcaa24f2dcb12bc261aa00bb36dca": {
+    "entity_names": [
+      "Abby Zhang",
+      "Data Cleanup",
+      "2025/07/02 18:00",
+      "2025/07/02 09:49",
+      "Maintenance Log",
+      "Yushan China",
+      "World Athletics Federation"
+    ],
+    "count": 7,
+    "create_time": 1773295008,
+    "update_time": 1773295008,
+    "_id": "doc-042fcaa24f2dcb12bc261aa00bb36dca"
+  },
+  "doc-678b0b1e65794ade01d2ac72d2e27416": {
+    "entity_names": [
+      "客戶",
+      "172.24.7.42",
+      "Daniel.wu",
+      "Cimtrak監控policy template",
+      "World Athletics Federation",
+      "台新證券"
+    ],
+    "count": 6,
+    "create_time": 1773295064,
+    "update_time": 1773295064,
+    "_id": "doc-678b0b1e65794ade01d2ac72d2e27416"
+  },
+  "doc-985f99a37d38b19c2a8ff42d1837c188": {
+    "entity_names": [
+      "Louis Chan",
+      "Yushan Bank",
+      "Maintenance Record",
+      "Action Column",
+      "World Athletics Federation",
+      "Bill Wang"
+    ],
+    "count": 6,
+    "create_time": 1773295066,
+    "update_time": 1773295066,
+    "_id": "doc-985f99a37d38b19c2a8ff42d1837c188"
+  },
+  "doc-d388778cd11bcc8548cb1bce985befca": {
+    "entity_names": [
+      "Standby設備執行java資源調整指令",
+      "備份設備設定",
+      "Jimmy Peng",
+      "Standby設備調整管理介面資源為Large",
+      "F5管理介面資源調整",
+      "World Athletics Federation",
+      "玉山銀行",
+      "Joe Jiang",
+      "HA切換"
+    ],
+    "count": 9,
+    "create_time": 1773295194,
+    "update_time": 1773295194,
+    "_id": "doc-d388778cd11bcc8548cb1bce985befca"
+  },
+  "doc-578b42c7a50dd72a5a346a32d1e236d6": {
+    "entity_names": [
+      "Splunk",
+      "Db新轉檔程式測試",
+      "Soc Event Report備註顯示異常",
+      "Linda Hsu",
+      "Brian Wang",
+      "Linux資料斷行異常問題",
+      "Es套件新舊功能對比",
+      "Ubuntu Uf版本升級異常問題",
+      "Splunk Uf篩選監控檔案資料夾測試",
+      "World Athletics Federation",
+      "台新銀行",
+      "Crowdstrike索引新增"
+    ],
+    "count": 12,
+    "create_time": 1773295261,
+    "update_time": 1773295261,
+    "_id": "doc-578b42c7a50dd72a5a346a32d1e236d6"
+  },
+  "doc-7b4325a79c9920f28918110d1053a993": {
+    "entity_names": [
+      "ServerHost",
+      "Maintenance Record",
+      "Yushan Bank",
+      "Ben Chang",
+      "World Athletics Federation",
+      "Ipmac"
+    ],
+    "count": 6,
+    "create_time": 1773295262,
+    "update_time": 1773295262,
+    "_id": "doc-7b4325a79c9920f28918110d1053a993"
+  },
+  "doc-bd6d2e8f1120ad5e4f9ec63460df6d26": {
+    "entity_names": [
+      "ODA Upgrade Precheck 19.18-19.22",
+      "ODA Bare Metal Upgrade Ol7 To Ol8 Preupgradecheck",
+      "Eric.chen",
+      "Ivy.chiang",
+      "ODA Dcs Upgrade 19.18-19.22",
+      "2025/05/16 09:00至2025/05/16 18:00",
+      "World Athletics Federation",
+      "台新銀行"
+    ],
+    "count": 8,
+    "create_time": 1773295395,
+    "update_time": 1773295395,
+    "_id": "doc-bd6d2e8f1120ad5e4f9ec63460df6d26"
+  },
+  "doc-4b9f38c257d9e823ad85ee6ac264f374": {
+    "entity_names": [
+      "凱基人壽",
+      "TPE-HQ-ISP-C9200 Switch",
+      "Kimi Lee",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773295397,
+    "update_time": 1773295397,
+    "_id": "doc-4b9f38c257d9e823ad85ee6ac264f374"
+  },
+  "doc-1777e523bff8536b69d653508f678939": {
+    "entity_names": [
+      "Link",
+      "Ben.jen",
+      "World Athletics Federation",
+      "資安4月例會",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773295487,
+    "update_time": 1773295487,
+    "_id": "doc-1777e523bff8536b69d653508f678939"
+  },
+  "doc-f4ef05b990312aa4181eae1bf2487bb9": {
+    "entity_names": [
+      "OOB Switch",
+      "HQ2_CO_L3SW01",
+      "Ava.lee",
+      "HQ2_CTI_L2SW01",
+      "希望機房",
+      "HQ2_CO_L3SW02",
+      "登峰機房",
+      "2025/12/12 09:00至2025/12/12 18:00",
+      "World Athletics Federation",
+      "客服主機",
+      "Alvin.ma",
+      "玉山證券"
+    ],
+    "count": 12,
+    "create_time": 1773295489,
+    "update_time": 1773295489,
+    "_id": "doc-f4ef05b990312aa4181eae1bf2487bb9"
+  },
+  "doc-7c98fd38131c7d72db94e3d86e0186dd": {
+    "entity_names": [
+      "Forcepoint",
+      "Leon Lee",
+      "Agent Deployment Issue",
+      "World Athletics Federation",
+      "凱基銀行"
+    ],
+    "count": 5,
+    "create_time": 1773295576,
+    "update_time": 1773295576,
+    "_id": "doc-7c98fd38131c7d72db94e3d86e0186dd"
+  },
+  "doc-44702b8d005bcfe20bf71329010d1ef2": {
+    "entity_names": [
+      "2025/09/08 14:00至2025/09/08 15:00",
+      "依維護SOP進行維護",
+      "月維護",
+      "Jack",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773295668,
+    "update_time": 1773295668,
+    "_id": "doc-44702b8d005bcfe20bf71329010d1ef2"
+  },
+  "doc-33c836c57335d57c5dc66e8610bb0491": {
+    "entity_names": [
+      "2025/07/04 17:30至2025/07/04 22:00",
+      "ESXVDICBP30-31",
+      "ESXi元件Driver版本",
+      "Edmond.lee",
+      "Adam.luo",
+      "NSX Manager",
+      "World Athletics Federation",
+      "委外區桌面雲-ESXi升級",
+      "玉山銀行"
+    ],
+    "count": 9,
+    "create_time": 1773295669,
+    "update_time": 1773295669,
+    "_id": "doc-33c836c57335d57c5dc66e8610bb0491"
+  },
+  "doc-57597d9b0f998e30734b6a73a0ef1185": {
+    "entity_names": [
+      "Event Viewer",
+      "PsTools",
+      "Endpoint",
+      "World Athletics Federation",
+      "台新銀行",
+      "Kero.lee",
+      "Windows防間諜軟體"
+    ],
+    "count": 7,
+    "create_time": 1773295769,
+    "update_time": 1773295769,
+    "_id": "doc-57597d9b0f998e30734b6a73a0ef1185"
+  },
+  "doc-54cff439787b8d784a6f420f2902ff1c": {
+    "entity_names": [
+      "月例會報告",
+      "Jack",
+      "2025/11/18 14:00至2025/11/18 15:00",
+      "月例會",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773295771,
+    "update_time": 1773295771,
+    "_id": "doc-54cff439787b8d784a6f420f2902ff1c"
+  },
+  "doc-6a3b3ef3d559181d46a2ca3497cffb4d": {
+    "entity_names": [
+      "Teddy",
+      "Detiphy Port",
+      "Gigamon",
+      "Jimmy.hsu",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 6,
+    "create_time": 1773295844,
+    "update_time": 1773295844,
+    "_id": "doc-6a3b3ef3d559181d46a2ca3497cffb4d"
+  },
+  "doc-4d9347b488b2afd6d36ff05bdd40e69e": {
+    "entity_names": [
+      "月維護",
+      "Jack",
+      "World Athletics Federation",
+      "凱基人壽",
+      "2025/06/25 14:00至2025/06/25 15:00"
+    ],
+    "count": 5,
+    "create_time": 1773295876,
+    "update_time": 1773295876,
+    "_id": "doc-4d9347b488b2afd6d36ff05bdd40e69e"
+  },
+  "doc-5c58ac58b0bc709e0fd12b0c286c5ed3": {
+    "entity_names": [
+      "SSL Self-Signed Certificate",
+      "SOM服務",
+      "SSL Certificate Signed Using Weak Hashing",
+      "M170",
+      "Ben.jen",
+      "World Athletics Federation",
+      "SSL Certificate Cannot Be Trusted",
+      "凱基人壽"
+    ],
+    "count": 8,
+    "create_time": 1773295927,
+    "update_time": 1773295927,
+    "_id": "doc-5c58ac58b0bc709e0fd12b0c286c5ed3"
+  },
+  "doc-10bf6f52258afd370d64517ed2920f61": {
+    "entity_names": [
+      "Splunk Indexer Queue Full -20251215",
+      "John.lee",
+      "RF/SF Adjustment",
+      "World Athletics Federation",
+      "凱基銀行",
+      "Bucket Replication"
+    ],
+    "count": 6,
+    "create_time": 1773295992,
+    "update_time": 1773295992,
+    "_id": "doc-10bf6f52258afd370d64517ed2920f61"
+  },
+  "doc-3423805a87c86175a30c9a30c2309c60": {
+    "entity_names": [
+      "ES結案人員調整及說明",
+      "南山人壽",
+      "Chuen.lin",
+      "World Athletics Federation"
+    ],
+    "count": 4,
+    "create_time": 1773295993,
+    "update_time": 1773295993,
+    "_id": "doc-3423805a87c86175a30c9a30c2309c60"
+  },
+  "doc-1a7e1aa92c43d4dc42cdd6a58e913deb": {
+    "entity_names": [
+      "Sandy.jin",
+      "Algosec问题数据抓取",
+      "World Athletics Federation",
+      "玉山銀行",
+      "Shawn.hu"
+    ],
+    "count": 5,
+    "create_time": 1773296079,
+    "update_time": 1773296079,
+    "_id": "doc-1a7e1aa92c43d4dc42cdd6a58e913deb"
+  },
+  "doc-62eac16499da6c2f6362ce39f5c23e5d": {
+    "entity_names": [
+      "Tim Chen",
+      "亞太切換遠傳線路",
+      "Jie Chen",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773296081,
+    "update_time": 1773296081,
+    "_id": "doc-62eac16499da6c2f6362ce39f5c23e5d"
+  },
+  "doc-1b60ffb0a93e054f1ec153579d7b42b7": {
+    "entity_names": [
+      "ddwsysdb",
+      "功能確認",
+      "tsbpgsql01",
+      "Agent",
+      "Ubuntu 20.04 + PostgreSQL 13",
+      "Kevinkl.hsu",
+      "2025/08/22 10:00至2025/08/22 11:30",
+      "World Athletics Federation",
+      "台新銀行",
+      "Ubuntu 24.04 + PostgreSQL 17",
+      "Akira.chang"
+    ],
+    "count": 11,
+    "create_time": 1773296154,
+    "update_time": 1773296154,
+    "_id": "doc-1b60ffb0a93e054f1ec153579d7b42b7"
+  },
+  "doc-f238d0a2b572654941dddd94117cb0ec": {
+    "entity_names": [
+      "2025/03/17 08:45至2025/03/17 18:00",
+      "委外區桌面雲-NSX升級",
+      "Adam.luo",
+      "World Athletics Federation",
+      "玉山銀行"
+    ],
+    "count": 5,
+    "create_time": 1773296191,
+    "update_time": 1773296191,
+    "_id": "doc-f238d0a2b572654941dddd94117cb0ec"
+  },
+  "doc-f29236fbd8778c402c970222bad4ec37": {
+    "entity_names": [
+      "VCMP Host",
+      "CBP2 OCP DR網段建制- F5",
+      "Virtual Server",
+      "UCS",
+      "VCMP Guest",
+      "Default Gateway",
+      "World Athletics Federation",
+      "玉山銀行",
+      "Joe Jiang"
+    ],
+    "count": 9,
+    "create_time": 1773296231,
+    "update_time": 1773296231,
+    "_id": "doc-f29236fbd8778c402c970222bad4ec37"
+  },
+  "doc-cbdcf41612664c365142c65e2e0d76eb": {
+    "entity_names": [
+      "Jimmy.lee",
+      "VES Server",
+      "World Athletics Federation",
+      "玉山證券"
+    ],
+    "count": 4,
+    "create_time": 1773296348,
+    "update_time": 1773296348,
+    "_id": "doc-cbdcf41612664c365142c65e2e0d76eb"
+  },
+  "doc-918cb9cf953f178ce5b12b1ee0c4e236": {
+    "entity_names": [
+      "Pifu",
+      "WUG NetFlow Service Check Standby",
+      "CPU Memory Disk服務",
+      "NTA Log",
+      "介面流量監控",
+      "World Athletics Federation",
+      "凱基人壽",
+      "SNMP服務"
+    ],
+    "count": 8,
+    "create_time": 1773296348,
+    "update_time": 1773296348,
+    "_id": "doc-918cb9cf953f178ce5b12b1ee0c4e236"
+  },
+  "doc-95daa212fe290b14a9ff75cdf0662f9b": {
+    "entity_names": [
+      "封包抓取確認",
+      "Brandon.lee",
+      "DMZ F5",
+      "SW",
+      "Netflow生成問題",
+      "WAF",
+      "Gigamon",
+      "Jimmy.hsu",
+      "World Athletics Federation",
+      "凱基人壽",
+      "Policy",
+      "Bill"
+    ],
+    "count": 12,
+    "create_time": 1773296481,
+    "update_time": 1773296481,
+    "_id": "doc-95daa212fe290b14a9ff75cdf0662f9b"
+  },
+  "doc-3625835e0bdea65e40cea565f30ca0e8": {
+    "entity_names": [
+      "TPE-DMZ-UAT-3850-1",
+      "IntraAP-UAT-LTM",
+      "World Athletics Federation",
+      "192.168.205.0/24",
+      "DMZ-UAT-LTM",
+      "Kimi.lee",
+      "凱基人壽"
+    ],
+    "count": 7,
+    "create_time": 1773296482,
+    "update_time": 1773296482,
+    "_id": "doc-3625835e0bdea65e40cea565f30ca0e8"
+  },
+  "doc-7afeaf1f80f240ccd93eb0764a8d7509": {
+    "entity_names": [
+      "Algosec",
+      "Sandy Jin",
+      "Yushan Bank",
+      "Maintenance Record",
+      "World Athletics Federation",
+      "ASA Monitor",
+      "Shawn Hu"
+    ],
+    "count": 7,
+    "create_time": 1773296561,
+    "update_time": 1773296561,
+    "_id": "doc-7afeaf1f80f240ccd93eb0764a8d7509"
+  },
+  "doc-763b07d815a57349c42274dea6f51fd3": {
+    "entity_names": [
+      "Brandon Lee",
+      "Patrick Hung",
+      "DMZ-UAT-LTM",
+      "World Athletics Federation",
+      "凱基人壽"
+    ],
+    "count": 5,
+    "create_time": 1773296562,
+    "update_time": 1773296562,
+    "_id": "doc-763b07d815a57349c42274dea6f51fd3"
+  },
+  "doc-ea69ffcfc1e37bb0d491981999b0e031": {
+    "entity_names": [
+      "Lance Luo",
+      "凱基人壽",
+      "Hotfix T172",
+      "World Athletics Federation",
+      "Ethan Lo",
+      "SOP文件",
+      "Checkpoint MHO-Internet-IS"
+    ],
+    "count": 7,
+    "create_time": 1773296664,
+    "update_time": 1773296664,
+    "_id": "doc-ea69ffcfc1e37bb0d491981999b0e031"
+  },
+  "doc-979a2d53f745e13c3176ff5bb7d91006": {
+    "entity_names": [
+      "splkessh01",
+      "Linda.hsu",
+      "GCP報表欄位空白",
+      "Splunk每週Onsite作業",
+      "World Athletics Federation",
+      "台新銀行",
+      "xsoar"
+    ],
+    "count": 7,
+    "create_time": 1773296745,
+    "update_time": 1773296745,
+    "_id": "doc-979a2d53f745e13c3176ff5bb7d91006"
+  },
+  "doc-a41298c3f3bdd431b2c570942ab2a0fc": {
+    "entity_names": [
+      "vROPs 8.18 HF5",
+      "2025/04/14 15:30至2025/04/14 17:30",
+      "委外區桌面雲-Operations弱點修復",
+      "Adam.luo",
+      "World Athletics Federation",
+      "玉山銀行"
+    ],
+    "count": 6,
+    "create_time": 1773296746,
+    "update_time": 1773296746,
+    "_id": "doc-a41298c3f3bdd431b2c570942ab2a0fc"
+  }
+}

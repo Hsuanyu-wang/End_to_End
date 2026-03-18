@@ -1,17 +1,21 @@
-# graph_builder/__init__.py
+"""
+Graph Builder 模組
+
+提供圖譜建構功能
+"""
+
+from .base_builder import BaseGraphBuilder
 from .baseline_builder import BaselineGraphBuilder
 from .ontology_builder import OntologyGraphBuilder
+from .autoschema_builder import AutoSchemaKGBuilder
+from .lightrag_builder import LightRAGBuilder
+from .dynamic_schema_builder import DynamicSchemaBuilder
 
-# 註冊表：未來有新方法，只需在此新增一行
-BUILDER_REGISTRY = {
-    "baseline": BaselineGraphBuilder,
-    "ontology_learning": OntologyGraphBuilder
-}
-
-def get_graph_builder(method_name: str, graph_store, settings):
-    if method_name not in BUILDER_REGISTRY:
-        raise ValueError(f"未知的建圖方法: {method_name}。支援的方法: {list(BUILDER_REGISTRY.keys())}")
-    
-    # 實例化並注入相依元件
-    builder_class = BUILDER_REGISTRY[method_name]
-    return builder_class(graph_store, settings)
+__all__ = [
+    "BaseGraphBuilder",
+    "BaselineGraphBuilder",
+    "OntologyGraphBuilder",
+    "AutoSchemaKGBuilder",
+    "LightRAGBuilder",
+    "DynamicSchemaBuilder",
+]

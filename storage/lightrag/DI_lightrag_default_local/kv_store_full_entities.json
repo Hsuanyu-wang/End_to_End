@@ -1,0 +1,1295 @@
+{
+  "doc-3f8775862e3b8ea072578967e7520445": {
+    "entity_names": [
+      "GitLab升版17.10.8 → 18.1.6",
+      "C客戶",
+      "自動化封鎖清單異動儀表板建置",
+      "Tokyo",
+      "告警PWLAN觸發IPS高風險告警",
+      "geodb",
+      "Src=\"172.*\"",
+      "src=\"172.*\"",
+      "World Athletics Federation",
+      "B人員",
+      "Splunk駐點服務202510第一周"
+    ],
+    "count": 11,
+    "create_time": 1773778353,
+    "update_time": 1773778353,
+    "_id": "doc-3f8775862e3b8ea072578967e7520445"
+  },
+  "doc-c0cd3e323fc2a43e461d7af757b08706": {
+    "entity_names": [
+      "Splunk工作事項- 0729",
+      "C人員",
+      "未明確定義priotiry的identity將設為low",
+      "Identity將帳號狀態加入category欄位",
+      "Noah Carter",
+      "Assets僅針對H1、H2、H3的設備將priority設為critical，其餘皆設為low",
+      "DLDK container NOT running",
+      "Identity新增title(職稱)",
+      "E客戶",
+      "例行月維護",
+      "Asset and Identity priority確認",
+      "刪除舊版本殘留的ES threat intelligence download設定"
+    ],
+    "count": 12,
+    "create_time": 1773778353,
+    "update_time": 1773778353,
+    "_id": "doc-c0cd3e323fc2a43e461d7af757b08706"
+  },
+  "doc-0640212d45b4b92d91d0255cf90edf96": {
+    "entity_names": [
+      "C人員",
+      "Splunk升版完成",
+      "2025/11/24 09:00至2025/11/24 17:30",
+      "E客戶",
+      "Cutting-Edge Technology"
+    ],
+    "count": 5,
+    "create_time": 1773778365,
+    "update_time": 1773778365,
+    "_id": "doc-0640212d45b4b92d91d0255cf90edf96"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "entity_names": [
+      "splunk_銀行處12月月維護",
+      "375 GB",
+      "10.0.2/2025.11.14",
+      "F客戶",
+      "1276GB",
+      "9.3.3/2025.02.26",
+      "2025/12/26 15:00至2025/12/26 16:00",
+      "A人員"
+    ],
+    "count": 8,
+    "create_time": 1773778366,
+    "update_time": 1773778366,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b": {
+    "entity_names": [
+      "A客戶",
+      "C人員",
+      "DC_ARP_table",
+      "A人員"
+    ],
+    "count": 4,
+    "create_time": 1773778377,
+    "update_time": 1773778377,
+    "_id": "doc-dfcf7e8f6051fb59b7f2cec85fa4dc4b"
+  },
+  "doc-9648988cb67db9843bc13754ac3d6ab6": {
+    "entity_names": [
+      "Carbon-Fiber Spikes",
+      "20GB",
+      "Red Hat 9.4",
+      "Splunk_12月維護",
+      "I客戶",
+      "CVE-2023-3567,CVE-2023-4133,CVE-2023-6932,CVE-2023-39198,CVE-2023-51043,CVE-2023-51779,CVE-2023-5178",
+      "55.15GB",
+      "A人員"
+    ],
+    "count": 8,
+    "create_time": 1773778378,
+    "update_time": 1773778378,
+    "_id": "doc-9648988cb67db9843bc13754ac3d6ab6"
+  },
+  "doc-17b29d261b8bce3ef9105d1c8a78415d": {
+    "entity_names": [
+      "C人員",
+      "Carbon-Fiber Spikes",
+      "A客戶",
+      "維護紀錄",
+      "DC_ARP報表語法檢查",
+      "ARP_table報表",
+      "A人員"
+    ],
+    "count": 7,
+    "create_time": 1773778387,
+    "update_time": 1773778387,
+    "_id": "doc-17b29d261b8bce3ef9105d1c8a78415d"
+  },
+  "doc-886b4b629f3088ef8656c792cf7b3e8b": {
+    "entity_names": [
+      "Splunk_11月維護",
+      "G客戶",
+      "A人員"
+    ],
+    "count": 3,
+    "create_time": 1773778387,
+    "update_time": 1773778387,
+    "_id": "doc-886b4b629f3088ef8656c792cf7b3e8b"
+  },
+  "doc-76068a2f95fd89e7ceb4741d4eb478ce": {
+    "entity_names": [
+      "C人員",
+      "Splunk",
+      "2025/11/17 09:00至2025/11/17 17:00",
+      "E客戶",
+      "Cutting-Edge Technology"
+    ],
+    "count": 5,
+    "create_time": 1773778399,
+    "update_time": 1773778399,
+    "_id": "doc-76068a2f95fd89e7ceb4741d4eb478ce"
+  },
+  "doc-72f381579d364fa91cc3e73153e0af97": {
+    "entity_names": [
+      "C人員",
+      "Carbon-Fiber Spikes",
+      "KGIBIDX04",
+      "DEP02主機",
+      "James",
+      "B客戶",
+      "CDIBHMGT02",
+      "B部門",
+      "FISAC",
+      "SH KVstore引擎",
+      "A人員"
+    ],
+    "count": 11,
+    "create_time": 1773778404,
+    "update_time": 1773778404,
+    "_id": "doc-72f381579d364fa91cc3e73153e0af97"
+  },
+  "doc-fe7268a7cb94439d483759e501068db6": {
+    "entity_names": [
+      "World Athletics Championship",
+      "B客戶",
+      "splunk_B客戶B部門11月月維護",
+      "World Athletics Federation",
+      "A人員"
+    ],
+    "count": 5,
+    "create_time": 1773778406,
+    "update_time": 1773778406,
+    "_id": "doc-fe7268a7cb94439d483759e501068db6"
+  },
+  "doc-d96ca3133c54d9d76add7de434ee05b5": {
+    "entity_names": [
+      "C人員",
+      "新增indexer",
+      "Centos作業系統升級",
+      "Carbon-Fiber Spikes",
+      "A部門,B部門",
+      "A人員,C人員",
+      "A部門",
+      "B客戶",
+      "B部門",
+      "FIsac情資撈取",
+      "Splunk每週onsite",
+      "A人員"
+    ],
+    "count": 12,
+    "create_time": 1773778428,
+    "update_time": 1773778428,
+    "_id": "doc-d96ca3133c54d9d76add7de434ee05b5"
+  },
+  "doc-8bddb98b4a84e394c0a4558b42ae12d0": {
+    "entity_names": [
+      "C人員",
+      "enableDataIntegrityControl=true",
+      "urgency",
+      "ES升版",
+      "high",
+      "category",
+      "Carbon-Fiber Spikes",
+      "medium",
+      "defaut",
+      "critical",
+      "2025/12/18 09:00至2025/12/18 17:30",
+      "severity",
+      "E客戶",
+      "硬體狀態",
+      "critical, high"
+    ],
+    "count": 15,
+    "create_time": 1773778428,
+    "update_time": 1773778428,
+    "_id": "doc-8bddb98b4a84e394c0a4558b42ae12d0"
+  },
+  "doc-5f0773b8daffa7a65254a73867e36afb": {
+    "entity_names": [
+      "2025/11/26 13:30至2025/11/26 14:30",
+      "Carbon-Fiber Spikes",
+      "D客戶",
+      "pice_logs",
+      "B人員"
+    ],
+    "count": 5,
+    "create_time": 1773778442,
+    "update_time": 1773778442,
+    "_id": "doc-5f0773b8daffa7a65254a73867e36afb"
+  },
+  "doc-0d3d3acb3c191c9e65fac21b5ed9284f": {
+    "entity_names": [
+      "C客戶",
+      "Gitlab版本升及18.1.6 -> 18.5.2",
+      "AI網站服務紀錄調閱儀表板建置",
+      "DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標告警調整",
+      "Splunk駐點服務202511第四周",
+      "CVE-2025-11224",
+      "B人員",
+      "GeoDB",
+      "Cutting-Edge Technology"
+    ],
+    "count": 9,
+    "create_time": 1773778443,
+    "update_time": 1773778443,
+    "_id": "doc-0d3d3acb3c191c9e65fac21b5ed9284f"
+  },
+  "doc-f62a98ad02d11a4c9618cbda43281859": {
+    "entity_names": [
+      "C人員",
+      "#客戶",
+      "新增indexer",
+      "Interest Rates",
+      "A部門",
+      "NTP服務檢查",
+      "B客戶",
+      "KVstore憑證效期檢查",
+      "Splunk月報寄送",
+      "FIsac情資撈取",
+      "B部門",
+      "Market Selloff",
+      "IP調整",
+      "Splunk套件升級",
+      "Splunk每週onsite",
+      "A人員"
+    ],
+    "count": 16,
+    "create_time": 1773778467,
+    "update_time": 1773778467,
+    "_id": "doc-f62a98ad02d11a4c9618cbda43281859"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "entity_names": [
+      "C人員",
+      "Splunk每週onsite",
+      "A部門",
+      "B客戶",
+      "Centos作業系統升級(評估中)",
+      "FISAC資料收容-進行中",
+      "DEP02 root帳號使用確認",
+      "SH KVstore引擎異常測試-進行中",
+      "Management搜尋異常",
+      "LDAP設定",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "A人員,B客戶",
+      "Tenable API App串接",
+      "BTDC2問題處理",
+      "World Athletics Federation",
+      "A人員"
+    ],
+    "count": 16,
+    "create_time": 1773778469,
+    "update_time": 1773778469,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-8ebe784b7ece61edcdd2e054763c0ce3": {
+    "entity_names": [
+      "C人員",
+      "DEP02 ([IP])移轉(下周進行)",
+      "Nexon Technologies",
+      "Interest Rates",
+      "DEP02 root服務確認",
+      "A部門",
+      "B客戶",
+      "Centos作業系統升級(評估中)",
+      "Splunk Add-on for Google Cloud Platform的sourcetype",
+      "A人員",
+      "SH KVstore引擎異常測試-進行中",
+      "Management.搜尋異常",
+      "B部門",
+      "Tenable API App串接",
+      "BTDC2問題處理",
+      "Splunk每週onsite",
+      "FISAC資料收容-進行中"
+    ],
+    "count": 17,
+    "create_time": 1773778498,
+    "update_time": 1773778498,
+    "_id": "doc-8ebe784b7ece61edcdd2e054763c0ce3"
+  },
+  "doc-56b76e765b58a558604d5d6f2575d2ca": {
+    "entity_names": [
+      "Splunk_11月維護",
+      "8.0.6 / 2024.10.22",
+      "CVE-2023-51043",
+      "20GB",
+      "Red Hat 9.4",
+      "10.0.1 / 2025.09.25",
+      "CVE-2023-39198",
+      "I客戶",
+      "3.4% Decline",
+      "CVE-2023-5178",
+      "CVE-2023-3567",
+      "CVE-2023-6932",
+      "133.26GB",
+      "CVE-2023-4133",
+      "CVE-2023-51779",
+      "A人員"
+    ],
+    "count": 16,
+    "create_time": 1773778499,
+    "update_time": 1773778499,
+    "_id": "doc-56b76e765b58a558604d5d6f2575d2ca"
+  },
+  "doc-f6caccf00501b5f4caf06dcfc047ae9e": {
+    "entity_names": [
+      "Splunk駐點服務202511第三周(2025/11/17)",
+      "C客戶",
+      "2025/11/17 13:30 to 2025/11/17 17:30",
+      "eStreamer Data Abnormality Handling",
+      "AI Website Service Log Review (202508-202510)",
+      "Weakness Scan Report Information Organization",
+      "KPMG Penetration Test IP Whitelist Addition",
+      "B人員",
+      "GeoDB Update",
+      "Quarterly Earnings Report"
+    ],
+    "count": 10,
+    "create_time": 1773778515,
+    "update_time": 1773778515,
+    "_id": "doc-f6caccf00501b5f4caf06dcfc047ae9e"
+  },
+  "doc-79f23819b8640c43571e6e9b3e4098e0": {
+    "entity_names": [
+      "C客戶",
+      "C人員",
+      "Carbon-Fiber Spikes",
+      "Splunk SH異常hanging",
+      "B人員"
+    ],
+    "count": 5,
+    "create_time": 1773778516,
+    "update_time": 1773778516,
+    "_id": "doc-79f23819b8640c43571e6e9b3e4098e0"
+  },
+  "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51": {
+    "entity_names": [
+      "9.4.3 (2025.06.05)",
+      "Federal Reserve Policy Announcement",
+      "Splunk_10月維護",
+      "2GB",
+      "3.4% Decline",
+      "G客戶",
+      "10.0.1 (2025.09.25)",
+      "A人員"
+    ],
+    "count": 8,
+    "create_time": 1773778529,
+    "update_time": 1773778529,
+    "_id": "doc-67cc5a5ed7a1cbea5f9e6d5f5d08ab51"
+  },
+  "doc-1e6e1908b68b82814f06780675f7938b": {
+    "entity_names": [
+      "C人員",
+      "IDX03",
+      "IDX硬碟空間滿载与资料同步问题",
+      "B客戶",
+      "IDX01",
+      "IDX02",
+      "IDX硬碟空間滿載與資料同步問題",
+      "Cutting-Edge Technology"
+    ],
+    "count": 8,
+    "create_time": 1773778530,
+    "update_time": 1773778530,
+    "_id": "doc-1e6e1908b68b82814f06780675f7938b"
+  },
+  "doc-25d7c29d65aa0e4d54fb4af54207fa0d": {
+    "entity_names": [
+      "C人員",
+      "threat object重複顯示",
+      "資產新增報廢/營運中欄位",
+      "IIS LOG拋送目的",
+      "ES版本升級",
+      "SH FISAC API input (未使用)",
+      "imsdb02UF中舊的殘留input設定",
+      "2025/11/14 09:00至2025/11/14 15:33",
+      "splunk自動version check",
+      "CEF outputs套件調整送出格式",
+      "E客戶",
+      "Splunk版本升級",
+      "Quarterly Earnings Report"
+    ],
+    "count": 13,
+    "create_time": 1773778559,
+    "update_time": 1773778559,
+    "_id": "doc-25d7c29d65aa0e4d54fb4af54207fa0d"
+  },
+  "doc-0944d4a59fb7a84bd79d2fca8361e518": {
+    "entity_names": [
+      "2025/12/17 13:30至2025/12/17 18:00",
+      "Centos作業系統升級(評估中)",
+      "SH KVstore引擎異常測試-進行中",
+      "Linux主機使用者與使用者權限",
+      "Tenable API App串接",
+      "C人員",
+      "DEP02 ([IP])移轉(下周進行)",
+      "新crowdstrike套件",
+      "es_admin_user與admin角色",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "forwarder",
+      "james",
+      "A人員",
+      "新增DNS設定",
+      "PA每月報表補寄",
+      "FISAC資料收容-進行中",
+      "B客戶",
+      "SH",
+      "Splunk角色能力異常",
+      "Cutting-Edge Technology"
+    ],
+    "count": 20,
+    "create_time": 1773778569,
+    "update_time": 1773778569,
+    "_id": "doc-0944d4a59fb7a84bd79d2fca8361e518"
+  },
+  "doc-3c4967b23b72f04d5c4ef37149d21ede": {
+    "entity_names": [
+      "Splunk MA 10月定保.DM20250088_(6/12)",
+      "C人員",
+      "9.3.3 / 2025.02.26",
+      "Interest Rates",
+      "10.0.1 / 2025.09.25",
+      "E客戶"
+    ],
+    "count": 6,
+    "create_time": 1773778571,
+    "update_time": 1773778571,
+    "_id": "doc-3c4967b23b72f04d5c4ef37149d21ede"
+  },
+  "doc-726c374f489423e007bce76f7810b46e": {
+    "entity_names": [
+      "轉送器監視設定中更新uf清單",
+      "伺服器效能：正常",
+      "系統優化建議：根據說明定期檢查",
+      "2025/11/24 10:30至2025/11/24 12:00",
+      "132GB",
+      "10.0.2/2025.11.14",
+      "F客戶",
+      "splunk_信用卡處11月月維護",
+      "9.3.3/2025.02.26",
+      "101台UF已超過15分鐘未與indexer連線",
+      "1.授權用量：建議擴充",
+      "100GB",
+      "World Athletics Federation",
+      "A人員"
+    ],
+    "count": 14,
+    "create_time": 1773778598,
+    "update_time": 1773778598,
+    "_id": "doc-726c374f489423e007bce76f7810b46e"
+  },
+  "doc-07959bdb8bab221c9c80a1c3e85776b3": {
+    "entity_names": [
+      "系統日誌分析",
+      "C人員",
+      "設備狀態檢查",
+      "健康狀態檢查",
+      "Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12)",
+      "A客戶",
+      "A人員",
+      "系統參數檢查",
+      "Quarterly Earnings Report"
+    ],
+    "count": 9,
+    "create_time": 1773778598,
+    "update_time": 1773778598,
+    "_id": "doc-07959bdb8bab221c9c80a1c3e85776b3"
+  },
+  "doc-5930b403906ecb929487592cef5210f2": {
+    "entity_names": [
+      "Splunk駐點服務202511第二周",
+      "C客戶",
+      "B人員",
+      "Cutting-Edge Technology"
+    ],
+    "count": 4,
+    "create_time": 1773778606,
+    "update_time": 1773778606,
+    "_id": "doc-5930b403906ecb929487592cef5210f2"
+  },
+  "doc-068ca517cbebf973fd4089bd45ef615c": {
+    "entity_names": [
+      "C客戶",
+      "B人員",
+      "Splunk駐點服務202512第四周",
+      "Interest Rates"
+    ],
+    "count": 4,
+    "create_time": 1773778607,
+    "update_time": 1773778607,
+    "_id": "doc-068ca517cbebf973fd4089bd45ef615c"
+  },
+  "doc-333af5cc1ff286e512f36be66d1aa78b": {
+    "entity_names": [
+      "C人員",
+      "sailag",
+      "FISAC資料收容-進行中",
+      "A部門",
+      "B客戶",
+      "SH KVstore引擎異常測試-進行中",
+      "PA每月報表觸發動作變更",
+      "B部門",
+      "172.18.44.33(DEP02)",
+      "Splunk每週onsite",
+      "A人員"
+    ],
+    "count": 11,
+    "create_time": 1773778618,
+    "update_time": 1773778618,
+    "_id": "doc-333af5cc1ff286e512f36be66d1aa78b"
+  },
+  "doc-dddcb833d814b293bd936732652206d0": {
+    "entity_names": [
+      "World Athletics Federation",
+      "F客戶",
+      "splunk_信用卡處12月維護",
+      "A人員"
+    ],
+    "count": 4,
+    "create_time": 1773778619,
+    "update_time": 1773778619,
+    "_id": "doc-dddcb833d814b293bd936732652206d0"
+  },
+  "doc-ab226f704fc1b4d45dd06222f40cb39f": {
+    "entity_names": [
+      "C客戶",
+      "<Gen AI連線纪录(每日): monthly报告>",
+      "2025/12/02 13:30至2025/12/02 17:30",
+      "<Gen AI連線纪录(整月): monthly report>",
+      "Splunk駐點服務202512第一周(2025/12/2)",
+      "2025/12/02 13:30至02 17:30",
+      "<Gen AI連線紀錄(每日): monthly report>",
+      "<Gen AI連线纪录(整月): monthly报告>",
+      "B人員",
+      "<Gen AI連线紀錄(整月): monthly报告>",
+      "World Athletics Federation"
+    ],
+    "count": 11,
+    "create_time": 1773778639,
+    "update_time": 1773778639,
+    "_id": "doc-ab226f704fc1b4d45dd06222f40cb39f"
+  },
+  "doc-d0cef05272158ef916c2b84f625b2ddb": {
+    "entity_names": [
+      "C人員",
+      "2025/11/04 13:30至2025/11/04 17:30",
+      "Carbon-Fiber Spikes",
+      "threat object",
+      "ES版本升級",
+      "SH FISAC API input (未使用)",
+      "debug log",
+      "CEF outputs套件",
+      "E客戶",
+      "Apim1與imsdb01兩台UF",
+      "RES3SQL19",
+      "Splunk版本升級"
+    ],
+    "count": 12,
+    "create_time": 1773778641,
+    "update_time": 1773778641,
+    "_id": "doc-d0cef05272158ef916c2b84f625b2ddb"
+  },
+  "doc-cafeb58d25cc4cbc85eaf07cf415496a": {
+    "entity_names": [
+      "C人員",
+      "Apim1",
+      "資產新增報廢/營運中欄位",
+      "ES版本升級",
+      "SH FISAC API input (未使用)",
+      "imsdb01",
+      "Finding會因為threat object重複顯示",
+      "Disable splunk自動version check",
+      "CEF outputs套件調整送出格式",
+      "E客戶",
+      "2025/11/11 13:30至2025/11/11 17:00",
+      "Cutting-Edge Technology",
+      "Splunk版本升級"
+    ],
+    "count": 13,
+    "create_time": 1773778663,
+    "update_time": 1773778663,
+    "_id": "doc-cafeb58d25cc4cbc85eaf07cf415496a"
+  },
+  "doc-8a40e782f3c3804da0a1d45dfa05eefe": {
+    "entity_names": [
+      "C人員",
+      "SASE VPN Login Success Report",
+      "HEC Token for XSOAR",
+      "SOAR",
+      "E客戶"
+    ],
+    "count": 5,
+    "create_time": 1773778663,
+    "update_time": 1773778663,
+    "_id": "doc-8a40e782f3c3804da0a1d45dfa05eefe"
+  },
+  "doc-412e17859c430b9ce8b929bc152053ef": {
+    "entity_names": [
+      "C人員",
+      "B客戶",
+      "Splunk Indexer queue full",
+      "100m Sprint Record"
+    ],
+    "count": 4,
+    "create_time": 1773778677,
+    "update_time": 1773778677,
+    "_id": "doc-412e17859c430b9ce8b929bc152053ef"
+  },
+  "doc-738a58105cbf665748b3257e0cfee9ac": {
+    "entity_names": [
+      "2025/12/09 13:30至2025/12/09 17:30",
+      "C人員",
+      "Carbon-Fiber Spikes",
+      "datamodel dnsAMD",
+      "forcepoint endpoint dlp資料收容",
+      "checkpoint logclm uf log limit",
+      "維護紀錄",
+      "E客戶"
+    ],
+    "count": 8,
+    "create_time": 1773778677,
+    "update_time": 1773778677,
+    "_id": "doc-738a58105cbf665748b3257e0cfee9ac"
+  },
+  "doc-203eba714089c79438cfc39755f054ce": {
+    "entity_names": [
+      "F客戶",
+      "World Athletics Federation",
+      "2025/11/24 11:30至2025/11/24 12:00",
+      "splunk_銀行處11月月維護",
+      "A人員"
+    ],
+    "count": 5,
+    "create_time": 1773778693,
+    "update_time": 1773778693,
+    "_id": "doc-203eba714089c79438cfc39755f054ce"
+  },
+  "doc-c7743e93210e95e8e40e0d2a627684b7": {
+    "entity_names": [
+      "172.20.137.45",
+      "2025/11/19  13:30至2025/11/19  14:30",
+      "Carbon-Fiber Spikes",
+      "UDP",
+      "Checkpoint告警",
+      "I客戶",
+      "ASA事件",
+      "Indexer Cluster",
+      "A人員"
+    ],
+    "count": 9,
+    "create_time": 1773778694,
+    "update_time": 1773778694,
+    "_id": "doc-c7743e93210e95e8e40e0d2a627684b7"
+  },
+  "doc-b0add79f46581b83deba682a2c89cdb7": {
+    "entity_names": [
+      "C人員",
+      "Splunk升版完成",
+      "2025/12/24 09:00至2025/12/24 17:00",
+      "E客戶",
+      "World Athletics Federation"
+    ],
+    "count": 5,
+    "create_time": 1773778710,
+    "update_time": 1773778710,
+    "_id": "doc-b0add79f46581b83deba682a2c89cdb7"
+  },
+  "doc-2fe3f974e54dd1f1ad98289cc79980d6": {
+    "entity_names": [
+      "C客戶",
+      "MG02磁碟用量超過90%",
+      "FWD03備份異常",
+      "Ryan之Splunk帳號",
+      "Splunk駐點服務202512第三周",
+      "Arcsight和Splunk歷史案件調閱",
+      "GeoDB",
+      "B人員",
+      "Cutting-Edge Technology"
+    ],
+    "count": 9,
+    "create_time": 1773778718,
+    "update_time": 1773778718,
+    "_id": "doc-2fe3f974e54dd1f1ad98289cc79980d6"
+  },
+  "doc-b8ec2739edb4ee1ccc4cf68534e90be5": {
+    "entity_names": [
+      "C客戶",
+      "B人員",
+      "Splunk SIEM",
+      "Carbon-Fiber Spikes"
+    ],
+    "count": 4,
+    "create_time": 1773778719,
+    "update_time": 1773778719,
+    "_id": "doc-b8ec2739edb4ee1ccc4cf68534e90be5"
+  },
+  "doc-345e520afd2a192e25824abb33740d46": {
+    "entity_names": [
+      "C人員",
+      "PIMS System",
+      "A客戶",
+      "Production System",
+      "UAT System",
+      "Splunk Version Upgrade",
+      "Cutting-Edge Technology"
+    ],
+    "count": 7,
+    "create_time": 1773778732,
+    "update_time": 1773778732,
+    "_id": "doc-345e520afd2a192e25824abb33740d46"
+  },
+  "doc-cdd29ae3537f38a27c3848632ad51359": {
+    "entity_names": [
+      "C客戶",
+      "Carbon-Fiber Spikes",
+      "Cybereyes API",
+      "Cybereyes高(high)风险告警_new (測試中)",
+      "大量网站攻击尝试且触发Cybereyes告警_new (測試中)",
+      "GeoDB",
+      "FWD03底層資料收容",
+      "B人員",
+      "Splunk駐點服務202601第二周"
+    ],
+    "count": 9,
+    "create_time": 1773778733,
+    "update_time": 1773778733,
+    "_id": "doc-cdd29ae3537f38a27c3848632ad51359"
+  },
+  "doc-1e6839b81653aa7c9b7ec794f3447380": {
+    "entity_names": [
+      "props.conf",
+      "C人員",
+      "2025/12/23  09:00至2025/12/23  18:00",
+      "SASE VPN kick session報表",
+      "100m Sprint Record",
+      "Websebse log",
+      "E客戶"
+    ],
+    "count": 7,
+    "create_time": 1773778749,
+    "update_time": 1773778749,
+    "_id": "doc-1e6839b81653aa7c9b7ec794f3447380"
+  },
+  "doc-d02e98febcd8f8650bbe77d789a41d69": {
+    "entity_names": [
+      "C人員",
+      "2025/12/04 13:30至2025/12/04 17:00",
+      "E客戶",
+      "SASE VPN登入成功報表條件",
+      "Cutting-Edge Technology"
+    ],
+    "count": 5,
+    "create_time": 1773778750,
+    "update_time": 1773778750,
+    "_id": "doc-d02e98febcd8f8650bbe77d789a41d69"
+  },
+  "doc-b6f1e5469f6278ea8a34bff96b293b69": {
+    "entity_names": [
+      "E客戶",
+      "Splunk駐點- 20251230",
+      "C人員",
+      "Cutting-Edge Technology"
+    ],
+    "count": 4,
+    "create_time": 1773778759,
+    "update_time": 1773778759,
+    "_id": "doc-b6f1e5469f6278ea8a34bff96b293b69"
+  },
+  "doc-1df6d8d113790f99d50593095e1e5e58": {
+    "entity_names": [
+      "C人員",
+      "Carbon-Fiber Spikes",
+      "Splunk駐點服務20251226",
+      "維護紀錄",
+      "E客戶"
+    ],
+    "count": 5,
+    "create_time": 1773778768,
+    "update_time": 1773778768,
+    "_id": "doc-1df6d8d113790f99d50593095e1e5e58"
+  },
+  "doc-5479196dee25b34d077c01190c6c728b": {
+    "entity_names": [
+      "C客戶",
+      "B人員",
+      "Splunk駐點服務202510第二周",
+      "Interest Rates"
+    ],
+    "count": 4,
+    "create_time": 1773778770,
+    "update_time": 1773778770,
+    "_id": "doc-5479196dee25b34d077c01190c6c728b"
+  },
+  "doc-39206ec5906f23d68e051b1df74d3ca7": {
+    "entity_names": [
+      "C人員",
+      "B客戶"
+    ],
+    "count": 2,
+    "create_time": 1773778778,
+    "update_time": 1773778778,
+    "_id": "doc-39206ec5906f23d68e051b1df74d3ca7"
+  },
+  "doc-5618eb566fb322ada0eb69bef88a7581": {
+    "entity_names": [
+      "C人員",
+      "防火牆事件匯入時間異常",
+      "維護纪录",
+      "I客戶",
+      "維護紀錄",
+      "World Athletics Federation",
+      "A人員"
+    ],
+    "count": 7,
+    "create_time": 1773778778,
+    "update_time": 1773778778,
+    "_id": "doc-5618eb566fb322ada0eb69bef88a7581"
+  },
+  "doc-7c1fca5402ff2eb1c53222e1d4db282a": {
+    "entity_names": [
+      "Cybereyes API介接(進行中)",
+      "C客戶",
+      "rsyslog轉送設定(減少資料流入)",
+      "FWD02磁碟用量異常處理",
+      "/etc/cron.d/logrotate-syslog",
+      "audit.log持續累積(FCB147的keep_logs設定導致永不刪除)",
+      "estreamer資料暴增",
+      "手動刪除audit資料(釋放空間)",
+      "Splunk駐點服務202601第一周",
+      "/var/log/messages-20251214單一檔案達148GB",
+      "B人員",
+      "messages暴增處理",
+      "Cutting-Edge Technology",
+      "clean.sh資料留存區間(定期清理舊資料，原為留存12小時，現改為6小時)"
+    ],
+    "count": 14,
+    "create_time": 1773778800,
+    "update_time": 1773778800,
+    "_id": "doc-7c1fca5402ff2eb1c53222e1d4db282a"
+  },
+  "doc-0b9e37e8f7e8a98183b1724c16ce814a": {
+    "entity_names": [
+      "C客戶",
+      "Splunk駐點服務202510第三周",
+      "Carbon-Fiber Spikes",
+      "<F5VPN特定使用者連線的紀錄(ssp)不含數位科技中心>",
+      "geodb",
+      "F5VPN特定使用者連線的紀錄(ssp)",
+      "<F5VPN特定使用者連線的紀錄(ssp)僅數位科技中心>",
+      "B人員",
+      "SAP重要TCode執行紀錄"
+    ],
+    "count": 9,
+    "create_time": 1773778802,
+    "update_time": 1773778802,
+    "_id": "doc-0b9e37e8f7e8a98183b1724c16ce814a"
+  },
+  "doc-75fa98905e1d68515f390e75c46adddb": {
+    "entity_names": [
+      "9.3.6/2025.07.31",
+      "635.27GB",
+      "Splunk_􏰀10月維護",
+      "Splunk_10月維護",
+      "B客戶",
+      "A人員",
+      "10.0.1/2025.09.25",
+      "285GB"
+    ],
+    "count": 8,
+    "create_time": 1773778833,
+    "update_time": 1773778833,
+    "_id": "doc-75fa98905e1d68515f390e75c46adddb"
+  },
+  "doc-942b136689124792272bc32a2898842c": {
+    "entity_names": [
+      "DEP02 root服務確認",
+      "Centos作業系統升級(評估中)",
+      "C同事",
+      "SH KVstore引擎異常測試-進行中",
+      "Tenable API App串接",
+      "BTDC2問題處理",
+      "Splunk每週onsite",
+      "B同事",
+      "C人員",
+      "DEP02 ([IP])移轉(下周進行)",
+      "A部門",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "Management.搜尋異常",
+      "B部門",
+      "A人員",
+      "#|B客戶",
+      "FISAC資料收容-進行中",
+      "Carbon-Fiber Spikes",
+      "B客戶"
+    ],
+    "count": 19,
+    "create_time": 1773778833,
+    "update_time": 1773778833,
+    "_id": "doc-942b136689124792272bc32a2898842c"
+  },
+  "doc-41be59e9bae9e87a716afd8b5a9e9ee1": {
+    "entity_names": [
+      "H客戶",
+      "C人員",
+      "Splunk平台",
+      "World Athletics Federation",
+      "Splunk平台維護案(06-11月)半年系統檢視_DM20250258_(1/2)"
+    ],
+    "count": 5,
+    "create_time": 1773778843,
+    "update_time": 1773778843,
+    "_id": "doc-41be59e9bae9e87a716afd8b5a9e9ee1"
+  },
+  "doc-8a83bcdf6e7b7269cfd17b4f21457de8": {
+    "entity_names": [
+      "SPLUNK",
+      "A客戶",
+      "Cutting-Edge Technology",
+      "A人員"
+    ],
+    "count": 4,
+    "create_time": 1773778845,
+    "update_time": 1773778845,
+    "_id": "doc-8a83bcdf6e7b7269cfd17b4f21457de8"
+  },
+  "doc-4861ed7c0c566a81f361adb6811a1523": {
+    "entity_names": [
+      "World Athletics Federation",
+      "splunk_信用卡處11月維護",
+      "F客戶",
+      "A人員"
+    ],
+    "count": 4,
+    "create_time": 1773778855,
+    "update_time": 1773778855,
+    "_id": "doc-4861ed7c0c566a81f361adb6811a1523"
+  },
+  "doc-5096c0cdf6972a3670732e4f9be1d36a": {
+    "entity_names": [
+      "9.3.8 / 2025.11.14",
+      "C人員",
+      "Splunk 2025 MA 11月定保.DM20250088_(7/12)",
+      "E客戶",
+      "10.0.2 / 2025.11.14",
+      "World Athletics Federation"
+    ],
+    "count": 6,
+    "create_time": 1773778867,
+    "update_time": 1773778867,
+    "_id": "doc-5096c0cdf6972a3670732e4f9be1d36a"
+  },
+  "doc-daa296a353c26f41dfc613743d24e936": {
+    "entity_names": [
+      "C人員",
+      "Splunk每週onsite",
+      "IDX cluster節點",
+      "B客戶",
+      "A部門",
+      "100m Sprint Record",
+      "B部門",
+      "PA報表寄信異常-未完成",
+      "新增indexer –完成",
+      "A人員"
+    ],
+    "count": 10,
+    "create_time": 1773778869,
+    "update_time": 1773778869,
+    "_id": "doc-daa296a353c26f41dfc613743d24e936"
+  },
+  "doc-1364984bd10139c2ef2cd5907a3a7591": {
+    "entity_names": [
+      "C人員",
+      "Switch_6FDC.csv",
+      "A客戶",
+      "ARP_table報表",
+      "World Athletics Federation",
+      "A人員"
+    ],
+    "count": 6,
+    "create_time": 1773778894,
+    "update_time": 1773778894,
+    "_id": "doc-1364984bd10139c2ef2cd5907a3a7591"
+  },
+  "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b": {
+    "entity_names": [
+      "C客戶",
+      "/var/log/secure",
+      "<HTTPS大量傳輸告警>",
+      "Carbon-Fiber Spikes",
+      "每日HTTP資料傳輸統計報表(m365)",
+      "2025/12/30 13:30至2025/12/30 17:30",
+      "FCB腳本",
+      "m365網址",
+      "Splunk駐點服務202512第五周",
+      "estreamer資料占用約109G",
+      "GeoDB",
+      "B人員",
+      "FWD02"
+    ],
+    "count": 13,
+    "create_time": 1773778897,
+    "update_time": 1773778897,
+    "_id": "doc-1ff26e3a56f4aaf4bbd7c0dfae03685b"
+  },
+  "doc-fcc4bf66788ce00c23c3e736753ea50a": {
+    "entity_names": [
+      "C人員",
+      "伺服器效能",
+      "版本更新",
+      "Quarterly Earnings",
+      "Splunk 2025 MA 07月定保.DM20250088_(3/12)",
+      "授權用量",
+      "E客戶"
+    ],
+    "count": 7,
+    "create_time": 1773778920,
+    "update_time": 1773778920,
+    "_id": "doc-fcc4bf66788ce00c23c3e736753ea50a"
+  },
+  "doc-95280ea367581dac710f0dc56c7a72f3": {
+    "entity_names": [
+      "ess_analyst",
+      "C人員",
+      "DEP02 ([IP])移轉(下周進行)",
+      "es_admin_user",
+      "B客戶",
+      "Splunk",
+      "Centos作業系統升級(評估中)",
+      "n8n",
+      "n8n無法連線至splunk問題",
+      "SH KVstore引擎異常測試-進行中",
+      "james",
+      "FISAC",
+      "World Athletics Federation",
+      "A人員"
+    ],
+    "count": 14,
+    "create_time": 1773778922,
+    "update_time": 1773778922,
+    "_id": "doc-95280ea367581dac710f0dc56c7a72f3"
+  },
+  "doc-3781d1671ca7126e99e7656264965fb6": {
+    "entity_names": [
+      "C人員",
+      "Splunk使用者權限調整",
+      "DEP02 ([IP])移轉(下周進行)",
+      "HANK",
+      "B客戶",
+      "FISAC資料收容-進行中",
+      "Centos作業系統升級(評估中)",
+      "Splunk",
+      "ess_analyst角色",
+      "SH KVstore引擎異常測試-進行中",
+      "Linux主機使用者與使用者權限",
+      "個人測試環境",
+      "james",
+      "maintainer角色",
+      "A人員"
+    ],
+    "count": 15,
+    "create_time": 1773778943,
+    "update_time": 1773778943,
+    "_id": "doc-3781d1671ca7126e99e7656264965fb6"
+  },
+  "doc-e2a0171ee9d19cc664d4d041d3e73ba2": {
+    "entity_names": [
+      "B客戶",
+      "splunk_B客戶B部門10月月維護",
+      "10.0.1/2025.09.25",
+      "9.3.3/2025.02.26",
+      "285GB",
+      "World Athletics Federation",
+      "A人員"
+    ],
+    "count": 7,
+    "create_time": 1773778943,
+    "update_time": 1773778943,
+    "_id": "doc-e2a0171ee9d19cc664d4d041d3e73ba2"
+  },
+  "doc-04465635a6b88183cbabbfe7e25635dd": {
+    "entity_names": [
+      "Splunk_11月維護",
+      "9.3.6/2025.07.31",
+      "Splunk_七維護",
+      "Carbon-Fiber Spikes",
+      "B客戶",
+      "10.0.2/2025.11.14",
+      "A人員",
+      "620.21GB",
+      "285GB"
+    ],
+    "count": 9,
+    "create_time": 1773778961,
+    "update_time": 1773778961,
+    "_id": "doc-04465635a6b88183cbabbfe7e25635dd"
+  },
+  "doc-c0c6684aa00106f16e7869f519061642": {
+    "entity_names": [
+      "C人員",
+      "伺服器效能",
+      "(ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12)",
+      "系統優化建議",
+      "E客戶",
+      "World Athletics Federation"
+    ],
+    "count": 6,
+    "create_time": 1773778962,
+    "update_time": 1773778962,
+    "_id": "doc-c0c6684aa00106f16e7869f519061642"
+  },
+  "doc-996c8aba3ce4de0e9bb90c0d569231f3": {
+    "entity_names": [
+      "C人員",
+      "E客戶",
+      "World Athletics Federation"
+    ],
+    "count": 3,
+    "create_time": 1773778969,
+    "update_time": 1773778969,
+    "_id": "doc-996c8aba3ce4de0e9bb90c0d569231f3"
+  },
+  "doc-d0d3b88d3601a1081c8354e0ef27952f": {
+    "entity_names": [
+      "C人員",
+      "Splunk Indexer Queue Full-20251215",
+      "2025/12/15 09:00至2025/12/15 18:00",
+      "B客戶",
+      "Cutting-Edge Technology"
+    ],
+    "count": 5,
+    "create_time": 1773778970,
+    "update_time": 1773778970,
+    "_id": "doc-d0d3b88d3601a1081c8354e0ef27952f"
+  },
+  "doc-082efb5c18d778427dcd94905e5f4370": {
+    "entity_names": [
+      "C客戶",
+      "Carbon-Fiber Spikes",
+      "KV Store憑證",
+      "Calvin",
+      "Geodb",
+      "Splunk駐點服務202511第一周",
+      "Ryan",
+      "Maintenance Record for C客戶",
+      "B人員",
+      "Heavy Forwarder磁碟用量調查"
+    ],
+    "count": 10,
+    "create_time": 1773778989,
+    "update_time": 1773778989,
+    "_id": "doc-082efb5c18d778427dcd94905e5f4370"
+  },
+  "doc-15d6c505e6a20b598aa21d52b466adcd": {
+    "entity_names": [
+      "C客戶",
+      "FWD03底層資料收容filter設定",
+      "Splunk駐點服務202601第三周",
+      "HTTP對外大量傳輸資料報表調整",
+      "Cutting-Edge Technology",
+      "B人員",
+      "HTTP對外大量傳輸資料報表",
+      "Gitlab漏洞修補18.5.4 -> 18.5.5"
+    ],
+    "count": 8,
+    "create_time": 1773778992,
+    "update_time": 1773778992,
+    "_id": "doc-15d6c505e6a20b598aa21d52b466adcd"
+  },
+  "doc-8a81645d1d338ac013fa594b14c35640": {
+    "entity_names": [
+      "D客戶",
+      "Splunk 202510-12季維護",
+      "B人員"
+    ],
+    "count": 3,
+    "create_time": 1773778999,
+    "update_time": 1773778999,
+    "_id": "doc-8a81645d1d338ac013fa594b14c35640"
+  },
+  "doc-84c3e0271089b72556be831ea38a055f": {
+    "entity_names": [
+      "C人員",
+      "B客戶",
+      "2025/12/11 09:00至2025/12/11 18:00",
+      "Splunk Indexer queue full - 20251211",
+      "Cutting-Edge Technology"
+    ],
+    "count": 5,
+    "create_time": 1773779006,
+    "update_time": 1773779006,
+    "_id": "doc-84c3e0271089b72556be831ea38a055f"
+  },
+  "doc-1e7cec156f57837e8d25cbe83a6db45f": {
+    "entity_names": [
+      "C客戶",
+      "B人員",
+      "Carbon-Fiber Spikes",
+      "Splunk駐點服務202510第四周"
+    ],
+    "count": 4,
+    "create_time": 1773779020,
+    "update_time": 1773779020,
+    "_id": "doc-1e7cec156f57837e8d25cbe83a6db45f"
+  },
+  "doc-7504d68fad10caa1cd0ea41314ed2ede": {
+    "entity_names": [
+      "C人員",
+      "A部門",
+      "B客戶",
+      "es_admin_user",
+      "2025/12/24 13:30至2025/12/24 20:00",
+      "PA每月報表觸發動作變更",
+      "B部門",
+      "james",
+      "172.18.44.33(DEP02)",
+      "Cutting-Edge Technology",
+      "Splunk每週onsite",
+      "A人員"
+    ],
+    "count": 12,
+    "create_time": 1773779042,
+    "update_time": 1773779042,
+    "_id": "doc-7504d68fad10caa1cd0ea41314ed2ede"
+  },
+  "doc-2940790b50eb2cba2a5e944b95a94dd5": {
+    "entity_names": [
+      "C人員",
+      "Carbon-Fiber Spikes",
+      "Splunk bundle儲存量過大",
+      "B客戶",
+      "A部門",
+      "PA報表",
+      "KV store憑證效期",
+      "FISAC資料收容",
+      "B部門",
+      "Indexer索引同步狀態",
+      "Splunk每週onsite",
+      "A人員"
+    ],
+    "count": 12,
+    "create_time": 1773779045,
+    "update_time": 1773779045,
+    "_id": "doc-2940790b50eb2cba2a5e944b95a94dd5"
+  },
+  "doc-c41e50d3a458388dc7fe53ece68ee69f": {
+    "entity_names": [
+      "C客戶",
+      "VirusTotal",
+      "AbuseIPDB",
+      "geodb",
+      "Splunk駐點服務202510第五周",
+      "B人員",
+      "Cutting-Edge Technology"
+    ],
+    "count": 7,
+    "create_time": 1773779053,
+    "update_time": 1773779053,
+    "_id": "doc-c41e50d3a458388dc7fe53ece68ee69f"
+  }
+}

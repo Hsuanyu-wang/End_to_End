@@ -8,6 +8,9 @@
 import sys
 import os
 
+# 加入專案路徑
+sys.path.insert(0, '/home/End_to_End_RAG')
+
 def test_imports():
     """測試所有主要模組是否可以正常 import"""
     print("測試模組 import...")

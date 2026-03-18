@@ -1,0 +1,16 @@
+{
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "content": "這是一筆關於 F客戶 的維護紀錄。\n處理工程師為 A人員\n進行時間為 2025/12/26  15:00 至 2025/12/26  16:00。\n狀態描述 (Description): splunk_銀行處12月月維護\n處置動作 (Action): 1.授權用量 : 建議擴充\n-授權量 : 375 GB\n-平均授權使用量 : 1276GB\n2.伺服器效能 : 無\n3.系統優化建議 : 無\n4.版本更新 : 建議更新\n當前版本：9.3.3/2025.02.26\n最新版本：10.0.2/2025.11.14\n現行版本近期被掃出弱點，建議進行升版\n5.問題追蹤：無",
+    "file_path": "unknown_source",
+    "create_time": 1773734321,
+    "update_time": 1773734321,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  },
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "content": "這是一筆關於 B客戶 的維護紀錄。\n處理工程師為 A人員,C人員\n進行時間為 2026/01/07  13:30 至 2026/01/07  17:30。\n狀態描述 (Description): Splunk每週onsite\n處置動作 (Action): A部門\n1.Maintainer帳號權限確認\n已確認角色能力可符合日常工作使用。\n2.DEP02移轉後服務確認\n已確認服務正確，並再次執行健康檢查確認系統功能正常。\n3.PA報表寄送異常檢查\n已確認splunk有寄出報告並記錄於cim_modactions索引中，目前以請A同事向IT部門確認exchange是否有收到splunk報告。\nB部門\n1.FISAC資料收容-進行中\n目前已請B同事 向FISAC提交需使用API的IP申請單。\n2.SH KVstore引擎異常測試-進行中\n正在個人的測試環境測試SH 的KVstore狀態中。\n3.LDAP設定\n已完成splunk LDAP驗證設定\n代辦事項：\n1.Management搜尋異常\n2.BTDC2 問題處理\n3.DEP02 root帳號使用確認\n4.新增Splunk Add-on for Google Cloud Platform的sourcetype\n5.Tenable API App串接\n6.Centos作業系統升級(評估中)",
+    "file_path": "unknown_source",
+    "create_time": 1773734321,
+    "update_time": 1773734321,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  }
+}

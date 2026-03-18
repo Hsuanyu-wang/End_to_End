@@ -1,0 +1,86 @@
+{
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "relation_pairs": [
+      [
+        "B客戶",
+        "新增Splunk Add-on for Google Cloud Platform的sourcetype"
+      ],
+      [
+        "B客戶",
+        "FISAC API IP申請單"
+      ],
+      [
+        "B部門",
+        "SH KVstore引擎異常測試"
+      ],
+      [
+        "BTDC2問題處理",
+        "B客戶"
+      ],
+      [
+        "B部門",
+        "管理員搜尋異常調試"
+      ],
+      [
+        "E客戶",
+        "Trendmicro主機的日誌收集功能新增"
+      ],
+      [
+        "GCP報表中的User欄位值調整",
+        "Websense Log斷行確認與修正"
+      ],
+      [
+        "A人員",
+        "DEP02主機移轉執行"
+      ],
+      [
+        "B客戶",
+        "SH KVstore引擎異常測試"
+      ],
+      [
+        "A部門",
+        "B客戶"
+      ],
+      [
+        "A部門",
+        "DEP02主機移轉執行"
+      ],
+      [
+        "A人員",
+        "C同事"
+      ],
+      [
+        "B部門",
+        "FISAC API IP申請單"
+      ]
+    ],
+    "count": 13,
+    "create_time": 1773771714,
+    "update_time": 1773771714,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "relation_pairs": [
+      [
+        "375 GB",
+        "splunk_銀行處12月月維護"
+      ],
+      [
+        "10.0.2/2025.11.14",
+        "9.3.3/2025.02.26"
+      ],
+      [
+        "A人員",
+        "F客戶"
+      ],
+      [
+        "A人員",
+        "splunk_銀行處12月月維護"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1773771715,
+    "update_time": 1773771715,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  }
+}

@@ -20,15 +20,16 @@ class VectorRAGWrapper(BaseRAGWrapper):
         query_engine: LlamaIndex 查詢引擎實例
     """
     
-    def __init__(self, name: str, query_engine):
+    def __init__(self, name: str, query_engine, schema_info: Dict[str, Any] = None):
         """
         初始化 Vector RAG Wrapper
         
         Args:
             name: Wrapper 名稱
             query_engine: LlamaIndex 查詢引擎（支援 aquery 方法）
+            schema_info: Schema 資訊字典（可選）
         """
-        super().__init__(name)
+        super().__init__(name, schema_info=schema_info)
         self.query_engine = query_engine
     
     async def _execute_query(self, query: str) -> Dict[str, Any]:
@@ -54,6 +55,9 @@ class VectorRAGWrapper(BaseRAGWrapper):
             retrieved_contexts.append(node.get_content())
             doc_id = node.metadata.get("NO", None)
             retrieved_ids.append(str(doc_id))
+        
+        # 應用 retrieval token 限制
+        retrieved_contexts = self._truncate_contexts_by_tokens(retrieved_contexts)
         
         return {
             "generated_answer": generated_answer,

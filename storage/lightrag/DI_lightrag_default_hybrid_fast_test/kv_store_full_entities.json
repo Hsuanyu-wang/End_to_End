@@ -1,0 +1,46 @@
+{
+  "doc-cf168eec40aae386455af5027929f6fe": {
+    "entity_names": [
+      "Alex",
+      "Nexon Technologies",
+      "新增Splunk Add-on for Google Cloud Platform的sourcetype",
+      "B客戶",
+      "Management搜尋異常",
+      "Quarterly Earnings Report",
+      "Cruz",
+      "BTDC2問題處理",
+      "B部門",
+      "SH KVstore引擎異常測試-進行中",
+      "A部門",
+      "Tenable API App串接",
+      "FISAC",
+      "Splunk",
+      "C人員",
+      "DEP02 root帳號使用確認",
+      "LDAP設定",
+      "A人員",
+      "Centos作業系統升級(評估中)",
+      "3.4% Decline"
+    ],
+    "count": 20,
+    "create_time": 1773742594,
+    "update_time": 1773742594,
+    "_id": "doc-cf168eec40aae386455af5027929f6fe"
+  },
+  "doc-490df5a6810de4f040c4fe2681e6ed6e": {
+    "entity_names": [
+      "splunk_銀行處12月月維護",
+      "World Athletics Championship",
+      "F客戶",
+      "2025/12/26 15:00至2025/12/26 16:00",
+      "A人員",
+      "World Athletics Federation",
+      "Tokyo",
+      "splunk_银行业务部十二月维护"
+    ],
+    "count": 8,
+    "create_time": 1773742595,
+    "update_time": 1773742595,
+    "_id": "doc-490df5a6810de4f040c4fe2681e6ed6e"
+  }
+}

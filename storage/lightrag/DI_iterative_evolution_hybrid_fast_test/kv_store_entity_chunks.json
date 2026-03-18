@@ -1,0 +1,173 @@
+{
+  "F客戶": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "F客戶"
+  },
+  "A人員": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 2,
+    "update_time": 1773771651,
+    "_id": "A人員"
+  },
+  "維護紀錄": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e",
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 2,
+    "update_time": 1773771651,
+    "_id": "維護紀錄"
+  },
+  "2025/12/26  15:00至16:00": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "2025/12/26  15:00至16:00"
+  },
+  "splunk_銀行處12月月維護": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "splunk_銀行處12月月維護"
+  },
+  "375 GB": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "375 GB"
+  },
+  "1276 GB": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "1276 GB"
+  },
+  "9.3.3/2025.02.26": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "9.3.3/2025.02.26"
+  },
+  "10.0.2/2025.11.14": {
+    "chunk_ids": [
+      "chunk-490df5a6810de4f040c4fe2681e6ed6e"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "10.0.2/2025.11.14"
+  },
+  "B客戶": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "B客戶"
+  },
+  "C人員": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "C人員"
+  },
+  "Splunk每週onsite": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "Splunk每週onsite"
+  },
+  "A部門": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "A部門"
+  },
+  "DEP02": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "DEP02"
+  },
+  "PA報表寄送異常檢查": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "PA報表寄送異常檢查"
+  },
+  "FISAC資料收容-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "FISAC資料收容-進行中"
+  },
+  "SH KVstore引擎異常測試-進行中": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "SH KVstore引擎異常測試-進行中"
+  },
+  "splunk LDAP驗證設定": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "splunk LDAP驗證設定"
+  },
+  "IP申請單": {
+    "chunk_ids": [
+      "chunk-cf168eec40aae386455af5027929f6fe"
+    ],
+    "count": 1,
+    "create_time": 1773771651,
+    "update_time": 1773771651,
+    "_id": "IP申請單"
+  }
+}
