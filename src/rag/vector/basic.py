@@ -98,7 +98,6 @@ def get_vector_query_engine(Settings, vector_method: str = "vector", top_k: int 
         raise ValueError(f"Invalid vector method: {vector_method}")
 
     # 5. 端到端生成：將 Retriever 包裝成 QueryEngine
-    # 註解：retrieval_max_tokens 的限制將在 VectorRAGWrapper 中實作（截斷過長的 retrieved_contexts）
     response_synthesizer = get_response_synthesizer(response_mode="compact", llm=Settings.llm)
     
     query_engine = RetrieverQueryEngine(

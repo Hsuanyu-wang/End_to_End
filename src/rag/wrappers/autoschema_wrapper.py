@@ -237,7 +237,7 @@ class AutoSchemaWrapper(BaseRAGWrapper):
 由於知識圖譜中未找到相關資訊,請基於你的知識回答,並說明這是基於一般知識的回答。使用繁體中文。"""
         
         # 不限制生成 token
-        response = Settings.llm.complete(prompt)
+        response = self.settings.llm.complete(prompt)
         generated_answer = str(response)
         
         return {

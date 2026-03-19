@@ -89,7 +89,7 @@ class LightRAGWrapper(BaseRAGWrapper):
         """
         from lightrag.lightrag import QueryParam
         
-        Settings = get_settings(model_type=self.model_type)
+        my_settings = get_settings(model_type=self.model_type)
         
         # 解決 LightRAG 新版本的初始化問題
         if not self._initialized and hasattr(self.rag, "initialize_storages"):
@@ -288,7 +288,7 @@ class LightRAGWrapper(BaseRAGWrapper):
         )
         
         # 使用 LLM 生成答案（不限制生成 token）
-        llm_response = await Settings.llm.acomplete(prompt)
+        llm_response = await my_settings.llm.acomplete(prompt)
         response = llm_response.text
         
         print(f"📊 Retrieved {len(retrieved_ids)} chunk IDs | Tokens: {total_tokens} (E:{entity_tokens}, R:{relation_tokens}, C:{chunk_tokens})")

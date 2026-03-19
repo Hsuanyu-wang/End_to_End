@@ -4,12 +4,9 @@ from tqdm import tqdm
 from pydantic import BaseModel, Field
 from typing import List, Dict
 
-# 載入自定義設定與資料 (沿用您原本的架構)
 from llama_index.core import PromptTemplate
 from src.config.settings import get_settings
 from src.data.processors import data_processing
-
-Settings = get_settings()
 
 # 1. 定義期望的 Schema 資料結構 (保留您原本的設計)
 class DynamicKGSchema(BaseModel):
@@ -61,6 +58,9 @@ def main():
     documents = data_processing(mode="natural_text", data_type="DI")
     total_docs = len(documents)
     print(f">> 總文件數: {total_docs}")
+    
+    # 取得設定
+    settings = get_settings()
 
     # 給定一個初始的 Base Schema (幫助 LLM 抓準您想要的顆粒度與方向)
     dynamic_schema = {
@@ -87,7 +87,7 @@ def main():
         old_entities = set(dynamic_schema.get("entities", []))
         
         # 進行演化
-        dynamic_schema = evolve_schema_with_pydantic(dynamic_schema, batch, Settings.llm)
+        dynamic_schema = evolve_schema_with_pydantic(dynamic_schema, batch, settings.llm)
         
         new_entities = set(dynamic_schema.get("entities", []))
         added_entities = new_entities - old_entities

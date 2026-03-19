@@ -102,8 +102,8 @@ from src.config.settings import get_settings
 # ...
 
 # 建立評估器
-Settings = get_settings()
-evaluator = RAGEvaluator(eval_llm=Settings.eval_llm)
+from src.config import my_settings
+evaluator = RAGEvaluator(eval_llm=my_settings.eval_llm)
 
 # 評估時會自動使用所有已註冊的指標
 results = await evaluator.evaluate_pipeline(
@@ -179,11 +179,11 @@ from src.rag.graph import get_lightrag_engine
 class HybridRAGWrapper(BaseRAGWrapper):
     """混合 Vector 與 Graph RAG"""
     
-    def __init__(self, name: str, vector_engine, graph_engine, Settings):
+    def __init__(self, name: str, vector_engine, graph_engine, settings):
         super().__init__(name)
         self.vector_engine = vector_engine
         self.graph_engine = graph_engine
-        self.llm = Settings.llm
+        self.llm = settings.llm
     
     async def _execute_query(self, query: str) -> Dict[str, Any]:
         """混合檢索策略"""
@@ -247,15 +247,15 @@ from src.evaluation import run_evaluation
 
 async def main():
     # 載入設定與資料
-    Settings = get_settings()
-    datasets = load_and_normalize_qa_CSR_DI(csv_path=Settings.qa_file_path_DI)
+    from src.config import my_settings
+    datasets = load_and_normalize_qa_CSR_DI(csv_path=my_settings.data_config.qa_file_path_DI)
     
     # 建立多個 Pipeline
     pipelines = []
     
     # Vector RAG - Hybrid
     vector_engine = get_vector_query_engine(
-        Settings,
+        my_settings,
         vector_method="hybrid",
         top_k=2,
         data_type="DI"
@@ -305,11 +305,11 @@ from src.config.settings import get_settings
 import pandas as pd
 
 async def custom_evaluation():
-    Settings = get_settings()
+    from src.config import my_settings
     
     # 建立評估器與報告器
     evaluator = RAGEvaluator(
-        eval_llm=Settings.eval_llm,
+        eval_llm=my_settings.eval_llm,
         base_eval_dir="results/custom_experiment"
     )
     reporter = EvaluationReporter(base_dir="results/custom_experiment")

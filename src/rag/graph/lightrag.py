@@ -72,7 +72,7 @@ def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_tes
         llm_model_func=custom_llm_func,
         embedding_func=custom_embed_func,
         addon_params={
-            "entity_types": Settings.lightrag_entity_types
+            "entity_types": Settings.lightrag_config.entity_types
         }
     )
     

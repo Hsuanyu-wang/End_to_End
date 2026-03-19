@@ -14,26 +14,62 @@
 
 ### ModelSettings
 
-模型設定管理類別
+模型設定管理類別，封裝 LlamaIndex Settings 並提供額外的配置管理功能。
 
 ```python
-from src.config.settings import ModelSettings, get_settings
+from src.config import ModelSettings, get_settings, my_settings
 
-# 初始化設定
-settings = ModelSettings(config_path="/path/to/config.yml")
+# 方式 1：使用全域單例（推薦）
+from src.config import my_settings
 
-# 取得 LlamaIndex Settings 物件
-Settings = settings.get_settings_object()
+llm = my_settings.llm
+eval_llm = my_settings.eval_llm
+embed_model = my_settings.embed_model
 
-# 或使用便捷函數（向後兼容）
-Settings = get_settings(model_type="small")
+# 訪問資料配置
+qa_path = my_settings.data_config.qa_file_path_DI
+raw_path = my_settings.data_config.raw_file_path_DI
+
+# 訪問 LightRAG 配置
+entity_types = my_settings.lightrag_config.entity_types
+storage_path = my_settings.lightrag_config.storage_path_DIR
+
+# 方式 2：使用 get_settings() 函數
+settings = get_settings(model_type="small")
+llm = settings.llm
 ```
 
-**屬性**:
+**ModelSettings 屬性**:
 - `llm`: 主要 LLM 模型
 - `eval_llm`: 評估用 LLM 模型
 - `builder_llm`: 建圖用 LLM 模型
 - `embed_model`: Embedding 模型
+- `data_config`: DataConfig 實例（資料路徑配置）
+- `lightrag_config`: LightRAGConfig 實例（LightRAG 配置）
+
+### DataConfig
+
+資料路徑配置管理類別
+
+**屬性**:
+- `raw_file_path_DI`: DI 原始資料路徑
+- `raw_file_path_GEN`: GEN 原始資料路徑
+- `qa_file_path_DI`: DI 問答資料路徑
+- `qa_file_path_GEN`: GEN 問答資料路徑
+
+### LightRAGConfig
+
+LightRAG 專用配置管理類別
+
+**屬性**:
+- `storage_path_DIR`: LightRAG 儲存路徑
+- `language`: LightRAG 語言設定
+- `entity_types`: LightRAG 實體類型列表
+
+**重要提醒**：
+- LlamaIndex 的全域 Settings：`from llama_index.core import Settings as LlamaSettings`
+- 我們的配置管理：`from src.config import my_settings`
+- 避免混淆兩者，使用命名空間明確區分
 
 ---
 
@@ -265,9 +301,10 @@ RAG 評估器
 
 ```python
 from src.evaluation import RAGEvaluator
+from src.config import my_settings
 
 evaluator = RAGEvaluator(
-    eval_llm=Settings.eval_llm,
+    eval_llm=my_settings.eval_llm,
     base_eval_dir="results/my_experiment"
 )
 

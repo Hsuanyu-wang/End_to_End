@@ -6,7 +6,7 @@ LLM-as-a-Judge 評估指標
 
 from typing import List, Optional
 from llama_index.core.evaluation import CorrectnessEvaluator, FaithfulnessEvaluator
-from llama_index.core import Settings
+from llama_index.core import Settings as LlamaSettings
 from .base import BaseMetric
 
 
@@ -26,7 +26,7 @@ class CorrectnessMetric(BaseMetric):
             description="使用 LLM 評估答案正確性"
         )
         if llm is None:
-            llm = Settings.eval_llm
+            llm = LlamaSettings.eval_llm
         
         self.evaluator = CorrectnessEvaluator(llm=llm)
     
@@ -103,7 +103,7 @@ class FaithfulnessMetric(BaseMetric):
             description="使用 LLM 評估答案忠實度"
         )
         if llm is None:
-            llm = Settings.eval_llm
+            llm = LlamaSettings.eval_llm
         
         self.evaluator = FaithfulnessEvaluator(llm=llm)
     

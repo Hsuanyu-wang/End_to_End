@@ -152,7 +152,8 @@ class DataProcessor:
         metadata = self._extract_metadata(data)
         
         # 使用 NO 作為 document ID，確保可追溯
-        doc_id = data.get("NO", None)
+        # doc_id = data.get("NO", None)
+        doc_id = str(data.get("NO", "")) if data.get("NO") is not None else None
         
         if self.mode == "natural_text":
             text = self._format_natural_text(data, metadata)

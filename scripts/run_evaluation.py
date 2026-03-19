@@ -112,8 +112,8 @@ def parse_arguments():
     )
     
     # 方法參數
-    parser.add_argument("--top_k", type=int, default=2, help="檢索數量")
-    parser.add_argument("--retrieval_max_tokens", type=int, default=2048, help="檢索內容最大 token 數（限制傳給 LLM 的 context 長度）")
+    parser.add_argument("--top_k", type=int, default=20, help="檢索數量")
+    parser.add_argument("--retrieval_max_tokens", type=int, default=16384, help="檢索內容最大 token 數（限制傳給 LLM 的 context 長度）")
     # parser.add_argument("--generation_max_tokens", type=int, default=512, help="生成回答最大 token 數（已隱藏）")
     
     # Token Budget相關
@@ -134,7 +134,7 @@ def parse_arguments():
         "--lightrag_schema_method",
         type=str,
         default="lightrag_default",
-        choices=["lightrag_default", "iterative_evolution", "llm_dynamic"],
+        choices=["lightrag_default", "iterative_evolution", "llm_dynamic", "llamaindex_dynamic"],
         help="LightRAG Schema 生成方法"
     )
     parser.add_argument(
@@ -363,8 +363,9 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
         )
         print(f"🌟 LightRAG 將使用以下實體類別建圖: {schema_info['entities']}")
         
-        # 更新 Settings（只傳遞 entity types）
-        Settings.lightrag_entity_types = schema_info['entities']
+        # 更新 LightRAG 配置（只傳遞 entity types）
+        from llama_index.core import Settings as LlamaSettings
+        LlamaSettings.lightrag_entity_types = schema_info['entities']
         
         # 建立索引
         build_lightrag_index(
@@ -430,7 +431,7 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
     # Temporal LightRAG
     if args.lightrag_temporal_graph:
         temporal_rag = TemporalLightRAGPackage(
-            working_dir=os.path.join(Settings.lightrag_storage_path_DIR, args.data_type + "_temporal")
+            working_dir=os.path.join(Settings.lightrag_config.storage_path_DIR, args.data_type + "_temporal")
         )
         wrapper = TemporalLightRAGWrapper(
             name="Temporal_LightRAG",
@@ -641,9 +642,9 @@ def main():
     
     # 載入資料集
     if args.data_type == "DI":
-        datasets = load_and_normalize_qa_CSR_DI(csv_path=Settings.qa_file_path_DI)
+        datasets = load_and_normalize_qa_CSR_DI(csv_path=Settings.data_config.qa_file_path_DI)
     elif args.data_type == "GEN":
-        datasets = load_and_normalize_qa_CSR_full(jsonl_path=Settings.qa_file_path_GEN)
+        datasets = load_and_normalize_qa_CSR_full(jsonl_path=Settings.data_config.qa_file_path_GEN)
     
     # 快速測試模式
     if args.qa_dataset_fast_test:

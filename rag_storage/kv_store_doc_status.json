@@ -1,0 +1,17 @@
+{
+  "doc-a97ac2e4fcc95ad38aa330ed0bfd9f37": {
+    "status": "failed",
+    "error_msg": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+    "content_summary": "﻿NO,Service Start,Service End,Customer,Engineers,維護類別,Description,Action\n0ea766a4-e2b9-4d63-bd8e-17d9c677e4ab,2025/12/26  15:00,2025/12/26  16:00,F客戶,A人員,PM (定期保養),splunk_銀行處12月月維護,\"1.授權用量 : 建議擴充\n-授權量 : 375 GB\n-平均授權使用量 : 1276GB\n2.伺服器效能 : 無\n3.系統優化建議 :...",
+    "content_length": 27230,
+    "created_at": "2026-03-18T06:58:15.959759+00:00",
+    "updated_at": "2026-03-18T06:58:16.019468+00:00",
+    "file_path": "CSR_20260122_v4_92_clean.csv",
+    "track_id": "upload_20260318_065815_0af65f35",
+    "metadata": {
+      "processing_start_time": 1773817095,
+      "processing_end_time": 1773817096
+    },
+    "chunks_list": []
+  }
+}

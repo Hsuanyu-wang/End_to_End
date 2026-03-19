@@ -24,6 +24,10 @@ from src.evaluation.metrics import (
     JiebaF1Metric,
     CorrectnessMetric,
     FaithfulnessMetric,
+    AnswerRelevancyMetric,
+    ContextPrecisionMetric,
+    ContextRecallMetric,
+    RAGASFaithfulnessMetric,
 )
 
 
@@ -73,9 +77,16 @@ class RAGEvaluator:
         self.token_f1_metric = TokenF1Metric()
         self.jieba_f1_metric = JiebaF1Metric()
         
-        # LLM Judge 指標
+        # LLM Judge 指標 (LlamaIndex)
         self.correctness_metric = CorrectnessMetric(llm=self.eval_llm)
         self.faithfulness_metric = FaithfulnessMetric(llm=self.eval_llm)
+        
+        # RAGAS 指標
+        # 註：RAGAS 指標會自動從環境變數讀取配置，與 LlamaIndex 指標共用評估 LLM
+        self.answer_relevancy_metric = AnswerRelevancyMetric()
+        self.context_precision_metric = ContextPrecisionMetric()
+        self.context_recall_metric = ContextRecallMetric()
+        self.ragas_faithfulness_metric = RAGASFaithfulnessMetric()
 
     @staticmethod
     def _normalize_doc_ids(doc_ids: Any) -> List[str]:
@@ -187,6 +198,46 @@ class RAGEvaluator:
             print(f"  ⚠️ 評測 LLM API 呼叫失敗: {e}")
             correctness_score, faithfulness_score = None, None
         
+        # RAGAS 指標（可選，若未安裝 RAGAS 則回傳 None）
+        answer_relevancy_score = None
+        context_precision_score = None
+        context_recall_score = None
+        ragas_faithfulness_score = None
+        
+        try:
+            # AnswerRelevancy: 評估答案與問題的相關性
+            answer_relevancy_score = await self.answer_relevancy_metric.compute_async(
+                query=query,
+                response=gen_answer,
+                ground_truth=gt_answer
+            )
+            
+            # ContextPrecision: 評估檢索上下文的精準度
+            # 註：使用實際檢索到的上下文 (retrieved_contexts)
+            context_precision_score = await self.context_precision_metric.compute_async(
+                query=query,
+                contexts=retrieved_contexts,
+                ground_truth=gt_answer
+            )
+            
+            # ContextRecall: 評估檢索上下文的召回率
+            # 註：使用實際檢索到的上下文 (retrieved_contexts)
+            context_recall_score = await self.context_recall_metric.compute_async(
+                query=query,
+                contexts=retrieved_contexts,
+                ground_truth=gt_answer
+            )
+            
+            # RAGASFaithfulness: RAGAS 版本的忠實度評估
+            # 註：使用實際檢索到的上下文 (retrieved_contexts)
+            ragas_faithfulness_score = await self.ragas_faithfulness_metric.compute_async(
+                query=query,
+                response=gen_answer,
+                contexts=retrieved_contexts
+            )
+        except Exception as e:
+            print(f"  ⚠️ RAGAS 指標計算失敗: {e}")
+        
         # 提取詳細token資訊
         entity_tokens = 0
         relation_tokens = 0
@@ -228,8 +279,14 @@ class RAGEvaluator:
             "bertscore_f1": bert_f1,
             "token_f1": tok_f1,
             "jieba_f1": jieba_f1,
+            # LLM Judge 指標 (LlamaIndex)
             "correctness_score": correctness_score,
             "faithfulness_score": faithfulness_score,
+            # RAGAS 指標
+            "answer_relevancy": answer_relevancy_score,
+            "context_precision": context_precision_score,
+            "context_recall": context_recall_score,
+            "ragas_faithfulness": ragas_faithfulness_score,
         }
         
         # 只在第一筆資料（idx=1）時記錄 schema 資訊

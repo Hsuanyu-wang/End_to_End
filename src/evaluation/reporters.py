@@ -252,14 +252,14 @@ async def run_evaluation(
         postfix: 結果資料夾名稱後綴
     """
     from datetime import datetime
-    from llama_index.core import Settings
+    from llama_index.core import Settings as LlamaSettings
     from src.evaluation.evaluator import RAGEvaluator
     
     # 建立評估器
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     base_eval_dir = os.path.join(results_root_dir, f"evaluation_results_{timestamp}{postfix}")
     
-    evaluator = RAGEvaluator(eval_llm=Settings.eval_llm, base_eval_dir=base_eval_dir)
+    evaluator = RAGEvaluator(eval_llm=LlamaSettings.eval_llm, base_eval_dir=base_eval_dir)
     reporter = EvaluationReporter(base_dir=base_eval_dir)
     
     print(f"📁 建立實驗數據主資料夾: {base_eval_dir}")
@@ -311,7 +311,7 @@ async def run_evaluation_with_token_budget(
         baseline_method: 用作baseline的方法名稱關鍵字
     """
     from datetime import datetime
-    from llama_index.core import Settings
+    from llama_index.core import Settings as LlamaSettings
     from src.evaluation.evaluator import RAGEvaluator
     from src.rag.token_budget_controller import TokenBudgetController
     from src.evaluation.token_analysis import analyze_evaluation_results
@@ -323,7 +323,7 @@ async def run_evaluation_with_token_budget(
         f"evaluation_results_{timestamp}{postfix}_token_budget"
     )
     
-    evaluator = RAGEvaluator(eval_llm=Settings.eval_llm, base_eval_dir=base_eval_dir)
+    evaluator = RAGEvaluator(eval_llm=LlamaSettings.eval_llm, base_eval_dir=base_eval_dir)
     reporter = EvaluationReporter(base_dir=base_eval_dir)
     token_controller = TokenBudgetController()
     

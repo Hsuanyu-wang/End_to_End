@@ -5,11 +5,7 @@ from llama_index.core.retrievers import VectorIndexAutoRetriever, AutoMergingRet
 from llama_index.core.vector_stores import MetadataInfo, VectorStoreInfo
 from llama_index.core.node_parser import HierarchicalNodeParser, get_leaf_nodes
 from llama_index.core.storage.docstore import SimpleDocumentStore
-from src.data.processors import data_processing # 假設這是你現有的資料處理模組
-
-from llama_index.core import Settings
-Settings.chunk_size = 2048
-Settings.chunk_overlap = 50
+from src.data.processors import data_processing
     
 def get_self_query_engine(mySettings, data_mode="natural_text", data_type="DI", top_k=2, fast_build=False, retrieval_max_tokens=2048):
     """
@@ -62,7 +58,7 @@ def get_parent_child_query_engine(mySettings, data_mode="natural_text", data_typ
 
     # 1. 建立階層式切塊解析器 (Parent -> Child -> Grandchild)
     node_parser = HierarchicalNodeParser.from_defaults(
-        chunk_sizes=[2048, 1024, 512] # 確保最大 chunk 包含較小的 chunks
+        chunk_sizes=[2048, 1024, 512]
     )
     nodes = node_parser.get_nodes_from_documents(documents)
     leaf_nodes = get_leaf_nodes(nodes)
@@ -76,8 +72,7 @@ def get_parent_child_query_engine(mySettings, data_mode="natural_text", data_typ
     index = VectorStoreIndex(leaf_nodes, storage_context=storage_context)
 
     # 4. 設定 Auto Merging Retriever
-    # 若檢索到大量屬於同一 Parent 的 Leaf Nodes，會自動替換為 Parent Node
-    base_retriever = index.as_retriever(similarity_top_k=top_k * 3) # 基礎檢索數量需設大一點以觸發合併
+    base_retriever = index.as_retriever(similarity_top_k=top_k * 3)
     retriever = AutoMergingRetriever(
         base_retriever, 
         storage_context, 

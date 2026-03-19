@@ -31,6 +31,12 @@ from .llm_judge import (
     CorrectnessMetric,
     FaithfulnessMetric,
 )
+from .ragas_metrics import (
+    AnswerRelevancyMetric,
+    ContextPrecisionMetric,
+    ContextRecallMetric,
+    RAGASFaithfulnessMetric,
+)
 
 __all__ = [
     # 基底類別
@@ -59,4 +65,9 @@ __all__ = [
     # LLM Judge 指標
     "CorrectnessMetric",
     "FaithfulnessMetric",
+    # RAGAS 指標
+    "AnswerRelevancyMetric",
+    "ContextPrecisionMetric",
+    "ContextRecallMetric",
+    "RAGASFaithfulnessMetric",
 ]

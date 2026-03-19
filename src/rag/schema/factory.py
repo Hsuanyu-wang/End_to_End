@@ -197,12 +197,12 @@ def get_schema_by_method(
         
     # 3. 使用 llamaindex 的 DynamicLLMPathExtractor 參考 graph_dynamic_schema_package.py
     elif method == "llamaindex_dynamic":
-        if not text_corpus or not llm:
+        if not text_corpus or not settings.builder_llm:
             raise ValueError("llamaindex_dynamic 需要 text_corpus 與 llm 實例")
             
         print(">> 初始化 DynamicLLMPathExtractor...")
         dynamic_extractor = DynamicLLMPathExtractor(
-            llm=llm,
+            llm=settings.builder_llm,
             max_triplets_per_chunk=20,
             num_workers=4,
         )

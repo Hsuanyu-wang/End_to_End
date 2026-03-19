@@ -72,6 +72,11 @@ TEST_CONFIGS = {
             "name": "LightRAG (AutoSchemaKG with Cache)",
             "args": ["--graph_rag_method", "lightrag", "--lightrag_mode", "hybrid", "--lightrag_schema_method", "autoschema"],
             "use_cache": True  # 支援 Schema Cache
+        },
+        "llamaindex_dynamic": {
+            "name": "LightRAG (LlamaIndex Dynamic Schema)",
+            "args": ["--graph_rag_method", "lightrag", "--lightrag_mode", "hybrid", "--lightrag_schema_method", "llamaindex_dynamic"],
+            "use_cache": True  # 支援 Schema Cache
         }
     },
     "lightrag_mode": {
@@ -260,7 +265,7 @@ def ask_data_type() -> str:
     """詢問資料類型"""
     print("\n選擇資料類型：")
     print("  1. DI (Domain-specific Inquiries)")
-    print("  2. GEN (General)")
+    print("  2. GEN (Generate)")
     print()
     
     choice = input("請選擇 (1-2): ").strip()

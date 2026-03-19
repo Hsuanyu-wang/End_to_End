@@ -121,8 +121,7 @@ class ModularGraphWrapper(BaseRAGWrapper):
         contexts = self._truncate_contexts_by_tokens(contexts)
         
         # 使用 LLM 生成答案
-        from src.config.settings import get_settings
-        Settings = get_settings(model_type=self.model_type)
+        from src.config import my_settings
         
         context_str = "\n\n".join([f"[{i+1}] {ctx}" for i, ctx in enumerate(contexts)])
         
@@ -135,7 +134,7 @@ class ModularGraphWrapper(BaseRAGWrapper):
 請直接回答問題,使用繁體中文。"""
         
         # 不限制生成 token
-        response = Settings.llm.complete(prompt)
+        response = my_settings.llm.complete(prompt)
         generated_answer = str(response)
         
         # 提取 chunk IDs
