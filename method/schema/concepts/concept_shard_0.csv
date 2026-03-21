@@ -1,0 +1,1801 @@
+node,conceptualized_node,node_type
+狀態描述 (Description): E客戶駐點工作事項 - 20251114,"work, inspection, maintenance, support, operations",event
+3.KPMG滲透測試IP白名單 已將IP加入白名單，但提供的清單中有很多為網段，需要修改規則才能比對，目前正在修改中,"penetration, testing, whitelisting, modification, validation",event
+建議更新至最新版本10.0.1,"update, version, upgrade",event
+平均授權用量為239.38GB,"data, usage, average",event
+待辦事項: 1. 告警盤點,"inspection, inventory, safety, monitoring, checklists",event
+5.<HTTP对外大量传输数据报表>调整於<HTTPS大量资料传输告警>排除特定URL改由报表寄送,"data transmission, reporting, security, url, monitoring",event
+建議進行升版 -當前版本：9.3.8 / 2025.11.14 -最新版本：10.0.2 / 2025.11.14,"update, upgrade, version, improvement",event
+狀態描述包括Splunk_11月維護,"maintenance, update, stability, configuration, upgrade",event
+目前已請james 向FISAC提交需使用API的IP申請單,"submission, approval, api, ip, authorization",event
+本日駐點工作內容如下： B部门3.SH KVstore引擎異常測試-进行中 正在个人的测试环境测试SH 的KVstore状态。,"testing, anomaly, verification, operation, maintenance",event
+將ocp_cdibh资料删除後，重新进行资料同步,"deleting, synchronization, data, removal, resync",event
+SPLUNK月報寄送 已將SPLUNK2024/09~2025/08的維護報告寄給Hank,"reporting, maintenance, notification, update, delivery",event
+本日工作項目： 2.資產上傳APP程式調整 甲、將”硬體狀態”欄位加入category中,"adjustment, upload, hardware, category, app",event
+进行版本更新至最新版本10.0.2 / 2025.11.14,"update, version, latest, improvement",event
+處理工程師為 A人員 進行時間為 2025/11/03 10:00 至 2025/11/03 12:00。,"maintenance, calibration, inspection, operation, servicing",event
+"處理工程師為 A人員, C人員 进行时间","processing, managing, time management, assigning, supervising",event
+採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送,"workaround, adjustment, redirection, single-threaded",event
+已確認SPLUNK可正常登入使用、KVSTORE 狀態正常，網頁憑證期限更新至2027/12月,"system check, authentication, validation, update, functionality",event
+關閉imsdb02UF中舊的殘留input設定,"shutdown, configuration, update, maintenance",event
+今日已完成Splunk版本升級， 自9.2.3升版至9.3.8,"upgrade, version, software, installation, update",event
+這是一筆關於 B客戶 的維護紀錄。,"maintenance, record, service, 保养, 记录, 维护",event
+设定 logrotate 排程监控：每2小时检查一次（/etc/cron.d/logrotate-syslog）超过 1G自动 rotate 保留30个文件 自动压缩,"crontab, rotation, monitoring, compression, scheduling",event
+待辦事項: 1. SSH Server 漏洞修補 2. Gitlab漏洞修補,"patching, security, vulnerabilities, updating",event
+A部门 DEP02连动主机检查,"check, 联动, maintenance, inspection, operation",event
+處理工程師為 C人員 進行時間為 2025/07/29 12:00 至 2025/07/29 13:00,"maintenance, operation, downtime, calibration, servicing",event
+检查B部门 indexer索引同步状态,"checking, synchronization, status, indexing, verification",event
+版本更新 : 暫不更新 - 當前版本: 9.3.8 / 2025.11.14 - 最新版本: 10.0.2 / 2025.11.14,"update, version, release",event
+授權用量：建議擴充 -授權量：150 GB -平均授權用量：630 GB,"scaling, expansion, authorization, usage",event
+5.問題追蹤：無,"tracking, investigation, issue, follow-up, inquiry",event
+代辦事項： 7.DEP02 root服務確認,"confirmation, verification, validation, root, service",event
+"工作內容如下，預計本周五(11/14)與下周二(11/18)到场作业，請您协助申请底層 1, 关闭Apim1与imsdb01两台UF中旧的残留input设定 2. 确认Checkpoint 资料收容 3. 确认asset中异常：有多個hostname有相同IP，确认原因為将是否报废/运营中栏位汇入资产","work, assignment, operation, maintenance, confirmation",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251218,"work, inspection, maintenance, support, collaboration",event
+今日工作項目： 1.新增forcepoint endpoint dlp資料收容 Tcpdump尚未看到封包，待實際拋送後確認,"data collection, monitoring, network analysis, troubleshooting, validation",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251030,"work, presence, inspection, maintenance, coordination",event
+"工作內容如下，預計本周五(11/14)與下周二(11/18)到場作業，請您協助申請底層 1, 关闭Apim1与imsdb01两台UF中旧的残留input设定 2. 确认Checkpoint 资料收容 3. 确认asset中异常：有多個hostname有相同IP，确认原因為将是否报废/运营中栏位汇入资产","work, operation, maintenance, confirmation, settings",event
+已完成 cybereyes api 串接，並確認新資料進到 splunk,"integration, verification, dataflow, api, splunk",event
+本周工作项目如下: 1.FWD02磁碟用量异常处理,"handling, abnormalities, management, correction, disk, project",event
+代辦事項： 2.DEP02 ([IP])移轉(下周進行),"transfer, delegation, next week, handover",event
+新增indexer 新增indexer至IDX cluster節點，目前將觀察index同步狀態。,"adding, synchronization, indexing, cluster, node",event
+删除旧版本残留在ES威胁情报下载的配置DLDK container NOT running,"cleaning, updating, removing, configuration, threatintelligence",event
+"處理工程師為 A人員, C人员 进行时间 2025/12/16 14:00 至 2025/12/16 18:40。","maintenance, inspection, calibration, operation, engineering",event
+處理工程師為 A人員 進行時間為 2025/11/24 10:30 至 2025/11/24 11:00。,"maintenance, inspection, calibration, operation, servicing",event
+C人員 在 2025/12/09 13:30 至 2025/12/09 17:30 內進行維護工作,"maintenance, repair, service, upgrade, downtime",event
+轉送器監視設定中 更新 uf清單，並於更新後讓uf重新報到。,"monitoring, updating, synchronization, verification, refresh",event
+1.授權用量 : 建議擴充 -授權量 : 375 GB -平均授權使用量 : 1398GB,"扩张, 使用, 授權",event
+工作事項： 1. 新增/etc/hosts，並重起服务後，正常连线至LM,"configuring, restarting, connectivity, updating, services",event
+狀態描述 (Description): 防火牆事件匯入時間異常,"import, anomaly, firewall, time",event
+今日工作項目： 2.確認checkpoint logclm uf log limit 今日發現checkpoint資料收容有約40min延遲 確認原因為該UF已達到預設輸出上限 (256kb/s),"delay, confirmation, limitation, processing, log",event
+從這周開始凌晨1:00時CPU和記憶體都有突然爆增現象，今日甚至導致服務異常,"cpu usage, memory spike, service disruption",event
+"處理工程師為 A人員, C人員 進行時間為 2025/11/12 13:30 至 2025/11/12 17:40","training, mentoring, engineering, collaboration, guidance",event
+處置動作 (Action): 4.版本更新：建議先擴充授權使用量，再進行版本升級 -當前版本：8.0.6 / 2024.10.22 -最新版本：10.0.2 / 2025.11.14,"updating, expanding, licensing",event
+A部門 2.PA 每月報表觸發動作變更 因目前未發現任何相關報表寄送錯誤，也確認並無排程略過問題，為了後續如再次發生排程報表未寄送之問題，已將PA每月報表觸發的預設寄件套 件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查。,"configuration, adjustment, automation, monitoring, optimization",event
+處理工程師為 C人員 進行時間為 2025/12/11 09:00 至 2025/12/11 18:00,"maintenance, operation, inspection, calibration, scheduling",event
+系統優化建議 :無,"optimization, improvement, suggestion",event
+SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,"testing, anomaly, verification, functionality, debugging",event
+處置動作 (Action): 4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14 現行版本近期被掃出弱點，建議進行升版,"update, security, version, improvement, patch",event
+代辦事項：3.新增Splunk Add-on for Google Cloud Platform的sourcetype,"integration, configuration, deployment, setup, management",event
+本日工作項目： 4.Indexer設定防串改 甲、設定路徑為 indexes.conf 中 [defaut] enableDataIntegrityControl=true,"configuration, protection, integrity, setting, path",event
+(A部門)DEP02連動主機檢查,"联动, 检查, 主机, 连接, 安全",event
+针对H1、H2、H3设备设置priority为critical，其他设为low,"critical, low, priority, equipment",event
+SH KVstore引擎異常測試-進行中,"testing, anomaly, performance, durability, simulation",event
+工作項目： 1. 修改SASE VPN登入成功報表條件,"reporting, conditions, authentication, access, security",event
+調整 clean.sh 資料留存區間（定期清理舊資料，原為留存12小時，現改為6小時）,"cleaning, updating, retention, interval, timeframe",event
+本周工作項目如下: 3.<F5VPN特定使用者連線的紀錄(sas)> 停用報表,"report, monitoring, deactivation, log, security",event
+處理工程師為 A人員 進行時間為 2025/12/01 10:00 至 2025/12/01 12:00,"maintenance, inspection, calibration, operation, servicing",event
+加入设置以停止预先储存/apps/search路径下的csv文件作为知识包。,"stopping, knowledge, csv, storage, path",event
+代辦事項：补跑设备IP往段清单给全科人员（每月)。,"distribution, maintenance, updating, inventory, allocation",event
+處置動作 工作內容： 該sourcetype斷行異常，故先將其調整回原始sourcetype，待下周駐點確認後進行調整,"adjustment, normalization, verification, correction, formatting",event
+刪除 ocp_cdibh 資料並重新進行資料同步,"deleting, synchronization, cleanup",event
+解決辦法：刪除KGIBIDX04(主機已下線)備份排程與修改CDIBHMGT02的IP為172.18.44.31,"configuration, modification, backup, scheduling, ip_address",event
+處置動作 (Action): 針對UAT / Production / PIMS 共8台進行調整,"adjustment, maintenance, optimization, calibration, setup",event
+因為目前未發現任何相關報表寄送錯誤，也確認並無排程略過問題，為了後續如再次發生排程報表未寄送之問題，已將PA每月報表觸發的預設寄件套件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查。,"reporting, scheduling, customization, monitoring, troubleshooting",event
+處置動作 (Action): 4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14,"update, suggestion, version, improvement, recommendation",event
+DC_ARP_table 报表已经产出.,"reporting, production, update, documentation, listing",event
+Splunk版本升級， 自9.2.3升版至9.3.8,"upgrade, version, software, enhancement, update",event
+B部门 检查各台主机关机凭证有效期,"checking, validation, expiration, documentation, confirmation",event
+4.版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.3 / 2025.02.26 -最新版本：10.0.1 / 2025.09.25,"update, patch, upgrade, versioning, security",event
+KGIBIDX04備份排程被刪除,"backup, deletion, schedule",event
+Splunk 驻点服务在2025年12月30日进行维护,"maintenance, update, service, support, deployment",event
+狀態描述 (Description): E客戶Splunk駐點 - 20251230,"deployment, support, collaboration, installation, monitoring",event
+狀態描述 (Description): Splunk駐點服務202601第一周(2026/1/5),"service, support, monitoring, deployment, maintenance",event
+處置動作 (Action): 前一份CSR內容誤植，重新撰寫,"rewriting, accuracy, correction, sustainability, responsibility",event
+修改sase UF資料收容路徑,"updating, storing, modifying, path, database",event
+状态描述:Splunk每週onsite 處置動作,"deployment, maintenance, monitoring, installation, support",event
+4.eStreamer 資料異常處理 發現eStreamer資料從11/14 23:20後僅收到狀態log，且KVstore狀態異常，重啟服務後資料已陸續進到splunk,"data, anomaly, recovery, log, abnormality, reinitialization",event
+本次維護報告內容如下： 3.系統優化建議：無,"maintenance, optimization, update, system, functionality",event
+A部门确认Maintainer账户权限,"confirmation, authorization, verification, permission, validation",event
+確認所有檔案已被完整收容,"confirmation, storage, completion, verification, containment",event
+待办事项: Cybereyes API 介接 (进行中),"integration, development, api, interfacing, progress",event
+新增/etc/hosts，並重起服务後，正常连线至LM,"configuring, restarting, connectivity, administration, networking",event
+A部門 1.PA報表寄信異常-未完成 已補跑報告並寄送郵件,"reporting, communication, completion, notification",event
+A部門 的DEP02連動主機檢查完成,"check, completion, verification, inspection",event
+狀態描述 (Description): splunk_信用卡處12月月維護,"maintenance, update, security, processing, transaction",event
+3.系統優化建議 : 無,"system optimization, suggestion, improvement, enhancement",event
+資產上傳APP程式調整,"updating, adjustment, synchronization, maintenance",event
+處置動作 (Action): 2.伺服器效能：IDX01、IDX02、IDX03空間使用量已達90% 建議：若空間使用量持續增長，將搬移frozen,"space, efficiency, migration, storage, utilization",event
+發現 IDX硬碟空間滿載與資料同步問題,"space满载, 同步问题, 数据丢失, 存储不足, 同步错误",event
+本日駐點工作內容如下： B部門 3.n8n無法連線至splunk問題 正在協助排查n8n無法連線至splunk問題,"troubleshooting, connectivity, issue, collaboration, debugging",event
+版本更新 : 建議更新 當前版本：9.3.3/2025.02.26 最新版本：10.0.2/2025.11.14,"update, upgrade, version, improvement, release",event
+Splunk使用者權限調整 新增maintainer角色，並設定能力值。,"permission, adjustment, maintenance, capability, role",event
+處理工程師為 A人員 進行維護工作,"maintenance, repair, inspection, servicing, troubleshooting",event
+Apim1與imsdb01兩台UF關閉inputs至不存在的index,"shutting down, disconnecting, indexing, communication",event
+狀態描述 (Description): Splunk_12月維護,"maintenance, update, stability, configuration, patching",event
+處理動作：4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14 現行版本近期被掃出弱點，建議進行升版,"update, security, improvement, version, patch",event
+FISAC資料收容-進行中 目前已請B同事 向FISAC提交需使用API的IP申請單。,"submission, application, api, review, approval",event
+處置動作 (Action): 4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.1/2025.09.25 現行版本近期被掃出弱點，建議進行升版,"update, upgrade, security, improvement, patch",event
+2.AI網站服務紀錄調閱 (202508-202510),"data, recording, access, service, log",event
+建議更新當前版本至10.0.2/2025.11.14,"update, version, release, upgrade",event
+狀態描述:Splunk每週onsite 處置動作,"deployment, maintenance, synchronization, on-site, monitoring",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：203.65GB,"authorization, expansion, usage, limit, allocation",event
+處置動作 被 執行,"execution, enforcement, placement, action",event
+處理工程師為 A人員 進行時間為 2025/11/07 13:50 至 2025/11/07 17:30,"maintenance, inspection, calibration, operation, work",event
+完成 Splunk整体架构IP调整,"adjustment, configuration, optimization, architecture, reorganization",event
+1. 更新GeoDB,"updating, database, information, synchronization",event
+狀態描述 (Description): Splunk_10月維護,"maintenance, update, stability, configuration, patching",event
+本日工作項目： 2. 過濾不同mitreattack新增告警,"filtering, alerts, processing, screening, prioritizing",event
+提供設備IP往段清單,"listing, ip, network, devices, management",event
+Splunk_11月維護 處置動作 包含 伺服器效能：正常,"maintenance, server, performance, normal",event
+處理工程師為 C人員 进行维护,"maintenance, inspection, troubleshooting, servicing, upkeep",event
+處理工程師為 B人員 進行時間為 2026/01/13 13:30 至 2026/01/13 17:30。,"maintenance, inspection, operation, timing, duration",event
+因現行版本未有弱點釋出，故不升級。,"no update, stability, security, maintenance",event
+SH FISAC API input (未使用)關閉,"input, interaction, communication",event
+"處理工程師為 A人員, C人員 进行时间从 2025/11/18 13:30 至 2025/11/18 17:30。","maintenance, servicing, inspection, operation, calibration",event
+本日駐點工作內容如下： A部门1.帳號盤點清單確認 已完成帳號盤點並寄送報表給C同事,"accounting, verification, documentation, completion, communication",event
+FISAC资料收容-进行中,"storage, management, containment, documentation, procession",event
+Splunk版本升級,"update, upgrade, enhancement, software",event
+已設定完成所有主機的新IP,"setting, configuration, assignment, networking, installation",event
+描述Splunk_11月维护的状态,"maintenance, status, update, system, operation",event
+进行本月月维护,"maintenance, inspection, servicing",event
+處理工程師為 B人員 進行時間為 2025/10/07 13:30 至 2025/10/07 17:30,"maintenance, inspection, calibration, operation, scheduling",event
+處理工程師為 B人員 進行時間為 2025/11/11 13:30 至 2025/11/11 17:30,"maintenance, operation, calibration, inspection, scheduling",event
+4.FWD03 底層資料收容 filter 設定 已排除大量SERVICE_START 及 SERVICE_STOP 資料 目前觀察每日約產生200個檔案，故暫設定保留一天內的log,"filtering, exclusion, logfiles, retention, monitoring",event
+有137台UF已超過15分鐘未與indexer連線,"disconnection, timeout, monitoring, failure, communication",event
+處理工程師為 C人員 進行維護紀錄,"maintenance, documentation, repair, recording, servicing",event
+"今日發現DNS Datamodel src欄位異常，已完成修復，並新增ES告警 監測""是否有設備連線至很少見的port""","fix, update, monitoring, anomaly, network, security",event
+"處理工程師為 A人員,C人員 進行維護工作","维护, 检修, 培训, 指导, 合作",event
+建立SASE VPN kick session報表建立,"reporting, establishing, session, sase, monitoring",event
+處理工程師進行維護,"maintenance, inspection, repair, troubleshooting, servicing",event
+本月維護重點如下： 1.授權使用量 - 購買量:2GB - 平均使用量:0.31GB - 使用率為15.5%，達100%次數為0,"usage, maintenance, authorization, consumption, subscription",event
+處理工程師為 C人員 進行時間為 2025/11/04 09:00 至 2025/11/04 09:30。,"maintenance, operation, inspection, calibration, scheduling",event
+處置動作為 工作項目： 暫時認定原因為bucket replication造成， 採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送,"bucket, replication, workaround, adjustment, synchronization",event
+今日到場作業如下： 1.PA TRAFFIC事件sourcetype更換 將sourcetype更改為pan:log，並套用設定使splunk判斷事件類型,"configuring, updating, settings, log, event classification",event
+狀態描述 (Description): ARP_table報表補跑,"arp, report, resync, network, maintenance",event
+狀態描述 (Description): Splunk駐點服務202510第四周(2025/10/20),"deployment, support, maintenance, monitoring",event
+FIsac情报获取设置完成，等待防火墙开通,"introduction, setup, intelligence, security, deployment",event
+現行版本9.3.3/2025.02.26近期被掃出弱點，建議進行升版,"upgrade, vulnerability, patch, security, software",event
+處理工程師為A人員安排了時間為2025/12/26 14:00 至 2025/12/26 15:00的維護工作,"scheduling, maintenance, planning, 检修, 时间安排, 服务维护",event
+Splunk 版本從9.3.1 升級到 9.3.3,"upgrade, version, software, update",event
+處理工程師為 A人員 進行時間為 2025/12/26 14:00 至 2025/12/26 15:00,"maintenance, calibration, inspection, operation, service",event
+處理工程師為 C人員 進行時間為 2025/12/30 09:00 至 2025/12/30 12:00,"maintenance, operation, downtime, calibration, inspection",event
+狀態描述為E客戶駐點工作事項-20251114,"work, task, onsite, support, maintenance",event
+處置動作 (Action): 今日到場作業事項為： 更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑,"certification, modification, operation, security, configuration",event
+待辦事項: 1. 告警盤點 2. VMware Tools 漏洞修補,"inspection, patching, security, maintenance, vulnerability",event
+服务器性能异常，CPU及磁盘使用量上升,"cpu usage, disk usage, anomaly, overload, performance issue",event
+与现有设备清单做对比，附件为对比结果,"comparison, documentation, evaluation, updating, analysis",event
+checkpoint相關告警查看,"monitoring, alert, verification, inspection, notification",event
+DEP02移轉後服務確認 已確已確認服務正確，並再次執行健康檢查確認系統功能正常。,"confirmation, verification, inspection, functionality, health_check",event
+防火牆事件匯入時間異常,"异常, 时间, 日志, 安全, 故障",event
+處置動作 (Action): 今日工作項目如下： 2.checkpoint相關告警查看 確認所有checkpoint告警使用情況。,"monitoring, verification, alert, checkpoint",event
+Splunk Indexer queue full -20251215,"full queue, data processing, indexing, log management",event
+建議更新版本至 10.0.2,"update, version, release",event
+本日駐點工作內容如下： A部門 1.DEP02連動主機檢查-完成,"work, inspection, completion, operation, maintenance",event
+FWD03底層資料收容filter設定已排除大量SERVICESTART及SERVICESTOP資料目前观察每日约产生200个档案，故暂设定保留一天内的log,"logging, filtering, data management, exclusion, monitoring",event
+E客户进行定保,"maintenance, service, inspection, 保养",event
+4. 版本評估 - 現行版本:9.4.3 (2025.06.05) - 最新版本:10.0.1 (2025.09.25),"updating, version, assessment, improvement, release",event
+處置動作 (Action): 本周工作項目如下:,"planning, tasks, agenda, assignments",event
+處理工程師為 C人員 進行時間為 2025/12/02 09:00 至 2025/12/02 12:00,"maintenance, operation, inspection, calibration, servicing",event
+待辦事項: 1. SSH Server 漏洞修補,"patching, security, vulnerability, maintenance",event
+建議擴充授權用量至285GB,"expansion, authorization, storage, capacity",event
+刪除舊版本殘留的ES threat intelligence download設定 DLDK container NOT running,"deleting, cleanup, configuration, removal, setting",event
+修改sase UF資料收容路徑至/var/log/mammoth,"configuration, migration, logging, directory, update",event
+Splunk駐點服務202510第一周(2025/10/01) 的工作內容被描述,"documenting, work, description, operations, support",event
+指出作業系統版本為Red Hat 9.4,"linux, version, distribution",event
+工作事項： IDX01重新加入後，因同步资料导致IDX02与IDX03满载,"syncing, overload, synchronization, data同步",event
+處理工程師為 C人員 進行時間為 2025/11/04 13:30 至 2025/11/04 17:30。,"maintenance, operation, calibration, inspection, scheduling",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251223 處置動作 (Action),"placement, installation, deployment, positioning",event
+Splunk SH 異常hanging,"error, logging, monitoring, anomaly",event
+Splunk每週onsite 處置動作 (Action): A部門 1.Splunk 使用者權限調整 新增maintainer角色，並設定能力值。,"permission, adjustment, maintenance, delegation, access",event
+已將全數logclm UF調整上限為 20480 KB/S 同時發現該維護報告該檢查並未開啟，已重新開啟,"adjustment, limitation, maintenance, reopening",event
+處置動作 (Action): 4.版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.2/2025.11.14 因目前版本並未有重大弱點，也未受相關BUG，故建議暫不升版,"update, version, stability, maintenance, recommendation",event
+新增forcepoint endpoint dlp資料收容 Tcpdump尚未看到封包，待實際拋送後確認,"monitoring, data, security, inspection, network",event
+代辦事項： 6.BTDC2 問題處理,"handling, resolution, task, management, troubleshooting",event
+版本更新：現行版本近期被掃出弱點，建議進行升版,"update, security, enhancement",event
+本日駐點工作內容如下： A部門 1.PA報表寄信異常-未完成 已補跑報告並寄送郵件，另外報告存取時間為1天，所以以排程報告執行時間(11/1)，保存期限為11/2。 PA 每月Block Category報表在重新執行排程時會出現error，將於下周到場繼續處理,"work, report, scheduling, error, processing",event
+處理工程師為 C人員 進行維護工作,"maintenance, inspection, troubleshooting, servicing, upkeep",event
+進行時間為 2025/12/15 13:30 至 2025/12/15 17:30,"event, duration, timing",event
+将ocp_cdibh资料删除後，重新进行资料同步,"deletion, synchronization, updating",event
+B部門 2.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,"testing, anomaly, validation, performance, durability",event
+资料大小平衡持续进行中,"balancing, ongoing, data, equilibrium, process",event
+處理工程師為 C人員 進行時間為 2025/12/18 09:00 至 2025/12/18 17:30。,"maintenance, operation, inspection, calibration, scheduling",event
+A部門進行維護,"maintenance, shutdown, inspection, service, operation",event
+2.<SAP重要TCode執行紀錄>告警語法調整 原語法中的user經比對僅得到系統管理員，並非實際user，因此調整語法，透過比對cyberark log取得實際user後再寄出信件,"adjustment, comparison, actualization, notification, security",event
+DEP02 ([IP])移轉(下周進行),"transfer, handover, next week",event
+代辦事項： 1.Centos作業系統升級(評估中),"upgrade, assessment, maintenance, system, update",event
+完成 SPLUNK月报寄送,"reporting, completion, delivery, monitoring, notification",event
+Indexer設定防串改,"security, setting, prevention, protection",event
+B部門 3.n8n無法連線至splunk問題 正在協助排查n8n無法連線至splunk問題,"connection issue, troubleshooting, inaccessible, network problem",event
+狀態描述 (Description): E客戶 Splunk 2025 MA 10月定保.DM20250088_(6/12),"maintenance, inspection, service, calibration, update",event
+状态描述 (Description): Splunk每週onsite 處置動作,"on-site, placement, maintenance, monitoring, deployment",event
+3.AI網站服務紀錄調閱報表建置 <Gen AI 連線紀錄(每日): monthly report> <Gen AI 連線紀錄(整月): monthly report> 設定於每月1日凌晨2:00執行,"reporting, automation, monitoring, data collection, scheduling",event
+待辦事項: 1. GitLab 漏洞修補,"patching, updates, security, tasks, vulnerabilities",event
+新增告警将SASE登入成功纪录送至SOAR,"logging, alert, security, automation, recording",event
+B客戶 的維護紀錄被記錄,"recording, maintenance, documentation, history, log",event
+代辦事項：補產出ARP_table報表給您(排程設定每月執行）,"task, scheduling, reporting, production, automation",event
+4.部屬新crowdstrike套件 已部屬套件於SH上,"deployment, installation, security, protection, configuration",event
+處理工程師為 A人員 進行時間為 2025/12/26 15:00 至 2025/12/26 16:00,"maintenance, inspection, calibration, operation, scheduling",event
+2.<刪除資料庫中IOC> 頁面復原 3.<HTTP對外大量傳輸資料報表>調整 於報表新增需監控之url,"data, monitoring, adjustment, recovery, transmission",event
+更新GeoDB,"updating, database, geolocation, maintenance",event
+1.授權用量：建議擴充 -授權量：150 GB -平均授權用量：649.33 GB,"授权, 用量, 扩展, 平均",event
+待完成工作項目： 1.FISAC API Input無資料時會跳Error,"error, input, api, data, functionality",event
+B人員進行維護工作,"maintenance, inspection, repair, operation",event
+問題：DEP02主機排程為晚上11點執行KGIBIDX04與CDIBHMGT02的遠端設定檔備份腳本,"backup, scheduling, automation, remote, nightly",event
+新增 maintainer 角色並設定能力值,"setting, role, maintenance, capability, management",event
+確認資料持續進行平衡，且無空間滿載,"checking, balancing, validation, space management, updating",event
+已檢查各台主機的 NTP服務已啟用,"checking, validation, synchronization, service, assurance",event
+目前KV store狀態及磁碟用量皆為正常,"normal, status, storage",event
+Splunk升版,"update, upgrade, improvement, enhancement",event
+A部門 3.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,"testing, anomaly, verification, stability, performance",event
+检查B部门indexer索引同步状态,"checking, synchronization, status, validation",event
+"处理工程师为A人员, C人员进行工作","training, guidance, support, documentation, collaboration",event
+另外本次維護報告內容如下，再麻煩您確認後回簽CSR：,"confirmation, maintenance, verification, documentation",event
+已將SPLUNK2024/09~2025/08的維護報告寄給C同事,"sharing, maintenance, reporting, cooperation, documentation",event
+目前已有請james向FISAC提交需使用API的IP申請單。,"submission, application, api, authorization, request",event
+建议扩大授权量至150 GB,"authorization, storage, permission, increase, allocation",event
+確認伺服器效能正常,"checking, performance, normal, confirmation, stability",event
+確認checkpoint logclm uf log limit 今日發現checkpoint資料收容有約40min延遲 確認原因為該UF已達到預設輸出上限 (256kb/s) 已將全數logclm UF調整上限為 20480 KB/S 同時發現該維護報告該檢查並未開啟，已重新開啟,"delay, limit, adjustment, monitoring, configuration",event
+Splunk帳號更動,"account, update, authentication, permission, modification",event
+告警语法规则调整,"adjustment, rule, modification, regulation, syntax",event
+Splunk 10月維護報告 檢查B部門indexer索引同步狀態,"maintenance, synchronization, inspection, stability, update",event
+1.已暫先手動重啟,"重启, 暂停, 手动",event
+DEP02主機排程問題被發現,"problem, scheduling, issue, malfunction",event
+A部門Splunk角色能力異常 已於底層重新調整es_admin_user與admin角色的能力，並於網頁上驗證功能可使用,"role adjustment, verification, privileges, security, configuration",event
+代辦事項：补产出ARP_table报表给您(排程设置每月执行）,"schedule, task, reporting, planning, execution",event
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 新增Trendmicro host資料收容,"deployment, integration, security, monitoring, protection",event
+已部屬新套件至各SH上,"部署, 新增, 服务器",event
+本周工作項目如下: 1.更新GeoDB 2.主機異常處理 MG02磁碟用量超過90% -> 刪除過去備份及安裝檔，已降至85% FWD03備份異常 -> 原因為FCB設定導致備份目的路徑權限限縮，導致無法備份，已復原權限並手動執行備份 3.Cyble ASM IP白名單更新 4.Splunk帳號更動 由於人員變更，經確認後已刪除Ryan之Splunk帳號,"work, update, maintenance, permission, security",event
+前一份CSR內容誤植，重新撰寫,"revisions, errors, responsibility, sustainability, communication",event
+以新增設備於Switch_6FDC.csv中，並再次執行排程腳本,"updating, scheduling, equipment, configuration",event
+提供原廠diag並開立CASE請求協助,"diagnosis, support, issue, documentation, troubleshooting",event
+今日已添加設定，讓splunk監控所有檔案即使內容相似,"monitoring, configuration, logging, alerting",event
+"處理工程師為A人員,C人員進行時間為2025/12/24 13:30 至 2025/12/24 20:00","training, scheduling, maintenance, operation, collaboration",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251104,"work, inspection, maintenance, support, documentation",event
+狀態描述 (Description): 設備接收狀態檢查,"inspection, status, maintenance, monitoring, checkup",event
+處置動作 (Action): 3.系統優化建議 : 無,"system, optimization, suggestion",event
+處理工程師為 C人員進行時間為 2025/12/04 13:30 至 2025/12/04 17:00,"maintenance, training, operation, scheduling, duration",event
+<F5VPN特定使用者連線的紀錄(ssp)>調整 根據需求將”數位科技中心”之紀錄獨立出來，拆分為以下兩個報告 <F5VPN特定使用者連線的紀錄(ssp) 不含數位科技中心> <F5VPN特定使用者連線的紀錄(ssp) 僅數位科技中心>,"split, record, filtration, adjustment, compilation",event
+Nix logon success語法確認,"login failure, authentication, security, access denied",event
+正在個人的測試環境測試SH的KVstore狀態。,"testing, status, environment, validation, performance",event
+處理工程師B人員在2025/12/19 13:30至2025/12/19 16:00進行維護工作,"maintenance, repair, downtime, inspection, servicing",event
+完成 離開前資料備份的同步,"backup, synchronization, departure, completion, data",event
+2.<HTTPS大量傳輸告警>調整 排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄,"alert, adjustment, reporting, transmission, isolation",event
+狀態描述 Splunk 驻點服務20251226 - websense 斷行確認,"confirmation, outage, maintenance, monitoring, service",event
+FISAC資料收容進行中,"storage, processing, documentation, archive, management",event
+PA每月報表補寄 已補寄報表，後續將繼續查看排程無法正常寄送報表問題。,"reporting, scheduling, communication, supplementation",event
+目前請james 向FISAC提交需使用API的IP申請單。,"submission, api, authorization, application, approval",event
+工作内容如下： Splunk升版完成,"upgrade, completion, update, implementation",event
+滲透測試IP白名單修改,"testing, seepage, validation, verification, security",event
+伺服器效能 正常,"normal, performance, operation",event
+"處理工程師為 A人員, C人員 进行维护","maintenance, inspection, troubleshooting, support, servicing",event
+KVstore凭证有效期检查并更新凭证,"validation, expiration, renewal, authentication, timeframe",event
+伺服器效能 : 異常 - 自12/9左右開始CPU及磁碟用量明顯上升且已持續兩周，推測為FCB設定導致，目前已將設定還原，並持續觀察,"异常, 上升, 持续, 还原, 观察",event
+Cyble ASM IP白名單更新,"update, whitelist, security, maintenance",event
+請A同事再次申請檢測sailag使用者權限是否合規,"审查, 申请, 权限, 再次, 合规",event
+狀態描述為設備接收狀態檢查,"receiving, status, inspection",event
+處理工程師為 C人員 进行时间从 2025/11/10 09:30 至 2025/11/10 12:00,"maintenance, inspection, operation, calibration, downtime",event
+<HTTP对外大量传输数据报表>调整於<HTTPS大量资料传输告警>排除特定URL改由报表寄送,"transmission, alert, reporting, url, security",event
+B部門 1.FISAC資料收容-進行中,"storing, processing, documentation, assembly, management",event
+"處理工程師為 A人員,C人員 進行時間為 2025/11/21 09:30 至 2025/11/21 17:00","training, mentoring, collaboration, engineering, scheduling",event
+建议扩充授权用量至150 GB,"scaling, authorization, storage, expansion",event
+A人員進行F客戶的維護紀錄,"maintenance, documentation, servicing, recordkeeping",event
+新增index与HEC token for XSOAR,"indexing, tokenization, integration, automation, functionality",event
+狀態描述 (Description): splunk憑證跟換,"renewal, switching, certification, transition, update",event
+處理工程師為 B人員 进行时间,"processing, time management, training, operation, maintenance",event
+3. 新增index 與 HEC token for XSOAR,"indexing, automation, integration, security, tokenization",event
+一年以上情报对比VirusTotal,"comparison, monitoring, analysis, intelligence, surveillance",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：635.27GB,"authorization, expansion, usage, allocation",event
+3. FWD03 底層資料收容,"storage, containment, data, 底层, 底層",event
+狀態描述 (Description): splunk_B客戶B部門10月月維護,"maintenance, update, inspection, support, servicing",event
+進行本月月維護,"maintenance, updating, servicing",event
+建議擴充授權用量至 375 GB,"expansion, authorization, storage, increase, capacity",event
+待完成工作項目： 1.CEF outputs套件新增debug log資料蒐集,"logging, debugging, data collection, cef output, monitoring",event
+授权用量建议扩充至150 GB,"scaling, authorization, data, expansion, recommendation",event
+2026年國定假日列表更新,"holiday, update, schedule, national holiday",event
+已在172.18.44.33(DEP02)主機上新增使用者 sailag，並套用先前信件附件中的權限設定 請A同事再次申請檢測sailag使用者權限是否合規,"user management, authorization, verification, compliance",event
+B人員在2025/10/01 13:30 至 2025/10/01 17:30進行維護工作,"maintenance, repair, inspection, downtime",event
+處置動作 (Action): 4.版本更新 : 建議更新 當前版本：9.3.3/2025.02.26 最新版本：10.0.2/2025.11.14,"update, upgrade, version, recommendation, improvement",event
+本日駐點工作內容如下： A部門 3.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,"testing, anomaly, verification, environment, operation",event
+將Gitlab升級至18.5.2版本,"upgrade, version, maintenance, update, software",event
+E客户进行了定保,"maintenance, service, 保养, 检查, 保障",event
+A人員為B客戶進行維護,"service, maintenance, inspection, repair, support",event
+處置動作 (Action): 4.版本更新：建議先擴充授權使用量，再進行版本升級,"expansion, upgrade, authorization, enhancement",event
+4.一年以上情資比對VirusTotal (進行中),"comparison, analysis, monitoring, security, scanning",event
+處置動作 (Action): 本周工作項目如下: 1. 更新geodb 2. 完成本月維護作業 3. 一年以上情資比對VirusTotal (進行中),"updating, maintenance, comparison, antivirus, information, yearlong",event
+今日到場作業事項為： 更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑,"certification, update, configuration, security, path更改",event
+建議擴充 授權用量,"expansion, authorization, enhancement, permissions",event
+代辦事項：7.DEP02 root服务确认,"confirmation, verification, validation",event
+<HTTPS大量傳輸告警>調整 排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄,"adjusting, monitoring, reporting, isolation, transmission",event
+檢查各台主機KV store 憑證效期(B部門),"checking, expiration, validation, hosts, management",event
+Splunk Indexer queue full -20251215 處置動作 (Action): 工作項目： 暫時認定原因為bucket replication造成， 採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送,"queue full, replication, workaround, indexing, bucket",event
+检查各台主机KV store凭证有效期(B部门),"checking, validity, credentials, hosts, maintenance",event
+自12/9左右開始CPU及磁碟用量明顯上升且已持續兩周，推測為FCB設定導致,"cpu usage, disk activity, fcb setting, monitoring, storage, performance",event
+Indexer 索引同步状态确认为正常。,"sync, confirmation, normal",event
+系统优化建议：有10台UF超出预设传输上限，已派送套件完成调整,"optimization, adjustment, exceeding, dispatch, maintenance",event
+进行时间从 2025/11/10 09:30 至 2025/11/10 12:00 的维护,"maintenance, update, upgrade, service",event
+狀態描述 (Description): Splunk駐點服務20251226 - websense 斷行確認,"monitoring, confirmation, maintenance, service, verification",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251204,"work, inspection, maintenance, support, documentation",event
+狀態描述 (Description): Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12),"monitoring, migration, vmization, maintenance, service",event
+B部門 的SH KVstore引擎異常測試進行中,"testing, anomaly, performance, validation, debugging",event
+處置動作 (Action): 本周工作項目如下: 1.更新geodb 2.完成本月維護作業 3.一年以上情資比對VirusTotal (進行中),"updating, maintenance, comparison, security, information, virus",event
+由於FCB設定資料永久保存占用磁碟空間，目前已將資料收進splunk，下周確認資料內容後再討論後續處理方式,"data storage, archiving, analysis, review, management",event
+E客户驻点工作事项,"客户服务, 工作, 驻点, 沟通, 协调",event
+B人員在2026/01/13從13:30至17:30進行了時間處理,"time management, processing, scheduling, interval, operation",event
+狀態描述 (Description): Splunk每週onsite 處置動作 (Action): 本日駐點工作內容如下：,"on-site, maintenance, monitoring, troubleshooting, support",event
+系統優化建議：無,"optimization, improvement, recommendation, efficiency",event
+A部門 KVstore 憑證效期檢查,"verification, expiration, certification, validation, check",event
+正在個人的測試環境測試SH 的KVstore狀態中,"testing, validation, status, environment, assessment",event
+DEP02 移轉 计划在下周进行,"transfer, plan, next week, relocation, movement",event
+處理工程師為 B人員 进行时间维护,"maintenance, timekeeping, servicing, calibration, adjustment",event
+處理工程師為 C人員 進行時間為 2025/12/30 13:30 至 2025/12/30 17:00,"maintenance, operation, inspection, calibration, downtime",event
+Centos作業系統升級評估中,"upgrade, evaluation, stability, functionality, performance",event
+本次維護報告內容如下： 1.授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB,"maintenance, expansion, usage, recommendation",event
+處理工程師為 C人員 進行時間為 2025/03/28 09:00 至 2025/03/28 21:00,"maintenance, operation, upgrade, inspection, servicing",event
+處置動作 (Action): 工作項目：到場確認異常原因，當日未確認原因。,"confirmation, anomaly, investigation, presence, verification",event
+狀態描述 (Description): Splunk駐點服務202510第三周(2025/10/13),"service, presence, maintenance, support, monitoring",event
+1. 更新geodb,"updating, maintenance, synchronization, database",event
+2.系統日誌分析： 觀察資料品質儀表板、健康狀況檢查，整體無異常,"monitoring, analysis, quality, health, dashboard",event
+處置動作 (Action): 作業系統弱點：CVE-2023-3567、CVE-2023-4133、CVE-2023-6932、CVE-2023-39198、CVE-2023-51043、CVE-2023-51779、CVE-2023- 5178,"vulnerabilities, exploits, security, weaknesses, risks",event
+"A人员, C人员为B客户进行维护","service, maintenance, troubleshooting, support, inspection",event
+停用F5VPN特定使用者連線的紀錄(sas)報表,"blocking, monitoring, restriction, logging, access",event
+補產出ARP_table報表,"reporting, arp, table, network, dynamics",event
+"處理工程師為 A人員, C人員進行時間為2025/12/19 13:30 至 2025/12/19 18:00","training, mentoring, duration, engineering, collaboration",event
+處理工程師為 A人員 進行時間為 2025/12/12 13:30 至 2025/12/12 17:30,"maintenance, operation, inspection, calibration, scheduling",event
+今日到場作業如下： 2.PA事件時間誤差： 目前做法為刪除判定事件時間為當下時間的設定，並加上事件時間只抓取事件前32個位元的範圍。,"time error, adjustment, event processing, currenttime, bit range",event
+觀察資料品質儀表板、健康狀況檢查,"monitoring, checking, quality, health, dashboard",event
+4.版本更新 : 建議更新 當前版本：9.3.3/2025.02.26 最新版本：10.0.2/2025.11.14 現行版本近期被掃出弱點，建議進行升版,"update, security, improvement, version, patch",event
+處理工程師為 A人員 進行時間為 2025/12/04 10:00 至 2025/12/04 10:30,"maintenance, calibration, inspection, operation, servicing",event
+處理工程師為 C人員 進行維護,"维护, 检修, 操作, 保障, 处理",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：620.21GB,"expansion, authorization, usage, allocation",event
+處理工程師為 A人員 進行時間為 2025/12/04 09:30 至 2025/12/04 10:00,"maintenance, inspection, calibration, operation, scheduling",event
+目前分析為以下三個原因導致 estreamer 資料暴增 audit.log 持續累積（FCB147 的 keep_logs 設定導致永不刪除） /var/log/messages-20251214 單一檔案達 148GB,"log, accumulation, storage, configuration, overflow",event
+主機異常處理 MG02磁碟用量超過90% -> 刪除過去備份及安裝檔，已降至85%,"disk usage, backup, installation, optimization, space freeing",event
+工作內容如下 1. 協助新增寄信套件 2. 完成寄信測試,"testing, collaboration, email, functionality, verification",event
+今日發現checkpoint資料收容有約40min延遲 確認原因為該UF已達到預設輸出上限 (256kb/s),"delay, confirmation, limit, checkpoint",event
+Gitlab漏洞修補從18.5.4到18.5.5,"patching, update, security, maintenance, release",event
+再麻煩複掃確認。,"confirmation, recheck, verification",event
+處理工程師更新GeoDB,"updating, maintenance, database, engineering, processing",event
+提出系统优化建议无,"suggestion, optimization, submission",event
+将PA每月报表触发的默认发送套件改为客制发送套件,"customization, reporting, automation, notification, modification",event
+FISAC資料收容-進行中,"storing, handling, managing, data, operation",event
+本日駐點工作內容如下： B部門 2.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,"testing, anomaly, development, verification, operation",event
+維護紀錄被記載,"recording, documentation, preservation",event
+在个人测试环境中测试SH的KVstore状态中,"testing, evaluation, verification, environment, state",event
+处置动作包括更新geodb,"updating, handling, disposition, geolocation, management",event
+A部門 2.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,"submission, approval, documentation, api, security",event
+audit.log处理 手动删除 audit 资料（释放空间）目前还没有设定排程删除持续观察中 messages 暴增处理 删除 148GB 的 messages-20251214 文件（立即释放空间）,"space, deletion, log, management, monitoring",event
+工作项目包括调整HTTP对外大量传输资料报表以新增需监控之url,"monitoring, adjustment, reporting, url, transmission",event
+今日工作項目如下：,"tasks, work, assignments",event
+狀態描述 (Description): splunk_B客戶B部門11月月維護,"maintenance, inspection, upkeep, troubleshooting, servicing",event
+A部門 Splunk使用者權限調整,"access, adjustment, privilege, security, administration",event
+無系統優化建議,"空旷, 追逐, 隠蔽",event
+确认Identity的优先级,"priority, verification, authentication, confirmation",event
+状 态描述 (Description): E客户驻点工作事項 - 20251114,"work, presence, collaboration, support, operation",event
+今日發現自12/9左右開始FWD02的CPU用量明顯上升且已持續兩周，同時磁碟用量也達到90%，其中estreamer資料占用約109G,"cpu usage, disk usage, data storage, monitoring, increase",event
+處理工程師為 B人員 進行時間為 2026/01/02 17:33 至 2026/01/02 17:35。,"维护, 时间, 操作",event
+本次維護報告內容如下： 2.伺服器效能：正常,"maintenance, performance, normal, update",event
+目前处理方式 estreamer 虚处 理 移除 rsyslog 转送设定（减少资料流入）,"removal, processing, configuration, redirection, streamlining",event
+Websebse log 異常截斷 Raw data內就有換行字元，導致異常截斷,"data issue, newline, logging, error, truncation",event
+刪除判定事件時間為當下時間的設定,"present, deletion, judgment, setting",event
+3.系統優化建議：無,"system, optimization, recommendation",event
+已將過期憑證移除並重新產生新憑證(有效期至2028/11)，確認kvstore 狀態為正常,"certification, renewal, validation, expiration, kvstore, normalization",event
+設定檔備份腳本異常問題被解決,"bug, backup, resolution, script, normality",event
+进行时间从 2025/10/30 13:30 至 2025/10/30 17:00 的维护,"maintenance, update, service, upgrade",event
+代辦事項： 4.Tenable API App串接,"integration, connection, api, automation, collaboration",event
+處置動作 (Action): 1.設備狀態檢查： 觀察月報CPU、Memory使用率皆無超過90%，整體正常,"monitoring, checking, normal operation, maintenance, status",event
+狀態描述: (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),"maintenance, inspection, update, security, calibration",event
+狀態描述 (Description): Splunk駐點服務202512第五周(2025/12/30),"service, monitoring, support, deployment, maintenance",event
+确认kvstore状态为正常,"checking, confirmation, normality, status, verification",event
+A部門 的帳號盤點清單被確認,"confirmation, inventory, verification",event
+B部門 向FISAC提交需使用API的IP申請單,"submission, api, authorization, application, approval",event
+3. 系統優化建議 - 皆正常，無需調整,"normal, optimization, system, adjustment",event
+C人員進行維護紀錄的時間為2025/12/23 09:00 至 2025/12/23 18:00,"maintenance, documentation, update, recording, schedule",event
+版本更新建議先擴充授權使用量，再進行版本升級,"expansion, authorization, upgrade, suggestion, licensing",event
+問題：有101台UF已超過15分鐘未與indexer連線 建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,"monitoring, update, reconnection, timeout, synchronization",event
+處理工程師為A人員進行維護紀錄,"maintenance, documentation, repair, recording, servicing",event
+FWD03備份異常 -> 原因為FCB設定導致備份目的路徑權限限縮，導致無法備份，已復原權限並手動執行備份,"permission, backup, restore, failure, configuration",event
+狀態描述 (Description): splunk_銀行處11月月維護,"maintenance, update, security, calibration, synchronization",event
+目前處理方式 estreamer 處理 移除 rsyslog 轉送設定（減少資料流入）,"removal, reduction, configuration, streamlining, handling",event
+DEP02移轉預計下周進行,"transfer, planning, relocation, expectation",event
+工作時間為2025/12/04 13:30 至 2025/12/04 17:00,"working hours, timeframe, session",event
+問題：新增UDP接收來自172.20.137.45的asa事件，於搜尋頁面上卻查詢不到該IP事件,"networking, search, event, visibility, monitoring",event
+messages 暴增處理 刪除 148GB 的 messages-20251214 檔案（立即釋放空間）,"deletion, storage, cleanup, archive, spaceudging",event
+E客戶駐點工作事項 - 20251218,"work, meeting, coordination, support, inspection",event
+預計下周一會再次到場確認目前狀況並持續追蹤原廠協助。,"confirmation, tracking, follow-up",event
+Splunk整体架构IP调整完成,"architecture, adjustment, completion",event
+處置動作 (Action): 今日工作項目如下：,"tasks, work, assignment, duty, schedule",event
+3.2025弱點掃描報告資訊整理,"information, scanning, organizing, vulnerability, report",event
+狀態描述 (Description): Splunk Indexer queue full - 20251211,"queue full, indexing, logshipping, backlog, overflow",event
+报告及告警寄件人更新将原寄给Ryan之报告及告警改为了Calvin并新增Splunk登入账号未来包含ES结案等通知皆由Calvin做审核与结案,"update, notification, review, authorization, transition",event
+Splunk套件升級-完成 已部屬新套件至各SH上。,"upgrade, deployment, completion, integration, update",event
+PA報表寄信異常-未完成 已補跑報告並寄送郵件,"reporting, correspondence, validation, submission, documentation",event
+狀態描述 (Description): Splunk 版本升級 9.3.1 -> 9.3.3,"upgrade, version, software, update",event
+暫時認定原因為bucket replication造成,"replication, bucket, synchronization, configuration, error",event
+處置動作 (Action): 4.版本更新：建議先擴充授權使用量，再進行版本升級 -當前版本：8.0.6 / 2024.10.22 -最新版本：10.0.1 / 2025.09.25,"updating, expanding, authorization",event
+B部門 1.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,"submission, approval, documentation, api access, processing",event
+SPLUNK月报寄送,"reporting, sending, monthly, analysis, updates",event
+處理工程師為 B人員 進行時間為 2025/10/13 13:30 至 2025/10/13 17:30。,"maintenance, operation, inspection, calibration, schedule",event
+LDAP设置已完成Splunk LDAP验证设置,"configuration, authentication, integration, setup, verification",event
+資產新增報廢/營運中欄位,"update, maintenance, operation, depreciation, status",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB,"expansion, authorization, storage, increment, allocation",event
+處理工程師為A人員進行維護,"maintenance, inspection, troubleshooting, servicing, repair",event
+A部門 1.Splunk 使用者權限調整 調整es_admin_user 使用者權限。 調整ess_analyst 腳色權限，以供廠商進行例行維護或問題解決登入使用,"permissions, access, maintenance, authentication, authorization",event
+"處理工程師為 A人員,C人員 進行時間為 2025/12/31 13:30 至 2025/12/31 17:40","training, calibration, maintenance, operation, certification",event
+本周工作项目包括更新GeoDB并调整HTTPS大量传输告警,"updates, adjustments, database, security, transmission",event
+状态描述 (Description): E客户驻点工作事項 - 20251114,"work, task, operation, assignment, duty",event
+Splunk套件升级完成,"upgrade, completion, update, installation",event
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 今日工作項目如下：,"deployment, installation, maintenance, monitoring, configuration",event
+自動化封鎖清單異動儀表板建置 (進行中),"updating, automation, monitoring, maintenance, construction",event
+狀態描述: Splunk 2025 MA 07月定保.DM20250088_(3/12),"maintenance, inspection, service, update, calibration",event
+處理工程師整理2025弱點掃描報告資訊,"analysis, compilation, vulnerability, engineering, documentation",event
+手动重启DLDK容器,"restarting, container, maintenance, update",event
+處理工程師為B人員進行維護,"maintenance, training, engineering, support, operation",event
+后续将进底层查看缺少设备的原因。,"inspection, investigation, troubleshooting, missing equipment, bottom level",event
+處理工程師為 A人員 進行時間為 2025/11/06 11:00 至 2025/11/06 12:00。,"maintenance, inspection, calibration, operation, servicing",event
+處理工程師為C人員進行維護紀錄,"maintenance, documentation, inspection, repair, recording",event
+DEP02 (IP)移转(下周进行),"transfer, relocation, ip, next week",event
+Cybereyes介接套件建置,"installation, integration, connectivity, technology, interface",event
+今日早上接到您緊急報修，隨即到場進行調查,"repair, urgency, investigation, maintenance, troubleshooting",event
+處理工程師為 C人員 進行時間為 2025/07/29 13:30 至 2025/07/29 17:00。,"maintenance, operation, calibration, inspection, scheduling",event
+本日駐點工作內容如下： A部門 1.Splunk 使用者權限調整 調整es_admin_user 使用者權限。 調整ess_analyst 腳色權限，以供廠商進行例行維護或問題解決登入使用,"adjustment, authorization, maintenance, access, configuration",event
+狀態描述 (Description): Splunk 2025 MA 07月定保.DM20250088_(3/12),"maintenance, inspection, calibration, update, servicing",event
+處理工程師為 B人員 進行時間為 2025/12/23 13:30 至 2025/12/23 17:30,"training, maintenance, operation, guidance, calibration",event
+E客戶駐點工作事項 - 20251223 處置動作 (Action),"placement, action, deployment, positioning",event
+服务器效能正常,"normal operation, stability, efficiency",event
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB,"授权, 扩展, 建议, 用量",event
+待办事项包括告警盘点,"alarms, inventory, tasks, checking, alerts",event
+VMware Tools漏洞修補,"patch, vulnerability, update, security, fix",event
+待办事项包括SSH Server漏洞修补,"vulnerability, patching, tasks, security, ssh",event
+4.<DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標>告警調整 查詢不同網域數量閥值由200改為300 統計區間由三分鐘改為五分鐘內,"alert, adjustment, threshold, 统计, interval",event
+帳號盤點清單確認,"checking, confirmation, inventory, verification, reconciliation",event
+离开前资料备份的同步已经完成,"backup, synchronization, completion, 准备工作, 离开准备",event
+B部門 2.SH KVstore引擎異常測試-進行中,"testing, anomaly, performance, evaluation, stability",event
+查出pice_logs缺少檔案的原因,"checking, missing, files, troubleshooting, reason",event
+本周工作项目如下：1 更新geodb 2.Heavy Forwarder磁碟用量调查发现昨日该台主机磁碟用量暴增同时发现该台主机KV store凭证过期今日已更新凭证目前KV store状态及磁碟用量皆为正常,"updating, investigation, maintenance, normalcy, storage",event
+嘗試修改props.conf，調整截斷規則，離開前未解決，下次到場時處理,"configuring, truncation, unresolved, next meeting",event
+狀態描述 (Description): 資料平衡確認與未連接license master解決,"balancing, resolving, confirmation, connection, licensing",event
+處置動作 (Action): 4.版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.2/2025.11.14,"update, version, maintenance, release, upgrade",event
+3.系統參數檢查 設備參數無異常(DNS server、NTP server、LDAP setting),"checking, parameters, normal, configuration, validation",event
+A部門 Splunk整體架構IP調整-完成,"configuration, completion, adjustment, networking",event
+發現昨日(11/3)該台主機磁碟用量暴增,"storage, increase, usage, discovery, alert",event
+待辦事項: 1. 告警盤點 (預計下周開始),"alarm, inventory, safety, inspection, scheduling",event
+本次維護報告內容如下： 4.版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.8 / 2025.11.14 -最新版本：10.0.2 / 2025.11.14,"update, maintenance, security, upgrade, patching",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251111,"work, inspection, maintenance, support, documentation",event
+處理工程師為 A人員 進行時間為 2025/11/19 13:30 至 2025/11/19 14:30。,"maintenance, inspection, procedure, engineering, operation",event
+本日駐點工作內容如下： A部門 1.帳號盤點清單確認 已完成帳號盤點並寄送報表給Hank,"accounting, verification, completion, reporting",event
+设置未明确定义优先级的identity为low,"priority, low, identity",event
+工作事項： IDX01重新加入後，因同步資料導致IDX02與IDX03滿載,"sync issues, overload, synchronization, data conflict",event
+代辦事項：6.BTDC2问题处理,"handling, resolution, troubleshooting, management, addressing",event
+版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.3 / 2025.02.26 -最新版本：10.0.0 / 2025.07.28,"upgrade, security, improvement, patch, enhancement",event
+新增indexer至IDX cluster節點，目前將觀察index同步狀態。,"adding, synchronization, indexing, node, cluster",event
+當前版本為9.3.3/2025.02.26,"version, update, release",event
+建议进行版本更新至10.0.1,"update, version, improvement",event
+完成 NTP服务检查,"checking, service, validation, completion, verification",event
+在 2025/11/07 15:00 至 2025/11/07 17:00 時間段內，C人員為 B客戶 的維護工作,"maintenance, repair, service, troubleshooting, inspection",event
+申請底層1.Disable splunk自動version check2.CEF outputs套件調整送出格式甲、將換行字元取代成空格乙、最尾端新增一個空格3.調整IIS LOG拋送目的,"configuration, adjustment, formatting, logging, automation",event
+n8n無法連線至splunk問題正在排查,"connection, issue, troubleshooting, integration, failure",event
+处理工程师为C人员进行时间从2025/11/24 09:00 至 2025/11/24 17:30。,"handling, maintenance, support, consultation, troubleshooting",event
+E客戶駐點工作事項 - 20251209 狀態描述,"customer support, presence, work, interaction, service",event
+已將PA每月報表觸發的預設寄件套件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查,"customization, automation, monitoring, reporting, troubleshooting",event
+建議擴充 -授權量 : 375 GB -平均授權使用量 : 1276GB,"licensing, usage, data, permission, allocation",event
+代辦事項： IP網段設備報表確認,"confirmation, verification, equipment, network, segment",event
+檢查B部門indexer索引同步狀態,"inspection, synchronization, status, verification, update",event
+原先版本受到漏洞CVE-2025-6454、CVE-2025-2256影響,"vulnerability, impact, exploit, security, patch",event
+狀態描述為 Splunk Indexer queue full -20251215,"queue full, indexing, log, data, overflow",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：239.38GB,"expansion, authorization, usage, increase, allocation",event
+處理工程師為 C人員 進行時間為 2025/12/15 09:00 至 2025/12/15 18:00。,"maintenance, operation, inspection, downtime, calibration",event
+處理工程師為 C人員 進行時間為 2025/12/12 09:00 至 2025/12/12 18:00。,"maintenance, operation, calibration, inspection, downtime",event
+B人員於2026/01/19 13:30至2026/01/19 17:30進行維護工作,"maintenance, repair, service, upgrade",event
+DEP02移轉後服務確認 已確認服務正確，並再次執行健康檢查確認系統功能正常。,"confirmation, verification, inspection, functionality, health检查",event
+已確認SPLUNK可正常登入使用、KVSTORE 狀態正常,"login, verification, functionality, database, confirmation",event
+處置動作 (Action): 本周工作項目如下,"planning, tasks, schedule, work, assignments",event
+B部門 1.FISAC資料收容-進行中 目前已請B同事 向FISAC提交需使用API的IP申請單。,"submission, approval, documentation, api, security",event
+針對UAT / Production / PIMS 共8台進行調整,"adjustment, maintenance, configuration, optimization, testing",event
+已在172.18.44.33(DEP02)主機上新增使用者sailag，並套用先前信件附件中的權限設定。,"adding, user, permissions",event
+FWD02 CPU及磁碟用量異常,"abnormal, usage, anomaly, disk, cpu",event
+Splunk驻点服务202510第四周(2025/10/20)进行中,"service, maintenance, operation, support, running",event
+處置動作 (Action): 3.系統優化建議：有10台UF超出預設傳輸上限，已派送套件完成調整,"optimization, adjustment, exceed, distribution, configuration",event
+B人員 在 2025/12/02 進行維護工作,"maintenance, inspection, service, operation",event
+處置動作 (Action): 4.版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.8 / 2025.11.14 -最新版本：10.0.2 / 2025.11.14,"update, upgrade, security, version, patch",event
+進行維護紀錄,"maintenance, documentation, update, inspection",event
+1.VMware Tools 漏洞修補 為修補漏洞CVE-2025-41244、CVE-2025-41246，以按照提供之SOP更新至12.3.5版本,"update, vulnerability, security, patching, version",event
+未出现在 DC_ARP_table 中的设备已用橘底标示，在请您确认。,"unidentified, warning, alert, marking, validation",event
+Splunk每週onsite 處置動作,"installation, deployment, monitoring, analysis, 事件部署",event
+更新全部主機之KV store憑證,"updating, certification, maintenance, security, synchronization",event
+Centos作業系統升級(評估中),"upgrade, assessment, stability, compatibility, optimization",event
+執行 工作事項： IDX01重新加入後，因同步資料導致IDX02與IDX03滿載,"syncing, overflow, synchronization, dataynchronization, backlog",event
+因admin角色的能力需高于es_admin_user角色，所以已删除es_admin_user继承admin能力的选项，同时删除es_admin_user的可删除索引能力以区分权限高低,"privilege, deletion, administration, indexing, authorization",event
+處理工程師為 B人員 進行時間為 2026/01/05 13:30 至 2026/01/05 17:30,"maintenance, operation, inspection, calibration, adjustment",event
+已更新全部主机之KV store凭证(效期至：2028/11),"updating, credential, expiration, maintenance, security",event
+PA 每月Block Category報表在重新執行排程時會出現error，將於下周到場繼續處理,"errors, maintenance, scheduling, execution, correction",event
+伺服器效能正常,"normal operation, stability, efficiency",event
+網頁憑證期限更新至2027/12月,"certificate, expiration, security, renewal, validation",event
+Splunk升版，從9.3.3升版至9.3.8，再麻煩您申請弱點復掃,"upgrade, vulnerability, scan, update, security",event
+A人員進行了F客戶的維護工作,"maintenance, service, inspection, repair, support",event
+正在個人的測試環境測試SH 的KVstore狀態中。,"testing, stability, evaluation, functionality, performance",event
+检查服务器效能正常,"monitoring, performance, normality, checking, efficiency",event
+每月Block Category報表在重新執行排程時會出現error,"error, scheduling, execution, monthly, report",event
+Splunk駐點服務202601第三週(2026/1/19)進行狀態描述,"status, description, monitoring, service, operation",event
+狀態描述 (Description): splunk_銀行處12月月維護,"maintenance, update, security, stability, operation",event
+Splunk駐點服務202512第五周(2025/12/30),"service, support, maintenance, inspection, operation",event
+1.更新GeoDB,"updating, database, synchronization, information, geography",event
+處理工程師為 B人員 進行時間為 2025/12/30 13:30 至 2025/12/30 17:30。,"training, maintenance, calibration, operation, inspection",event
+B部门进行FISAC资料收容-进行中,"management, organizing, containment, documentation, process",event
+Splunk LDAP驗證設定 已完成splunk LDAP驗證設定,"configuration, authentication, setup, integration, validation",event
+工作项目：修改SASE VPN登入成功报表条件,"conditions, reporting, security, authentication, modification",event
+狀態描述 (Description): Splunk駐點服務202601第二周(2026/1/13),"service, support, maintenance, monitoring",event
+持續進行中 資料大小平衡,"balancing, 持续, progress",event
+3.<F5VPN特定使用者連線的紀錄(ssp)>調整 根據需求將”數位科技中心”之紀錄獨立出來，拆分為以下兩個報告 <F5VPN特定使用者連線的紀錄(ssp) 不含數位科技中心> <F5VPN特定使用者連線的紀錄(ssp) 僅數位科技中心>,"adjustment, separation, reporting, filtration, documentation",event
+修改splunk設定以監控相似log,"configuring, monitoring, logging, settings, alerts",event
+本周工作項目如下: 1.更新GeoDB 2.Gitlab漏洞修補 18.5.4 -> 18.5.5 為修補漏洞已將Gitlab升級至建議版本,"update, upgrade, vulnerability, maintenance, project",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251124,"work, presence, inspection, maintenance, coordination",event
+處理工程師為 C人員 進行時間為 2025/11/25 09:30 至 2025/11/25 14:00,"维护, 检修, 工期, 工程师, 设备",event
+處理工程師進行維修工作,"维修, 工作, 故障, 检查, 修复",event
+Splunk月報寄送,"reporting, automation, notification, delivery",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：100GB -平均授權用量：132GB,"expansion, authorization, usage, storage",event
+處置動作 (Action): 6.補充： 作業系統弱點：CVE-2023-3567、CVE-2023-4133、CVE-2023-6932、CVE-2023-39198、CVE-2023-51043、CVE-2023-51779、CVE-2023- 5178,"vulnerabilities, exploits, patching, security, weaknesses",event
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 進行本月月維護，再麻煩您協助CSR回簽,"maintenance, cooperation, support, upkeep, coordination",event
+請james向FISAC提交需使用API的IP申請單,"submission, api, authorization, documentation, request",event
+FISAC提交需使用API的IP申請單,"application, api, submission, authorization, access",event
+将账号状态加入category栏位,"updating, categorizing, (status, account)",event
+處理工程師為 B人員 進行時間為 2025/12/19 13:30 至 2025/12/19 16:00,"maintenance, training, scheduling, calibration, operation",event
+處理工程師為 B人員 進行時間為 2025/11/26 13:30 至 2025/11/26 14:30,"maintenance, training, scheduling, operation, duration",event
+Splunk駐點服務202510第一周(2025/10/01)的工作內容被描述,"work, description, service, operation, documentation",event
+處理工程師為 C人員 進行時間為 2025/12/26 09:00 至 2025/12/26 10:30。,"maintenance, calibration, inspection, scheduling, engineering",event
+處置動作 (Action): 今日工作項目如下： 1.asa事件接收異常 問題：新增UDP接收來自172.20.137.45的asa事件，於搜尋頁面上卻查詢不到該IP事件 解決辦法：於indexer cluster上新增索引後部署至底下indexer，再次於SH上執行搜尋即可查詢事件,"configuration, indexing, deployment, search, anomaly",event
+新增 indexer 至IDX cluster节点,"adding, indexing, nodes, clustering, management",event
+處置動作為前一封CSR時間誤植,"misplacement, correction, alignment, adjustment",event
+检查各台主機KV store 憑證效期(B部门),"verification, expiration, maintenance, security, validation",event
+處置動作 (Action): 本月維護重點如下： 1.授權使用量 - 購買量:2GB - 平均使用量:0.35GB - 使用率為17.5%，達100%次數為1，屬正常範圍,"maintenance, usage, authorization, operation",event
+"將 src=""172.*"" 的事件從原先<IPS高風險告警>中獨立出來","isolating, event, independence, risk, separation",event
+A人員進行維護,"maintenance, repair, inspection, upkeep, servicing",event
+2. 伺服器效能 - CPU使用率:1.24%，低於90%，屬正常 - 記憶體使用率:18.21%，低於90%，屬正常 - 硬碟使用率:43.73%，屬正常,"normal, performance, monitoring, efficiency",event
+處理工程師為 A人員 進行時間為 2025/11/06 10:00 至 2025/11/06 11:00,"maintenance, inspection, calibration, engineering, operation",event
+C客戶的維護紀錄被記錄,"maintenance, documentation, recordkeeping, servicing",event
+處理工程師為C人員進行維護,"maintenance, training, engineering, support, operation",event
+工作事項： 1. 新增/etc/hosts，並重起服務後，正常连线至LM 2. 确认资料持续进行平衡，且无空间满载,"configuring, balancing, connectivity, maintenance, updates",event
+工作事項： Splunk升版完成,"upgrade, completion, update, implementation",event
+在附件中列出所有需列出的设备名称。,"list, equipment, attachment",event
+FIsac情資撈取 已設定完成，正在等待防火牆開通,"data collection, monitoring, intelligence, gathering, security",event
+設定檔備份腳本異常-完成 已修改各台主機中CDIBHMGT02的IP為172.18.44.31，並再次執行備份腳本確認排程腳本正常。,"backup, configuration, verification, modification, scheduling",event
+已將原寄給Ryan之報告及告警改為Calvin，並新增Splunk登入帳號,"updating, reallocating, logging, notification, modification",event
+设定完成 FIsac情报捞取,"information gathering, intelligence, retrieval, 搜集",event
+调整 clean.sh 数据留存区间（定期清理旧资料，原为留存12小时，现改为了6小时）,"cleaning, interval, data, retention, adjustment",event
+確認內對內告警urgency提升至critical,"alert, urgency, critical",event
+處理工程師為 A人員 進行時間為 2025/11/24 10:30 至 2025/11/24 12:00,"maintenance, inspection, calibration, operation, troubleshooting",event
+A人員 進行 F客戶 的維護紀錄,"maintenance, documentation, servicing, recordkeeping, inspection",event
+DEP02連動主機檢查,"联动, 检查, 主机",event
+狀態描述為 splunk_銀行處11月月維護,"maintenance, update, security, stability, patching",event
+2. 伺服器效能 - CPU使用率:1.24%，低於90%，屬正常 - 記憶體使用率:18.21%，低於90%，屬正常 - 硬碟使用率:42.91%，屬正常,"normal, performance, monitoring, usage, status",event
+代辦事項： 3.新增Splunk Add-on for Google Cloud Platform的sourcetype,"integration, configuration, deployment, setup, management",event
+執行健康情況檢查,"检查, 健康, 评估, 监测, 状况",event
+處理工程師進行時間為2025/11/06 11:00 至 2025/11/06 12:00的維護,"maintenance, repair, downtime, upgrade",event
+處理工程師為 A人員 进行时间维护,"maintenance, time management, troubleshooting, calibration, service",event
+Maintainer帳號權限確認 已確認角色能力可符合日常工作使用。,"confirmation, validation, authorization, roles, permissions",event
+待办事项: 1. SSH Server漏洞修补,"patching, security, vulnerabilities, updates",event
+處理工程師為 A人員 进行维护,"maintenance, inspection, servicing, troubleshooting, repair",event
+新增Trendmicro host資料收容,"data, hosting, storage, migration, security",event
+B部門FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,"submission, approval, documentation, api, security",event
+协助新增寄信套件,"updating, adding, functionality, communication",event
+PA報表寄送異常檢查 已確認splunk有寄出報告並記錄於cim_modactions索引中，目前以請A同事向IT部門確認exchange是否有收到splunk報告。,"checking, confirmation, communication, reporting, verification",event
+本日工作項目： 1. 修改SASE VPN登入成功報表條件，與確認送至SOAR欄位,"modification, verification, condition, reporting, integration",event
+新增indexer 新增indexer至IDX cluster節點，目前將觀察index同步狀態,"indexing, synchronization, cluster, node, addition",event
+更改sourcetype並套用設定,"configuring, updating, modifying, adjusting, changing",event
+今日工作內容如下，預計下周二(11/18)到場作業,"working, assignment, presence, task, submission",event
+因為admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以區分權限高低。,"privilege, permission, deletion, administration, hierarchy",event
+根據原廠建議，新增Splunk參數避免搜尋不會因為記憶體不足時就hanging,"configuration, optimization, memory, search, stability",event
+NTP服務檢查-完成 已檢查各台主機的 NTP服務已啟用。,"checking, synchronization, validation, service, confirmation",event
+狀態描述 (Description): Splunk駐點服務202511第三周(2025/11/17),"service, deployment, maintenance, monitoring, support",event
+因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以 區分權限高低,"role, permission, deletion, administration, indexing",event
+本周工作項目如下: 1.更新GeoDB,"updating, project, database, geospatial, maintenance",event
+請 james 向FISAC提交需使用API的IP申請單,"submission, api, authorization, application, approval",event
+Splunk整體架構IP調整-完成 已設定完成所有主機的新IP,"configuration, completion, networking, hosting, update",event
+代辦事項：1.Centos作業系統升級(評估中),"upgrade, assessment, maintenance, reliability, stability",event
+狀態描述 (Description): Splunk駐點服務202510第二周(2025/10/07),"service, monitoring, support, deployment, maintenance",event
+未來包含ES結案等通知皆改由Calvin做審核與結案,"审核, 结案, 审核权, 变更",event
+Splunk 驻点服务202510第三周 (2025/10/13) 處置动作 包括 本周工作项目如下。,"deployment, installation, maintenance, monitoring, configuration",event
+狀態描述 (Description): E客戶 Splunk 2025 MA 11月定保.DM20250088_(7/12),"maintenance, inspection, warranty, servicing, update",event
+刪除上周末駐點時於SH新增的splunk microsoft套件,"removal, configuration, update, deployment, management",event
+KPMG滲透測試IP加入白名單,"security, testing, whitelist, penetration, audit",event
+因目前版本並未有重大弱點，也未受相關BUG,"stability, bug-free, secure",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251202,"work, inspection, maintenance, support, documentation",event
+處置動作 (Action): 4.版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.1/2025.09.25,"update, version, delay, current, latest",event
+待辦事項: 1. FCB設定調整,"settings, adjustment, to-do, tasks, configuration",event
+B人員進行維護,"maintenance, inspection, repair, upkeep",event
+工作项目包括更新geodb和页面复原,"updating, restoration, project, database, recovery",event
+FWD02磁碟用量異常處理 今日FWD02磁碟用量達到超過90%,"storage, monitoring, alert, usage, capacity",event
+狀態描述 (Description): Splunk 202510-12季維護,"maintenance, update, stability, patching, upgrade",event
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 版本更新：現行版本近期被掃出弱點,"version update, security, vulnerability, maintenance, upgrade",event
+C客戶 的維護紀錄被記錄,"recording, maintenance, documentation, updating, log",event
+"處理工程師為 A人員, C人員 進行維護工作","maintenance, engineering, servicing, inspection, troubleshooting",event
+確認所有checkpoint告警使用情況,"monitoring, verification, alerts, checkpoints",event
+作業項目如下： Asset and Identity priority確認,"confirmation, prioritization, verification, identification",event
+同時磁碟用量也達到90%，其中estreamer資料占用約109G,"storage, data, usage, occupation, file",event
+Splunk每週onsite 處置动作,"deployment, monitoring, analysis, data, event",event
+重新安裝 Splunk，設定FIPS mode=0,"installation, configuration, security, updating, compliance",event
+B客戶的維護紀錄被記錄,"recording, maintenance, documentation, update, servicing",event
+3.FWD02 CPU及磁碟用量異常,"abnormal, usage, anomaly, disk, processor",event
+待辦事項: Cybereyes API 介接 (進行中),"development, integration, api, progress, connectivity",event
+處理工程師為 B人員 進行時間為 2025/10/20 11:00 至 2025/10/20 16:00,"maintenance, operation, inspection, calibration, scheduling",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：20GB -平均授權用量：55.15GB,"expansion, authorization, usage, quota, increment",event
+3.AI網站服務紀錄調閱儀表板建置 為方便後續定期調閱AI網站連線紀錄，已建置調閱儀表板,"record, dashboard, monitoring, access, analytics",event
+並以驗證服務皆正常， 弱點應已修復,"verification, validation, recovery, stability, check",event
+處理工程師為 B人員 進行時間為 2025/11/17 13:30 至 2025/11/17 17:30,"maintenance, training, operation, calibration, guidance",event
+已确认Splunk有寄出报告并记录于cim_modactions索引中，目前请A同事向IT部门确认exchange是否有收到Splunk报告,"confirmation, verification, communication, reporting, validation",event
+部屬新crowdstrike套件 已部屬套件於SH上,"deployment, installation, security, protection, integration",event
+新增DNS設定 已新增DNS 設定於forwarder上,"adding, configuration, dns, forwarder, update",event
+同時發現該台主機KV store憑證過期,"expiration, discovery, security, warning, validation",event
+目前有看到AbuseIPDB可檢測情資並直接串接splunk 於Search Head測試可使用後即可建立排程,"monitoring, integration, testing, scheduling",event
+建议进行版本更新至10.0.2,"update, version, improvement, release, modification",event
+處理工程師為 C人員 进行时间维护,"maintenance, timekeeping, operation, servicing, calibration",event
+4.健康狀態檢查 執行健康情況檢查，整體無異常,"检查, 正常, 健康",event
+經查原因為檔案中的log太過相似，splunk會自動判定為相同的log而不重複收容,"logging, similarity, automation, consolidation",event
+PA TRAFFIC事件sourcetype更換,"congestion, flow, commute, change, update",event
+處理工程師為 B人員 進行時間為 2025/12/15 13:30 至 2025/12/15 17:30。,"maintenance, inspection, calibration, operation, scheduling",event
+A部門 1.DEP02連動主機檢查-完成,"check, completion, inspection",event
+C人員於2025/11/25 09:30 至 2025/11/25 14:00進行維護,"maintenance, repair, service, update",event
+處置動作 (Action): 2.伺服器效能 : 無,"downtime, failure, maintenance, outage",event
+處置動作 (Action): 2.伺服器效能：正常,"normal, performance, operation, stability",event
+處理動作：3.系統優化建議：根據說明定期檢查,"maintenance, optimization, inspection, scheduling, efficiency",event
+FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,"submission, approval, api, documentation, processing",event
+列出多個作業系統弱點,"vulnerabilities, flaws, weaknesses",event
+Splunk每週onsite處置動作,"onsite, 处置, 动作, weekly, management",event
+工作項目： 協助韌體更新，問題未解決，持續尋找workaround,"协助, 更新, 寻找, 问题",event
+處理工程師為 B人員 進行時間為 2025/12/02 13:30 至 2025/12/02 17:30,"maintenance, operation, inspection, calibration, documentation",event
+處置動作 (Action): 今日到場作業項目如下： 以新增設備於Switch_6FDC.csv中，並再次執行排程腳本，確認已收入新設備事件,"updating, scheduling, installation",event
+代辦事項：补产出ARP_table报表给您(排程设置每月执行）。,"reporting, scheduling, task, assignment, execution",event
+ES升版從8.0.3至8.2.3,"upgrade, version, improvement, software",event
+狀態描述 (Description): Splunk工作事項 - 0729,"searching, analyzing, monitoring, events, log, troubleshooting",event
+处置动作包括VMware Tools漏洞修修补,"patching, vulnerability, remediation, security, configuration",event
+进行中的一年以上情资比对VirusTotal,"analysis, comparison, monitoring, threat, detection",event
+A部門 3.Linux主機使用者與使用者權限-進行中 已在172.18.44.33(DEP02)主機上新增使用者 sailag，並套用先前信件附件中的權限設定 請珮雯再次申請檢測sailag使用者權限是否合規，將在檢測通過後於其他主機上新增使用者,"权限设置, 新增用户, 检测合规",event
+A部門 NTP服務檢查-完成,"checking, completion, synchronization, configuration, validation",event
+目前已關閉日誌轉發設定，並將estreamer 資料清理排程調整為僅留存6小時資料 (原為12小時)，減少占用磁碟空間,"log forwarding-disabled, data-cleanup, storage-space-reduction",event
+GitLab漏洞修補,"patching, security, update, fixing, vulnerability",event
+處理工程師為 A人員 進行時間為 2025/12/05 13:30 至 2025/12/05 15:30。,"maintenance, 检修, 操作, 时间, 日期",event
+A部门 PA报表寄信异常-完成,"异常, 报表, 寄信, 完成",event
+狀態描述 (Description): Splunk駐點服務202512第一周(2025/12/2),"service, presence, monitoring, support, deployment",event
+處置動作 (Action): 5.問題追蹤：無,"troubleshooting, tracking, monitoring, investigation, following",event
+Splunk bundle存储量过大,"storage, bundle, overload",event
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：20GB -平均授權用量：133.26GB,"expansion, authorization, usage, storage, increment",event
+Assets僅針對H1、H2、H3的設備將priority設為critical，其餘皆設為low,"prioritization, criticality, assessment, classification",event
+提出系统优化建议,"suggestion, optimization, improvement, enhancement",event
+系统优化建议，有10台UF超出预设传输上限,"system, optimization, threshold, exceed, transmission",event
+关闭日志转发设置，并调整estreamer资料清理排程,"settings, adjustment, log, cleaning, scheduling",event
+關閉SH FISAC API input (未使用),"shutdown, closure, disabling, cessation",event
+B部门进行SH KVstore引擎异常测试-进行中,"testing, anomaly, performance, validation, functionality",event
+處置動作 (Action): 1.授權用量 : 建議擴充 -授權量 : 375 GB -平均授權使用量 : 1276GB,"authorization, expansion, usage, permission, allocation",event
+處理工程師為 C人員 進行時間為 2025/11/14 09:00 至 2025/11/14 15:33。,"maintenance, operation, inspection, calibration, servicing",event
+FIsac情資撈取 已設定完成，正在等待防火牆開通。,"data gathering, monitoring, operation, collection, retrieval",event
+新增indexer至IDX集群节点并观察同步状态,"adding, synchronization, indexing, cluster, monitoring",event
+工作事項 Splunk 升版完成,"upgrade, completion, update, implementation",event
+狀態描述 (Description): Splunk駐點服務202511第二周(2025/11/11),"service, monitoring, support, deployment",event
+D客戶的維護紀錄被記錄,"recording, maintenance, documentation, log, entry",event
+Splunk_11月維護 處置動作 包含 系統優化建議：無,"maintenance, optimization, recommendation, system, update",event
+2.報告及告警寄件人更新,"updating, notification, reporting, communication, feedback",event
+Centos作业系统升级(评估中),"upgrading, assessment, stability, performance, updates",event
+處理工程師為 B人員 進行時間為 2025/10/01 13:30 至 2025/10/01 17:30,"maintenance, operation, inspection, calibration, scheduling",event
+目前版本並未有重大弱點，也未受相關BUG,"stable, bug-free, robust, secure",event
+2.伺服器效能 : 無,"performance, efficiency, operation",event
+待辦事項: 1. 告警盤點 2. FCB設定,"inspection, configuration, safety, monitoring, setup",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251117,"work, inspection, maintenance, support, documentation",event
+"處理工程師為 A人員,C人員 進行時間為 2025/12/24 13:30 至 2025/12/24 20:00","training, mentoring, instruction, scheduling, collaboration",event
+4. 版本評估 - 現行版本:9.4.3 (2025.06.05) - 最新版本:10.0.1 (2025.09.25) - 因現行版本未有弱點釋出，故不升級。,"staying, stability, comparison, upgrade, security",event
+狀態描述 (Description): Splunk_11月維護,"maintenance, update, stability, service, 检修",event
+處置動作 (Action): 本周工作項目如下: 1.更新geodb 2.自動化封鎖清單異動儀表板建置 (進行中) 3.情資白名單新增 Cyble ASM IP,"updating, automation, information, management, security",event
+調整GCP報表User欄位,"updating, adjusting, modifying, correcting",event
+本日工作項目： 1.ES升版 甲、自8.0.3升版至8.2.3,"upgrade, version, maintenance, update, enhancement",event
+代辦事項：5.Management.搜尋異常,"searching, anomaly, management, monitoring, investigation",event
+處理動作：2.伺服器效能：正常,"normal, performance, server, operation",event
+状态描述,"motion, action, movement",event
+暫時解決方法： 1. 重啟splunk後目前服務後已恢復正常,"reboot, recovery, stability, temporary solution",event
+2. 新增告警 將SASE登入成功紀錄送至SOAR,"logging, alerting, security, automation, monitoring",event
+根据需求将“数位科技中心”之纪录独立出来，拆分为以下两个报告 <F5VPN特定使用者连线的纪录(ssp)不含数位科技中心> <F5VPN特定使用者连线的纪录(ssp)仅数位科技中心>,"separation, documentation, reporting, f5vpn, network, it, specifics",event
+處置動作 (Action): 3.系統優化建議：無,"optimization, suggestion, improvement, system, enhancement",event
+處理工程師調閱AI網站服務紀錄,"reviewing, accessing, logs, maintenance, monitoring",event
+C人員進行維護工作,"maintenance, inspection, repair, servicing, upkeep",event
+新增Splunk Add-on for Google Cloud Platform的sourcetype,"integration, configuration, extension, cloud, data 수집",event
+处置动作包括完成本月维护作业,"maintenance, disposal, completion, operation, task",event
+處理工程師為 C人員 進行時間為 2025/12/24 09:00 至 2025/12/24 17:00,"maintenance, operation, duration, engineering, servicing",event
+"處理工程師為 A人員, C人員 進行維護","maintenance, inspection, troubleshooting, servicing, support",event
+自12/9左右開始FWD02的CPU用量明顯上升且已持續兩周,"上升, 持續, 上升趋势, 增加量, 稳定增长",event
+處理工程師為 C人員 进行时间,"processing, handling, maintenance, operation, timing",event
+"處理工程師為 A人員,C人員進行維護","maintenance, training, engineering, support, guidance",event
+今日工作項目： 3.調整datamodel dnsAMD 與新增告警 先前已設定基本的Risk分數計算機制，但目前告警覆蓋率較狹窄，並未能明顯看出不同種類的攻擊，並套用於MitreAttack框架,"adjustment, monitoring, security, risk评估, 告警优化",event
+Splunk SIEM进行月度维护,"maintenance, updating, monitoring, security, analysis",event
+處置動作 (Action): 本周工作項目如下: 1.更新GeoDB 2.2025下半年度告警盤點,"updating, planning, maintenance",event
+SSH Server漏洞修補,"security, patching, vulnerability, maintenance",event
+補跑ARP_table 報表，設定排程為每月1號寄送報表至全科同仁,"reporting, scheduling, automation, reminder, distribution",event
+发现FWD02的CPU用量明显上升，磁碟用量达到90%,"监控, 上升, 存储, 负担",event
+"處理工程師為 A人員,C人員 進行時間為 2025/11/27 13:30 至 2025/11/27 16:00。","training, mentoring, scheduling, engineering, cooperation",event
+處理工程師為 C人員 進行時間為 2025/10/30 13:30 至 2025/10/30 17:00,"maintenance, engineering, operation, calibration, inspection",event
+處置動作 (Action): 6.補充： 作業系統版本：Red Hat 9.4 EOS date:2027/5/31,"update, maintenance, version, system, deployment",event
+目前已建立以下兩個新資料測試版本告警，若後續經觀察及比對確認資料無誤再全面改成由新資料觸發 cybereyes 告警 大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中) Cybereyes高(high)風險告警_new (測試中),"testing, validation, alert, cyberattack, monitoring",event
+已设定PA每月Block Category报表新的寄送套件，将於下个月1号确认该报表寄送邮件情况。,"reporting, confirmation, automation, delivery, scheduling",event
+有101台UF已超過15分鐘未與indexer連線,"disconnection, timeout, monitoring, failure, connectivity",event
+audit.log 處理 手動刪除 audit 資料（釋放空間） 目前還沒有設定排程刪除，持續觀察中,"monitoring, deletion, space, scheduling, observation",event
+進行時間為 2025/12/31 13:30 至 2025/12/31 17:40,"new year's eve, celebration, farewell, duration",event
+"處理工程師為 A人員,C人員 進行時間為 2025/12/17 13:30 至 2025/12/17 18:00","training, mentoring, documentation, maintenance, scheduling",event
+已将过期凭证移除并重新生成新凭证,"removal, regeneration, validation, expiration, renewal",event
+CDIBHMGT02主機IP地址被修改,"modification, configuration, ip_address, network, change",event
+新增indexer 至IDX cluster節點,"scaling, indexing, cluster, management, addition",event
+状态描述 (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),"maintenance, 保养, service, 检修, 定期维护",event
+處理工程師處理eStreamer資料異常,"debugging, processing, anomaly",event
+檢查設備參數無異常(DNS server、NTP server、LDAP setting),"checking, parameters, normal, configuration, verification",event
+资料平衡确认与未连接license master解决,"confirmation, balance, connection, resolution, alignment",event
+目前分析为以下三个原因导致 estreamer 资料暴增 audit.log 持续累积（FCB147 的 keep_logs 设置导致永不删除） /var/log/messages-20251214 单一文件达 148GB,"log accumulation, storage issue, file size, system monitoring, data explosion",event
+A部門 1.Splunk角色能力異常 因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以 區分權限高低。,"权限调整, 删除权限, 索引管理",event
+"更新geodb, 建立告警<PWLAN觸發IPS高風險告警>, 將 src=""172.*"" 的事件從原先<IPS高風險告警>中獨立出來","alerting, isolation, monitoring, risk",event
+狀態描述 (Description): Splunk駐點服務202511第一周(2025/11/4),"service, deployment, monitoring, support, installation",event
+Splunk帳號更動 由於人員變更，經確認後已刪除Ryan之Splunk帳號,"account deletion, personnel change, confirmation, access removal",event
+目前请james向FISAC提交需使用API的IP申请单。,"submission, api, authorization, application, approval",event
+NTP服务检查完成,"check, synchronization, validation, completion, service",event
+"處理工程師為 A人員,C人員 進行時間為 2025/11/26 13:30 至 2025/11/26 17:30","training, mentoring, scheduling, engineering, session",event
+問題：有137台UF已超過15分鐘未與indexer連線 建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,"monitoring, update, reconnection, connectivity, synchronization",event
+调整websense Log，将DLP与其他LOG sourcetype进行分开,"configuring, separating, logging, analysis, management",event
+4. 版本評估 - 現行版本:9.4.3 (2025.06.05) - 最新版本:10.0.2 (2025.11.14),"update, version, evaluation",event
+KVstore 憑證效期檢查 已將過期憑證移除並重新產生新憑證(有效期至2028/11)，確認kvstore 狀態為正常。,"certificate, expiration, renewal, verification, normalcy",event
+代办事项：补产出 ARP_table 报表给客户（排程设定每月执行）。,"reporting, scheduling, production, delivery, tracking",event
+"处理工程师为A人员, C人员进行时间从2025/12/31 13:30 至 2025/12/31 17:40","training, session, consultation, support, advising",event
+處理工程師為 C人員 進行時間為 2025/11/07 15:00 至 2025/11/07 17:00。,"maintenance, operation, calibration, inspection, servicing",event
+該sourcetype斷行異常，故先將其調整回原始sourcetype，待下周駐點確認後進行調整,"adjustment, recovery, confirmation, normalization",event
+處理工程師為 B人員 進行時間為 2025/10/27 13:30 至 2025/10/27 17:30,"training, maintenance, operation, technical, support",event
+作业系统的版本为Red Hat 9.4，日期是2027/5/31,"version, date, red hat, update",event
+5. 問題追蹤 - 無,"tracing, problem, follow, investigation, pursuit",event
+新增title到Identity中,"adding, title, identity, updating, information",event
+Tenable API App串接,"integration, connectivity, api, access, interaction",event
+将自动化程序放在公用电脑上并成功执行例行月维护,"sharing, maintenance, automation, execution",event
+觀察月報CPU、Memory使用率,"monitoring, performance, usage, evaluation, tracking",event
+狀態描述 (Description): Splunk駐點服務202510第五周(2025/10/27),"service, deployment, maintenance, support, monitoring",event
+附件中列出所有需列出的设备名称，未出现于DC_ARP_table中的设备已用橘底标示，在请您确认。,"confirmation, equipment, list, marking, validation",event
+維護紀錄被記錄,"recording, documentation, maintaining, log, monitoring",event
+處置動作 (Action): 現行版本近期被掃出弱點，建議進行升版,"patch, upgrade, vulnerability, security, maintenance",event
+處置動作 (Action): 建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.1/2025.11.14,"update, suggestion, upgrade, version, recommendation",event
+狀態描述 (Description): Splunk駐點服務202512第四周(2025/12/23),"service, monitoring, support, deployment, maintenance",event
+處理工程師進行維護工作,"maintenance, engineering, upkeep, repair, inspection",event
+處置動作 (Action): 3.系統優化建議：根據說明定期檢查 問題：有101台UF已超過15分鐘未與indexer連線 建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,"system, update, monitoring, optimization, reconnection",event
+狀態描述 (Description): Splunk駐點服務202511第四周(2025/11/25),"monitoring, support, maintenance, deployment",event
+处置动作包括告警盘点,"alert, inventory, disposal, handling, action",event
+處置動作 (Action): 本季維護報表重點如下：,"maintenance, focus, repair, update, documentation",event
+處理工程師為 C人員 進行時間為 2025/11/17 09:00 至 2025/11/17 17:00,"maintenance, 检修, 操作, 工程师, 时间管理",event
+2.DEP02 ([IP])移轉(下周進行),"transfer, next week, relocation",event
+调整GCP报表User栏位,"updating, adjusting, modifying, correcting",event
+B部門 的FISAC資料收容進行中,"storage, organization, management, data, archive",event
+現行版本近期被掃出弱點，建議進行升版,"patch, update, security, vulnerability, upgrade",event
+Splunk_11月維護 處置動作 包含 當前版本並未有重大弱點，也未受相關BUG，故建議暫不升版,"maintenance, update, stability, bug fixing, recommendation",event
+處置動作 (Action): 3.系統優化建議：根據說明定期檢查,"maintenance, optimization, inspection, scheduling, recommendation",event
+目前已有份DC_ARP_table报表，并与现有设备清单做比对。,"comparison, report, inventory, verification, update",event
+Splunk_12月维护的处置动作包括授权用量建议扩充至20GB、平均授权用量为55.15GB，服务器效能正常以及无系统优化建议和版本更新建议,"maintenance, optimization, usage, normalcy, update",event
+系統優化 建議 定期檢查,"maintenance, optimization, check, update, efficiency",event
+狀態描述 (Description): Splunk駐點服務202512第三周(2025/12/15),"service, deployment, monitoring, support, maintenance",event
+狀態描述 (Description): splunk_信用卡處11月月維護,"maintenance, update, security, payment, service",event
+2.Gitlab版本升及18.1.6 -> 18.5.2 為修補漏洞CVE-2025-11224已將Gitlab升級至建議版本,"upgrade, security, patch, vulnerability, maintenance",event
+狀態描述 (Description): (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),"maintenance, inspection, upkeep, assurance, servicing",event
+請james 向FISAC提交需使用API的IP申請單,"submission, api, authorization, application, request",event
+"處理工程師為 A人員, C人員 進行時間為 2025/12/24 13:30 至 2025/12/24 20:00。","training, mentoring, instruction, maintenance, consultation",event
+處置動作 (Action): 本次維護報告內容如下，再麻煩您確認後回簽CSR：,"confirmation, maintenance, report, verification, signature",event
+伺服器效能：正常,"normal operation, performance, functionality",event
+代辦事項： 5.Management.搜尋異常,"search, anomaly, management, monitoring, investigation",event
+完成 Splunk套件升级,"upgrade, installation, software, enhancement, configuration",event
+處理工程師為 B人員 進行時間為 2025/11/04 13:30 至 2025/11/04 17:30,"maintenance, operation, inspection, scheduling, engineering",event
+狀態描述 (Description): E客戶駐點工作事項 - 20251104 處置動作 (Action): 今日工作內容如下，預計下次週四到場作業,"preparation, inspection, maintenance, presence, scheduling",event
+待辦事項包括FCB設定調整,"settings, adjustments, tasks, configuration, updates",event
+建議更新版本至10.0.1/2025.09.25,"update, version, release, software",event
+DEP02转移后服务确认,"transfer, confirmation, service, relocation, verification",event
+"處理工程師為 A人员, C人员进行时间从2025/12/16 14:00 至 2025/12/16 18:40。","maintenance, handling, operation, assignment, 时段安排",event
+"調整datamodel dnsAMD 與新增告警 先前已設定基本的Risk分數計算機制，但目前告警覆蓋率較狹窄，並未能明顯看出不同種類的攻擊，並套用於MitreAttack框架 開始針對ES預設的告警進行新增，今日發現DNS Datamodel src欄位異常，已完成修復，並新增ES告警”是否有內部IP嘗試連線於dynamic domain(IP浮動)” 新增ES告警監測”是否有設備連線至很少見的port""","security, monitoring, detection, configuration, alerting",event
+本日駐點工作內容如下： B部門 1.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,"data collection, coordination, api management, documentation, submission",event
+當前版本為 9.3.3/2025.02.26，最新版本為 10.0.2/2025.11.14,"update, version, release, upgrade",event
+Splunk_11月維護 處置動作 包含 授權用量：建議擴充 -授權量：285GB -平均授權用量：620.21GB,"maintenance, expansion, authorization, utilization",event
+本日駐點工作內容如下： B部门2.FISAC资料收容-进行中 目前已请B同事向FISAC提交需使用API的IP申请单。,"data collection, coordination, api integration, documentation, submission",event
+狀態描述 (Description): pice_logs 缺漏處理,"maintenance, repair, logging, safety, processing",event
+新增Trendmicro host数据容纳,"scaling, 容纳, hosting, cloud, infrastructure",event
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 調整websense Log，將DLP與其他LOG sourcetype進行分開,"adjusting, configuring, separating, log management, security",event
+完成寄信测试,"sending, testing, completion, mail, verification",event
+事件規則設置,"rules, setting, regulation, defining, establishing",event
+2.伺服器效能：正常,"normal operation, performance, stability, functionality",event
+本日駐點工作內容如下： A部門 2.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,"work, submission, api, documentation, processing",event
+A人員 和 C人員 在 2025/12/31 上班,"working, collaboration, endofyear, duty, obligation",event
+發現eStreamer資料從11/14 23:20後僅收到狀態log，且KVstore狀態異常，重啟服務後資料已陸續進到splunk,"restarting, logging, anomaly, recovery, synchronization",event
+"處理工程師為 C人員, B人員 進行維護","maintenance, training, engineering, support, operation",event
+設定PA每月Block Category報表新的寄送套件,"reporting, automation, scheduling, notification, customization",event
+處理工程師為 C人員 進行時間為 2025/12/12 09:00 至 2025/12/12 18:00,"maintenance, operation, inspection, calibration, schedule",event
+處理工程師為 B人員 進行時間為 2025/11/25 13:30 至 2025/11/25 17:30。,"training, maintenance, operation, calibration, troubleshooting",event
+代辦事項：2.DEP02 ([IP])移轉(下周進行),"transfer, handover, next week",event
+處理工程師為B客戶進行 Splunk_10月維護,"maintenance, support, inspection, troubleshooting, upgrade",event
+記錄維護狀態,"logging, maintenance, status, recording",event
+SH KVstore引擎異常測試進行中,"testing, anomaly, performance, evaluation, stability",event
+A部門 Splunk套件升級-完成,"upgrade, completion, maintenance",event
+自动化封鎖清單异动仪表板建置 (进行中),"building, automation, monitoring, updating, dashboard",event
+"處理工程師為 A人員,C人員 進行時間為 2025/11/05 13:30 至 2025/11/05 19:00","training, mentoring, scheduling, engineering, collaboration",event
+2. Cybereyes API 串接,"integration, connectivity, api, interface, connection",event
+"處理工程師為 C人員, B人員進行時間為2025/03/14 09:00 至 2025/03/14 14:00。","training, mentoring, maintenance, operation, guidance",event
+例行月維護 1.將自動化程式放於公用電腦上，成功執行,"maintenance, automation, execution, success, routine",event
+新增用户sailag，并应用先前信件附件中的权限设置，请珮雯再次申请检测sailag用户的权限是否合规,"permission, authorization, compliance, verification, settings",event
+代辦事項：4.Tenable API App串接,"integration, connection, api, automation, collaboration",event
+待完成工作项目：1.CEF outputs套件调整送出格式 2.Finding会因为threat object重复显示，需进行ES版本升级 3.Splunk版本升级 4.Disable splunk自动version check 5.资产新增报废/运营中栏位 6.SH FISAC API input (未使用)关闭,"upgrade, adjustment, maintenance, functionality, enhancement",event
+请B同事向FISAC提交需使用API的IP申请单,"submission, application, api, authorization, documentation",event
+本日工作項目： 3.確認內對內告警 urgency = critical原因 甲、該告警severity 原先就為 high 乙、而該告警對應資產priorty為critical，故urgency提升至critical,"priority, criticality, confirmation, alert, importance",event
+已更新憑證,"updating, certification, validation, renewal",event
+请james向FISAC提交需使用API的IP申请单,"submission, api, authorization, application, access",event
+處理工程師為 C人員 進行時間為 2025/11/11 13:30 至 2025/11/11 17:00,"maintenance, calibration, inspection, operation, scheduling",event
+處置動作 (Action): 本周工作項目如下: 1.更新geodb,"updating, tasks, geodb, work, maintenance",event
+Splunk_11月維護 處置動作 包含 版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.2/2025.11.14,"maintenance, update, version, stability, upgrade",event
+狀態描述 (Description): Splunk每週onsite 處置動作,"deployment, monitoring, maintenance, onsite, automation",event
+处置动作包括一年以上情报对比VirusTotal (进行中),"analysis, comparison, monitoring, threat, investigation",event
+建議 更新 版本,"update, revision, modification",event
+除了PIMS search head遇到dbconenct異常問題，其他皆成功升版,"upgrade, connectivity, success, failure",event
+處理工程師為 A人員 進行時間為 2025/11/24 11:30 至 2025/11/24 12:00,"maintenance, inspection, calibration, operation, check",event
+Finding會因為threat object重複顯示，需進行ES版本升級,"upgrade, threat, display",event
+設定 logrotate 排程監控： 每 2 小時檢查一次（/etc/cron.d/logrotate-syslog） 超過 1G自動 rotate 保留 30 個檔案 自動壓縮,"monitoring, scheduling, rotation, logging, automation",event
+待辦事項: 2. 一年以上情資比對VirusTotal,"comparison, analysis, monitoring, malware, security",event
+确认资料持续进行平衡，且无空间满载,"balancing, confirming, spaceutilization, maintenance, verification",event
+"處理工程師為 A人員, C人員 進行時間為 2025/12/03 13:30 至 2025/12/03 17:40","training, mentoring, scheduling, maintenance, operation",event
+5.KPMG滲透測試IP白名單 已將IP及網段加入白名單，並修改告警語法，使其同時比對IP及網段,"penetration, testing, whitelist, security, monitoring",event
+"處理工程師為 A人員,C人員 進行時間為 2025/12/10 13:30 至 2025/12/10 20:00","training, mentoring, scheduling, engineering, collaboration",event
+處理動作：1.授權用量：建議擴充 - 授權量：100GB -平均授權用量：124GB,"scaling, expansion, authorization, usage, storage",event
+處理工程師為 C人員 進行時間為 2025/12/04 08:30 至 2025/12/04 09:00。,"maintenance, operation, inspection, calibration, scheduling",event
+伺服器效能建議：若空間使用量持續增長，將搬移frozen,"migration, efficiency, storage, relocation, optimization",event
+Arcsight和Splunk 歷史案件調閱,"searching, investigation, retrieval, history, cases",event
+狀態描述 被記錄,"recording, documentation, log, entry",event
+Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12),"migration, maintenance, virtualization, monitoring, service",event
+先前提到pice_logs有缺少檔案的狀況,"missing, files, error, notification",event
+目前已有产出一份 DC_ARP_table 报表,"reporting, production, table, arp, documentation",event
+目前已有份DC_ARP_table报表，并与现有设备清单做比对,"comparison, report, inventory, verification, matching",event
+工作事項： IDX01重新加入後，因同步資料導致IDX02與IDX03滿载,"sync, overflow, synchronization, data同步",event
+覆蓋原先設定檔,"file, setting, configuration",entity
+cybereyes api 告警,"alert, warning, detection",entity
+Cybereyes API,"api, interface, integration, software",entity
+Ryan,"person, employee, individual",entity
+low,"priority, level, grade",entity
+Splunk系統,"system, software, platform",entity
+Splunk_10月維護,"maintenance, update, service",entity
+待完成工作項目,"task, work, item, assignment",entity
+GCP报表User栏位调整,"project, task, item",entity
+ES告警,"monitoring, alert, security, notification, warning",entity
+升版至9.3.8,"version, update, revision",entity
+PA部門,"department, section, team",entity
+2025/10/20 11:00 至 2025/10/20 16:00,"time, duration, period",entity
+2025/12/12 09:00,"date, time, deadline",entity
+2025/11/24 10:30 至 2025/11/24 11:00,"time, duration, maintenance, period",entity
+收容,"accommodation, shelter, housing",entity
+日志转发设置,"setting, configuration, log, forwarding",entity
+2025/12/04 09:30 至 2025/12/04 10:00,"maintenance, update, service",entity
+授權用量,"quota, allowance, authorization",entity
+SPLUNK2024/09~2025/08維護報告,"email, report, maintenance",entity
+/var/log/messages-20251214,"log, file, records",entity
+SplunkAdd-on for Google Cloud Platform的sourcetype,"addon, integration, plugin, tool",entity
+舊的殘留input設定,"setting, configuration, parameter",entity
+SH KVstore引擎,"engine, system, storage, database, platform",entity
+2026/01/02 17:33 至 2026/01/02 17:35,"time, period, duration",entity
+PA每月Block Category報表新的寄送套件,"report, package, distribution",entity
+crowdstrike套件,"package, software, tool, security, protection",entity
+維護報告該檢查,"check, report, maintenance, inspection",entity
+9.3.3/2025.02.26,"date, version, release",entity
+動作,"operation, action, movement",entity
+2025/11/04 09:00 至 2025/11/04 09:30,"time, period, interval",entity
+Cybereyes API 串接,"service, integration, api",entity
+PA每月报表,"report, document, record",entity
+2025/12/30 09:00 至 2025/12/30 12:00,"time, duration, period",entity
+每月1號,"date, month, schedule",entity
+凌晨1:00時CPU和記憶體,"peak, usage, demand",entity
+今日,"date, today, day",entity
+Splunk 版本,"version, update, software",entity
+產出一份DC_ARP_table報表並與現有設備清單做比對,"report, table, comparison, document, list",entity
+CVE-2023-6932,"vulnerability, weakness, flaw, issue",entity
+Finding,"finding, locate, discovery",entity
+SPLUNK,"software, tool, platform, application, system",entity
+日誌轉發設定,"setting, configuration, option",entity
+forwarder上,"setting, configuration, record",entity
+LDAP,"directory, service, protocol, authentication",entity
+時間為 2025/11/27 13:30 至 2025/11/27 16:00,"time, period, duration",entity
+系統優化建议,"optimization, suggestion, improvement",entity
+本周工作項目如下,"work, items, tasks",entity
+磁碟用量,"storage, capacity, diskusage",entity
+IP申請單,"application, form, document",entity
+確認報表寄送郵件情況,"email, report, confirmation, delivery, status",entity
+IP事件,"event, incident, occurrence",entity
+Splunk驻点服务202510第五周(2025/10/27),"service, support, operation, maintenance",entity
+DLDK container NOT running,"container, issue, problem, error",entity
+clean.sh,"script, shell, command, file",entity
+Splunk監控主機系統移轉與VM化服務,"system, service, maintenance, monitoring, operation",entity
+Identity新增title(職稱),"priority, identity, role",entity
+今日工作內容,"work, task, duty, assignment",entity
+维护纪录,"record, documentation, data, log, information",entity
+2026年國定假日,"holiday, vacation, festivity",entity
+Splunk工作事項 - 0729,"task, job, item, workitem",entity
+datamodel dnsAMD,"model, data, schema, record, structure",entity
+斷行,"execution, carryout, performance",entity
+Action的一部分,"action, part, procedure",entity
+Indexer 索引同步狀態,"normal, status, synchronization",entity
+無,"time, moment, period",entity
+SASE VPN,"network, security, login, access, tunnel, service",entity
+CVE-2023-51043,"vulnerability, flaw, weakness",entity
+一年以上情資比對VirusTotal,"comparison, analysis, verification",entity
+釋放空間,"space, freedom, release",entity
+2025/12/23 09:00 至 2025/12/23 18:00,"time, period, duration",entity
+url,"link, address, webaddress",entity
+防火牆,"security, barrier, protection, filter",entity
+Splunk帳號,"account, login, credentials",entity
+VirusTotal,"comparison, scanner, security, analysis",entity
+G客戶,"maintenance, record, event",entity
+今日工作项目,"task, work, project",entity
+2025/12/12 13:30,"date, time, event",entity
+2025/11/04 17:30,"time, date, moment",entity
+內部憑證,"token, certificate, credential",entity
+10台UF,"limit, threshold, cap",entity
+作業系統版本,"version, release, edition",entity
+Splunk SIEM(12)月維護.DM20240200+DN20240393,"event, maintenance, log, record",entity
+FWD03底層資料收容filter設定,"setting, configuration, log",entity
+2025/12/16 18:40,"time, date, moment",entity
+G客户,"event, maintenance, status",entity
+estreamer 資料清理排程,"schedule, timing, plan",entity
+處置動作,"installation, performance, art",entity
+2025/10/01 13:30 至 2025/10/01 17:30,"time, duration, period",entity
+9.3.3,"version, update, release",entity
+2025/12/12 18:00,"date, time, event",entity
+F客户,"version, release, update",entity
+版本,"version, edition, update",entity
+2025/12/15 13:30 至 2025/12/15 17:30,"time, period, duration",entity
+Splunk Indexer queue full - 20251212,"queue, update, issue, problem, maintenance",entity
+橘底標示,"label, mark, identifier",entity
+Splunk駐點服務20251226 - websense,"service, support, maintenance",entity
+主機,"主机, 设备, 装置, 机器, 系统",entity
+今日工作項目,"work, task, item, assignment",entity
+forcepoint endpoint dlp,"software, system, security",entity
+描述,"data, balance, status, condition",entity
+UF,"device, machine, system",entity
+B客户,"customer, user, client",entity
+重啟服務,"service, restart, operation",entity
+A部门,"department, group, unit",entity
+全部主機之KV store 憑證,"kvstore, database, storage, system, service",entity
+Splunk驻点服务,"service, support, assistance",entity
+可删除索引的能力,"capability, ability, power",entity
+狀態為正常,"normal, okay, healthy, functioning",entity
+已取得需比對之情資清單,"list, information, records, data",entity
+DEP02主機,"machine, device, host",entity
+websense Log调整,"adjustment, modification, config",entity
+n8n,"software, tool, platform, application",entity
+C客戶,"project, system, installation",entity
+公用电脑,"computer, machine, terminal, workstation",entity
+已完成驗證,"setting, configuration, validation",entity
+Red Hat 9.4,"operating system, distro, software",entity
+事件時間只抓取事件前32個位元的範圍,"time, moment, instant",entity
+等待中,"waiting, pending, holding",entity
+Splunk整體架構IP,"system, architecture, framework",entity
+供廠商進行例行維護或問題解決登入使用,"login, access, authentication",entity
+Calvin,"user, person, participant",entity
+協助新增寄信套件,"add, assist, support",entity
+2025/12/01 10:00 至 2025/12/01 12:00,"time, period, duration",entity
+接收狀態檢查,"check, status, confirm",entity
+AI網站服務,"website, service, platform, portal",entity
+2025/12/16 14:00 至 2025/12/16 18:40,"time, period, duration",entity
+85%,"percentage, rate, proportion",entity
+index=cim_modactions,"mail, package, shipment, record, log",entity
+SH KVstore引擎異常測試,"test, engine, system, database, software",entity
+PA,"setting, service, support",entity
+未明確定義priotiry 的identity將設為low,"status, category, level",entity
+2025/10/27 13:30 至 2025/10/27 17:30,"time, duration, period",entity
+GeoDB,"database, system, information, record, collection",entity
+歷史案件,"case, incident, event",entity
+2025/12/26 14:00 至 2025/12/26 15:00,"time, period, maintenance, interval",entity
+新增設備,"equipment, facility, device",entity
+憑證,"proof, evidence, verification",entity
+最新版本10.0.1/2025.11.14,"update, version, release",entity
+2025/11/24 10:30 至 2025/11/24 12:00,"time, period, duration",entity
+最新版本,"version, update, release",entity
+Action,"event, activity, action item",entity
+需使用API的IP申請單,"申请单, 请求, ip地址申请",entity
+预设发送套件,"template, suite, package",entity
+已重新开启,"开启, 重启, 恢复",entity
+2026/01/19 13:30 至 2026/01/19 17:30,"time, period, duration",entity
+mitreattack,"alert, detection, security",entity
+CVE-2023-4133,"vulnerability, weakness, flaw",entity
+附件,"file, attachment, document",entity
+D客戶,"record, maintenance, customer",entity
+時間段,"time, period, duration",entity
+系統版本,"version, update, software",entity
+E客戶,"system, software, version, update",entity
+Gitlab漏洞修補,"task, issue, bug, problem",entity
+B客戶,"customer, client, user",entity
+PA TRAFFIC事件sourcetype,"log, event, source",entity
+PIMS search head,"error, issue, problem",entity
+Maintainer帳號權限確認,"confirmation, authorization, verification",entity
+DEP02 ([IP]),"transfer, ip, asset",entity
+扩充至285GB,"storage, capacity, space",entity
+2025/12/11 09:00 至 2025/12/11 18:00,"time period, duration, interval",entity
+Apim1,"setting, configuration, parameter",entity
+弱點之一,"vulnerability, flaw, weakness",entity
+现行版本近期被扫出弱點，建议进行升版,"update, version, patch",entity
+2025/12/30 13:30 至 2025/12/30 17:30,"time, duration, period",entity
+Splunk 2025 MA 11月定保.DM20250088_(7/12),"software, tool, platform",entity
+設定,"setting, configuration, parameter",entity
+1398GB,"usage, amount, license",entity
+使用者權限調整,"permission, adjustment, management",entity
+SH,"project, system, service",entity
+完成寄信測試,"email, letter, message",entity
+已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,"setting, update, transmission, report",entity
+661.01 GB,"storage, capacity, space",entity
+1. 授權用量：建議擴充 -授權量：100GB -平均授權用量：124GB,"quantity, usage, limit, amount",entity
+KVstore憑證,"certificate, credential, token, validation, authentication",entity
+協助韌體更新,"action, placement, operation",entity
+完成 新增indexer至IDX cluster節點，目前將觀察index同步狀態,"node, indexer, synchronization, addition, update",entity
+2025/11/19 13:30 至 2025/11/19 14:30,"time, period, duration",entity
+其餘皆設為low,"action, category, genre",entity
+重起服務,"service, restart, reboot",entity
+2025/11/17 09:00 至 2025/11/17 17:00,"time, period, duration",entity
+2025/12/24 09:00,"date, time, occasion",entity
+James,"person, individual, participant",entity
+新增告警,"报警, 警告, 提醒",entity
+2025/11/06 11:00 至 2025/11/06 12:00,"time, period, interval",entity
+I客戶,"record, maintenance, documentation",entity
+工程師,"engineer, professional, technician, expert",entity
+設定以停止預先儲存/apps/search路徑下的csv檔案作為知識包,"bundle, storage, file, data",entity
+2025/12/16 14:00,"time, date, moment",entity
+讓splunk監控所有檔案即使內容相似,"settings, configuration, setup",entity
+处理工程师,"engineer, technician, specialist",entity
+问题,"problem, issue, error",entity
+處理,"procedure, processing, handling",entity
+確認事件,"event, confirmation, schedule",entity
+2025/12/26 15:00 至 2025/12/26 16:00,"time, period, maintenance",entity
+各台主機KV store,"server, database, storage, system, technology",entity
+下周进行,"week, next week, schedule",entity
+保留log,"log, record, data",entity
+時間為 2025/11/05 13:30 至 2025/11/05 19:00,"time, duration, period",entity
+使用者權限,"权限, 权限等级, 权限设置",entity
+3. 系統優化建議：根據說明定期檢查,"check, maintenance, optimization",entity
+ZTA,"state, status, condition",entity
+Splunk每週onsite,"device, system, software, tool, platform",entity
+Cybereyes介接套件,"system, interface, device, software, module",entity
+admin能力選項,"role, permission, management",entity
+補跑設備IP往段清單給全科人員 （每月),"list, document, record",entity
+ess_analyst角色,"role, position, character",entity
+10.0.2,"version, number, address",entity
+Splunk駐點服務202510第三周(2025/10/13),"service, support, maintenance",entity
+2025/12/30 13:30 至 2025/12/30 17:00,"maintenance, time, period",entity
+預設傳輸上限,"limit, threshold, cap",entity
+splunk_B客戶B部門,"maintenance, update, service",entity
+2025/12/24 13:30 至 2025/12/24 20:00,"time, duration, period",entity
+Splunk Indexer queue full - 20251211,"log, record, data, queue",entity
+sailag使用者,"host, server, machine",entity
+已補跑報告並寄送郵件，另外報告存取時間為1天，所以以排程報告執行時間(11/1)，保存期限為11/2,"report, document, log, record, schedule",entity
+splunk_信用卡處,"card, payment, finance, management",entity
+CEF outputs套件,"package, module, system, component",entity
+升版,"version, update, release",entity
+問題,"problem, issue, matter",entity
+页面,"page, document, webpage, site",entity
+MG02磁碟用量超過90%,"warning, alert, abnormal",entity
+estreamer,"stream, data, transfer, processor, tool, software",entity
+CVE-2023-51779,"vulnerability, weakness, flaw",entity
+Centos作業系統,"system, operating system, software, distribution, linux distribution",entity
+630 GB,"storage, space, capacity",entity
+FWD03備份異常,"error, issue, problem",entity
+2. 伺服器效能：正常,"action, function, performance",entity
+建立告警,"alarm, warning, alert",entity
+無具体部门,"system, operation, software, platform",entity
+未出現於DC_ARP_table中的設備,"device, equipment, item",entity
+Identity將帳號狀態加入category欄位,"account, identity, status, title, label",entity
+將於下周到場繼續處理,"task, meeting, appointment",entity
+Gitlab升級至建議版本,"upgrade, update, version",entity
+調整物件,"object, item, thing",entity
+eStreamer 資料異常處理,"restart, issue, anomaly, data, processing",entity
+B同事,"colleague, partner, teammate",entity
+FISAC资料收容申请单,"form, application, document",entity
+已完成，正在等待防火牆開通,"data, information, status",entity
+新增,"alert, warning, detection",entity
+2025/11/18 13:30,"time, date, moment",entity
+調整 於報表新增需監控之url,"work, task, item",entity
+頁面復原,"page, recovery, restore",entity
+DEP02 ([IP])移轉,"task, matter, item",entity
+今日到場作業項目,"report, task, operation, maintenance",entity
+uf log limit,"limit, threshold, cap",entity
+建立告警<PWLAN觸發IPS高風險告警>,"alarm, warning, alert",entity
+2025/11/17 13:30 至 2025/11/17 17:30,"time, period, duration",entity
+ess_analyst,"analyst, expert, professional, specialist",entity
+DNS設定,"setting, configuration, parameter",entity
+GitLab升版 17.10.8 → 18.1.6,"version, update, release",entity
+F客戶,"system, service, maintenance",entity
+KVstore狀態,"state, condition, status",entity
+"更新GeoDB, 2025下半年度告警盤點, AI網站服務紀錄調閱報表建置 <Gen AI 連線紀錄(每日): monthly report> <Gen AI 連線紀錄(整月): monthly report> 設定於每月1日凌晨2:00執行","report, record, execution",entity
+建立排程,"schedule, plan, arrangement",entity
+当前版本,"version, update, release",entity
+進行維護,"maintenance, update, repair, service",entity
+憑證效期(B部門),"有效期, 时间, 期限",entity
+送出格式,"package, code, function",entity
+indexer,"machine, computer, node, device, system",entity
+該sourcetype,"error, issue, problem",entity
+账号状态,"status, condition, account",entity
+10.0.0 / 2025.07.28,"update, version, release",entity
+90%,"percentage, proportion, ratio",entity
+DEP02,"transfer, move, transaction",entity
+IT部门,"department, team, organization, office, unit",entity
+佩雯,"user, person, individual",entity
+Linux主機使用者與使用者權限,"user, admin, operator",entity
+建議擴充,"storage, capacity, space",entity
+20251124,"date, number, code",entity
+異常原因,"reason, issue, problem",entity
+IP,"property, right, asset",entity
+維護紀錄有關,"record, information, documentation",entity
+UAT / Production / PIMS 共8台,"object, adjustment, production, equipment, item",entity
+SH新增,"software, system, tool, platform",entity
+Centos,"system, distribution, linux, operating",entity
+2025弱點掃描報告資訊整理,"report, information, document",entity
+E客户,"software, update, version, program",entity
+12.3.5版本,"version, update, patch",entity
+白名單,"list, whitelist, ip list",entity
+websense,"software, firewall, security, network, system",entity
+2025/12/19 13:30 至 2025/12/19 16:00,"time, period, maintenance",entity
+KPMG滲透測試IP白名單,"whitelist, record, maintenance",entity
+升級,"upgrade, update, improvement",entity
+刪除舊版本殘留的ES threat intelligence download設定,"setting, configuration, parameter",entity
+4. 版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14,"update, version, release, upgrade",entity
+dbconenct異常問題,"error, issue, problem",entity
+GitLab,"software, platform, project, system, tool",entity
+IDX01、IDX02、IDX03空间使用量,"space, usage, occupancy",entity
+B部門indexer索引同步狀態,"status, synchronization, indexers",entity
+pan:log,"log, data, record, event",entity
+建議更新,"update, revision, upgrade",entity
+更新uf清单，并在更新后让uf重新报到,"update, list, report",entity
+2025/11/03 10:00 至 2025/11/03 12:00,"time, period, maintenance, schedule",entity
+版本更新：建议更新 -当前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14,"update, version, release",entity
+代辦事項,"task, duty, assignment, matter, work",entity
+2025/12/17 13:30 至 2025/12/17 18:00,"time, period, duration",entity
+SSH Server 漏洞修補,"task, issue, repair",entity
+軟件,"software, program, application",entity
+當前版本9.3.3/2025.02.26,"version, update, software",entity
+一年以上情資比對VirusTotal (進行中),"comparison, analysis, monitoring",entity
+僅留存6小時資料 (原為12小時),"data, information, records",entity
+FCB腳本,"time, schedule, execution",entity
+當前使用率,"usage, occupancy, rate",entity
+系統,"system, software, program, application",entity
+新增設定後已完整收容所有檔案之資料,"setting, configuration, files, data",entity
+title(职称),"position, rank, designation",entity
+CDIBHMGT02,"ip, address, network, identifier",entity
+8.0.6 / 2024.10.22,"version, release, update",entity
+先前已設定基本的Risk分數計算機制,"model, algorithm, mechanism",entity
+asset中異常,"asset, property, resource, item",entity
+FIsac情資,"data, information, intelligence",entity
+172.20.137.45,"ip, address, network, host",entity
+Splunk SIEM,"system, software, tool, platform, application",entity
+個人測試環境,"environment, test, lab",entity
+audit.log,"log, record, file, documentation, audittrail",entity
+Identity,"self, selfhood, individuality, persona",entity
+僅收到狀態log，且KVstore狀態異常,"status, log, abnormal",entity
+"A人員, C人員","staff, worker, personnel, agent",entity
+55.15GB,"storage, space, capacity",entity
+2025/10/07 13:30 至 2025/10/07 17:30,"time, duration, period",entity
+2025/11/04 13:30 至 2025/11/04 17:30,"time, period, duration",entity
+針對不同mitreattack新增告警,"action, measure, response",entity
+申請使用底層,"request, application, approval",entity
+定保內容,"policy, content, agreement",entity
+補跑,"run, 追赶, 补充",entity
+Splunk套件,"update, software, tool, package",entity
+今日工作內容如下,"tasks, work, duties",entity
+B人員,"event, time, session, activity",entity
+2025/11/10 09:30 至 2025/11/10 12:00,"time, period, maintenance, duration",entity
+加入白名單，並修改告警語法,"list, whitelist, setting, configuration",entity
+全科人員,"doctor, medical, healthcare, professional",entity
+2025/07/29 13:30 至 2025/07/29 17:00,"time, duration, period",entity
+101台UF,"device, machine, system",entity
+admin能力的继承,"role, permission, authority",entity
+H2,"water, hydrogen, element, chemical, gas",entity
+大量網站攻擊嘗試,"attack, attempt, assault",entity
+使用者 sailag,"user, member, participant",entity
+GitLab漏洞,"vulnerability, bug, flaw",entity
+待办事项：4.Tenable API App串接,"integration, connection, api, app",entity
+週onsite 處置動作,"monitoring, analysis, data, operation, management",entity
+checkpoint logclm uf,"delay, data, log, checkpoint",entity
+效期,"expiration, deadline, validity",entity
+已將過期憑證移除並重新產生新憑證,"certificate, credential, token",entity
+A人員,"worker, employee, personnel, staff",entity
+新增index,"index, entry, field, parameter, key",entity
+工作項目,"task, project, item",entity
+本月月維護,"maintenance, update, service, repair",entity
+C同事,"colleague, coworker, staff",entity
+底層查看原因,"device, equipment, hardware, system",entity
+進行中,"process, progress, ongoing",entity
+工作,"job, career, employment",entity
+2025/11/26 17:30,"time, moment, datetime",entity
+10月月維護,"month, maintenance, update",entity
+messages-20251214檔案,"file, message, document",entity
+Assets僅針對H1、H2、H3的設備將priority設為critical,"action, task, procedure",entity
+2025/12/03 13:30 至 2025/12/03 17:40,"maintenance, time, period",entity
+CVE-2023-39198,"vulnerability, weakness, flaw",entity
+當前版本,"version, update, release",entity
+報表,"report, statement, document, record",entity
+splunk,"software, tool, platform, system",entity
+splunk_信用卡處11月月維護,"card, payment, finance, maintenance",entity
+<SAP重要TCode執行紀錄>告警語法調整,"work, record, log, execution, documentation",entity
+indexer索引同步狀態,"status, synchronization, update",entity
+2025/11/11 13:30 至 2025/11/11 17:30,"time, duration, period",entity
+Apim1與imsdb01,"code, script, programming",entity
+ARP_table報表,"table, record, log, entry",entity
+CPU用量明顯上升且已持續兩周，同時磁碟用量也達到90%，其中estreamer資料占用約109G,"usage, activity, load, consumption",entity
+時間為 2025/11/12 13:30 至 2025/11/12 17:40,"time, duration, period",entity
+下線,"line, underline, marking",entity
+Splunk駐點服務202601第三周,"service, maintenance, support",entity
+駐點工作事項,"work, task, assignment",entity
+異常hanging,"error, issue, problem",entity
+10.0.1 / 2025.09.25,"version, date, number",entity
+Websebse log異常截斷,"log, error, issue, problem",entity
+更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑,"task, operation, procedure",entity
+授權用量建議擴充,"amount, permission, authorization, quota",entity
+2025/12/31 17:40,"date, time, newyear'seve",entity
+Splunk10月維護報告,"report, maintenance, inspection",entity
+10.0.2/2025.11.14,"version, update, release",entity
+FISAC,"organization, committee, body, group",entity
+Splunk與UF最新版本： 10.0.2 / 2025.11.14 (EOS:2027.07.28),"version, update, release, software",entity
+Google Cloud Platform,"cloud, platform, service, technology",entity
+2026/01/05 13:30 至 2026/01/05 17:30,"time, period, duration",entity
+修改SASE VPN登入成功報表條件，與確認送至SOAR欄位,"action, task, procedure, operation",entity
+A同事,"colleague, coworker, partner",entity
+Sourcetype,"data, field, attribute",entity
+功能,"function, feature, capability",entity
+2025/07/29 12:00 至 2025/07/29 13:00,"time, period, duration",entity
+報告,"report, document, statement",entity
+處理工程師,"engineer, processing, technician, specialist",entity
+服務正確，並再次執行健康檢查確認系統功能正常,"service, check, confirmation, functionality, system",entity
+Splunk駐點服務202512第四周(2025/12/23),"service, maintenance, support",entity
+FCB147的keep_logs,"log, record, file",entity
+FISAC資料收容,"data, submission, application, api, ip, document",entity
+checkpoint告警,"alarm, warning, alert",entity
+Splunk 使用者權限調整,"权限, 调整, 管理",entity
+FWD02磁盘,"disk, drive, storage",entity
+過去備份及安裝檔,"backup, installation, file",entity
+2025/11/04 13:30,"time, date, moment",entity
+關閉,"setting, configuration, option",entity
+splunk_銀行處,"bank, finance, institution",entity
+10.0.1/2025.09.25,"version, update, release",entity
+與HEC token for XSOAR,"token, asset, credential",entity
+CVE-2025-6454、CVE-2025-2256,"vulnerability, flaw, bug, issue",entity
+該台主機,"server, machine, host",entity
+进行升版,"update, revision, upgrade",entity
+E客戶Splunk駐點,"work, task, project",entity
+網頁憑證,"certificate, security, validation, login, authentication",entity
+已完成帳號盤點並寄送報表,"account, report, completion",entity
+時間為2025/11/05 13:30 至 2025/11/05 19:00,"time, duration, period",entity
+調整內容,"configuration, adjustment, settings",entity
+版本更新建议,"update, version, suggestion, improvement",entity
+原因為將是否報廢/營運中欄位匯入資產,"asset, field, information, data, record",entity
+E客戶的維護問題,"service, support, maintenance",entity
+C人員,"engineer, staff, worker, technician",entity
+Splunk 2025 MA 10月,"insurance, contract, agreement",entity
+2025/12/02 13:30,"date, time, occasion",entity
+本人,"person, individual, user",entity
+2025/03/28 09:00 至 2025/03/28 21:00,"period, time, duration",entity
+2.伺服器效能,"performance, speed, efficiency",entity
+SH KVstore狀態,"status, condition, state",entity
+索引器集群,"indexer, cluster, collection, system, database",entity
+Splunk角色能力异常,"role, ability, issue, problem, anomaly",entity
+critical,"important, urgent, vital",entity
+Splunk駐點服務202512第三周(2025/12/15),"service, support, maintenance",entity
+PA每月報表觸發動作變更,"report, action, trigger, modification, setting",entity
+A客户,"update, revision, version",entity
+Splunk的現行版本,"software, platform, tool, solution, application",entity
+HTTP对对外大量传输资料报表,"report, data, monitoring",entity
+代办事项,"task, duty, responsibility, matter",entity
+2026/01/13 13:30 至 2026/01/13 17:30,"time, period, duration",entity
+Splunk_12月維護,"state, maintenance, update",entity
+DEP02 root服務確認,"service, confirmation, participation",entity
+2025/11/07 13:50 至 2025/11/07 17:30,"time, period, duration",entity
+2025/12/19 13:30 至 2025/12/19 18:00,"time, period, duration",entity
+可刪除索引能力,"index, capability, deletion, management",entity
+Splunk駐點服務,"service, support, maintenance",entity
+KV store,"disk, storage, archive",entity
+設備,"device, equipment, facility",entity
+待辦事項,"task, item, to-do",entity
+Asset and Identity priority確認,"priority, importance, focus",entity
+Splunk升版完成,"update, version, release",entity
+12月月維護,"维护, 保养, 检修",entity
+Splunk角色能力異常,"role, permission, capability, privilege",entity
+排程日期,"date, day, schedule, planning",entity
+Raw data內就有換行字元,"data, information, log, record",entity
+帳號盤點並寄送報表給Hank,"task, report, accounting",entity
+H3,"device, equipment, hardware, system",entity
+2025/10/30 13:30 至 2025/10/30 17:00,"time, period, duration",entity
+今日工作項目如下,"tasks, work, items",entity
+PA事件時間,"time, event, occurrence, moment",entity
+資料平衡確認,"balance, data, confirmation",entity
+平均授權使用量,"usage, allowance, quota",entity
+定保,"insurance, policy, contract",entity
+CVE-2025-41244、CVE-2025-41246,"vulnerability, flaw, patch, bug",entity
+sailag,"user, participant, colleague",entity
+正常連線至LM,"server, connection, network, online",entity
+splunk憑證,"certificate, credential, token",entity
+"更新geodb, 自動化封鎖清單異動儀表板建置 (進行中), 情資白名單新增 Cyble ASM IP","project, task, work, update, automation",entity
+狀態,"condition, status, situation",entity
+擴充授權量,"capacity, storage, allowance",entity
+F5VPN特定使用者連線的紀錄(sas)報表,"report, log, record",entity
+告警,"warning, alert, alarm, notification",entity
+CVE-2025-11224,"vulnerability, flaw, bug, security issue",entity
+[IP],"property, intellectual, asset",entity
+FCB設定導致權限限制,"setting, configuration, restriction",entity
+2025/11/26 13:30,"time, date, moment",entity
+处理工程師,"engineer, worker, technician, specialist",entity
+事項,"task, matter, item, thing, issue",entity
+2025/12/31 13:30,"time, moment, date, day",entity
+每2小時檢查一次,"interval, period, timing",entity
+服务器,"server, machine, device, hardware",entity
+狀況,"situation, condition, state",entity
+B部门同事,"colleague, staff, worker",entity
+時間,"time, period, duration",entity
+B部门,"department, unit, section",entity
+2025/12/02 09:00,"time, moment, hour",entity
+2025/12/12 17:30,"date, time, occasion",entity
+PA每月Block Category報表,"report, schedule, block category report",entity
+172.18.44.31,"ip, address, network",entity
+今日到場作業事項,"work, tasks, assignments",entity
+375 GB,"storage, capacity, space",entity
+新增/etc/hosts,"file, configuration, hosts, system, entry",entity
+2025/12/09 13:30 至 2025/12/09 17:30,"time, period, duration",entity
+<刪除資料庫中IOC>,"action, task, operation",entity
+Asset and Identity,"priority, value, concept, identity",entity
+2025/11/21 09:30 至 2025/11/21 17:00,"time, period, duration",entity
+Tenable API App,"app, api, software, tool",entity
+2027/12月,"date, month, year",entity
+CVE-2023-3567,"vulnerability, weakness, defect",entity
+客製发送套件,"customization, configuration, setting",entity
+C人员,"person, staff, individual",entity
+KPMG,"company, firm, organization, business, consultancy",entity
+172.18.44.33(DEP02)主機,"host, server, machine, device",entity
+底層查看缺少設備的原因,"原因, 检查, 设备",entity
+2025/12/26 09:00 至 2025/12/26 10:30,"time, period, duration",entity
+將SASE登入成功紀錄送至SOAR,"log, record, success, information",entity
+workaround,"solution, method, bypass, alternative",entity
+下周進行,"week, next week, schedule",entity
+自动化程式,"program, script, automation",entity
+維護紀錄,"record, documentation, maintenance",entity
+Splunk平台維護案(06-11月)半年系統檢視_DM20250258_(1/2),"maintenance, system, inspection, platform, case",entity
+2025/12/15 09:00 至 2025/12/15 18:00,"time, period, duration",entity
+20GB,"storage, space, capacity",entity
+Splunk駐點服務202510第四周(2025/10/20),"service, maintenance, support",entity
+系统优化建议：根据说明定期检查,"action, check, maintenance",entity
+2025/11/24 09:00 至 2025/11/24 17:30,"time, period, duration",entity
+評估中,"评估, 审核, 检查",entity
+套件,"package, suite, update",entity
+告警盤點,"task, checklist, pending",entity
+KVSTORE,"service, database, storage, system, state",entity
+工程,"project, work, construction, design, development",entity
+(ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),"version, date, update",entity
+KV store憑證,"credential, certificate, document",entity
+DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標,"alert, warning, monitoring",entity
+A人员,"worker, employee, staff",entity
+因-threat object重複顯示,"upgrade, issue, problem",entity
+報告及告警寄件人更新,"sender, updater, person, staff",entity
+平均授權用量,"usage, allowance, quota",entity
+Splunk駐點服務202511第二周(2025/11/11),"service, maintenance, support",entity
+新資料,"data, information, log",entity
+Splunk 驻點服務,"service, support, maintenance",entity
+FWD02磁碟,"disk, magnetic disk, storage, data storage",entity
+DC_ARP_table報表,"list, inventory, record",entity
+admin角色,"role, permission, privilege, account, user_role",entity
+重啟後,"restart, recovery, resumption",entity
+/etc/cron.d/logrotate-syslog,"file, cronjob, configuration",entity
+Tcpdump,"packet, data, network, tool, utility",entity
+Centos作業系統升級,"system, linux, upgrade, operating system",entity
+splunk自動version check,"feature, function, update",entity
+本周工作項目,"work, tasks, items",entity
+2025/03/14 09:00 至 2025/03/14 14:00,"time, period, interval",entity
+已请james向FISAC提交,"submission, application, form, document",entity
+DC_ARP報表語法檢查,"report, syntax, check, protocol",entity
+geodb,"database, geographic, information",entity
+NOT running,"stopped, inactive, halted",entity
+B人员,"worker, employee, staff",entity
+9.3.3 / 2025.02.26,"version, update, release",entity
+Splunk bundle儲存量過大,"bundle, package, collection",entity
+後續,"原因, 检查, 设备",entity
+Splunk角色,"role, character, permission, privilege",entity
+完成,"upgrade, update, improvement",entity
+A客戶,"service, maintenance, support",entity
+排程腳本,"schedule, planning, script, event, timing",entity
+新crowdstrike套件,"device, software, tool",entity
+Arcsight和Splunk,"software, tool, platform",entity
+已完成修復,"修复, 完成, 回复",entity
+202512第五周(2025/12/30),"week, period, timeframe",entity
+3.系統優化建議,"suggestion, advice, optimization",entity
+Splunk microsoft套件,"software, tool, suite, package",entity
+(評估中),"system, upgrade, linux",entity
+今日已完成Splunk版本升級,"upgrade, update, version",entity
+底層 1,"network, layer, foundation",entity
+pice_logs,"log, file, error, issue, problem",entity
+Splunk版本,"version, update, software",entity
+estreamer资料,"setting, schedule, configuration",entity
+2025/11/11 13:30 至 2025/11/11 17:00,"maintenance, time, period",entity
+重新安裝Splunk，設定FIPS mode=0,"installation, setup, configuration",entity
+2025/10/13 13:30 至 2025/10/13 17:30,"time, duration, period",entity
+完成本月維護作業,"任务, 维护, 作业",entity
+版本更新,"update, version, release",entity
+調查,"investigation, inquiry, examination",entity
+PA每月報表,"report, document, statement",entity
+突然爆增現象,"surge, increase, rise, spike",entity
+Switch_6FDC.csv,"file, data, record, spreadsheet",entity
+2025/12/04 13:30 至 2025/12/04 17:00,"time, period, maintenance, record, interval",entity
+FCB設定,"task, setting, configuration",entity
+splunk LDAP,"authentication, configuration, setup",entity
+處理工程師工作,"job, work, position, occupation, role",entity
+无具体部门,"task, item, todo",entity
+james,"person, individual, submitter",entity
+SPLUNK2024/09~2025/08的維護報告,"report, maintenance, document",entity
+B部門,"department, section, division, unit",entity
+bucket replication造成,"cloud, service, synchronization",entity
+各台主機KV store憑證,"certificate, credential, document",entity
+2025/12/24 17:00,"time, moment, date, occasion",entity
+2025/11/26 13:30 至 2025/11/26 14:30,"time, period, duration",entity
+NTP服務,"service, protocol, timekeeping",entity
+解決問題,"task, issue, problem",entity
+Splunk_11月維護,"maintenance, update, system, service, operation",entity
+客制寄件套件设置,"settings, configuration, customization",entity
+Splunk 2025 MA 12月定保.DM20250088_(8/12),"inspection, maintenance, checkup",entity
+category栏位,"field, category, section, column",entity
+索引至底層索引器,"indexer, layer, reference",entity
+audit.log持續累積,"log, record, documentation",entity
+Trendmicro host资料收容新增,"project, task, assignment",entity
+自動化封鎖清單異動儀表板建置,"project, dashboard, automation, update, monitoring",entity
+E客戶駐點工作事項,"work, task, assignment, duty",entity
+101台UF已超过15分钟未与indexer连线,"device, connection, timeout",entity
+PA報表寄信異常,"report, email, issue",entity
+kvstore,"state, database, storage, system",entity
+Splunk駐點服務202511第一周(2025/11/4),"work, service, support",entity
+Splunk駐點服務202510第一周(2025/10/01),"service, support, maintenance, event, log",entity
+2028/11,"date, time, period",entity
+C人員的工作時間,"work, shift, schedule",entity
+时间从2025/12/24 13:30 至 2025/12/24 20:00,"time, period, duration",entity
+修改SASE VPN登入成功報表條件,"条件, 报告, 成功",entity
+2025/11/07 15:00,"date, time, event",entity
+Splunk駐點服務202512第一周(2025/12/2),"service, support, maintenance",entity
+附件中列出的設備名稱,"equipment, device, item",entity
+至IDX cluster節點,"node, point, server, machine",entity
+10.0.2 / 2025.11.14,"version, update, release",entity
+BTDC2,"problem, issue, matter, concern",entity
+建议,"update, advice, suggestion",entity
+資料收容,"data, information, storage, archive",entity
+FWD03 底層資料,"data, information, layer",entity
+H客戶,"record, maintenance, history",entity
+PA每月报表触发的动作,"change, action, trigger",entity
+弱點,"vulnerability, weakness, defect",entity
+維護,"maintenance, protection, preservation",entity
+工作內容,"任务, 工作, 职责",entity
+處理時間,"time, duration, period",entity
+SSH Server,"server, security, protocol, software",entity
+2025/12/02 17:30,"date, time, occasion",entity
+202511第四周,"week, period, timeframe",entity
+授权用量,"quantity, amount, limit",entity
+imsdb01,"setting, configuration, parameter",entity
+網段,"network, segment, connection, data, pathway",entity
+版本18.5.4,"version, update, system",entity
+es_admin_user,"user, admin, permission, account",entity
+Splunk,"software, tool, platform, data, analytics",entity
+全數logclm UF,"limit, speed, rate, threshold",entity
+AI網站服務紀錄調閱 (202508-202510),"record, service, website, data, retrieval",entity
+Splunk角色問題,"role, permission, authorization, user, identity",entity
+2025/12/18 09:00 至 2025/12/18 17:30,"time, duration, period",entity
+log limit,"limit, threshold, cap",entity
+本周工作項目如下: 1.更新GeoDB 2.<HTTPS大量傳輸告警>調整 排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄 3.FWD02 CPU及磁碟用量異常,"action, task, work, items",entity
+pice_logs有缺少檔案的狀況 因為檔案中的log太過相似，splunk會自動判定為相同的log而不重複收容,"file, log, data, record, information",entity
+B客户B部门,"server, department, team",entity
+9.2.3,"version, update, release",entity
+cyberark日志,"log, record, event",entity
+2025/12/10 20:00,"time, date, event",entity
+預計下次週四到場作業,"作业, 工作, 要务",entity
+待處理,"api, connection, integration",entity
+索引,"index, catalog, reference, search, listing",entity
+H1,"device, equipment, hardware, component",entity
+時間為2026/01/07 13:30 至 2026/01/07 17:30,"time, period, duration",entity
+進行,"time, period, duration",entity
+Splunk驻点服务202510第一周(2025/10/01),"service, support, maintenance, update",entity
+2025/12/10 13:30,"date, time, event",entity
+維護工作,"work, maintenance, job, task, duty",entity
+18.5.2,"version, update, release",entity
+Cyble ASM IP,"project, task, update, automation",entity
+(下周進行),"transfer, next week, schedule",entity
+補產出ARP_table報表給您(排程設定每月執行）,"task, duty, assignment",entity
+A部门 1.Splunk角色能力异常问题解决措施,"issue, problem, resolution",entity
+信用卡處,"department, office, unit",entity
+2025/12/04 08:30 至 2025/12/04 09:00,"time, period, duration",entity
+狀態描述,"status, condition, description",entity
+2025/12/23 13:30 至 2025/12/23 17:30,"time, period, duration",entity
+SH上,"stock, market, trading, investment",entity
+Hank,"person, character, individual",entity
+事件,"event, occurrence, happening",entity
+es_admin_user與admin角色,"role, user, permission",entity
+BTDC2 問題處理,"task, issue, matter, problem",entity
+Splunk_12月维护,"maintenance, update, server, action",entity
+各台主機KV store 憑證效期,"key_value_store, expiration, certificate, timeout, validity",entity
+2025/11/07 17:00,"time, date, moment",entity
+150 GB,"storage, space, capacity",entity
+Checkpoint 資料,"checkpoint, confirmation, admission",entity
+更新,"certificate, validation, authorization",entity
+授权用量：建议扩充 -授权量：100GB -平均授权用量：132GB,"data, usage, limit",entity
+Splunk SH,"event, anomaly, log_analysis",entity
+9.3.8 / 2025.11.14,"date, time, period",entity
+11/14 23:20後,"time, moment, period",entity
+2025/11/24 11:30 至 2025/11/24 12:00,"maintenance, period, time slot",entity
+2025/12/04 10:00 至 2025/12/04 10:30,"time, period, maintenance",entity
+報告及告警,"report, alert, notification",entity
+KGIBIDX04,"state, condition, status",entity
+MG02磁碟空間,"disk, space, storage",entity
+Search Head測試,"search, head, query, analysis, tool",entity
+"src=""172.*"" 的事件","event, alert, warning",entity
+es_admin_user角色,"user, role, permission, account",entity
+Assets,"property, resource, wealth, asset",entity
+Management.搜尋異常,"task, duty, obligation",entity
+Splunk 10月維護報告,"report, maintenance, check, synchronization",entity
+2025/11/25 09:30 至 2025/11/25 14:00,"time, period, duration",entity
+DEP02 root服務,"status, task, queue",entity
+2025/11/14 15:33,"time, date, moment",entity
+2025/11/14 09:00,"time, moment, hour, maintenance, period",entity
+F5VPN特定使用者連線的紀錄(sas),"log, record, connection, activity",entity
+C客户,"service, support, operation",entity
+Gitlab,"software, platform, tool, version, system",entity
+AbuseIPDB可檢測情資並直接串接splunk,"data, information, log, report",entity
+CVE-2023- 5178,"vulnerability, weakness, defect",entity
+Splunk的最新版本,"software, version, update",entity
+9.3.1,"version, release, update",entity
+Splunk與UF當前版本： 9.3.8 / 2025.11.14 (EOS:2026.06.24),"version, release, edition",entity
+处理,"handle, process, manage",entity
+撈取,"information, intelligence, data",entity
+checkpoint 資料收容,"limit, threshold, cap",entity
+2025/12/02 12:00,"time, date, deadline",entity
+A部門,"department, group, organization, unit",entity
+更新geodb,"update, database, geodata",entity
+正常,"state, condition, performance",entity
+FCB,"agency, company, firm",entity
+加入了大量稽核規則，且會將稽核日誌轉發到 /var/log/secure，導致estreamer資料量增加,"script, log, security, audit, rule, increase, data",entity
+Gitlab漏洞修補 18.5.4 -> 18.5.5,"upgrade, update, fix, patch",entity
+處理工程師為 A人員 進行維護,"maintenance, repair, service, engineering, operation",entity
+11月月維護,"month, maintenance, period",entity
+FWD02,"device, computer, system, hardware, machine",entity
+現有設備清單,"equipment, facilities, inventory, list",entity
+VMware Tools 漏洞修補,"vulnerability, patch, security, fix, maintenance",entity
+8.0.6,"version, release, iteration",entity
+ASA事件,"event, incident, log, report",entity
+版本18.5.2,"version, release, update",entity
+<F5VPN特定使用者連線的紀錄(ssp)>調整,"record, log, entry",entity
+DLDK container,"container, box, vessel, module",entity
+2025/11/06 10:00 至 2025/11/06 11:00,"time, period, duration",entity
+客製寄件套件,"mail, package, shipment, delivery, tracking",entity
+HTTPS大量传输告警,"alert, warning, security",entity
+12/9執行,"date, time, moment",entity
+2025/11/18 17:30,"time, datetime, moment",entity
+比對結果,"file, comparison, result",entity
+2025.11.14,"date, time, day",entity
+Description,"info, detail, explanation",entity
+logrotate,"script, tool, utility, program, automation",entity
+查詢,"search, look up, inquiry",relation
+結束時間,"end, finish, terminate",relation
+待調整,"be, wait, adjust",relation
+Splunk角色能力異常,"异常, 能力, 角色",relation
+問題,"be part of, include, contain",relation
+接受,"receive, get, obtain",relation
+待办事项,"to do, task, item",relation
+向FISAC提交需使用API的IP申請單,"submit, apply for, request access to",relation
+調閱儀表板建置,"access, view, retrieve, inspect",relation
+每周onsite,"on-site, weekly, present",relation
+有狀態描述,"be in, have, possess",relation
+並未開啟,"not applicable, fail to, refuse to",relation
+進行處理,"handle, process, deal with",relation
+变更,"change, modify, alter",relation
+新增告警,"add, increase, trigger",relation
+新增,"add to, include, incorporate",relation
+於,"at, during, on",relation
+當前版本,"be included in, contain, consist of",relation
+建議擴充,"expand, broaden, augment",relation
+開始時間,"start, begin, initiate",relation
+實際,"real, actual, factual",relation
+解決,"solve, resolve, address",relation
+出現,"appear, show up, occur",relation
+after,"follow, come next, occur later",relation
+評估,"evaluate, assess, grade",relation
+為,"be, serve as, function as",relation
+為修補漏洞,"patch, repair, fix, supplement",relation
+最新版本日期,"date, version, release date",relation
+觸發,"trigger, initiate, cause",relation
+資料狀態,"updated, available, recorded",relation
+維護內容,"preserve, maintain, protect, conserve",relation
+調整上限為 20480 KB/S,"limit to, cap at, set maximum for",relation
+需要,"require, need, demand",relation
+原因,"cause, reason, due to",relation
+升級到,"upgrade to, advance to, move to",relation
+發生於,"occur, happen, take place",relation
+升級,"upgrade, improve, enhance, modernize",relation
+目標,"goal, target, aim",relation
+發出,"release, emit, give off",relation
+結果,"result from, lead to, cause, generate",relation
+狀態描述,"describe, state, characterize",relation
+已更新,"be updated, get updated, update to",relation
+as a result,"follow, lead to, result in",relation
+動作,"move, act, operate",relation
+转移,"move, change hands, transfer ownership",relation
+被刪除,"remove, delete, erase",relation
+可以查看郵件寄送狀態,"check, view, inspect, examine, look into",relation
+將從原先<IPS高風險告警>中獨立出來,"separate out, break away from, detach",relation
+當前版本日期,"be current, be up to date, reflect current date, indicate latest version",relation
+操作,"execute, handle, perform, operate",relation
+開通,"open, activate, connect",relation
+有效期至,"expire by, last until, end at",relation
+正常,"normal, standard, typical",relation
+發生期間,"期间, 发生, 时间段, 阶段",relation
+狀態,"be in, exist in, reside in",relation
+寄送,"send, deliver, mail, dispatch",relation
+重新執行排程時會出現error,"restart, reschedule, occur, error",relation
+預期狀態,"expect, anticipate, forecast",relation
+調閱了,"查阅, 查看, 检索, 查找",relation
+原因為該UF已達到預設輸出上限 (256kb/s),"exceed, reach limit, hit cap",relation
+重新調整,"adjust, revise, modify",relation
+提交,"submit, hand in, report",relation
+新增indexer,"add, include, insert",relation
+工作事項,"task, duty, responsibility, item, matter",relation
+属于,"be part of, belong to, fall under",relation
+維護,"protect, maintain, preserve, uphold",relation
+進行至,"advance to, progress to, move to",relation
+目的,"goal, aim, intention",relation
+是,"be, is, represents",relation
+为,"be, is, represents",relation
+建議進行,"propose, suggest, recommend",relation
+停用,"stop, suspend, deactivate",relation
+待辦事項,"待办, 在列, 需做, 未完成",relation
+before,"happen earlier, precede, occur prior to",relation
+進行了維護,"performed maintenance, carried out maintenance, conducted maintenance",relation
+超出,"exceed, go beyond, transcend",relation
+是伺服器效能,"provide service, offer performance, deliver efficiency",relation
+調整權限為,"modify permissions, adjust settings, change access, set rights",relation
+收容,"house, accommodate, harbor",relation
+期間,"duration, time frame, period",relation
+確認了,"verified, confirmed, checked",relation
+后续将执行,"execute, carry out, implement",relation
+是工作項目之一,"is a part of, is included in, is one of",relation
+停用報表,"停用, 报废, 取消使用",relation
+處置動作,"place, install, put",relation
+處理時間,"handle, manage, process, deal with",relation
+平均,"average, mean, midpoint",relation
+待處理,"wait, be pending, be under processing",relation
+與,"be associated with, be related to, connect with",relation
+與...,"be associated with, be related to, connect with",relation
+更換為,"replace, switch, change",relation
+在時間段,"during, within, at",relation
+是原版本受到的漏洞,"contain, suffer, have",relation
+維護紀錄主題,"record keep, maintain, document",relation
+監測是否有內部IP嘗試連線於dynamic domain(IP浮動),"monitor, check, verify, inspect",relation
+是平均授權用量,"be average, have share, use quota",relation
+進行工程,"carry out, implement, execute",relation
+測試,"test, examine, check, try",relation
+刪除,"remove, delete, erase",relation
+at the same time,"simultaneously, coincide, concur",relation
+刪除繼承,"remove, delete, cancel, dismiss",relation
+期間為,"duration, time span, period",relation
+為時間,"represent, measure, pass",relation
+關於,"about, concern, regarding",relation
+被掃出,"removed, expelled, excluded, dismissed",relation
+評估中,"evaluate, assess, review",relation
+暫時認定原因為,"state, reason for, cause, basis",relation
+已確認,"confirmed, verified, validated",relation
+下周進行,"take place, occur, happen",relation
+執行,"carry out, implement, execute, perform",relation
+檢查結果,"examine, test, verify, inspect",relation
+需進行ES版本升級,"upgrade, update, version upgrade",relation
+從,"follow, come from, derive from",relation
+提交IP申請單給,"submit, apply for, provide, request",relation
+從版本,"follow, derive, originate from",relation
+駐點工作,"work at base, station, serve at post, duty at location",relation
+監測是否设备连线至很少见的port,"check, monitor, verify, ensure",relation
+處理異常,"handle, manage, deal with, process",relation
+受到影響,"affected by, influenced by, impacted by",relation
+確認,"check, confirm, verify, ensure",relation
+執行者,"executor, performer, carrier, implementer",relation
+過期,"expire, exceed, lapse",relation
+作為,"be, serve as, act as",relation
+已經恢復正常,"恢复正常, 回复, 恢复功能, 复原",relation
+檢查,"inspect, examine, verify, check up on",relation
+包含,"include, contain, consist of",relation
+至,"reach, arrive at, get to",relation
+because,"due to, result from, caused by",relation
+審核與結案,"审查, 结案, 确认, 审批, 处理",relation
+建议,"suggest, recommend, propose",relation
+移除权限,"remove, revoke, eliminate, delete",relation
+未看到封包,"missed, fail to receive, not get",relation
+調整腳色權限為,"modify, adjust, set",relation
+現象,"occur, happen, manifest",relation
+進行處理工程,"handle, process, deal with, manage",relation
+发生在,"occur, happen, take place",relation
+最新版本,"update, revise, version",relation
+於時間段,"during, in, within",relation
+內容,"contain, include, comprise",relation
+提交IP申請單,"apply for, submit, request, file",relation
+includes,"contains, comprises, features",relation
+是進行時間,"be in progress, ongoing, proceeding",relation
+將進行,"carry out, perform, execute, implement",relation
+部署,"deployed to, assigned to, stationed at",relation
+is participated by,"participate, include, involve",relation
+監控,"monitor, observe, track, supervise",relation
+處理,"handle, manage, deal with, process, tackle",relation
+进行,"carry out, conduct, perform",relation
+升級至版本,"upgrade to, update to, version up",relation
+效期檢查,"check expiration, validate, verify, inspect",relation
+存在於,"exist in, be located in, reside in",relation
+有維護紀錄,"record, maintain, document, keep, track",relation
+是在,"be in, located in, reside in",relation
+移轉時間,"transfer, change, shift",relation
+時間,"time, duration, period",relation
+進行,"carry out, proceed with, conduct",relation
+用於,"serve, used for, applied to",relation
+具有能力高於,"exceed, surpass, outperform",relation
+FISAC資料收容,"contain, hold, store",relation
+已產出,"produced, generated, yielded",relation
+部屬,"serve, subordinate to, be under the command of",relation
+對象,"target, object, subject",relation
+串接,"connect, link, concatenate",relation
+無法連線至,"无法, 连接, 错误",relation
+漏洞,"contain, have, exist in",relation
+完成,"finish, accomplish, complete",relation
+是當前版本,"be part of, include, contain",relation
+調整,"adjust, modify, regulate, change, tune",relation
+包括,"contains, involves, comprises",relation
+屬於,"be part of, belong to, fall under",relation
+contains,"includes, holds, comprises",relation
+有,"be, have, possess",relation
+測試中,"under test, be tested, test run, test mode",relation
+發生在,"occur in, happen in, take place in",relation
+更新至,"update to, upgrade to, become version",relation
+維護紀錄,"keep, maintain, record, preserve",relation
+更新,"update, include, incorporate",relation
+工具,"tool, instrument, device",relation
+駐點工作事項,"work at base, duty, station, assignment, 任务",relation
+進行了,"carry out, conducted, performed",relation
+屬主,"owner, master, possessor",relation
+記錄,"document, record, log",relation
+遇到,"meet, encounter, run into",relation
+caused by,"resulted from, led to, arose from",relation
+缺少檔案,"lack, absence, missing",relation
+发现,"find, discover, detect",relation
+已使,"become, make, cause",relation
+升級狀態為,"upgrade to, 升級为, 成为",relation
+進行中,"in progress, ongoing, proceeding",relation
+关系,"be related to, connect with, linked to",relation
+發現DNS Datamodel src欄位異常,"find, discover, detect",relation
+設定完成,"set, complete, finished",relation
+撈取,"take, catch, obtain",relation
+開始於,"start, begin, initiate",relation
+修正,"adjust, correct, edit",relation
+建議更新,"suggest, update, revise, amend",relation
+用,"be included in, be part of, contain",relation
+是最新版本,"is updated to, represents latest, version newest",relation
+提交需使用API的IP申請單,"apply for, submit, request, use api, ip application",relation
+採取,"adopt, choose, select, implement",relation
+删除选项,"be part of, include, contain",relation
+設定,"set, configure, define, establish",relation
+確認為,"confirm, verify, 认定",relation
+during,"happen in, occur in, take place in",relation
+查詢不到,"not found, search for, look up",relation
+處理了時間段,"managed, handled, dealt with",relation
+是系統優化建議,"optimize system, suggest improvement, enhance function",relation
+待修補,"修复, 补充, 修改",relation
+移轉,"transfer, change hands, pass on",relation
+状态描述为,"be described as, stated as, referred to as",relation
+移除並重新產生新,"remove, regenerate, produce new",relation
+對象為,"targeted at, aimed at, focused on",relation
+時間段,"time span, duration, period",relation
+加入,"join in, be part of, participate in",relation
+導致,"lead to, result in, cause",relation
+問題處理,"solve, handle, address, deal with",relation
+是時間範圍,"is within, falls in, during, at",relation
+升級至,"upgrade to, advance to, 升級为",relation
+and,"connect, with, plus",relation
+收到,"receive, get, obtain",relation
+PA報表寄信異常-未完成,"submit, report, send, transmit",relation
+原寄給,"originally addressed to, intended for, sent to",relation
+工作項目,"task, item, duty, responsibility",relation
+是進行中的工作項目之一,"is part of, belongs to, relates to",relation
+IP修改為,"contain, update, revise, alter",relation
+添加設定,"add, set, configure",relation
+時間範圍,"时间范围, 时期, 时段, 期间",relation
+補寄,"include, contain, contribute to",relation
+建置中,"under construction, being set up, established",relation
+修補,"repair, fix, mend, restore",relation
+由於,"because, due to, owing to",relation
+已驗證功能可使用,"available, usable, accessible",relation
+移轉狀態為,"change to, transfer to, become",relation
+有約40min延遲,"delayed by, had delay, lagged by",relation
+出現異常,"occur, happen, arise",relation
+待辦,"待办, 等待, 暫存",relation
+建議,"suggest, recommend, propose",relation
+描述了,"described, depicted, portrayed",relation
+關閉,"close, shut down, terminate",relation
+接收,"receive, get, obtain, acquire",relation
+采取,"take, adopt, adopt, undertake",relation
+擁有,"own, possess, have",relation
+描述,"describe, depict, portray",relation
+达到,"achieve, attain, reach",relation
+时间段,"时间段, 时段, 持续时间, 期间",relation
+查出原因,"find out, discover, identify",relation
+已完成,"finish, complete, accomplish",relation
+处理,"handle, manage, deal with",relation

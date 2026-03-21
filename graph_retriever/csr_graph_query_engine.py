@@ -1,6 +1,5 @@
 import os
 import sys
-import yaml
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Sequence
 
@@ -38,14 +37,6 @@ def _llama_docs_to_langchain_docs(docs: Sequence[Any]) -> List[Any]:
                 text = str(d)
         out.append(LCDocument(page_content=str(text or ""), metadata=dict(meta)))
     return out
-
-
-def _load_storage_dir_base() -> str:
-    try:
-        config = yaml.safe_load(open("/home/End_to_End_RAG/config.yml"))
-        return config["graph"]["storage_dir"]
-    except Exception:
-        return "/home/End_to_End_RAG/graph_index"
 
 
 @dataclass
@@ -125,14 +116,13 @@ class CSRGraphQueryEngine:
         if self._graph is not None:
             return self._graph
 
-        storage_dir_base = _load_storage_dir_base()
         spec = GraphCacheSpec(
             method_name=self.method_name,
             data_type=self.data_type,
             data_mode=self.data_mode,
             fast_build=self.fast_build,
         )
-        cache_path = csr_graph_cache_path(storage_dir_base, spec)
+        cache_path = csr_graph_cache_path(spec)
 
         cached = load_pickle(cache_path)
         if cached is not None:

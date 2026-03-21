@@ -1,5 +1,8 @@
 from lightrag import LightRAG
+from lightrag.lightrag import QueryParam
 import json
+import asyncio
+
 
 class TemporalLightRAGPackage:
     def __init__(self, working_dir, settings):
@@ -7,10 +10,10 @@ class TemporalLightRAGPackage:
         [引用: Graphiti 時序概念]
         增強 LightRAG 的節點屬性，將 Time/Date 作為檢索排序的重要權重。
         """
+        self.settings = settings
         
         async def custom_llm_func(prompt, system_prompt=None, history_messages=[], **kwargs):
             full_prompt = f"{system_prompt}\n\n{prompt}" if system_prompt else prompt
-            # 呼叫 LlamaIndex 的非同步生成方法
             response = await settings.builder_llm.acomplete(full_prompt)
             return response.text
         
@@ -18,7 +21,7 @@ class TemporalLightRAGPackage:
         self.rag = LightRAG(
             working_dir=self.working_dir,
             llm_model_func=custom_llm_func,
-            llm_model_name=self.settings.llm_model
+            llm_model_name=getattr(self.settings, 'llm_model', 'unknown')
         )
 
     def _preprocess_with_time(self, text: str, timestamp: str) -> str:
@@ -36,15 +39,12 @@ class TemporalLightRAGPackage:
         self.rag.insert(processed_texts)
 
     def query(self, query_text: str, mode="hybrid", time_weighting=True):
-        # 1. 執行標準 LightRAG 檢索
-        raw_response = self.rag.query(query_text, param={"mode": mode})
+        raw_response = self.rag.query(query_text, param=QueryParam(mode=mode))
         
         if not time_weighting:
             return raw_response
-            
-        ################################################################################################################################
-        # 2. ToG / Graphiti 啟發式後處理: 
-        # (這裡簡化為利用 LLM 針對檢索結果進行時序對齊與過濾)
+        
+        # 利用 LLM 針對檢索結果進行時序對齊與過濾
         temporal_prompt = f"""
         Given the following response generated from customer service knowledge graph:
         {raw_response}
@@ -53,7 +53,13 @@ class TemporalLightRAGPackage:
         
         Please re-organize the answer strictly in chronological order. If there are conflicting resolutions, prioritize the most recent one.
         """
-        ################################################################################################################################
-        # 呼叫您的 LLM function 進行二次過濾
-        final_response = openai_complete_if_cache(temporal_prompt, model=self.settings.llm_model)
-        return final_response
+        llm = getattr(self.settings, 'llm', None) or getattr(self.settings, 'builder_llm', None)
+        if llm is None:
+            return raw_response
+        
+        try:
+            final_response = llm.complete(temporal_prompt)
+            return final_response.text if hasattr(final_response, 'text') else str(final_response)
+        except Exception as e:
+            print(f"⚠️  時序後處理失敗，回傳原始結果: {e}")
+            return raw_response

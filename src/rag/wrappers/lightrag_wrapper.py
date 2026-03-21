@@ -7,13 +7,19 @@ LightRAG Wrapper
 import inspect
 from typing import Dict, Any
 from .base_wrapper import BaseRAGWrapper
-from src.config.settings import get_settings
+from src.config.settings import get_settings, ModelSettings
 from src.utils.token_counter import get_token_counter
 
 
 class LightRAGWrapper(BaseRAGWrapper):
     """
     LightRAG 封裝器
+
+    預設 use_context=True：以 aquery_data / query_data 搭配 only_need_context=True
+    取得結構化檢索結果，再以專案自訂 prompt + llm.acomplete 生成答案（六種 mode 皆如此）。
+
+    use_context=False（見 LightRAGWrapper_Original）：單次官方 aquery / query，
+    only_need_context=False，不另匯出與自訂管線相同的 retrieved_contexts。
     
     支援 LightRAG 的多種檢索模式：
     - local: 關注特定實體與細節
@@ -27,7 +33,7 @@ class LightRAGWrapper(BaseRAGWrapper):
         name: Wrapper 名稱
         rag: LightRAG 實例
         mode: 檢索模式
-        use_context: 是否使用 LightRAG 的 context（新版模式）
+        use_context: True 為結構化檢索＋自訂生成；False 為官方端到端單次查詢
         _initialized: 是否已初始化（用於新版 LightRAG）
     """
     
@@ -47,7 +53,7 @@ class LightRAGWrapper(BaseRAGWrapper):
             name: Wrapper 名稱
             rag_instance: LightRAG 實例
             mode: 檢索模式
-            use_context: 是否使用 context 進行自訂生成（False 則使用 LightRAG 原生）
+            use_context: True 為 only_need_context=True 取 context 後自訂生成；False 為官方單次 aquery
             model_type: 模型類型（用於取得 Settings）
             schema_info: Schema 資訊字典
         """
@@ -63,19 +69,32 @@ class LightRAGWrapper(BaseRAGWrapper):
         """套用 token budget 參數（由評估流程動態注入）。"""
         self.token_budget = budget or {}
         print(f"🎯 [{self.name}] 已套用 token budget: {self.token_budget}")
+
+    def _native_answer_query_param(self):
+        """
+        官方端到端答案路徑用的 QueryParam（單次 retrieve+generate，不先取純 context）。
+        """
+        from lightrag.lightrag import QueryParam
+        return QueryParam(mode=self.mode, only_need_context=False)
     
     def query(self, question: str) -> str:
         """
-        同步查詢（僅用於簡單呼叫）
+        同步查詢；僅支援 use_context=False（與 _execute_original_mode 一致）。
+        use_context=True 時請改用非同步評估流程（_execute_query / aquery）。
         
         Args:
             question: 使用者問題
         
         Returns:
-            LightRAG 回應
+            LightRAG 官方生成之字串答案
         """
-        from lightrag.lightrag import QueryParam
-        return self.rag.query(question, param=QueryParam(mode=self.mode))
+        if self.use_context:
+            raise NotImplementedError(
+                "use_context=True 時請使用非同步 _execute_query()；"
+                "同步 query() 僅支援官方端到端模式（use_context=False）。"
+            )
+        param = self._native_answer_query_param()
+        return self.rag.query(question, param=param)
     
     async def _execute_query(self, query: str) -> Dict[str, Any]:
         """
@@ -87,8 +106,6 @@ class LightRAGWrapper(BaseRAGWrapper):
         Returns:
             查詢結果字典
         """
-        from lightrag.lightrag import QueryParam
-        
         my_settings = get_settings(model_type=self.model_type)
         
         # 解決 LightRAG 新版本的初始化問題
@@ -107,27 +124,26 @@ class LightRAGWrapper(BaseRAGWrapper):
             }
         
         # 使用自訂 context 模式（新版）
-        response = await self._execute_context_mode(query, Settings)
+        response = await self._execute_context_mode(query, my_settings)
         return response
     
     async def _execute_original_mode(self, query: str) -> str:
         """
-        執行原生 LightRAG 模式（不使用自訂 context）
+        官方端到端：單次 aquery / query，only_need_context=False（與 QueryParam 預設一致但明確寫出）。
         
         Args:
             query: 使用者查詢
         
         Returns:
-            LightRAG 回應
+            LightRAG 生成之答案字串
         """
-        from lightrag.lightrag import QueryParam
-        
+        param = self._native_answer_query_param()
         if hasattr(self.rag, "aquery"):
-            response = await self.rag.aquery(query, param=QueryParam(mode=self.mode))
+            response = await self.rag.aquery(query, param=param)
         elif inspect.iscoroutinefunction(self.rag.query):
-            response = await self.rag.query(query, param=QueryParam(mode=self.mode))
+            response = await self.rag.query(query, param=param)
         else:
-            response = self.rag.query(query, param=QueryParam(mode=self.mode))
+            response = self.rag.query(query, param=param)
         
         # 相容處理：如果回傳的是 LlamaIndex 物件才取 .text
         if hasattr(response, "text"):
@@ -137,13 +153,15 @@ class LightRAGWrapper(BaseRAGWrapper):
         
         return response
     
-    async def _execute_context_mode(self, query: str, Settings) -> Dict[str, Any]:
+    async def _execute_context_mode(
+        self, query: str, settings: ModelSettings
+    ) -> Dict[str, Any]:
         """
         執行自訂 context 模式（使用 LightRAG context + 自訂 prompt）
         
         Args:
             query: 使用者查詢
-            Settings: 模型設定物件
+            settings: ModelSettings（含 llm 等）
         
         Returns:
             查詢結果字典（包含詳細token統計）
@@ -288,7 +306,7 @@ class LightRAGWrapper(BaseRAGWrapper):
         )
         
         # 使用 LLM 生成答案（不限制生成 token）
-        llm_response = await my_settings.llm.acomplete(prompt)
+        llm_response = await settings.llm.acomplete(prompt)
         response = llm_response.text
         
         print(f"📊 Retrieved {len(retrieved_ids)} chunk IDs | Tokens: {total_tokens} (E:{entity_tokens}, R:{relation_tokens}, C:{chunk_tokens})")
@@ -314,13 +332,16 @@ class LightRAGWrapper(BaseRAGWrapper):
 
 # 向後兼容別名
 class LightRAGWrapper_Original(LightRAGWrapper):
-    """向後兼容：原生模式的 LightRAG Wrapper"""
+    """
+    LightRAG 官方端到端基線：單次 aquery / query（only_need_context=False）。
+    不另匯出結構化 retrieved_contexts，依賴該欄位之檢索指標可能為空或不適用。
+    """
     
     def __init__(self, name: str, rag_instance, mode: str = "hybrid", schema_info: Dict[str, Any] = None):
         super().__init__(
             name=name,
             rag_instance=rag_instance,
             mode=mode,
-            use_context=False,  # 使用原生模式
+            use_context=False,
             schema_info=schema_info
         )

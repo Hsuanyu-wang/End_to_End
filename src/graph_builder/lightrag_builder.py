@@ -29,6 +29,7 @@ class LightRAGBuilder(BaseGraphBuilder):
         settings: Any = None,
         data_type: str = "DI",
         schema_method: str = "lightrag_default",
+        entity_types: List[str] | None = None,
         sup: str = "",
         fast_test: bool = False
     ):
@@ -46,6 +47,7 @@ class LightRAGBuilder(BaseGraphBuilder):
         super().__init__(graph_store, settings)
         self.data_type = data_type
         self.schema_method = schema_method
+        self.entity_types = entity_types
         self.sup = sup
         self.fast_test = fast_test
         self.storage_path = None
@@ -76,6 +78,13 @@ class LightRAGBuilder(BaseGraphBuilder):
             fast_test=self.fast_test
         )
         
+        # 同步實體類型配置：供 LightRAG index 建圖或後續查詢/評估使用
+        # 注意：lightrag.py 實際讀取的是 Settings.lightrag_config.entity_types
+        if self.entity_types is not None and self.settings is not None:
+            lightrag_config = getattr(self.settings, "lightrag_config", None)
+            if lightrag_config is not None and hasattr(lightrag_config, "entity_types"):
+                lightrag_config.entity_types = self.entity_types
+
         print(f"📂 LightRAG 儲存路徑: {self.storage_path}")
         
         # 檢查是否已存在
@@ -124,15 +133,28 @@ class LightRAGBuilder(BaseGraphBuilder):
         )
         
         # 提取 schema 資訊
+        lightrag_entities = []
+        if self.settings is not None:
+            # 新版結構：Settings.lightrag_config.entity_types
+            lightrag_config = getattr(self.settings, "lightrag_config", None)
+            used_new_field = False
+            if lightrag_config is not None and hasattr(lightrag_config, "entity_types"):
+                lightrag_entities = getattr(lightrag_config, "entity_types", []) or []
+                used_new_field = True
+
+            # 舊版 fallback：Settings.lightrag_entity_types（僅當新欄位不存在）
+            if not used_new_field:
+                lightrag_entities = getattr(self.settings, "lightrag_entity_types", []) or []
+
         schema_info = {
-            "entities": getattr(self.settings, 'lightrag_entity_types', []),
+            "entities": lightrag_entities,
             "relations": [],
             "method": self.schema_method
         }
         
         return {
-            "nodes": [],  # LightRAG 不直接返回節點列表
-            "edges": [],  # LightRAG 不直接返回邊列表
+            "nodes": [],
+            "edges": [],
             "metadata": {
                 "num_documents": len(documents),
                 "schema_method": self.schema_method,
@@ -140,5 +162,6 @@ class LightRAGBuilder(BaseGraphBuilder):
             },
             "schema_info": schema_info,
             "storage_path": self.storage_path,
-            "graph_format": "lightrag"
+            "graph_format": "lightrag",
+            "lightrag_instance": self.lightrag_instance,
         }

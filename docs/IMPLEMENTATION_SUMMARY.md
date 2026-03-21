@@ -1,5 +1,7 @@
 # LightRAG 全面改進實作總結
 
+> **歷史存檔**：精簡模組索引已合併至 [IMPLEMENTATION_HISTORY.md](IMPLEMENTATION_HISTORY.md)。以下全文保留供追溯；日常請閱 [docs/README.md](README.md)。
+
 本專案已成功實作 LightRAG 和 Ontology Learning 的全面改進，包含基礎設施建設和核心功能模組。
 
 ## ✅ 已完成的功能模組

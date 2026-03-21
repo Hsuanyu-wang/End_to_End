@@ -13,20 +13,13 @@ class GraphCacheSpec:
     fast_build: bool
 
 
-def _safe_slug(s: str) -> str:
-    return "".join(ch if (ch.isalnum() or ch in ("-", "_")) else "_" for ch in str(s))
-
-
-def csr_graph_cache_path(storage_dir_base: str, spec: GraphCacheSpec) -> str:
-    """
-    CSR NetworkX 圖 cache：使用 StorageManager 統一管理路徑
-    """
-    # 使用 StorageManager 取得路徑
+def csr_graph_cache_path(spec: GraphCacheSpec) -> str:
+    """CSR NetworkX 圖 cache：使用 StorageManager 統一路徑（storage/csr_graph）。"""
     return get_csr_graph_path(
         data_type=spec.data_type,
         data_mode=spec.data_mode,
         method=spec.method_name,
-        fast_test=spec.fast_build
+        fast_test=spec.fast_build,
     )
 
 

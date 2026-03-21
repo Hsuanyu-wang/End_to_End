@@ -1,16 +1,16 @@
 model:
-  ollama_url: "http://192.168.63.174:11434"
+  ollama_url: "http://192.168.63.184:11434"
   embed_model: "nomic-embed-text" # bge-m3, nomic-embed-text, jinaai/jina-embeddings-v2-base-code
   embed_dim: 768
   llm_model: "qwen2.5:7b" # llama3.1:8b, mistral-small:24b
 
 eval_model:
-  ollama_url: "http://192.168.63.174:11434"
+  ollama_url: "http://192.168.63.184:11434"
   llm_model: "qwen2.5:14b" # llama3.3:70b, llama3:70b-instruct, gpt-oss:120b
 
 builder_model:
-  ollama_url: "http://192.168.63.174:11434"
-  llm_model: "qwen2.5:14b"
+  ollama_url: "http://192.168.63.184:11434"
+  llm_model: "qwen2.5:7b"
 
 data:
   raw_file_path_DI: "/home/End_to_End_RAG/Data/CSR_20260122_v4_92_clean.jsonl"
@@ -19,7 +19,7 @@ data:
   qa_file_path_GEN: "/home/End_to_End_RAG/Data/qa_global_group_100.jsonl"
 
 lightrag:
-  lightrag_storage_path_DIR: "/home/End_to_End_RAG/lightrag_storage"
+  lightrag_storage_path_DIR: "/home/End_to_End_RAG/storage/lightrag_temporal"
   lightrag_language: "Chinese"
   # lightrag_entity_types: [
   #     "Record",
@@ -228,6 +228,6 @@ graph:
   # extraction_mode: "hybrid" # transformer, schema, hybrid
   depth: 3
   use_entity_anchor: True
-  storage_dir: "/home/End_to_End_RAG/graph_index"
+  storage_dir: "/home/End_to_End_RAG/storage/graph_index"
   neo4j_database: "neo4j"
   neo4j_port: 7687

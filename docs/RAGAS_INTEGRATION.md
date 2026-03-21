@@ -124,6 +124,18 @@ export EVAL_EMBEDDING_BINDING_HOST="http://your-embedding-endpoint"
 export EVAL_EMBEDDING_MODEL="text-embedding-3-large"
 ```
 
+### Ollama（OpenAI 相容 API）
+
+Ollama 的 REST 路徑需帶 `/v1`。未設定真實 API Key 時，程式會對已設定 host 的端點使用佔位 key（預設 `ollama`，可透過 `EVAL_OPENAI_COMPAT_API_KEY` 覆寫）。模型名稱須與本機 `ollama list` 一致。
+
+```bash
+export EVAL_LLM_BINDING_HOST="http://192.168.63.174:11434/v1"
+export EVAL_EMBEDDING_BINDING_HOST="http://192.168.63.174:11434/v1"
+export EVAL_LLM_MODEL="<你的聊天模型名>"
+export EVAL_EMBEDDING_MODEL="<你的嵌入模型名>"
+# 可不設 EVAL_LLM_BINDING_API_KEY / OPENAI_API_KEY
+```
+
 ### 可選配置
 
 ```bash
@@ -134,11 +146,14 @@ export EVAL_LLM_TIMEOUT="180"                 # 預設: 180
 
 # Embedding 配置
 export EVAL_EMBEDDING_MODEL="text-embedding-3-large"  # 預設: text-embedding-3-large
+
+# OpenAI 相容端點專用（如 Ollama）：佔位 API key，預設 ollama
+export EVAL_OPENAI_COMPAT_API_KEY="ollama"
 ```
 
 ## 優雅降級
 
-如果未安裝 RAGAS 或未設定 API Key：
+如果未安裝 RAGAS，或未設定 API Key 且未設定可用的 OpenAI 相容端點 host（`EVAL_LLM_BINDING_HOST` 等）：
 
 - RAGAS 指標會自動設為不可用（`available=False`）
 - 評估腳本會繼續執行，RAGAS 指標欄位回傳 `None`
@@ -146,7 +161,7 @@ export EVAL_EMBEDDING_MODEL="text-embedding-3-large"  # 預設: text-embedding-3
 - 會輸出警告訊息提示使用者
 
 ```
-⚠️ RAGAS 指標需要 API Key，請設定環境變數
+⚠️ RAGAS 指標需要 API Key 或 EVAL_LLM_BINDING_HOST（OpenAI 相容端點），請設定環境變數
 ⚠️ RAGAS 指標計算失敗: ...
 ```
 

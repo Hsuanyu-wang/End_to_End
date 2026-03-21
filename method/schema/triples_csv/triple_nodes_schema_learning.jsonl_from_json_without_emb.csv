@@ -1,0 +1,1553 @@
+name:ID,type,concepts,synsets,:LABEL
+A人員,entity,[],[],Node
+F客戶,entity,[],[],Node
+2025/12/26 15:00 至 2025/12/26 16:00,entity,[],[],Node
+維護,entity,[],[],Node
+splunk_銀行處,entity,[],[],Node
+12月月維護,entity,[],[],Node
+9.3.3/2025.02.26,entity,[],[],Node
+系統版本,entity,[],[],Node
+10.0.2/2025.11.14,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/12/26 15:00 至 2025/12/26 16:00,event,[],[],Node
+狀態描述 (Description): splunk_銀行處12月月維護,event,[],[],Node
+處置動作 (Action): 1.授權用量 : 建議擴充 -授權量 : 375 GB -平均授權使用量 : 1276GB,event,[],[],Node
+處置動作 (Action): 2.伺服器效能 : 無,event,[],[],Node
+處置動作 (Action): 3.系統優化建議 : 無,event,[],[],Node
+處置動作 (Action): 4.版本更新 : 建議更新 當前版本：9.3.3/2025.02.26 最新版本：10.0.2/2025.11.14,event,[],[],Node
+處置動作 (Action): 5.問題追蹤：無,event,[],[],Node
+處理工程師為 A人員 進行維護工作,event,[],[],Node
+處理工程師,entity,[],[],Node
+建議擴充 -授權量 : 375 GB -平均授權使用量 : 1276GB,event,[],[],Node
+版本更新 : 建議更新 當前版本：9.3.3/2025.02.26 最新版本：10.0.2/2025.11.14,event,[],[],Node
+時間為2026/01/07 13:30 至 2026/01/07 17:30,entity,[],[],Node
+C人員,entity,[],[],Node
+Splunk,entity,[],[],Node
+動作,entity,[],[],Node
+A部門,entity,[],[],Node
+Maintainer帳號權限確認,entity,[],[],Node
+服務正確，並再次執行健康檢查確認系統功能正常,entity,[],[],Node
+報告,entity,[],[],Node
+B部门同事,entity,[],[],Node
+需使用API的IP申請單,entity,[],[],Node
+SH KVstore引擎,entity,[],[],Node
+進行中,entity,[],[],Node
+splunk LDAP,entity,[],[],Node
+已完成驗證,entity,[],[],Node
+Maintainer帳號權限確認 已確認角色能力可符合日常工作使用。,event,[],[],Node
+DEP02移轉後服務確認 已確認服務正確，並再次執行健康檢查確認系統功能正常。,event,[],[],Node
+Splunk每週onsite 處置動作,event,[],[],Node
+FISAC資料收容-進行中 目前已請B同事 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,event,[],[],Node
+DEP02移轉後服務確認 已確已確認服務正確，並再次執行健康檢查確認系統功能正常。,event,[],[],Node
+B部門 1.FISAC資料收容-進行中 目前已請B同事 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+Splunk LDAP驗證設定 已完成splunk LDAP驗證設定,event,[],[],Node
+PA報表寄送異常檢查 已確認splunk有寄出報告並記錄於cim_modactions索引中，目前以請A同事向IT部門確認exchange是否有收到splunk報告。,event,[],[],Node
+"A人员, C人员为B客户进行维护",event,[],[],Node
+A人员,entity,[],[],Node
+C人员,entity,[],[],Node
+B客户,entity,[],[],Node
+A部门确认Maintainer账户权限,event,[],[],Node
+A部门,entity,[],[],Node
+DEP02转移后服务确认,event,[],[],Node
+DEP02,entity,[],[],Node
+已确认Splunk有寄出报告并记录于cim_modactions索引中，目前请A同事向IT部门确认exchange是否有收到Splunk报告,event,[],[],Node
+A同事,entity,[],[],Node
+IT部门,entity,[],[],Node
+B部门进行FISAC资料收容-进行中,event,[],[],Node
+B部门,entity,[],[],Node
+请B同事向FISAC提交需使用API的IP申请单,event,[],[],Node
+B同事,entity,[],[],Node
+FISAC,entity,[],[],Node
+B部门进行SH KVstore引擎异常测试-进行中,event,[],[],Node
+LDAP设置已完成Splunk LDAP验证设置,event,[],[],Node
+LDAP,entity,[],[],Node
+B人員,entity,[],[],Node
+C客戶,entity,[],[],Node
+2026/01/05 13:30 至 2026/01/05 17:30,entity,[],[],Node
+FWD02磁碟,entity,[],[],Node
+本周工作項目,entity,[],[],Node
+FCB147的keep_logs,entity,[],[],Node
+audit.log持續累積,entity,[],[],Node
+messages-20251214檔案,entity,[],[],Node
+釋放空間,entity,[],[],Node
+/etc/cron.d/logrotate-syslog,entity,[],[],Node
+每2小時檢查一次,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2026/01/05 13:30 至 2026/01/05 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202601第一周(2026/1/5),event,[],[],Node
+處置動作 (Action): 本周工作項目如下,event,[],[],Node
+FWD02磁碟用量異常處理 今日FWD02磁碟用量達到超過90%,event,[],[],Node
+目前分析為以下三個原因導致 estreamer 資料暴增 audit.log 持續累積（FCB147 的 keep_logs 設定導致永不刪除） /var/log/messages-20251214 單一檔案達 148GB,event,[],[],Node
+目前處理方式 estreamer 處理 移除 rsyslog 轉送設定（減少資料流入）,event,[],[],Node
+調整 clean.sh 資料留存區間（定期清理舊資料，原為留存12小時，現改為6小時）,event,[],[],Node
+audit.log 處理 手動刪除 audit 資料（釋放空間） 目前還沒有設定排程刪除，持續觀察中,event,[],[],Node
+messages 暴增處理 刪除 148GB 的 messages-20251214 檔案（立即釋放空間）,event,[],[],Node
+設定 logrotate 排程監控： 每 2 小時檢查一次（/etc/cron.d/logrotate-syslog） 超過 1G自動 rotate 保留 30 個檔案 自動壓縮,event,[],[],Node
+待辦事項: Cybereyes API 介接 (進行中),event,[],[],Node
+處理工程師為 B人員 进行时间,event,[],[],Node
+处理工程师,entity,[],[],Node
+B人员,entity,[],[],Node
+本周工作项目如下: 1.FWD02磁碟用量异常处理,event,[],[],Node
+FWD02磁盘,entity,[],[],Node
+目前分析为以下三个原因导致 estreamer 资料暴增 audit.log 持续累积（FCB147 的 keep_logs 设置导致永不删除） /var/log/messages-20251214 单一文件达 148GB,event,[],[],Node
+estreamer,entity,[],[],Node
+audit.log,entity,[],[],Node
+/var/log/messages-20251214,entity,[],[],Node
+目前处理方式 estreamer 虚处 理 移除 rsyslog 转送设定（减少资料流入）,event,[],[],Node
+调整 clean.sh 数据留存区间（定期清理旧资料，原为留存12小时，现改为了6小时）,event,[],[],Node
+clean.sh,entity,[],[],Node
+audit.log处理 手动删除 audit 资料（释放空间）目前还没有设定排程删除持续观察中 messages 暴增处理 删除 148GB 的 messages-20251214 文件（立即释放空间）,event,[],[],Node
+设定 logrotate 排程监控：每2小时检查一次（/etc/cron.d/logrotate-syslog）超过 1G自动 rotate 保留30个文件 自动压缩,event,[],[],Node
+logrotate,entity,[],[],Node
+待办事项: Cybereyes API 介接 (进行中),event,[],[],Node
+Cybereyes API,entity,[],[],Node
+2025/12/30 13:30 至 2025/12/30 17:30,entity,[],[],Node
+Splunk駐點服務,entity,[],[],Node
+202512第五周(2025/12/30),entity,[],[],Node
+狀態描述,entity,[],[],Node
+Action,entity,[],[],Node
+本周工作項目如下: 1.更新GeoDB 2.<HTTPS大量傳輸告警>調整 排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄 3.FWD02 CPU及磁碟用量異常,entity,[],[],Node
+FWD02,entity,[],[],Node
+CPU用量明顯上升且已持續兩周，同時磁碟用量也達到90%，其中estreamer資料占用約109G,entity,[],[],Node
+FCB腳本,entity,[],[],Node
+12/9執行,entity,[],[],Node
+加入了大量稽核規則，且會將稽核日誌轉發到 /var/log/secure，導致estreamer資料量增加,entity,[],[],Node
+日誌轉發設定,entity,[],[],Node
+關閉,entity,[],[],Node
+estreamer 資料清理排程,entity,[],[],Node
+僅留存6小時資料 (原為12小時),entity,[],[],Node
+待辦事項,entity,[],[],Node
+SSH Server 漏洞修補,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/12/30 13:30 至 2025/12/30 17:30。,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202512第五周(2025/12/30),event,[],[],Node
+Splunk駐點服務202512第五周(2025/12/30),event,[],[],Node
+本周工作項目如下: 1.更新GeoDB,event,[],[],Node
+2.<HTTPS大量傳輸告警>調整 排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄,event,[],[],Node
+<HTTPS大量傳輸告警>調整 排除m365網址，並新建立報表 <每日HTTP資料傳輸統計報表(m365): daily report> 單獨發送m365傳輸紀錄,event,[],[],Node
+3.FWD02 CPU及磁碟用量異常,event,[],[],Node
+自12/9左右開始FWD02的CPU用量明顯上升且已持續兩周,event,[],[],Node
+同時磁碟用量也達到90%，其中estreamer資料占用約109G,event,[],[],Node
+目前已關閉日誌轉發設定，並將estreamer 資料清理排程調整為僅留存6小時資料 (原為12小時)，減少占用磁碟空間,event,[],[],Node
+今日發現自12/9左右開始FWD02的CPU用量明顯上升且已持續兩周，同時磁碟用量也達到90%，其中estreamer資料占用約109G,event,[],[],Node
+待辦事項: 1. SSH Server 漏洞修補,event,[],[],Node
+FWD02 CPU及磁碟用量異常,event,[],[],Node
+處理工程師為 B人員 进行时间维护,event,[],[],Node
+Splunk 驻点服务在2025年12月30日进行维护,event,[],[],Node
+Splunk驻点服务,entity,[],[],Node
+本周工作项目包括更新GeoDB并调整HTTPS大量传输告警,event,[],[],Node
+GeoDB,entity,[],[],Node
+HTTPS大量传输告警,entity,[],[],Node
+发现FWD02的CPU用量明显上升，磁碟用量达到90%,event,[],[],Node
+关闭日志转发设置，并调整estreamer资料清理排程,event,[],[],Node
+日志转发设置,entity,[],[],Node
+estreamer资料,entity,[],[],Node
+待办事项包括SSH Server漏洞修补,event,[],[],Node
+SSH Server,entity,[],[],Node
+2025/12/23 13:30 至 2025/12/23 17:30,entity,[],[],Node
+Splunk駐點服務202512第四周(2025/12/23),entity,[],[],Node
+維護紀錄,entity,[],[],Node
+Splunk系統,entity,[],[],Node
+GitLab漏洞,entity,[],[],Node
+版本18.5.2,entity,[],[],Node
+版本18.5.4,entity,[],[],Node
+2026年國定假日,entity,[],[],Node
+Cybereyes介接套件,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/12/23 13:30 至 2025/12/23 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202512第四周(2025/12/23),event,[],[],Node
+處置動作 (Action): 本周工作項目如下:,event,[],[],Node
+處理工程師為B人員進行維護,event,[],[],Node
+更新GeoDB,event,[],[],Node
+GitLab漏洞修補,event,[],[],Node
+2026年國定假日列表更新,event,[],[],Node
+Cybereyes介接套件建置,event,[],[],Node
+SSH Server漏洞修補,event,[],[],Node
+2026/01/02 17:33 至 2026/01/02 17:35,entity,[],[],Node
+處理時間,entity,[],[],Node
+Splunk SIEM(12)月維護.DM20240200+DN20240393,entity,[],[],Node
+狀態,entity,[],[],Node
+150 GB,entity,[],[],Node
+授權用量,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2026/01/02 17:33 至 2026/01/02 17:35。,event,[],[],Node
+自12/9左右開始CPU及磁碟用量明顯上升且已持續兩周，推測為FCB設定導致,event,[],[],Node
+伺服器效能 : 異常 - 自12/9左右開始CPU及磁碟用量明顯上升且已持續兩周，推測為FCB設定導致，目前已將設定還原，並持續觀察,event,[],[],Node
+系統優化建議 :無,event,[],[],Node
+目前版本並未有重大弱點，也未受相關BUG,event,[],[],Node
+版本更新 : 暫不更新 - 當前版本: 9.3.8 / 2025.11.14 - 最新版本: 10.0.2 / 2025.11.14,event,[],[],Node
+Splunk SIEM进行月度维护,event,[],[],Node
+Splunk SIEM,entity,[],[],Node
+服务器性能异常，CPU及磁盘使用量上升,event,[],[],Node
+服务器,entity,[],[],Node
+D客戶,entity,[],[],Node
+2025/12/19 13:30 至 2025/12/19 16:00,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/12/19 13:30 至 2025/12/19 16:00,event,[],[],Node
+狀態描述 (Description): Splunk 202510-12季維護,event,[],[],Node
+處置動作 (Action): 本季維護報表重點如下：,event,[],[],Node
+D客戶的維護紀錄被記錄,event,[],[],Node
+處理工程師B人員在2025/12/19 13:30至2025/12/19 16:00進行維護工作,event,[],[],Node
+2025/11/26 13:30 至 2025/11/26 14:30,entity,[],[],Node
+pice_logs,entity,[],[],Node
+狀況,entity,[],[],Node
+pice_logs有缺少檔案的狀況 因為檔案中的log太過相似，splunk會自動判定為相同的log而不重複收容,entity,[],[],Node
+讓splunk監控所有檔案即使內容相似,entity,[],[],Node
+設定,entity,[],[],Node
+新增設定後已完整收容所有檔案之資料,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/11/26 13:30 至 2025/11/26 14:30,event,[],[],Node
+狀態描述 (Description): pice_logs 缺漏處理,event,[],[],Node
+先前提到pice_logs有缺少檔案的狀況,event,[],[],Node
+經查原因為檔案中的log太過相似，splunk會自動判定為相同的log而不重複收容,event,[],[],Node
+今日已添加設定，讓splunk監控所有檔案即使內容相似,event,[],[],Node
+B人員進行維護工作,event,[],[],Node
+查出pice_logs缺少檔案的原因,event,[],[],Node
+修改splunk設定以監控相似log,event,[],[],Node
+splunk,entity,[],[],Node
+確認所有檔案已被完整收容,event,[],[],Node
+2025/03/14 09:00 至 2025/03/14 14:00,entity,[],[],Node
+Splunk SH,entity,[],[],Node
+異常hanging,entity,[],[],Node
+調查,entity,[],[],Node
+凌晨1:00時CPU和記憶體,entity,[],[],Node
+突然爆增現象,entity,[],[],Node
+重啟後,entity,[],[],Node
+Splunk microsoft套件,entity,[],[],Node
+SH新增,entity,[],[],Node
+"處理工程師為 C人員, B人員進行時間為2025/03/14 09:00 至 2025/03/14 14:00。",event,[],[],Node
+今日早上接到您緊急報修，隨即到場進行調查,event,[],[],Node
+從這周開始凌晨1:00時CPU和記憶體都有突然爆增現象，今日甚至導致服務異常,event,[],[],Node
+Splunk SH 異常hanging,event,[],[],Node
+暫時解決方法： 1. 重啟splunk後目前服務後已恢復正常,event,[],[],Node
+根據原廠建議，新增Splunk參數避免搜尋不會因為記憶體不足時就hanging,event,[],[],Node
+刪除上周末駐點時於SH新增的splunk microsoft套件,event,[],[],Node
+提供原廠diag並開立CASE請求協助,event,[],[],Node
+預計下周一會再次到場確認目前狀況並持續追蹤原廠協助。,event,[],[],Node
+"處理工程師為 C人員, B人員 進行維護",event,[],[],Node
+A客戶,entity,[],[],Node
+2025/03/28 09:00 至 2025/03/28 21:00,entity,[],[],Node
+時間,entity,[],[],Node
+Splunk 版本,entity,[],[],Node
+9.3.1,entity,[],[],Node
+9.3.3,entity,[],[],Node
+UAT / Production / PIMS 共8台,entity,[],[],Node
+調整物件,entity,[],[],Node
+重新安裝Splunk，設定FIPS mode=0,entity,[],[],Node
+調整內容,entity,[],[],Node
+覆蓋原先設定檔,entity,[],[],Node
+升版,entity,[],[],Node
+PIMS search head,entity,[],[],Node
+dbconenct異常問題,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/03/28 09:00 至 2025/03/28 21:00,event,[],[],Node
+狀態描述 (Description): Splunk 版本升級 9.3.1 -> 9.3.3,event,[],[],Node
+處置動作 (Action): 針對UAT / Production / PIMS 共8台進行調整,event,[],[],Node
+除了PIMS search head遇到dbconenct異常問題，其他皆成功升版,event,[],[],Node
+處理工程師為 C人員 進行維護,event,[],[],Node
+A客户,entity,[],[],Node
+Splunk 版本從9.3.1 升級到 9.3.3,event,[],[],Node
+針對UAT / Production / PIMS 共8台進行調整,event,[],[],Node
+重新安裝 Splunk，設定FIPS mode=0,event,[],[],Node
+E客戶,entity,[],[],Node
+2025/07/29 13:30 至 2025/07/29 17:00,entity,[],[],Node
+Splunk工作事項 - 0729,entity,[],[],Node
+Asset and Identity priority確認,entity,[],[],Node
+Identity新增title(職稱),entity,[],[],Node
+Identity將帳號狀態加入category欄位,entity,[],[],Node
+未明確定義priotiry 的identity將設為low,entity,[],[],Node
+Assets僅針對H1、H2、H3的設備將priority設為critical,entity,[],[],Node
+其餘皆設為low,entity,[],[],Node
+DLDK container NOT running,entity,[],[],Node
+刪除舊版本殘留的ES threat intelligence download設定,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/07/29 13:30 至 2025/07/29 17:00。,event,[],[],Node
+狀態描述 (Description): Splunk工作事項 - 0729,event,[],[],Node
+作業項目如下： Asset and Identity priority確認,event,[],[],Node
+Assets僅針對H1、H2、H3的設備將priority設為critical，其餘皆設為low,event,[],[],Node
+刪除舊版本殘留的ES threat intelligence download設定 DLDK container NOT running,event,[],[],Node
+1.已暫先手動重啟,event,[],[],Node
+例行月維護 1.將自動化程式放於公用電腦上，成功執行,event,[],[],Node
+處理工程師為 C人員 进行时间维护,event,[],[],Node
+确认Identity的优先级,event,[],[],Node
+Asset and Identity,entity,[],[],Node
+新增title到Identity中,event,[],[],Node
+Identity,entity,[],[],Node
+title(职称),entity,[],[],Node
+将账号状态加入category栏位,event,[],[],Node
+账号状态,entity,[],[],Node
+category栏位,entity,[],[],Node
+设置未明确定义优先级的identity为low,event,[],[],Node
+low,entity,[],[],Node
+针对H1、H2、H3设备设置priority为critical，其他设为low,event,[],[],Node
+Assets,entity,[],[],Node
+H1,entity,[],[],Node
+H2,entity,[],[],Node
+H3,entity,[],[],Node
+critical,entity,[],[],Node
+删除旧版本残留在ES威胁情报下载的配置DLDK container NOT running,event,[],[],Node
+DLDK container,entity,[],[],Node
+NOT running,entity,[],[],Node
+手动重启DLDK容器,event,[],[],Node
+将自动化程序放在公用电脑上并成功执行例行月维护,event,[],[],Node
+自动化程式,entity,[],[],Node
+公用电脑,entity,[],[],Node
+2025/07/29 12:00 至 2025/07/29 13:00,entity,[],[],Node
+630 GB,entity,[],[],Node
+建議擴充,entity,[],[],Node
+正常,entity,[],[],Node
+2.伺服器效能,entity,[],[],Node
+無,entity,[],[],Node
+3.系統優化建議,entity,[],[],Node
+9.3.3 / 2025.02.26,entity,[],[],Node
+版本更新,entity,[],[],Node
+10.0.0 / 2025.07.28,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/07/29 12:00 至 2025/07/29 13:00,event,[],[],Node
+狀態描述 (Description): Splunk 2025 MA 07月定保.DM20250088_(3/12),event,[],[],Node
+處置動作 (Action): 前一份CSR內容誤植，重新撰寫,event,[],[],Node
+授權用量：建議擴充 -授權量：150 GB -平均授權用量：630 GB,event,[],[],Node
+伺服器效能：正常,event,[],[],Node
+系統優化建議：無,event,[],[],Node
+版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.3 / 2025.02.26 -最新版本：10.0.0 / 2025.07.28,event,[],[],Node
+處理工程師為 C人員 進行維護工作,event,[],[],Node
+狀態描述: Splunk 2025 MA 07月定保.DM20250088_(3/12),event,[],[],Node
+E客户,entity,[],[],Node
+前一份CSR內容誤植，重新撰寫,event,[],[],Node
+版本更新：現行版本近期被掃出弱點，建議進行升版,event,[],[],Node
+2026/01/13 13:30 至 2026/01/13 17:30,entity,[],[],Node
+Cybereyes API 串接,entity,[],[],Node
+Splunk 驻點服務,entity,[],[],Node
+cybereyes api 告警,entity,[],[],Node
+大量網站攻擊嘗試,entity,[],[],Node
+新資料,entity,[],[],Node
+FWD03 底層資料,entity,[],[],Node
+事項,entity,[],[],Node
+Gitlab漏洞修補,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2026/01/13 13:30 至 2026/01/13 17:30。,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202601第二周(2026/1/13),event,[],[],Node
+1. 更新GeoDB,event,[],[],Node
+2. Cybereyes API 串接,event,[],[],Node
+目前已建立以下兩個新資料測試版本告警，若後續經觀察及比對確認資料無誤再全面改成由新資料觸發 cybereyes 告警 大量網站攻擊嘗試且觸發Cybereyes告警_new (測試中) Cybereyes高(high)風險告警_new (測試中),event,[],[],Node
+已完成 cybereyes api 串接，並確認新資料進到 splunk,event,[],[],Node
+3. FWD03 底層資料收容,event,[],[],Node
+由於FCB設定資料永久保存占用磁碟空間，目前已將資料收進splunk，下周確認資料內容後再討論後續處理方式,event,[],[],Node
+待辦事項: 1. SSH Server 漏洞修補 2. Gitlab漏洞修補,event,[],[],Node
+C客戶的維護紀錄被記錄,event,[],[],Node
+B人員在2026/01/13從13:30至17:30進行了時間處理,event,[],[],Node
+2025/12/15 13:30 至 2025/12/15 17:30,entity,[],[],Node
+Splunk駐點服務202512第三周(2025/12/15),entity,[],[],Node
+MG02磁碟用量超過90%,entity,[],[],Node
+異常原因,entity,[],[],Node
+過去備份及安裝檔,entity,[],[],Node
+MG02磁碟空間,entity,[],[],Node
+85%,entity,[],[],Node
+當前使用率,entity,[],[],Node
+FWD03備份異常,entity,[],[],Node
+FCB設定導致權限限制,entity,[],[],Node
+Splunk帳號,entity,[],[],Node
+Ryan,entity,[],[],Node
+Arcsight和Splunk,entity,[],[],Node
+歷史案件,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/12/15 13:30 至 2025/12/15 17:30。,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202512第三周(2025/12/15),event,[],[],Node
+本周工作項目如下: 1.更新GeoDB 2.主機異常處理 MG02磁碟用量超過90% -> 刪除過去備份及安裝檔，已降至85% FWD03備份異常 -> 原因為FCB設定導致備份目的路徑權限限縮，導致無法備份，已復原權限並手動執行備份 3.Cyble ASM IP白名單更新 4.Splunk帳號更動 由於人員變更，經確認後已刪除Ryan之Splunk帳號,event,[],[],Node
+FWD03備份異常 -> 原因為FCB設定導致備份目的路徑權限限縮，導致無法備份，已復原權限並手動執行備份,event,[],[],Node
+Cyble ASM IP白名單更新,event,[],[],Node
+Splunk帳號更動,event,[],[],Node
+Arcsight和Splunk 歷史案件調閱,event,[],[],Node
+待辦事項: 1. GitLab 漏洞修補,event,[],[],Node
+進行時間為 2025/12/15 13:30 至 2025/12/15 17:30,event,[],[],Node
+主機異常處理 MG02磁碟用量超過90% -> 刪除過去備份及安裝檔，已降至85%,event,[],[],Node
+Splunk帳號更動 由於人員變更，經確認後已刪除Ryan之Splunk帳號,event,[],[],Node
+C客户,entity,[],[],Node
+2025/12/02 13:30,entity,[],[],Node
+2025/12/02 17:30,entity,[],[],Node
+Description,entity,[],[],Node
+Splunk駐點服務202512第一周(2025/12/2),entity,[],[],Node
+"更新GeoDB, 2025下半年度告警盤點, AI網站服務紀錄調閱報表建置 <Gen AI 連線紀錄(每日): monthly report> <Gen AI 連線紀錄(整月): monthly report> 設定於每月1日凌晨2:00執行",entity,[],[],Node
+FCB設定,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/12/02 13:30 至 2025/12/02 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202512第一周(2025/12/2),event,[],[],Node
+處置動作 (Action): 本周工作項目如下: 1.更新GeoDB 2.2025下半年度告警盤點,event,[],[],Node
+3.AI網站服務紀錄調閱報表建置 <Gen AI 連線紀錄(每日): monthly report> <Gen AI 連線紀錄(整月): monthly report> 設定於每月1日凌晨2:00執行,event,[],[],Node
+待辦事項: 1. FCB設定調整,event,[],[],Node
+C客戶 的維護紀錄被記錄,event,[],[],Node
+B人員 在 2025/12/02 進行維護工作,event,[],[],Node
+待辦事項包括FCB設定調整,event,[],[],Node
+FCB,entity,[],[],Node
+202511第四周,entity,[],[],Node
+Gitlab,entity,[],[],Node
+18.5.2,entity,[],[],Node
+CVE-2025-11224,entity,[],[],Node
+AI網站服務,entity,[],[],Node
+完成,entity,[],[],Node
+DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標,entity,[],[],Node
+告警,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/11/25 13:30 至 2025/11/25 17:30。,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202511第四周(2025/11/25),event,[],[],Node
+1.更新GeoDB,event,[],[],Node
+2.Gitlab版本升及18.1.6 -> 18.5.2 為修補漏洞CVE-2025-11224已將Gitlab升級至建議版本,event,[],[],Node
+3.AI網站服務紀錄調閱儀表板建置 為方便後續定期調閱AI網站連線紀錄，已建置調閱儀表板,event,[],[],Node
+4.<DNS_TUNNELING_單一來源查詢不同網域數量與DNS查詢次數超標>告警調整 查詢不同網域數量閥值由200改為300 統計區間由三分鐘改為五分鐘內,event,[],[],Node
+待辦事項: 1. 告警盤點 2. FCB設定,event,[],[],Node
+將Gitlab升級至18.5.2版本,event,[],[],Node
+2025/11/17 13:30 至 2025/11/17 17:30,entity,[],[],Node
+AI網站服務紀錄調閱 (202508-202510),entity,[],[],Node
+2025弱點掃描報告資訊整理,entity,[],[],Node
+eStreamer 資料異常處理,entity,[],[],Node
+11/14 23:20後,entity,[],[],Node
+僅收到狀態log，且KVstore狀態異常,entity,[],[],Node
+重啟服務,entity,[],[],Node
+KPMG滲透測試IP白名單,entity,[],[],Node
+加入白名單，並修改告警語法,entity,[],[],Node
+告警盤點,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/11/17 13:30 至 2025/11/17 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202511第三周(2025/11/17),event,[],[],Node
+2.AI網站服務紀錄調閱 (202508-202510),event,[],[],Node
+3.2025弱點掃描報告資訊整理,event,[],[],Node
+4.eStreamer 資料異常處理 發現eStreamer資料從11/14 23:20後僅收到狀態log，且KVstore狀態異常，重啟服務後資料已陸續進到splunk,event,[],[],Node
+5.KPMG滲透測試IP白名單 已將IP及網段加入白名單，並修改告警語法，使其同時比對IP及網段,event,[],[],Node
+待辦事項: 1. 告警盤點,event,[],[],Node
+發現eStreamer資料從11/14 23:20後僅收到狀態log，且KVstore狀態異常，重啟服務後資料已陸續進到splunk,event,[],[],Node
+B人員進行維護,event,[],[],Node
+處理工程師更新GeoDB,event,[],[],Node
+處理工程師調閱AI網站服務紀錄,event,[],[],Node
+處理工程師整理2025弱點掃描報告資訊,event,[],[],Node
+處理工程師處理eStreamer資料異常,event,[],[],Node
+KPMG滲透測試IP加入白名單,event,[],[],Node
+KPMG,entity,[],[],Node
+2025/11/11 13:30 至 2025/11/11 17:30,entity,[],[],Node
+Splunk駐點服務202511第二周(2025/11/11),entity,[],[],Node
+VMware Tools 漏洞修補,entity,[],[],Node
+CVE-2025-41244、CVE-2025-41246,entity,[],[],Node
+12.3.5版本,entity,[],[],Node
+報告及告警寄件人更新,entity,[],[],Node
+白名單,entity,[],[],Node
+網段,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/11/11 13:30 至 2025/11/11 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202511第二周(2025/11/11),event,[],[],Node
+1.VMware Tools 漏洞修補 為修補漏洞CVE-2025-41244、CVE-2025-41246，以按照提供之SOP更新至12.3.5版本,event,[],[],Node
+2.報告及告警寄件人更新,event,[],[],Node
+3.KPMG滲透測試IP白名單 已將IP加入白名單，但提供的清單中有很多為網段，需要修改規則才能比對，目前正在修改中,event,[],[],Node
+待辦事項: 1. 告警盤點 (預計下周開始),event,[],[],Node
+處理工程師進行維護,event,[],[],Node
+VMware Tools漏洞修補,event,[],[],Node
+滲透測試IP白名單修改,event,[],[],Node
+工程師,entity,[],[],Node
+2025/11/04 13:30 至 2025/11/04 17:30,entity,[],[],Node
+Splunk駐點服務202511第一周(2025/11/4),entity,[],[],Node
+KV store憑證,entity,[],[],Node
+該台主機,entity,[],[],Node
+憑證,entity,[],[],Node
+磁碟用量,entity,[],[],Node
+KV store,entity,[],[],Node
+報告及告警,entity,[],[],Node
+Calvin,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/11/04 13:30 至 2025/11/04 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202511第一周(2025/11/4),event,[],[],Node
+發現昨日(11/3)該台主機磁碟用量暴增,event,[],[],Node
+同時發現該台主機KV store憑證過期,event,[],[],Node
+已更新憑證,event,[],[],Node
+目前KV store狀態及磁碟用量皆為正常,event,[],[],Node
+已將原寄給Ryan之報告及告警改為Calvin，並新增Splunk登入帳號,event,[],[],Node
+未來包含ES結案等通知皆改由Calvin做審核與結案,event,[],[],Node
+本周工作项目如下：1 更新geodb 2.Heavy Forwarder磁碟用量调查发现昨日该台主机磁碟用量暴增同时发现该台主机KV store凭证过期今日已更新凭证目前KV store状态及磁碟用量皆为正常,event,[],[],Node
+报告及告警寄件人更新将原寄给Ryan之报告及告警改为了Calvin并新增Splunk登入账号未来包含ES结案等通知皆由Calvin做审核与结案,event,[],[],Node
+2025/10/27 13:30 至 2025/10/27 17:30,entity,[],[],Node
+更新geodb,entity,[],[],Node
+完成本月維護作業,entity,[],[],Node
+一年以上情資比對VirusTotal (進行中),entity,[],[],Node
+AbuseIPDB可檢測情資並直接串接splunk,entity,[],[],Node
+Search Head測試,entity,[],[],Node
+建立排程,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/10/27 13:30 至 2025/10/27 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202510第五周(2025/10/27),event,[],[],Node
+處置動作 (Action): 本周工作項目如下: 1.更新geodb 2.完成本月維護作業 3.一年以上情資比對VirusTotal (進行中),event,[],[],Node
+處置動作 (Action): 本周工作項目如下: 1. 更新geodb 2. 完成本月維護作業 3. 一年以上情資比對VirusTotal (進行中),event,[],[],Node
+目前有看到AbuseIPDB可檢測情資並直接串接splunk 於Search Head測試可使用後即可建立排程,event,[],[],Node
+待辦事項: 1. 告警盤點 2. VMware Tools 漏洞修補,event,[],[],Node
+状态描述,event,[],[],Node
+Splunk驻点服务202510第五周(2025/10/27),entity,[],[],Node
+处置动作包括更新geodb,event,[],[],Node
+处置动作包括完成本月维护作业,event,[],[],Node
+处置动作包括一年以上情报对比VirusTotal (进行中),event,[],[],Node
+处置动作包括告警盘点,event,[],[],Node
+处置动作包括VMware Tools漏洞修修补,event,[],[],Node
+2025/10/20 11:00 至 2025/10/20 16:00,entity,[],[],Node
+Splunk駐點服務202510第四周(2025/10/20),entity,[],[],Node
+<刪除資料庫中IOC>,entity,[],[],Node
+頁面復原,entity,[],[],Node
+調整 於報表新增需監控之url,entity,[],[],Node
+一年以上情資比對VirusTotal,entity,[],[],Node
+已取得需比對之情資清單,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/10/20 11:00 至 2025/10/20 16:00,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202510第四周(2025/10/20),event,[],[],Node
+處置動作 (Action): 本周工作項目如下: 1.更新geodb,event,[],[],Node
+2.<刪除資料庫中IOC> 頁面復原 3.<HTTP對外大量傳輸資料報表>調整 於報表新增需監控之url,event,[],[],Node
+4.一年以上情資比對VirusTotal (進行中),event,[],[],Node
+Splunk驻点服务202510第四周(2025/10/20)进行中,event,[],[],Node
+工作项目包括更新geodb和页面复原,event,[],[],Node
+geodb,entity,[],[],Node
+页面,entity,[],[],Node
+工作项目包括调整HTTP对外大量传输资料报表以新增需监控之url,event,[],[],Node
+HTTP对对外大量传输资料报表,entity,[],[],Node
+url,entity,[],[],Node
+进行中的一年以上情资比对VirusTotal,event,[],[],Node
+VirusTotal,entity,[],[],Node
+待办事项包括告警盘点,event,[],[],Node
+2025/10/13 13:30 至 2025/10/13 17:30,entity,[],[],Node
+Splunk駐點服務202510第三周(2025/10/13),entity,[],[],Node
+<SAP重要TCode執行紀錄>告警語法調整,entity,[],[],Node
+<F5VPN特定使用者連線的紀錄(ssp)>調整,entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/10/13 13:30 至 2025/10/13 17:30。,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202510第三周(2025/10/13),event,[],[],Node
+1. 更新geodb,event,[],[],Node
+2.<SAP重要TCode執行紀錄>告警語法調整 原語法中的user經比對僅得到系統管理員，並非實際user，因此調整語法，透過比對cyberark log取得實際user後再寄出信件,event,[],[],Node
+3.<F5VPN特定使用者連線的紀錄(ssp)>調整 根據需求將”數位科技中心”之紀錄獨立出來，拆分為以下兩個報告 <F5VPN特定使用者連線的紀錄(ssp) 不含數位科技中心> <F5VPN特定使用者連線的紀錄(ssp) 僅數位科技中心>,event,[],[],Node
+<F5VPN特定使用者連線的紀錄(ssp)>調整 根據需求將”數位科技中心”之紀錄獨立出來，拆分為以下兩個報告 <F5VPN特定使用者連線的紀錄(ssp) 不含數位科技中心> <F5VPN特定使用者連線的紀錄(ssp) 僅數位科技中心>,event,[],[],Node
+待辦事項: 2. 一年以上情資比對VirusTotal,event,[],[],Node
+Splunk 驻点服务202510第三周 (2025/10/13) 處置动作 包括 本周工作项目如下。,event,[],[],Node
+告警语法规则调整,event,[],[],Node
+cyberark日志,entity,[],[],Node
+根据需求将“数位科技中心”之纪录独立出来，拆分为以下两个报告 <F5VPN特定使用者连线的纪录(ssp)不含数位科技中心> <F5VPN特定使用者连线的纪录(ssp)仅数位科技中心>,event,[],[],Node
+一年以上情报对比VirusTotal,event,[],[],Node
+2025/10/07 13:30 至 2025/10/07 17:30,entity,[],[],Node
+"更新geodb, 自動化封鎖清單異動儀表板建置 (進行中), 情資白名單新增 Cyble ASM IP",entity,[],[],Node
+處理工程師為 B人員 進行時間為 2025/10/07 13:30 至 2025/10/07 17:30,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務202510第二周(2025/10/07),event,[],[],Node
+處置動作 (Action): 本周工作項目如下: 1.更新geodb 2.自動化封鎖清單異動儀表板建置 (進行中) 3.情資白名單新增 Cyble ASM IP,event,[],[],Node
+Cyble ASM IP,entity,[],[],Node
+2025/10/01 13:30 至 2025/10/01 17:30,entity,[],[],Node
+建立告警<PWLAN觸發IPS高風險告警>,entity,[],[],Node
+"src=""172.*"" 的事件",entity,[],[],Node
+建立告警,entity,[],[],Node
+自動化封鎖清單異動儀表板建置,entity,[],[],Node
+GitLab升版 17.10.8 → 18.1.6,entity,[],[],Node
+CVE-2025-6454、CVE-2025-2256,entity,[],[],Node
+GitLab,entity,[],[],Node
+B人員在2025/10/01 13:30 至 2025/10/01 17:30進行維護工作,event,[],[],Node
+Splunk駐點服務202510第一周(2025/10/01)的工作內容被描述,event,[],[],Node
+Splunk駐點服務202510第一周(2025/10/01) 的工作內容被描述,event,[],[],Node
+"更新geodb, 建立告警<PWLAN觸發IPS高風險告警>, 將 src=""172.*"" 的事件從原先<IPS高風險告警>中獨立出來",event,[],[],Node
+自動化封鎖清單異動儀表板建置 (進行中),event,[],[],Node
+原先版本受到漏洞CVE-2025-6454、CVE-2025-2256影響,event,[],[],Node
+處理工程師為 B人員 進行時間為 2025/10/01 13:30 至 2025/10/01 17:30,event,[],[],Node
+Splunk駐點服務202510第一周(2025/10/01),entity,[],[],Node
+"將 src=""172.*"" 的事件從原先<IPS高風險告警>中獨立出來",event,[],[],Node
+自动化封鎖清單异动仪表板建置 (进行中),event,[],[],Node
+Splunk驻点服务202510第一周(2025/10/01),entity,[],[],Node
+2026/01/19 13:30 至 2026/01/19 17:30,entity,[],[],Node
+Splunk駐點服務202601第三周,entity,[],[],Node
+本周工作項目如下,entity,[],[],Node
+Gitlab漏洞修補 18.5.4 -> 18.5.5,entity,[],[],Node
+Gitlab升級至建議版本,entity,[],[],Node
+F5VPN特定使用者連線的紀錄(sas),entity,[],[],Node
+FWD03底層資料收容filter設定,entity,[],[],Node
+保留log,entity,[],[],Node
+B人員於2026/01/19 13:30至2026/01/19 17:30進行維護工作,event,[],[],Node
+Splunk駐點服務202601第三週(2026/1/19)進行狀態描述,event,[],[],Node
+本周工作項目如下: 1.更新GeoDB 2.Gitlab漏洞修補 18.5.4 -> 18.5.5 為修補漏洞已將Gitlab升級至建議版本,event,[],[],Node
+本周工作項目如下: 3.<F5VPN特定使用者連線的紀錄(sas)> 停用報表,event,[],[],Node
+4.FWD03 底層資料收容 filter 設定 已排除大量SERVICE_START 及 SERVICE_STOP 資料 目前觀察每日約產生200個檔案，故暫設定保留一天內的log,event,[],[],Node
+FWD03底層資料收容filter設定已排除大量SERVICESTART及SERVICESTOP資料目前观察每日约产生200个档案，故暂设定保留一天内的log,event,[],[],Node
+5.<HTTP对外大量传输数据报表>调整於<HTTPS大量资料传输告警>排除特定URL改由报表寄送,event,[],[],Node
+<HTTP对外大量传输数据报表>调整於<HTTPS大量资料传输告警>排除特定URL改由报表寄送,event,[],[],Node
+待办事项: 1. SSH Server漏洞修补,event,[],[],Node
+Gitlab漏洞修補從18.5.4到18.5.5,event,[],[],Node
+停用F5VPN特定使用者連線的紀錄(sas)報表,event,[],[],Node
+F5VPN特定使用者連線的紀錄(sas)報表,entity,[],[],Node
+時間為 2025/11/05 13:30 至 2025/11/05 19:00,entity,[],[],Node
+IP,entity,[],[],Node
+套件,entity,[],[],Node
+NTP服務,entity,[],[],Node
+效期,entity,[],[],Node
+kvstore,entity,[],[],Node
+狀態為正常,entity,[],[],Node
+SPLUNK2024/09~2025/08的維護報告,entity,[],[],Node
+Hank,entity,[],[],Node
+FIsac情資,entity,[],[],Node
+撈取,entity,[],[],Node
+防火牆,entity,[],[],Node
+等待中,entity,[],[],Node
+indexer,entity,[],[],Node
+至IDX cluster節點,entity,[],[],Node
+Centos作業系統,entity,[],[],Node
+(評估中),entity,[],[],Node
+Splunk 10月維護報告,entity,[],[],Node
+indexer索引同步狀態,entity,[],[],Node
+各台主機KV store,entity,[],[],Node
+憑證效期(B部門),entity,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/11/05 13:30 至 2025/11/05 19:00",event,[],[],Node
+Splunk整體架構IP調整-完成 已設定完成所有主機的新IP,event,[],[],Node
+Splunk套件升級-完成 已部屬新套件至各SH上。,event,[],[],Node
+NTP服務檢查-完成 已檢查各台主機的 NTP服務已啟用。,event,[],[],Node
+KVstore 憑證效期檢查 已將過期憑證移除並重新產生新憑證(有效期至2028/11)，確認kvstore 狀態為正常。,event,[],[],Node
+SPLUNK月報寄送 已將SPLUNK2024/09~2025/08的維護報告寄給Hank,event,[],[],Node
+FIsac情資撈取 已設定完成，正在等待防火牆開通。,event,[],[],Node
+新增indexer 新增indexer至IDX cluster節點，目前將觀察index同步狀態。,event,[],[],Node
+Splunk 10月維護報告 檢查B部門indexer索引同步狀態,event,[],[],Node
+检查各台主機KV store 憑證效期(B部门),event,[],[],Node
+"處理工程師為 A人員, C人員 进行维护",event,[],[],Node
+Splunk整体架构IP调整完成,event,[],[],Node
+Splunk套件升级完成,event,[],[],Node
+NTP服务检查完成,event,[],[],Node
+KVstore凭证有效期检查并更新凭证,event,[],[],Node
+SPLUNK月报寄送,event,[],[],Node
+FIsac情报获取设置完成，等待防火墙开通,event,[],[],Node
+新增indexer至IDX集群节点并观察同步状态,event,[],[],Node
+检查B部门 indexer索引同步状态,event,[],[],Node
+检查各台主机KV store凭证有效期(B部门),event,[],[],Node
+I客戶,entity,[],[],Node
+2025/11/07 13:50 至 2025/11/07 17:30,entity,[],[],Node
+Splunk_11月維護,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/07 13:50 至 2025/11/07 17:30,event,[],[],Node
+狀態描述 (Description): Splunk_11月維護,event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：20GB -平均授權用量：133.26GB,event,[],[],Node
+處置動作 (Action): 2.伺服器效能：正常,event,[],[],Node
+處置動作 (Action): 3.系統優化建議：無,event,[],[],Node
+處置動作 (Action): 4.版本更新：建議先擴充授權使用量，再進行版本升級 -當前版本：8.0.6 / 2024.10.22 -最新版本：10.0.1 / 2025.09.25,event,[],[],Node
+處置動作 (Action): 4.版本更新：建議先擴充授權使用量，再進行版本升級,event,[],[],Node
+處置動作 (Action): 6.補充： 作業系統版本：Red Hat 9.4 EOS date:2027/5/31,event,[],[],Node
+處置動作 (Action): 6.補充： 作業系統弱點：CVE-2023-3567、CVE-2023-4133、CVE-2023-6932、CVE-2023-39198、CVE-2023-51043、CVE-2023-51779、CVE-2023- 5178,event,[],[],Node
+處理工程師為A人員進行維護,event,[],[],Node
+狀態描述包括Splunk_11月維護,event,[],[],Node
+版本更新建議先擴充授權使用量，再進行版本升級,event,[],[],Node
+8.0.6 / 2024.10.22,entity,[],[],Node
+10.0.1 / 2025.09.25,entity,[],[],Node
+指出作業系統版本為Red Hat 9.4,event,[],[],Node
+Red Hat 9.4,entity,[],[],Node
+列出多個作業系統弱點,event,[],[],Node
+CVE-2023-3567,entity,[],[],Node
+CVE-2023-4133,entity,[],[],Node
+CVE-2023-6932,entity,[],[],Node
+CVE-2023-39198,entity,[],[],Node
+CVE-2023-51043,entity,[],[],Node
+CVE-2023-51779,entity,[],[],Node
+CVE-2023- 5178,entity,[],[],Node
+時間為 2025/11/12 13:30 至 2025/11/12 17:40,entity,[],[],Node
+已補跑報告並寄送郵件，另外報告存取時間為1天，所以以排程報告執行時間(11/1)，保存期限為11/2,entity,[],[],Node
+PA每月Block Category報表,entity,[],[],Node
+將於下周到場繼續處理,entity,[],[],Node
+B部門,entity,[],[],Node
+完成 新增indexer至IDX cluster節點，目前將觀察index同步狀態,entity,[],[],Node
+各台主機KV store 憑證效期,entity,[],[],Node
+"處理工程師為 A人員, C人員 進行時間為 2025/11/12 13:30 至 2025/11/12 17:40",event,[],[],Node
+本日駐點工作內容如下： A部門 1.PA報表寄信異常-未完成 已補跑報告並寄送郵件，另外報告存取時間為1天，所以以排程報告執行時間(11/1)，保存期限為11/2。 PA 每月Block Category報表在重新執行排程時會出現error，將於下周到場繼續處理,event,[],[],Node
+A部門 1.PA報表寄信異常-未完成 已補跑報告並寄送郵件,event,[],[],Node
+PA 每月Block Category報表在重新執行排程時會出現error，將於下周到場繼續處理,event,[],[],Node
+新增indexer至IDX cluster節點，目前將觀察index同步狀態。,event,[],[],Node
+檢查B部門indexer索引同步狀態,event,[],[],Node
+檢查各台主機KV store 憑證效期(B部門),event,[],[],Node
+(A部門)DEP02連動主機檢查,event,[],[],Node
+"處理工程師為 A人員,C人員 進行維護工作",event,[],[],Node
+PA報表寄信異常-未完成 已補跑報告並寄送郵件,event,[],[],Node
+PA部門,entity,[],[],Node
+每月Block Category報表在重新執行排程時會出現error,event,[],[],Node
+新增indexer 至IDX cluster節點,event,[],[],Node
+B客戶,entity,[],[],Node
+DEP02連動主機檢查,event,[],[],Node
+維護紀錄有關,entity,[],[],Node
+2025/11/06 10:00 至 2025/11/06 11:00,entity,[],[],Node
+處理工程師為 A人員 進行維護,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/06 10:00 至 2025/11/06 11:00,event,[],[],Node
+狀態描述 (Description): Splunk_10月維護,event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：635.27GB,event,[],[],Node
+處置動作 (Action): 4.版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.1/2025.09.25,event,[],[],Node
+因目前版本並未有重大弱點，也未受相關BUG,event,[],[],Node
+A人員為B客戶進行維護,event,[],[],Node
+處理工程師為B客戶進行 Splunk_10月維護,event,[],[],Node
+2025/11/06 11:00 至 2025/11/06 12:00,entity,[],[],Node
+splunk_B客戶B部門,entity,[],[],Node
+10月月維護,entity,[],[],Node
+授权用量,entity,[],[],Node
+扩充至285GB,entity,[],[],Node
+IDX01、IDX02、IDX03空间使用量,entity,[],[],Node
+90%,entity,[],[],Node
+当前版本,entity,[],[],Node
+最新版本,entity,[],[],Node
+10.0.1/2025.09.25,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/06 11:00 至 2025/11/06 12:00。,event,[],[],Node
+狀態描述 (Description): splunk_B客戶B部門10月月維護,event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：239.38GB,event,[],[],Node
+處置動作 (Action): 2.伺服器效能：IDX01、IDX02、IDX03空間使用量已達90% 建議：若空間使用量持續增長，將搬移frozen,event,[],[],Node
+處置動作 (Action): 4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.1/2025.09.25 現行版本近期被掃出弱點，建議進行升版,event,[],[],Node
+處理工程師進行時間為2025/11/06 11:00 至 2025/11/06 12:00的維護,event,[],[],Node
+建議擴充授權用量至285GB,event,[],[],Node
+平均授權用量為239.38GB,event,[],[],Node
+伺服器效能建議：若空間使用量持續增長，將搬移frozen,event,[],[],Node
+建議更新版本至10.0.1/2025.09.25,event,[],[],Node
+當前版本為9.3.3/2025.02.26,event,[],[],Node
+處理工程師工作,entity,[],[],Node
+2025/11/18 13:30,entity,[],[],Node
+2025/11/18 17:30,entity,[],[],Node
+週onsite 處置動作,entity,[],[],Node
+PA報表寄信異常,entity,[],[],Node
+PA每月Block Category報表新的寄送套件,entity,[],[],Node
+確認報表寄送郵件情況,entity,[],[],Node
+全部主機之KV store 憑證,entity,[],[],Node
+2028/11,entity,[],[],Node
+james,entity,[],[],Node
+Splunk bundle儲存量過大,entity,[],[],Node
+設定以停止預先儲存/apps/search路徑下的csv檔案作為知識包,entity,[],[],Node
+Indexer 索引同步狀態,entity,[],[],Node
+"處理工程師為 A人員, C人員 进行时间从 2025/11/18 13:30 至 2025/11/18 17:30。",event,[],[],Node
+A部门 PA报表寄信异常-完成,event,[],[],Node
+已设定PA每月Block Category报表新的寄送套件，将於下个月1号确认该报表寄送邮件情况。,event,[],[],Node
+B部门 检查各台主机关机凭证有效期,event,[],[],Node
+已更新全部主机之KV store凭证(效期至：2028/11),event,[],[],Node
+FISAC资料收容-进行中,event,[],[],Node
+目前请james向FISAC提交需使用API的IP申请单。,event,[],[],Node
+Splunk bundle存储量过大,event,[],[],Node
+加入设置以停止预先储存/apps/search路径下的csv文件作为知识包。,event,[],[],Node
+Indexer 索引同步状态确认为正常。,event,[],[],Node
+Centos作业系统升级(评估中),event,[],[],Node
+A部门 DEP02连动主机检查,event,[],[],Node
+"處理工程師為 A人員, C人員 進行維護",event,[],[],Node
+設定PA每月Block Category報表新的寄送套件,event,[],[],Node
+PA,entity,[],[],Node
+更新全部主機之KV store憑證,event,[],[],Node
+主機,entity,[],[],Node
+請james向FISAC提交需使用API的IP申請單,event,[],[],Node
+A部門進行維護,event,[],[],Node
+2025/11/19 13:30 至 2025/11/19 14:30,entity,[],[],Node
+設備,entity,[],[],Node
+接收狀態檢查,entity,[],[],Node
+ASA事件,entity,[],[],Node
+IP事件,entity,[],[],Node
+索引器集群,entity,[],[],Node
+索引,entity,[],[],Node
+索引至底層索引器,entity,[],[],Node
+SH,entity,[],[],Node
+事件,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/19 13:30 至 2025/11/19 14:30。,event,[],[],Node
+狀態描述 (Description): 設備接收狀態檢查,event,[],[],Node
+處置動作 (Action): 今日工作項目如下： 1.asa事件接收異常 問題：新增UDP接收來自172.20.137.45的asa事件，於搜尋頁面上卻查詢不到該IP事件 解決辦法：於indexer cluster上新增索引後部署至底下indexer，再次於SH上執行搜尋即可查詢事件,event,[],[],Node
+處置動作 (Action): 今日工作項目如下： 2.checkpoint相關告警查看 確認所有checkpoint告警使用情況。,event,[],[],Node
+處理工程師為A人員進行維護紀錄,event,[],[],Node
+狀態描述為設備接收狀態檢查,event,[],[],Node
+問題：新增UDP接收來自172.20.137.45的asa事件，於搜尋頁面上卻查詢不到該IP事件,event,[],[],Node
+172.20.137.45,entity,[],[],Node
+checkpoint相關告警查看,event,[],[],Node
+checkpoint告警,entity,[],[],Node
+確認所有checkpoint告警使用情況,event,[],[],Node
+2025/11/21 09:30 至 2025/11/21 17:00,entity,[],[],Node
+PA TRAFFIC事件sourcetype,entity,[],[],Node
+pan:log,entity,[],[],Node
+PA事件時間,entity,[],[],Node
+事件時間只抓取事件前32個位元的範圍,entity,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/11/21 09:30 至 2025/11/21 17:00",event,[],[],Node
+狀態描述 (Description): 防火牆事件匯入時間異常,event,[],[],Node
+今日到場作業如下： 1.PA TRAFFIC事件sourcetype更換 將sourcetype更改為pan:log，並套用設定使splunk判斷事件類型,event,[],[],Node
+今日到場作業如下： 2.PA事件時間誤差： 目前做法為刪除判定事件時間為當下時間的設定，並加上事件時間只抓取事件前32個位元的範圍。,event,[],[],Node
+防火牆事件匯入時間異常,event,[],[],Node
+PA TRAFFIC事件sourcetype更換,event,[],[],Node
+更改sourcetype並套用設定,event,[],[],Node
+事件規則設置,event,[],[],Node
+刪除判定事件時間為當下時間的設定,event,[],[],Node
+2025/11/03 10:00 至 2025/11/03 12:00,entity,[],[],Node
+G客戶,entity,[],[],Node
+Splunk_10月維護,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/03 10:00 至 2025/11/03 12:00。,event,[],[],Node
+處置動作 (Action): 本月維護重點如下： 1.授權使用量 - 購買量:2GB - 平均使用量:0.35GB - 使用率為17.5%，達100%次數為1，屬正常範圍,event,[],[],Node
+2. 伺服器效能 - CPU使用率:1.24%，低於90%，屬正常 - 記憶體使用率:18.21%，低於90%，屬正常 - 硬碟使用率:42.91%，屬正常,event,[],[],Node
+3. 系統優化建議 - 皆正常，無需調整,event,[],[],Node
+4. 版本評估 - 現行版本:9.4.3 (2025.06.05) - 最新版本:10.0.1 (2025.09.25),event,[],[],Node
+4. 版本評估 - 現行版本:9.4.3 (2025.06.05) - 最新版本:10.0.1 (2025.09.25) - 因現行版本未有弱點釋出，故不升級。,event,[],[],Node
+5. 問題追蹤 - 無,event,[],[],Node
+A人員進行維護,event,[],[],Node
+2025/11/26 13:30,entity,[],[],Node
+2025/11/26 17:30,entity,[],[],Node
+"A人員, C人員",entity,[],[],Node
+DEP02主機,entity,[],[],Node
+KGIBIDX04,entity,[],[],Node
+下線,entity,[],[],Node
+CDIBHMGT02,entity,[],[],Node
+172.18.44.31,entity,[],[],Node
+FISAC資料收容,entity,[],[],Node
+SH KVstore引擎異常測試,entity,[],[],Node
+IP申請單,entity,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/11/26 13:30 至 2025/11/26 17:30",event,[],[],Node
+本日駐點工作內容如下： A部門 1.DEP02連動主機檢查-完成,event,[],[],Node
+A部門 1.DEP02連動主機檢查-完成,event,[],[],Node
+問題：DEP02主機排程為晚上11點執行KGIBIDX04與CDIBHMGT02的遠端設定檔備份腳本,event,[],[],Node
+解決辦法：刪除KGIBIDX04(主機已下線)備份排程與修改CDIBHMGT02的IP為172.18.44.31,event,[],[],Node
+設定檔備份腳本異常-完成 已修改各台主機中CDIBHMGT02的IP為172.18.44.31，並再次執行備份腳本確認排程腳本正常。,event,[],[],Node
+B部門 1.FISAC資料收容-進行中,event,[],[],Node
+目前請james 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+B部門 2.SH KVstore引擎異常測試-進行中,event,[],[],Node
+正在個人的測試環境測試SH 的KVstore狀態中。,event,[],[],Node
+B客戶 的維護紀錄被記錄,event,[],[],Node
+A部門 的DEP02連動主機檢查完成,event,[],[],Node
+DEP02主機排程問題被發現,event,[],[],Node
+KGIBIDX04備份排程被刪除,event,[],[],Node
+CDIBHMGT02主機IP地址被修改,event,[],[],Node
+設定檔備份腳本異常問題被解決,event,[],[],Node
+B部門 的FISAC資料收容進行中,event,[],[],Node
+FISAC提交需使用API的IP申請單,event,[],[],Node
+James,entity,[],[],Node
+B部門 的SH KVstore引擎異常測試進行中,event,[],[],Node
+2025/11/24 10:30 至 2025/11/24 12:00,entity,[],[],Node
+splunk_信用卡處11月月維護,entity,[],[],Node
+授权用量：建议扩充 -授权量：100GB -平均授权用量：132GB,entity,[],[],Node
+系统优化建议：根据说明定期检查,entity,[],[],Node
+问题,entity,[],[],Node
+101台UF已超过15分钟未与indexer连线,entity,[],[],Node
+建议,entity,[],[],Node
+更新uf清单，并在更新后让uf重新报到,entity,[],[],Node
+版本更新：建议更新 -当前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14,entity,[],[],Node
+进行升版,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/24 10:30 至 2025/11/24 12:00,event,[],[],Node
+狀態描述 (Description): splunk_信用卡處11月月維護,event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：100GB -平均授權用量：132GB,event,[],[],Node
+處置動作 (Action): 3.系統優化建議：根據說明定期檢查 問題：有101台UF已超過15分鐘未與indexer連線 建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,event,[],[],Node
+處置動作 (Action): 4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14,event,[],[],Node
+處置動作 (Action): 4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14 現行版本近期被掃出弱點，建議進行升版,event,[],[],Node
+A人員進行了F客戶的維護工作,event,[],[],Node
+有101台UF已超過15分鐘未與indexer連線,event,[],[],Node
+101台UF,entity,[],[],Node
+現行版本9.3.3/2025.02.26近期被掃出弱點，建議進行升版,event,[],[],Node
+2025/11/24 10:30 至 2025/11/24 11:00,entity,[],[],Node
+splunk_信用卡處,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/24 10:30 至 2025/11/24 11:00。,event,[],[],Node
+處置動作 (Action): 3.系統優化建議：根據說明定期檢查,event,[],[],Node
+問題：有101台UF已超過15分鐘未與indexer連線 建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,event,[],[],Node
+現行版本近期被掃出弱點，建議進行升版,event,[],[],Node
+A人員 進行 F客戶 的維護紀錄,event,[],[],Node
+處置動作 被 執行,event,[],[],Node
+處置動作,entity,[],[],Node
+建議擴充 授權用量,event,[],[],Node
+信用卡處,entity,[],[],Node
+伺服器效能 正常,event,[],[],Node
+系統優化 建議 定期檢查,event,[],[],Node
+轉送器監視設定中 更新 uf清單，並於更新後讓uf重新報到。,event,[],[],Node
+建議 更新 版本,event,[],[],Node
+2025/11/24 11:30 至 2025/11/24 12:00,entity,[],[],Node
+擴充授權量,entity,[],[],Node
+375 GB,entity,[],[],Node
+1398GB,entity,[],[],Node
+平均授權使用量,entity,[],[],Node
+版本,entity,[],[],Node
+當前版本,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/11/24 11:30 至 2025/11/24 12:00,event,[],[],Node
+狀態描述 (Description): splunk_銀行處11月月維護,event,[],[],Node
+1.授權用量 : 建議擴充 -授權量 : 375 GB -平均授權使用量 : 1398GB,event,[],[],Node
+2.伺服器效能 : 無,event,[],[],Node
+3.系統優化建議 : 無,event,[],[],Node
+4.版本更新 : 建議更新 當前版本：9.3.3/2025.02.26 最新版本：10.0.2/2025.11.14 現行版本近期被掃出弱點，建議進行升版,event,[],[],Node
+5.問題追蹤：無,event,[],[],Node
+狀態描述為 splunk_銀行處11月月維護,event,[],[],Node
+建議擴充授權用量至 375 GB,event,[],[],Node
+當前版本為 9.3.3/2025.02.26，最新版本為 10.0.2/2025.11.14,event,[],[],Node
+F客户,entity,[],[],Node
+建議更新版本至 10.0.2,event,[],[],Node
+Splunk監控主機系統移轉與VM化服務,entity,[],[],Node
+時間為 2025/11/27 13:30 至 2025/11/27 16:00,entity,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/11/27 13:30 至 2025/11/27 16:00。",event,[],[],Node
+狀態描述 (Description): Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12),event,[],[],Node
+處置動作 (Action): 1.設備狀態檢查： 觀察月報CPU、Memory使用率皆無超過90%，整體正常,event,[],[],Node
+2.系統日誌分析： 觀察資料品質儀表板、健康狀況檢查，整體無異常,event,[],[],Node
+3.系統參數檢查 設備參數無異常(DNS server、NTP server、LDAP setting),event,[],[],Node
+4.健康狀態檢查 執行健康情況檢查，整體無異常,event,[],[],Node
+"處理工程師為 A人員,C人員進行維護",event,[],[],Node
+Splunk監控主機系統移轉與VM化服務(09-11)季維護DN20230083_(10/12),event,[],[],Node
+觀察月報CPU、Memory使用率,event,[],[],Node
+觀察資料品質儀表板、健康狀況檢查,event,[],[],Node
+檢查設備參數無異常(DNS server、NTP server、LDAP setting),event,[],[],Node
+執行健康情況檢查,event,[],[],Node
+2025/12/03 13:30 至 2025/12/03 17:40,entity,[],[],Node
+維護工作,entity,[],[],Node
+Splunk 使用者權限調整,entity,[],[],Node
+es_admin_user,entity,[],[],Node
+使用者權限,entity,[],[],Node
+ess_analyst,entity,[],[],Node
+供廠商進行例行維護或問題解決登入使用,entity,[],[],Node
+n8n,entity,[],[],Node
+評估中,entity,[],[],Node
+[IP],entity,[],[],Node
+下周進行,entity,[],[],Node
+"處理工程師為 A人員, C人員 進行時間為 2025/12/03 13:30 至 2025/12/03 17:40",event,[],[],Node
+本日駐點工作內容如下： A部門 1.Splunk 使用者權限調整 調整es_admin_user 使用者權限。 調整ess_analyst 腳色權限，以供廠商進行例行維護或問題解決登入使用,event,[],[],Node
+本日駐點工作內容如下： B部門 1.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+本日駐點工作內容如下： B部門 2.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,event,[],[],Node
+本日駐點工作內容如下： B部門 3.n8n無法連線至splunk問題 正在協助排查n8n無法連線至splunk問題,event,[],[],Node
+A部門 1.Splunk 使用者權限調整 調整es_admin_user 使用者權限。 調整ess_analyst 腳色權限，以供廠商進行例行維護或問題解決登入使用,event,[],[],Node
+B部門 1.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+B部門 2.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,event,[],[],Node
+B部門 3.n8n無法連線至splunk問題 正在協助排查n8n無法連線至splunk問題,event,[],[],Node
+B客戶的維護紀錄被記錄,event,[],[],Node
+A部門 Splunk使用者權限調整,event,[],[],Node
+FISAC資料收容進行中,event,[],[],Node
+SH KVstore引擎異常測試進行中,event,[],[],Node
+n8n無法連線至splunk問題正在排查,event,[],[],Node
+Centos作業系統升級評估中,event,[],[],Node
+Centos,entity,[],[],Node
+DEP02移轉預計下周進行,event,[],[],Node
+Splunk_12月維護,entity,[],[],Node
+20GB,entity,[],[],Node
+55.15GB,entity,[],[],Node
+平均授權用量,entity,[],[],Node
+8.0.6,entity,[],[],Node
+10.0.2,entity,[],[],Node
+作業系統版本,entity,[],[],Node
+弱點之一,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/12/05 13:30 至 2025/12/05 15:30。,event,[],[],Node
+狀態描述 (Description): Splunk_12月維護,event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：20GB -平均授權用量：55.15GB,event,[],[],Node
+處置動作 (Action): 4.版本更新：建議先擴充授權使用量，再進行版本升級 -當前版本：8.0.6 / 2024.10.22 -最新版本：10.0.2 / 2025.11.14,event,[],[],Node
+處置動作 (Action): 作業系統弱點：CVE-2023-3567、CVE-2023-4133、CVE-2023-6932、CVE-2023-39198、CVE-2023-51043、CVE-2023-51779、CVE-2023- 5178,event,[],[],Node
+處理工程師為 A人員 进行时间维护,event,[],[],Node
+Splunk_12月维护的处置动作包括授权用量建议扩充至20GB、平均授权用量为55.15GB，服务器效能正常以及无系统优化建议和版本更新建议,event,[],[],Node
+Splunk_12月维护,entity,[],[],Node
+作业系统的版本为Red Hat 9.4，日期是2027/5/31,event,[],[],Node
+2025/12/10 13:30,entity,[],[],Node
+2025/12/10 20:00,entity,[],[],Node
+使用者權限調整,entity,[],[],Node
+個人測試環境,entity,[],[],Node
+KVstore狀態,entity,[],[],Node
+升級,entity,[],[],Node
+DEP02 ([IP]),entity,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/12/10 13:30 至 2025/12/10 20:00",event,[],[],Node
+Splunk每週onsite 處置動作 (Action): A部門 1.Splunk 使用者權限調整 新增maintainer角色，並設定能力值。,event,[],[],Node
+Splunk使用者權限調整 新增maintainer角色，並設定能力值。,event,[],[],Node
+FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+Centos作業系統升級(評估中),event,[],[],Node
+DEP02 ([IP])移轉(下周進行),event,[],[],Node
+"處理工程師為 A人員, C人員 進行維護工作",event,[],[],Node
+新增 maintainer 角色並設定能力值,event,[],[],Node
+ess_analyst角色,entity,[],[],Node
+請 james 向FISAC提交需使用API的IP申請單,event,[],[],Node
+2025/12/04 09:30 至 2025/12/04 10:00,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/12/04 09:30 至 2025/12/04 10:00,event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：620.21GB,event,[],[],Node
+處置動作 (Action): 4.版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.2/2025.11.14,event,[],[],Node
+處置動作 (Action): 4.版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.2/2025.11.14 因目前版本並未有重大弱點，也未受相關BUG，故建議暫不升版,event,[],[],Node
+Splunk_11月維護 處置動作 包含 授權用量：建議擴充 -授權量：285GB -平均授權用量：620.21GB,event,[],[],Node
+Splunk_11月維護 處置動作 包含 伺服器效能：正常,event,[],[],Node
+Splunk_11月維護 處置動作 包含 系統優化建議：無,event,[],[],Node
+Splunk_11月維護 處置動作 包含 版本更新：暫不更新 -當前版本：9.3.6/2025.07.31 -最新版本：10.0.2/2025.11.14,event,[],[],Node
+Splunk_11月維護 處置動作 包含 當前版本並未有重大弱點，也未受相關BUG，故建議暫不升版,event,[],[],Node
+2025/12/04 10:00 至 2025/12/04 10:30,entity,[],[],Node
+11月月維護,entity,[],[],Node
+當前版本9.3.3/2025.02.26,entity,[],[],Node
+弱點,entity,[],[],Node
+最新版本10.0.1/2025.11.14,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/12/04 10:00 至 2025/12/04 10:30,event,[],[],Node
+狀態描述 (Description): splunk_B客戶B部門11月月維護,event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：285GB -平均授權用量：203.65GB,event,[],[],Node
+處置動作 (Action): 建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.1/2025.11.14,event,[],[],Node
+處置動作 (Action): 現行版本近期被掃出弱點，建議進行升版,event,[],[],Node
+狀態描述 被記錄,event,[],[],Node
+B客户B部门,entity,[],[],Node
+確認伺服器效能正常,event,[],[],Node
+無系統優化建議,event,[],[],Node
+建議更新至最新版本10.0.1,event,[],[],Node
+2025/12/12 13:30,entity,[],[],Node
+2025/12/12 17:30,entity,[],[],Node
+splunk憑證,entity,[],[],Node
+更新,entity,[],[],Node
+今日到場作業事項,entity,[],[],Node
+更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑,entity,[],[],Node
+SPLUNK,entity,[],[],Node
+內部憑證,entity,[],[],Node
+網頁憑證,entity,[],[],Node
+KVSTORE,entity,[],[],Node
+2027/12月,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/12/12 13:30 至 2025/12/12 17:30,event,[],[],Node
+狀態描述 (Description): splunk憑證跟換,event,[],[],Node
+處置動作 (Action): 今日到場作業事項為： 更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑,event,[],[],Node
+已確認SPLUNK可正常登入使用、KVSTORE 狀態正常，網頁憑證期限更新至2027/12月,event,[],[],Node
+今日到場作業事項為： 更換SPLUNK內部與網頁憑證，並修改SPLUNK中的憑證路徑,event,[],[],Node
+已確認SPLUNK可正常登入使用、KVSTORE 狀態正常,event,[],[],Node
+網頁憑證期限更新至2027/12月,event,[],[],Node
+2025/12/16 14:00 至 2025/12/16 18:40,entity,[],[],Node
+DC_ARP報表語法檢查,entity,[],[],Node
+今日到場作業項目,entity,[],[],Node
+DC_ARP_table報表,entity,[],[],Node
+現有設備清單,entity,[],[],Node
+比對結果,entity,[],[],Node
+附件,entity,[],[],Node
+底層查看原因,entity,[],[],Node
+未出現於DC_ARP_table中的設備,entity,[],[],Node
+"處理工程師為 A人員, C人员 进行时间 2025/12/16 14:00 至 2025/12/16 18:40。",event,[],[],Node
+目前已有产出一份 DC_ARP_table 报表,event,[],[],Node
+DC_ARP_table 报表已经产出.,event,[],[],Node
+与现有设备清单做对比，附件为对比结果,event,[],[],Node
+在附件中列出所有需列出的设备名称。,event,[],[],Node
+未出现在 DC_ARP_table 中的设备已用橘底标示，在请您确认。,event,[],[],Node
+代办事项：补产出 ARP_table 报表给客户（排程设定每月执行）。,event,[],[],Node
+后续将进底层查看缺少设备的原因。,event,[],[],Node
+代辦事項：補產出ARP_table報表給您(排程設定每月執行）,event,[],[],Node
+2025/12/17 13:30 至 2025/12/17 18:00,entity,[],[],Node
+Splunk角色問題,entity,[],[],Node
+es_admin_user與admin角色,entity,[],[],Node
+PA每月報表,entity,[],[],Node
+報表,entity,[],[],Node
+SH KVstore狀態,entity,[],[],Node
+DNS設定,entity,[],[],Node
+forwarder上,entity,[],[],Node
+新crowdstrike套件,entity,[],[],Node
+SH上,entity,[],[],Node
+Centos作業系統升級,entity,[],[],Node
+代辦事項,entity,[],[],Node
+DEP02 ([IP])移轉,entity,[],[],Node
+Linux主機使用者與使用者權限,entity,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/12/17 13:30 至 2025/12/17 18:00",event,[],[],Node
+狀態描述 (Description): Splunk每週onsite 處置動作 (Action): 本日駐點工作內容如下：,event,[],[],Node
+A部門Splunk角色能力異常 已於底層重新調整es_admin_user與admin角色的能力，並於網頁上驗證功能可使用,event,[],[],Node
+PA每月報表補寄 已補寄報表，後續將繼續查看排程無法正常寄送報表問題。,event,[],[],Node
+B部門FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+新增DNS設定 已新增DNS 設定於forwarder上,event,[],[],Node
+部屬新crowdstrike套件 已部屬套件於SH上,event,[],[],Node
+4.部屬新crowdstrike套件 已部屬套件於SH上,event,[],[],Node
+crowdstrike套件,entity,[],[],Node
+2.DEP02 ([IP])移轉(下周進行),event,[],[],Node
+2025/12/19 13:30 至 2025/12/19 18:00,entity,[],[],Node
+時間段,entity,[],[],Node
+Switch_6FDC.csv,entity,[],[],Node
+新增設備,entity,[],[],Node
+排程腳本,entity,[],[],Node
+確認事件,entity,[],[],Node
+ARP_table報表,entity,[],[],Node
+補跑,entity,[],[],Node
+每月1號,entity,[],[],Node
+排程日期,entity,[],[],Node
+"處理工程師為 A人員, C人員進行時間為2025/12/19 13:30 至 2025/12/19 18:00",event,[],[],Node
+狀態描述 (Description): ARP_table報表補跑,event,[],[],Node
+處置動作 (Action): 今日到場作業項目如下： 以新增設備於Switch_6FDC.csv中，並再次執行排程腳本，確認已收入新設備事件,event,[],[],Node
+補跑ARP_table 報表，設定排程為每月1號寄送報表至全科同仁,event,[],[],Node
+代辦事項： IP網段設備報表確認,event,[],[],Node
+以新增設備於Switch_6FDC.csv中，並再次執行排程腳本,event,[],[],Node
+2025/12/01 10:00 至 2025/12/01 12:00,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/12/01 10:00 至 2025/12/01 12:00,event,[],[],Node
+本月維護重點如下： 1.授權使用量 - 購買量:2GB - 平均使用量:0.31GB - 使用率為15.5%，達100%次數為0,event,[],[],Node
+2. 伺服器效能 - CPU使用率:1.24%，低於90%，屬正常 - 記憶體使用率:18.21%，低於90%，屬正常 - 硬碟使用率:43.73%，屬正常,event,[],[],Node
+4. 版本評估 - 現行版本:9.4.3 (2025.06.05) - 最新版本:10.0.2 (2025.11.14),event,[],[],Node
+因現行版本未有弱點釋出，故不升級。,event,[],[],Node
+處理工程師為 A人員 进行维护,event,[],[],Node
+G客户,entity,[],[],Node
+描述Splunk_11月维护的状态,event,[],[],Node
+时间从2025/12/24 13:30 至 2025/12/24 20:00,entity,[],[],Node
+Splunk角色能力异常,entity,[],[],Node
+A部门 1.Splunk角色能力异常问题解决措施,entity,[],[],Node
+admin角色,entity,[],[],Node
+es_admin_user角色,entity,[],[],Node
+admin能力的继承,entity,[],[],Node
+可删除索引的能力,entity,[],[],Node
+PA每月报表触发的动作,entity,[],[],Node
+客制寄件套件设置,entity,[],[],Node
+SplunkAdd-on for Google Cloud Platform的sourcetype,entity,[],[],Node
+待办事项：4.Tenable API App串接,entity,[],[],Node
+下周进行,entity,[],[],Node
+FISAC资料收容申请单,entity,[],[],Node
+已请james向FISAC提交,entity,[],[],Node
+"處理工程師為 A人員, C人員 進行時間為 2025/12/24 13:30 至 2025/12/24 20:00。",event,[],[],Node
+A部門 1.Splunk角色能力異常 因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以 區分權限高低。,event,[],[],Node
+A部門 2.PA 每月報表觸發動作變更 因目前未發現任何相關報表寄送錯誤，也確認並無排程略過問題，為了後續如再次發生排程報表未寄送之問題，已將PA每月報表觸發的預設寄件套 件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查。,event,[],[],Node
+A部門 3.Linux主機使用者與使用者權限-進行中 已在172.18.44.33(DEP02)主機上新增使用者 sailag，並套用先前信件附件中的權限設定 請珮雯再次申請檢測sailag使用者權限是否合規，將在檢測通過後於其他主機上新增使用者,event,[],[],Node
+"处理工程师为A人员, C人员进行工作",event,[],[],Node
+处理工程師,entity,[],[],Node
+因admin角色的能力需高于es_admin_user角色，所以已删除es_admin_user继承admin能力的选项，同时删除es_admin_user的可删除索引能力以区分权限高低,event,[],[],Node
+Splunk角色,entity,[],[],Node
+将PA每月报表触发的默认发送套件改为客制发送套件,event,[],[],Node
+PA每月报表,entity,[],[],Node
+预设发送套件,entity,[],[],Node
+客製发送套件,entity,[],[],Node
+新增用户sailag，并应用先前信件附件中的权限设置，请珮雯再次申请检测sailag用户的权限是否合规,event,[],[],Node
+使用者 sailag,entity,[],[],Node
+佩雯,entity,[],[],Node
+请james向FISAC提交需使用API的IP申请单,event,[],[],Node
+在个人测试环境中测试SH的KVstore状态中,event,[],[],Node
+本人,entity,[],[],Node
+DEP02 (IP)移转(下周进行),event,[],[],Node
+新增Splunk Add-on for Google Cloud Platform的sourcetype,event,[],[],Node
+Google Cloud Platform,entity,[],[],Node
+Sourcetype,entity,[],[],Node
+Tenable API App串接,event,[],[],Node
+Tenable API App,entity,[],[],Node
+2025/12/26 14:00 至 2025/12/26 15:00,entity,[],[],Node
+1. 授權用量：建議擴充 -授權量：100GB -平均授權用量：124GB,entity,[],[],Node
+2. 伺服器效能：正常,entity,[],[],Node
+3. 系統優化建議：根據說明定期檢查,entity,[],[],Node
+已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,entity,[],[],Node
+問題,entity,[],[],Node
+4. 版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14,entity,[],[],Node
+现行版本近期被扫出弱點，建议进行升版,entity,[],[],Node
+建議更新,entity,[],[],Node
+處理工程師為 A人員 進行時間為 2025/12/26 14:00 至 2025/12/26 15:00,event,[],[],Node
+狀態描述 (Description): splunk_信用卡處12月月維護,event,[],[],Node
+處理動作：1.授權用量：建議擴充 - 授權量：100GB -平均授權用量：124GB,event,[],[],Node
+處理動作：2.伺服器效能：正常,event,[],[],Node
+處理動作：3.系統優化建議：根據說明定期檢查,event,[],[],Node
+問題：有137台UF已超過15分鐘未與indexer連線 建議：已在轉送器監視設定中更新uf清單，並於更新後讓uf重新報到。,event,[],[],Node
+處理動作：4.版本更新：建議更新 -當前版本：9.3.3/2025.02.26 -最新版本：10.0.2/2025.11.14 現行版本近期被掃出弱點，建議進行升版,event,[],[],Node
+A人員進行F客戶的維護紀錄,event,[],[],Node
+處理工程師為A人員安排了時間為2025/12/26 14:00 至 2025/12/26 15:00的維護工作,event,[],[],Node
+有137台UF已超過15分鐘未與indexer連線,event,[],[],Node
+UF,entity,[],[],Node
+建議更新當前版本至10.0.2/2025.11.14,event,[],[],Node
+2025/12/31 13:30,entity,[],[],Node
+2025/12/31 17:40,entity,[],[],Node
+Splunk每週onsite,entity,[],[],Node
+帳號盤點並寄送報表給Hank,entity,[],[],Node
+Management.搜尋異常,entity,[],[],Node
+BTDC2 問題處理,entity,[],[],Node
+DEP02 root服務確認,entity,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/12/31 13:30 至 2025/12/31 17:40",event,[],[],Node
+狀態描述 (Description): Splunk每週onsite 處置動作,event,[],[],Node
+本日駐點工作內容如下： A部門 1.帳號盤點清單確認 已完成帳號盤點並寄送報表給Hank,event,[],[],Node
+本日駐點工作內容如下： A部門 2.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+本日駐點工作內容如下： A部門 3.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,event,[],[],Node
+A部門 2.FISAC資料收容-進行中 目前已請james 向FISAC提交需使用API的IP申請單。,event,[],[],Node
+代辦事項： 1.Centos作業系統升級(評估中),event,[],[],Node
+A部門 3.SH KVstore引擎異常測試-進行中 正在個人的測試環境測試SH 的KVstore狀態中。,event,[],[],Node
+代辦事項： 2.DEP02 ([IP])移轉(下周進行),event,[],[],Node
+代辦事項： 3.新增Splunk Add-on for Google Cloud Platform的sourcetype,event,[],[],Node
+代辦事項： 4.Tenable API App串接,event,[],[],Node
+代辦事項： 5.Management.搜尋異常,event,[],[],Node
+代辦事項： 6.BTDC2 問題處理,event,[],[],Node
+代辦事項： 7.DEP02 root服務確認,event,[],[],Node
+進行時間為 2025/12/31 13:30 至 2025/12/31 17:40,event,[],[],Node
+帳號盤點清單確認,event,[],[],Node
+請james 向FISAC提交需使用API的IP申請單,event,[],[],Node
+2025/11/04 09:00 至 2025/11/04 09:30,entity,[],[],Node
+定保,entity,[],[],Node
+Splunk 2025 MA 10月,entity,[],[],Node
+定保內容,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/11/04 09:00 至 2025/11/04 09:30。,event,[],[],Node
+狀態描述 (Description): E客戶 Splunk 2025 MA 10月定保.DM20250088_(6/12),event,[],[],Node
+處置動作 (Action): 本次維護報告內容如下，再麻煩您確認後回簽CSR：,event,[],[],Node
+1.授權用量：建議擴充 -授權量：150 GB -平均授權用量：649.33 GB,event,[],[],Node
+2.伺服器效能：正常,event,[],[],Node
+3.系統優化建議：無,event,[],[],Node
+4.版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.3 / 2025.02.26 -最新版本：10.0.1 / 2025.09.25,event,[],[],Node
+處理工程師為 C人員 进行维护,event,[],[],Node
+E客户进行了定保,event,[],[],Node
+建议扩充授权用量至150 GB,event,[],[],Node
+检查服务器效能正常,event,[],[],Node
+提出系统优化建议无,event,[],[],Node
+建议进行版本更新至10.0.1,event,[],[],Node
+時間為2025/11/05 13:30 至 2025/11/05 19:00,entity,[],[],Node
+Splunk整體架構IP,entity,[],[],Node
+Splunk套件,entity,[],[],Node
+KVstore憑證,entity,[],[],Node
+已將過期憑證移除並重新產生新憑證,entity,[],[],Node
+SPLUNK2024/09~2025/08維護報告,entity,[],[],Node
+C同事,entity,[],[],Node
+已完成，正在等待防火牆開通,entity,[],[],Node
+Splunk10月維護報告,entity,[],[],Node
+B部門indexer索引同步狀態,entity,[],[],Node
+各台主機KV store憑證,entity,[],[],Node
+A部門 Splunk整體架構IP調整-完成,event,[],[],Node
+A部門 Splunk套件升級-完成,event,[],[],Node
+A部門 NTP服務檢查-完成,event,[],[],Node
+A部門 KVstore 憑證效期檢查,event,[],[],Node
+Splunk月報寄送,event,[],[],Node
+已設定完成所有主機的新IP,event,[],[],Node
+已部屬新套件至各SH上,event,[],[],Node
+已檢查各台主機的 NTP服務已啟用,event,[],[],Node
+已將過期憑證移除並重新產生新憑證(有效期至2028/11)，確認kvstore 狀態為正常,event,[],[],Node
+已將SPLUNK2024/09~2025/08的維護報告寄給C同事,event,[],[],Node
+FIsac情資撈取 已設定完成，正在等待防火牆開通,event,[],[],Node
+新增indexer 新增indexer至IDX cluster節點，目前將觀察index同步狀態,event,[],[],Node
+"處理工程師為 A人員, C人員 进行时间",event,[],[],Node
+Splunk每週onsite 處置动作,event,[],[],Node
+完成 Splunk整体架构IP调整,event,[],[],Node
+完成 Splunk套件升级,event,[],[],Node
+完成 NTP服务检查,event,[],[],Node
+已将过期凭证移除并重新生成新凭证,event,[],[],Node
+确认kvstore状态为正常,event,[],[],Node
+完成 SPLUNK月报寄送,event,[],[],Node
+设定完成 FIsac情报捞取,event,[],[],Node
+新增 indexer 至IDX cluster节点,event,[],[],Node
+检查B部门indexer索引同步状态,event,[],[],Node
+代办事项,entity,[],[],Node
+2025/11/07 15:00,entity,[],[],Node
+2025/11/07 17:00,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/11/07 15:00 至 2025/11/07 17:00。,event,[],[],Node
+工作事項： IDX01重新加入後，因同步資料導致IDX02與IDX03滿載,event,[],[],Node
+工作事項： IDX01重新加入後，因同步資料導致IDX02與IDX03滿载,event,[],[],Node
+將ocp_cdibh资料删除後，重新进行资料同步,event,[],[],Node
+将ocp_cdibh资料删除後，重新进行资料同步,event,[],[],Node
+离开前资料备份的同步已经完成,event,[],[],Node
+工作事項： IDX01重新加入後，因同步资料导致IDX02与IDX03满载,event,[],[],Node
+资料大小平衡持续进行中,event,[],[],Node
+處理工程師為 C人員 進行維護紀錄,event,[],[],Node
+在 2025/11/07 15:00 至 2025/11/07 17:00 時間段內，C人員為 B客戶 的維護工作,event,[],[],Node
+發現 IDX硬碟空間滿載與資料同步問題,event,[],[],Node
+執行 工作事項： IDX01重新加入後，因同步資料導致IDX02與IDX03滿載,event,[],[],Node
+刪除 ocp_cdibh 資料並重新進行資料同步,event,[],[],Node
+完成 離開前資料備份的同步,event,[],[],Node
+持續進行中 資料大小平衡,event,[],[],Node
+處理,entity,[],[],Node
+2025/11/10 09:30 至 2025/11/10 12:00,entity,[],[],Node
+資料平衡確認,entity,[],[],Node
+描述,entity,[],[],Node
+新增/etc/hosts,entity,[],[],Node
+解決問題,entity,[],[],Node
+重起服務,entity,[],[],Node
+正常連線至LM,entity,[],[],Node
+處理工程師為 C人員 进行时间从 2025/11/10 09:30 至 2025/11/10 12:00,event,[],[],Node
+狀態描述 (Description): 資料平衡確認與未連接license master解決,event,[],[],Node
+工作事項： 1. 新增/etc/hosts，並重起服務後，正常连线至LM 2. 确认资料持续进行平衡，且无空间满载,event,[],[],Node
+工作事項： 1. 新增/etc/hosts，並重起服务後，正常连线至LM,event,[],[],Node
+確認資料持續進行平衡，且無空間滿載,event,[],[],Node
+进行时间从 2025/11/10 09:30 至 2025/11/10 12:00 的维护,event,[],[],Node
+资料平衡确认与未连接license master解决,event,[],[],Node
+新增/etc/hosts，並重起服务後，正常连线至LM,event,[],[],Node
+确认资料持续进行平衡，且无空间满载,event,[],[],Node
+2025/11/04 13:30,entity,[],[],Node
+2025/11/04 17:30,entity,[],[],Node
+今日工作內容,entity,[],[],Node
+預計下次週四到場作業,entity,[],[],Node
+申請使用底層,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/11/04 13:30 至 2025/11/04 17:30。,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251104 處置動作 (Action): 今日工作內容如下，預計下次週四到場作業,event,[],[],Node
+待完成工作項目： 1.CEF outputs套件新增debug log資料蒐集,event,[],[],Node
+Finding會因為threat object重複顯示，需進行ES版本升級,event,[],[],Node
+Splunk版本升級,event,[],[],Node
+Apim1與imsdb01兩台UF關閉inputs至不存在的index,event,[],[],Node
+SH FISAC API input (未使用)關閉,event,[],[],Node
+處理工程師為 C人員 进行时间,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251104,event,[],[],Node
+2025/10/30 13:30 至 2025/10/30 17:00,entity,[],[],Node
+工作內容,entity,[],[],Node
+協助新增寄信套件,entity,[],[],Node
+完成寄信測試,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/10/30 13:30 至 2025/10/30 17:00,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251030,event,[],[],Node
+工作內容如下 1. 協助新增寄信套件 2. 完成寄信測試,event,[],[],Node
+进行时间从 2025/10/30 13:30 至 2025/10/30 17:00 的维护,event,[],[],Node
+协助新增寄信套件,event,[],[],Node
+完成寄信测试,event,[],[],Node
+2025/11/11 13:30 至 2025/11/11 17:00,entity,[],[],Node
+底層 1,entity,[],[],Node
+Apim1與imsdb01,entity,[],[],Node
+Apim1,entity,[],[],Node
+舊的殘留input設定,entity,[],[],Node
+imsdb01,entity,[],[],Node
+Checkpoint 資料,entity,[],[],Node
+收容,entity,[],[],Node
+asset中異常,entity,[],[],Node
+原因為將是否報廢/營運中欄位匯入資產,entity,[],[],Node
+CEF outputs套件,entity,[],[],Node
+送出格式,entity,[],[],Node
+Finding,entity,[],[],Node
+因-threat object重複顯示,entity,[],[],Node
+Splunk版本,entity,[],[],Node
+軟件,entity,[],[],Node
+splunk自動version check,entity,[],[],Node
+功能,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/11/11 13:30 至 2025/11/11 17:00,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251111,event,[],[],Node
+"工作內容如下，預計本周五(11/14)與下周二(11/18)到場作業，請您協助申請底層 1, 关闭Apim1与imsdb01两台UF中旧的残留input设定 2. 确认Checkpoint 资料收容 3. 确认asset中异常：有多個hostname有相同IP，确认原因為将是否报废/运营中栏位汇入资产",event,[],[],Node
+"工作內容如下，預計本周五(11/14)與下周二(11/18)到场作业，請您协助申请底層 1, 关闭Apim1与imsdb01两台UF中旧的残留input设定 2. 确认Checkpoint 资料收容 3. 确认asset中异常：有多個hostname有相同IP，确认原因為将是否报废/运营中栏位汇入资产",event,[],[],Node
+待完成工作项目：1.CEF outputs套件调整送出格式 2.Finding会因为threat object重复显示，需进行ES版本升级 3.Splunk版本升级 4.Disable splunk自动version check 5.资产新增报废/运营中栏位 6.SH FISAC API input (未使用)关闭,event,[],[],Node
+維護紀錄被記錄,event,[],[],Node
+C人員進行維護工作,event,[],[],Node
+2025/11/14 09:00,entity,[],[],Node
+2025/11/14 15:33,entity,[],[],Node
+E客戶駐點工作事項,entity,[],[],Node
+今日工作內容如下,entity,[],[],Node
+待完成工作項目,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/11/14 09:00 至 2025/11/14 15:33。,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251114,event,[],[],Node
+今日工作內容如下，預計下周二(11/18)到場作業,event,[],[],Node
+進行維護紀錄,event,[],[],Node
+申請底層1.Disable splunk自動version check2.CEF outputs套件調整送出格式甲、將換行字元取代成空格乙、最尾端新增一個空格3.調整IIS LOG拋送目的,event,[],[],Node
+資產新增報廢/營運中欄位,event,[],[],Node
+關閉imsdb02UF中舊的殘留input設定,event,[],[],Node
+關閉SH FISAC API input (未使用),event,[],[],Node
+駐點工作事項,entity,[],[],Node
+2025/11/17 09:00 至 2025/11/17 17:00,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/11/17 09:00 至 2025/11/17 17:00,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251117,event,[],[],Node
+Splunk升版，從9.3.3升版至9.3.8，再麻煩您申請弱點復掃,event,[],[],Node
+修改sase UF資料收容路徑至/var/log/mammoth,event,[],[],Node
+待完成工作項目： 1.FISAC API Input無資料時會跳Error,event,[],[],Node
+處理工程師進行維護工作,event,[],[],Node
+Splunk升版,event,[],[],Node
+修改sase UF資料收容路徑,event,[],[],Node
+H客戶,entity,[],[],Node
+2025/11/25 09:30 至 2025/11/25 14:00,entity,[],[],Node
+C人員的工作時間,entity,[],[],Node
+Splunk平台維護案(06-11月)半年系統檢視_DM20250258_(1/2),entity,[],[],Node
+今日已完成Splunk版本升級,entity,[],[],Node
+9.2.3,entity,[],[],Node
+升版至9.3.8,entity,[],[],Node
+Splunk與UF當前版本： 9.3.8 / 2025.11.14 (EOS:2026.06.24),entity,[],[],Node
+Splunk的現行版本,entity,[],[],Node
+Splunk與UF最新版本： 10.0.2 / 2025.11.14 (EOS:2027.07.28),entity,[],[],Node
+Splunk的最新版本,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/11/25 09:30 至 2025/11/25 14:00,event,[],[],Node
+今日已完成Splunk版本升級， 自9.2.3升版至9.3.8,event,[],[],Node
+Splunk版本升級， 自9.2.3升版至9.3.8,event,[],[],Node
+並以驗證服務皆正常， 弱點應已修復,event,[],[],Node
+再麻煩複掃確認。,event,[],[],Node
+另外本次維護報告內容如下，再麻煩您確認後回簽CSR：,event,[],[],Node
+處理工程師為C人員進行維護紀錄,event,[],[],Node
+C人員於2025/11/25 09:30 至 2025/11/25 14:00進行維護,event,[],[],Node
+2025/12/24 09:00,entity,[],[],Node
+2025/12/24 17:00,entity,[],[],Node
+20251124,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/24 09:00 至 2025/12/24 17:00,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251124,event,[],[],Node
+工作事項： Splunk升版完成,event,[],[],Node
+工作事項 Splunk 升版完成,event,[],[],Node
+2025/11/24 09:00 至 2025/11/24 17:30,entity,[],[],Node
+Splunk升版完成,entity,[],[],Node
+处理工程师为C人员进行时间从2025/11/24 09:00 至 2025/11/24 17:30。,event,[],[],Node
+状态描述 (Description): E客户驻点工作事項 - 20251114,event,[],[],Node
+工作内容如下： Splunk升版完成,event,[],[],Node
+状 态描述 (Description): E客户驻点工作事項 - 20251114,event,[],[],Node
+狀態描述為E客戶駐點工作事項-20251114,event,[],[],Node
+處置動作為前一封CSR時間誤植,event,[],[],Node
+2025/12/04 08:30 至 2025/12/04 09:00,entity,[],[],Node
+Splunk 2025 MA 11月定保.DM20250088_(7/12),entity,[],[],Node
+661.01 GB,entity,[],[],Node
+9.3.8 / 2025.11.14,entity,[],[],Node
+系統,entity,[],[],Node
+10.0.2 / 2025.11.14,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/04 08:30 至 2025/12/04 09:00。,event,[],[],Node
+狀態描述 (Description): E客戶 Splunk 2025 MA 11月定保.DM20250088_(7/12),event,[],[],Node
+本次維護報告內容如下： 1.授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB,event,[],[],Node
+本次維護報告內容如下： 2.伺服器效能：正常,event,[],[],Node
+本次維護報告內容如下： 3.系統優化建議：無,event,[],[],Node
+本次維護報告內容如下： 4.版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.8 / 2025.11.14 -最新版本：10.0.2 / 2025.11.14,event,[],[],Node
+E客户进行定保,event,[],[],Node
+建议扩大授权量至150 GB,event,[],[],Node
+伺服器效能正常,event,[],[],Node
+提出系统优化建议,event,[],[],Node
+建议进行版本更新至10.0.2,event,[],[],Node
+進行維護,entity,[],[],Node
+2025/12/02 09:00,entity,[],[],Node
+工作,entity,[],[],Node
+2025/12/02 12:00,entity,[],[],Node
+修改SASE VPN登入成功報表條件,entity,[],[],Node
+工作項目,entity,[],[],Node
+新增告警,entity,[],[],Node
+將SASE登入成功紀錄送至SOAR,entity,[],[],Node
+新增index,entity,[],[],Node
+與HEC token for XSOAR,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/02 09:00 至 2025/12/02 12:00,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251202,event,[],[],Node
+工作項目： 1. 修改SASE VPN登入成功報表條件,event,[],[],Node
+2. 新增告警 將SASE登入成功紀錄送至SOAR,event,[],[],Node
+3. 新增index 與 HEC token for XSOAR,event,[],[],Node
+E客户驻点工作事项,event,[],[],Node
+工作项目：修改SASE VPN登入成功报表条件,event,[],[],Node
+新增告警将SASE登入成功纪录送至SOAR,event,[],[],Node
+新增index与HEC token for XSOAR,event,[],[],Node
+2025/12/04 13:30 至 2025/12/04 17:00,entity,[],[],Node
+E客戶的維護問題,entity,[],[],Node
+修改SASE VPN登入成功報表條件，與確認送至SOAR欄位,entity,[],[],Node
+Action的一部分,entity,[],[],Node
+針對不同mitreattack新增告警,entity,[],[],Node
+處理工程師為 C人員進行時間為 2025/12/04 13:30 至 2025/12/04 17:00,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251204,event,[],[],Node
+本日工作項目： 1. 修改SASE VPN登入成功報表條件，與確認送至SOAR欄位,event,[],[],Node
+本日工作項目： 2. 過濾不同mitreattack新增告警,event,[],[],Node
+處理工程師為C人員進行維護,event,[],[],Node
+工作時間為2025/12/04 13:30 至 2025/12/04 17:00,event,[],[],Node
+SASE VPN,entity,[],[],Node
+mitreattack,entity,[],[],Node
+2025/12/09 13:30 至 2025/12/09 17:30,entity,[],[],Node
+forcepoint endpoint dlp,entity,[],[],Node
+Tcpdump,entity,[],[],Node
+checkpoint logclm uf,entity,[],[],Node
+資料收容,entity,[],[],Node
+checkpoint 資料收容,entity,[],[],Node
+uf log limit,entity,[],[],Node
+全數logclm UF,entity,[],[],Node
+log limit,entity,[],[],Node
+維護報告該檢查,entity,[],[],Node
+已重新开启,entity,[],[],Node
+datamodel dnsAMD,entity,[],[],Node
+先前已設定基本的Risk分數計算機制,entity,[],[],Node
+今日,entity,[],[],Node
+已完成修復,entity,[],[],Node
+ES告警,entity,[],[],Node
+新增,entity,[],[],Node
+C人員 在 2025/12/09 13:30 至 2025/12/09 17:30 內進行維護工作,event,[],[],Node
+E客戶駐點工作事項 - 20251209 狀態描述,event,[],[],Node
+今日工作項目： 1.新增forcepoint endpoint dlp資料收容 Tcpdump尚未看到封包，待實際拋送後確認,event,[],[],Node
+今日發現checkpoint資料收容有約40min延遲 確認原因為該UF已達到預設輸出上限 (256kb/s),event,[],[],Node
+"今日發現DNS Datamodel src欄位異常，已完成修復，並新增ES告警 監測""是否有設備連線至很少見的port""",event,[],[],Node
+今日工作項目： 2.確認checkpoint logclm uf log limit 今日發現checkpoint資料收容有約40min延遲 確認原因為該UF已達到預設輸出上限 (256kb/s),event,[],[],Node
+已將全數logclm UF調整上限為 20480 KB/S 同時發現該維護報告該檢查並未開啟，已重新開啟,event,[],[],Node
+今日工作項目： 3.調整datamodel dnsAMD 與新增告警 先前已設定基本的Risk分數計算機制，但目前告警覆蓋率較狹窄，並未能明顯看出不同種類的攻擊，並套用於MitreAttack框架,event,[],[],Node
+新增forcepoint endpoint dlp資料收容 Tcpdump尚未看到封包，待實際拋送後確認,event,[],[],Node
+確認checkpoint logclm uf log limit 今日發現checkpoint資料收容有約40min延遲 確認原因為該UF已達到預設輸出上限 (256kb/s) 已將全數logclm UF調整上限為 20480 KB/S 同時發現該維護報告該檢查並未開啟，已重新開啟,event,[],[],Node
+"調整datamodel dnsAMD 與新增告警 先前已設定基本的Risk分數計算機制，但目前告警覆蓋率較狹窄，並未能明顯看出不同種類的攻擊，並套用於MitreAttack框架 開始針對ES預設的告警進行新增，今日發現DNS Datamodel src欄位異常，已完成修復，並新增ES告警”是否有內部IP嘗試連線於dynamic domain(IP浮動)” 新增ES告警監測”是否有設備連線至很少見的port""",event,[],[],Node
+工程,entity,[],[],Node
+2025/12/16 14:00,entity,[],[],Node
+2025/12/16 18:40,entity,[],[],Node
+產出一份DC_ARP_table報表並與現有設備清單做比對,entity,[],[],Node
+後續,entity,[],[],Node
+底層查看缺少設備的原因,entity,[],[],Node
+附件中列出的設備名稱,entity,[],[],Node
+橘底標示,entity,[],[],Node
+補產出ARP_table報表給您(排程設定每月執行）,entity,[],[],Node
+補跑設備IP往段清單給全科人員 （每月),entity,[],[],Node
+"處理工程師為 A人员, C人员进行时间从2025/12/16 14:00 至 2025/12/16 18:40。",event,[],[],Node
+目前已有份DC_ARP_table报表，并与现有设备清单做比对,event,[],[],Node
+目前已有份DC_ARP_table报表，并与现有设备清单做比对。,event,[],[],Node
+附件中列出所有需列出的设备名称，未出现于DC_ARP_table中的设备已用橘底标示，在请您确认。,event,[],[],Node
+代辦事項：补产出ARP_table报表给您(排程设置每月执行）。,event,[],[],Node
+代辦事項：补跑设备IP往段清单给全科人员（每月)。,event,[],[],Node
+代辦事項：补产出ARP_table报表给您(排程设置每月执行）,event,[],[],Node
+維護紀錄被記載,event,[],[],Node
+處理工程師進行維修工作,event,[],[],Node
+補產出ARP_table報表,event,[],[],Node
+全科人員,entity,[],[],Node
+提供設備IP往段清單,event,[],[],Node
+2025/12/18 09:00 至 2025/12/18 17:30,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/18 09:00 至 2025/12/18 17:30。,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251218,event,[],[],Node
+E客戶駐點工作事項 - 20251218,event,[],[],Node
+本日工作項目： 1.ES升版 甲、自8.0.3升版至8.2.3,event,[],[],Node
+本日工作項目： 2.資產上傳APP程式調整 甲、將”硬體狀態”欄位加入category中,event,[],[],Node
+本日工作項目： 3.確認內對內告警 urgency = critical原因 甲、該告警severity 原先就為 high 乙、而該告警對應資產priorty為critical，故urgency提升至critical,event,[],[],Node
+本日工作項目： 4.Indexer設定防串改 甲、設定路徑為 indexes.conf 中 [defaut] enableDataIntegrityControl=true,event,[],[],Node
+ES升版從8.0.3至8.2.3,event,[],[],Node
+資產上傳APP程式調整,event,[],[],Node
+確認內對內告警urgency提升至critical,event,[],[],Node
+Indexer設定防串改,event,[],[],Node
+2025/12/23 09:00 至 2025/12/23 18:00,entity,[],[],Node
+Websebse log異常截斷,entity,[],[],Node
+Raw data內就有換行字元,entity,[],[],Node
+C人員進行維護紀錄的時間為2025/12/23 09:00 至 2025/12/23 18:00,event,[],[],Node
+狀態描述 (Description): E客戶駐點工作事項 - 20251223 處置動作 (Action),event,[],[],Node
+E客戶駐點工作事項 - 20251223 處置動作 (Action),event,[],[],Node
+Websebse log 異常截斷 Raw data內就有換行字元，導致異常截斷,event,[],[],Node
+嘗試修改props.conf，調整截斷規則，離開前未解決，下次到場時處理,event,[],[],Node
+建立SASE VPN kick session報表建立,event,[],[],Node
+Nix logon success語法確認,event,[],[],Node
+記錄維護狀態,event,[],[],Node
+维护纪录,entity,[],[],Node
+处理,entity,[],[],Node
+2025/12/11 09:00 至 2025/12/11 18:00,entity,[],[],Node
+Splunk Indexer queue full - 20251211,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/11 09:00 至 2025/12/11 18:00,event,[],[],Node
+狀態描述 (Description): Splunk Indexer queue full - 20251211,event,[],[],Node
+處置動作 (Action): 工作項目：到場確認異常原因，當日未確認原因。,event,[],[],Node
+2025/12/12 09:00,entity,[],[],Node
+2025/12/12 18:00,entity,[],[],Node
+Splunk Indexer queue full - 20251212,entity,[],[],Node
+協助韌體更新,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/12 09:00 至 2025/12/12 18:00,event,[],[],Node
+工作項目： 協助韌體更新，問題未解決，持續尋找workaround,event,[],[],Node
+這是一筆關於 B客戶 的維護紀錄。,event,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/12 09:00 至 2025/12/12 18:00。,event,[],[],Node
+2025/12/15 09:00 至 2025/12/15 18:00,entity,[],[],Node
+bucket replication造成,entity,[],[],Node
+workaround,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/15 09:00 至 2025/12/15 18:00。,event,[],[],Node
+Splunk Indexer queue full -20251215 處置動作 (Action): 工作項目： 暫時認定原因為bucket replication造成， 採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送,event,[],[],Node
+Splunk Indexer queue full -20251215,event,[],[],Node
+暫時認定原因為bucket replication造成,event,[],[],Node
+採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送,event,[],[],Node
+狀態描述為 Splunk Indexer queue full -20251215,event,[],[],Node
+處置動作為 工作項目： 暫時認定原因為bucket replication造成， 採取workaround，先將RF/SF調至1/1，並將所有資料往單一IDX進行拋送,event,[],[],Node
+2025/12/24 13:30 至 2025/12/24 20:00,entity,[],[],Node
+Splunk角色能力異常,entity,[],[],Node
+admin能力選項,entity,[],[],Node
+可刪除索引能力,entity,[],[],Node
+PA每月報表觸發動作變更,entity,[],[],Node
+客製寄件套件,entity,[],[],Node
+index=cim_modactions,entity,[],[],Node
+sailag使用者,entity,[],[],Node
+172.18.44.33(DEP02)主機,entity,[],[],Node
+無具体部门,entity,[],[],Node
+无具体部门,entity,[],[],Node
+"處理工程師為A人員,C人員進行時間為2025/12/24 13:30 至 2025/12/24 20:00",event,[],[],Node
+Splunk每週onsite處置動作,event,[],[],Node
+因為admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以區分權限高低。,event,[],[],Node
+因為目前未發現任何相關報表寄送錯誤，也確認並無排程略過問題，為了後續如再次發生排程報表未寄送之問題，已將PA每月報表觸發的預設寄件套件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查。,event,[],[],Node
+已在172.18.44.33(DEP02)主機上新增使用者sailag，並套用先前信件附件中的權限設定。,event,[],[],Node
+請A同事再次申請檢測sailag使用者權限是否合規,event,[],[],Node
+目前已有請james向FISAC提交需使用API的IP申請單。,event,[],[],Node
+FISAC資料收容-進行中,event,[],[],Node
+正在個人的測試環境測試SH的KVstore狀態。,event,[],[],Node
+SH KVstore引擎異常測試-進行中,event,[],[],Node
+"處理工程師為 A人員,C人員 進行時間為 2025/12/24 13:30 至 2025/12/24 20:00",event,[],[],Node
+因admin角色的能力需高於es_admin_user角色，所以已刪除es_admin_user繼承admin能力的選項，同時刪除es_admin_user的可刪除索引能力以 區分權限高低,event,[],[],Node
+已將PA每月報表觸發的預設寄件套件改為客製寄件套件，該客製套件可於觸發動作後於index=cim_modactions查看郵件寄送狀態，以利問題排查,event,[],[],Node
+已在172.18.44.33(DEP02)主機上新增使用者 sailag，並套用先前信件附件中的權限設定 請A同事再次申請檢測sailag使用者權限是否合規,event,[],[],Node
+sailag,entity,[],[],Node
+目前已請james 向FISAC提交需使用API的IP申請單,event,[],[],Node
+正在個人的測試環境測試SH 的KVstore狀態中,event,[],[],Node
+2025/12/26 09:00 至 2025/12/26 10:30,entity,[],[],Node
+進行,entity,[],[],Node
+Splunk駐點服務20251226 - websense,entity,[],[],Node
+該sourcetype,entity,[],[],Node
+斷行,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/26 09:00 至 2025/12/26 10:30。,event,[],[],Node
+狀態描述 (Description): Splunk駐點服務20251226 - websense 斷行確認,event,[],[],Node
+該sourcetype斷行異常，故先將其調整回原始sourcetype，待下周駐點確認後進行調整,event,[],[],Node
+狀態描述 Splunk 驻點服務20251226 - websense 斷行確認,event,[],[],Node
+websense,entity,[],[],Node
+處置動作 工作內容： 該sourcetype斷行異常，故先將其調整回原始sourcetype，待下周駐點確認後進行調整,event,[],[],Node
+2025/12/30 09:00 至 2025/12/30 12:00,entity,[],[],Node
+10台UF,entity,[],[],Node
+預設傳輸上限,entity,[],[],Node
+2025.11.14,entity,[],[],Node
+(ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/30 09:00 至 2025/12/30 12:00,event,[],[],Node
+狀態描述 (Description): (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),event,[],[],Node
+狀態描述: (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),event,[],[],Node
+處置動作 (Action): 1.授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB,event,[],[],Node
+處置動作 (Action): 3.系統優化建議：有10台UF超出預設傳輸上限，已派送套件完成調整,event,[],[],Node
+處置動作 (Action): 4.版本更新：現行版本近期被掃出弱點，建議進行升版 -當前版本：9.3.8 / 2025.11.14 -最新版本：10.0.2 / 2025.11.14,event,[],[],Node
+状态描述 (ZTA) Splunk 2025 MA 12月定保.DM20250088_(8/12),event,[],[],Node
+ZTA,entity,[],[],Node
+Splunk 2025 MA 12月定保.DM20250088_(8/12),entity,[],[],Node
+系统优化建议：有10台UF超出预设传输上限，已派送套件完成调整,event,[],[],Node
+2025/12/30 13:30 至 2025/12/30 17:00,entity,[],[],Node
+E客戶Splunk駐點,entity,[],[],Node
+今日工作項目如下,entity,[],[],Node
+今日工作項目,entity,[],[],Node
+本月月維護,entity,[],[],Node
+授權用量建議擴充,entity,[],[],Node
+系統優化建议,entity,[],[],Node
+今日工作项目,entity,[],[],Node
+版本更新建议,entity,[],[],Node
+GCP报表User栏位调整,entity,[],[],Node
+Trendmicro host资料收容新增,entity,[],[],Node
+websense Log调整,entity,[],[],Node
+處理工程師為 C人員 進行時間為 2025/12/30 13:30 至 2025/12/30 17:00,event,[],[],Node
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 今日工作項目如下：,event,[],[],Node
+今日工作項目如下：,event,[],[],Node
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 進行本月月維護，再麻煩您協助CSR回簽,event,[],[],Node
+進行本月月維護,event,[],[],Node
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 授權用量：建議擴充 -授權量：150 GB -平均授權用量：661.01 GB,event,[],[],Node
+狀態描述 (Description): E客戶Splunk駐點 - 20251230,event,[],[],Node
+處置動作 (Action): 今日工作項目如下：,event,[],[],Node
+建議進行升版 -當前版本：9.3.8 / 2025.11.14 -最新版本：10.0.2 / 2025.11.14,event,[],[],Node
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 版本更新：現行版本近期被掃出弱點,event,[],[],Node
+調整GCP報表User欄位,event,[],[],Node
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 新增Trendmicro host資料收容,event,[],[],Node
+新增Trendmicro host資料收容,event,[],[],Node
+狀態描述 (Description): E客戶Splunk駐點 - 20251230 處置動作 (Action): 調整websense Log，將DLP與其他LOG sourcetype進行分開,event,[],[],Node
+进行本月月维护,event,[],[],Node
+授权用量建议扩充至150 GB,event,[],[],Node
+服务器效能正常,event,[],[],Node
+系统优化建议，有10台UF超出预设传输上限,event,[],[],Node
+进行版本更新至最新版本10.0.2 / 2025.11.14,event,[],[],Node
+调整GCP报表User栏位,event,[],[],Node
+新增Trendmicro host数据容纳,event,[],[],Node
+调整websense Log，将DLP与其他LOG sourcetype进行分开,event,[],[],Node
+已完成帳號盤點並寄送報表,entity,[],[],Node
+(下周進行),entity,[],[],Node
+待處理,entity,[],[],Node
+BTDC2,entity,[],[],Node
+DEP02 root服務,entity,[],[],Node
+"处理工程师为A人员, C人员进行时间从2025/12/31 13:30 至 2025/12/31 17:40",event,[],[],Node
+状态描述 (Description): Splunk每週onsite 處置動作,event,[],[],Node
+状态描述:Splunk每週onsite 處置動作,event,[],[],Node
+本日駐點工作內容如下： A部门1.帳號盤點清單確認 已完成帳號盤點並寄送報表給C同事,event,[],[],Node
+狀態描述:Splunk每週onsite 處置動作,event,[],[],Node
+本日駐點工作內容如下： B部门2.FISAC资料收容-进行中 目前已请B同事向FISAC提交需使用API的IP申请单。,event,[],[],Node
+本日駐點工作內容如下： B部门3.SH KVstore引擎異常測試-进行中 正在个人的测试环境测试SH 的KVstore状态。,event,[],[],Node
+代辦事項：1.Centos作業系統升級(評估中),event,[],[],Node
+代辦事項：2.DEP02 ([IP])移轉(下周進行),event,[],[],Node
+代辦事項：3.新增Splunk Add-on for Google Cloud Platform的sourcetype,event,[],[],Node
+代辦事項：4.Tenable API App串接,event,[],[],Node
+代辦事項：5.Management.搜尋異常,event,[],[],Node
+代辦事項：6.BTDC2问题处理,event,[],[],Node
+代辦事項：7.DEP02 root服务确认,event,[],[],Node
+A人員 和 C人員 在 2025/12/31 上班,event,[],[],Node
+A部門 的帳號盤點清單被確認,event,[],[],Node
+B部門 向FISAC提交需使用API的IP申請單,event,[],[],Node
+DEP02 移轉 计划在下周进行,event,[],[],Node

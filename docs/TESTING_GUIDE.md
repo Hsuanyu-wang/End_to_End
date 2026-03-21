@@ -26,7 +26,7 @@ python scripts/run_comprehensive_tests.py
 **選單選項**:
 1. Vector RAG 測試 (hybrid, vector, bm25)
 2. Advanced Vector RAG 測試 (parent_child, self_query)
-3. Graph RAG 測試 (propertyindex, dynamic_schema)
+3. Graph RAG 測試（選單內可能仍帶 `propertyindex`／`dynamic_schema`／`autoschema` 等舊旗標；**目前 `run_evaluation.py` 對這些旗標僅印棄用提示**）— 正式跑 PropertyGraph／Dynamic／AutoSchema 能力請用 [COMMAND_REFERENCE.md](COMMAND_REFERENCE.md) 的 **`--unified_graph_type property_graph`** 或 **`--graph_preset`**）
 4. LightRAG Schema 方法測試 (lightrag_default, iterative_evolution, llm_dynamic)
 5. LightRAG 檢索模式測試 (local, global, hybrid, mix, naive, bypass)
 6. 完整實驗 (所有方法)
@@ -54,7 +54,7 @@ bash scripts/run_all_experiments.sh
 **預設測試項目**:
 - Vector RAG (hybrid, vector, bm25)
 - Advanced Vector RAG (parent_child, self_query)
-- Graph RAG (propertyindex, dynamic_schema)
+- Graph RAG（若腳本仍用舊 `graph_rag_method`，實際可能無評估輸出；請改用手動 unified／模組化命令）
 - LightRAG Schema 方法 (lightrag_default, iterative_evolution, llm_dynamic)
 - (可選) LightRAG 檢索模式 (local, global, mix, naive, bypass)
 
@@ -86,9 +86,10 @@ bash run_all_schema_tests.sh
 - `parent_child`: 父子文件檢索
 - `self_query`: 自查詢（帶 metadata 過濾）
 
-### Graph RAG (2 種)
-- `propertyindex`: Property Graph 索引
-- `dynamic_schema`: 動態 Schema 圖譜
+### Graph／PropertyGraph（與主程式對齊）
+- **建議**：`--unified_graph_type property_graph` + `--pg_extractors`／`--pg_retrievers`（見指令參考）
+- **模組化**：`--graph_preset`（如 `dynamic_lightrag`、`autoschema_lightrag`）
+- **勿再依賴**：`--graph_rag_method propertyindex`／`dynamic_schema`／`autoschema`（已棄用）
 
 ### LightRAG Schema 方法 (3 種)
 - `lightrag_default`: 預設實體類型
@@ -149,7 +150,8 @@ python scripts/run_comprehensive_tests.py
 ```
 results/
 ├── evaluation_results_20260317_HHMMSS_<postfix>/
-│   ├── global_summary_report.csv          # 所有方法的平均指標比較
+│   ├── global_summary_report.csv          # 所有方法的平均指標比較（CSV）
+│   ├── global_summary_report.xlsx         # 同上（Excel）
 │   ├── <Pipeline_Name>/
 │   │   └── detailed_results.csv           # 逐題評估結果（包含 schema 資訊）
 ```

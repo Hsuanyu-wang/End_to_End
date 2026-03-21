@@ -45,6 +45,13 @@ class TemporalLightRAGWrapper(BaseRAGWrapper):
         self.mode = mode
         self.time_weighting = time_weighting
     
+    def _extract_contexts_from_response(self, response) -> list:
+        """從 TemporalLightRAG 回應中提取 contexts"""
+        response_str = str(response)
+        if not response_str or response_str == "None":
+            return []
+        return [response_str]
+    
     async def _execute_query(self, query: str) -> Dict[str, Any]:
         """
         執行 Temporal LightRAG 查詢
@@ -55,16 +62,19 @@ class TemporalLightRAGWrapper(BaseRAGWrapper):
         Returns:
             查詢結果字典
         """
-        # Temporal LightRAG 可能僅支援同步查詢
         response = self.rag.query(
             query,
             mode=self.mode,
             time_weighting=self.time_weighting
         )
         
+        response_str = str(response) if response else ""
+        contexts = self._extract_contexts_from_response(response)
+        contexts = self._truncate_contexts_by_tokens(contexts)
+        
         return {
-            "generated_answer": str(response),
-            "retrieved_contexts": [],
+            "generated_answer": response_str,
+            "retrieved_contexts": contexts,
             "retrieved_ids": [],
             "source_nodes": [],
         }
@@ -89,9 +99,12 @@ class TemporalLightRAGWrapper(BaseRAGWrapper):
         
         end_time = time.time()
         
+        response_str = str(response) if response else ""
+        contexts = self._extract_contexts_from_response(response)
+        
         return {
-            "generated_answer": str(response),
-            "retrieved_contexts": [],
+            "generated_answer": response_str,
+            "retrieved_contexts": contexts,
             "retrieved_ids": [],
             "source_nodes": [],
             "execution_time_sec": round(end_time - start_time, 4)

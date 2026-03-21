@@ -4,7 +4,7 @@
 
 ## 目錄
 
-- [基礎評估](#基礎評估)
+- [基礎評估](#基礎評估)（含統一 PropertyGraph 範例）
 - [自訂評估指標](#自訂評估指標)
 - [自訂 RAG Pipeline](#自訂-rag-pipeline)
 - [批次評估](#批次評估)
@@ -31,6 +31,17 @@ python scripts/run_evaluation.py \
     --lightrag_mode all \
     --data_type DI \
     --lightrag_schema_method lightrag_default
+```
+
+### 範例 2b: 統一 PropertyGraph（取代舊 `graph_rag_method propertyindex`／`dynamic_schema`／`autoschema`）
+
+```bash
+python scripts/run_evaluation.py \
+    --unified_graph_type property_graph \
+    --pg_extractors implicit,schema,simple,dynamic \
+    --pg_retrievers vector,synonym \
+    --pg_combination_mode ensemble \
+    --data_type DI
 ```
 
 ### 範例 3: 比較多種 RAG 方法
@@ -349,8 +360,9 @@ asyncio.run(custom_evaluation())
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 讀取結果
-df = pd.read_csv("results/evaluation_results_20260317_120000/global_summary_report.csv")
+# 讀取結果（單次執行目錄內另有 global_summary_report.xlsx；跨執行彙總可見 results/exp/DI/global_summary.xlsx 等，依 --data_type 分目錄）
+df = pd.read_csv("results/exp/DI/evaluation_results_20260317_120000/global_summary_report.csv")
+# df = pd.read_excel("results/evaluation_results_20260317_120000/global_summary_report.xlsx")
 
 # 顯示平均 F1 Score
 print("各 Pipeline 的平均 F1 Score:")

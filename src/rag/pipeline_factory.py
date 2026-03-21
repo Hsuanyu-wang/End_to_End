@@ -67,12 +67,21 @@ class PipelineFactory:
         )
         
         builder_config = builder_config or {}
-        
+
         if builder_name == "autoschema":
+            from src.storage import get_autoschema_output_dir
+
+            output_dir = get_autoschema_output_dir(
+                data_type=builder_config.get("data_type", "DI"),
+                data_mode=builder_config.get("data_mode") or "",
+                sup=builder_config.get("sup", "") or "",
+                fast_test=bool(builder_config.get("fast_test", False)),
+                root_dir=builder_config.get("storage_root"),
+            )
             return AutoSchemaKGBuilder(
                 graph_store=None,
                 settings=settings,
-                output_dir=builder_config.get('output_dir')
+                output_dir=output_dir,
             )
         elif builder_name == "lightrag":
             return LightRAGBuilder(
@@ -96,7 +105,9 @@ class PipelineFactory:
             # PropertyGraph Builder (基於 BaselineGraphBuilder)
             return BaselineGraphBuilder(
                 graph_store=None,
-                settings=settings
+                settings=settings,
+                data_type=builder_config.get("data_type", "DI"),
+                fast_test=builder_config.get("fast_test", False),
             )
         else:
             raise ValueError(f"未知的 Builder: {builder_name}")

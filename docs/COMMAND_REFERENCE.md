@@ -252,82 +252,67 @@ python scripts/run_evaluation.py \
 
 #### 7. Original Mode
 
-**說明**: 使用 LightRAG 原生模式，不經過框架包裝。
+**說明**: 單次官方 `aquery`（`only_need_context=False`），不另匯出結構化檢索 context；與 `local/global/...` 的「先 `query_data` + 自訂 LLM」管線不同。可選 `--lightrag_native_mode` 指定官方查詢的 LightRAG mode（預設 `hybrid`）。
+
+**結果目錄命名**: 該 pipeline 在輸出中的名稱為 `LightRAG_original_{lightrag_native_mode}`（例如 `LightRAG_original_hybrid`），以便與不同 native mode 區分。
 
 **使用指令**:
 ```bash
 python scripts/run_evaluation.py \
     --graph_rag_method lightrag \
     --lightrag_mode original \
+    --lightrag_native_mode hybrid \
     --lightrag_schema_method lightrag_default \
     --data_type DI
 ```
 
-**適用場景**: 需要原生 LightRAG 行為的特殊場景
+**適用場景**: 與自訂 context 管線對照之 LightRAG 內建端到端基線；依賴 `retrieved_contexts` 的指標可能為空
 
 ---
 
 ## Graph RAG 方法
 
-### 1. Property Graph RAG
+> **重要（與 `run_evaluation.py` 一致）**  
+> `--graph_rag_method` 的 **`propertyindex`、`dynamic_schema`、`autoschema` 已棄用**：若指定，程式僅印遷移提示並**不執行**該 Graph 評估。  
+> 請改用 **統一 PropertyGraph**（本節下列）或 **[模組化組合](#模組化組合方法)**（`--graph_preset`／`--graph_builder`+`--graph_retriever`）。  
+> `graphiti`、`neo4j`、`cq_driven` 仍為架構預留（警告後跳過核心邏輯）。
 
-**說明**: 基於 LlamaIndex PropertyGraphIndex 的圖譜檢索。
+### 統一 PropertyGraph（取代舊端到端 propertyindex／dynamic_schema／autoschema）
 
-**使用指令**:
+**說明**：透過 `UnifiedGraphBuilder` 組合多種 extractors，並以 `UnifiedGraphRetriever` 組合多種 retrievers（`ensemble`／`cascade`／`single`）。細節見 [PROPERTYGRAPH_REFACTOR_README.md](../PROPERTYGRAPH_REFACTOR_README.md)。
+
+**使用指令**（與棄用提示中建議參數對齊）:
 ```bash
 python scripts/run_evaluation.py \
-    --graph_rag_method propertyindex \
+    --unified_graph_type property_graph \
+    --pg_extractors implicit,schema,simple,dynamic \
+    --pg_retrievers vector,synonym \
+    --pg_combination_mode ensemble \
     --data_type DI
 ```
 
-**特點**: 
-- 簡單的屬性圖模型
-- 適合結構化數據
+- **`--pg_extractors`**：逗號分隔，`implicit`、`schema`、`simple`、`dynamic`（`dynamic` 對應 DynamicLLMPathExtractor 風格建圖）
+- **`--pg_retrievers`**：`vector`、`synonym`、`text2cypher`
+- **`--pg_combination_mode`**：`ensemble`、`cascade`、`single`
 
-**適用場景**: 資料具有明確的屬性關係
-
----
-
-### 2. Dynamic Schema Graph RAG
-
-**說明**: 使用 DynamicLLMPathExtractor 動態抽取圖譜結構。
-
-**使用指令**:
-```bash
-python scripts/run_evaluation.py \
-    --graph_rag_method dynamic_schema \
-    --data_type DI
-```
-
-**參數配置**:
-- `max_triplets_per_chunk`: 20
-- `num_workers`: 4
-
-**適用場景**: Schema 未知或需要靈活適應的場景
+**模組化替代**（若不需統一多 extractor 管線）:
+- 動態 Schema 建圖 + 檢索：`--graph_preset dynamic_lightrag` 或 `--graph_builder dynamic --graph_retriever lightrag`
+- AutoSchema 建圖 + LightRAG 檢索：`--graph_preset autoschema_lightrag`
+- 純 PropertyGraph builder + LightRAG：`--graph_builder property --graph_retriever lightrag`
 
 ---
 
-### 3. AutoSchemaKG
+### 遷移對照（僅供理解，請勿再當作主命令）
 
-**說明**: Schema-free 建圖，自動學習概念階層。
-
-**使用指令**:
-```bash
-python scripts/run_evaluation.py \
-    --graph_rag_method autoschema \
-    --data_type DI
-```
-
-**流程**:
-1. 三元組抽取
-2. 概念生成
-3. GraphML 輸出
-
-**適用場景**: 完全未知領域，需要自動發現知識結構
+| 舊旗標（已棄用） | 建議替代 |
+|------------------|----------|
+| `--graph_rag_method propertyindex` | `--unified_graph_type property_graph` + 調整 `pg_*` |
+| `--graph_rag_method dynamic_schema` | 上列 unified，或 `--graph_preset dynamic_csr`／`dynamic_lightrag` |
+| `--graph_rag_method autoschema` | `--graph_preset autoschema_lightrag`，或 unified 管線內含所需 extractor |
 
 ---
 
-### 4. Temporal LightRAG
+### Temporal LightRAG
 
 **說明**: 支援時序資訊的 LightRAG 版本。
 
@@ -417,6 +402,8 @@ python scripts/run_evaluation.py \
     --graph_retriever [lightrag|csr|neo4j] \
     --data_type DI
 ```
+
+**註**：`--graph_retriever neo4j` 目前於 `PipelineFactory` 尚未實作，執行會失敗；請使用 `lightrag` 或 `csr`。
 
 **範例**:
 ```bash
@@ -509,7 +496,7 @@ bash scripts/run_all_experiments.sh
 **預期時間**: 3-6 小時（完整資料集）
 
 **輸出**:
-- 評估結果：`results/exp/`
+- 評估結果：`results/exp/{資料類別}/`（`--data_type`，預設 DI）
 - 日誌：`experiment_logs/experiment_*.log`
 - HTML 報告：`experiment_logs/experiment_*_report.html`
 
@@ -658,6 +645,14 @@ python scripts/run_evaluation.py \
 bash scripts/run_all_experiments.sh
 ```
 
+#### PropertyGraph 組合批次掃描（text2cypher）
+
+**說明**：[`scripts/run_all_propertygraphindex.py`](../scripts/run_all_propertygraphindex.py) 以雙層迴圈對 **所有非空 extractor 子集** × **含 `text2cypher` 的 retriever 子集** 呼叫 `run_evaluation.py`（每次一組 `--pg_extractors`／`--pg_retrievers`）。執行次數多、耗時長，請確認資源與 `results/` 空間。
+
+```bash
+python scripts/run_all_propertygraphindex.py
+```
+
 ---
 
 ## Schema Cache 管理
@@ -693,19 +688,20 @@ python scripts/manage_schema_cache.py --info
 ### 最新結果
 
 ```bash
-ls -lt /home/End_to_End_RAG/results/exp/ | head -5
+ls -lt /home/End_to_End_RAG/results/exp/DI/ | head -5
 ```
 
 ### 查看全域摘要
 
 ```bash
-cat /home/End_to_End_RAG/results/exp/evaluation_results_*/global_summary_report.csv
+cat /home/End_to_End_RAG/results/exp/DI/evaluation_results_*/global_summary_report.csv
+# 單次執行亦產生 global_summary_report.xlsx；跨執行彙總可見 results/exp/DI/global_summary.xlsx（GEN 實驗則為 results/exp/GEN/...）
 ```
 
 ### 查看詳細結果（含 Schema 資訊）
 
 ```bash
-head -10 /home/End_to_End_RAG/results/exp/evaluation_results_*/*/detailed_results.csv
+head -10 /home/End_to_End_RAG/results/exp/DI/evaluation_results_*/*/detailed_results.csv
 ```
 
 ---

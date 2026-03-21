@@ -398,7 +398,7 @@ def test_lightrag_wrapper_modes():
 ```bash
 #!/bin/bash
 # 清理舊的評估結果（保留最近 10 次）
-cd /home/End_to_End_RAG/results/exp
+cd /home/End_to_End_RAG/results/exp/DI
 ls -t | tail -n +11 | xargs rm -rf
 
 # 清理 fast_test 索引
@@ -491,7 +491,7 @@ rm -rf /home/End_to_End_RAG/storage/**/
 
 ### ✅ 已驗證可正常運作（9 類方法）
 
-根據 `results/exp/` 目錄的評估結果，以下方法已完成驗證：
+根據 `results/exp/DI/`（依 `--data_type` 分目錄，如 `results/exp/GEN/`）的評估結果，以下方法已完成驗證：
 
 1. ✅ **Vector Hybrid RAG** - 有評估結果
 2. ✅ **Vector Only RAG** - 有評估結果

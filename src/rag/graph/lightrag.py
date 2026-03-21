@@ -19,20 +19,8 @@ try:
 except ImportError:
     HAS_LLAMA_INDEX_IMPL = False
 
-def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_test: bool = False, mode: str = ""):
-    """
-    建立 LightRAG 實例
-    
-    Args:
-        Settings: 設定物件
-        data_type: 資料類型（DI 或 GEN）
-        sup: 自訂標籤（用於區分不同實驗）
-        fast_test: 是否為快速測試模式
-        mode: 檢索模式（local/global/hybrid 等，用於區分不同 mode 的 storage）
-    
-    Returns:
-        LightRAG 實例
-    """
+def _build_llm_and_embed(Settings):
+    """建立 LightRAG 所需的 LLM / Embedding 函式（共用邏輯）。"""
     print("正在測量 Embedding 實際維度...")
     dummy_emb = Settings.embed_model.get_text_embedding("test_dimension")
     EMBEDDING_DIM = len(dummy_emb)
@@ -46,25 +34,25 @@ def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_tes
     async def manual_embed_func(texts: list[str]) -> np.ndarray:
         if isinstance(texts, str):
             texts = [texts]
-            
         embeddings = await Settings.embed_model.aget_text_embedding_batch(texts)
-        emb_array = np.array(embeddings)
-        return emb_array
+        return np.array(embeddings)
 
     custom_embed_func = EmbeddingFunc(
         embedding_dim=EMBEDDING_DIM,
         max_token_size=8192,
         func=manual_embed_func
     )
+    return custom_llm_func, custom_embed_func
 
-    # 使用 StorageManager 取得路徑
-    working_dir = get_storage_path(
-        storage_type="lightrag",
-        data_type=data_type,
-        method=sup if sup else "default",
-        mode=mode,
-        fast_test=fast_test
-    )
+
+def _create_lightrag_at_path(Settings, working_dir: str):
+    """
+    在指定的 working_dir 建立 LightRAG 實例並初始化 storages。
+    供 Retriever 直接以 storage_path 載入已存在的索引。
+    """
+    custom_llm_func, custom_embed_func = _build_llm_and_embed(Settings)
+
+    os.makedirs(working_dir, exist_ok=True)
     print(f"📂 LightRAG 儲存路徑: {working_dir}")
 
     rag = LightRAG(
@@ -75,12 +63,36 @@ def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_tes
             "entity_types": Settings.lightrag_config.entity_types
         }
     )
-    
+
     loop = asyncio.get_event_loop()
     if hasattr(rag, "initialize_storages"):
         loop.run_until_complete(rag.initialize_storages())
-    
+
     return rag
+
+
+def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_test: bool = False, mode: str = ""):
+    """
+    建立 LightRAG 實例（透過 StorageManager 推算路徑）
+    
+    Args:
+        Settings: 設定物件
+        data_type: 資料類型（DI 或 GEN）
+        sup: 自訂標籤（用於區分不同實驗）
+        fast_test: 是否為快速測試模式
+        mode: 檢索模式（local/global/hybrid 等，用於區分不同 mode 的 storage）
+    
+    Returns:
+        LightRAG 實例
+    """
+    working_dir = get_storage_path(
+        storage_type="lightrag",
+        data_type=data_type,
+        method=sup if sup else "default",
+        mode=mode,
+        fast_test=fast_test
+    )
+    return _create_lightrag_at_path(Settings, working_dir)
 
 def build_lightrag_index(Settings, mode: str = "natural_text", data_type: str = "DI", sup: str = "", fast_build: bool = False, lightrag_mode: str = "") -> None:
     """

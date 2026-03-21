@@ -5,7 +5,7 @@ DynamicSchema Builder
 """
 
 import os
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from llama_index.core import Document, PropertyGraphIndex, StorageContext, load_index_from_storage
 from llama_index.core.indices.property_graph import DynamicLLMPathExtractor
 from src.graph_builder.base_builder import BaseGraphBuilder
@@ -31,7 +31,9 @@ class DynamicSchemaBuilder(BaseGraphBuilder):
         data_type: str = "DI",
         fast_test: bool = False,
         max_triplets_per_chunk: int = 20,
-        num_workers: int = 4
+        num_workers: int = 4,
+        seed_types: Optional[List[str]] = None,
+        use_cache: bool = True,
     ):
         """
         初始化 DynamicSchema Builder
@@ -65,7 +67,7 @@ class DynamicSchemaBuilder(BaseGraphBuilder):
         print(f"🔧 初始化 DynamicSchema Builder")
         print(f"   - 種子類型: {self.seed_types}")
         print(f"   - Max triplets: {max_triplets_per_chunk}")
-        print(f"   - 使用快取: {use_cache}")
+        print(f"   - 使用快取: {self.use_cache}")
     
     def get_name(self) -> str:
         return "DynamicSchema"
@@ -119,6 +121,7 @@ class DynamicSchemaBuilder(BaseGraphBuilder):
                 llm=self.settings.builder_llm,
                 max_triplets_per_chunk=self.max_triplets_per_chunk,
                 num_workers=self.num_workers,
+                allowed_entity_types=self.seed_types,
             )
             
             # 建立 PropertyGraph 索引

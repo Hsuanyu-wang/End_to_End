@@ -134,7 +134,7 @@ class RAGEvaluator:
 
         Raises:
             ImportError: If ragas or datasets packages are not installed
-            EnvironmentError: If EVAL_LLM_BINDING_API_KEY and OPENAI_API_KEY are both not set
+            EnvironmentError: If LLM/Embedding 無法取得 API key 或相容端點 host
         """
         # Validate RAGAS dependencies are installed
         if not RAGAS_AVAILABLE:
@@ -143,19 +143,20 @@ class RAGEvaluator:
                 "Install with: pip install ragas datasets"
             )
 
+        eval_model = os.getenv("EVAL_LLM_MODEL", "gpt-4o-mini")
+        eval_llm_base_url = os.getenv("EVAL_LLM_BINDING_HOST")
+
         # Configure evaluation LLM (for RAGAS scoring)
         eval_llm_api_key = os.getenv("EVAL_LLM_BINDING_API_KEY") or os.getenv(
             "OPENAI_API_KEY"
         )
+        compat_key = os.getenv("EVAL_OPENAI_COMPAT_API_KEY", "ollama")
+        if not eval_llm_api_key and eval_llm_base_url:
+            eval_llm_api_key = compat_key
         if not eval_llm_api_key:
             raise EnvironmentError(
-                "EVAL_LLM_BINDING_API_KEY or OPENAI_API_KEY is required for evaluation. "
-                "Set EVAL_LLM_BINDING_API_KEY to use a custom API key, "
-                "or ensure OPENAI_API_KEY is set."
+                "EVAL_LLM_BINDING_API_KEY / OPENAI_API_KEY 或 EVAL_LLM_BINDING_HOST（OpenAI 相容端點）為必要設定。"
             )
-
-        eval_model = os.getenv("EVAL_LLM_MODEL", "gpt-4o-mini")
-        eval_llm_base_url = os.getenv("EVAL_LLM_BINDING_HOST")
 
         # Configure evaluation embeddings (for RAGAS scoring)
         # Fallback chain: EVAL_EMBEDDING_BINDING_API_KEY -> EVAL_LLM_BINDING_API_KEY -> OPENAI_API_KEY
@@ -171,6 +172,12 @@ class RAGEvaluator:
         eval_embedding_base_url = os.getenv("EVAL_EMBEDDING_BINDING_HOST") or os.getenv(
             "EVAL_LLM_BINDING_HOST"
         )
+        if not eval_embedding_api_key and eval_embedding_base_url:
+            eval_embedding_api_key = compat_key
+        if not eval_embedding_api_key:
+            raise EnvironmentError(
+                "EVAL_EMBEDDING_BINDING_API_KEY / 上述 key 鏈或 EVAL_EMBEDDING_BINDING_HOST / EVAL_LLM_BINDING_HOST 為必要設定。"
+            )
 
         # Create LLM and Embeddings instances for RAGAS
         llm_kwargs = {

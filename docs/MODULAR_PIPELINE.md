@@ -4,10 +4,13 @@
 
 ## 概述
 
-系統支援兩種使用方式:
+系統在評估入口上可區分為:
 
-1. **端到端方法**:完整的建圖+檢索 Pipeline,開箱即用
-2. **模組化方法**:自由組合 Builder + Retriever,靈活實驗
+1. **LightRAG 端到端**：`--graph_rag_method lightrag`（仍為官方主路徑之一）
+2. **統一 PropertyGraph**：`--unified_graph_type property_graph` 與 `pg_*` 參數（多 extractor／retriever；見 [COMMAND_REFERENCE.md](COMMAND_REFERENCE.md)、[PROPERTYGRAPH_REFACTOR_README.md](../PROPERTYGRAPH_REFACTOR_README.md)）
+3. **模組化方法**：`--graph_preset` 或同時指定 `--graph_builder` + `--graph_retriever`
+
+**已棄用**：`--graph_rag_method autoschema`、`dynamic_schema`、`propertyindex`（僅提示，不跑評估）。AutoSchema／Dynamic／Property 類能力請用 **(2)** 或 **(3)**。
 
 ## 架構設計
 
@@ -37,17 +40,18 @@ Generator 階段:上下文 + 問題 → 生成答案
 
 ## 支援的方法
 
-### 端到端方法
+### 評估入口總覽
 
 | 方法 | 說明 | 狀態 | 命令範例 |
 |------|------|------|---------|
-| **LightRAG** | 完整的 LightRAG 建圖+檢索 | ✅ 完整實作 | `--graph_rag_method lightrag --lightrag_mode hybrid` |
-| **Vector RAG** | 向量檢索基準線 | ✅ 完整實作 | `--vector_method hybrid` |
-| **AutoSchemaKG** | Schema-free 建圖+概念層級檢索 | 🔨 可整合 | `--graph_rag_method autoschema` |
-| **DynamicSchema** | LlamaIndex 動態 Schema | ✅ 完整實作 | `--graph_rag_method dynamic_schema` |
-| **Graphiti** | 時序感知圖譜 | 📋 架構預留 | `--graph_rag_method graphiti` |
-| **Neo4j** | 圖資料庫+圖演算法 | 📋 架構預留 | `--graph_rag_method neo4j` |
-| **CQ-Driven** | 能力問題驅動本體 | 📋 架構預留 | `--graph_rag_method cq_driven` |
+| **LightRAG 端到端** | 完整 LightRAG 建圖+檢索 | ✅ | `--graph_rag_method lightrag --lightrag_mode hybrid` |
+| **Vector RAG** | 向量基線 | ✅ | `--vector_method hybrid` |
+| **統一 PropertyGraph** | 多 extractor／retriever 組合 | ✅ | `--unified_graph_type property_graph --pg_extractors ... --pg_retrievers ...` |
+| **模組化** | Builder × Retriever | ✅ | `--graph_preset autoschema_lightrag` 等 |
+| **AutoSchemaKG**（舊端到端旗標） | 已棄用 | ⚠️ 改用模組化或 unified | ~~`--graph_rag_method autoschema`~~ → `--graph_preset autoschema_lightrag` |
+| **DynamicSchema**（舊端到端旗標） | 已棄用 | ⚠️ 同上 | ~~`--graph_rag_method dynamic_schema`~~ → `dynamic_lightrag` 或 `pg_extractors` 含 `dynamic` |
+| **PropertyGraph**（舊 propertyindex） | 已棄用 | ⚠️ 同上 | ~~`--graph_rag_method propertyindex`~~ → `--unified_graph_type property_graph` |
+| **Graphiti／Neo4j／CQ-Driven** | `--graph_rag_method` 預留 | 📋 警告後無核心邏輯 | `--graph_rag_method graphiti` 等 |
 
 ### 模組化組合
 
@@ -79,7 +83,7 @@ Generator 階段:上下文 + 問題 → 生成答案
 
 ## 使用範例
 
-### 端到端方法
+### LightRAG 端到端與統一 PropertyGraph
 
 ```bash
 # LightRAG 完整
@@ -88,14 +92,24 @@ python scripts/run_evaluation.py \
     --lightrag_mode hybrid \
     --data_type DI
 
-# AutoSchemaKG 完整
+# 統一 PropertyGraph（取代舊 autoschema / dynamic_schema / propertyindex 端到端旗標）
 python scripts/run_evaluation.py \
-    --graph_rag_method autoschema \
+    --unified_graph_type property_graph \
+    --pg_extractors implicit,schema,simple,dynamic \
+    --pg_retrievers vector,synonym \
+    --pg_combination_mode ensemble \
     --data_type DI
 
-# DynamicSchema 完整
+# AutoSchema 能力 → 模組化預設組合
 python scripts/run_evaluation.py \
-    --graph_rag_method dynamic_schema \
+    --graph_preset autoschema_lightrag \
+    --lightrag_mode hybrid \
+    --data_type DI
+
+# DynamicSchema 能力 → 模組化預設組合
+python scripts/run_evaluation.py \
+    --graph_preset dynamic_lightrag \
+    --lightrag_mode hybrid \
     --data_type DI
 
 # Vector RAG 基準線
@@ -258,6 +272,10 @@ A: 參考已實作的 Wrapper:
 
 ## 相關文檔
 
+- [文檔索引](README.md)
+- [指令參考](COMMAND_REFERENCE.md)
+- [系統架構](ARCHITECTURE.md)
+- [PropertyGraph 統一架構](../PROPERTYGRAPH_REFACTOR_README.md)
 - [API 參考](API.md)
 - [測試指南](TESTING_GUIDE.md)
 - [使用範例](EXAMPLES.md)

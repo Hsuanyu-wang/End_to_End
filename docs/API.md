@@ -344,7 +344,7 @@ reporter.save_pipeline_results(
     results=results
 )
 
-# 生成全局比較報告
+# 生成全局比較報告（寫入 global_summary_report.csv 與 global_summary_report.xlsx；run_evaluation 會附加彙總至 results/{exp|test}/{data_type}/global_summary.xlsx）
 reporter.generate_global_summary(summary_records)
 ```
 

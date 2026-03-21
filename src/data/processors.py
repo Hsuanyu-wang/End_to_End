@@ -44,9 +44,9 @@ class DataProcessor:
     def _get_raw_file_path(self) -> str:
         """取得原始資料檔案路徑"""
         if self.data_type == "DI":
-            return self.settings.raw_file_path_DI
+            return self.settings.data_config.raw_file_path_DI
         elif self.data_type == "GEN":
-            return self.settings.raw_file_path_GEN
+            return self.settings.data_config.raw_file_path_GEN
         else:
             raise ValueError(f"不支援的資料類型: {self.data_type}")
     

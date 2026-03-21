@@ -93,12 +93,25 @@ class RAGASMetricBase(BaseMetric):
             )
             eval_embedding_model = os.getenv("EVAL_EMBEDDING_MODEL", "text-embedding-3-large")
             eval_embedding_base_url = os.getenv("EVAL_EMBEDDING_BINDING_HOST") or os.getenv("EVAL_LLM_BINDING_HOST")
-            
+
+            # Ollama 等 OpenAI 相容端點不需真實 key，LangChain 仍需非空 api_key
+            compat_key = os.getenv("EVAL_OPENAI_COMPAT_API_KEY", "ollama")
+            if not eval_llm_api_key and eval_llm_base_url:
+                eval_llm_api_key = compat_key
+            if not eval_embedding_api_key and eval_embedding_base_url:
+                eval_embedding_api_key = compat_key
+
             if not eval_llm_api_key:
-                warnings.warn("RAGAS 指標需要 API Key，請設定環境變數")
+                warnings.warn("RAGAS 指標需要 API Key 或 EVAL_LLM_BINDING_HOST（OpenAI 相容端點），請設定環境變數")
                 self.available = False
                 return
-            
+            if not eval_embedding_api_key:
+                warnings.warn(
+                    "RAGAS 指標需要 Embedding API Key 或 EVAL_EMBEDDING_BINDING_HOST / EVAL_LLM_BINDING_HOST，請設定環境變數"
+                )
+                self.available = False
+                return
+
             # 建立 LLM
             llm_kwargs = {
                 "model": eval_model,

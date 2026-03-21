@@ -207,7 +207,7 @@ class EvaluationReporter:
         postfix: str = "",
         is_fast_test: bool = False,
     ) -> str:
-        """將本次 summary 附加到 exp/test 根目錄的 global_summary.xlsx。"""
+        """將本次 summary 附加到 results/{exp|test}/{資料類別}/global_summary.xlsx。"""
         if not summary_records:
             return None
 

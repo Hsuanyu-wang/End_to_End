@@ -20,14 +20,10 @@
 - 實作 ChunkIDMapper 機制，正確映射 chunk IDs
 - 所有 retrieval 指標（Hit Rate, MRR, Precision, Recall, F1）現可正常計算
 
-### 🔌 插件系統
-- 全新的可擴展插件架構
-- 支援 5 種外部 KG 建構方法：
-  - **AutoSchemaKG**：動態 Schema 歸納
-  - **DynamicPath**：動態實體類型檢測
-  - **Graphiti**：時序感知圖譜
-  - **CQ-Driven**：能力問題驅動本體
-  - **Neo4j**：圖資料庫與演算法
+### 🔌 插件系統（`src/plugins/`）
+- 可擴展插件架構；**實際整合程度因插件而異**
+- **可掛載於 LightRAG 流程**（`--lightrag_plugins`）：`autoschema`、`dynamic_path` 等（見下方「插件系統」一節）
+- **多為 stub／TODO 或僅列印提示**：`graphiti`、`cq_driven`、`neo4j` 對應類別存在，**非**五項皆已端到端可用；端到端 `graphiti`／`neo4j`／`cq_driven` 於 `--graph_rag_method` 仍為架構預留
 
 ## 專案特色
 
@@ -91,15 +87,22 @@ python scripts/run_evaluation.py \
     --qa_dataset_fast_test
 ```
 
-#### 4. AutoSchemaKG 評估 (NEW)
+#### 4. 統一 PropertyGraph（多 extractor／retriever）
+
+`--graph_rag_method autoschema`、`dynamic_schema`、`propertyindex` 已棄用，請改用：
 
 ```bash
 python scripts/run_evaluation.py \
-    --graph_rag_method autoschema \
+    --unified_graph_type property_graph \
+    --pg_extractors implicit,schema,simple,dynamic \
+    --pg_retrievers vector,synonym \
+    --pg_combination_mode ensemble \
     --data_type DI
 ```
 
-#### 5. 模組化組合 (NEW)
+詳見 [文檔索引：Graph 對照](docs/README.md) 與 [PropertyGraph 重構說明](PROPERTYGRAPH_REFACTOR_README.md)。
+
+#### 5. 模組化組合
 
 ```bash
 # 使用預設組合
@@ -171,15 +174,13 @@ End_to_End_RAG/
 - **Self-Query**: 帶有 metadata 過濾的自查詢
 - **Parent-Child**: 多層級檢索（Auto Merging）
 
-### Graph RAG (端到端)
+### Graph RAG（建議入口）
 
-- **Property Graph**: 基於 PropertyGraphIndex 的圖譜檢索
-- **Dynamic Schema**: 動態 Schema 生成的圖譜檢索
-- **LightRAG**: 支援 local/global/hybrid/mix/naive/bypass 模式
-- **AutoSchemaKG**: Schema-free 建圖,概念層級化 (NEW)
-- **Graphiti**: 時序感知圖譜 + 混合檢索 (架構預留)
-- **Neo4j**: 圖資料庫 + 圖演算法 (架構預留)
-- **CQ-Driven**: 能力問題驅動本體建構 (架構預留)
+- **LightRAG 端到端**：`--graph_rag_method lightrag`（local/global/hybrid/mix/naive/bypass/original 等）
+- **統一 PropertyGraph**：`--unified_graph_type property_graph` + `--pg_extractors` / `--pg_retrievers` / `--pg_combination_mode`（取代已棄用的 `--graph_rag_method propertyindex` / `dynamic_schema` / `autoschema`）
+- **統一 LightRAG（模組化包裝）**：`--unified_graph_type lightrag`
+- **Graphiti / Neo4j / CQ-Driven（`--graph_rag_method`）**：架構預留，執行時僅警告
+- **時序 LightRAG**：`--lightrag_temporal_graph`（`TemporalLightRAGWrapper`）
 
 ### Graph RAG (模組化)
 
@@ -236,14 +237,20 @@ End_to_End_RAG/
 --vector_method {none,hybrid,vector,bm25,all}
 --adv_vector_method {none,parent_child,self_query,all}
 --graph_rag_method {none,propertyindex,lightrag,dynamic_schema,autoschema,graphiti,neo4j,cq_driven,all}
+# 註：propertyindex / dynamic_schema / autoschema 已棄用，請用 --unified_graph_type property_graph 或模組化參數
+--unified_graph_type {none,property_graph,lightrag}
+--pg_extractors implicit,schema,simple,dynamic   # 僅 property_graph
+--pg_retrievers vector,synonym,text2cypher       # 僅 property_graph
+--pg_combination_mode {ensemble,cascade,single}  # 僅 property_graph
 --lightrag_mode {none,local,global,hybrid,mix,naive,bypass,original,all}
+--lightrag_native_mode {local,global,hybrid,mix,naive,bypass}  # 僅 original 時：官方 aquery 的 mode，預設 hybrid
 ```
 
-### 模組化 Pipeline 參數 (NEW)
+### 模組化 Pipeline 參數
 
 ```bash
 --graph_builder {autoschema,lightrag,property,dynamic}
---graph_retriever {lightrag,csr,neo4j}
+--graph_retriever {lightrag,csr,neo4j}   # neo4j：PipelineFactory 尚未實作，會拋錯
 --graph_preset {autoschema_lightrag,lightrag_csr,dynamic_csr,dynamic_lightrag}
 ```
 
@@ -269,12 +276,14 @@ End_to_End_RAG/
 新版本使用集中化的 storage 管理：
 
 ```bash
-# 所有 storage 統一在 /storage/ 目錄下
-/storage/
-├── vector_index/DI_hybrid/          # Vector 索引（持久化）
-├── graph_index/DI_propertyindex/    # Graph 索引
-├── lightrag/DI_lightrag_default/    # LightRAG 圖譜
-└── csr_graph/DI_natural_text_khop.pkl  # CSR Graph cache
+# 所有 storage 統一在專案下 storage/ 目錄（預設 /home/End_to_End_RAG/storage）
+storage/
+├── vector_index/DI_hybrid/              # Vector 索引（持久化）
+├── graph_index/DI_propertyindex/        # Graph 索引
+├── lightrag/DI_lightrag_default/        # LightRAG 圖譜
+├── autoschema/DI_natural_text/          # AutoSchemaKG（slug = data_type[_data_mode][_sup][_fast_test]）
+├── lightrag_temporal/                   # Temporal LightRAG（見 config lightrag_storage_path_DIR）
+└── csr_graph/DI_natural_text_khop.pkl   # CSR Graph cache
 ```
 
 ### 遷移舊 Storage
@@ -301,17 +310,14 @@ python scripts/run_evaluation.py \
     --data_type DI
 ```
 
-可用插件：
-- `autoschema`: AutoSchemaKG 動態 Schema 歸納
-- `dynamic_path`: DynamicLLMPathExtractor 動態實體檢測
-- `graphiti`: Graphiti 時序感知圖譜
-- `cq_driven`: CQ-Driven 能力問題驅動本體
-- `neo4j`: Neo4j 圖資料庫與演算法
+可用插件名稱（逗號分隔）：
+- `autoschema`、`dynamic_path`：可掛載於 LightRAG 流程
+- `graphiti`、`cq_driven`、`neo4j`：類別存在，**多為占位／TODO**，行為以原始碼 `src/plugins/` 為準
 
 ### Schema 相關
 
 ```bash
---lightrag_schema_method {lightrag_default,iterative_evolution,llm_dynamic}
+--lightrag_schema_method {lightrag_default,iterative_evolution,llm_dynamic,llamaindex_dynamic}
 --lightrag_temporal_graph         # 啟用時序 LightRAG
 ```
 
@@ -319,21 +325,28 @@ python scripts/run_evaluation.py \
 
 ## 評估結果
 
-評估結果儲存在 `results/evaluation_results_{timestamp}{postfix}/` 目錄下：
+評估結果依 `--data_type`（如 DI、GEN）寫入 `results/{exp|test}/{資料類別}/evaluation_results_{timestamp}{postfix}/`：
 
 ```
-results/evaluation_results_20260317_120000_DI_lightrag_hybrid/
-├── global_summary_report.csv                  # 所有 Pipeline 比較
+results/exp/DI/evaluation_results_20260317_120000_DI_lightrag_hybrid/
+├── global_summary_report.csv                  # 各 Pipeline 平均指標（CSV）
+├── global_summary_report.xlsx                 # 同上（Excel）
 ├── LightRAG_Hybrid/
 │   └── detailed_results.csv                   # 逐題評估結果
 └── Vector_hybrid_RAG/
     └── detailed_results.csv
+
+results/exp/{資料類別}/（與上層同目錄；跨執行彙總）
+└── global_summary.xlsx                        # 多次實驗附加彙總（該資料類別內）
 ```
+
+快速測試模式路徑為 `results/test/{資料類別}/`，結構相同。
 
 ### 報告內容
 
-- **detailed_results.csv**: 每題的詳細評估結果（含所有指標）
-- **global_summary_report.csv**: 各 Pipeline 的平均指標比較
+- **detailed_results.csv**：每題的詳細評估結果（含所有指標）
+- **global_summary_report.csv** / **global_summary_report.xlsx**：單次執行內各 Pipeline 平均指標
+- **global_summary.xlsx**（可選）：該 `資料類別` 下跨執行附加彙總（見 `src/evaluation/reporters.py`）
 
 ## 進階使用
 
@@ -391,12 +404,17 @@ python -m pytest tests/test_metrics.py
 
 ## 文檔
 
+- **[文檔索引（請從此進入）](docs/README.md)**
+- [系統架構](docs/ARCHITECTURE.md)
+- [指令參考](docs/COMMAND_REFERENCE.md)
 - [API 參考](docs/API.md)
 - [評估指標說明](docs/METRICS.md)
-- [模組化 Pipeline 架構](docs/MODULAR_PIPELINE.md) (NEW)
+- [模組化 Pipeline 架構](docs/MODULAR_PIPELINE.md)
+- [PropertyGraph 統一架構](PROPERTYGRAPH_REFACTOR_README.md)
 - [Schema 記錄功能](docs/SCHEMA_RECORDING.md)
 - [測試與實驗指南](docs/TESTING_GUIDE.md)
 - [使用範例](docs/EXAMPLES.md)
+- [改進模組紀錄（精簡）](docs/IMPLEMENTATION_HISTORY.md)
 
 ## 聯絡方式
 

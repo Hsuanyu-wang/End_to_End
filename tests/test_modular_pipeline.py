@@ -117,6 +117,69 @@ def test_autoschema_builder_initialization():
     assert builder.output_dir == "/tmp/autoschema_test"
 
 
+def test_lightrag_builder_propagates_entity_types(monkeypatch, tmp_path):
+    """測試傳入 entity_types 時，會寫回 settings.lightrag_config.entity_types"""
+    import os
+    from llama_index.core import Document
+    from src.graph_builder.lightrag_builder import LightRAGBuilder
+
+    # dummy settings (只提供 lightrag_config.entity_types)
+    class DummyLightragConfig:
+        def __init__(self):
+            self.entity_types = ["OldType"]
+
+    class DummySettings:
+        def __init__(self):
+            self.lightrag_config = DummyLightragConfig()
+
+    settings = DummySettings()
+
+    # stub storage path：確保目錄存在但為空，讓 build 走到 "建圖" 分支
+    storage_dir = tmp_path / "lightrag_build"
+    os.makedirs(storage_dir, exist_ok=True)
+
+    def fake_get_storage_path(*args, **kwargs):
+        # 保持為空目錄，避免 build 直接跳過
+        os.makedirs(storage_dir, exist_ok=True)
+        return str(storage_dir)
+
+    monkeypatch.setattr("src.storage.get_storage_path", fake_get_storage_path, raising=True)
+
+    # stub lightrag 重建/engine，避免真的跑 LightRAG
+    import src.rag.graph.lightrag as lightrag_graph
+
+    called = {"build": False, "engine": False}
+
+    def fake_build_lightrag_index(Settings, mode, data_type, sup, fast_build, **kwargs):
+        called["build"] = True
+        # build 時應該已同步好 entity_types
+        assert Settings.lightrag_config.entity_types == ["Person", "Organization"]
+
+    def fake_get_lightrag_engine(Settings, data_type="DI", sup="", fast_test=False, **kwargs):
+        called["engine"] = True
+        return object()
+
+    monkeypatch.setattr(lightrag_graph, "build_lightrag_index", fake_build_lightrag_index)
+    monkeypatch.setattr(lightrag_graph, "get_lightrag_engine", fake_get_lightrag_engine)
+
+    builder = LightRAGBuilder(
+        graph_store=None,
+        settings=settings,
+        data_type="DI",
+        schema_method="lightrag_default",
+        sup="",
+        fast_test=False,
+        entity_types=["Person", "Organization"],
+    )
+
+    result = builder.build([Document(text="hello")])
+
+    assert called["build"] is True
+    assert called["engine"] is True
+    assert settings.lightrag_config.entity_types == ["Person", "Organization"]
+    assert result["schema_info"]["entities"] == ["Person", "Organization"]
+
+
 def test_base_classes_abstract():
     """測試基類是否正確定義為抽象類"""
     from src.graph_builder.base_builder import BaseGraphBuilder

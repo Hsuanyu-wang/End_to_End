@@ -39,10 +39,25 @@ config.local.yaml
 config.local.yml
 
 # 大檔案與生成檔
+# 執行期／骨架儲存與佇列複本（與 lightrag_storage* 同類）
 lightrag_storage_old/
+lightrag_backbone_storage/
+rag_storage/
+method/lightrag_backbone_storage/
+inputs/__enqueued__/
+.deepeval/
 graph_index/
 graph_index_*/
 *.pkl
+# PyTorch 張量與常見模型權重（.pth 見檔案上方）
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+# 大型壓縮包
+*.zip
+*.7z
+*.tar.gz
 *.xlsx
 *.xls
 *.parquet
@@ -71,3 +86,6 @@ dist/
 .coverage.*
 htmlcov/
 .tox/
+
+# 本機掃描報告（scripts/scan_large_files.sh 輸出）
+logs/large_files_scan.txt

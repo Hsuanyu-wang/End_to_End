@@ -6,10 +6,14 @@ Storage Manager 模組
 
 import os
 from typing import Literal, Optional
-from pathlib import Path
 
 
 StorageType = Literal["vector_index", "graph_index", "lightrag", "csr_graph", "cache"]
+
+
+def _safe_slug(s: str) -> str:
+    """將字串轉成適合目錄／檔名的片段（與 graph_retriever.cache_utils 邏輯一致）。"""
+    return "".join(ch if (ch.isalnum() or ch in ("-", "_")) else "_" for ch in str(s))
 
 
 class StorageManager:
@@ -136,7 +140,31 @@ class StorageManager:
         
         filename = "_".join(path_parts) + ".pkl"
         return os.path.join(csr_dir, filename)
-    
+
+    def get_autoschema_output_dir(
+        self,
+        data_type: str,
+        data_mode: str = "",
+        sup: str = "",
+        fast_test: bool = False,
+    ) -> str:
+        """
+        AutoSchemaKG 建圖輸出目錄：{root}/autoschema/{slug}
+
+        slug 由 data_type、可選的 data_mode、sup、fast_test 組成，以區分不同資料集與實驗。
+        """
+        parts = [_safe_slug(data_type or "DI")]
+        if data_mode:
+            parts.append(_safe_slug(data_mode))
+        if sup:
+            parts.append(_safe_slug(sup))
+        if fast_test:
+            parts.append("fast_test")
+        slug = "_".join(parts)
+        full_path = os.path.join(self.root_dir, "autoschema", slug)
+        os.makedirs(full_path, exist_ok=True)
+        return full_path
+
     def migrate_old_storage(self, old_paths: dict) -> dict:
         """
         遷移舊的 storage 到新結構
@@ -231,4 +259,34 @@ def get_csr_graph_path(
         data_mode=data_mode,
         method=method,
         fast_test=fast_test
+    )
+
+
+def get_autoschema_output_dir(
+    data_type: str,
+    data_mode: str = "",
+    sup: str = "",
+    fast_test: bool = False,
+    root_dir: Optional[str] = None,
+) -> str:
+    """
+    取得 AutoSchemaKG 輸出目錄（並建立目錄）。
+
+    Args:
+        data_type: 資料集類型（如 DI、GEN）
+        data_mode: 資料模式（如 natural_text）；空字串則不納入 slug
+        sup: 實驗用附加標籤；空字串則不納入 slug
+        fast_test: 快速測試時於 slug 尾端加上 fast_test
+        root_dir: Storage 根目錄；None 則使用預設
+    """
+    global _storage_manager
+
+    if _storage_manager is None or (root_dir and root_dir != _storage_manager.root_dir):
+        _storage_manager = StorageManager(root_dir or "/home/End_to_End_RAG/storage")
+
+    return _storage_manager.get_autoschema_output_dir(
+        data_type=data_type,
+        data_mode=data_mode,
+        sup=sup,
+        fast_test=fast_test,
     )

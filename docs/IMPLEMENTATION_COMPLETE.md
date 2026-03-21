@@ -1,5 +1,7 @@
 # LightRAG 全面改進計劃 - 實作完成報告
 
+> **歷史存檔**：精簡模組索引與維護說明已合併至 [IMPLEMENTATION_HISTORY.md](IMPLEMENTATION_HISTORY.md)。以下全文保留供追溯；日常請閱 [docs/README.md](README.md)。
+
 ## 📋 執行摘要
 
 本專案已成功完成 LightRAG 和 Ontology Learning 的全面改進，所有 12 個 TODO 項目均已完成。

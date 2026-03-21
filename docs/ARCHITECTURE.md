@@ -5,6 +5,7 @@
 ## 目錄
 
 - [系統整體架構](#系統整體架構)
+- [CLI 旗標與 Graph 執行路徑對照](#cli-旗標與-graph-執行路徑對照)
 - [核心模組說明](#核心模組說明)
 - [資料流圖](#資料流圖)
 - [類別關係圖](#類別關係圖)
@@ -22,6 +23,7 @@ graph TB
         CLI[run_evaluation.py<br/>命令列介面]
         Interactive[run_comprehensive_tests.py<br/>互動式測試]
         Batch[run_all_experiments.sh<br/>批次執行]
+        PGBatch[run_all_propertygraphindex.py<br/>PropertyGraph組合掃描]
     end
     
     subgraph configLayer[配置層]
@@ -37,9 +39,11 @@ graph TB
     
     subgraph ragLayer[RAG 處理層]
         VectorRAG[Vector RAG<br/>向量檢索]
-        GraphRAG[Graph RAG<br/>圖譜檢索]
-        LightRAG[LightRAG<br/>混合檢索]
-        ModularPipeline[Modular Pipeline<br/>模組化組合]
+        LightRAGE2E[LightRAG 端到端<br/>graph_rag_method]
+        UnifiedPG[統一 PropertyGraph<br/>UnifiedGraphBuilder加Retriever]
+        UnifiedLR[統一 LightRAG<br/>unified_graph_type lightrag]
+        ModularPipeline[ModularGraphWrapper<br/>preset 或 builder 加 retriever]
+        TemporalRAG[Temporal LightRAG<br/>可選旗標]
     end
     
     subgraph evaluationLayer[評估層]
@@ -57,6 +61,7 @@ graph TB
     CLI --> Settings
     Interactive --> Settings
     Batch --> CLI
+    PGBatch --> CLI
     
     Settings --> DataLoader
     ConfigYML --> Settings
@@ -65,23 +70,51 @@ graph TB
     DataProcessor --> Documents
     
     Documents --> VectorRAG
-    Documents --> GraphRAG
-    Documents --> LightRAG
+    Documents --> LightRAGE2E
+    Documents --> UnifiedPG
+    Documents --> UnifiedLR
     Documents --> ModularPipeline
+    Documents --> TemporalRAG
     
     VectorRAG --> Evaluator
-    GraphRAG --> Evaluator
-    LightRAG --> Evaluator
+    LightRAGE2E --> Evaluator
+    UnifiedPG --> Evaluator
+    UnifiedLR --> Evaluator
     ModularPipeline --> Evaluator
+    TemporalRAG --> Evaluator
     
     Evaluator --> Metrics
     Metrics --> Reporter
     
     VectorRAG -.持久化.-> VectorIndex
-    GraphRAG -.持久化.-> GraphIndex
-    LightRAG -.持久化.-> GraphIndex
-    LightRAG -.使用.-> SchemaCache
+    LightRAGE2E -.持久化.-> GraphIndex
+    UnifiedPG -.持久化.-> GraphIndex
+    UnifiedLR -.持久化.-> GraphIndex
+    ModularPipeline -.持久化.-> GraphIndex
+    LightRAGE2E -.使用.-> SchemaCache
 ```
+
+**說明**：舊版端到端 `--graph_rag_method propertyindex`／`dynamic_schema`／`autoschema` 已棄用（僅印遷移提示），評估主路徑為上圖之 `UnifiedPG` 或模組化組合。細節見下節與 [README.md](README.md)（文檔索引）。
+
+---
+
+## CLI 旗標與 Graph 執行路徑對照
+
+| 路徑 | 主要旗標 | 實作入口（`run_evaluation.py`） |
+|------|-----------|-------------------------------|
+| LightRAG 端到端 | `--graph_rag_method lightrag`（及 `--lightrag_mode` 等） | `setup_lightrag_pipeline` |
+| 統一 PropertyGraph | `--unified_graph_type property_graph`、`--pg_extractors`、`--pg_retrievers`、`--pg_combination_mode` | `setup_unified_graph_pipeline` → `UnifiedGraphBuilder` + `UnifiedGraphRetriever` → `ModularGraphWrapper` |
+| 統一 LightRAG | `--unified_graph_type lightrag` | 同上，`builder_type=lightrag` |
+| 模組化 Builder+Retriever | `--graph_preset` 或同時 `--graph_builder` + `--graph_retriever` | `setup_modular_graph_pipeline` → `PipelineFactory` |
+| 時序 LightRAG | `--lightrag_temporal_graph` | `TemporalLightRAGWrapper`（別名 `TemporalWrapper`） |
+
+**已棄用**：`--graph_rag_method autoschema`、`dynamic_schema`、`propertyindex`。
+
+**未實作**：`PipelineFactory.create_retriever("neo4j")` 會拋出 `NotImplementedError`。
+
+**Legacy**：舊版 `AutoSchemaWrapper`、`DynamicSchemaWrapper` 仍保留於 `legacy/wrappers/`，現行 `src/rag/wrappers/` 不再匯出。
+
+**深入閱讀 PropertyGraph 統一架構**：[PROPERTYGRAPH_REFACTOR_README.md](../PROPERTYGRAPH_REFACTOR_README.md)。
 
 ---
 
@@ -188,13 +221,19 @@ classDiagram
         +_execute_query()
     }
     
+    class TemporalLightRAGWrapper {
+        +rag_instance
+        +mode: str
+        +_execute_query()
+    }
+    
     BaseRAGWrapper <|-- VectorRAGWrapper
     BaseRAGWrapper <|-- LightRAGWrapper
     BaseRAGWrapper <|-- ModularGraphWrapper
-    BaseRAGWrapper <|-- AutoSchemaWrapper
-    BaseRAGWrapper <|-- DynamicSchemaWrapper
-    BaseRAGWrapper <|-- TemporalWrapper
+    BaseRAGWrapper <|-- TemporalLightRAGWrapper
 ```
+
+**Legacy（僅追溯，不從 `src.rag.wrappers` 匯出）**: `legacy/wrappers/autoschema_wrapper.py`、`legacy/wrappers/dynamic_schema_wrapper.py` 之 `AutoSchemaWrapper`、`DynamicSchemaWrapper`。
 
 **統一功能**:
 - ✅ 時間計算
@@ -329,6 +368,8 @@ graph LR
     Neo4jRetriever --> Results
 ```
 
+**註**：`neo4j` Retriever 於 `PipelineFactory.create_retriever` 尚未實作（`NotImplementedError`），圖示僅表示規劃介面。
+
 **預設組合**:
 1. AutoSchema + LightRAG
 2. LightRAG + CSR
@@ -368,7 +409,9 @@ graph TB
     RAGEvaluator --> DetailedReporter
     
     GlobalReporter --> CSVReport[global_summary_report.csv]
+    GlobalReporter --> XLSXReport[global_summary_report.xlsx]
     DetailedReporter --> DetailedCSV[detailed_results.csv]
+    GlobalReporter -.可選彙總.-> MasterXLSX[results/exp/資料類別/global_summary.xlsx]
 ```
 
 **指標類別**:
@@ -440,7 +483,7 @@ classDiagram
 - `cq_driven_plugin.py`
 - `neo4j_builder_plugin.py`
 
-**狀態**: 架構完成，核心邏輯部分待實作
+**狀態**：`autoschema_plugin`、`dynamic_path_plugin` 可掛載於 LightRAG 流程；`graphiti_plugin`、`cq_driven_plugin`、`neo4j_builder_plugin` 多為占位或 TODO，與「已實作」模組分開看待。
 
 ---
 
@@ -455,6 +498,7 @@ graph TB
     StorageManager --> GraphDir[graph_index/<br/>其他圖索引]
     StorageManager --> CSRDir[csr_graph/<br/>CSR快取]
     StorageManager --> SchemaDir[schema_cache/<br/>Schema快取]
+    StorageManager --> AutoSchemaDir[autoschema/<br/>AutoSchemaKG 輸出]
     
     VectorDir --> HybridIndex[DI_hybrid/]
     VectorDir --> VectorIndex[DI_vector/]
@@ -474,8 +518,10 @@ storage/
 ├── vector_index/       # Vector 索引
 ├── graph_index/        # Graph 索引
 ├── lightrag/          # LightRAG 圖譜
+├── autoschema/        # AutoSchemaKG；子目錄 slug = data_type[_data_mode][_sup][_fast_test]
 ├── csr_graph/         # CSR Graph 快取
 ├── cache/             # 其他快取
+├── lightrag_temporal/ # 可選：Temporal LightRAG（config lightrag_storage_path_DIR）
 └── schema_cache/      # Schema 快取
 ```
 
@@ -643,18 +689,8 @@ classDiagram
         +build_graph()
     }
     
-    class AutoSchemaWrapper {
-        +builder: AutoSchemaKGBuilder
-        +_execute_query()
-    }
-    
-    class DynamicSchemaWrapper {
-        +query_engine
-        +_execute_query()
-    }
-    
-    class TemporalWrapper {
-        +temporal_lightrag
+    class TemporalLightRAGWrapper {
+        +rag_instance
         +mode: str
         +_execute_query()
     }
@@ -662,10 +698,10 @@ classDiagram
     BaseRAGWrapper <|-- VectorRAGWrapper
     BaseRAGWrapper <|-- LightRAGWrapper
     BaseRAGWrapper <|-- ModularGraphWrapper
-    BaseRAGWrapper <|-- AutoSchemaWrapper
-    BaseRAGWrapper <|-- DynamicSchemaWrapper
-    BaseRAGWrapper <|-- TemporalWrapper
+    BaseRAGWrapper <|-- TemporalLightRAGWrapper
 ```
+
+**Legacy**：`AutoSchemaWrapper`、`DynamicSchemaWrapper` 見 `legacy/wrappers/`。
 
 ---
 
@@ -790,16 +826,17 @@ classDiagram
 
 ### 設計理念
 
-**雙重模式支援**:
-1. **端到端模式**: 完整的建圖+檢索 Pipeline（開箱即用）
-2. **模組化模式**: 靈活組合 Builder + Retriever（實驗用）
+**實務上的三種 Graph 入口**（與 CLI 對照表一致）:
+1. **LightRAG 端到端**：`--graph_rag_method lightrag`
+2. **統一 Graph**：`--unified_graph_type property_graph` 或 `lightrag`（`UnifiedGraphBuilder` + `UnifiedGraphRetriever`）
+3. **模組化**：`--graph_preset` 或 `--graph_builder` + `--graph_retriever`（`PipelineFactory`）
 
 ```mermaid
 graph TB
-    subgraph endToEnd[端到端模式]
-        E2E_Vector[Vector RAG<br/>一體化]
-        E2E_LightRAG[LightRAG<br/>一體化]
-        E2E_Property[Property Graph<br/>一體化]
+    subgraph endToEnd[端到端與統一Graph]
+        E2E_Vector[Vector RAG<br/>vector_method]
+        E2E_LightRAG[LightRAG<br/>graph_rag_method lightrag]
+        UnifiedPG[統一 PropertyGraph<br/>unified_graph_type property_graph]
     end
     
     subgraph modular[模組化模式]
@@ -810,8 +847,10 @@ graph TB
     end
     
     User{使用者選擇}
-    User -->|簡單使用| endToEnd
-    User -->|實驗研究| modular
+    User -->|向量基線| E2E_Vector
+    User -->|LightRAG| E2E_LightRAG
+    User -->|多extractor組合| UnifiedPG
+    User -->|Builder乘Retriever實驗| modular
     
     endToEnd --> Results[評估結果]
     Retrieve --> Results
@@ -926,7 +965,7 @@ graph TB
     end
     
     subgraph reporting[報告階段]
-        Aggregate --> GlobalReport[全域摘要報告<br/>global_summary_report.csv]
+        Aggregate --> GlobalReport[全域摘要<br/>CSV與XLSX]
         Aggregate --> DetailedReport[詳細結果<br/>detailed_results.csv]
         Aggregate --> TokenAnalysis[Token分析<br/>可選]
     end
@@ -1026,7 +1065,7 @@ graph TB
 1. **模組化設計**: 清晰的分層，職責分離
 2. **可擴展性**: 抽象類別 + 工廠模式
 3. **統一介面**: BaseRAGWrapper 提供一致 API
-4. **雙重模式**: 端到端 + 模組化支援
+4. **多種 Graph 入口**: LightRAG 端到端、統一 PropertyGraph、模組化組合
 5. **完整評估**: 多層次指標系統
 6. **儲存管理**: 集中化、隔離化
 7. **插件架構**: 靈活的功能擴展
@@ -1054,5 +1093,5 @@ graph TB
 
 ---
 
-**最後更新**: 2026-03-18  
+**最後更新**: 2026-03-21  
 **專案路徑**: `/home/End_to_End_RAG`
