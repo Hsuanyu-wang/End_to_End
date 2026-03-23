@@ -235,14 +235,17 @@ class ModularGraphWrapper(BaseRAGWrapper):
         response = settings.llm.complete(prompt)
         generated_answer = str(response)
         
-        # 提取 chunk IDs
-        retrieved_ids = []
-        if nodes:
+        retrieved_ids = retrieval_result.get("retrieved_ids", [])
+        if not retrieved_ids and nodes:
             for node in nodes:
-                if hasattr(node, 'node_id'):
-                    retrieved_ids.append(node.node_id)
-                elif hasattr(node, 'id_'):
-                    retrieved_ids.append(node.id_)
+                meta = getattr(node, "metadata", None) or {}
+                doc_id = meta.get("NO") or meta.get("doc_id") or meta.get("original_no")
+                if doc_id:
+                    retrieved_ids.append(str(doc_id).strip())
+                else:
+                    ref = getattr(node, "ref_doc_id", None)
+                    if ref:
+                        retrieved_ids.append(str(ref).strip())
         
         return {
             "generated_answer": generated_answer,

@@ -3,7 +3,6 @@ import json
 import yaml
 import math
 from tqdm import tqdm
-from pydantic import BaseModel, Field
 from typing import List, Dict
 from llama_index.core import Document, PropertyGraphIndex, PromptTemplate
 from llama_index.core.schema import TransformComponent
@@ -11,12 +10,7 @@ from llama_index.core.graph_stores import EntityNode, Relation
 from llama_index.core.indices.property_graph import SchemaLLMPathExtractor
 
 from .base_builder import BaseGraphBuilder
-
-# 定義結構
-class DynamicKGSchema(BaseModel):
-    entities: List[str] = Field(description="實體類型列表")
-    relations: List[str] = Field(description="關係類型列表")
-    validation_schema: Dict[str, List[str]] = Field(description="實體與關係的合法連接規則")
+from src.rag.schema.evolution import evolve_schema_with_pydantic, DynamicKGSchema
 
 class CustomMetadataExtractor(TransformComponent):
     # (此處為您原有的 metadata 抽取邏輯，為節省篇幅省略細節，請直接貼上您原本的實作)
@@ -92,23 +86,6 @@ class OntologyGraphBuilder(BaseGraphBuilder):
     
     def get_name(self) -> str:
         return "Ontology"
-    
-    def evolve_schema_with_pydantic(self, current_schema: dict, batch_docs: list, prompt_template_str: str) -> dict:
-        sample_text = "\n\n".join([doc.text[:] for doc in batch_docs])
-        prompt_str = prompt_template_str.format(
-            current_schema=json.dumps(current_schema, ensure_ascii=False), 
-            sample_text=sample_text
-        )
-        prompt_template = PromptTemplate(template=prompt_str)
-        try:
-            response_obj = self.settings.llm.structured_predict(
-                DynamicKGSchema,
-                prompt=prompt_template,
-            )
-            return response_obj.model_dump()
-        except Exception as e:
-            print(f">> Schema 更新失敗: {e}")
-            return current_schema
 
     def build(self, documents: List[Document]):
         """
@@ -162,6 +139,10 @@ class OntologyGraphBuilder(BaseGraphBuilder):
                 "note": "動態演化 Schema"
             }
             
+            graphml_path = os.path.join(self.storage_path, "graph_output.graphml")
+            if not os.path.exists(graphml_path):
+                graphml_path = None
+
             return {
                 "nodes": [],
                 "edges": [],
@@ -172,7 +153,8 @@ class OntologyGraphBuilder(BaseGraphBuilder):
                 },
                 "schema_info": schema_info,
                 "storage_path": self.storage_path,
-                "graph_format": "property_graph"
+                "graph_format": "property_graph",
+                "graphml_path": graphml_path,
             }
         
         # 若無 cache，執行建圖
@@ -206,9 +188,9 @@ class OntologyGraphBuilder(BaseGraphBuilder):
             round_num = (i // BATCH_SIZE) + 1
             pbar.set_postfix({"Round": round_num, "Schema_Size": len(dynamic_schema["entities"])})
             
-            # Schema 演化
+            # Schema 演化（使用 src.rag.schema.evolution 統一入口）
             if round_num <= MAX_EVOLVE_ROUNDS:
-                dynamic_schema = self.evolve_schema_with_pydantic(dynamic_schema, batch, prompt_template_str)
+                dynamic_schema = evolve_schema_with_pydantic(dynamic_schema, batch, self.settings.llm)
                 
             # 建立 Extractor
             llm_extractor = SchemaLLMPathExtractor(
@@ -253,6 +235,20 @@ class OntologyGraphBuilder(BaseGraphBuilder):
             "note": "動態演化 Schema"
         }
         
+        # 嘗試匯出 GraphML
+        graphml_path = None
+        try:
+            from src.graph_adapter.base_adapter import GraphFormatAdapter
+            G = GraphFormatAdapter.to_networkx(
+                {"graph_index": self.graph_index, "graph_format": "property_graph"},
+                source_format="property_graph"
+            )
+            if G.number_of_nodes() > 0:
+                graphml_path = os.path.join(self.storage_path, "graph_output.graphml")
+                GraphFormatAdapter.save_graphml(G, graphml_path)
+        except Exception as e:
+            print(f"⚠️  GraphML 匯出失敗: {e}")
+
         return {
             "nodes": [],
             "edges": [],
@@ -263,5 +259,6 @@ class OntologyGraphBuilder(BaseGraphBuilder):
             },
             "schema_info": schema_info,
             "storage_path": self.storage_path,
-            "graph_format": "property_graph"
+            "graph_format": "property_graph",
+            "graphml_path": graphml_path,
         }

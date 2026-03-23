@@ -22,6 +22,8 @@ _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 _PROJECT_ROOT = os.path.dirname(_SCRIPT_DIR)
 sys.path.insert(0, _PROJECT_ROOT)
 
+import src.plugins.similar_entity_merge_plugin  # noqa: F401 — 註冊 similar_entity_merge
+
 from src.config.settings import get_settings
 from src.data.loaders import load_and_normalize_qa_CSR_DI, load_and_normalize_qa_CSR_full
 from src.data.processors import data_processing
@@ -151,7 +153,30 @@ def parse_arguments():
         "--lightrag_plugins",
         type=str,
         default="",
-        help="LightRAG 插件列表，用逗號分隔 (例如: autoschema,dynamic_path)"
+        help="LightRAG 插件列表，用逗號分隔 (目前建議: similar_entity_merge)",
+    )
+    parser.add_argument(
+        "--lightrag_sim_merge_threshold",
+        type=float,
+        default=None,
+        help="similar_entity_merge：餘弦相似度閾值（未指定則用 config.yml lightrag.plugins.similar_entity_merge.threshold）",
+    )
+    parser.add_argument(
+        "--lightrag_sim_merge_text_mode",
+        type=str,
+        default="",
+        choices=["", "name", "name_desc"],
+        help="similar_entity_merge：embedding 用文本（空字串=用 config）name=僅實體名；name_desc=名稱+描述",
+    )
+    parser.add_argument(
+        "--lightrag_sim_merge_force_recopy",
+        action="store_true",
+        help="similar_entity_merge：強制刪除 plugin storage 後自 baseline 重新複製",
+    )
+    parser.add_argument(
+        "--lightrag_sim_merge_dry_run",
+        action="store_true",
+        help="similar_entity_merge：僅產生 log、不呼叫 merge_entities（仍可能複製目錄）",
     )
     
     # 方法參數
@@ -382,15 +407,21 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
     if storage_mode == "none":
         storage_mode = ""
     
+    fast_test_fb = args.graph_build_fast_test or args.qa_dataset_fast_test
+
     storage_path = get_storage_path(
         storage_type="lightrag",
         data_type=args.data_type,
         method=full_sup,
         mode=storage_mode,
-        fast_test=args.graph_build_fast_test or args.qa_dataset_fast_test
+        fast_test=fast_test_fb,
+        custom_tag="",
     )
-    
-    # 建立 LightRAG 索引（如果不存在）
+
+    use_simmerge = bool(plugins) and "similar_entity_merge" in plugins
+    lc = Settings.lightrag_config
+
+    # 建立 LightRAG baseline 索引（如果不存在）；相似合併僅寫入帶 custom_tag 之副本
     schema_info = None
     if not os.path.exists(storage_path) or not os.listdir(storage_path):
         print(f"📂 建立 LightRAG 索引: {storage_path}")
@@ -414,8 +445,9 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
             mode=args.data_mode,
             data_type=args.data_type,
             sup=full_sup,
-            fast_build=args.graph_build_fast_test or args.qa_dataset_fast_test,
-            lightrag_mode=storage_mode
+            fast_build=fast_test_fb,
+            lightrag_mode=storage_mode,
+            custom_tag="",
         )
     else:
         # 如果索引已存在，從已建立的索引讀取 schema 資訊
@@ -427,16 +459,69 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
             return_full_schema=True
         )
         print(f"🌟 使用現有 Schema: {schema_info['entities']}")
-    
-    # 取得 LightRAG 實例
+
+    sim_custom_tag = ""
+    if use_simmerge:
+        from src.rag.plugins.lightrag_similar_entity_merge import (
+            build_simmerge_custom_tag,
+            ensure_similar_merged_lightrag_index,
+        )
+
+        th = (
+            args.lightrag_sim_merge_threshold
+            if args.lightrag_sim_merge_threshold is not None
+            else lc.similar_entity_merge_threshold
+        )
+        tm = (
+            args.lightrag_sim_merge_text_mode
+            if args.lightrag_sim_merge_text_mode
+            else lc.similar_entity_merge_text_mode
+        )
+        force = (
+            args.lightrag_sim_merge_force_recopy or lc.similar_entity_merge_force_recopy
+        )
+        dry = args.lightrag_sim_merge_dry_run or lc.similar_entity_merge_dry_run
+
+        ensure_similar_merged_lightrag_index(
+            Settings,
+            data_type=args.data_type,
+            method=full_sup,
+            mode=storage_mode,
+            fast_test=fast_test_fb,
+            threshold=th,
+            text_mode=tm,
+            force_recopy=force,
+            dry_run=dry,
+        )
+        sim_custom_tag = build_simmerge_custom_tag(th, tm)
+
+    # 取得 LightRAG 實例（similar_entity_merge 時指向 plugin storage）
     lightrag_instance = get_lightrag_engine(
-        Settings, 
-        data_type=args.data_type, 
+        Settings,
+        data_type=args.data_type,
         sup=full_sup,
         mode=storage_mode,
-        fast_test=args.graph_build_fast_test or args.qa_dataset_fast_test
+        fast_test=fast_test_fb,
+        custom_tag=sim_custom_tag,
     )
     
+    # 計算圖譜品質（從 graphml 檔案）
+    _lightrag_gq = {}
+    _actual_path = sim_custom_tag and get_storage_path(
+        storage_type="lightrag", data_type=args.data_type,
+        method=full_sup, mode=storage_mode,
+        fast_test=fast_test_fb, custom_tag=sim_custom_tag,
+    ) or storage_path
+    _graphml = os.path.join(_actual_path, "graph_chunk_entity_relation.graphml")
+    if os.path.exists(_graphml):
+        try:
+            from src.evaluation.metrics.graph_quality import GraphQualityMetrics
+            _lightrag_gq = GraphQualityMetrics.compute_from_graphml(_graphml)
+            print(f"📊 LightRAG 圖譜品質: nodes={_lightrag_gq['node_count']}, "
+                  f"edges={_lightrag_gq['edge_count']}, density={_lightrag_gq['density']}")
+        except Exception as e:
+            print(f"⚠️  LightRAG 圖譜品質評估失敗: {e}")
+
     # 根據模式建立 Wrapper
     if args.lightrag_mode != "none":
         if args.lightrag_mode == "all":
@@ -448,6 +533,7 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
                     mode=mode,
                     schema_info=schema_info
                 )
+                wrapper._graph_quality = _lightrag_gq
                 wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
                 pipelines_to_test.append(wrapper)
         elif args.lightrag_mode == "original":
@@ -457,6 +543,7 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
                 mode=args.lightrag_native_mode,
                 schema_info=schema_info
             )
+            wrapper._graph_quality = _lightrag_gq
             wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
             pipelines_to_test.append(wrapper)
         else:
@@ -466,6 +553,7 @@ def setup_lightrag_pipeline(args, Settings, pipelines_to_test):
                 mode=args.lightrag_mode,
                 schema_info=schema_info
             )
+            wrapper._graph_quality = _lightrag_gq
             wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
             pipelines_to_test.append(wrapper)
     
@@ -631,6 +719,27 @@ def parse_retriever_config(retrievers_str: str) -> dict:
     return config
 
 
+def _run_graph_quality_check(graph_result: dict, source_format: str) -> dict:
+    """build() 完成後計算圖譜品質指標並印出摘要，回傳指標 dict"""
+    try:
+        from src.evaluation.metrics.graph_quality import GraphQualityMetrics
+        metrics = GraphQualityMetrics.compute_from_build(graph_result, source_format)
+        if metrics.get("error"):
+            print(f"⚠️  圖譜品質評估失敗: {metrics['error']}")
+            return {}
+        print(f"📊 圖譜品質: nodes={metrics['node_count']}, edges={metrics['edge_count']}, "
+              f"density={metrics['density']}, components={metrics['num_connected_components']}, "
+              f"orphans={metrics['orphan_node_count']}")
+        storage_path = graph_result.get("storage_path", "")
+        if storage_path:
+            report_path = os.path.join(storage_path, "graph_quality_report.json")
+            GraphQualityMetrics.save_report(metrics, report_path)
+        return metrics
+    except Exception as e:
+        print(f"⚠️  圖譜品質評估異常: {e}")
+        return {}
+
+
 def setup_unified_graph_pipeline(args, Settings, pipelines_to_test):
     """設置統一 Graph Pipeline（使用 UnifiedGraphBuilder + UnifiedGraphRetriever）"""
     if args.unified_graph_type == "none":
@@ -669,6 +778,9 @@ def setup_unified_graph_pipeline(args, Settings, pipelines_to_test):
             # 建圖
             graph_result = builder.build(documents)
             
+            # 圖譜品質評估
+            gq_metrics = _run_graph_quality_check(graph_result, "property_graph")
+            
             # 建立 UnifiedGraphRetriever
             retriever = UnifiedGraphRetriever(
                 graph_source=graph_result,
@@ -687,6 +799,7 @@ def setup_unified_graph_pipeline(args, Settings, pipelines_to_test):
                 documents=None,  # 已經建圖
                 enable_format_conversion=True
             )
+            wrapper._graph_quality = gq_metrics
             
             # 手動設置 graph_data（PG builder 的 nodes/edges 為空，
             # 實際圖譜資料由 retriever 內部的 PropertyGraphIndex 持有）
@@ -740,6 +853,9 @@ def setup_unified_graph_pipeline(args, Settings, pipelines_to_test):
             # 建圖
             graph_result = builder.build(documents)
             
+            # 圖譜品質評估
+            gq_metrics = _run_graph_quality_check(graph_result, "lightrag")
+            
             # 建立 UnifiedGraphRetriever
             retriever = UnifiedGraphRetriever(
                 graph_source=graph_result,
@@ -773,6 +889,7 @@ def setup_unified_graph_pipeline(args, Settings, pipelines_to_test):
                 graph_format=graph_result.get("graph_format", "networkx")
             )
             
+            wrapper._graph_quality = gq_metrics
             wrapper.set_retrieval_max_tokens(args.retrieval_max_tokens)
             pipelines_to_test.append(wrapper)
             print(f"✅ LightRAG Pipeline 設置完成: {wrapper_name}")
@@ -822,6 +939,10 @@ def build_postfix(args):
     # 4. Schema method (如果是 LightRAG 或 unified lightrag)
     if (args.graph_rag_method == "lightrag" or args.unified_graph_type == "lightrag") and args.lightrag_schema_method:
         parts.append(args.lightrag_schema_method)
+
+    # 4b. LightRAG 相似實體合併（與 storage custom_tag 一致，由 main 預先解析 config）
+    if getattr(args, "simmerge_result_tag", None):
+        parts.append(args.simmerge_result_tag)
     
     # 5. Custom postfix
     if args.postfix:
@@ -862,6 +983,25 @@ def main():
     # 取得設定
     Settings = get_settings(model_type=args.model_type)
     # apply_generation_cap_to_settings(Settings, args.generation_max_tokens)  # 已隱藏 generation token 限制
+
+    args.simmerge_result_tag = None
+    if args.lightrag_plugins:
+        _spl = [p.strip() for p in args.lightrag_plugins.split(",") if p.strip()]
+        if "similar_entity_merge" in _spl:
+            from src.rag.plugins.lightrag_similar_entity_merge import build_simmerge_custom_tag
+
+            _lc = Settings.lightrag_config
+            _th = (
+                args.lightrag_sim_merge_threshold
+                if args.lightrag_sim_merge_threshold is not None
+                else _lc.similar_entity_merge_threshold
+            )
+            _tm = (
+                args.lightrag_sim_merge_text_mode
+                if args.lightrag_sim_merge_text_mode
+                else _lc.similar_entity_merge_text_mode
+            )
+            args.simmerge_result_tag = build_simmerge_custom_tag(_th, _tm)
     
     # 快速測試模式連動
     if args.qa_dataset_fast_test:

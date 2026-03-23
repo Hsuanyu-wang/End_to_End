@@ -32,8 +32,18 @@ class EvaluationReporter:
         "bertscore_f1",
         "token_f1",
         "jieba_f1",
+        "rouge1_zh",
+        "rouge2_zh",
+        "rougeL_zh",
+        "rougeLsum_zh",
+        "bleu_zh",
+        "meteor_zh",
         "correctness_score",
         "faithfulness_score",
+        "answer_relevancy",
+        "context_precision",
+        "context_recall",
+        "ragas_faithfulness",
     ]
 
     """
@@ -277,6 +287,15 @@ async def run_evaluation(
             # 提取總結
             df = pd.DataFrame(results)
             summary = reporter.extract_summary_from_df(pipeline.name, df)
+            
+            # 合併圖譜品質指標（若有）
+            gq = getattr(pipeline, "_graph_quality", None)
+            if gq:
+                from src.evaluation.metrics.graph_quality import GraphQualityMetrics
+                for col in GraphQualityMetrics.summary_columns():
+                    if col in gq:
+                        summary[col] = gq[col]
+            
             summary_records.append(summary)
     
     # 生成全局比較報告

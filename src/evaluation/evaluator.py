@@ -269,7 +269,7 @@ class RAGEvaluator:
             "retrieval_recall": recall,
             "retrieval_precision": precision,
             "retrieval_f1_score": f1_score,
-            # 生成指標
+            # 生成指標（已使用 jieba 分詞，適用中英混合文本）
             "rouge1": rouge1,
             "rouge2": rouge2,
             "rougeL": rougeL,
@@ -279,6 +279,13 @@ class RAGEvaluator:
             "bertscore_f1": bert_f1,
             "token_f1": tok_f1,
             "jieba_f1": jieba_f1,
+            # _zh 欄位：與回溯重算結果欄名對齊，值與上方相同（底層指標已使用 jieba）
+            "rouge1_zh": rouge1,
+            "rouge2_zh": rouge2,
+            "rougeL_zh": rougeL,
+            "rougeLsum_zh": rougeLsum,
+            "bleu_zh": bleu,
+            "meteor_zh": meteor,
             # LLM Judge 指標 (LlamaIndex)
             "correctness_score": correctness_score,
             "faithfulness_score": faithfulness_score,

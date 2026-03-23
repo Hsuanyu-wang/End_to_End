@@ -1,8 +1,10 @@
 import os
 import json
+import logging
 import numpy as np
 import nest_asyncio
 import asyncio
+import requests
 from lightrag.lightrag import LightRAG, QueryParam
 from lightrag.utils import EmbeddingFunc
 
@@ -12,12 +14,72 @@ from src.storage import get_storage_path
 
 nest_asyncio.apply()
 
+_logger = logging.getLogger(__name__)
+
 # 嘗試匯入 LightRAG 內建的 LlamaIndex 適配器 (建議更新至最新版 LightRAG 以支援)
 try:
     from lightrag.llm.llama_index_impl import llama_index_complete_if_cache, llama_index_embed
     HAS_LLAMA_INDEX_IMPL = True
 except ImportError:
     HAS_LLAMA_INDEX_IMPL = False
+
+
+def _query_embed_context_length(
+    ollama_url: str, model_name: str, fallback_chars: int = 2560
+) -> int:
+    """
+    向 Ollama API 查詢 embedding model 的實際 context length，
+    並以保守比率換算為安全字元上限。
+    若查詢失敗則回退到 fallback_chars。
+    """
+    try:
+        resp = requests.post(
+            f"{ollama_url}/api/show",
+            json={"name": model_name},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        info = resp.json()
+
+        # Ollama 回傳格式：model_info 或 parameters 中含 num_ctx
+        num_ctx = None
+        model_info = info.get("model_info", {})
+        for key, val in model_info.items():
+            if "context_length" in key:
+                num_ctx = int(val)
+                break
+        if num_ctx is None:
+            params = info.get("parameters", "")
+            if isinstance(params, str):
+                for line in params.splitlines():
+                    if "num_ctx" in line:
+                        num_ctx = int(line.split()[-1])
+                        break
+
+        if num_ctx and num_ctx > 0:
+            # 中文平均 ~1.5 tokens/char；取 90% 安全邊際
+            safe_chars = int(num_ctx / 1.5 * 0.9)
+            _logger.info(
+                "Ollama embedding model %s context_length=%d → 安全字元上限=%d",
+                model_name, num_ctx, safe_chars,
+            )
+            print(
+                f"🔍 Embedding model '{model_name}' context_length={num_ctx} "
+                f"→ 動態安全字元上限={safe_chars}"
+            )
+            return safe_chars
+
+        _logger.warning(
+            "無法從 Ollama API 解析 context_length，使用 fallback=%d", fallback_chars
+        )
+    except Exception as exc:
+        _logger.warning(
+            "查詢 Ollama embedding context length 失敗 (%s)，使用 fallback=%d",
+            exc, fallback_chars,
+        )
+
+    return fallback_chars
+
 
 def _build_llm_and_embed(Settings):
     """建立 LightRAG 所需的 LLM / Embedding 函式（共用邏輯）。"""
@@ -31,15 +93,39 @@ def _build_llm_and_embed(Settings):
         response = await Settings.builder_llm.acomplete(full_prompt)
         return response.text
 
+    config_max = int(getattr(Settings.lightrag_config, "embed_max_input_chars", 2560))
+    ollama_url = getattr(Settings.embed_model, "base_url", "") or ""
+    embed_model_name = getattr(Settings.embed_model, "model_name", "") or ""
+
+    if ollama_url and embed_model_name:
+        max_chars = _query_embed_context_length(ollama_url, embed_model_name, config_max)
+    else:
+        max_chars = config_max
+
+    # 同步寫回 config 供 entity merge 等下游元件使用
+    if hasattr(Settings, "lightrag_config"):
+        Settings.lightrag_config.embed_max_input_chars = max_chars
+
     async def manual_embed_func(texts: list[str]) -> np.ndarray:
         if isinstance(texts, str):
             texts = [texts]
-        embeddings = await Settings.embed_model.aget_text_embedding_batch(texts)
+        truncated = []
+        for t in texts:
+            if len(t) > max_chars:
+                _logger.debug(
+                    "嵌入輸入截斷: 原長度 %d → %d 字元",
+                    len(t),
+                    max_chars,
+                )
+                truncated.append(t[:max_chars])
+            else:
+                truncated.append(t)
+        embeddings = await Settings.embed_model.aget_text_embedding_batch(truncated)
         return np.array(embeddings)
 
     custom_embed_func = EmbeddingFunc(
         embedding_dim=EMBEDDING_DIM,
-        max_token_size=8192,
+        max_token_size=max_chars,
         func=manual_embed_func
     )
     return custom_llm_func, custom_embed_func
@@ -71,7 +157,14 @@ def _create_lightrag_at_path(Settings, working_dir: str):
     return rag
 
 
-def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_test: bool = False, mode: str = ""):
+def get_lightrag_engine(
+    Settings,
+    data_type: str = "DI",
+    sup: str = "",
+    fast_test: bool = False,
+    mode: str = "",
+    custom_tag: str = "",
+):
     """
     建立 LightRAG 實例（透過 StorageManager 推算路徑）
     
@@ -81,6 +174,7 @@ def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_tes
         sup: 自訂標籤（用於區分不同實驗）
         fast_test: 是否為快速測試模式
         mode: 檢索模式（local/global/hybrid 等，用於區分不同 mode 的 storage）
+        custom_tag: StorageManager 自訂標籤（例如相似實體合併實驗目錄）
     
     Returns:
         LightRAG 實例
@@ -90,11 +184,21 @@ def get_lightrag_engine(Settings, data_type: str = "DI", sup: str = "", fast_tes
         data_type=data_type,
         method=sup if sup else "default",
         mode=mode,
-        fast_test=fast_test
+        fast_test=fast_test,
+        custom_tag=custom_tag,
     )
     return _create_lightrag_at_path(Settings, working_dir)
 
-def build_lightrag_index(Settings, mode: str = "natural_text", data_type: str = "DI", sup: str = "", fast_build: bool = False, lightrag_mode: str = "") -> None:
+
+def build_lightrag_index(
+    Settings,
+    mode: str = "natural_text",
+    data_type: str = "DI",
+    sup: str = "",
+    fast_build: bool = False,
+    lightrag_mode: str = "",
+    custom_tag: str = "",
+) -> None:
     """
     執行資料插入與圖譜建立
     
@@ -105,8 +209,16 @@ def build_lightrag_index(Settings, mode: str = "natural_text", data_type: str = 
         sup: 自訂標籤
         fast_build: 是否快速建立
         lightrag_mode: LightRAG 檢索模式（用於區分 storage）
+        custom_tag: 寫入之索引目錄 custom_tag（預設 baseline 為空字串）
     """
-    rag = get_lightrag_engine(Settings, data_type=data_type, sup=sup, fast_test=fast_build, mode=lightrag_mode)
+    rag = get_lightrag_engine(
+        Settings,
+        data_type=data_type,
+        sup=sup,
+        fast_test=fast_build,
+        mode=lightrag_mode,
+        custom_tag=custom_tag,
+    )
     print("正在處理文本並匯入 LightRAG (此過程包含 LLM 實體與關係抽取，可能較久)...")
     docs = data_processing(mode=mode, data_type=data_type)
     if not docs:

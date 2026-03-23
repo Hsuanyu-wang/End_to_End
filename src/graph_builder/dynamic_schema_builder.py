@@ -155,10 +155,24 @@ class DynamicSchemaBuilder(BaseGraphBuilder):
             "method": "dynamic_schema",
             "note": "動態推斷,無預定義 Schema"
         }
+
+        # 嘗試匯出 GraphML 以便品質分析和 Neo4j 可視化
+        graphml_path = None
+        try:
+            from src.graph_adapter.base_adapter import GraphFormatAdapter
+            G = GraphFormatAdapter.to_networkx(
+                {"graph_index": self.graph_index, "graph_format": "property_graph"},
+                source_format="property_graph"
+            )
+            if G.number_of_nodes() > 0:
+                graphml_path = os.path.join(self.storage_path, "graph_output.graphml")
+                GraphFormatAdapter.save_graphml(G, graphml_path)
+        except Exception as e:
+            print(f"⚠️  GraphML 匯出失敗: {e}")
         
         return {
-            "nodes": [],  # PropertyGraph 不直接返回節點列表
-            "edges": [],  # PropertyGraph 不直接返回邊列表
+            "nodes": [],
+            "edges": [],
             "metadata": {
                 "num_documents": len(documents),
                 "fast_test": self.fast_test,
@@ -166,5 +180,6 @@ class DynamicSchemaBuilder(BaseGraphBuilder):
             },
             "schema_info": schema_info,
             "storage_path": self.storage_path,
-            "graph_format": "property_graph"
+            "graph_format": "property_graph",
+            "graphml_path": graphml_path,
         }

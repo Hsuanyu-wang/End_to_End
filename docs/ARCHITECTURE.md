@@ -103,6 +103,7 @@ graph TB
 | 路徑 | 主要旗標 | 實作入口（`run_evaluation.py`） |
 |------|-----------|-------------------------------|
 | LightRAG 端到端 | `--graph_rag_method lightrag`（及 `--lightrag_mode` 等） | `setup_lightrag_pipeline` |
+| LightRAG 相似實體合併（可選） | `--lightrag_plugins similar_entity_merge`（閾值等見 `--lightrag_sim_merge_*`） | `src/rag/plugins/lightrag_similar_entity_merge.py`；行為說明見 [LIGHTRAG_ENTITY_MERGE.md](LIGHTRAG_ENTITY_MERGE.md) |
 | 統一 PropertyGraph | `--unified_graph_type property_graph`、`--pg_extractors`、`--pg_retrievers`、`--pg_combination_mode` | `setup_unified_graph_pipeline` → `UnifiedGraphBuilder` + `UnifiedGraphRetriever` → `ModularGraphWrapper` |
 | 統一 LightRAG | `--unified_graph_type lightrag` | 同上，`builder_type=lightrag` |
 | 模組化 Builder+Retriever | `--graph_preset` 或同時 `--graph_builder` + `--graph_retriever` | `setup_modular_graph_pipeline` → `PipelineFactory` |

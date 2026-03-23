@@ -70,6 +70,15 @@ class LightRAGConfig:
         self.storage_path_DIR = lightrag_config.get("lightrag_storage_path_DIR", "")
         self.language = lightrag_config.get("lightrag_language", "Chinese")
         self.entity_types = lightrag_config.get("lightrag_entity_types", [])
+        # 送入 Ollama / 向量庫嵌入前之字元截斷上限（中文 token 密度高，預設偏保守）
+        self.embed_max_input_chars = int(lightrag_config.get("embed_max_input_chars", 2560))
+        # 相似實體合併 plugin（見 docs/LIGHTRAG_ENTITY_MERGE.md）
+        _plugins = lightrag_config.get("plugins") or {}
+        _sem = _plugins.get("similar_entity_merge") or {}
+        self.similar_entity_merge_threshold = float(_sem.get("threshold", 0.8))
+        self.similar_entity_merge_text_mode = str(_sem.get("text_mode", "name"))
+        self.similar_entity_merge_force_recopy = bool(_sem.get("force_recopy", False))
+        self.similar_entity_merge_dry_run = bool(_sem.get("dry_run", False))
 
 
 class ModelSettings:

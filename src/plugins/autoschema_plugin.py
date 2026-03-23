@@ -9,7 +9,7 @@ from src.plugins.base import BaseKGPlugin
 from src.plugins.registry import register_plugin
 
 
-@register_plugin("autoschema")
+@register_plugin("autoschema", enabled=False)
 class AutoSchemaKGPlugin(BaseKGPlugin):
     """
     AutoSchemaKG 插件

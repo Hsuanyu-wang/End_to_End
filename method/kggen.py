@@ -6,10 +6,10 @@ from tqdm import tqdm
 # 如果套件支援 litellm 格式，可以使用 model="ollama/llama3"
 # 由於已經設定了 OPENAI_API_BASE，這裡直接填寫模型名稱也可以
 kg = KGGen(
-    model="openai/qwen2.5-coder:7b",       # 請替換成你在 Ollama 中下載的模型，例如 "llama3", "mistral", "gemma2"
+    model="openai/qwen2.5:7b",       # 請替換成你在 Ollama 中下載的模型，例如 "llama3", "mistral", "gemma2"
     temperature=0.0,      # 知識圖譜生成建議保持 0.0 以降低幻覺
     api_key="ollama",      # 填入任意字串即可，Ollama 本地端不需要真實的 API Key
-    api_base="http://192.168.63.184:11434/v1"
+    api_base="http://192.168.63.174:11434/v1"
 )
 
 documents_texts = []
@@ -51,13 +51,13 @@ print("開始生成知識圖譜 (Chunking Mode)...")
 
 for doc in tqdm(documents_texts, desc="生成進度"):
     # 這裡可以逐筆 generate，最後再 aggregate
-    g = kg.generate(input_data=doc, context="這是一份關於 IT 系統維護紀錄、Splunk 軟體保養與客戶工程師對應關係的知識圖譜")
+    g = kg.generate(input_data=doc, context="IT系統維護紀錄")
     all_graphs.append(g)
     
 # 最後合併並聚類
 print("正在合併圖譜並進行實體聚類 (Clustering)...")
 final_graph = kg.aggregate(all_graphs)
-graph_2 = kg.cluster(final_graph, context="這是一份關於 IT 系統維護紀錄、Splunk 軟體保養與客戶工程師對應關係的知識圖譜")
+graph_2 = kg.cluster(final_graph, context="IT系統維護紀錄")
     
 # print("\n--- Graph 2 ---")
 print("\n--- 知識圖譜生成完成 ---")

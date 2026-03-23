@@ -9,7 +9,7 @@ from src.plugins.base import BaseKGPlugin
 from src.plugins.registry import register_plugin
 
 
-@register_plugin("neo4j")
+@register_plugin("neo4j", enabled=False)
 class Neo4jBuilderPlugin(BaseKGPlugin):
     """
     Neo4j LLM Graph Builder 插件

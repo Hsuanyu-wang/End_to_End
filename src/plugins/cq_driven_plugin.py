@@ -9,7 +9,7 @@ from src.plugins.base import BaseKGPlugin
 from src.plugins.registry import register_plugin
 
 
-@register_plugin("cq_driven")
+@register_plugin("cq_driven", enabled=False)
 class CQDrivenPlugin(BaseKGPlugin):
     """
     CQ-Driven Ontology 插件

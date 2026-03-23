@@ -2,6 +2,7 @@
 生成評估指標
 
 提供各種文本生成品質評估指標，包括 ROUGE, BLEU, METEOR, BERTScore, Token F1, Jieba F1
+所有 n-gram 類指標（ROUGE / BLEU / METEOR）皆使用 jieba 分詞，適用於中英混合文本。
 """
 
 import re
@@ -9,132 +10,161 @@ import jieba
 from typing import Tuple
 from collections import Counter
 import evaluate
+from rouge_score import rouge_scorer
 from .base import BaseMetric
+
+
+def _jieba_tokenize(text: str) -> str:
+    """以 jieba 分詞後用空格連接，供 BLEU / METEOR 等 whitespace-based 指標使用。"""
+    if not text:
+        return ""
+    return " ".join(jieba.lcut(str(text)))
+
+
+class _JiebaTokenizer:
+    """供 rouge_score.RougeScorer 使用的自訂 tokenizer。"""
+    def tokenize(self, text: str):
+        return jieba.lcut(str(text))
 
 
 class ROUGEMetric(BaseMetric):
     """
     ROUGE (Recall-Oriented Understudy for Gisting Evaluation) 指標
-    
-    定義：評估生成文本與參考文本之間的 n-gram 重疊程度
+
+    使用 rouge_score 搭配 jieba tokenizer，正確處理中文 n-gram。
+
     變體：
         - ROUGE-1: unigram 重疊
         - ROUGE-2: bigram 重疊
         - ROUGE-L: 最長公共子序列
         - ROUGE-Lsum: 用於多句摘要
-    
+
     範圍：[0, 1]
     """
-    
+
     def __init__(self):
         super().__init__(
             name="rouge",
-            description="評估 n-gram 重疊程度"
+            description="評估 n-gram 重疊程度（jieba 分詞）"
         )
-        self.metric = evaluate.load("rouge")
-    
+        self._tokenizer = _JiebaTokenizer()
+        self._scorer = rouge_scorer.RougeScorer(
+            ["rouge1", "rouge2", "rougeL", "rougeLsum"],
+            tokenizer=self._tokenizer,
+        )
+
     def compute(self, generated_answer: str, ground_truth_answer: str) -> Tuple[float, float, float, float]:
         """
         計算 ROUGE 分數
-        
+
         Args:
             generated_answer: 生成的答案
             ground_truth_answer: 標準答案
-        
+
         Returns:
-            (rouge1, rouge2, rougeL, rougeLsum) 四元組
+            (rouge1, rouge2, rougeL, rougeLsum) 四元組（取 fmeasure）
         """
         if not generated_answer or not ground_truth_answer:
             return 0.0, 0.0, 0.0, 0.0
-        
-        score = self.metric.compute(
-            predictions=[generated_answer],
-            references=[ground_truth_answer]
+
+        scores = self._scorer.score(
+            target=str(ground_truth_answer),
+            prediction=str(generated_answer),
         )
-        
+
         return (
-            score.get("rouge1", 0.0),
-            score.get("rouge2", 0.0),
-            score.get("rougeL", 0.0),
-            score.get("rougeLsum", 0.0)
+            scores["rouge1"].fmeasure,
+            scores["rouge2"].fmeasure,
+            scores["rougeL"].fmeasure,
+            scores["rougeLsum"].fmeasure,
         )
 
 
 class BLEUMetric(BaseMetric):
     """
     BLEU (Bilingual Evaluation Understudy) 指標
-    
-    定義：評估生成文本與參考文本之間的精準匹配程度
-    特點：對詞序敏感，常用於機器翻譯評估
-    
+
+    使用 jieba 分詞後再送入 evaluate，適用於中英混合文本。
+
     範圍：[0, 1]
     """
-    
+
     def __init__(self):
         super().__init__(
             name="bleu",
-            description="評估精準匹配程度"
+            description="評估精準匹配程度（jieba 分詞）"
         )
         self.metric = evaluate.load("bleu")
-    
+
     def compute(self, generated_answer: str, ground_truth_answer: str) -> float:
         """
         計算 BLEU 分數
-        
+
         Args:
             generated_answer: 生成的答案
             ground_truth_answer: 標準答案
-        
+
         Returns:
             BLEU 分數
         """
         if not generated_answer or not ground_truth_answer:
             return 0.0
-        
+
+        pred_tok = _jieba_tokenize(generated_answer)
+        ref_tok = _jieba_tokenize(ground_truth_answer)
+
+        if not pred_tok or not ref_tok:
+            return 0.0
+
         score = self.metric.compute(
-            predictions=[generated_answer],
-            references=[ground_truth_answer]
+            predictions=[pred_tok],
+            references=[ref_tok]
         )
-        
+
         return score.get("bleu", 0.0)
 
 
 class METEORMetric(BaseMetric):
     """
     METEOR (Metric for Evaluation of Translation with Explicit ORdering) 指標
-    
-    定義：結合精準度與召回率，並考慮同義詞與詞幹變化
-    特點：比 BLEU 更關注召回率
-    
+
+    使用 jieba 分詞後再送入 evaluate，適用於中英混合文本。
+
     範圍：[0, 1]
     """
-    
+
     def __init__(self):
         super().__init__(
             name="meteor",
-            description="結合精準度與召回率的評估"
+            description="結合精準度與召回率的評估（jieba 分詞）"
         )
         self.metric = evaluate.load("meteor")
-    
+
     def compute(self, generated_answer: str, ground_truth_answer: str) -> float:
         """
         計算 METEOR 分數
-        
+
         Args:
             generated_answer: 生成的答案
             ground_truth_answer: 標準答案
-        
+
         Returns:
             METEOR 分數
         """
         if not generated_answer or not ground_truth_answer:
             return 0.0
-        
+
+        pred_tok = _jieba_tokenize(generated_answer)
+        ref_tok = _jieba_tokenize(ground_truth_answer)
+
+        if not pred_tok or not ref_tok:
+            return 0.0
+
         score = self.metric.compute(
-            predictions=[generated_answer],
-            references=[ground_truth_answer]
+            predictions=[pred_tok],
+            references=[ref_tok]
         )
-        
+
         return score.get("meteor", 0.0)
 
 

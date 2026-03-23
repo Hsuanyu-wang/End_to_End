@@ -9,7 +9,7 @@ from src.plugins.base import BaseKGPlugin
 from src.plugins.registry import register_plugin
 
 
-@register_plugin("graphiti")
+@register_plugin("graphiti", enabled=False)
 class GraphitiPlugin(BaseKGPlugin):
     """
     Graphiti 插件

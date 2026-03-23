@@ -209,21 +209,24 @@ class LightRAGWrapper(BaseRAGWrapper):
         if raw_data and isinstance(raw_data, dict):
             data_content = raw_data.get("data", {})
             
-            # 提取 entities
+            # 提取 entities（與 LightRAGRetriever._parse_query_data 對齊：description 優先）
             if "entities" in data_content and isinstance(data_content["entities"], list):
                 for entity in data_content["entities"]:
                     if isinstance(entity, dict):
-                        entity_text = entity.get("entity_name", "") or entity.get("content", "")
+                        entity_text = entity.get("description", "") or entity.get("entity_name", "")
                         if entity_text:
                             entity_contexts.append(str(entity_text))
                     elif isinstance(entity, str):
                         entity_contexts.append(entity)
             
-            # 提取 relationships
+            # 提取 relationships（與 LightRAGRetriever._parse_query_data 對齊：description 優先，fallback src->tgt）
             if "relationships" in data_content and isinstance(data_content["relationships"], list):
                 for rel in data_content["relationships"]:
                     if isinstance(rel, dict):
-                        rel_text = rel.get("description", "") or rel.get("content", "")
+                        desc = rel.get("description", "") or ""
+                        src = rel.get("src_id", "")
+                        tgt = rel.get("tgt_id", "")
+                        rel_text = desc if desc else f"{src} -> {tgt}"
                         if rel_text:
                             relation_contexts.append(str(rel_text))
                     elif isinstance(rel, str):

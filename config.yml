@@ -1,15 +1,15 @@
 model:
-  ollama_url: "http://192.168.63.184:11434"
+  ollama_url: "http://192.168.63.174:11434"
   embed_model: "nomic-embed-text" # bge-m3, nomic-embed-text, jinaai/jina-embeddings-v2-base-code
   embed_dim: 768
   llm_model: "qwen2.5:7b" # llama3.1:8b, mistral-small:24b
 
 eval_model:
-  ollama_url: "http://192.168.63.184:11434"
+  ollama_url: "http://192.168.63.174:11434"
   llm_model: "qwen2.5:14b" # llama3.3:70b, llama3:70b-instruct, gpt-oss:120b
 
 builder_model:
-  ollama_url: "http://192.168.63.184:11434"
+  ollama_url: "http://192.168.63.174:11434"
   llm_model: "qwen2.5:7b"
 
 data:
@@ -21,6 +21,8 @@ data:
 lightrag:
   lightrag_storage_path_DIR: "/home/End_to_End_RAG/storage/lightrag_temporal"
   lightrag_language: "Chinese"
+  # 嵌入函式單段文字字元上限（fallback 值）；啟動時會自動向 Ollama 查詢 embedding model 的實際 context_length 並動態計算安全上限，僅在查詢失敗時才使用此值
+  embed_max_input_chars: 2560
   # lightrag_entity_types: [
   #     "Record",
   #     "Customer",
@@ -135,6 +137,13 @@ lightrag:
         "DLP",
         "BTDC2"
     ]
+  # LightRAG 可選後處理（需搭配 CLI --lightrag_plugins similar_entity_merge）
+  plugins:
+    similar_entity_merge:
+      threshold: 0.90
+      text_mode: "name"   # name | name_desc
+      force_recopy: false
+      dry_run: false
 
 storage:
   root_dir: "/home/End_to_End_RAG/storage"
@@ -152,7 +161,7 @@ schema:
     root_dir: "/home/End_to_End_RAG/storage/schema_cache"
     force_rebuild: false
     
-  method: "iterative_evolution"  # lightrag_default, iterative_evolution, llm_dynamic, autoschema, dynamic_schema
+  method: "iterative_evolution"  # lightrag_default, iterative_evolution, llm_dynamic, llamaindex_dynamic
   use_entity_disambiguation: true
   disambiguation_threshold: 0.85
   
