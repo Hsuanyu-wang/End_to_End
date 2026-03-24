@@ -210,12 +210,44 @@ class EvaluationReporter:
         return summary_csv_path
 
     @staticmethod
+    def _normalize_cell_value(value: Any) -> Any:
+        """將 dict/list 轉為 JSON 字串，避免寫入 Excel 後不可讀。"""
+        if isinstance(value, (dict, list)):
+            return json.dumps(value, ensure_ascii=False, sort_keys=True)
+        return value
+
+    @staticmethod
+    def write_run_config(
+        run_dir: str,
+        postfix: str = "",
+        is_fast_test: bool = False,
+        run_metadata: Dict[str, Any] = None,
+        pipeline_metadata_map: Dict[str, Dict[str, Any]] = None,
+    ) -> str:
+        """在每次 run 目錄寫入可回溯設定檔。"""
+        run_config_path = os.path.join(run_dir, "run_config.json")
+        payload = {
+            "run_timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "run_dir": os.path.basename(run_dir.rstrip("/")),
+            "postfix": postfix,
+            "is_fast_test": is_fast_test,
+            "run_metadata": run_metadata or {},
+            "pipeline_metadata_map": pipeline_metadata_map or {},
+        }
+        with open(run_config_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=True)
+        print(f"🧾 已寫入 run 設定快照: {run_config_path}")
+        return run_config_path
+
+    @staticmethod
     def append_master_summary(
         summary_records: List[Dict[str, Any]],
         root_results_dir: str,
         run_dir: str,
         postfix: str = "",
         is_fast_test: bool = False,
+        run_metadata: Dict[str, Any] = None,
+        pipeline_metadata_map: Dict[str, Dict[str, Any]] = None,
     ) -> str:
         """將本次 summary 附加到 results/{exp|test}/{資料類別}/global_summary.xlsx。"""
         if not summary_records:
@@ -234,6 +266,14 @@ class EvaluationReporter:
             row["run_dir"] = run_dir_name
             row["postfix"] = postfix
             row["is_fast_test"] = is_fast_test
+            if run_metadata:
+                for key, value in run_metadata.items():
+                    row[key] = EvaluationReporter._normalize_cell_value(value)
+            if pipeline_metadata_map:
+                pipeline_name = row.get("pipeline_name")
+                pipeline_meta = pipeline_metadata_map.get(pipeline_name, {})
+                for key, value in pipeline_meta.items():
+                    row[key] = EvaluationReporter._normalize_cell_value(value)
             enriched_records.append(row)
 
         current_df = pd.DataFrame(enriched_records)
@@ -252,6 +292,8 @@ async def run_evaluation(
     postfix: str = "",
     results_root_dir: str = "/home/End_to_End_RAG/results",
     is_fast_test: bool = False,
+    run_metadata: Dict[str, Any] = None,
+    pipeline_metadata_map: Dict[str, Dict[str, Any]] = None,
 ) -> None:
     """
     執行完整的評估流程（向後兼容函數）
@@ -273,6 +315,13 @@ async def run_evaluation(
     reporter = EvaluationReporter(base_dir=base_eval_dir)
     
     print(f"📁 建立實驗數據主資料夾: {base_eval_dir}")
+    EvaluationReporter.write_run_config(
+        run_dir=base_eval_dir,
+        postfix=postfix,
+        is_fast_test=is_fast_test,
+        run_metadata=run_metadata,
+        pipeline_metadata_map=pipeline_metadata_map,
+    )
     
     summary_records = []
     
@@ -306,6 +355,8 @@ async def run_evaluation(
         run_dir=base_eval_dir,
         postfix=postfix,
         is_fast_test=is_fast_test,
+        run_metadata=run_metadata,
+        pipeline_metadata_map=pipeline_metadata_map,
     )
 
 
@@ -316,6 +367,8 @@ async def run_evaluation_with_token_budget(
     baseline_method: str = "vector_hybrid",
     results_root_dir: str = "/home/End_to_End_RAG/results",
     is_fast_test: bool = False,
+    run_metadata: Dict[str, Any] = None,
+    pipeline_metadata_map: Dict[str, Dict[str, Any]] = None,
 ) -> None:
     """
     執行包含token budget控制的兩階段評估流程
@@ -347,6 +400,13 @@ async def run_evaluation_with_token_budget(
     token_controller = TokenBudgetController()
     
     print(f"📁 建立實驗數據主資料夾: {base_eval_dir}")
+    EvaluationReporter.write_run_config(
+        run_dir=base_eval_dir,
+        postfix=postfix,
+        is_fast_test=is_fast_test,
+        run_metadata=run_metadata,
+        pipeline_metadata_map=pipeline_metadata_map,
+    )
     print("\n" + "="*80)
     print("🎯 兩階段Token Budget評估流程")
     print("="*80)
@@ -449,6 +509,8 @@ async def run_evaluation_with_token_budget(
         run_dir=base_eval_dir,
         postfix=f"{postfix}_token_budget",
         is_fast_test=is_fast_test,
+        run_metadata=run_metadata,
+        pipeline_metadata_map=pipeline_metadata_map,
     )
     
     # 生成token分析報告

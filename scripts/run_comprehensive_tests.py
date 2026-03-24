@@ -124,47 +124,90 @@ TEST_CONFIGS = {
         }
     },
     "advanced_retrieval": {
-        "reranking": {
-            "name": "LightRAG Hybrid + Re-ranking",
-            "args": ["--graph_rag_method", "lightrag", "--lightrag_mode", "hybrid", "--use_reranking"],
-            "description": "使用 Cross-Encoder Re-ranking"
+        "one_hop": {
+            "name": "LightRAG + One-Hop Traversal",
+            "args": ["--graph_type", "lightrag", "--lightrag_mode", "hybrid", "--graph_retrieval", "one_hop"],
+            "description": "單跳實體關聯遍歷"
         },
-        "adaptive_routing": {
-            "name": "LightRAG + Adaptive Router",
-            "args": ["--graph_rag_method", "lightrag", "--adaptive_routing"],
-            "description": "智能查詢路由"
+        "ppr": {
+            "name": "LightRAG + PPR Traversal",
+            "args": [
+                "--graph_type", "lightrag",
+                "--lightrag_mode", "hybrid",
+                "--graph_retrieval", "ppr",
+                "--ppr_alpha", "0.85",
+                "--ppr_weight_mode", "semantic"
+            ],
+            "description": "PPR 走訪策略"
         },
-        "tog_retrieval": {
-            "name": "LightRAG + ToG Retrieval",
-            "args": ["--graph_rag_method", "lightrag", "--use_tog"],
-            "description": "Think-on-Graph 迭代檢索"
+        "pcst": {
+            "name": "LightRAG + PCST Traversal",
+            "args": [
+                "--graph_type", "lightrag",
+                "--lightrag_mode", "hybrid",
+                "--graph_retrieval", "pcst",
+                "--pcst_cost_mode", "inverse_weight"
+            ],
+            "description": "PCST 走訪策略"
         },
-        "full_pipeline": {
-            "name": "Full Pipeline (All Components)",
-            "args": ["--graph_rag_method", "lightrag", "--enable_all_components"],
-            "description": "啟用所有檢索增強元件"
+        "tog": {
+            "name": "LightRAG + ToG Traversal",
+            "args": [
+                "--graph_type", "lightrag",
+                "--lightrag_mode", "hybrid",
+                "--graph_retrieval", "tog",
+                "--tog_max_iterations", "2",
+                "--tog_beam_width", "3"
+            ],
+            "description": "Think-on-Graph 迭代式檢索"
         }
     },
     "ablation_study": {
-        "disambiguation_only": {
-            "name": "Entity Disambiguation Only",
-            "args": ["--graph_rag_method", "lightrag", "--enable_disambiguation"],
-            "description": "僅啟用實體消歧"
+        "token_budget_hybrid": {
+            "name": "Token Budget 實驗（基準：Vector Hybrid）",
+            "args": [
+                "--vector_method", "hybrid",
+                "--graph_type", "lightrag",
+                "--lightrag_mode", "hybrid",
+                "--graph_retrieval", "native",
+                "--enable_token_budget",
+                "--token_budget_baseline", "vector_hybrid"
+            ]
         },
-        "reranking_only": {
-            "name": "Re-ranking Only",
-            "args": ["--graph_rag_method", "lightrag", "--enable_reranking"],
-            "description": "僅啟用 Re-ranking"
+        "token_budget_vector": {
+            "name": "Token Budget 實驗（基準：Vector）",
+            "args": [
+                "--vector_method", "vector",
+                "--graph_type", "lightrag",
+                "--lightrag_mode", "hybrid",
+                "--graph_retrieval", "native",
+                "--enable_token_budget",
+                "--token_budget_baseline", "vector_vector"
+            ]
         },
-        "disambiguation_reranking": {
-            "name": "Disambiguation + Re-ranking",
-            "args": ["--graph_rag_method", "lightrag", "--enable_disambiguation", "--enable_reranking"],
-            "description": "消歧 + Re-ranking"
+        "token_budget_bm25": {
+            "name": "Token Budget 實驗（基準：BM25）",
+            "args": [
+                "--vector_method", "bm25",
+                "--graph_type", "lightrag",
+                "--lightrag_mode", "hybrid",
+                "--graph_retrieval", "native",
+                "--enable_token_budget",
+                "--token_budget_baseline", "vector_bm25"
+            ]
         },
-        "auto_ablation": {
-            "name": "Automatic Ablation Study",
-            "args": ["--graph_rag_method", "lightrag", "--ablation_study"],
-            "description": "自動測試所有元件組合 (2^n 種配置)"
+        "token_budget_tog": {
+            "name": "Token Budget 實驗（基準：Vector Hybrid，+ ToG）",
+            "args": [
+                "--vector_method", "hybrid",
+                "--graph_type", "lightrag",
+                "--lightrag_mode", "hybrid",
+                "--graph_retrieval", "tog",
+                "--tog_max_iterations", "1",
+                "--tog_beam_width", "2",
+                "--enable_token_budget",
+                "--token_budget_baseline", "vector_hybrid"
+            ]
         }
     }
 }
@@ -192,8 +235,8 @@ def display_main_menu() -> str:
     print("  4. LightRAG Schema 方法測試 (4 種 schema) ✨ 支援 Cache")
     print("  5. LightRAG 檢索模式測試 (6 種模式)")
     print("  6. 模組化組合測試 (4 種組合)")
-    print("  7. 進階檢索方法測試 (4 種方法) ✨ 新功能")
-    print("  8. Ablation Study (4 種配置) ✨ 新功能")
+    print("  7. Graph Traversal 策略測試 (4 種方法)")
+    print("  8. Token Budget 實驗 (4 種配置)")
     print("  9. 完整實驗 (所有方法)")
     print(" 10. 自訂選擇")
     print(" 11. Schema Cache 管理工具")
@@ -213,8 +256,8 @@ def display_category_menu(category: str, configs: Dict) -> List[str]:
         "lightrag_schema": "LightRAG Schema 方法 (支援 Cache)",
         "lightrag_mode": "LightRAG 檢索模式",
         "modular_combo": "模組化組合",
-        "advanced_retrieval": "進階檢索方法 ✨",
-        "ablation_study": "Ablation Study ✨"
+        "advanced_retrieval": "Graph Traversal 策略",
+        "ablation_study": "Token Budget 實驗"
     }
     
     print(f"\n{category_names.get(category, category)} 測試選項：")
@@ -294,8 +337,7 @@ def ask_force_rebuild() -> bool:
     return choice == "2"
 
 
-def build_command(test_config: Dict, fast_test: bool, data_type: str, 
-                  use_cache: bool = True, force_rebuild: bool = False) -> List[str]:
+def build_command(test_config: Dict, fast_test: bool, data_type: str) -> List[str]:
     """建立執行命令"""
     base_cmd = ["python", "scripts/run_evaluation.py"]
     
@@ -308,14 +350,7 @@ def build_command(test_config: Dict, fast_test: bool, data_type: str,
     # 加入快速測試參數
     if fast_test:
         base_cmd.append("--qa_dataset_fast_test")
-    
-    # 加入 Schema Cache 參數（如果該測試支援）
-    if test_config.get("use_cache", False):
-        if use_cache:
-            base_cmd.append("--use_schema_cache")
-        if force_rebuild:
-            base_cmd.append("--force_rebuild_schema")
-    
+
     return base_cmd
 
 
@@ -373,9 +408,36 @@ def run_tests_from_selections(selections: List[Tuple[str, Dict]], fast_test: boo
         if force_rebuild:
             print(f"強制重建: 是")
     input("\n按 Enter 開始執行...")
+
+    # Schema Cache 相關參數在 run_evaluation.py 目前不支援；
+    # 因此用「清理快取檔案」來達到「不用快取 / 強制重建」的效果。
+    if has_cache_support and (not use_cache or force_rebuild):
+        methods_to_clean = set()
+        for _, cfg in selections:
+            if not cfg.get("use_cache", False):
+                continue
+            args = cfg.get("args", [])
+            for idx, token in enumerate(args):
+                if token in ("--lightrag_schema_method", "--schema_method") and idx + 1 < len(args):
+                    method = args[idx + 1]
+                    if method and method != "lightrag_default":
+                        methods_to_clean.add(method)
+
+        if methods_to_clean:
+            print("\n🗑️  開始清理 Schema Cache（用於重新生成 Schema）")
+            for m in sorted(methods_to_clean):
+                print(f"  - 清理方法：{m}")
+                subprocess.run(
+                    ["python", "scripts/manage_schema_cache.py", "--clean", "--method", m],
+                    cwd="/home/End_to_End_RAG",
+                    check=True,
+                    capture_output=False,
+                )
+        else:
+            print("\n未偵測到需清理的 schema 方法，將直接執行。")
     
     for i, (test_name, test_config) in enumerate(selections, 1):
-        command = build_command(test_config, fast_test, data_type, use_cache, force_rebuild)
+        command = build_command(test_config, fast_test, data_type)
         success, elapsed = run_test(test_name, command, i, total_tests)
         results.append({
             "name": test_name,
@@ -505,8 +567,8 @@ def handle_custom_selection():
             "lightrag_schema": "LightRAG Schema 方法",
             "lightrag_mode": "LightRAG 檢索模式",
             "modular_combo": "模組化組合",
-            "advanced_retrieval": "進階檢索方法 ✨",
-            "ablation_study": "Ablation Study ✨"
+            "advanced_retrieval": "Graph Traversal 策略",
+            "ablation_study": "Token Budget 實驗"
         }
         
         print(f"\n{category_names.get(category, category)}:")

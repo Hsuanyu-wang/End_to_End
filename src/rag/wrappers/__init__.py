@@ -6,7 +6,7 @@ RAG Wrappers 套件
 
 from .base_wrapper import BaseRAGWrapper
 from .vector_wrapper import VectorRAGWrapper, RAGPipelineWrapper
-from .lightrag_wrapper import LightRAGWrapper, LightRAGWrapper_Original
+from .lightrag_wrapper import LightRAGWrapper, LightRAGWrapper_Original, LightRAGStrategyWrapper
 from .temporal_wrapper import TemporalLightRAGWrapper, TemporalWrapper
 from .modular_graph_wrapper import ModularGraphWrapper
 
@@ -16,6 +16,7 @@ __all__ = [
     "RAGPipelineWrapper",
     "LightRAGWrapper",
     "LightRAGWrapper_Original",
+    "LightRAGStrategyWrapper",
     "TemporalLightRAGWrapper",
     "TemporalWrapper",
     "ModularGraphWrapper",

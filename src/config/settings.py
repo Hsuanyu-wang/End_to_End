@@ -76,9 +76,19 @@ class LightRAGConfig:
         _plugins = lightrag_config.get("plugins") or {}
         _sem = _plugins.get("similar_entity_merge") or {}
         self.similar_entity_merge_threshold = float(_sem.get("threshold", 0.8))
+        _raw_tmax = _sem.get("threshold_max")
+        self.similar_entity_merge_threshold_max = (
+            None if _raw_tmax is None else float(_raw_tmax)
+        )
         self.similar_entity_merge_text_mode = str(_sem.get("text_mode", "name"))
         self.similar_entity_merge_force_recopy = bool(_sem.get("force_recopy", False))
         self.similar_entity_merge_dry_run = bool(_sem.get("dry_run", False))
+        if self.similar_entity_merge_threshold_max is not None:
+            if self.similar_entity_merge_threshold_max <= self.similar_entity_merge_threshold:
+                raise ValueError(
+                    "config.yml lightrag.plugins.similar_entity_merge："
+                    "threshold_max 必須大於 threshold（上界不含）"
+                )
 
 
 class ModelSettings:

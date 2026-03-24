@@ -1,7 +1,12 @@
 """
 LightRAG Wrapper
 
-封裝 LightRAG 框架的 RAG Pipeline
+封裝 LightRAG 框架的 RAG Pipeline。
+
+DEPRECATED: 此模組中的 LightRAGWrapper、LightRAGWrapper_Original、LightRAGStrategyWrapper
+仍可正常使用，但新程式碼建議透過 run_evaluation.py 的統一入口
+（--graph_type lightrag --graph_retrieval native|ppr|pcst|tog）自動建立，
+無需直接匯入這些 Wrapper。未來版本可能移除。
 """
 
 import inspect
@@ -348,3 +353,142 @@ class LightRAGWrapper_Original(LightRAGWrapper):
             use_context=False,
             schema_info=schema_info
         )
+
+
+class LightRAGStrategyWrapper(LightRAGWrapper):
+    """
+    使用 LightRAGGraphRetriever（Entity Linking + Graph Traversal Strategy）的 Wrapper。
+
+    保留與 LightRAGWrapper 相同的 prompt 格式、token budget、token 統計，
+    但以 LightRAGGraphRetriever.aretrieve() 取代 aquery_data() 作為檢索來源。
+    """
+
+    def __init__(
+        self,
+        name: str,
+        rag_instance,
+        retriever,
+        mode: str = "hybrid",
+        model_type: str = "small",
+        schema_info: Dict[str, Any] = None,
+    ):
+        super().__init__(
+            name=name,
+            rag_instance=rag_instance,
+            mode=mode,
+            use_context=True,
+            model_type=model_type,
+            schema_info=schema_info,
+        )
+        self._retriever = retriever
+
+    async def _execute_context_mode(
+        self, query: str, settings: "ModelSettings"
+    ) -> Dict[str, Any]:
+        """
+        以 LightRAGGraphRetriever 取得 contexts，再走與 LightRAGWrapper 相同的
+        prompt 組裝 + LLM 生成流程。
+        """
+        from lightrag.prompt import PROMPTS
+
+        # --- 檢索 ---
+        default_top_k = max(20, int(getattr(self._retriever, "el_top_k", 10)) * 10)
+        top_k = (
+            int(self.token_budget.get("chunk_top_k", default_top_k))
+            if self.token_budget
+            else default_top_k
+        )
+        retrieval_result = await self._retriever.aretrieve(
+            query=query,
+            top_k=top_k,
+        )
+
+        retrieved_contexts = retrieval_result.get("contexts", [])
+        metadata = retrieval_result.get("metadata", {})
+
+        # strategy-based path：由 LightRAGGraphRetriever 補上 chunk->REF 映射
+        retrieved_ids: list = retrieval_result.get("retrieved_ids", []) or []
+        # 去重且保留順序（避免 nodes/edges 擷取造成重複）
+        seen_ids = set()
+        deduped_ids: list = []
+        for rid in retrieved_ids:
+            if rid in seen_ids:
+                continue
+            seen_ids.add(rid)
+            deduped_ids.append(rid)
+        retrieved_ids = deduped_ids
+
+        entity_contexts = [
+            c for c in retrieved_contexts
+            if not c.startswith(("The relation", "->"))
+        ]
+        relation_contexts = [
+            c for c in retrieved_contexts
+            if c not in entity_contexts
+        ]
+        chunk_contexts: list = []
+
+        # --- token budget / retrieval_max_tokens 截斷 ---
+        chunk_top_k = int(self.token_budget.get("chunk_top_k", 0)) if self.token_budget else 0
+        if chunk_top_k > 0:
+            retrieved_contexts = retrieved_contexts[:chunk_top_k]
+            retrieved_ids = retrieved_ids[:chunk_top_k]
+
+        if self.retrieval_max_tokens > 0:
+            retrieved_contexts = self._truncate_contexts_by_tokens(retrieved_contexts)
+        elif self.token_budget:
+            max_total_tokens = int(self.token_budget.get("max_total_tokens", 0))
+            if max_total_tokens > 0 and retrieved_contexts:
+                token_counter = get_token_counter()
+                kept, running = [], 0
+                for ctx in retrieved_contexts:
+                    t = token_counter.count_tokens(ctx)
+                    if kept and (running + t) > max_total_tokens:
+                        break
+                    kept.append(ctx)
+                    running += t
+                retrieved_contexts = kept
+
+        context_str = "\n".join(retrieved_contexts) if retrieved_contexts else ""
+
+        # --- token 統計 ---
+        token_counter = get_token_counter()
+        entity_tokens = token_counter.count_tokens_batch(entity_contexts) if entity_contexts else 0
+        relation_tokens = token_counter.count_tokens_batch(relation_contexts) if relation_contexts else 0
+        chunk_tokens = token_counter.count_tokens_batch(chunk_contexts) if chunk_contexts else 0
+        total_tokens = token_counter.count_tokens(context_str)
+
+        # --- Prompt + LLM ---
+        prompt = PROMPTS["rag_response"].format(
+            context_data=context_str,
+            response_type="Multiple Paragraphs",
+            user_prompt=query,
+            query=query,
+            retrieved_contexts=context_str,
+        )
+        llm_response = await settings.llm.acomplete(prompt)
+        response = llm_response.text
+
+        strategy_name = metadata.get("strategy", "unknown")
+        print(
+            f"[{self.name}] strategy={strategy_name} | "
+            f"contexts={len(retrieved_contexts)} | tokens={total_tokens}"
+        )
+
+        return {
+            "generated_answer": str(response) if response else "找不到答案",
+            "retrieved_contexts": retrieved_contexts,
+            "retrieved_ids": retrieved_ids,
+            "source_nodes": [],
+            "context_tokens": total_tokens,
+            "context_token_details": {
+                "total_tokens": total_tokens,
+                "entity_tokens": entity_tokens,
+                "relation_tokens": relation_tokens,
+                "chunk_tokens": chunk_tokens,
+                "num_entities": len(entity_contexts),
+                "num_relations": len(relation_contexts),
+                "num_chunks": len(chunk_contexts),
+            },
+            "traversal_metadata": metadata,
+        }

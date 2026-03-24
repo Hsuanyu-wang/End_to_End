@@ -25,15 +25,25 @@ LOG_FILENAME = "lightrag_simmerge_log.json"
 STEPS_FILENAME = "lightrag_simmerge_steps.jsonl"
 ERROR_FILENAME = "lightrag_simmerge_error.json"
 
+# copytree 時排除的檔案（非圖相關，複製後會污染 simmerge 環境）
+_COPY_EXCLUDE_PATTERNS = ("kv_store_llm_response_cache.json",)
 
-def build_simmerge_custom_tag(threshold: float, text_mode: str) -> str:
+
+def build_simmerge_custom_tag(
+    threshold: float, text_mode: str, threshold_max: Optional[float] = None
+) -> str:
     """
     依閾值與 text_mode 產生 custom_tag（不同參數對應不同 storage，避免共用錯圖）。
     threshold 固定兩位小數再轉 slug，避免 0.8 與 0.80 變成兩套目錄。
+    threshold_max 有設定時附加 _um{上界}（不含該值之合併帶）；None 時與舊版 tag 完全相同。
     """
     t_norm = f"{float(threshold):.2f}".replace(".", "_")
     mode_slug = _safe_slug(text_mode or "name")
-    return f"simmerge_t{t_norm}_{mode_slug}"
+    base = f"simmerge_t{t_norm}_{mode_slug}"
+    if threshold_max is None:
+        return base
+    u_norm = f"{float(threshold_max):.2f}".replace(".", "_")
+    return f"{base}_um{u_norm}"
 
 
 def _lightrag_dir_populated(dir_path: str) -> bool:
@@ -64,6 +74,7 @@ def _write_marker(
     plugin_dir: str,
     *,
     threshold: float,
+    threshold_max: Optional[float],
     text_mode: str,
     dry_run: bool,
     baseline_path: str,
@@ -71,6 +82,7 @@ def _write_marker(
 ) -> None:
     payload = {
         "threshold": float(threshold),
+        "threshold_max": threshold_max,
         "text_mode": text_mode,
         "dry_run": dry_run,
         "baseline_path": baseline_path,
@@ -82,8 +94,21 @@ def _write_marker(
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
+def _marker_threshold_max(marker: Dict[str, Any]) -> Optional[float]:
+    if "threshold_max" not in marker:
+        return None
+    v = marker.get("threshold_max")
+    if v is None:
+        return None
+    return float(v)
+
+
 def _marker_matches(
-    marker: Dict[str, Any], threshold: float, text_mode: str, dry_run: bool
+    marker: Dict[str, Any],
+    threshold: float,
+    text_mode: str,
+    dry_run: bool,
+    threshold_max: Optional[float] = None,
 ) -> bool:
     if marker.get("dry_run") != dry_run:
         return False
@@ -91,7 +116,12 @@ def _marker_matches(
         return False
     if str(marker.get("text_mode", "")) != str(text_mode):
         return False
-    return True
+    mm = _marker_threshold_max(marker)
+    if threshold_max is None and mm is None:
+        return True
+    if threshold_max is not None and mm is not None:
+        return abs(mm - float(threshold_max)) <= 1e-9
+    return False
 
 
 class _UnionFind:
@@ -202,6 +232,7 @@ def run_similar_entity_merge(
     settings: Any,
     *,
     threshold: float,
+    threshold_max: Optional[float] = None,
     text_mode: str = "name",
     dry_run: bool = False,
     log_file: Optional[str] = None,
@@ -251,6 +282,7 @@ def run_similar_entity_merge(
             "baseline_path": baseline_path or None,
             "plugin_path": plugin_path or None,
             "threshold": float(threshold),
+            "threshold_max": threshold_max,
             "text_mode": text_mode,
             "dry_run": dry_run,
             "embed_max_input_chars": max_embed,
@@ -306,6 +338,7 @@ def run_similar_entity_merge(
         llm=settings.llm if use_llm_verify else None,
         embed_model=settings.embed_model,
         similarity_threshold=threshold,
+        similarity_threshold_max=threshold_max,
         use_llm_verification=use_llm_verify,
     )
     pairs = disambiguator._find_similar_pairs(entity_dicts)
@@ -435,6 +468,7 @@ def ensure_similar_merged_lightrag_index(
     mode: str,
     fast_test: bool,
     threshold: float,
+    threshold_max: Optional[float] = None,
     text_mode: str,
     force_recopy: bool,
     dry_run: bool,
@@ -456,7 +490,7 @@ def ensure_similar_merged_lightrag_index(
         fast_test=fast_test,
         custom_tag="",
     )
-    custom_tag = build_simmerge_custom_tag(threshold, text_mode)
+    custom_tag = build_simmerge_custom_tag(threshold, text_mode, threshold_max)
     plugin_path = get_storage_path(
         storage_type="lightrag",
         data_type=data_type,
@@ -476,7 +510,9 @@ def ensure_similar_merged_lightrag_index(
         marker = _read_marker(plugin_path)
         if (
             marker
-            and _marker_matches(marker, threshold, text_mode, dry_run)
+            and _marker_matches(
+                marker, threshold, text_mode, dry_run, threshold_max
+            )
             and _lightrag_dir_populated(plugin_path)
             and not force_recopy
         ):
@@ -492,7 +528,10 @@ def ensure_similar_merged_lightrag_index(
     # 目錄在但 marker 不符／缺失：非 dry_run 時整包重建以免重複 merge 壞圖
     if not dry_run and _lightrag_dir_populated(plugin_path):
         m = _read_marker(plugin_path)
-        if not (m and _marker_matches(m, threshold, text_mode, dry_run)):
+        if not (
+            m
+            and _marker_matches(m, threshold, text_mode, dry_run, threshold_max)
+        ):
             print(
                 "⚠️ similar_entity_merge：plugin 目錄與 marker 不符或缺失，將刪除後自 baseline 複製"
             )
@@ -503,19 +542,26 @@ def ensure_similar_merged_lightrag_index(
         if os.path.isdir(plugin_path):
             shutil.rmtree(plugin_path, ignore_errors=True)
         print(
-            f"📋 similar_entity_merge：複製 baseline → plugin\n   {baseline_path}\n   → {plugin_path}"
+            f"📋 similar_entity_merge：複製 baseline → plugin（排除 LLM response cache）\n   {baseline_path}\n   → {plugin_path}"
         )
-        shutil.copytree(baseline_path, plugin_path, dirs_exist_ok=False)
+        shutil.copytree(
+            baseline_path,
+            plugin_path,
+            dirs_exist_ok=False,
+            ignore=shutil.ignore_patterns(*_COPY_EXCLUDE_PATTERNS),
+        )
 
     log_path = os.path.join(plugin_path, LOG_FILENAME)
     rag = _create_lightrag_at_path(Settings, plugin_path)
     print(
-        f"🔀 similar_entity_merge：threshold={threshold} text_mode={text_mode} dry_run={dry_run}"
+        f"🔀 similar_entity_merge：threshold={threshold} threshold_max={threshold_max!r} "
+        f"text_mode={text_mode} dry_run={dry_run}"
     )
     run_similar_entity_merge(
         rag,
         Settings,
         threshold=threshold,
+        threshold_max=threshold_max,
         text_mode=text_mode,
         dry_run=dry_run,
         log_file=log_path,
@@ -526,6 +572,7 @@ def ensure_similar_merged_lightrag_index(
         _write_marker(
             plugin_path,
             threshold=threshold,
+            threshold_max=threshold_max,
             text_mode=text_mode,
             dry_run=dry_run,
             baseline_path=baseline_path,

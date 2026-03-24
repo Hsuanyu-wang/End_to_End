@@ -66,31 +66,21 @@ class GraphRetrieverRegistry:
 def _register_builtin_retrievers():
     """註冊內建的 retrievers"""
     try:
-        # PropertyGraph Retriever（特殊處理，需要 RetrieverFactory）
-        # 暫時不註冊，等 PropertyGraphRetriever 完成後再註冊
-        pass
-    except ImportError:
-        print("⚠️  PropertyGraph Retriever 註冊失敗（可能缺少依賴）")
-    
-    try:
         from src.graph_retriever.lightrag_retriever import LightRAGRetriever
         GraphRetrieverRegistry.register("lightrag", LightRAGRetriever)
     except ImportError:
         print("⚠️  LightRAG Retriever 註冊失敗（可能缺少依賴）")
-    
-    # ToGRetriever 暫時不註冊（需要重構以繼承 BaseGraphRetriever）
-    # try:
-    #     from src.graph_retriever.tog_retriever import ToGRetriever
-    #     GraphRetrieverRegistry.register("tog", ToGRetriever)
-    # except ImportError:
-    #     print("⚠️  ToG Retriever 註冊失敗（可能缺少依賴）")
-    
-    # CSRGraphQueryEngine 暫時不註冊（需要重構以繼承 BaseGraphRetriever）
-    # try:
-    #     from src.graph_retriever.csr_graph_query_engine import CSRGraphQueryEngine
-    #     GraphRetrieverRegistry.register("csr", CSRGraphQueryEngine)
-    # except ImportError:
-    #     print("⚠️  CSR Retriever 註冊失敗（可能缺少依賴）")
+
+    try:
+        from src.graph_retriever.lightrag_graph_retriever import LightRAGGraphRetriever
+
+        # 以不同預設 strategy 註冊多個名稱，方便 config / CLI 直接使用
+        GraphRetrieverRegistry.register("lightrag_ppr", LightRAGGraphRetriever)
+        GraphRetrieverRegistry.register("lightrag_pcst", LightRAGGraphRetriever)
+        GraphRetrieverRegistry.register("lightrag_tog", LightRAGGraphRetriever)
+        GraphRetrieverRegistry.register("lightrag_one_hop", LightRAGGraphRetriever)
+    except ImportError:
+        print("⚠️  LightRAGGraphRetriever 註冊失敗（可能缺少依賴）")
 
 
 # 初始化時自動註冊

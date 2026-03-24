@@ -1,7 +1,9 @@
 """
 Temporal LightRAG Wrapper
 
-封裝帶有時間權重的 LightRAG Pipeline
+封裝帶有時間權重的 LightRAG Pipeline。
+
+DEPRECATED: 建議透過 run_evaluation.py 的統一入口 --plugin_temporal 啟用。
 """
 
 import time

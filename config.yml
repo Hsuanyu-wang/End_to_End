@@ -141,6 +141,7 @@ lightrag:
   plugins:
     similar_entity_merge:
       threshold: 0.90
+      # threshold_max: null   # 可選；有設定時僅合併 [threshold, threshold_max) 之相似度，預設無上界
       text_mode: "name"   # name | name_desc
       force_recopy: false
       dry_run: false
@@ -220,7 +221,32 @@ retrieval:
     fallback_mode: "hybrid"
     use_llm_analysis: true
     
-  # ToG 配置
+  # Graph Traversal Strategy 配置
+  # 可選策略: one_hop | ppr | pcst | tog
+  graph_traversal:
+    strategy: "ppr"
+    entity_linking_mode: "hybrid"   # local | global | hybrid | mix
+    entity_linking_top_k: 10
+
+    ppr:
+      alpha: 0.85
+      weight_mode: "semantic"       # semantic | degree | combined
+      include_seeds: true
+
+    pcst:
+      prize_scale: 1.0
+      cost_mode: "inverse_weight"   # inverse_weight | inverse_log_weight | uniform
+      num_clusters: 1
+      pruning: "gw"
+      min_nodes: 5
+
+    tog:
+      max_iterations: 3
+      beam_width: 5
+      use_llm_scoring: true
+      use_llm_sufficiency: true
+
+  # ToG 配置（舊版，保留向後相容）
   tog_config:
     max_iterations: 3
     convergence_threshold: 0.9

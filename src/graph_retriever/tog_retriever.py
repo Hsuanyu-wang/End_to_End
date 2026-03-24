@@ -1,9 +1,23 @@
 """
-Think-on-Graph (ToG) 風格檢索器
+Think-on-Graph (ToG) 風格檢索器（已棄用）
 
-實作文本與圖譜的緊密耦合、迭代式檢索
-基於 ToG-2.0 論文的設計理念
+此模組已由 src.graph_retriever.strategies.tog.ToGStrategy 取代。
+新版本繼承 BaseTraversalStrategy，直接操作 NetworkX graph，
+並可搭配 LightRAGGraphRetriever 的 Entity Linking pipeline 使用。
+
+保留此檔案僅為向後相容。
+
+.. deprecated::
+    請改用 ``from src.graph_retriever.strategies import ToGStrategy``
 """
+
+import warnings
+warnings.warn(
+    "tog_retriever.ToGRetriever 已棄用，"
+    "請改用 src.graph_retriever.strategies.tog.ToGStrategy",
+    DeprecationWarning,
+    stacklevel=2,
+)
 
 from typing import List, Dict, Any, Set
 import time

@@ -44,6 +44,7 @@ class EntityDisambiguator:
         llm=None,
         embed_model=None,
         similarity_threshold: float = 0.85,
+        similarity_threshold_max: Optional[float] = None,
         use_llm_verification: bool = False,
         degree_fn: Optional[Callable[[Any], int]] = None,
     ):
@@ -51,7 +52,8 @@ class EntityDisambiguator:
         Args:
             llm: LLM 實例（用於可選驗證）
             embed_model: Embedding 模型（需有 get_text_embedding_batch）
-            similarity_threshold: 餘弦相似度閾值
+            similarity_threshold: 餘弦相似度下界（含）：score >= 此值才可能合併
+            similarity_threshold_max: 餘弦相似度上界（不含）；None 表示無上界
             use_llm_verification: 是否在合併前用 LLM 驗證
             degree_fn: 計算實體 degree 的函式（用於代表選擇），
                        簽名 degree_fn(entity) -> int
@@ -59,8 +61,14 @@ class EntityDisambiguator:
         self.llm = llm
         self.embed_model = embed_model
         self.similarity_threshold = similarity_threshold
+        self.similarity_threshold_max = similarity_threshold_max
         self.use_llm_verification = use_llm_verification
         self.degree_fn = degree_fn
+        if similarity_threshold_max is not None:
+            if similarity_threshold_max <= similarity_threshold:
+                raise ValueError(
+                    "similarity_threshold_max 必須大於 similarity_threshold（上界不含，下界含）"
+                )
 
     def merge_entities(self, entities: List[Any]) -> List[Any]:
         """
@@ -93,6 +101,14 @@ class EntityDisambiguator:
     # 1. 相似度計算
     # ------------------------------------------------------------------
 
+    def _similarity_in_merge_band(self, score: float) -> bool:
+        """合併區間：[下界, 上界)；上界為 None 時僅檢查 score >= 下界。"""
+        if score < self.similarity_threshold:
+            return False
+        if self.similarity_threshold_max is not None:
+            return score < self.similarity_threshold_max
+        return True
+
     def _find_similar_pairs(
         self, entities: List[Any]
     ) -> List[Tuple[int, int, float]]:
@@ -117,8 +133,9 @@ class EntityDisambiguator:
         n = len(entities)
         for i in range(n):
             for j in range(i + 1, n):
-                if float(sim[i, j]) >= self.similarity_threshold:
-                    pairs.append((i, j, float(sim[i, j])))
+                s = float(sim[i, j])
+                if self._similarity_in_merge_band(s):
+                    pairs.append((i, j, s))
         return pairs
 
     def _string_similarity(
@@ -130,10 +147,11 @@ class EntityDisambiguator:
             for j in range(i + 1, len(texts)):
                 t1, t2 = texts[i], texts[j]
                 if t1 in t2 or t2 in t1:
-                    pairs.append((i, j, 0.9))
+                    if self._similarity_in_merge_band(0.9):
+                        pairs.append((i, j, 0.9))
                 else:
                     score = self._jaccard(t1, t2)
-                    if score >= self.similarity_threshold:
+                    if self._similarity_in_merge_band(score):
                         pairs.append((i, j, score))
         return pairs
 

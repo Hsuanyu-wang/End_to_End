@@ -51,6 +51,20 @@ class BaseGraphRetriever(ABC):
         """
         pass
     
+    async def aretrieve(
+        self,
+        query: str,
+        graph_data: Optional[Dict[str, Any]] = None,
+        top_k: int = 2,
+        **kwargs
+    ) -> Dict[str, Any]:
+        """
+        非同步檢索（預設 fallback 到同步 retrieve）
+
+        子類別可覆寫此方法以提供真正的非同步實作。
+        """
+        return self.retrieve(query, graph_data=graph_data, top_k=top_k, **kwargs)
+
     def initialize(self, config: Optional[Dict[str, Any]] = None):
         """
         初始化 Retriever
