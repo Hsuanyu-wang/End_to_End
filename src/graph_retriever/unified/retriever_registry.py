@@ -78,7 +78,8 @@ def _register_builtin_retrievers():
         GraphRetrieverRegistry.register("lightrag_ppr", LightRAGGraphRetriever)
         GraphRetrieverRegistry.register("lightrag_pcst", LightRAGGraphRetriever)
         GraphRetrieverRegistry.register("lightrag_tog", LightRAGGraphRetriever)
-        GraphRetrieverRegistry.register("lightrag_one_hop", LightRAGGraphRetriever)
+        GraphRetrieverRegistry.register("lightrag_k_hop", LightRAGGraphRetriever)
+        GraphRetrieverRegistry.register("lightrag_anchor_hybrid_khop", LightRAGGraphRetriever)
     except ImportError:
         print("⚠️  LightRAGGraphRetriever 註冊失敗（可能缺少依賴）")
 

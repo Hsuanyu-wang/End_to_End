@@ -3,7 +3,7 @@ LightRAG Graph Retriever
 
 組合 LightRAGEntityLinker + TraversalStrategy 的主 Retriever。
 保留 LightRAG 的 Entity Linking（keyword extraction + VDB + round-robin），
-將 graph traversal 委派給可插拔的策略（one_hop / ppr / pcst / tog）。
+將 graph traversal 委派給可插拔的策略（k_hop / ppr / pcst / tog / anchor_hybrid_khop）。
 """
 
 import asyncio
@@ -32,7 +32,7 @@ class LightRAGGraphRetriever(BaseGraphRetriever):
     """
     使用 LightRAG Entity Linking + 可插拔 graph traversal strategy 的 Retriever。
 
-    支援策略：one_hop, ppr, pcst, tog
+    支援策略：k_hop, ppr, pcst, tog, anchor_hybrid_khop
     """
 
     def __init__(

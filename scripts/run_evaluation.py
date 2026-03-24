@@ -6,7 +6,7 @@ RAG 評估主執行腳本（統一框架）
 - Vector RAG (hybrid, vector, bm25)
 - Advanced Vector RAG (self_query, parent_child)
 - Graph RAG：統一入口 --graph_type + --graph_retrieval
-  - LightRAG (native / strategy-based: ppr, pcst, tog, one_hop)
+  - LightRAG (native / strategy-based: ppr, pcst, tog, k_hop, anchor_hybrid_khop)
   - PropertyGraph (pg_ensemble / pg_cascade / pg_single)
   - AutoSchema / Dynamic Builder
 - Plugin: --plugin_simmerge, --plugin_temporal
@@ -94,9 +94,9 @@ def parse_arguments():
     )
     g_graph.add_argument(
         "--graph_retrieval", type=str, default="native",
-        choices=["native", "one_hop", "ppr", "pcst", "tog",
+        choices=["native", "k_hop", "ppr", "pcst", "tog", "tog_refine", "anchor_hybrid_khop",
                  "pg_ensemble", "pg_cascade", "pg_single"],
-        help="Graph 檢索策略 (native=Builder 預設; one_hop/ppr/pcst/tog=traversal strategy; pg_*=PropertyGraph)",
+        help="Graph 檢索策略 (native=Builder 預設; k_hop/ppr/pcst/tog/tog_refine/anchor_hybrid_khop=traversal strategy; pg_*=PropertyGraph)",
     )
 
     # ── LightRAG 模式 ──
@@ -165,6 +165,8 @@ def parse_arguments():
     )
     g_strat.add_argument("--tog_max_iterations", type=int, default=3, help="ToG 最大迭代次數")
     g_strat.add_argument("--tog_beam_width", type=int, default=5, help="ToG beam search 寬度")
+    # g_strat.add_argument("--tog_prune_top_n", type=int, default=3, help="ToG LLM 修剪 top-N 鄰居")
+    g_strat.add_argument("--graph_hop_k", type=int, default=1, help="K-hop 策略 hop 深度")
 
     # ── 方法參數 ──
     g_method = parser.add_argument_group("方法參數")
@@ -446,15 +448,22 @@ def _run_graph_quality_check(graph_result: dict, source_format: str) -> dict:
         return {}
 
 
-def _build_strategy_kwargs(args) -> dict:
+def _build_strategy_kwargs(args, Settings=None) -> dict:
     """從 CLI args 建立 traversal strategy 的初始化參數。"""
     strategy = args.graph_retrieval
     if strategy == "ppr":
         return {"alpha": args.ppr_alpha, "weight_mode": args.ppr_weight_mode}
     if strategy == "pcst":
         return {"cost_mode": args.pcst_cost_mode}
-    if strategy == "tog":
+    if strategy in ("tog", "tog_refine"):
         return {"max_iterations": args.tog_max_iterations, "beam_width": args.tog_beam_width}
+    if strategy == "k_hop":
+        return {"hop_k": args.graph_hop_k}
+    if strategy == "anchor_hybrid_khop":
+        return {
+            "hop_k": args.graph_hop_k,
+            "embed_model": getattr(Settings, "embed_model", None) if Settings is not None else None,
+        }
     return {}
 
 
@@ -495,8 +504,8 @@ def _create_strategy_wrappers(args, Settings, lightrag_instance, schema_info, gr
     from src.graph_retriever.lightrag_graph_retriever import LightRAGGraphRetriever
 
     strategy = args.graph_retrieval
-    strategy_kwargs = _build_strategy_kwargs(args)
-    if strategy == "tog":
+    strategy_kwargs = _build_strategy_kwargs(args, Settings)
+    if strategy in ("tog", "tog_refine"):
         # ToG 需要 llm 才能啟用 LLM-guided scoring / sufficiency 判斷
         strategy_kwargs.setdefault("llm", getattr(Settings, "llm", None))
 
@@ -898,8 +907,10 @@ def build_postfix(args):
             parts.append(f"a{args.ppr_alpha}_{args.ppr_weight_mode}")
         elif args.graph_retrieval == "pcst":
             parts.append(args.pcst_cost_mode)
-        elif args.graph_retrieval == "tog":
+        elif args.graph_retrieval in ("tog", "tog_refine"):
             parts.append(f"i{args.tog_max_iterations}_b{args.tog_beam_width}")
+        elif args.graph_retrieval in ("k_hop", "anchor_hybrid_khop"):
+            parts.append(f"k{args.graph_hop_k}")
 
     # SimMerge tag
     if getattr(args, "simmerge_result_tag", None):
@@ -1004,7 +1015,7 @@ def print_no_pipeline_help(args):
     print("   可啟用方式擇一或併用：")
     print("   • Vector：--vector_method hybrid|vector|bm25|all")
     print("   • 進階 Vector：--adv_vector_method self_query|parent_child|all")
-    print("   • LightRAG：--graph_type lightrag [--graph_retrieval native|ppr|pcst|tog|one_hop]")
+    print("   • LightRAG：--graph_type lightrag [--graph_retrieval native|k_hop|ppr|pcst|tog|tog_refine|anchor_hybrid_khop]")
     print("   • PropertyGraph：--graph_type property_graph [--pg_extractors ...] [--pg_retrievers ...]")
     print("   • AutoSchema：--graph_type autoschema")
     print("   • Dynamic：--graph_type dynamic")

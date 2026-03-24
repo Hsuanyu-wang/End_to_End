@@ -222,7 +222,7 @@ retrieval:
     use_llm_analysis: true
     
   # Graph Traversal Strategy 配置
-  # 可選策略: one_hop | ppr | pcst | tog
+  # 可選策略: k_hop | ppr | pcst | tog | anchor_hybrid_khop
   graph_traversal:
     strategy: "ppr"
     entity_linking_mode: "hybrid"   # local | global | hybrid | mix

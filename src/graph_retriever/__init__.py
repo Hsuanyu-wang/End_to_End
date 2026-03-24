@@ -3,7 +3,7 @@ Graph Retriever 模組
 
 提供圖譜檢索功能，包含：
 - LightRAGRetriever: 原始 LightRAG 1-hop 檢索
-- LightRAGGraphRetriever: Entity Linking + 可插拔 traversal strategy (ppr/pcst/tog/one_hop)
+- LightRAGGraphRetriever: Entity Linking + 可插拔 traversal strategy (k_hop/ppr/pcst/tog/anchor_hybrid_khop)
 - CSRGraphQueryEngine: CSR 圖譜查詢引擎
 """
 

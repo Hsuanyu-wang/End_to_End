@@ -1,4 +1,6 @@
-### PropertyGraph methods ###
+#########################################################################################################
+# PropertyGraph methods
+#########################################################################################################
 # ext_list=("implicit" "schema" "simple" "dynamic")
 # ret_list=("vector" "synonym" "text2cypher")
 # modes=("cascade" "single") # "ensemble"
@@ -29,34 +31,49 @@
 #     done
 # done
 
-### autoschema plugin ###
+#########################################################################################################
+# autoschema plugin
+#########################################################################################################
 # python run_evaluation.py --graph_type autoschema --data_type DI
 
-### dynamic builder plugin ###
+#########################################################################################################
+# dynamic builder plugin
+#########################################################################################################
 # python run_evaluation.py --graph_type dynamic --data_type DI
 
-### LightRAG methods ###
-python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode hybrid
-python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode hybrid
-python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode naive
-python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode naive
+#########################################################################################################
+# LightRAG methods
+#########################################################################################################
+# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode hybrid
+# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode hybrid
+# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode naive
+# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode naive
 
-### simmerge plugin ###
-python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.90
+#########################################################################################################
+# simmerge plugin
+#########################################################################################################
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_text_mode name_desc
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc
 
-### schema plugin ###
+#########################################################################################################
+# schema plugin
+#########################################################################################################
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method lightrag_default
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method iterative_evolution
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method llm_dynamic
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method llamaindex_dynamic
-python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method no_schema
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method no_schema
 
-### temporal plugin ###
-python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_temporal
+#########################################################################################################
+# temporal plugin
+#########################################################################################################
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_temporal
 
-### Retrieval methods ###
+#########################################################################################################
+# Retrieval methods
+#########################################################################################################
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval native
 
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval ppr --ppr_alpha 0.9 --ppr_weight_mode semantic
@@ -73,7 +90,10 @@ python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_t
 
 # python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval tog --tog_max_iterations 3 --tog_beam_width 5
 
-python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval one_hop
-python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval pg_ensemble
-python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval pg_cascade
-python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval pg_single
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval k_hop --graph_hop_k 2
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval anchor_hybrid_khop --graph_hop_k 2 --top_k 20
+python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval tog_refine --tog_max_iterations 3 --tog_beam_width 5
+
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval pg_ensemble
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval pg_cascade
+# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --graph_retrieval pg_single

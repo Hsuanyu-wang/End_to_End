@@ -124,10 +124,10 @@ TEST_CONFIGS = {
         }
     },
     "advanced_retrieval": {
-        "one_hop": {
-            "name": "LightRAG + One-Hop Traversal",
-            "args": ["--graph_type", "lightrag", "--lightrag_mode", "hybrid", "--graph_retrieval", "one_hop"],
-            "description": "單跳實體關聯遍歷"
+        "k_hop": {
+            "name": "LightRAG + K-Hop Traversal",
+            "args": ["--graph_type", "lightrag", "--lightrag_mode", "hybrid", "--graph_retrieval", "k_hop", "--graph_hop_k", "1"],
+            "description": "可控 hop 的實體關聯遍歷"
         },
         "ppr": {
             "name": "LightRAG + PPR Traversal",

@@ -69,7 +69,7 @@ python scripts/run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --
 | 參數 | 型別 | 預設值 | 可選值 | 說明 |
 |------|------|--------|--------|------|
 | `--graph_type` | str | `none` | `none`, `lightrag`, `property_graph`, `autoschema`, `dynamic` | Graph Builder 類型 |
-| `--graph_retrieval` | str | `native` | `native`, `one_hop`, `ppr`, `pcst`, `tog`, `pg_ensemble`, `pg_cascade`, `pg_single` | 檢索策略 |
+| `--graph_retrieval` | str | `native` | `native`, `k_hop`, `ppr`, `pcst`, `tog`, `anchor_hybrid_khop`, `pg_ensemble`, `pg_cascade`, `pg_single` | 檢索策略 |
 
 ### LightRAG 模式
 
@@ -113,6 +113,7 @@ python scripts/run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --
 | `--pcst_cost_mode` | str | `inverse_weight` | `inverse_weight`, `inverse_log_weight`, `uniform` |
 | `--tog_max_iterations` | int | `3` | ToG 最大迭代次數 |
 | `--tog_beam_width` | int | `5` | ToG beam search 寬度 |
+| `--graph_hop_k` | int | `1` | `k_hop` / `anchor_hybrid_khop` 的 hop 深度 |
 
 ### Data / Model
 
