@@ -5,9 +5,12 @@
 驗證新的 RAGAS 指標是否正確整合到評估系統中
 """
 
-import sys
 import asyncio
-sys.path.insert(0, '/home/End_to_End_RAG')
+import sys
+
+import pytest
+
+sys.path.insert(0, "/home/End_to_End_RAG")
 
 from src.evaluation.metrics import (
     AnswerRelevancyMetric,
@@ -54,6 +57,7 @@ def test_ragas_metrics_initialization():
     print()
 
 
+@pytest.mark.asyncio
 async def test_ragas_metrics_computation():
     """測試 RAGAS 指標是否可以正常計算（需要 RAGAS 套件）"""
     print("✅ 測試 3: RAGAS 指標計算")

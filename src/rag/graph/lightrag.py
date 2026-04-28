@@ -5,6 +5,8 @@ import numpy as np
 import nest_asyncio
 import asyncio
 import requests
+import httpx
+import random
 from lightrag.lightrag import LightRAG, QueryParam
 from lightrag.utils import EmbeddingFunc
 
@@ -90,8 +92,40 @@ def _build_llm_and_embed(Settings):
 
     async def custom_llm_func(prompt, system_prompt=None, history_messages=[], **kwargs):
         full_prompt = f"{system_prompt}\n\n{prompt}" if system_prompt else prompt
-        response = await Settings.builder_llm.acomplete(full_prompt)
-        return response.text
+        # 對偶發 `ReadTimeout` 做有限次重試，降低因逾時導致的圖譜建圖失敗
+        # 額外重試 3 次 => 最多嘗試 4 次（含第一次）
+        max_extra_retries = 3
+        max_attempts = 1 + max_extra_retries
+        base_delay_s = 1.0
+        max_delay_s = 30.0
+
+        last_exc: Exception | None = None
+        for attempt_idx in range(max_attempts):
+            try:
+                response = await Settings.builder_llm.acomplete(full_prompt)
+                return response.text
+            except httpx.ReadTimeout as exc:
+                last_exc = exc
+                is_last_attempt = attempt_idx >= (max_attempts - 1)
+                if is_last_attempt:
+                    break
+
+                # 指數退避 + jitter（避免多 worker 同步重試造成尖峰）
+                delay_s = min(max_delay_s, base_delay_s * (2 ** attempt_idx))
+                jitter_s = random.uniform(0, 0.25)
+                delay_s = delay_s + jitter_s
+
+                _logger.warning(
+                    "builder_llm ReadTimeout：準備重試（attempt=%d/%d, delay=%.2fs）",
+                    attempt_idx + 2,
+                    max_attempts,
+                    delay_s,
+                )
+                await asyncio.sleep(delay_s)
+
+        # 超出重試次數，維持原本錯誤行為
+        assert last_exc is not None
+        raise last_exc
 
     config_max = int(getattr(Settings.lightrag_config, "embed_max_input_chars", 2560))
     ollama_url = getattr(Settings.embed_model, "base_url", "") or ""
@@ -137,7 +171,6 @@ def _create_lightrag_at_path(Settings, working_dir: str):
     供 Retriever 直接以 storage_path 載入已存在的索引。
     """
     custom_llm_func, custom_embed_func = _build_llm_and_embed(Settings)
-
     os.makedirs(working_dir, exist_ok=True)
     print(f"📂 LightRAG 儲存路徑: {working_dir}")
 

@@ -10,9 +10,85 @@ RAGAS 評估指標
 參考 eval_rag_quality.py 的實作，確保使用實際檢索到的上下文進行評估
 """
 
+import math
+import os
 import warnings
-from typing import List, Optional
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+import yaml
+
 from .base import BaseMetric
+
+
+def _normalize_ollama_openai_base_url(url: str) -> str:
+    """Ollama OpenAI 相容 API 需使用 .../v1 作為 ChatOpenAI base_url。"""
+    u = (url or "").strip().rstrip("/")
+    if not u:
+        return u
+    if u.endswith("/v1"):
+        return u
+    return f"{u}/v1"
+
+
+def _load_ragas_defaults_from_config() -> Optional[Dict[str, Any]]:
+    """
+    從 config.yml 讀取 eval_model / model，供無 EVAL_* 環境變數時與 LlamaIndex 評估後端對齊。
+    可由環境變數 RAGAS_CONFIG_PATH 覆寫設定檔路徑。
+    """
+    import os
+
+    path = os.getenv("RAGAS_CONFIG_PATH", "/home/End_to_End_RAG/config.yml")
+    p = Path(path)
+    if not p.exists():
+        return None
+    try:
+        with open(p, "r", encoding="utf-8") as f:
+            cfg = yaml.safe_load(f)
+        if not isinstance(cfg, dict):
+            return None
+        eval_m = cfg.get("eval_model") or {}
+        model_m = cfg.get("model") or {}
+        eval_url = eval_m.get("ollama_url")
+        eval_model = eval_m.get("llm_model")
+        embed_url = model_m.get("ollama_url")
+        embed_model = model_m.get("embed_model")
+        if not eval_url or not eval_model:
+            return None
+        return {
+            "llm_base_url": _normalize_ollama_openai_base_url(str(eval_url)),
+            "llm_model": str(eval_model),
+            "embedding_base_url": _normalize_ollama_openai_base_url(
+                str(embed_url or eval_url)
+            ),
+            "embedding_model": str(embed_model or "nomic-embed-text"),
+        }
+    except Exception:
+        return None
+
+
+def _coerce_ragas_score(score: Any) -> Optional[float]:
+    """將 RAGAS 輸出轉為 float；None / NaN / Inf 時回傳 None，避免寫入 CSV 為 nan。"""
+    if score is None:
+        return None
+    try:
+        f = float(score)
+    except (TypeError, ValueError):
+        return None
+
+    if math.isnan(f) or math.isinf(f):
+        return None
+    return f
+
+
+def _normalize_text_input(value: Any) -> str:
+    """將任意輸入安全轉為字串，並處理 None/NaN。"""
+    if value is None:
+        return ""
+    if isinstance(value, float) and math.isnan(value):
+        return ""
+    return str(value).strip()
+
 
 # 條件性導入 RAGAS 相關套件
 try:
@@ -23,8 +99,10 @@ try:
         ContextPrecision,
         ContextRecall,
         Faithfulness,
+        AnswerCorrectness,
     )
     from ragas.llms import LangchainLLMWrapper
+    from ragas.embeddings import LiteLLMEmbeddings
     from langchain_openai import ChatOpenAI, OpenAIEmbeddings
     
     RAGAS_AVAILABLE = True
@@ -36,7 +114,9 @@ except ImportError:
     ContextPrecision = None
     ContextRecall = None
     Faithfulness = None
+    AnswerCorrectness = None
     LangchainLLMWrapper = None
+    LiteLLMEmbeddings = None
     ChatOpenAI = None
     OpenAIEmbeddings = None
 
@@ -77,22 +157,43 @@ class RAGASMetricBase(BaseMetric):
             self._init_default_llm_embeddings()
     
     def _init_default_llm_embeddings(self):
-        """初始化預設的 LLM 與 Embeddings"""
+        """初始化預設的 LLM 與 Embeddings（優先環境變數，其次 config.yml 與 LlamaIndex 評估後端對齊）"""
         try:
             import os
-            
+
             # 從環境變數讀取配置
             eval_llm_api_key = os.getenv("EVAL_LLM_BINDING_API_KEY") or os.getenv("OPENAI_API_KEY")
-            eval_model = os.getenv("EVAL_LLM_MODEL", "gpt-4o-mini")
+            eval_model = os.getenv("EVAL_LLM_MODEL")
             eval_llm_base_url = os.getenv("EVAL_LLM_BINDING_HOST")
-            
+
             eval_embedding_api_key = (
                 os.getenv("EVAL_EMBEDDING_BINDING_API_KEY")
                 or os.getenv("EVAL_LLM_BINDING_API_KEY")
                 or os.getenv("OPENAI_API_KEY")
             )
-            eval_embedding_model = os.getenv("EVAL_EMBEDDING_MODEL", "text-embedding-3-large")
-            eval_embedding_base_url = os.getenv("EVAL_EMBEDDING_BINDING_HOST") or os.getenv("EVAL_LLM_BINDING_HOST")
+            eval_embedding_model = os.getenv("EVAL_EMBEDDING_MODEL")
+            eval_embedding_base_url = os.getenv("EVAL_EMBEDDING_BINDING_HOST") or os.getenv(
+                "EVAL_LLM_BINDING_HOST"
+            )
+            eval_llm_base_url = _normalize_ollama_openai_base_url(eval_llm_base_url)
+            eval_embedding_base_url = _normalize_ollama_openai_base_url(eval_embedding_base_url)
+
+            # 無 EVAL_* 時自 config.yml 補齊（Ollama OpenAI 相容端點）
+            fb = _load_ragas_defaults_from_config()
+            if fb:
+                if not eval_model:
+                    eval_model = fb["llm_model"]
+                if not eval_llm_base_url:
+                    eval_llm_base_url = fb["llm_base_url"]
+                if not eval_embedding_model:
+                    eval_embedding_model = fb["embedding_model"]
+                if not eval_embedding_base_url:
+                    eval_embedding_base_url = fb["embedding_base_url"]
+
+            if not eval_model:
+                eval_model = os.getenv("EVAL_LLM_MODEL", "gpt-4o-mini")
+            if not eval_embedding_model:
+                eval_embedding_model = os.getenv("EVAL_EMBEDDING_MODEL", "text-embedding-3-large")
 
             # Ollama 等 OpenAI 相容端點不需真實 key，LangChain 仍需非空 api_key
             compat_key = os.getenv("EVAL_OPENAI_COMPAT_API_KEY", "ollama")
@@ -102,12 +203,17 @@ class RAGASMetricBase(BaseMetric):
                 eval_embedding_api_key = compat_key
 
             if not eval_llm_api_key:
-                warnings.warn("RAGAS 指標需要 API Key 或 EVAL_LLM_BINDING_HOST（OpenAI 相容端點），請設定環境變數")
+                warnings.warn(
+                    "RAGAS 指標需要 API Key、EVAL_LLM_BINDING_HOST，或可用的 config.yml（eval_model.ollama_url）",
+                    stacklevel=2,
+                )
                 self.available = False
                 return
             if not eval_embedding_api_key:
                 warnings.warn(
-                    "RAGAS 指標需要 Embedding API Key 或 EVAL_EMBEDDING_BINDING_HOST / EVAL_LLM_BINDING_HOST，請設定環境變數"
+                    "RAGAS 指標需要 Embedding API Key、EVAL_EMBEDDING_BINDING_HOST / EVAL_LLM_BINDING_HOST，"
+                    "或可用的 config.yml（model.embed_model 與 ollama_url）",
+                    stacklevel=2,
                 )
                 self.available = False
                 return
@@ -131,14 +237,25 @@ class RAGASMetricBase(BaseMetric):
             )
             
             # 建立 Embeddings
-            embedding_kwargs = {
-                "model": eval_embedding_model,
-                "api_key": eval_embedding_api_key,
-            }
+            # 有自訂 base_url（Ollama 等本地端點）→ LiteLLMEmbeddings，避免 OpenAIEmbeddings
+            # 對 Ollama /v1/embeddings 傳送不相容格式（400 invalid input type）
             if eval_embedding_base_url:
-                embedding_kwargs["base_url"] = eval_embedding_base_url
-            
-            self.embeddings = OpenAIEmbeddings(**embedding_kwargs)
+                # LiteLLMEmbeddings 的 api_base 不含 /v1 尾綴
+                litellm_api_base = eval_embedding_base_url
+                if litellm_api_base.endswith("/v1"):
+                    litellm_api_base = litellm_api_base[:-3]
+                litellm_api_base = litellm_api_base.rstrip("/")
+                self.embeddings = LiteLLMEmbeddings(
+                    model=f"ollama/{eval_embedding_model}",
+                    api_base=litellm_api_base,
+                    api_key=eval_embedding_api_key,
+                )
+            else:
+                # 真實 OpenAI API
+                self.embeddings = OpenAIEmbeddings(
+                    model=eval_embedding_model,
+                    api_key=eval_embedding_api_key,
+                )
             
         except Exception as e:
             warnings.warn(f"初始化 RAGAS LLM/Embeddings 失敗: {e}")
@@ -206,7 +323,7 @@ class AnswerRelevancyMetric(RAGASMetricBase):
             df = result.to_pandas()
             score = df.iloc[0].get("answer_relevancy", None)
             
-            return float(score) if score is not None else None
+            return _coerce_ragas_score(score)
             
         except Exception as e:
             print(f"  ⚠️ AnswerRelevancy 評估失敗: {e}")
@@ -302,7 +419,7 @@ class ContextPrecisionMetric(RAGASMetricBase):
             df = result.to_pandas()
             score = df.iloc[0].get("context_precision", None)
             
-            return float(score) if score is not None else None
+            return _coerce_ragas_score(score)
             
         except Exception as e:
             print(f"  ⚠️ ContextPrecision 評估失敗: {e}")
@@ -398,7 +515,7 @@ class ContextRecallMetric(RAGASMetricBase):
             df = result.to_pandas()
             score = df.iloc[0].get("context_recall", None)
             
-            return float(score) if score is not None else None
+            return _coerce_ragas_score(score)
             
         except Exception as e:
             print(f"  ⚠️ ContextRecall 評估失敗: {e}")
@@ -426,6 +543,97 @@ class ContextRecallMetric(RAGASMetricBase):
             return asyncio.run(self.compute_async(query, contexts, ground_truth))
         except Exception as e:
             print(f"  ⚠️ ContextRecall 同步評估失敗: {e}")
+            return None
+
+
+class AnswerCorrectnessMetric(RAGASMetricBase):
+    """
+    Ragas answer_correctness 評估指標
+
+    定義：結合語義相似度（embedding）與 NLI 事實一致性，綜合評估生成答案與標準答案的正確程度。
+    與 LlamaIndex CorrectnessMetric（0-5 分）互補，此指標範圍 [0, 1]。
+
+    所需欄位：user_input（問題）、response（生成答案）、reference（標準答案）
+    範圍：[0, 1]（越高越好）
+    """
+
+    def __init__(self, llm=None, embeddings=None):
+        super().__init__(
+            name="ragas_answer_correctness",
+            description="使用 Ragas 評估答案綜合正確性（語義相似度 + 事實一致性）",
+            llm=llm,
+            embeddings=embeddings,
+        )
+
+        if self.available:
+            self.metric = AnswerCorrectness()
+
+    async def compute_async(
+        self,
+        query: str,
+        response: str,
+        reference: str,
+    ) -> Optional[float]:
+        """
+        非同步計算 answer_correctness 分數
+
+        Args:
+            query: 使用者問題
+            response: 生成的答案
+            reference: 標準答案
+
+        Returns:
+            answer_correctness 分數 (0-1)，失敗時返回 None
+        """
+        if not self.available:
+            return None
+        query_text = _normalize_text_input(query)
+        response_text = _normalize_text_input(response)
+        reference_text = _normalize_text_input(reference)
+        if not reference_text:
+            return None
+
+        try:
+            eval_dataset = Dataset.from_dict({
+                "user_input": [query_text],
+                "response": [response_text],
+                "reference": [reference_text],
+            })
+
+            result = evaluate(
+                dataset=eval_dataset,
+                metrics=[self.metric],
+                llm=self.llm,
+                embeddings=self.embeddings,
+            )
+
+            df = result.to_pandas()
+            score = df.iloc[0].get("answer_correctness", None)
+            parsed_score = _coerce_ragas_score(score)
+            if parsed_score is not None:
+                return parsed_score
+            return None
+
+        except Exception as e:
+            print(
+                "  ⚠️ Ragas AnswerCorrectness 評估失敗: "
+                f"{e} | types(q/r/ref)=({type(query).__name__}/{type(response).__name__}/{type(reference).__name__}) "
+                f"| lens(q/r/ref)=({len(query_text)}/{len(response_text)}/{len(reference_text)})"
+            )
+            return None
+
+    def compute(
+        self,
+        query: str,
+        response: str,
+        reference: str,
+    ) -> Optional[float]:
+        """同步介面（不建議使用）"""
+        import asyncio
+        try:
+            return asyncio.run(self.compute_async(query, response, reference))
+        except Exception as e:
+            print(f"  ⚠️ Ragas AnswerCorrectness 同步評估失敗: {e}")
             return None
 
 
@@ -495,7 +703,7 @@ class RAGASFaithfulnessMetric(RAGASMetricBase):
             df = result.to_pandas()
             score = df.iloc[0].get("faithfulness", None)
             
-            return float(score) if score is not None else None
+            return _coerce_ragas_score(score)
             
         except Exception as e:
             print(f"  ⚠️ RAGAS Faithfulness 評估失敗: {e}")

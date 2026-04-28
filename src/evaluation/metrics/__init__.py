@@ -30,12 +30,14 @@ from .generation import (
 from .llm_judge import (
     CorrectnessMetric,
     FaithfulnessMetric,
+    KeyFactCoverageMetric,
 )
 from .ragas_metrics import (
     AnswerRelevancyMetric,
     ContextPrecisionMetric,
     ContextRecallMetric,
     RAGASFaithfulnessMetric,
+    AnswerCorrectnessMetric,
 )
 
 __all__ = [
@@ -65,9 +67,11 @@ __all__ = [
     # LLM Judge 指標
     "CorrectnessMetric",
     "FaithfulnessMetric",
+    "KeyFactCoverageMetric",
     # RAGAS 指標
     "AnswerRelevancyMetric",
     "ContextPrecisionMetric",
     "ContextRecallMetric",
     "RAGASFaithfulnessMetric",
+    "AnswerCorrectnessMetric",
 ]

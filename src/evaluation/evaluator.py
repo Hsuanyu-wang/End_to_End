@@ -24,10 +24,12 @@ from src.evaluation.metrics import (
     JiebaF1Metric,
     CorrectnessMetric,
     FaithfulnessMetric,
+    KeyFactCoverageMetric,
     AnswerRelevancyMetric,
     ContextPrecisionMetric,
     ContextRecallMetric,
     RAGASFaithfulnessMetric,
+    AnswerCorrectnessMetric,
 )
 
 
@@ -42,7 +44,7 @@ class RAGEvaluator:
         base_eval_dir: 評估結果儲存目錄
     """
     
-    def __init__(self, eval_llm, base_eval_dir: str = None):
+    def __init__(self, eval_llm, base_eval_dir: str = None, metrics_mode: str = "kfc_only"):
         """
         初始化評估器
         
@@ -51,6 +53,7 @@ class RAGEvaluator:
             base_eval_dir: 評估結果儲存目錄，預設為 results/evaluation_results_{timestamp}
         """
         self.eval_llm = eval_llm
+        self.metrics_mode = metrics_mode
         
         if base_eval_dir is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -64,11 +67,35 @@ class RAGEvaluator:
     
     def _init_metrics(self):
         """初始化所有評估指標"""
+        # KFC 永遠保留（目前預設模式）
+        self.key_fact_coverage_metric = KeyFactCoverageMetric(llm=self.eval_llm)
+
+        # 預設占位，避免 kfc_only 模式下誤用到未初始化屬性
+        self.hit_rate_metric = None
+        self.mrr_metric = None
+        self.retrieval_f1_metric = None
+        self.rouge_metric = None
+        self.bleu_metric = None
+        self.meteor_metric = None
+        self.bertscore_metric = None
+        self.token_f1_metric = None
+        self.jieba_f1_metric = None
+        self.correctness_metric = None
+        self.faithfulness_metric = None
+        self.answer_relevancy_metric = None
+        self.context_precision_metric = None
+        self.context_recall_metric = None
+        self.ragas_faithfulness_metric = None
+        self.answer_correctness_metric = None
+
+        if self.metrics_mode != "full":
+            return
+
         # 檢索指標
         self.hit_rate_metric = HitRateMetric()
         self.mrr_metric = MRRMetric()
         self.retrieval_f1_metric = RetrievalF1Metric()
-        
+
         # 生成指標
         self.rouge_metric = ROUGEMetric()
         self.bleu_metric = BLEUMetric()
@@ -76,17 +103,19 @@ class RAGEvaluator:
         self.bertscore_metric = BERTScoreMetric(lang="zh")
         self.token_f1_metric = TokenF1Metric()
         self.jieba_f1_metric = JiebaF1Metric()
-        
+
         # LLM Judge 指標 (LlamaIndex)
         self.correctness_metric = CorrectnessMetric(llm=self.eval_llm)
         self.faithfulness_metric = FaithfulnessMetric(llm=self.eval_llm)
-        
+        self.key_fact_coverage_metric = KeyFactCoverageMetric(llm=self.eval_llm)
+
         # RAGAS 指標
         # 註：RAGAS 指標會自動從環境變數讀取配置，與 LlamaIndex 指標共用評估 LLM
         self.answer_relevancy_metric = AnswerRelevancyMetric()
         self.context_precision_metric = ContextPrecisionMetric()
         self.context_recall_metric = ContextRecallMetric()
         self.ragas_faithfulness_metric = RAGASFaithfulnessMetric()
+        self.answer_correctness_metric = AnswerCorrectnessMetric()
 
     @staticmethod
     def _normalize_doc_ids(doc_ids: Any) -> List[str]:
@@ -163,80 +192,115 @@ class RAGEvaluator:
         gt_ids = self._normalize_doc_ids(gt_ids)
         retrieved_ids = self._normalize_doc_ids(retrieved_ids)
 
-        # 檢索指標（加上防呆 clamp）
-        hit_rate = self.hit_rate_metric.compute(retrieved_ids, gt_ids)
-        mrr = self.mrr_metric.compute(retrieved_ids, gt_ids)
-        recall, precision, f1_score = self.retrieval_f1_metric.compute(retrieved_ids, gt_ids)
-        hit_rate = self._clamp_retrieval_metric(hit_rate, "hit_rate", query, idx, pipeline_name)
-        mrr = self._clamp_retrieval_metric(mrr, "mrr", query, idx, pipeline_name)
-        recall = self._clamp_retrieval_metric(recall, "retrieval_recall", query, idx, pipeline_name)
-        precision = self._clamp_retrieval_metric(precision, "retrieval_precision", query, idx, pipeline_name)
-        f1_score = self._clamp_retrieval_metric(f1_score, "retrieval_f1_score", query, idx, pipeline_name)
+        is_full_metrics = self.metrics_mode == "full"
+
+        # 檢索指標（僅 full）
+        hit_rate = None
+        mrr = None
+        recall = None
+        precision = None
+        f1_score = None
+        if is_full_metrics:
+            hit_rate = self.hit_rate_metric.compute(retrieved_ids, gt_ids)
+            mrr = self.mrr_metric.compute(retrieved_ids, gt_ids)
+            recall, precision, f1_score = self.retrieval_f1_metric.compute(retrieved_ids, gt_ids)
+            hit_rate = self._clamp_retrieval_metric(hit_rate, "hit_rate", query, idx, pipeline_name)
+            mrr = self._clamp_retrieval_metric(mrr, "mrr", query, idx, pipeline_name)
+            recall = self._clamp_retrieval_metric(recall, "retrieval_recall", query, idx, pipeline_name)
+            precision = self._clamp_retrieval_metric(precision, "retrieval_precision", query, idx, pipeline_name)
+            f1_score = self._clamp_retrieval_metric(f1_score, "retrieval_f1_score", query, idx, pipeline_name)
+
+        # 生成指標（僅 full）
+        rouge1 = rouge2 = rougeL = rougeLsum = None
+        bleu = meteor = None
+        bert_f1 = tok_f1 = jieba_f1 = None
+        if is_full_metrics:
+            _, _, jieba_f1 = self.jieba_f1_metric.compute(gen_answer, gt_answer)
+            rouge1, rouge2, rougeL, rougeLsum = self.rouge_metric.compute(gen_answer, gt_answer)
+            bleu = self.bleu_metric.compute(gen_answer, gt_answer)
+            meteor = self.meteor_metric.compute(gen_answer, gt_answer)
+            _, _, bert_f1 = self.bertscore_metric.compute(gen_answer, gt_answer)
+            _, _, tok_f1 = self.token_f1_metric.compute(gen_answer, gt_answer)
+
+        # LLM-as-Judge 指標（僅 full）
+        correctness_score = None
+        faithfulness_score = None
+        if is_full_metrics:
+            try:
+                correctness_score = await self.correctness_metric.compute_async(
+                    query=query,
+                    response=gen_answer,
+                    reference=gt_answer
+                )
+
+                faithfulness_score = await self.faithfulness_metric.compute_async(
+                    query=query,
+                    response=gen_answer,
+                    contexts=retrieved_contexts
+                )
+            except Exception as e:
+                print(f"  ⚠️ 評測 LLM API 呼叫失敗: {e}")
+                correctness_score, faithfulness_score = None, None
+
+        # 關鍵事實覆蓋率
+        (
+            kfc_recall,
+            kfc_precision,
+            kfc_f1,
+            kfc_gt_fact_count,
+            kfc_gen_claim_count,
+        ) = await self.key_fact_coverage_metric.compute_async(
+            query=query,
+            response=gen_answer,
+            reference=gt_answer,
+        )
         
-        # 生成指標
-        jieba_r, jieba_p, jieba_f1 = self.jieba_f1_metric.compute(gen_answer, gt_answer)
-        rouge1, rouge2, rougeL, rougeLsum = self.rouge_metric.compute(gen_answer, gt_answer)
-        bleu = self.bleu_metric.compute(gen_answer, gt_answer)
-        meteor = self.meteor_metric.compute(gen_answer, gt_answer)
-        bert_p, bert_r, bert_f1 = self.bertscore_metric.compute(gen_answer, gt_answer)
-        tok_r, tok_p, tok_f1 = self.token_f1_metric.compute(gen_answer, gt_answer)
-        
-        # LLM-as-Judge 指標
-        try:
-            correctness_score = await self.correctness_metric.compute_async(
-                query=query,
-                response=gen_answer,
-                reference=gt_answer
-            )
-            
-            faithfulness_score = await self.faithfulness_metric.compute_async(
-                query=query,
-                response=gen_answer,
-                contexts=retrieved_contexts
-            )
-        except Exception as e:
-            print(f"  ⚠️ 評測 LLM API 呼叫失敗: {e}")
-            correctness_score, faithfulness_score = None, None
-        
-        # RAGAS 指標（可選，若未安裝 RAGAS 則回傳 None）
+        # RAGAS 指標（僅 full）
         answer_relevancy_score = None
         context_precision_score = None
         context_recall_score = None
         ragas_faithfulness_score = None
-        
-        try:
-            # AnswerRelevancy: 評估答案與問題的相關性
-            answer_relevancy_score = await self.answer_relevancy_metric.compute_async(
-                query=query,
-                response=gen_answer,
-                ground_truth=gt_answer
-            )
-            
-            # ContextPrecision: 評估檢索上下文的精準度
-            # 註：使用實際檢索到的上下文 (retrieved_contexts)
-            context_precision_score = await self.context_precision_metric.compute_async(
-                query=query,
-                contexts=retrieved_contexts,
-                ground_truth=gt_answer
-            )
-            
-            # ContextRecall: 評估檢索上下文的召回率
-            # 註：使用實際檢索到的上下文 (retrieved_contexts)
-            context_recall_score = await self.context_recall_metric.compute_async(
-                query=query,
-                contexts=retrieved_contexts,
-                ground_truth=gt_answer
-            )
-            
-            # RAGASFaithfulness: RAGAS 版本的忠實度評估
-            # 註：使用實際檢索到的上下文 (retrieved_contexts)
-            ragas_faithfulness_score = await self.ragas_faithfulness_metric.compute_async(
-                query=query,
-                response=gen_answer,
-                contexts=retrieved_contexts
-            )
-        except Exception as e:
-            print(f"  ⚠️ RAGAS 指標計算失敗: {e}")
+        ragas_answer_correctness_score = None
+        if is_full_metrics:
+            try:
+                # AnswerRelevancy: 評估答案與問題的相關性
+                # answer_relevancy_score = await self.answer_relevancy_metric.compute_async(
+                #     query=query,
+                #     response=gen_answer,
+                #     ground_truth=gt_answer
+                # )
+
+                # ContextPrecision: 評估檢索上下文的精準度
+                # 註：使用實際檢索到的上下文 (retrieved_contexts)
+                context_precision_score = await self.context_precision_metric.compute_async(
+                    query=query,
+                    contexts=retrieved_contexts,
+                    ground_truth=gt_answer
+                )
+
+                # ContextRecall: 評估檢索上下文的召回率
+                # 註：使用實際檢索到的上下文 (retrieved_contexts)
+                context_recall_score = await self.context_recall_metric.compute_async(
+                    query=query,
+                    contexts=retrieved_contexts,
+                    ground_truth=gt_answer
+                )
+
+                # RAGASFaithfulness: RAGAS 版本的忠實度評估
+                # 註：使用實際檢索到的上下文 (retrieved_contexts)
+                ragas_faithfulness_score = await self.ragas_faithfulness_metric.compute_async(
+                    query=query,
+                    response=gen_answer,
+                    contexts=retrieved_contexts
+                )
+                # Ragas answer_correctness（結合語義相似度 + 事實一致性，範圍 [0, 1]）
+                ragas_answer_correctness_score = await self.answer_correctness_metric.compute_async(
+                    query=query,
+                    response=gen_answer,
+                    reference=gt_answer,
+                )
+            except Exception as e:
+                print(f"  ⚠️ RAGAS 指標計算失敗: {e}")
         
         # 提取詳細token資訊
         entity_tokens = 0
@@ -289,11 +353,18 @@ class RAGEvaluator:
             # LLM Judge 指標 (LlamaIndex)
             "correctness_score": correctness_score,
             "faithfulness_score": faithfulness_score,
+            # 關鍵事實覆蓋率
+            "kfc_recall": kfc_recall,
+            "kfc_precision": kfc_precision,
+            "kfc_f1": kfc_f1,
+            "kfc_gt_fact_count": kfc_gt_fact_count,
+            "kfc_gen_claim_count": kfc_gen_claim_count,
             # RAGAS 指標
             "answer_relevancy": answer_relevancy_score,
             "context_precision": context_precision_score,
             "context_recall": context_recall_score,
             "ragas_faithfulness": ragas_faithfulness_score,
+            "ragas_answer_correctness": ragas_answer_correctness_score,
         }
         
         # 只在第一筆資料（idx=1）時記錄 schema 資訊
@@ -369,7 +440,15 @@ class RAGEvaluator:
                     context_token_details=context_token_details,
                     pipeline_name=pipeline_name
                 )
-                
+
+                # 題型欄位（僅保留資料本身已存在的 Q_type；不存在則留空）
+                metrics_row["Q_type"] = qa.get("Q_type", "") or ""
+
+                # 保留完整 retrieval 內容供後續分析（不納入評估指標計算）
+                metrics_row["retrieved_entities"] = result.get("retrieved_entities", [])
+                metrics_row["retrieved_relations"] = result.get("retrieved_relations", [])
+                metrics_row["retrieved_contexts"] = result.get("retrieved_contexts", [])
+
                 results.append(metrics_row)
             
             except Exception as e:
@@ -405,7 +484,7 @@ async def compute_and_format_metrics(
         指標字典
     """
     # 建立臨時評估器
-    evaluator = RAGEvaluator(eval_llm=correctness_evaluator.llm)
+    evaluator = RAGEvaluator(eval_llm=correctness_evaluator.llm, metrics_mode="full")
     
     return await evaluator.compute_metrics_for_sample(
         idx=idx,

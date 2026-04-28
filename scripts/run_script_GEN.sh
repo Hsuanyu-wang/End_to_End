@@ -44,30 +44,31 @@
 #########################################################################################################
 # LightRAG methods
 #########################################################################################################
-# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode hybrid --ollama_url http://192.168.63.174:11434
-# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode hybrid
-# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode naive
-# python run_evaluation.py --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode naive
+python run_evaluation.py --data_type GEN --graph_type lightrag --graph_retrieval native --lightrag_mode hybrid --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode hybrid --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --graph_retrieval native --lightrag_mode naive --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --graph_retrieval native --lightrag_mode original --lightrag_native_mode naive --ollama_url http://192.168.63.174:11434
 
 #########################################################################################################
 # simmerge plugin
 #########################################################################################################
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.95
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.9
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.8
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_text_mode name_desc
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.95 --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.9 --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.8 --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
 
 #########################################################################################################
 # schema plugin
 #########################################################################################################
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method lightrag_default --ollama_url http://192.168.63.174:11434
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method iterative_evolution
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method llm_dynamic
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method llamaindex_dynamic
-# python run_evaluation.py --graph_type lightrag --lightrag_mode hybrid --schema_method no_schema --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --schema_method lightrag_default --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --schema_method adaptive_consolidation --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --schema_method iterative_evolution --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --schema_method llm_dynamic --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --schema_method llamaindex_dynamic --ollama_url http://192.168.63.174:11434
+python run_evaluation.py --data_type GEN --graph_type lightrag --lightrag_mode hybrid --schema_method no_schema --ollama_url http://192.168.63.174:11434
 
 #########################################################################################################
 # temporal plugin
@@ -116,23 +117,22 @@
 # python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.9 --simmerge_threshold_max 0.95 --ollama_url http://192.168.63.174:11434
 # python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.9 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
 # python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.8 --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.8 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.8 --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.8 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
 
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.95 --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.90 --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.90 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.90 --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.90 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.95 --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.95 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.90 --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.85 --simmerge_threshold_max 0.90 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.90 --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --plugin_simmerge --simmerge_threshold 0.80 --simmerge_threshold_max 0.90 --simmerge_text_mode name_desc --ollama_url http://192.168.63.174:11434
 
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method lightrag_default  --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method no_schema  --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method adaptive_consolidation  --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method iterative_evolution  --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method llm_dynamic  --ollama_url http://192.168.63.174:11434
-python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method llamaindex_dynamic  --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method lightrag_default  --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method no_schema  --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method iterative_evolution  --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method llm_dynamic  --ollama_url http://192.168.63.174:11434
+# python run_evaluation.py --data_type LIGHTRAG_MIX --graph_type lightrag --lightrag_mode hybrid --schema_method llamaindex_dynamic  --ollama_url http://192.168.63.174:11434

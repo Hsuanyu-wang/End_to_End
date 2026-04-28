@@ -5,15 +5,16 @@
 支援多種資料模式以適應不同的 RAG 需求。
 """
 
+import hashlib
 import json
 import os
-from typing import List, Literal
+from typing import List, Literal, Any
 from llama_index.core import Document
 from src.config.settings import get_settings
 
 
 DataMode = Literal["natural_text", "markdown", "key_value_text", "unstructured_text"]
-DataType = Literal["DI", "GEN"]
+DataType = str
 
 
 class DataProcessor:
@@ -39,16 +40,16 @@ class DataProcessor:
         self.mode = mode
         self.data_type = data_type
         self.settings = get_settings()
+        self.data_config = self.settings.data_config
+        self.document_loader = self.data_config.get_document_loader(data_type)
         self.raw_file_path = self._get_raw_file_path()
     
     def _get_raw_file_path(self) -> str:
         """取得原始資料檔案路徑"""
-        if self.data_type == "DI":
-            return self.settings.data_config.raw_file_path_DI
-        elif self.data_type == "GEN":
-            return self.settings.data_config.raw_file_path_GEN
-        else:
-            raise ValueError(f"不支援的資料類型: {self.data_type}")
+        raw_file_path = self.data_config.get_document_file_path(self.data_type)
+        if raw_file_path:
+            return raw_file_path
+        raise ValueError(f"不支援的資料類型或未設定文件路徑: {self.data_type}")
     
     def _extract_metadata(self, data: dict) -> dict:
         """
@@ -68,6 +69,11 @@ class DataProcessor:
                 metadata[key] = data[key]
         
         return metadata
+
+    @staticmethod
+    def _build_context_hash(context: str) -> str:
+        """建立穩定的文件 ID，讓 QA 與檢索評測可對齊。"""
+        return hashlib.md5(context.encode("utf-8")).hexdigest()
     
     def _format_natural_text(self, data: dict, metadata: dict) -> str:
         """
@@ -96,7 +102,7 @@ class DataProcessor:
             f"- **Customer**: {data.get('Customer', 'N/A')}\n"
             f"- **Engineers**: {data.get('Engineers', 'N/A')}\n"
             f"- **Service Time**: {data.get('Service Start', 'N/A')} to {data.get('Service End', 'N/A')}\n"
-            f"- **Maintenance Type**: {data.get('維護類別', 'N/A')}\n\n"
+            # f"- **Maintenance Type**: {data.get('維護類別', 'N/A')}\n\n"
             f"## Target Details (For Entity and Relation Extraction)\n"
             f"### Description (狀態描述)\n"
             f"{data.get('Description', '無描述')}\n\n"
@@ -116,7 +122,7 @@ class DataProcessor:
             f"Engineers: {data['Engineers']}\n"
             f"Start Time: {data['Service Start']}\n"
             f"End Time: {data['Service End']}\n"
-            f"Maintenance Type: {data.get('維護類別', 'N/A')}\n"
+            # f"Maintenance Type: {data.get('維護類別', 'N/A')}\n"
             f"Description: {data['Description']}\n"
             f"Action: {data['Action']}"
         )
@@ -194,6 +200,245 @@ class DataProcessor:
         
         else:
             raise ValueError(f"不支援的資料模式: {self.mode}")
+
+    # ------------------------------------------------------------------
+    # Bio 透析病歷 JSONL loader
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _collect_bio_dates(data: dict) -> set:
+        """收集患者所有透析日期（從四個欄位聯集）。"""
+        dates = set()
+        for ts, _ in data.get("nurse_record", []):
+            dates.add(str(ts).split()[0])
+        for item in data.get("order", []):
+            if item:
+                dates.add(str(item[0]))
+        for item in data.get("a+p", []):
+            if item:
+                dates.add(str(item[0]))
+        for item in data.get("fiber_list", []):
+            if item:
+                dates.add(str(item[0]))
+        return dates
+
+    def _format_bio_session_text(self, data: dict, date: str) -> str:
+        """將單次透析日（session）的資料格式化為指定 data_mode 的文本。"""
+        case_number = data.get("case_number", "")
+        age = data.get("age", "")
+        blood_type = str(data.get("blood_type", "") or "")
+        blood_rh = str(data.get("blood_rh", "") or "")
+        hbv = data.get("hbv", 0)
+        hcv = data.get("hcv", 0)
+        hiv = data.get("hiv", 0)
+        patient_header = (
+            f"患者病歷號 {case_number}（{age} 歲，血型 {blood_type}{blood_rh}，"
+            f"HBV/HCV/HIV: {hbv}/{hcv}/{hiv}）"
+        )
+
+        # 篩選當日護理紀錄（比較日期前綴）
+        day_nurses = [
+            f"[{ts.split(' ', 1)[1] if ' ' in ts else ts}] {note}"
+            for ts, note in data.get("nurse_record", [])
+            if str(ts).startswith(date) and note
+        ]
+        nurse_text = "\n".join(day_nurses) if day_nurses else "（無）"
+
+        # 篩選當日醫囑
+        day_orders = []
+        for item in data.get("order", []):
+            if len(item) >= 2 and str(item[0]) == date:
+                drug = item[1]
+                extra = " ".join(str(x) for x in item[2:] if x)
+                day_orders.append(f"{drug} {extra}".strip())
+        order_text = "\n".join(day_orders) if day_orders else "（無）"
+
+        # 篩選當日評估計畫
+        day_ap = [item[1] for item in data.get("a+p", []) if len(item) >= 2 and str(item[0]) == date]
+        ap_text = "\n".join(day_ap) if day_ap else "（無）"
+
+        # 篩選當日過濾器狀態
+        day_fiber = []
+        for item in data.get("fiber_list", []):
+            if item and str(item[0]) == date:
+                status = item[1]
+                day_fiber.append(", ".join(status) if isinstance(status, list) else str(status))
+        fiber_text = "\n".join(day_fiber) if day_fiber else "（無）"
+
+        if self.mode == "markdown":
+            return (
+                f"# 透析紀錄（{date}）\n\n"
+                f"## 患者資訊\n"
+                f"- 病歷號: {case_number}\n"
+                f"- 年齡: {age} 歲\n"
+                f"- 血型: {blood_type}{blood_rh}\n"
+                f"- HBV: {hbv}, HCV: {hcv}, HIV: {hiv}\n\n"
+                f"## 護理紀錄\n{nurse_text}\n\n"
+                f"## 醫囑\n{order_text}\n\n"
+                f"## 評估計畫 (A+P)\n{ap_text}\n\n"
+                f"## 過濾器狀態\n{fiber_text}\n"
+            )
+
+        if self.mode == "key_value_text":
+            return (
+                f"病歷號: {case_number}\n"
+                f"年齡: {age}\n"
+                f"血型: {blood_type}{blood_rh}\n"
+                f"HBV/HCV/HIV: {hbv}/{hcv}/{hiv}\n"
+                f"透析日期: {date}\n"
+                f"護理紀錄:\n{nurse_text}\n"
+                f"醫囑:\n{order_text}\n"
+                f"評估計畫:\n{ap_text}\n"
+                f"過濾器狀態:\n{fiber_text}\n"
+            )
+
+        if self.mode == "unstructured_text":
+            return (
+                "=== TARGET TEXT FOR EXTRACTION ===\n"
+                f"{patient_header}\n"
+                f"透析日期：{date}\n\n"
+                f"護理紀錄:\n{nurse_text}\n\n"
+                f"醫囑:\n{order_text}\n\n"
+                f"評估計畫:\n{ap_text}\n\n"
+                f"過濾器狀態:\n{fiber_text}\n"
+                "=================================="
+            )
+
+        # natural_text（預設）
+        return (
+            f"{patient_header}\n"
+            f"透析日期：{date}\n"
+            f"--- 護理紀錄 ---\n{nurse_text}\n"
+            f"--- 醫囑 ---\n{order_text}\n"
+            f"--- 評估計畫 ---\n{ap_text}\n"
+            f"--- 過濾器狀態 ---\n{fiber_text}\n"
+        )
+
+    def _create_bio_session_document(self, data: dict, date: str) -> Document:
+        """將單次透析日資料轉為 LlamaIndex Document，doc_id = hash(case_number + date)。"""
+        case_number = str(data.get("case_number", ""))
+        doc_id = self._build_context_hash(case_number + date)
+        metadata = {
+            "case_number": case_number,
+            "session_date": date,
+            "age": data.get("age", ""),
+            "blood_type": str(data.get("blood_type", "") or "") + str(data.get("blood_rh", "") or ""),
+            "hbv": data.get("hbv", 0),
+            "hcv": data.get("hcv", 0),
+            "hiv": data.get("hiv", 0),
+            "source": os.path.basename(self.raw_file_path),
+            "data_type": self.data_type,
+        }
+        text = self._format_bio_session_text(data, date)
+        hidden_keys = list(metadata.keys())
+        return Document(
+            text=text,
+            metadata=metadata,
+            doc_id=doc_id,
+            excluded_embed_metadata_keys=hidden_keys,
+            excluded_llm_metadata_keys=hidden_keys,
+        )
+
+    def _create_bio_document(self, data: dict) -> Document:
+        """（向後相容）整患者級 Document，不再由 _process_bio_jsonl 呼叫。"""
+        case_number = str(data.get("case_number", ""))
+        doc_id = self._build_context_hash(case_number) if case_number else None
+        metadata = {
+            "case_number": case_number,
+            "age": data.get("age", ""),
+            "blood_type": str(data.get("blood_type", "") or "") + str(data.get("blood_rh", "") or ""),
+            "hbv": data.get("hbv", 0),
+            "hcv": data.get("hcv", 0),
+            "hiv": data.get("hiv", 0),
+            "source": os.path.basename(self.raw_file_path),
+            "data_type": self.data_type,
+        }
+        # 沿用舊格式（整患者所有日期合併）
+        all_dates = sorted(self._collect_bio_dates(data))
+        texts = [self._format_bio_session_text(data, d) for d in all_dates]
+        text = "\n\n".join(texts)
+        hidden_keys = list(metadata.keys())
+        return Document(
+            text=text,
+            metadata=metadata,
+            doc_id=doc_id,
+            excluded_embed_metadata_keys=hidden_keys,
+            excluded_llm_metadata_keys=hidden_keys,
+        )
+
+    def _process_bio_jsonl(self) -> List[Document]:
+        """載入 Bio 透析病歷 JSONL，以透析日為單位建立 Document（每患者每日一筆）。"""
+        documents = []
+        with open(self.raw_file_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                data = json.loads(line)
+                dates = self._collect_bio_dates(data)
+                for date in sorted(dates):
+                    documents.append(self._create_bio_session_document(data, date))
+        return documents
+
+    def _format_ultradomain_text(self, context: str, metadata: dict) -> str:
+        """UltraDomain 文本預設保留原始 context，減少對既有實驗的干擾。"""
+        if self.mode == "markdown":
+            domain = metadata.get("domain", "unknown")
+            return f"# UltraDomain Document\n\n- Domain: {domain}\n- Doc ID: {metadata['NO']}\n\n{context}"
+
+        if self.mode == "key_value_text":
+            domain = metadata.get("domain", "unknown")
+            return f"NO: {metadata['NO']}\nDomain: {domain}\nContext:\n{context}"
+
+        if self.mode == "unstructured_text":
+            return (
+                "=== TARGET TEXT FOR EXTRACTION ===\n"
+                f"{context}\n"
+                "=================================="
+            )
+
+        return context
+
+    def _create_ultradomain_document(self, context: str, index: int) -> Document:
+        """將 Step 0 unique contexts 轉為統一 Document。"""
+        context = str(context).strip()
+        if not context:
+            raise ValueError(f"第 {index} 筆 context 為空字串")
+
+        doc_id = self._build_context_hash(context)
+        dataset_config = self.data_config.get_dataset_config(self.data_type)
+        metadata = {
+            "NO": doc_id,
+            "doc_id": doc_id,
+            "original_doc_id": doc_id,
+            "domain": dataset_config.get("domain", self.data_type),
+            "source": os.path.basename(self.raw_file_path),
+            "data_type": self.data_type,
+        }
+        text = self._format_ultradomain_text(context, metadata)
+        hidden_metadata_keys = list(metadata.keys())
+        return Document(
+            text=text,
+            metadata=metadata,
+            doc_id=doc_id,
+            excluded_embed_metadata_keys=hidden_metadata_keys,
+            excluded_llm_metadata_keys=hidden_metadata_keys,
+        )
+
+    def _process_ultradomain_contexts(self) -> List[Document]:
+        """處理 UltraDomain unique contexts JSON。"""
+        with open(self.raw_file_path, "r", encoding="utf-8") as f:
+            contexts = json.load(f)
+
+        if not isinstance(contexts, list):
+            raise ValueError(f"UltraDomain 文件格式錯誤，應為 list: {self.raw_file_path}")
+
+        documents = []
+        for idx, context in enumerate(contexts, start=1):
+            if not isinstance(context, str):
+                raise ValueError(f"第 {idx} 筆 context 不是字串: {type(context)}")
+            documents.append(self._create_ultradomain_document(context, idx))
+        return documents
     
     def process(self) -> List[Document]:
         """
@@ -207,9 +452,15 @@ class DataProcessor:
         """
         if not os.path.exists(self.raw_file_path):
             raise FileNotFoundError(f"找不到原始資料檔案: {self.raw_file_path}")
-        
+
+        if self.document_loader == "ultradomain_contexts_json":
+            return self._process_ultradomain_contexts()
+
+        if self.document_loader == "bio_jsonl":
+            return self._process_bio_jsonl()
+
         documents = []
-        
+
         with open(self.raw_file_path, 'r', encoding='utf-8') as f:
             for line in f:
                 data = json.loads(line)

@@ -30,7 +30,7 @@ sys.path.insert(0, _PROJECT_ROOT)
 import src.plugins.similar_entity_merge_plugin  # noqa: F401 — 註冊 similar_entity_merge
 
 from src.config.settings import get_settings
-from src.data.loaders import load_and_normalize_qa_CSR_DI, load_and_normalize_qa_CSR_full
+from src.data.loaders import load_and_normalize_qa_by_type
 from src.data.processors import data_processing
 from src.rag.vector import get_vector_query_engine, get_self_query_engine, get_parent_child_query_engine
 from src.rag.graph import (
@@ -116,8 +116,45 @@ def parse_arguments():
     g_schema = parser.add_argument_group("Schema / Extractor")
     g_schema.add_argument(
         "--schema_method", type=str, default="lightrag_default",
-        choices=["lightrag_default", "iterative_evolution", "llm_dynamic", "llamaindex_dynamic", "no_schema"],
+        choices=["lightrag_default", "adaptive_consolidation", "iterative_evolution",
+                 "anchored_additive_evolution", "llm_dynamic", "llamaindex_dynamic", "no_schema"],
         help="Schema 生成方法",
+    )
+    g_schema.add_argument(
+        "--evolution_ratio", type=float, default=0.5,
+        help="iterative_evolution / anchored_additive_evolution 使用語料的最大比例（0.0~1.0）",
+    )
+    g_schema.add_argument(
+        "--evolution_min_frequency", type=int, default=2,
+        help="[AAE] 新增 entity type 需在幾個批次中被 LLM 建議才納入最終 schema（預設 2）",
+    )
+    g_schema.add_argument(
+        "--evolution_cluster", action="store_true",
+        help="[AAE] 使用 embedding K-means 分群取代順序切片，確保批次多樣性",
+    )
+    g_schema.add_argument(
+        "--evolution_bootstrap", action="store_true", default=True,
+        help="[AAE] 使用 embedding cluster 取代表文件產生領域初始 schema（預設啟用）",
+    )
+    g_schema.add_argument(
+        "--no_evolution_bootstrap", dest="evolution_bootstrap", action="store_false",
+        help="[AAE] 停用 domain bootstrap，改用通用 _BASE_SCHEMA 作為初始錨點",
+    )
+    g_schema.add_argument(
+        "--evolution_consolidate", action="store_true", default=True,
+        help="[AAE] 迭代完成後執行 schema consolidation（清理值型態、統一英文）（預設啟用）",
+    )
+    g_schema.add_argument(
+        "--no_evolution_consolidate", dest="evolution_consolidate", action="store_false",
+        help="[AAE] 停用 schema consolidation",
+    )
+    g_schema.add_argument(
+        "--evolution_adaptive_freq", action="store_true", default=True,
+        help="[AAE] 依批次數動態調整 min_frequency（預設啟用，忽略 --evolution_min_frequency）",
+    )
+    g_schema.add_argument(
+        "--no_evolution_adaptive_freq", dest="evolution_adaptive_freq", action="store_false",
+        help="[AAE] 停用 adaptive min_frequency，改用 --evolution_min_frequency 固定值",
     )
     g_schema.add_argument(
         "--pg_extractors", type=str, default="implicit,schema,simple",
@@ -149,6 +186,62 @@ def parse_arguments():
     g_plug.add_argument("--simmerge_force_recopy", action="store_true", help="SimMerge 強制重新複製 storage")
     g_plug.add_argument("--simmerge_dry_run", action="store_true", help="SimMerge 僅產生 log 不實際合併")
     g_plug.add_argument("--plugin_temporal", action="store_true", help="啟用時序圖譜 (Temporal Graph)")
+    g_plug.add_argument(
+        "--plugin_petn", action="store_true",
+        help="啟用 Post-hoc Entity Type Normalization（建圖後用 LLM 重新標注 entity_type）",
+    )
+    g_plug.add_argument(
+        "--petn_schema_method", type=str, default="anchored_additive_evolution",
+        choices=["lightrag_default", "anchored_additive_evolution", "iterative_evolution"],
+        help="PETN 使用的 schema 來源方法（預設 anchored_additive_evolution）",
+    )
+    g_plug.add_argument("--petn_force_recopy", action="store_true", help="PETN 強制重新複製 storage")
+    g_plug.add_argument(
+        "--plugin_edc", action="store_true",
+        help="啟用 Post-hoc Entity Description Consolidation（建圖後用 LLM 整合實體描述）",
+    )
+    g_plug.add_argument(
+        "--edc_min_desc_len", type=int, default=200,
+        help="EDC 只處理描述長度超過此值的 entity（預設 200）",
+    )
+    g_plug.add_argument("--edc_force_recopy", action="store_true", help="EDC 強制重新複製 storage")
+    g_plug.add_argument(
+        "--plugin_schema_typed_simmerge", action="store_true",
+        help="啟用 Schema-Typed SimMerge（STSM）：以 schema evolution 的 entity types 作為 type-aware 合併錨點，"
+             "串接於 SimMerge 之後，補捉同語義類別但名稱表達不同的 entity 重複",
+    )
+    g_plug.add_argument(
+        "--schema_typed_merge_method", type=str, default="anchored_additive_evolution",
+        choices=["lightrag_default", "anchored_additive_evolution", "iterative_evolution",
+                 "llm_dynamic", "llamaindex_dynamic"],
+        help="STSM 使用的 schema 方法（只用於 merge guidance，不影響 extraction；預設 anchored_additive_evolution）",
+    )
+    g_plug.add_argument(
+        "--schema_typed_merge_sim_threshold", type=float, default=0.82,
+        help="STSM 同 type 群內 entity 合併的餘弦相似度下界（預設 0.82；低於 SimMerge 因有 type 約束）",
+    )
+    g_plug.add_argument(
+        "--schema_typed_merge_type_threshold", type=float, default=0.60,
+        help="STSM entity 歸類到 schema type 的最低餘弦相似度（預設 0.60）",
+    )
+    g_plug.add_argument(
+        "--schema_typed_merge_entity_text_mode", type=str, default="name",
+        choices=["name", "name_desc"],
+        help="STSM entity embedding 文本模式（name 或 name_desc；預設 name）",
+    )
+    g_plug.add_argument(
+        "--schema_typed_merge_type_text_mode", type=str, default="name",
+        choices=["name", "name_desc"],
+        help="STSM schema type embedding 文本模式（name 或 name_desc；預設 name）",
+    )
+    g_plug.add_argument(
+        "--schema_typed_merge_force_recopy", action="store_true",
+        help="STSM 強制重新複製 storage（清除快取並重新執行 type-aware merge）",
+    )
+    g_plug.add_argument(
+        "--schema_typed_merge_dry_run", action="store_true",
+        help="STSM 僅產生 log，不實際執行合併（供調試用）",
+    )
 
     # ── Traversal Strategy 參數 ──
     g_strat = parser.add_argument_group("Traversal Strategy 參數")
@@ -172,6 +265,13 @@ def parse_arguments():
     g_method = parser.add_argument_group("方法參數")
     g_method.add_argument("--top_k", type=int, default=20, help="檢索數量")
     g_method.add_argument("--retrieval_max_tokens", type=int, default=0, help="檢索內容最大 token 數")
+    g_method.add_argument(
+        "--eval_metrics_mode",
+        type=str,
+        default="kfc_only",
+        choices=["kfc_only", "full"],
+        help="評估指標模式（kfc_only=僅計算 KFC；full=計算完整指標）",
+    )
 
     # ── Token Budget ──
     g_tb = parser.add_argument_group("Token Budget")
@@ -188,11 +288,38 @@ def parse_arguments():
     )
     g_data.add_argument("--model_type", type=str, default="small", choices=["small", "big"], help="模型大小")
 
+    # ── Ollama / LLM override（覆蓋 config.yml 預設）──
+    g_data.add_argument(
+        "--ollama_url",
+        type=str,
+        default=None,
+        help="覆蓋 config.yml 的 model/eval_model/builder_model.ollama_url（Base URL）:http://192.168.63.184:11434。",
+    )
+    g_data.add_argument(
+        "--llm_model",
+        type=str,
+        default=None,
+        help="覆蓋 config.yml 的 model.llm_model（主 LLM）。",
+    )
+    g_data.add_argument(
+        "--eval_llm_model",
+        type=str,
+        default=None,
+        help="覆蓋 config.yml 的 eval_model.llm_model（LLM-as-Judge）。",
+    )
+    g_data.add_argument(
+        "--builder_llm_model",
+        type=str,
+        default=None,
+        help="覆蓋 config.yml 的 builder_model.llm_model（圖譜/Schema 用）。",
+    )
+
     # ── 測試 / 輸出 ──
     g_test = parser.add_argument_group("測試 / 輸出")
     g_test.add_argument("--qa_dataset_fast_test", action="store_true", help="快速測試模式（僅前 2 題）")
     g_test.add_argument("--vector_build_fast_test", action="store_true", help="Vector 索引快速建立")
     g_test.add_argument("--graph_build_fast_test", action="store_true", help="Graph 索引快速建立")
+    g_test.add_argument("--qa_csv", type=str, default="", help="覆蓋 data_type 對應的 QA 檔案路徑（CSV/JSONL）")
     g_test.add_argument("--postfix", type=str, default="", help="結果資料夾名稱後綴")
     g_test.add_argument("--sup", type=str, default="", help="快取方法標識")
 
@@ -542,7 +669,28 @@ def _setup_lightrag(args, Settings, pipelines_to_test):
     from src.storage import get_storage_path
 
     # --- 1. 解析 sup + schema ---
-    full_sup = args.sup + f"_{args.schema_method}" if args.sup else args.schema_method
+    # 將影響 graph 結果的所有參數編入 tag，讓不同設定各自有獨立 graph storage
+    _schema_tag = args.schema_method
+    if args.schema_method == "iterative_evolution":
+        _ratio_pct = int(round(args.evolution_ratio * 100))
+        _schema_tag = f"iterative_evolution_r{_ratio_pct}"
+    elif args.schema_method == "anchored_additive_evolution":
+        _ratio_pct = int(round(args.evolution_ratio * 100))
+        _min_freq = getattr(args, "evolution_min_frequency", 2)
+        _use_clus = getattr(args, "evolution_cluster", False)
+        _use_boot = getattr(args, "evolution_bootstrap", True)
+        _use_cons = getattr(args, "evolution_consolidate", True)
+        _use_afq = getattr(args, "evolution_adaptive_freq", True)
+        _schema_tag = f"aae_r{_ratio_pct}_f{_min_freq}"
+        if _use_clus:
+            _schema_tag += "_clus"
+        if _use_boot:
+            _schema_tag += "_boot"
+        if _use_cons:
+            _schema_tag += "_cons"
+        if _use_afq:
+            _schema_tag += "_afq"
+    full_sup = args.sup + f"_{_schema_tag}" if args.sup else _schema_tag
 
     storage_mode = "" if args.lightrag_mode == "all" else args.lightrag_mode
     if storage_mode in ("none", "original"):
@@ -580,12 +728,21 @@ def _setup_lightrag(args, Settings, pipelines_to_test):
                 method=args.schema_method,
                 text_corpus=data_processing(mode=args.data_mode, data_type=args.data_type),
                 settings=Settings,
+                data_type=args.data_type,
+                data_mode=args.data_mode,
                 return_full_schema=True,
+                evolution_ratio=args.evolution_ratio,
+                evolution_min_frequency=getattr(args, "evolution_min_frequency", 2),
+                evolution_use_cluster=getattr(args, "evolution_cluster", False),
+                evolution_use_bootstrap=getattr(args, "evolution_bootstrap", True),
+                evolution_use_consolidate=getattr(args, "evolution_consolidate", True),
+                evolution_adaptive_min_frequency=getattr(args, "evolution_adaptive_freq", True),
             )
             print(f"🌟 LightRAG 將使用以下實體類別建圖: {schema_info['entities']}")
 
             from llama_index.core import Settings as LlamaSettings
             LlamaSettings.lightrag_entity_types = schema_info["entities"]
+            Settings.lightrag_config.entity_types = schema_info["entities"]
         else:
             print("🌟 使用 no_schema：不提供初始 schema，且不進行迭代演化")
 
@@ -605,18 +762,97 @@ def _setup_lightrag(args, Settings, pipelines_to_test):
                 method=args.schema_method,
                 text_corpus=data_processing(mode=args.data_mode, data_type=args.data_type),
                 settings=Settings,
+                data_type=args.data_type,
+                data_mode=args.data_mode,
                 return_full_schema=True,
+                evolution_ratio=args.evolution_ratio,
+                evolution_min_frequency=getattr(args, "evolution_min_frequency", 2),
+                evolution_use_cluster=getattr(args, "evolution_cluster", False),
+                evolution_use_bootstrap=getattr(args, "evolution_bootstrap", True),
+                evolution_use_consolidate=getattr(args, "evolution_consolidate", True),
+                evolution_adaptive_min_frequency=getattr(args, "evolution_adaptive_freq", True),
             )
             print(f"🌟 使用現有 Schema: {schema_info['entities']}")
+            from llama_index.core import Settings as LlamaSettings
+            LlamaSettings.lightrag_entity_types = schema_info["entities"]
+            Settings.lightrag_config.entity_types = schema_info["entities"]
         else:
             print("🌟 使用 no_schema：不載入 schema（沿用既有索引）")
 
-    # --- 3. Plugin: SimMerge ---
-    sim_custom_tag = ""
+    # --- 3. Plugins（PETN → EDC → SER，可任意組合串接）---
+    # current_custom_tag 追蹤目前最終的 plugin storage 位置
+    current_custom_tag = ""
+
+    # Plugin: PETN（Post-hoc Entity Type Normalization）
+    if getattr(args, "plugin_petn", False):
+        from src.rag.plugins.lightrag_entity_type_normalize import (
+            build_petn_custom_tag,
+            ensure_petn_lightrag_index,
+        )
+        from src.data.processors import data_processing as _dp
+
+        _petn_schema_method = getattr(args, "petn_schema_method", "anchored_additive_evolution")
+        _petn_schema_info = get_schema_by_method(
+            method=_petn_schema_method,
+            text_corpus=_dp(mode=args.data_mode, data_type=args.data_type),
+            settings=Settings,
+            data_type=args.data_type,
+            data_mode=args.data_mode,
+            return_full_schema=True,
+            evolution_ratio=getattr(args, "evolution_ratio", 0.5),
+            evolution_min_frequency=getattr(args, "evolution_min_frequency", 2),
+            evolution_use_cluster=getattr(args, "evolution_cluster", False),
+            evolution_use_bootstrap=getattr(args, "evolution_bootstrap", True),
+            evolution_use_consolidate=getattr(args, "evolution_consolidate", True),
+            evolution_adaptive_min_frequency=getattr(args, "evolution_adaptive_freq", True),
+        )
+        _petn_entities = _petn_schema_info.get("entities", [])
+        print(f"🏷️ [PETN] 使用 schema（{_petn_schema_method}）: {_petn_entities}")
+
+        ensure_petn_lightrag_index(
+            Settings,
+            data_type=args.data_type,
+            method=full_sup,
+            mode=storage_mode,
+            fast_test=fast_test_fb,
+            schema_entities=_petn_entities,
+            llm=Settings.builder_llm,
+            schema_method=_petn_schema_method,
+            source_custom_tag=current_custom_tag,
+            force_recopy=getattr(args, "petn_force_recopy", False),
+        )
+        _petn_tag = build_petn_custom_tag()
+        current_custom_tag = f"{current_custom_tag}_{_petn_tag}" if current_custom_tag else _petn_tag
+
+    # Plugin: EDC（Post-hoc Entity Description Consolidation）
+    if getattr(args, "plugin_edc", False):
+        from src.rag.plugins.lightrag_entity_desc_consolidate import (
+            build_edc_custom_tag,
+            ensure_edc_lightrag_index,
+        )
+
+        ensure_edc_lightrag_index(
+            Settings,
+            data_type=args.data_type,
+            method=full_sup,
+            mode=storage_mode,
+            fast_test=fast_test_fb,
+            llm=Settings.builder_llm,
+            source_custom_tag=current_custom_tag,
+            min_desc_len=getattr(args, "edc_min_desc_len", 200),
+            force_recopy=getattr(args, "edc_force_recopy", False),
+        )
+        _edc_tag = build_edc_custom_tag()
+        current_custom_tag = f"{current_custom_tag}_{_edc_tag}" if current_custom_tag else _edc_tag
+
+    # Plugin: SER（Similar Entity Merge）
     if args.plugin_simmerge:
         from src.rag.plugins.lightrag_similar_entity_merge import (
             build_simmerge_custom_tag,
             ensure_similar_merged_lightrag_index,
+        )
+        from src.rag.plugins.lightrag_simmerge_chained import (
+            ensure_simmerge_from_source_lightrag_index,
         )
 
         th = args.simmerge_threshold if args.simmerge_threshold is not None else lc.similar_entity_merge_threshold
@@ -628,19 +864,104 @@ def _setup_lightrag(args, Settings, pipelines_to_test):
         if th_max is not None and th_max <= th:
             raise ValueError("similar_entity_merge：threshold_max 必須大於 threshold（上界不含、下界含）")
 
-        ensure_similar_merged_lightrag_index(
+        if current_custom_tag:
+            # 有前置 plugin（PETN 或 EDC），使用串接版 SER
+            ensure_simmerge_from_source_lightrag_index(
+                Settings,
+                data_type=args.data_type,
+                method=full_sup,
+                mode=storage_mode,
+                fast_test=fast_test_fb,
+                threshold=th,
+                threshold_max=th_max,
+                text_mode=tm,
+                force_recopy=force,
+                dry_run=dry,
+                source_custom_tag=current_custom_tag,
+            )
+        else:
+            # 純 SER，沿用原始函式（不修改原邏輯）
+            ensure_similar_merged_lightrag_index(
+                Settings,
+                data_type=args.data_type,
+                method=full_sup,
+                mode=storage_mode,
+                fast_test=fast_test_fb,
+                threshold=th,
+                threshold_max=th_max,
+                text_mode=tm,
+                force_recopy=force,
+                dry_run=dry,
+            )
+
+        _sim_tag = build_simmerge_custom_tag(th, tm, th_max)
+        current_custom_tag = f"{current_custom_tag}_{_sim_tag}" if current_custom_tag else _sim_tag
+
+    # Plugin: STSM（Schema-Typed SimMerge）
+    if getattr(args, "plugin_schema_typed_simmerge", False):
+        from src.rag.plugins.lightrag_schema_typed_merge import (
+            build_schema_typed_merge_tag,
+            ensure_schema_typed_merge_lightrag_index,
+        )
+        from src.data.processors import data_processing as _dp_stsm
+
+        _stm_method = getattr(args, "schema_typed_merge_method", "anchored_additive_evolution")
+        _stm_sim_th = getattr(args, "schema_typed_merge_sim_threshold", 0.82)
+        _stm_type_th = getattr(args, "schema_typed_merge_type_threshold", 0.60)
+        _stm_entity_tm = getattr(args, "schema_typed_merge_entity_text_mode", "name")
+        _stm_type_tm = getattr(args, "schema_typed_merge_type_text_mode", "name")
+        _stm_force = getattr(args, "schema_typed_merge_force_recopy", False)
+        _stm_dry = getattr(args, "schema_typed_merge_dry_run", False)
+
+        # 取得 schema types（只用於 merge guidance，不影響 extraction）
+        _stm_schema_info = get_schema_by_method(
+            method=_stm_method,
+            text_corpus=_dp_stsm(mode=args.data_mode, data_type=args.data_type),
+            settings=Settings,
+            data_type=args.data_type,
+            data_mode=args.data_mode,
+            return_full_schema=True,
+            evolution_ratio=args.evolution_ratio,
+            evolution_min_frequency=getattr(args, "evolution_min_frequency", 2),
+            evolution_use_cluster=getattr(args, "evolution_cluster", False),
+            evolution_use_bootstrap=getattr(args, "evolution_bootstrap", True),
+            evolution_use_consolidate=getattr(args, "evolution_consolidate", True),
+            evolution_adaptive_min_frequency=getattr(args, "evolution_adaptive_freq", True),
+        )
+        _stm_types = (
+            _stm_schema_info.get("entities", [])
+            if isinstance(_stm_schema_info, dict)
+            else list(_stm_schema_info)
+        )
+        print(f"🔷 [STSM] schema types ({len(_stm_types)}): {_stm_types}")
+
+        ensure_schema_typed_merge_lightrag_index(
             Settings,
             data_type=args.data_type,
             method=full_sup,
             mode=storage_mode,
             fast_test=fast_test_fb,
-            threshold=th,
-            threshold_max=th_max,
-            text_mode=tm,
-            force_recopy=force,
-            dry_run=dry,
+            schema_types=_stm_types,
+            schema_method_name=_stm_method,
+            sim_threshold=_stm_sim_th,
+            type_threshold=_stm_type_th,
+            entity_text_mode=_stm_entity_tm,
+            type_text_mode=_stm_type_tm,
+            source_custom_tag=current_custom_tag,
+            force_recopy=_stm_force,
+            dry_run=_stm_dry,
         )
-        sim_custom_tag = build_simmerge_custom_tag(th, tm, th_max)
+
+        _stsm_tag = build_schema_typed_merge_tag(
+            _stm_method,
+            _stm_sim_th,
+            _stm_type_th,
+            _stm_entity_tm,
+            _stm_type_tm,
+        )
+        current_custom_tag = (
+            f"{current_custom_tag}_{_stsm_tag}" if current_custom_tag else _stsm_tag
+        )
 
     # --- 4. 取得 LightRAG 實例 ---
     lightrag_instance = get_lightrag_engine(
@@ -649,20 +970,20 @@ def _setup_lightrag(args, Settings, pipelines_to_test):
         sup=full_sup,
         mode=storage_mode,
         fast_test=fast_test_fb,
-        custom_tag=sim_custom_tag,
+        custom_tag=current_custom_tag,
     )
 
     # --- 5. 圖譜品質 ---
     _lightrag_gq = {}
     _actual_path = (
-        sim_custom_tag
+        current_custom_tag
         and get_storage_path(
             storage_type="lightrag",
             data_type=args.data_type,
             method=full_sup,
             mode=storage_mode,
             fast_test=fast_test_fb,
-            custom_tag=sim_custom_tag,
+            custom_tag=current_custom_tag,
         )
         or storage_path
     )
@@ -875,6 +1196,11 @@ def build_postfix(args):
     """建立結果資料夾名稱後綴"""
     parts = []
 
+    def _sanitize(s: str) -> str:
+        # 讓模型/URL 可安全用於資料夾名稱；同時避免過長的字元集造成問題
+        s = re.sub(r"[^A-Za-z0-9_.-]+", "-", s)
+        return s.strip("-")
+
     if args.data_type:
         parts.append(args.data_type)
 
@@ -920,6 +1246,17 @@ def build_postfix(args):
         parts.append(args.postfix)
     if args.sup:
         parts.append(args.sup)
+
+    # CLI 覆蓋摘要（避免覆蓋到同名結果資料夾）
+    # if getattr(args, "ollama_url", None):
+    #     parts.append(f"ollama_{_sanitize(args.ollama_url)}")
+    if getattr(args, "llm_model", None):
+        parts.append(f"llm_{_sanitize(args.llm_model)}")
+    if getattr(args, "eval_llm_model", None):
+        parts.append(f"eval_llm_{_sanitize(args.eval_llm_model)}")
+    if getattr(args, "builder_llm_model", None):
+        parts.append(f"builder_llm_{_sanitize(args.builder_llm_model)}")
+
     if args.qa_dataset_fast_test:
         parts.append("fast_test")
 
@@ -931,6 +1268,7 @@ def _build_run_level_metadata(args, postfix: str) -> dict:
     cli_args = vars(args).copy()
     return {
         "postfix": postfix,
+        "eval_metrics_mode": args.eval_metrics_mode,
         "full_cli_args_json": json.dumps(cli_args, ensure_ascii=False, sort_keys=True),
         "selected_strategies_json": json.dumps(
             {
@@ -941,6 +1279,7 @@ def _build_run_level_metadata(args, postfix: str) -> dict:
                 "lightrag_mode": args.lightrag_mode,
                 "lightrag_native_mode": args.lightrag_native_mode,
                 "schema_method": args.schema_method,
+                "eval_metrics_mode": args.eval_metrics_mode,
                 "pg_extractors": args.pg_extractors,
                 "pg_retrievers": args.pg_retrievers,
                 "pg_combination_mode": args.pg_combination_mode,
@@ -1006,6 +1345,37 @@ def _build_pipeline_metadata_map(args, pipelines_to_test) -> dict:
     return metadata_map
 
 
+def _sync_ragas_eval_env(args, settings_obj) -> None:
+    """
+    將本次 CLI 的模型端點同步到 RAGAS 使用的 EVAL_* 環境變數。
+
+    目標是讓主流程與 RAGAS 指標使用同一組後端，避免 endpoint 漂移。
+    """
+    cli_host = (args.ollama_url or "").strip()
+    cli_eval_model = (args.eval_llm_model or "").strip()
+    cli_embed_model = os.getenv("EVAL_EMBEDDING_MODEL", "").strip()
+
+    if not (cli_host or cli_eval_model):
+        return
+
+    # 優先使用 CLI 覆蓋，否則回落到已初始化的 Settings 物件內容。
+    eval_model = cli_eval_model or getattr(settings_obj.eval_llm, "model", "") or ""
+    embed_model = (
+        cli_embed_model
+        or getattr(settings_obj.embed_model, "model_name", "")
+        or getattr(settings_obj.embed_model, "model", "")
+        or ""
+    )
+
+    if cli_host:
+        os.environ["EVAL_LLM_BINDING_HOST"] = cli_host
+        os.environ["EVAL_EMBEDDING_BINDING_HOST"] = cli_host
+    if eval_model:
+        os.environ["EVAL_LLM_MODEL"] = str(eval_model).strip()
+    if embed_model:
+        os.environ["EVAL_EMBEDDING_MODEL"] = str(embed_model).strip()
+
+
 # ---------------------------------------------------------------------------
 # Help / Main
 # ---------------------------------------------------------------------------
@@ -1029,10 +1399,25 @@ def main():
     # 舊參數向新參數映射
     _resolve_deprecated_args(args)
 
-    Settings = get_settings(model_type=args.model_type)
+    Settings = get_settings(
+        model_type=args.model_type,
+        ollama_url=args.ollama_url,
+        llm_model=args.llm_model,
+        eval_llm_model=args.eval_llm_model,
+        builder_llm_model=args.builder_llm_model,
+    )
+    _sync_ragas_eval_env(args, Settings)
 
-    # SimMerge result tag（用於 postfix）
+    # Plugin result tag（用於結果目錄 postfix，依 PETN → EDC → SER 串接順序組合）
     args.simmerge_result_tag = None
+    _plugin_tag_parts = []
+
+    if getattr(args, "plugin_petn", False):
+        _plugin_tag_parts.append("petn")
+
+    if getattr(args, "plugin_edc", False):
+        _plugin_tag_parts.append("edc")
+
     if args.plugin_simmerge:
         from src.rag.plugins.lightrag_similar_entity_merge import build_simmerge_custom_tag
 
@@ -1042,7 +1427,28 @@ def main():
         _th_max = args.simmerge_threshold_max if args.simmerge_threshold_max is not None else _lc.similar_entity_merge_threshold_max
         if _th_max is not None and _th_max <= _th:
             raise ValueError("similar_entity_merge：threshold_max 必須大於 threshold（上界不含、下界含）")
-        args.simmerge_result_tag = build_simmerge_custom_tag(_th, _tm, _th_max)
+        _plugin_tag_parts.append(build_simmerge_custom_tag(_th, _tm, _th_max))
+
+    if getattr(args, "plugin_schema_typed_simmerge", False):
+        from src.rag.plugins.lightrag_schema_typed_merge import build_schema_typed_merge_tag as _build_stsm_tag
+
+        _stm_method = getattr(args, "schema_typed_merge_method", "anchored_additive_evolution")
+        _stm_sim_th = getattr(args, "schema_typed_merge_sim_threshold", 0.82)
+        _stm_type_th = getattr(args, "schema_typed_merge_type_threshold", 0.60)
+        _stm_entity_tm = getattr(args, "schema_typed_merge_entity_text_mode", "name")
+        _stm_type_tm = getattr(args, "schema_typed_merge_type_text_mode", "name")
+        _plugin_tag_parts.append(
+            _build_stsm_tag(
+                _stm_method,
+                _stm_sim_th,
+                _stm_type_th,
+                _stm_entity_tm,
+                _stm_type_tm,
+            )
+        )
+
+    if _plugin_tag_parts:
+        args.simmerge_result_tag = "_".join(_plugin_tag_parts)
 
     # 快速測試模式連動
     if args.qa_dataset_fast_test:
@@ -1067,14 +1473,12 @@ def main():
         return
 
     # 載入 QA 資料集
-    if args.data_type == "DI":
-        datasets = load_and_normalize_qa_CSR_DI(csv_path=Settings.data_config.qa_file_path_DI)
-    elif args.data_type == "GEN":
-        datasets = load_and_normalize_qa_CSR_full(jsonl_path=Settings.data_config.qa_file_path_GEN)
-    else:
+    try:
+        datasets = load_and_normalize_qa_by_type(args.data_type, args.qa_csv)
+    except Exception as e:
         print(
-            f"⚠️ 尚未實作 --data_type={args.data_type!r} 的 QA 載入："
-            "請在 config.yml 設定對應路徑並於 main() 加入載入分支。"
+            f"⚠️ 無法載入 --data_type={args.data_type!r} 的 QA 資料：{e}\n"
+            "請檢查 config.yml 的 data.datasets 映射與 qa_loader 設定。"
         )
         return
 
@@ -1086,6 +1490,7 @@ def main():
 
     postfix = build_postfix(args)
     run_metadata = _build_run_level_metadata(args, postfix)
+    print(f"🧪 評估指標模式: {args.eval_metrics_mode}")
     pipeline_metadata_map = _build_pipeline_metadata_map(args, pipelines_to_test)
     result_bucket = "test" if args.qa_dataset_fast_test else "exp"
     results_root_dir = os.path.join(_PROJECT_ROOT, "results", result_bucket, args.data_type)

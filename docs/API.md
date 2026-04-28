@@ -7,6 +7,7 @@
 - [RAG Wrappers](#rag-wrappers)
 - [評估指標](#評估指標)
 - [評估引擎](#評估引擎)
+- [結果目錄與 global_summary](#結果目錄與-global_summary)
 
 ---
 
@@ -360,6 +361,28 @@ await run_evaluation(
     postfix="_my_experiment"
 )
 ```
+
+### 結果目錄與 global_summary
+
+透過 [`scripts/run_evaluation.py`](../scripts/run_evaluation.py) 執行評估時，結果根目錄由 **`--data_type`** 與是否啟用 **`--qa_dataset_fast_test`** 決定：
+
+| 模式 | 路徑 |
+|------|------|
+| 一般實驗（預設） | `results/exp/<data_type>/` |
+| 快速測試（`--qa_dataset_fast_test`） | `results/test/<data_type>/` |
+
+`<data_type>` 為 CLI 的 `--data_type`（例如 `DI`、`GEN`、`RAGAS_CSR_METADATA`），並需在 `config.yml` 的 `data.datasets` 內有對應資料集設定。
+
+每次執行會在該目錄下建立一個 run 資料夾：
+
+- 目錄名稱：`evaluation_results_<時間戳><postfix>/`
+- 內容：各 pipeline 的 `detailed_results.csv`、本次 run 的 `global_summary_report.csv` / `global_summary_report.xlsx`、`run_config.json` 等。
+
+**累積總表**：同一 `<data_type>` 目錄下的 `global_summary.xlsx` 會在每次評估結束時，將本次各 pipeline 的 summary 列 **附加**（concat）到檔案末端，並帶上 `run_timestamp`、`run_dir`、`postfix`、`is_fast_test` 與 run 相關 metadata。若自行呼叫 `run_evaluation()`，必須傳入正確的 `results_root_dir`（例如 `os.path.join(project_root, "results", "exp", data_type)`），才會寫入預期位置並更新總表。
+
+若使用 **`--enable_token_budget`**，仍使用相同的 `results_root_dir`；`postfix` 會附加 `_token_budget` 以利與一般 run 區分。
+
+專案根目錄由 `run_evaluation.py` 依腳本路徑推算（`_PROJECT_ROOT`），與 shell 當前工作目錄無關；請一律以 `python scripts/run_evaluation.py ...` 從專案慣用方式啟動，或確保自訂腳本傳入相同的 `results_root_dir` 與 `EvaluationReporter.append_master_summary` 參數。
 
 ---
 

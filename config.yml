@@ -1,28 +1,91 @@
 model:
-  ollama_url: "http://192.168.63.174:11434"
+  ollama_url: "http://192.168.63.184:11434"
   embed_model: "nomic-embed-text" # bge-m3, nomic-embed-text, jinaai/jina-embeddings-v2-base-code
   embed_dim: 768
   llm_model: "qwen2.5:7b" # llama3.1:8b, mistral-small:24b
 
 eval_model:
-  ollama_url: "http://192.168.63.174:11434"
-  llm_model: "qwen2.5:14b" # llama3.3:70b, llama3:70b-instruct, gpt-oss:120b
+  ollama_url: "http://192.168.63.184:11434"
+  llm_model: "gemma4" # llama3.3:70b, llama3:70b-instruct, gpt-oss:120b
 
 builder_model:
-  ollama_url: "http://192.168.63.174:11434"
+  ollama_url: "http://192.168.63.184:11434"
   llm_model: "qwen2.5:7b"
 
 data:
   raw_file_path_DI: "/home/End_to_End_RAG/Data/CSR_20260122_v4_92_clean.jsonl"
   raw_file_path_GEN: "/home/End_to_End_RAG/Data/CSR_full.jsonl"
-  qa_file_path_DI: "/home/End_to_End_RAG/Data/QA_43_clean.csv"
+  qa_file_path_DI: "/home/End_to_End_RAG/Data/QA_43_clean_cls.csv"
   qa_file_path_GEN: "/home/End_to_End_RAG/Data/qa_global_group_100.jsonl"
+  datasets:
+    # 已拆分為 RAGAS_CSR / RAGAS_CSR_FULL；保留此 key 僅向後相容（等同 RAGAS_CSR）。
+    RAGAS_CSR_METADATA:
+      document_file_path: "/home/End_to_End_RAG/Data/CSR_20260122_v4_92_clean.jsonl"
+      qa_file_path: ""
+      document_loader: "csr_raw_jsonl"
+      qa_loader: "ragas_metadata_csv"
+    RAGAS_CSR:
+      document_file_path: "/home/End_to_End_RAG/Data/CSR_20260122_v4_92_clean.jsonl"
+      qa_file_path: "/home/End_to_End_RAG/Data/Ragas_GEN/CSR/Timeline_QA_20260416_093942_10_0_10.csv"
+      document_loader: "csr_raw_jsonl"
+      qa_loader: "ragas_metadata_csv"
+    RAGAS_CSR_FULL:
+      document_file_path: "/home/End_to_End_RAG/Data/CSR_full.jsonl"
+      qa_file_path: "/home/End_to_End_RAG/Data/Ragas_GEN/CSR_FULL/Timeline_QA_20260413_234352_10_0_10.csv"
+      document_loader: "csr_raw_jsonl"
+      qa_loader: "ragas_metadata_csv"
+    LIGHTRAG_CS:
+      document_file_path: "/home/End_to_End_RAG/Data/UltraDomain/Dataset/cs_unique_contexts.json"
+      qa_file_path: "/home/End_to_End_RAG/Data/UltraDomain/cs.jsonl"
+      source_raw_file_path: "/home/End_to_End_RAG/Data/UltraDomain/cs.jsonl"
+      document_loader: "ultradomain_contexts_json"
+      qa_loader: "ultradomain_jsonl"
+      domain: "cs"
+    LIGHTRAG_AGRICULTURE:
+      document_file_path: "/home/End_to_End_RAG/Data/UltraDomain/Dataset/agriculture_unique_contexts.json"
+      qa_file_path: "/home/End_to_End_RAG/Data/UltraDomain/agriculture.jsonl"
+      source_raw_file_path: "/home/End_to_End_RAG/Data/UltraDomain/agriculture.jsonl"
+      document_loader: "ultradomain_contexts_json"
+      qa_loader: "ultradomain_jsonl"
+      domain: "agriculture"
+    LIGHTRAG_LEGAL:
+      document_file_path: "/home/End_to_End_RAG/Data/UltraDomain/Dataset/legal_unique_contexts.json"
+      qa_file_path: "/home/End_to_End_RAG/Data/UltraDomain/Generated/legal_qa.jsonl"
+      source_raw_file_path: "/home/End_to_End_RAG/Data/UltraDomain/legal.jsonl"
+      document_loader: "ultradomain_contexts_json"
+      qa_loader: "ultradomain_jsonl"
+      domain: "legal"
+    LIGHTRAG_MIX:
+      document_file_path: "/home/End_to_End_RAG/Data/UltraDomain/Dataset/mix_unique_contexts.json"
+      qa_file_path: "/home/End_to_End_RAG/Data/UltraDomain/Generated/mix_qa.jsonl"
+      source_raw_file_path: "/home/End_to_End_RAG/Data/UltraDomain/mix.jsonl"
+      document_loader: "ultradomain_contexts_json"
+      qa_loader: "ultradomain_jsonl"
+      domain: "mix"
+    BIO:
+      document_file_path: "/home/End_to_End_RAG/Data/Bio/DeID_dialysislist_2026-02_2.jsonl"
+      qa_file_path: "/home/End_to_End_RAG/Data/Ragas_GEN/Bio/Timeline_QA_20260413_001044_10_0_10.csv"
+      document_loader: "bio_jsonl"
+      qa_loader: "ragas_metadata_csv"
 
 lightrag:
   lightrag_storage_path_DIR: "/home/End_to_End_RAG/storage/lightrag_temporal"
   lightrag_language: "Chinese"
   # 嵌入函式單段文字字元上限（fallback 值）；啟動時會自動向 Ollama 查詢 embedding model 的實際 context_length 並動態計算安全上限，僅在查詢失敗時才使用此值
   embed_max_input_chars: 2560
+  lightrag_entity_types: [
+    "Person",
+    "Creature",
+    "Organization",
+    "Location",
+    "Event",
+    "Concept",
+    "Method",
+    "Content",
+    "Data",
+    "Artifact",
+    "NaturalObject"
+  ]
   # lightrag_entity_types: [
   #     "Record",
   #     "Customer",
@@ -37,106 +100,106 @@ lightrag:
   #     "Software",
   #     "Server"
   #   ]
-  lightrag_entity_types: [
-        "Record",
-        "Engineer",
-        "Customer",
-        "Action",
-        "Issue",
-        "Department",
-        "Server",
-        "Version",
-        "MaintainerAccount",
-        "Service",
-        "Report",
-        "API",
-        "Database",
-        "System",
-        "Log",
-        "File",
-        "GeoDB",
-        "GitLab",
-        "Cybereyes",
-        "SSH Server",
-        "Splunk",
-        "Asset",
-        "Identity",
-        "Category",
-        "Priority",
-        "Container",
-        "CSR",
-        "FCB",
-        "FWD03",
-        "MG02",
-        "Arcsight",
-        "DNS_TUNNELING",
-        "eStreamer",
-        "KPMG",
-        "IP_WhiteList",
-        "VirusTotal",
-        "AbuseIPDB",
-        "TCode",
-        "NTP",
-        "Indexer",
-        "Cluster",
-        "KVstore",
-        "PA",
-        "FIsac",
-        "DEP02",
-        "MaintenanceRecord",
-        "AuthorizationQuantity",
-        "ServerPerformance",
-        "SystemOptimizationSuggestion",
-        "VersionUpdate",
-        "EventType",
-        "TrafficEvent",
-        "ThreatEvent",
-        "SystemEvent",
-        "CPUUsageRate",
-        "MemoryUsageRate",
-        "DiskUsageRate",
-        "HealthCheck",
-        "UserRole",
-        "OperatingSystem",
-        "Vulnerability",
-        "Certification",
-        "ARP_table",
-        "DC_ARP_table",
-        "Crowdstrike",
-        "Tenable_API_App",
-        "Splunk_Add_on_for_Google_Cloud_Platform",
-        "IP",
-        "HostsFile",
-        "LicenseMaster",
-        "UF",
-        "IIS_LOG",
-        "DashboardStudio",
-        "SaseUF",
-        "SOAR",
-        "MitreAttack",
-        "ForcepointEndpointDLP",
-        "CheckPointLogCLM",
-        "DataModelDNSAMD",
-        "ESAlert",
-        "DC_ARP_report",
-        "ARP_table_report",
-        "Role",
-        "BucketReplication",
-        "Workaround",
-        "Sourcetype",
-        "AuthorizationQuantity",
-        "LinuxHost",
-        "CentOS",
-        "KVstoreEngine",
-        "SH",
-        "FISAC",
-        "API_IP_Application",
-        "Trendmicro",
-        "GCP",
-        "Websense",
-        "DLP",
-        "BTDC2"
-    ]
+  # lightrag_entity_types: [
+  #       "Record",
+  #       "Engineer",
+  #       "Customer",
+  #       "Action",
+  #       "Issue",
+  #       "Department",
+  #       "Server",
+  #       "Version",
+  #       "MaintainerAccount",
+  #       "Service",
+  #       "Report",
+  #       "API",
+  #       "Database",
+  #       "System",
+  #       "Log",
+  #       "File",
+  #       "GeoDB",
+  #       "GitLab",
+  #       "Cybereyes",
+  #       "SSH Server",
+  #       "Splunk",
+  #       "Asset",
+  #       "Identity",
+  #       "Category",
+  #       "Priority",
+  #       "Container",
+  #       "CSR",
+  #       "FCB",
+  #       "FWD03",
+  #       "MG02",
+  #       "Arcsight",
+  #       "DNS_TUNNELING",
+  #       "eStreamer",
+  #       "KPMG",
+  #       "IP_WhiteList",
+  #       "VirusTotal",
+  #       "AbuseIPDB",
+  #       "TCode",
+  #       "NTP",
+  #       "Indexer",
+  #       "Cluster",
+  #       "KVstore",
+  #       "PA",
+  #       "FIsac",
+  #       "DEP02",
+  #       "MaintenanceRecord",
+  #       "AuthorizationQuantity",
+  #       "ServerPerformance",
+  #       "SystemOptimizationSuggestion",
+  #       "VersionUpdate",
+  #       "EventType",
+  #       "TrafficEvent",
+  #       "ThreatEvent",
+  #       "SystemEvent",
+  #       "CPUUsageRate",
+  #       "MemoryUsageRate",
+  #       "DiskUsageRate",
+  #       "HealthCheck",
+  #       "UserRole",
+  #       "OperatingSystem",
+  #       "Vulnerability",
+  #       "Certification",
+  #       "ARP_table",
+  #       "DC_ARP_table",
+  #       "Crowdstrike",
+  #       "Tenable_API_App",
+  #       "Splunk_Add_on_for_Google_Cloud_Platform",
+  #       "IP",
+  #       "HostsFile",
+  #       "LicenseMaster",
+  #       "UF",
+  #       "IIS_LOG",
+  #       "DashboardStudio",
+  #       "SaseUF",
+  #       "SOAR",
+  #       "MitreAttack",
+  #       "ForcepointEndpointDLP",
+  #       "CheckPointLogCLM",
+  #       "DataModelDNSAMD",
+  #       "ESAlert",
+  #       "DC_ARP_report",
+  #       "ARP_table_report",
+  #       "Role",
+  #       "BucketReplication",
+  #       "Workaround",
+  #       "Sourcetype",
+  #       "AuthorizationQuantity",
+  #       "LinuxHost",
+  #       "CentOS",
+  #       "KVstoreEngine",
+  #       "SH",
+  #       "FISAC",
+  #       "API_IP_Application",
+  #       "Trendmicro",
+  #       "GCP",
+  #       "Websense",
+  #       "DLP",
+  #       "BTDC2"
+  #   ]
   # LightRAG 可選後處理（需搭配 CLI --lightrag_plugins similar_entity_merge）
   plugins:
     similar_entity_merge:
@@ -162,7 +225,7 @@ schema:
     root_dir: "/home/End_to_End_RAG/storage/schema_cache"
     force_rebuild: false
     
-  method: "iterative_evolution"  # lightrag_default, iterative_evolution, llm_dynamic, llamaindex_dynamic
+  method: "iterative_evolution"  # lightrag_default, adaptive_consolidation, iterative_evolution, llm_dynamic, llamaindex_dynamic
   use_entity_disambiguation: true
   disambiguation_threshold: 0.85
   

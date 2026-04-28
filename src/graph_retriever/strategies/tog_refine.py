@@ -10,7 +10,7 @@ Think-on-Graph (ToG) Strategy
 """
 
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import networkx as nx
 
@@ -46,11 +46,12 @@ class ToGRefineStrategy(BaseTraversalStrategy):
         self.llm = llm
         self.max_iterations = max_iterations
         self.beam_width = beam_width
+        self.prune_top_n = prune_top_n
         self.use_llm_scoring = use_llm_scoring and (llm is not None)
         self.use_llm_sufficiency = use_llm_sufficiency and (llm is not None)
 
     def get_name(self) -> str:
-        return f"ToGRefine(iter={self.max_iterations}, beam={self.beam_width}), prune={self.prune_top_n})"
+        return f"ToGRefine(iter={self.max_iterations}, beam={self.beam_width}, prune={self.prune_top_n})"
 
     def traverse(
         self,
@@ -66,8 +67,8 @@ class ToGRefineStrategy(BaseTraversalStrategy):
         if not valid_seeds:
             return TraversalResult(metadata={"strategy": "tog_refine", "seeds_found": 0})
 
-        # beam: 每條 path 是一個 list of entity_name
-        beam: List[tuple] = [
+        # beam: 每條元素是 (path, score)，path 為 entity_name list
+        beam: List[Tuple[List[str], float]] = [
             ([s["entity_name"]], 10.0) for s in valid_seeds[:self.beam_width]
         ]
 
@@ -79,7 +80,7 @@ class ToGRefineStrategy(BaseTraversalStrategy):
             actual_iterations = iteration + 1
             logger.info("ToGRefine 迭代 %d/%d, beam size=%d", iteration + 1, self.max_iterations, len(beam))
 
-            candidate_paths: List[tuple] = []  # (path, score)
+            candidate_paths: List[Tuple[List[str], float]] = []  # (path, score)
 
             for path, current_score in beam:
                 tail = path[-1]
@@ -120,7 +121,7 @@ class ToGRefineStrategy(BaseTraversalStrategy):
                 break
 
         # 收集結果
-        for path in beam:
+        for path, _ in beam:
             for name in path:
                 all_visited_nodes.add(name)
             for i in range(len(path) - 1):
@@ -131,7 +132,8 @@ class ToGRefineStrategy(BaseTraversalStrategy):
         if len(all_visited_nodes) > top_k:
             # 以 beam path 中出現頻率排序，保留 top_k
             freq: Dict[str, int] = {}
-            for path in beam:
+            beam_paths_only = [p for p, _ in beam]
+            for path in beam_paths_only:
                 for name in path:
                     freq[name] = freq.get(name, 0) + 1
             for s in valid_seeds:

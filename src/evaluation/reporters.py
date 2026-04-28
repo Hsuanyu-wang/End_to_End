@@ -5,7 +5,7 @@
 """
 
 import os
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import pandas as pd
 import json
 from datetime import datetime
@@ -40,10 +40,47 @@ class EvaluationReporter:
         "meteor_zh",
         "correctness_score",
         "faithfulness_score",
+        "kfc_recall",
+        "kfc_precision",
+        "kfc_f1",
+        "kfc_gt_fact_count",
+        "kfc_gen_claim_count",
         "answer_relevancy",
         "context_precision",
         "context_recall",
         "ragas_faithfulness",
+        "ragas_answer_correctness",
+        # 圖譜品質指標（per-pipeline 常數，avg_ 前綴僅為格式統一）
+        "gq_node_count",
+        "gq_edge_count",
+        "gq_density",
+        "gq_avg_degree",
+        "gq_orphan_node_ratio",
+        "gq_largest_component_ratio",
+        "gq_num_connected_components",
+        "gq_avg_clustering_coefficient",
+    ]
+
+    # GraphQualityMetrics 原始欄名 → gq_ 前綴欄名
+    _GQ_COL_MAP = {
+        "node_count": "gq_node_count",
+        "edge_count": "gq_edge_count",
+        "density": "gq_density",
+        "avg_degree": "gq_avg_degree",
+        "orphan_node_ratio": "gq_orphan_node_ratio",
+        "largest_component_ratio": "gq_largest_component_ratio",
+        "num_connected_components": "gq_num_connected_components",
+        "avg_clustering_coefficient": "gq_avg_clustering_coefficient",
+    }
+
+    _SCOPE_COLUMN_CANDIDATES = [
+        "qa_scope",
+        "question_type",
+        "Question_Type",
+        "Q_type",
+        "hop-level",
+        "Hop_Level",
+        "hop_level",
     ]
 
     """
@@ -71,15 +108,20 @@ class EvaluationReporter:
     def save_pipeline_results(
         self,
         pipeline_name: str,
-        results: List[Dict[str, Any]]
+        results: List[Dict[str, Any]],
+        schema_info: Dict[str, Any] = None,
+        graph_quality: Dict[str, Any] = None,
     ) -> str:
         """
         儲存單一 Pipeline 的詳細評估結果
-        
+
         Args:
             pipeline_name: Pipeline 名稱
             results: 評估結果列表
-        
+            schema_info: Schema 資訊（可選）
+            graph_quality: 圖譜品質指標 dict（可選），會另存 graph_quality.json
+                           並在 detailed_results.csv 中補入常數欄
+
         Returns:
             儲存的 CSV 檔案路徑
         """
@@ -90,13 +132,26 @@ class EvaluationReporter:
         # 建立 Pipeline 專屬資料夾
         pipeline_dir = os.path.join(self.base_dir, pipeline_name)
         os.makedirs(pipeline_dir, exist_ok=True)
+
+        # 若有圖譜品質指標，另存 JSON
+        if graph_quality:
+            self.save_graph_quality(pipeline_dir, graph_quality)
         
-        # 轉換為 DataFrame
-        df = pd.DataFrame(results)
+        # 轉換為 DataFrame（排除 list 型 retrieval 欄，避免 CSV 序列化雜訊）
+        _LIST_COLS = {"retrieved_entities", "retrieved_relations", "retrieved_contexts"}
+        df = pd.DataFrame([
+            {k: v for k, v in r.items() if k not in _LIST_COLS}
+            for r in results
+        ])
         # 補齊 token 欄位，確保 detailed_results 欄位一致
         for token_col in ["context_tokens", "entity_tokens", "relation_tokens", "chunk_tokens"]:
             if token_col not in df.columns:
                 df[token_col] = 0
+
+        # 將圖譜品質指標以常數欄寫入 detailed_results（每行相同值，便於後續 filter/sort）
+        if graph_quality:
+            for raw_col, gq_col in self._GQ_COL_MAP.items():
+                df[gq_col] = graph_quality.get(raw_col, None)
         
         # 加入平均 row
         df = self._add_average_row(df)
@@ -104,10 +159,93 @@ class EvaluationReporter:
         # 儲存為 CSV
         csv_path = os.path.join(pipeline_dir, "detailed_results.csv")
         df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
+        # 若有 schema 資訊，額外輸出同層 JSON，方便後續追蹤實驗配置
+        if schema_info:
+            self.save_pipeline_schema(pipeline_dir, schema_info)
         
         print(f"  ✅ 已儲存明細報表至: {csv_path}")
         
         return csv_path
+
+    @staticmethod
+    def save_pipeline_schema(pipeline_dir: str, schema_info: Dict[str, Any]) -> str:
+        """將 pipeline 使用的 schema 另存為 JSON。"""
+        schema_payload = {
+            "method": schema_info.get("method", ""),
+            "entities": schema_info.get("entities", []),
+            "relations": schema_info.get("relations", []),
+            "validation_schema": schema_info.get("validation_schema", {}),
+        }
+        schema_path = os.path.join(pipeline_dir, "schema_info.json")
+        with open(schema_path, "w", encoding="utf-8") as f:
+            json.dump(schema_payload, f, ensure_ascii=False, indent=2, sort_keys=True)
+        print(f"  🧩 已儲存 Schema 設定至: {schema_path}")
+        return schema_path
+
+    @staticmethod
+    def save_graph_quality(pipeline_dir: str, graph_quality: Dict[str, Any]) -> str:
+        """將圖譜品質指標另存為 JSON。"""
+        gq_path = os.path.join(pipeline_dir, "graph_quality.json")
+        with open(gq_path, "w", encoding="utf-8") as f:
+            json.dump(graph_quality, f, ensure_ascii=False, indent=2, sort_keys=True)
+        print(f"  📊 已儲存圖譜品質指標至: {gq_path}")
+        return gq_path
+
+    def save_retrieval_content(
+        self,
+        pipeline_name: str,
+        results: List[Dict[str, Any]],
+    ) -> str:
+        """
+        將每題的 retrieval 內容（entities、relations、chunks）儲存為 JSONL。
+
+        每行格式：
+        {
+            "idx": int,
+            "question": str,
+            "gt_answer": str,
+            "generated_answer": str,
+            "retrieved_entities": List[str],
+            "retrieved_relations": List[str],
+            "retrieved_chunks": List[str]
+        }
+
+        Args:
+            pipeline_name: Pipeline 名稱
+            results: 評估結果列表（由 evaluator.evaluate_pipeline 回傳）
+
+        Returns:
+            儲存的 JSONL 檔案路徑，若無 retrieval 欄位則回傳 None
+        """
+        if not results:
+            return None
+
+        pipeline_dir = os.path.join(self.base_dir, pipeline_name)
+        os.makedirs(pipeline_dir, exist_ok=True)
+
+        jsonl_path = os.path.join(pipeline_dir, "retrieval_content.jsonl")
+        count = 0
+        with open(jsonl_path, "w", encoding="utf-8") as f:
+            for r in results:
+                # 跳過平均 row（idx 為字串時）
+                idx = r.get("idx", "")
+                if not isinstance(idx, (int, float)):
+                    continue
+                record = {
+                    "idx": idx,
+                    "question": r.get("query", r.get("question", "")),
+                    "gt_answer": r.get("ground_truth_answer", r.get("gt_answer", "")),
+                    "generated_answer": r.get("generated_answer", ""),
+                    "retrieved_entities": r.get("retrieved_entities", []),
+                    "retrieved_relations": r.get("retrieved_relations", []),
+                    "retrieved_chunks": r.get("retrieved_contexts", []),
+                }
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+                count += 1
+
+        print(f"  💾 已儲存 {count} 題的 retrieval 內容至: {jsonl_path}")
+        return jsonl_path
     
     def _add_average_row(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -129,25 +267,95 @@ class EvaluationReporter:
         if 'idx' in numeric_cols:
             numeric_cols.remove('idx')
         
+        def _build_avg_row(subset: pd.DataFrame, label: str, q_type_value: str = "") -> Dict[str, Any]:
+            row = {col: subset[col].mean() for col in numeric_cols}
+            row["idx"] = label
+            for col in df.columns:
+                if col not in row:
+                    row[col] = ""
+            if "Q_type" in df.columns:
+                row["Q_type"] = q_type_value
+            return row
+
         # 計算平均值
-        avg_row = {col: df[col].mean() for col in numeric_cols}
-        avg_row["idx"] = "平均"
-        
-        # 填補文字類型的欄位為空字串（schema 欄位在平均行保持空白）
-        for col in df.columns:
-            if col not in avg_row:
-                avg_row[col] = ""
-        
+        avg_row = _build_avg_row(df, label="平均")
+        rows_to_append = [avg_row]
+
+        # 追加 SINGLE-HOP / MULTI-HOP 分群平均（依 Q_type）
+        if "Q_type" in df.columns:
+            qtype_series = df["Q_type"].fillna("").astype(str).str.strip().str.upper()
+
+            single_subset = df[qtype_series == "SINGLE-HOP"]
+            if not single_subset.empty:
+                rows_to_append.append(
+                    _build_avg_row(single_subset, label="平均_SINGLE-HOP", q_type_value="SINGLE-HOP")
+                )
+
+            multi_subset = df[qtype_series == "MULTI-HOP"]
+            if not multi_subset.empty:
+                rows_to_append.append(
+                    _build_avg_row(multi_subset, label="平均_MULTI-HOP", q_type_value="MULTI-HOP")
+                )
+
         # 合併
-        df = pd.concat([df, pd.DataFrame([avg_row])], ignore_index=True)
+        df = pd.concat([df, pd.DataFrame(rows_to_append)], ignore_index=True)
         
         return df
+
+    @staticmethod
+    def _normalize_qa_scope(value: Any) -> str:
+        """將題型欄位值標準化為 local/global。"""
+        if value is None:
+            return ""
+        text = str(value).strip().lower()
+        if not text or text == "nan":
+            return ""
+
+        normalized = text.replace("_", "-").replace(" ", "")
+        local_aliases = {
+            "local",
+            "single-hop",
+            "singlehop",
+            "one-hop",
+            "1-hop",
+            "1hop",
+            "hop1",
+        }
+        global_aliases = {
+            "global",
+            "multi-hop",
+            "multihop",
+            "two-hop",
+            "2-hop",
+            "2hop",
+            "hop2",
+        }
+        if normalized in local_aliases:
+            return "local"
+        if normalized in global_aliases:
+            return "global"
+        if "single" in normalized or "local" in normalized or normalized.startswith("1-") or normalized.startswith("1hop"):
+            return "local"
+        if "multi" in normalized or "global" in normalized or normalized.startswith("2-") or normalized.startswith("2hop"):
+            return "global"
+        return ""
+
+    @classmethod
+    def _resolve_scope_series(cls, df: pd.DataFrame) -> Optional[pd.Series]:
+        """從多種欄位推導 qa_scope 欄位（local/global）。"""
+        for col in cls._SCOPE_COLUMN_CANDIDATES:
+            if col not in df.columns:
+                continue
+            scope_series = df[col].map(cls._normalize_qa_scope)
+            if (scope_series != "").any():
+                return scope_series
+        return None
     
     def extract_summary_from_df(
         self,
         pipeline_name: str,
         df: pd.DataFrame
-    ) -> Dict[str, Any]:
+    ) -> List[Dict[str, Any]]:
         """
         從 DataFrame 提取平均指標作為總結
         
@@ -156,19 +364,39 @@ class EvaluationReporter:
             df: 包含評估結果的 DataFrame
         
         Returns:
-            總結字典
+            總結字典列表（包含 total/local/global）
         """
         if df.empty:
-            return {"pipeline_name": pipeline_name}
-        
+            return [{"pipeline_name": pipeline_name, "summary_scope": "total"}]
+
+        working_df = df.copy()
+        scope_series = self._resolve_scope_series(working_df)
+        if scope_series is not None:
+            working_df["qa_scope"] = scope_series
+
         # 以固定欄位輸出，避免不同方法產生不同 summary header
-        summary = {"pipeline_name": pipeline_name}
-        for col in self.SUMMARY_NUMERIC_COLUMNS:
-            if col not in df.columns:
-                df[col] = 0
-            summary[f"avg_{col}"] = df[col].mean()
-        
-        return summary
+        def _build_summary_row(scope_name: str, sub_df: pd.DataFrame) -> Dict[str, Any]:
+            row = {
+                "pipeline_name": pipeline_name,
+                "summary_scope": scope_name,
+            }
+            for col in self.SUMMARY_NUMERIC_COLUMNS:
+                if col not in sub_df.columns:
+                    row[f"avg_{col}"] = 0
+                else:
+                    row[f"avg_{col}"] = sub_df[col].mean()
+            return row
+
+        summary_rows: List[Dict[str, Any]] = []
+        summary_rows.append(_build_summary_row("total", working_df))
+
+        if "qa_scope" in working_df.columns:
+            for scope in ["local", "global"]:
+                sub_df = working_df[working_df["qa_scope"] == scope]
+                if not sub_df.empty:
+                    summary_rows.append(_build_summary_row(scope, sub_df))
+
+        return summary_rows
     
     def generate_global_summary(
         self,
@@ -311,7 +539,13 @@ async def run_evaluation(
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     base_eval_dir = os.path.join(results_root_dir, f"evaluation_results_{timestamp}{postfix}")
     
-    evaluator = RAGEvaluator(eval_llm=LlamaSettings.eval_llm, base_eval_dir=base_eval_dir)
+    eval_metrics_mode = (run_metadata or {}).get("eval_metrics_mode", "kfc_only")
+    evaluator = RAGEvaluator(
+        eval_llm=LlamaSettings.eval_llm,
+        base_eval_dir=base_eval_dir,
+        metrics_mode=eval_metrics_mode,
+    )
+    print(f"🧪 評估模式: {evaluator.metrics_mode}")
     reporter = EvaluationReporter(base_dir=base_eval_dir)
     
     print(f"📁 建立實驗數據主資料夾: {base_eval_dir}")
@@ -331,21 +565,22 @@ async def run_evaluation(
         
         # 儲存詳細結果
         if results:
-            reporter.save_pipeline_results(pipeline.name, results)
-            
-            # 提取總結
-            df = pd.DataFrame(results)
-            summary = reporter.extract_summary_from_df(pipeline.name, df)
-            
-            # 合併圖譜品質指標（若有）
             gq = getattr(pipeline, "_graph_quality", None)
+            reporter.save_pipeline_results(
+                pipeline.name,
+                results,
+                schema_info=getattr(pipeline, "schema_info", None),
+                graph_quality=gq,
+            )
+            reporter.save_retrieval_content(pipeline.name, results)
+
+            # 提取總結（先補入 gq_ 欄位，使 extract_summary_from_df 可計算 avg_gq_*）
+            df = pd.DataFrame(results)
             if gq:
-                from src.evaluation.metrics.graph_quality import GraphQualityMetrics
-                for col in GraphQualityMetrics.summary_columns():
-                    if col in gq:
-                        summary[col] = gq[col]
-            
-            summary_records.append(summary)
+                for raw_col, gq_col in EvaluationReporter._GQ_COL_MAP.items():
+                    df[gq_col] = gq.get(raw_col, None)
+            summaries = reporter.extract_summary_from_df(pipeline.name, df)
+            summary_records.extend(summaries)
     
     # 生成全局比較報告
     reporter.generate_global_summary(summary_records)
@@ -395,7 +630,13 @@ async def run_evaluation_with_token_budget(
         f"evaluation_results_{timestamp}{postfix}_token_budget"
     )
     
-    evaluator = RAGEvaluator(eval_llm=LlamaSettings.eval_llm, base_eval_dir=base_eval_dir)
+    eval_metrics_mode = (run_metadata or {}).get("eval_metrics_mode", "kfc_only")
+    evaluator = RAGEvaluator(
+        eval_llm=LlamaSettings.eval_llm,
+        base_eval_dir=base_eval_dir,
+        metrics_mode=eval_metrics_mode,
+    )
+    print(f"🧪 評估模式: {evaluator.metrics_mode}")
     reporter = EvaluationReporter(base_dir=base_eval_dir)
     token_controller = TokenBudgetController()
     
@@ -440,10 +681,20 @@ async def run_evaluation_with_token_budget(
         
         if results:
             # 儲存結果
-            reporter.save_pipeline_results(baseline_pipeline.name, results)
+            gq_baseline = getattr(baseline_pipeline, "_graph_quality", None)
+            reporter.save_pipeline_results(
+                baseline_pipeline.name,
+                results,
+                schema_info=getattr(baseline_pipeline, "schema_info", None),
+                graph_quality=gq_baseline,
+            )
+            reporter.save_retrieval_content(baseline_pipeline.name, results)
             df = pd.DataFrame(results)
-            summary = reporter.extract_summary_from_df(baseline_pipeline.name, df)
-            summary_records.append(summary)
+            if gq_baseline:
+                for raw_col, gq_col in EvaluationReporter._GQ_COL_MAP.items():
+                    df[gq_col] = gq_baseline.get(raw_col, None)
+            summaries = reporter.extract_summary_from_df(baseline_pipeline.name, df)
+            summary_records.extend(summaries)
             
             # 提取token資訊
             if "context_tokens" in df.columns:
@@ -490,10 +741,20 @@ async def run_evaluation_with_token_budget(
             
             if results:
                 # 儲存結果
-                reporter.save_pipeline_results(pipeline.name, results)
+                gq = getattr(pipeline, "_graph_quality", None)
+                reporter.save_pipeline_results(
+                    pipeline.name,
+                    results,
+                    schema_info=getattr(pipeline, "schema_info", None),
+                    graph_quality=gq,
+                )
+                reporter.save_retrieval_content(pipeline.name, results)
                 df = pd.DataFrame(results)
-                summary = reporter.extract_summary_from_df(pipeline.name, df)
-                summary_records.append(summary)
+                if gq:
+                    for raw_col, gq_col in EvaluationReporter._GQ_COL_MAP.items():
+                        df[gq_col] = gq.get(raw_col, None)
+                summaries = reporter.extract_summary_from_df(pipeline.name, df)
+                summary_records.extend(summaries)
                 
                 # 添加token統計
                 if "context_tokens" in df.columns:

@@ -26,6 +26,47 @@ ZH_COLUMNS = [
     "bleu_zh", "meteor_zh",
 ]
 
+SCOPE_COLUMN_CANDIDATES = [
+    "qa_scope",
+    "question_type",
+    "Question_Type",
+    "Q_type",
+    "hop-level",
+    "Hop_Level",
+    "hop_level",
+]
+
+
+def normalize_qa_scope(value) -> str:
+    if value is None:
+        return ""
+    text = str(value).strip().lower()
+    if not text or text == "nan":
+        return ""
+
+    normalized = text.replace("_", "-").replace(" ", "")
+    local_aliases = {"local", "single-hop", "singlehop", "1-hop", "1hop", "hop1", "one-hop"}
+    global_aliases = {"global", "multi-hop", "multihop", "2-hop", "2hop", "hop2", "two-hop"}
+    if normalized in local_aliases:
+        return "local"
+    if normalized in global_aliases:
+        return "global"
+    if "single" in normalized or "local" in normalized or normalized.startswith("1-") or normalized.startswith("1hop"):
+        return "local"
+    if "multi" in normalized or "global" in normalized or normalized.startswith("2-") or normalized.startswith("2hop"):
+        return "global"
+    return ""
+
+
+def resolve_scope_series(df: pd.DataFrame) -> pd.Series:
+    for col in SCOPE_COLUMN_CANDIDATES:
+        if col not in df.columns:
+            continue
+        series = df[col].map(normalize_qa_scope)
+        if (series != "").any():
+            return series
+    return pd.Series([""] * len(df), index=df.index)
+
 
 def recalculate_single_csv(csv_path: str, rouge: ROUGEMetric, bleu: BLEUMetric, meteor: METEORMetric, dry_run: bool) -> bool:
     """重算單一 detailed_results.csv，回傳是否有修改。"""
@@ -116,16 +157,40 @@ def update_run_summary(run_dir: str, dry_run: bool):
         except Exception:
             detail_df = pd.read_csv(detail_csv, encoding="utf-8")
 
-        data_rows = detail_df[detail_df["idx"].astype(str) != "平均"]
-
-        mask = summary_df["pipeline_name"] == pname
-        if not mask.any():
+        data_rows = detail_df[detail_df["idx"].astype(str) != "平均"].copy()
+        if data_rows.empty:
             continue
 
-        for col in ZH_COLUMNS:
-            if col in data_rows.columns:
-                summary_df.loc[mask, f"avg_{col}"] = data_rows[col].mean()
-                updated = True
+        data_rows["qa_scope"] = resolve_scope_series(data_rows)
+        has_scope_col = "summary_scope" in summary_df.columns
+        if has_scope_col:
+            scope_map = {
+                "total": data_rows,
+                "local": data_rows[data_rows["qa_scope"] == "local"],
+                "global": data_rows[data_rows["qa_scope"] == "global"],
+            }
+            for scope, scoped_rows in scope_map.items():
+                if scoped_rows.empty:
+                    continue
+                mask = (
+                    (summary_df["pipeline_name"] == pname)
+                    & (summary_df["summary_scope"].astype(str).str.lower() == scope)
+                )
+                if not mask.any():
+                    continue
+                for col in ZH_COLUMNS:
+                    if col in scoped_rows.columns:
+                        summary_df.loc[mask, f"avg_{col}"] = scoped_rows[col].mean()
+                        updated = True
+        else:
+            # 舊版 summary 沒有 summary_scope，維持只更新 total 平均
+            mask = summary_df["pipeline_name"] == pname
+            if not mask.any():
+                continue
+            for col in ZH_COLUMNS:
+                if col in data_rows.columns:
+                    summary_df.loc[mask, f"avg_{col}"] = data_rows[col].mean()
+                    updated = True
 
     if updated and not dry_run:
         summary_df.to_csv(csv_path, index=False, encoding="utf-8-sig")
@@ -155,11 +220,22 @@ def update_master_summary(master_xlsx_path: str, dry_run: bool):
         except Exception:
             detail_df = pd.read_csv(detail_csv, encoding="utf-8")
 
-        data_rows = detail_df[detail_df["idx"].astype(str) != "平均"]
+        data_rows = detail_df[detail_df["idx"].astype(str) != "平均"].copy()
+        if data_rows.empty:
+            continue
+
+        target_rows = data_rows
+        has_scope_col = "summary_scope" in master_df.columns
+        if has_scope_col:
+            summary_scope = normalize_qa_scope(row.get("summary_scope", "")) or str(row.get("summary_scope", "")).strip().lower()
+            if summary_scope in {"local", "global"}:
+                target_rows = data_rows[resolve_scope_series(data_rows) == summary_scope]
+                if target_rows.empty:
+                    continue
 
         for col in ZH_COLUMNS:
-            if col in data_rows.columns:
-                master_df.loc[i, f"avg_{col}"] = data_rows[col].mean()
+            if col in target_rows.columns:
+                master_df.loc[i, f"avg_{col}"] = target_rows[col].mean()
                 updated = True
 
     if updated and not dry_run:

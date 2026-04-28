@@ -304,18 +304,40 @@ class LightRAGWrapper(BaseRAGWrapper):
         chunk_tokens = token_counter.count_tokens_batch(chunk_contexts) if chunk_contexts else 0
         total_tokens = token_counter.count_tokens(context_str)
         
-        # 組裝 Prompt
-        prompt = PROMPTS["rag_response"].format(
-            context_data=context_str,
-            response_type="Multiple Paragraphs",
-            user_prompt=query,
-            query=query,
-            retrieved_contexts=context_str
-        )
+        #############################################
+        # 舊版手動組裝Generation(只有context內容)
+        #############################################
+        # # 組裝 Prompt
+        # prompt = PROMPTS["rag_response"].format(
+        #     context_data=context_str,
+        #     response_type="Multiple Paragraphs",
+        #     user_prompt=query,
+        #     query=query,
+        #     retrieved_contexts=context_str
+        # )
         
-        # 使用 LLM 生成答案（不限制生成 token）
-        llm_response = await settings.llm.acomplete(prompt)
-        response = llm_response.text
+        # # 使用 LLM 生成答案（不限制生成 token）
+        # llm_response = await settings.llm.acomplete(prompt)
+        # response = llm_response.text
+        #############################################
+        # 新版官方端到端Generation
+        #############################################
+        param_generate = QueryParam(mode=self.mode, only_need_context=False)
+        
+        if hasattr(self.rag, "aquery"):
+            raw_response = await self.rag.aquery(query, param=param_generate)
+        elif inspect.iscoroutinefunction(self.rag.query):
+            raw_response = await self.rag.query(query, param=param_generate)
+        else:
+            raw_response = self.rag.query(query, param=param_generate)
+        
+        # 相容處理：如果回傳的是 LlamaIndex 物件才取 .text
+        if hasattr(raw_response, "text"):
+            response = raw_response.text
+        elif not isinstance(raw_response, str):
+            response = str(raw_response)
+        else:
+            response = raw_response
         
         print(f"📊 Retrieved {len(retrieved_ids)} chunk IDs | Tokens: {total_tokens} (E:{entity_tokens}, R:{relation_tokens}, C:{chunk_tokens})")
         
@@ -323,6 +345,8 @@ class LightRAGWrapper(BaseRAGWrapper):
             "generated_answer": str(response) if response else "找不到答案",
             "retrieved_contexts": retrieved_contexts,
             "retrieved_ids": retrieved_ids,
+            "retrieved_entities": entity_contexts,
+            "retrieved_relations": relation_contexts,
             "source_nodes": [],
             # Token統計
             "context_tokens": total_tokens,
@@ -479,6 +503,8 @@ class LightRAGStrategyWrapper(LightRAGWrapper):
             "generated_answer": str(response) if response else "找不到答案",
             "retrieved_contexts": retrieved_contexts,
             "retrieved_ids": retrieved_ids,
+            "retrieved_entities": entity_contexts,
+            "retrieved_relations": relation_contexts,
             "source_nodes": [],
             "context_tokens": total_tokens,
             "context_token_details": {

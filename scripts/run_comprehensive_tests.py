@@ -309,10 +309,22 @@ def ask_data_type() -> str:
     print("\n選擇資料類型：")
     print("  1. DI (Domain-specific Inquiries)")
     print("  2. GEN (Generate)")
+    print("  3. LIGHTRAG_CS")
+    print("  4. LIGHTRAG_AGRICULTURE")
+    print("  5. LIGHTRAG_LEGAL")
+    print("  6. LIGHTRAG_MIX")
     print()
     
-    choice = input("請選擇 (1-2): ").strip()
-    return "DI" if choice == "1" else "GEN"
+    choice = input("請選擇 (1-6，預設 1): ").strip()
+    mapping = {
+        "1": "DI",
+        "2": "GEN",
+        "3": "LIGHTRAG_CS",
+        "4": "LIGHTRAG_AGRICULTURE",
+        "5": "LIGHTRAG_LEGAL",
+        "6": "LIGHTRAG_MIX",
+    }
+    return mapping.get(choice, "DI")
 
 
 def ask_use_cache() -> bool:
